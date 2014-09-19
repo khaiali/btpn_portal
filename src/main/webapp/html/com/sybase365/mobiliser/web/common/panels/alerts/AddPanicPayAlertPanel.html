@@ -1,0 +1,30 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+<wicket:panel>
+
+	<div id="centerContent" class="content">
+
+		<form wicket:id="addPanicPayAlertForm">
+		
+			<div class="module clear">
+				
+				<div wicket:id="alertMessageChooserPanel"></div>
+				
+				<div wicket:id="alertContactPointPanel"></div>
+				
+				<div class="column">
+					<div class="formAction">
+						<input type="submit" class="submitForm" wicket:id="addAlertAction" wicket:message="value:Save" /> 
+						<input type="submit" class="submitForm" wicket:id="cancelAlertAction" wicket:message="value:Cancel" />
+					</div>
+				</div>
+
+			</div>
+
+		</form>
+
+	</div>
+
+</wicket:panel>
+</body>
+</html>

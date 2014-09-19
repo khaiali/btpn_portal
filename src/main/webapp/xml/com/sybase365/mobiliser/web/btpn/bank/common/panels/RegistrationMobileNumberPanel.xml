@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<!-- Labels in the panel -->
+    <entry key="label.mobilenumber">Enter Mobile No</entry>
+	<entry key="consumer.label.mobilenumber">Enter Mobile No </entry>
+	<entry key="topupagent.label.mobilenumber">Mobile No </entry>
+	<entry key="childagent.label.mobilenumber">Enter Mobile No </entry>
+	<entry key="subagent.label.mobilenumber">Mobile No </entry>
+	<entry key="childagent.label.registration">Registration</entry>
+	<entry key="subagent.label.registration">Registration</entry>
+	<entry key="childagent.label.required"> Denotes Mandatory Field</entry>
+	<entry key="subagent.label.required"> Denotes Mandatory Field</entry>
+	
+	<!-- Client Side Validations in the panel -->
+	<entry key="customer.mobileNumber.Required">Mobile Number is a required field</entry>
+	<entry key="customer.mobileNumber.PatternValidator">${input} is not a valid Mobile Number.</entry>
+	<entry key="label.submit">Submit</entry>
+	<entry key="customer.mobileNumber.StringValidator.range">Mobile Number must be atleast 6 characters.</entry>
+	
+	<!-- Server Side Validations in the panel -->
+	<entry key="mobileNumber.already.exists">Customer is already Present</entry>
+	<entry key="error.customer.number">An error occured while retrieving the customer number</entry>
+    <entry key="error.customer.exception">We are experiencing technical difficulties. Please try again later.</entry>
+
+</properties>

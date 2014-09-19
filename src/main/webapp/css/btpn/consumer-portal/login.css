@@ -1,0 +1,638 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+body,td,th,p,a {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	font-size: 12px;
+}
+
+body {
+	margin: 0px auto 0px auto;
+	text-align: center;
+	background: #cccccc
+}
+
+#forgotPasswordLink{
+	float:left;
+	margin-top: -38px;
+	margin-left: 21px;
+	text-decoration:none;
+	color: #000;
+}
+#forgotPasswordLink:hover{
+	color:red;
+}
+
+p {
+	margin-bottom: 5px;
+}
+
+h1 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+div#container {
+	position: relative;
+	background-color: #FFFFFF;
+	text-align: left;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#footer1 {
+clear: both;
+color: #7C6A54;
+font-size: 11px;
+height: 18px;
+margin-top: 2px;
+margin-right: 10px;
+padding-bottom: 10px;
+padding-top: 4px;
+text-align: right;
+}
+
+
+#header {
+	background: transparent url(images/header_bg.png) left top;
+	height: 155px;
+	margin: 0 0 0 0;
+}
+
+#logo_login {
+	position: absolute;
+	top: 8px;
+	left: 127px;
+	width: 148px;
+	height: 113px;
+	background-image: url("images/logo_login.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#logoSeperator {
+	position: absolute;
+	left: 235px;
+	top: 15px;
+	height: 120px;
+	width: 1px;
+	margin-top: -9px;
+}
+
+#logoName {
+	position: absolute;
+	left: 277px;
+	top: 30px;
+	height: 25px;
+	width: 1px;
+}
+
+#applicationName {
+	font-family: Calibri;
+	font-size: 3.0em;
+	font-weight: 500;
+	color: #686868;
+	text-align: center;
+	position: absolute;
+	left: 270px;
+	top: 40px;
+	height: 60px;
+	width: 460px;
+}
+
+.centered {
+	text-align: center;
+}
+
+div#floatingBreaker {
+	clear: both;
+}
+
+div#footer {
+	color: #000;
+	height: 196px;
+	width: 100%;
+	background-image: url("images/bg_bottom_shadow_login.png");
+	background-repeat: repeat-x;
+	background-position: left;
+}
+
+.pageContent {
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	width: 100%;
+	min-height: 300px;
+	background: #FFFFFF
+}
+
+#centerContent {
+	float: right;
+	margin: 10px 6px 0 0;
+	width: 752px;
+	height: 100%;
+}
+
+#content {
+	margin: 0px 0px 0 0;
+}
+/* Content container for main content*/
+#centerContent.content {
+	
+}
+
+#centerContent.content.center {
+	
+}
+
+div.column {
+	padding: 0px;
+	margin: 0 0 5px 3px;
+	clear: both;
+	width: 735px;
+}
+
+div.column.twoColumn {
+	clear: none;
+	width: 366px;
+	height: 210px;
+	float: left;
+	padding-left: 0px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+.login_div {
+	float: left;
+	color: #000;
+	margin: 29px 0 0 28px;
+	padding: 0px;
+	width: 336px;
+	height: 210px;
+	text-align: center;
+	background: url(images/login.png) no-repeat;
+}
+
+#centerContent .login_div .submit {
+	left: 214px;
+	width: 100px;
+	cursor: pointer;
+	background: #8C8C8C;
+	z-index: 12;
+}
+
+#centerContent div.column h1 {
+	clear: both;
+	display: block;
+	background-image: url(images/h1_bar.gif);
+	background-repeat: no-repeat;
+	font-weight: bold;
+	font-size: 12px;
+	width: 745px;
+	height: 20px;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	padding-left: 8px;
+	padding-top: 5px;
+}
+
+
+#centerContent div.column.twoColumn h1 {
+	background-image: url(images/h1_bar_short.gif);
+	width: 360px;
+	margin-left: 5px;
+}
+
+#centerContent div.column.twoColumn .login_div h1 {
+	background: url(images/h1_login.gif) no-repeat;
+}
+
+span.required {
+	font-family: "courier new";
+	color: red;
+	font-weight: bold;
+	margin-left: 2px;
+}
+
+
+/******************************* Center Content FORM Elements ************************/
+#centerContent div.title {
+	color: #FFFFFF;
+	font-size: 20px;
+	height: 36px;
+	line-height: 33px;
+	text-align: center;
+}
+
+#centerContent div.input {
+	position: relative;
+	float: left;
+	top: 13px;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	margin: 0 0 2px 50px;
+	width: 300px;
+	display: inline;
+}
+
+#centerContent label {
+	clear: both;
+	float: left;
+	text-align: left;
+	display: block;
+	font-weight: bold;
+	/*    margin-left: 5px;*/
+	margin-top: 4px;
+	width: 90px;
+	padding: 1px 2px 1px 2px;
+	color: #333;
+	font-family: verdana;
+	font-size: 11px;
+}
+
+.column .submit {
+	color: #fff;
+}
+
+.column .submit_login {
+	color: #fff;
+}
+
+#centerContent h1 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#centerContent form {
+	text-align: left;
+}
+
+#centerContent div.input select {
+	margin: 3px 3px 3px 3px;
+	width: 180px;
+	border: 1px solid #E6EAF2;
+	padding: 1px 2px 1px 2px;
+}
+
+select {
+	border: 1px solid #E6EAF2;
+}
+
+#centerContent div.input input.file,#centerContent div.input textarea,#centerContent div.input input
+	{
+	margin: 3px 3px 3px 3px;
+	width: 135px;
+	border: 1px solid #ACADB0;
+	padding: 1px 2px 1px 2px;
+	color: #000;
+}
+
+#centerContent div.input input.submit {
+	border: 0px;
+	clear: both;
+	left: 0px;
+}
+
+#centerContent div.input input.submit_login {
+	border: 0px;
+	clear: both;
+	left: 0px;
+}
+
+#centerContent .input select {
+	width: 180px;
+	margin-top: 1px;
+}
+
+
+#centerContent .submit {
+	position: relative;
+	left: 266px;
+	margin-left: 0;
+	color: #fff;
+}
+
+#centerContent .submit_login {
+	position: relative;
+	left: 266px;
+	margin-left: 0;
+	color: #fff;
+}
+
+#submit1 {
+	position: relative;
+	left: 150px;
+	margin-left: 0px;
+}
+
+#centerContent .submit.left {
+	position: relative;
+	left: 237px;
+	margin-left: 5px;
+}
+
+#centerContent div.input input.submit {
+	width: 100px;
+	clear: none;
+	cursor: pointer;
+	float: left;
+	font-weight: bold;
+	margin: 0px 0 0 8px;
+	padding: 0;
+	color: #fff;
+	background: #666;
+}
+
+#centerContent div.input input.submit_login {
+	width: 100px;
+	clear: none;
+	cursor: pointer;
+	float: left;
+	font-weight: bold;
+	margin: 0px 0 0 8px;
+	padding: 0;
+	color: #fff;
+	background: #666;
+}
+
+#centerContent .submit {
+	clear: none;
+	left: 0;
+	float: left;
+	width: 100px;
+	height: 23px;
+	cursor: pointer;
+}
+
+#centerContent .submit_login {
+	clear: none;
+	left: 0;
+	float: left;
+	width: 100px;
+	height: 23px;
+	cursor: pointer;
+}
+
+#centerContent .submit.acc_chk {
+	position: relative;
+	left: 156px;
+	width: 62px;
+	height: 24px;
+	background: red url(images/submit_login.png) no-repeat;
+	display: block;
+	margin: 30px 8px 0 0px;
+	padding: 0px 0px 3px 0px;
+	text-align: center;
+}
+
+#centerContent .submit_login.acc_chk {
+	position: relative;
+	left: 156px;
+	width: 62px;
+	height: 24px;
+	background: red url(images/submit_login.png) no-repeat;
+	display: block;
+	margin: 30px 8px 0 0px;
+	padding: 0px 0px 3px 0px;
+	text-align: center;
+}
+
+#centerContent .acc_info_but {
+	margin: 0 0 50px 80px;
+}
+
+
+#centerContent .submit.acc_chk:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity =   80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+#centerContent div.input div.group {
+	float: left;
+	margin: 3px 3px 8px 3px;
+	width: 179px;
+}
+
+#centerContent div.input div.group input.checkbox,#centerContent div.input div.group input.radio
+	{
+	border: 0px;
+	float: left;
+	width: 15px;
+	position: relative;
+	top: 3px;
+	height: 13px;
+}
+
+#centerContent div.input div.group label {
+	clear: none;
+	float: none;
+	font-weight: normal;
+	border-bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	margin-top: 4px;
+	width: 153px;
+}
+
+/******************************* END Content FORM Elements ************************/
+
+/* BO Footer */
+.informasi {
+	position: relative;
+	background: url(images/icon_informasi.png) no-repeat left;
+	width: 300px;
+	height: 64px;
+	top: 50px;
+	margin-left: 119px;
+	text-align: left;
+}
+
+.informasi span {
+	position: relative;
+	top: 6px;
+	margin-left: 60px;
+	font-size: 11px;
+}
+
+.informasi h1 {
+	margin-top: 10px;
+	margin-left: 60px;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.right_footer {
+	position: relative;
+	top: -74px;
+	float: right;
+	right: 52px;
+	height: 100px;
+}
+
+.right_footer a {
+	text-decoration: none;
+	color: #000;
+}
+
+.nav_icon_box {
+	float: right;
+	margin-right: -20px;
+	/*    font-size: 9px;*/
+	/*    width: 300px;*/
+}
+
+.nav_icon_box a {
+	position: relative;
+	top: 63px;
+	font-size: 9px;
+}
+
+.nav_icon_box_in {
+	float: right;
+	width: 90px;
+	height: 49px;
+	cursor: pointer;
+	text-align: center;
+	margin-left: -10px;
+}
+
+.nav_icon_box_in:hover {
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	border: none;
+}
+
+.term {
+	background: url(images/icon_term.png) no-repeat center center;
+}
+
+.faq {
+	background: url(images/icon_faq.png) no-repeat center center;
+	/*            background: yellowgreen;*/
+}
+
+.care {
+	background: url(images/icon_customer_care.png) no-repeat center center;
+}
+
+.about {
+	background: url(images/icon_about.png) no-repeat center center;
+}
+
+.nav_guide {
+	position: absolute;
+	top: 105px;
+	color: #000;
+}
+
+.nav_guide ul {
+	list-style: none;
+}
+
+.nav_guide li {
+	padding-bottom: 3px;
+	padding-left: 13px;
+	line-height: 12px;
+	text-indent: -4px;
+}
+
+.nav_guide li:before {
+	content: "-";
+	position: relative;
+	left: -18px;
+}
+
+.nav_guide a {
+	text-decoration: none;
+	color: #000;
+	font-size: 11px;
+}
+/* EO Footer */
+.clear_both {
+	clear: both;
+}
+
+ul.feedbackPanel {
+	margin-bottom: 10px;
+}
+
+li.feedbackPanelERROR {
+	list-style: none;
+	clear: both;
+	text-align: left;
+	padding-left: 20px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background: transparent url(../../../images/cross-red.gif) no-repeat
+		left center;
+	color: red;
+	font-weight: bold;
+	list-style: none;
+}
+
+html[dir="rtl"] li.feedbackPanelERROR {
+	padding-left: 0;
+	padding-right: 20px;
+	background: transparent url(../../../images/cross-red.gif) no-repeat
+		right center;
+	text-align: right;
+}
+
+span.feedbackPanelERROR {
+	
+}
+
+li.feedbackPanelINFO {
+	list-style: none;
+	clear: both;
+	text-align: left;
+	padding-left: 20px;
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	background: transparent url(../../../images/checkmark-green.gif)
+		no-repeat left center;
+	color: green;
+	font-weight: bold;
+	list-style: none;
+}
+
+html[dir="rtl"] li.feedbackPanelINFO {
+	padding-left: 0;
+	padding-right: 20px;
+	background: transparent url(../../../images/checkmark-green.gif)
+		no-repeat right center;
+	text-align: right;
+}
+
+span.feedbackPanelINFO {
+	
+}
+input.error {
+	border: 1px solid #E33E57;
+}
+
+#centerContent .input textarea.error,
+#centerContent .input select.error,
+#centerContent .input input.error {
+	border: 1px solid #e33e57;

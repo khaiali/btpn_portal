@@ -1,0 +1,160 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="txnDetailsForm">
+
+		<div wicket:id="errorMessages"></div>
+
+		<div id="centerContent" class="content">
+
+			<h2 class="section coins">
+				<wicket:message key="txnDetails.masterTxn.title" />
+			</h2>
+
+			<div class="column twoColumn">
+			
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.txnId" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.id"></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.amount" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.amount"></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.useCase" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.useCase"></div>
+				</div>
+				
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.authCode" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.authCode"></div>
+				</div>
+				
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.txnText" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.text"></div>
+				</div>
+
+			</div>
+
+			<div class="column twoColumn">
+
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.date" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.creationDate"></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.payer" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.payerDisplayName"></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.payee" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.payeeDisplayName"></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.txnStatus" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.status"></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.orderId" /></label>
+					<!-- 	<div class="text" wicket:id="transactionDetailsBean.merchantOrderId"></div>  -->
+				</div>
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.error" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.errorCode"></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="txnDetails.masterTxn.cancelled" /></label>
+					<div class="text" wicket:id="transactionDetailsBean.cancelled"></div>
+				</div>
+
+			</div>
+
+			<div class="column">
+			
+				<div class="buttonWrap">
+					<input type="submit" class="submitForm" wicket:id="showTransactions" wicket:message="value:Back" /> 
+					<input type="submit" class="submitForm" wicket:id="captureCancel" wicket:message="value:txnDetails.button.cancelTransactions" />
+					<input type="submit" class="submitForm" wicket:id="captureTransactions" wicket:message="value:txnDetails.button.captureTransactions" />
+					<input type="submit" class="submitForm" wicket:id="autoriseCancel" wicket:message="value:txnDetails.button.cancelTransactions" />
+					<input type="submit" class="submitForm" wicket:id="approve" wicket:message="value:txnDetails.button.approveTransactions" />
+					<input type="submit" class="submitForm" wicket:id="reject" wicket:message="value:txnDetails.button.rejectTransactions" />
+				</div>
+				
+			</div>
+
+			<div class="column buffer"></div>
+
+			
+
+			<h2 class="section coins">
+				<wicket:message key="txnDetails.subTxn.title" />
+			</h2>
+
+			<div wicket:id="subTransactionsDiv">
+
+				<div class="column">
+
+					<div class="column twoColumn">
+
+						<div class="input">
+							<label wicket:id="subTxnId"></label>
+							<div class="text" wicket:id="transactionDetailsBean.subTxns.id"></div>
+						</div>
+						<div class="input">
+							<label wicket:id="subTxnType"></label>
+							<div class="text" wicket:id="transactionDetailsBean.subTxns.type"></div>
+						</div>
+						
+						<div class="input">
+							<label wicket:id="subTxnDate"></label>
+							<div class="text" wicket:id="transactionDetailsBean.subTxns.creationDate"></div>
+						</div>
+						<div class="input">
+							<label wicket:id="subTxnAmount"></label>
+							<div class="text" wicket:id="transactionDetailsBean.subTxns.subAmount"></div>
+						</div>
+
+					</div>
+
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label wicket:id="subTxnFeePayer"></label>
+							<div class="text" wicket:id="transactionDetailsBean.subTxns.payerFeeAmount"></div>
+						</div>
+						<div class="input">
+							<label wicket:id="subTxnFeePayee"></label>
+							<div class="text" wicket:id="transactionDetailsBean.subTxns.payeeFeeAmount"></div>
+						</div>
+
+						<div class="input">
+							<label wicket:id="subTxnVatPayer"></label>
+							<div class="text" wicket:id="transactionDetailsBean.subTxns.payerVatAmount"></div>
+						</div>
+						<div class="input">
+							<label wicket:id="subTxnVatPayee"></label>
+							<div class="text" wicket:id="transactionDetailsBean.subTxns.payeeVatAmount"></div>
+						</div>
+						<div class="input">
+							<label wicket:id="subTxnErrorCode"></label>
+							<div class="text" wicket:id="transactionDetailsBean.subTxns.errorCode"></div>
+						</div>
+						
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</form>
+
+</wicket:panel>
+
+</body>
+</html>

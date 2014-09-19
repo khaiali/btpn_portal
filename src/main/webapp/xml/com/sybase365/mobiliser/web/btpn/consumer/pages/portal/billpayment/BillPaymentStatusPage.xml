@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="success.perform.billpayment">Bayar Tagihan berhasil dilakukan.</entry>
+	<entry key="error.confirm.billpay">Bayar Tagihan gagal dilakukan.</entry>
+	<entry key="OK">OK</entry>
+</properties>

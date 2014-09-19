@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.cashinConfirm">Confirm Cash-In</entry>
+	<entry key="label.cashIn.confirm.accountNumber">MSVA Number</entry>
+	<entry key="label.cashIn.confirm.mobileNumber">Mobile Number</entry>
+	<entry key="label.cashIn.confirm.name">Name</entry>
+	<entry key="label.cashIn.confirm.type">Type</entry>
+	<entry key="label.cashIn.totalSVABalance">Total SVA Balance</entry>
+	<entry key="label.cashIn.creditingAmount">Crediting Amount</entry>
+	<entry key="label.cashIn.cashinFee">Cash-in Fee</entry>
+	<entry key="label.cashIn.totalAmount">Total Cash-In Amount</entry>
+	<entry key="error.cashin.fail">An error occurred while cash in to agent</entry>
+</properties>

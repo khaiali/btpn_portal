@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="checkout.title">Checkout</entry>
+	<entry key="checkout.application.name">Checkout</entry>
+	<entry key="transactionIDNotSet">The transaction ID was not set for this request</entry>
+	<entry key="transactionNotFound">The transaction was found, but has the wrong transaction status[TransactionId=</entry>
+	<entry key="getMsisdn.title">Enter Mobile Number</entry>
+	<entry key="index.welcome">Thank you for choosing Sybase365. Enter your mobile phone number to start the authorization</entry>
+	<entry key="index.form.text">Transaction text</entry>
+	<entry key="msisdn.text">Mobile Phone Number</entry>
+	<entry key="index.deliveryAddress">Your delivery address will be passed to the online shop after we received your payment</entry>
+	<entry key="index.cancelTransaction">Click here to cancel and go back to the merchant</entry>
+	<entry key="cancelButton">Back</entry>
+	<entry key="transactionNotFound">The transaction was not found in the Mobiliser System</entry>
+	<entry key="error.customerNotRegistered">This number is not registered yet</entry>
+	<entry key="checkPin.title">Enter Your PIN</entry>
+	<entry key="checkPin.help.text">In step two you have to confirm the payment with your Sybase365 PIN. You will receive an SMS on your specified mobile phone number. Please keep your mobile phone availible.</entry>
+	<entry key="pin.text">Sybase365-PIN</entry>
+	<entry key="checkPin.login.message">To authorize the payment using Sybase wallet, please reply with yes. Only after your reply the authorization is successful.</entry>
+	<entry key="msisdn.Required">Mobile Phone Number is required</entry>
+	<entry key="pin.Required">PIN is required</entry>	
+	<entry key="check.pin.error">An error occurred while checking the PIN</entry>
+	<entry key="generalException">An unknown error occurred:</entry>
+	<entry key="index.form.merchant">Online Shop</entry>
+	<entry key="index.form.amount">Amount </entry>
+	<entry key="smsAuthentication.message">We are going to send you an SMS by the shortcode for confirmation.As reply please send an SMS with YES back to 22000, for a successful payment.The payment stays incomplete until you sent the confirmation</entry>
+	<entry key="smsAuthentication.wait">Your transaction is processing</entry>
+	<entry key="smsAuthentication.warning">Upon receipt of your SMS, we'll take you back to the page of your online store</entry>
+	<entry key="smsAuthentication.timeout">The payment was not confirmed in time. You can try it again</entry>
+	<entry key="smsAuthentication.error">There was an error!</entry>
+	<entry key="smsAuthentication.cancel">If you want to cancel the payment and return it to the dealer, please press 'Cancel'</entry>
+	<entry key="smsAuthentication.title">Sms Authentication</entry>
+</properties>

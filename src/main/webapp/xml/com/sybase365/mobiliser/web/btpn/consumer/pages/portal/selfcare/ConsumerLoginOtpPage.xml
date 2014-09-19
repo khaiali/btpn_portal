@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="header.login.info">Halo %s, Anda login di btpn WOW!</entry>
+	<entry key="login.page.title">BTPN Portal - BTPN System</entry>
+	<entry key="header.logout.label">Keluar</entry>
+	<entry key="application.name">BTPN Agent Portal</entry>
+	<entry key="foooter.copyright">Copyright</entry>
+	<entry key="foooter.bank.name">PT Bank Tabungan Pensiunan Nasional Tbk. 2013</entry>
+	<entry key="session.timeout.counter.label">Session Timeout: </entry>
+	<entry key="session.timeout.counter.minutes.label"> Minutes</entry>
+	<entry key="session.timeout.label">Your session has timed out.</entry>
+	<entry key="enter.otp">Kami telah mengirim SMS kode rahasia ke Handphone Anda.
+			Mohon diisi pada kolom Kode Rahasia sebelah kanan, dengan 6 angka kode rahasia tersebut.</entry>
+	<entry key="label.otp">Masukan Kode Rahasia</entry>
+	<entry key="label.logout">Keluar</entry>
+	<entry key="otp.Required">Kolom OTP Harus Diisi.</entry>
+	<entry key="otp.invalid">Kode yang Dimasukkan Tidak Sesuai.	</entry>
+	<entry key="Submit">Masuk</entry>
+	<entry key="footer.information">informasi lebih lanjut hubungi :</entry>
+	<entry key="footer.contact">btpncall 500 300</entry>
+	<entry key="footer.termsAndConditions">SYARAT KETENTUAN</entry>
+	<entry key="footer.faq">FAQ</entry>
+	<entry key="footer.about.btpn">TENTANG &lt;br/&gt;btpn WOW!</entry>
+	<entry key="footer.about.sybase">SAP | All rights reserved | Build</entry>
+	<entry key="otp.exception">Maaf Terdapat Gangguan. Silahkan Coba Kembali.</entry>
+	<entry key="error.generate.otp">Terjadi Kesalahan Ketika Generate OTP.</entry>
+	<entry key="error.exception.otp">Maaf Terdapat Gangguan Ketika Proses Generate OTP.</entry>
+</properties>

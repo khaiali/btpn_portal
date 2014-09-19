@@ -1,0 +1,61 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<div class="cmodule clear">
+
+		<!-- list paging -->
+		<ul class="tablePaging">
+			<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+			<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+			<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+		</ul>
+		<!-- end list paging -->
+
+		<div class="collapsable clear">
+
+			<table id="historyListTable" class="listTable">
+			
+				<wicket:enclosure child="pageable">
+				
+					<thead>
+						<tr>
+							<th class="historyCreationDate"><wicket:message key="showHistory.creationDate" /></th>
+							<th class="historyCreatorId" wicket:id="h_creatorId"></th>
+							<th class="historyFieldName"><wicket:message key="showHistory.fieldName" /></th>
+							<th class="historyOldValue"><wicket:message key="showHistory.oldValue" /></th>
+							<th class="historyNewValue"><wicket:message key="showHistory.newValue" /></th>
+						</tr>
+					</thead>
+					
+					<tfoot>
+						<tr>
+							<td class="empty" colspan="5"></td>
+						</tr>
+					</tfoot>
+					
+					<tbody>
+						<tr wicket:id="pageable">
+							<td class="historyCreationDate"><div wicket:id="creationDate">[Creation Date]</div></td>
+							<td class="historyCreatorId" wicket:id="creatorId">[Field Name]</td>
+							<td class="historyFieldName"><div wicket:id="fieldName">[Field Name]</div></td>
+							<td class="historyOldValue"><div wicket:id="oldValue">[Old Value]</div></td>
+							<td class="historyNewValue"><div wicket:id="newValue">[New Value]</div></td>
+						</tr>
+					</tbody>
+					
+				</wicket:enclosure>
+				
+			</table>
+
+			<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+		</div>
+
+	</div>
+
+</wicket:panel>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="addHoliday">Add Holiday</entry>
+	<entry key="fromDate">From Date</entry>
+	<entry key="toDate">To Date</entry>
+	<entry key="holiday.description">Description</entry>
+
+	<!-- Custom Validations -->
+	<entry key="holidayBean.fromDateString.Required">Holiday From Date is a required field</entry>
+	<entry key="holidayBean.toDateString.Required">Holiday To Date is a required field</entry>
+	<entry key="holidayBean.description.Required">Holiday Description is a required field</entry>
+	<entry key="holidayBean.fromDateString.PatternValidator">'${input}' is not a valid</entry>
+	<entry key="holidayBean.toDateString.PatternValidator">'${input}' is not a valid</entry>
+
+	<entry key="holidayBean.fromDateString.future">Date should be future date.</entry>
+	<entry key="holidayBean.toDateString.future">To Date should be future date.</entry>
+	<entry key="holidayBean.toDateString.todate.after.fromdate">To Date should be future the From Date.</entry>
+	<entry key="error.submit.holiday">Failed to submit Holiday for Approval.</entry>
+	<entry key="error.10044">Invalid Date Format</entry>
+	<entry key="error.10045">from Date should be future than current date</entry>
+	<entry key="error.10046">toDate should be future than fromDate</entry>
+	<!-- <entry key="error.10047">Holiday event already exists for the calendar 
+		year</entry> -->
+	<entry key="error.10047">Holiday already exists please provide another.</entry>
+	<entry key="error.10048">HolidayCalender Data is Null/Empty</entry>
+	<entry key="error.10049">Input fields data fromDate/toDate is Null/Empty in
+		HolidayCalender bean</entry>
+
+
+</properties>

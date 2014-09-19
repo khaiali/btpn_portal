@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	
+    <entry key="headLine.generalLedgerDetail">General Ledger Management Detail</entry>
+	<entry key="label.glCode">GL Code</entry>
+	<entry key="label.glDesc">Description</entry>
+	<entry key="label.type">Type</entry>
+	<entry key="label.glNote">Note</entry>
+	<entry key="label.parentGLCode">Parent GL Code</entry>
+	
+
+	<!-- Client side validation messages  -->
+	<entry key="cusLedgerBean.glCode.Required">Gl Code is a required field</entry>
+	<entry key="cusLedgerBean.glDescription.Required">Description is a required field</entry>
+	<entry key="cusLedgerBean.parentGlCode.Required">You have selected Is Leaf so you need to select value	from Parent GL Code.</entry>
+	<entry key="cusLedgerBean.parentGlCode.Not.Required">You have selected Is Root so No need to select Parent GL Code.</entry>
+	<entry key="cusLedgerBean.type.Required">Gl Code Type is a required field</entry>
+	<entry key="cusLedgerBean.glCode.StringValidator.minimum">Gl Code must be at least 7 characters long</entry>
+	<entry key="cusLedgerBean.glCode.PatternValidator">${input} is not a valid Gl Code</entry>
+	
+	<!-- Server Side Validation messages -->
+	<entry key="gl.submit.success">GL code submitted successfully for Approval.</entry>
+	<entry key="gl.error">An error occured while adding the General Ledger details.</entry>
+	<entry key="error.gl.7006">GlCode already exists please provide valid GLCode.</entry>
+	<entry key="error.gl.7007">GL Descrption is already exists,please provide unique descprition.</entry>
+	<entry key="error.gl.7008">Parent GL code cannot be null.</entry>
+	<entry key="error.gl.7009">General Ledger description already exists duplication not allowed.</entry>
+	
+</properties>

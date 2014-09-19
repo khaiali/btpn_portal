@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+  <util:list id="alertsInterfaces">
+    <value>com.sybase365.mobiliser.util.alerts.services.api.ICustomerAlertManagementEndpoint</value>
+    <value>com.sybase365.mobiliser.util.alerts.services.api.IAlertTypeManagementEndpoint</value>
+  </util:list>
+
+  <util:list id="auditInterfaces">
+    <value>com.sybase365.mobiliser.money.services.api.INoteEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IAuditLogEndpoint</value>
+  </util:list>
+
+  <util:list id="customerInterfaces">
+    <value>com.sybase365.mobiliser.money.services.api.ICustomerEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IAddressEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IAttachmentEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ISecurityEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IIdentificationEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IIdentityEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IUmgrRolesPrivilegesEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ICommissionConfigurationEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ILimitEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IOtpEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ICustomerNetworksEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IFindRemittanceVoucherEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IAttributeEndpoint</value>
+  </util:list>
+
+  <util:list id="walletInterfaces">
+    <value>com.sybase365.mobiliser.money.services.api.IWalletEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IBalanceAlertEndpoint</value>
+  </util:list>
+
+  <util:list id="systemInterfaces">
+    <value>com.sybase365.mobiliser.money.services.api.ITransactionRestrictionEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IJobEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ILimitEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ISystemEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IFeeEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IBulkProcessingEndpoint</value>
+  </util:list>
+
+  <util:list id="transactionInterfaces">
+    <value>com.sybase365.mobiliser.money.services.api.IStartVoucherEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IConfirmVoucherEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ICommissionClearingEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IPreAuthorisationEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IPreAuthContinueEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IAuthorisationEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ICaptureCancelEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ITransactionEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IPrePickupMoneyEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ITransactionCancelEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IAuthorisationCancelEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ICaptureEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IWebStartEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IWebContinueEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IPayInvoiceEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ICheckPayInvoiceEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IContinuePayInvoiceEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.ICancelInvoiceEndpoint</value>
+    <value>com.sybase365.mobiliser.money.services.api.IDemandForPaymentEndpoint</value>
+  </util:list>
+
+  <util:list id="reportInterfaces">
+    <value>com.sybase365.mobiliser.util.report.service.api.IReportEndpoint</value>
+  </util:list>
+
+  <util:list id="messagingInterfaces">
+    <value>com.sybase365.mobiliser.util.messaging.service.api.IMessagingService</value>
+    <value>com.sybase365.mobiliser.util.messaging.service.api.ITemplateService</value>
+    <value>com.sybase365.mobiliser.util.messaging.service.api.IMessageLogService</value>
+  </util:list>
+
+  <util:list id="invoiceInterfaces">
+    <value>com.sybase365.mobiliser.money.services.api.IInvoiceEndpoint</value>
+  </util:list>
+
+  <util:list id="couponInterfaces">
+    <value>com.sybase365.mobiliser.money.coupon.service.api.ICouponsEndpoint</value>
+  </util:list>
+
+  <util:list id="prefsInterfaces">
+    <value>com.sybase365.mobiliser.util.prefs.service.api.IPreferencesEndpoint</value>
+  </util:list>
+
+  <util:list id="mBankingInterfaces">
+    <value>com.sybase365.mobiliser.mbanking.services.api.IServicePackageManagementEndpoint</value>
+    <value>com.sybase365.mobiliser.web.application.model.IMobiliserServiceClientLogic</value>
+    <value>com.sybase365.mobiliser.mbanking.services.api.INumberRestrictionsManagementEndpoint</value>
+    <value>com.sybase365.mobiliser.mbanking.services.api.IOptInManagementEndpoint</value>
+    <value>com.sybase365.mobiliser.mbanking.services.api.ICustomerEndpoint</value>
+  </util:list>
+</beans>

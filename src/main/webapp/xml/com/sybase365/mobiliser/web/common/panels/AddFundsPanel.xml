@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <!-- ############# Manage Accounts Page - Add Funds ############# -->
+    <entry key="addFunds.title">Add Funds to SVA</entry>
+    <entry key="addFunds.help">Please choose the account and enter the amount you would like to add to stored value account</entry>
+    <entry key="addFunds.amount">Amount</entry>
+    <entry key="amountString.AmountValidator">'${input}' is not a valid Amount</entry>
+    <entry key="addFunds.txnText">Message</entry>
+    <entry key="addFundsAccGroup">Account</entry>
+    <entry key="addFunds.bankAccount">Bank Account: </entry>
+    <entry key="addFunds.creditCard">Credit Card: </entry>
+
+    <entry key="addFundsConfirm.title">Confirm Transaction</entry>
+    <entry key="addFundsConfirm.help">Please review the amount you would like to add to stored value account</entry>
+    <entry key="addFundsConfirm.creditAmount">Credit Amount</entry>
+    <entry key="addFundsConfirm.feeAmount">Fee Amount</entry>
+    <entry key="addFundsConfirm.debitAmount">Debit Amount</entry>
+    <entry key="addFundsConfirm.txnText">Message</entry>
+    <entry key="addFundsConfirm.amountDebitedFrom">The amount will be debited from</entry>
+
+    <entry key="addFundsFinish.title">Transaction Complete</entry>
+    <entry key="addFundsFinish.success">You have successfully added funds to SVA!</entry>
+    <entry key="addFundsFinish.creditedAmount">The Amount of</entry>
+    <entry key="addFundsFinish.toSva"> was credited to SVA</entry>
+    <entry key="addFundsFinish.newBalance">The new Balance is</entry>
+    <entry key="addFundsFinish.debitedFrom">The amount was debited from</entry>
+    
+    <entry key="amountString.PatternValidator">'${input}' is not a valid Amount</entry>
+</properties>

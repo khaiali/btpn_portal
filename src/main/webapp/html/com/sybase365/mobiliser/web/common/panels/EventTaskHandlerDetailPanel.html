@@ -1,0 +1,117 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+<form wicket:id="eventHandlerForm">
+
+	<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+	<div class="cmodule clear">
+		
+		<h2 class="section system" >
+			<wicket:message key="handler.detail.configuration"/>
+		</h2>
+						
+		<div class="column"  >
+			<div class="input" style="padding-left:5px;">
+				<label><wicket:message key=handler.detail.handlerName" /></label>
+				<div class="text" wicket:id="handlerName"></div>
+			</div>
+			
+			<div class="column twoColumn">				
+				<div class="input" >
+					<label><wicket:message key=handler.detail.statusDescription" /></label>
+					<div class="text" wicket:id="statusDescription"></div>
+				</div>
+				<div class="input" >
+					<label><wicket:message key=handler.detail.eventName" /></label>
+					<div class="text" wicket:id="eventName"></div>
+				</div>
+				<div class="input" >
+					<label><wicket:message key=handler.detail.currentActiveThreads" /></label>
+					<div class="text" wicket:id="currentActiveThreads"></div>
+				</div>
+			</div>
+			<div class="column twoColumn">
+				
+				<div class="input" >
+					<label><wicket:message key=handler.detail.currentIdleThreads" /></label>
+					<div class="text" wicket:id="currentIdleThreads"></div>
+				</div>		
+				<div class="input" >
+					<label><wicket:message key=handler.detail.configuredMaxActiveThreads" /></label>
+					<div class="text" wicket:id="configuredMaxActiveThreads"></div>
+				</div>	
+				<div class="input" >
+					<label><wicket:message key=handler.detail.configuredMaxIdleThreads" /></label>
+					<div class="text" wicket:id="configuredMaxIdleThreads"></div>
+				</div>	
+			</div>				
+		
+		</div>
+		
+		<div class="spacer"></div>
+		
+		<h2 class="section system">
+		<wicket:message key="handler.detail.runStatistics"/>
+		</h2>
+	
+		<div class="column">
+			<div class="column twoColumn">	
+				<div class="input" >
+					<label><wicket:message key=handler.detail.noRuns" /></label>
+					<div class="text" wicket:id="noRuns"></div>
+				</div>
+				<div class="input" >
+					<label><wicket:message key=handler.detail.lastRun" /></label>
+					<div class="text" wicket:id="lastRun"></div>
+				</div>
+				<div class="input" >
+					<label><wicket:message key=handler.detail.noProcessed" /></label>
+					<div class="text" wicket:id="noProcessed"></div>
+				</div>
+				<div class="input" >
+					<label><wicket:message key=handler.detail.avgProcessTime" /></label>
+					<div class="text" wicket:id="avgProcessTime"></div>
+				</div>
+				<div class="input" >
+					<label><wicket:message key=handler.detail.noSuccess" /></label>
+					<div class="text" wicket:id="noSuccess"></div>
+				</div>	
+			</div>
+			<div class="column twoColumn">		
+				<div class="input" >
+					<label><wicket:message key=handler.detail.noFail" /></label>
+					<div class="text" wicket:id="noFail"></div>
+				</div>	
+				<div class="input" >
+					<label><wicket:message key=handler.detail.lastFail" /></label>
+					<div class="text" wicket:id="lastFail"></div>
+				</div>	
+				<div class="input" >
+					<label><wicket:message key=handler.detail.noExpire" /></label>
+					<div class="text" wicket:id="noExpire"></div>
+				</div>	
+				<div class="input" >
+					<label><wicket:message key=handler.detail.noCatchup" /></label>
+					<div class="text" wicket:id="noCatchup"></div>
+				</div>	
+			</div>				
+		</div>
+		
+		
+		<div class="column">
+			
+				<div class="formAction">					
+					<input class="submitForm" type="submit" wicket:message="value:handler.detail.back" wicket:id="back" name="back"> 						
+				</div>
+				
+			</div>
+	</div>					
+</form>
+
+</wicket:panel>
+
+</body>
+</html>

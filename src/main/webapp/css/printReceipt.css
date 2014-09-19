@@ -1,0 +1,38 @@
+#container{
+	display:none;
+}
+
+html{
+	text-align: center;
+}
+
+body{
+	display:inline;
+}
+
+.print{
+	display:block;
+	font-size: 15pt;
+}
+
+.print h1{
+	font-size: 20pt;
+	margin-bottom: 25px;
+}
+
+.print div.input{
+}
+
+.print div.input label{
+	clear: both;
+	float: left;
+	text-align: left;
+	display: block;
+	font-weight: bold;
+	border-bottom: 1px dotted black;
+	width: 155px;
+}
+
+.print div.input div.text{
+	float: left;
+}

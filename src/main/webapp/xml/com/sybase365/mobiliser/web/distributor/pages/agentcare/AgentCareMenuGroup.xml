@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <!-- ################### Left Menu Entries ##################### -->
+    <entry key="menu.edit.agent">Edit Agent</entry>
+    <entry key="menu.edit.rolesPrivilege.agent">Edit Privileges</entry>
+    <entry key="menu.agent.commissionManagement">Commission Management</entry>
+    <entry key="menu.agent.transferMoney">Transfer Money</entry>
+
+    <!-- ################# Transfer Money ############### -->
+    <entry key="transfer.title">Please enter the amount of the Transfer</entry>
+    <entry key="payeeBalance">Receiver Balance</entry>
+    <entry key="amountString">Amount</entry>
+    <entry key="amountString.AmountValidator">'${input}' is not a valid Amount</entry>
+
+    <!-- ################# Transfer Confirm ############### -->
+    <entry key="transferConfirm.title">Please review the Transfer transaction</entry>
+    <entry key="recipient">Recipient ID</entry>
+    <entry key="transferConfirm.button.back">Back</entry>
+    <entry key="orderId">Order ID</entry>
+    <entry key="creditAmount">Credit Amount</entry>
+    <entry key="feeAmount">Fee Amount</entry>
+    <entry key="debitAmount">Debit Amount</entry>
+
+    <entry key="transferFinish.success">The Transfer was successful</entry>
+    <entry key="debitAmount">Amount</entry>
+    <entry key="transferFinish.recipient">was credited to</entry>
+    <entry key="transferFinish.txnId">Transaction ID</entry>
+    <entry key="transferFinish.authCode">Auth Code</entry>
+    <entry key="transferFinish.button.printReceipt">Print Receipt</entry>
+
+
+    <!-- ################# Comission Management ############### -->
+    <entry key="comissionManagement.title">Commission Management</entry>
+    <entry key="agentSvaBalance">SVA Balance</entry>
+    <entry key="commissionConfiguration.percentage">Commission Share</entry>
+    <entry key="commissionConfiguration.percentageSelf">Commission Share own Transaction</entry>
+    <entry key="commissionConfiguration.piId">Settlement Instrument</entry>
+    <entry key="commissionConfiguration.clearingFrequency">Settlement Frequency</entry>
+    <entry key="openCommissionAmount">Open Commission Amount</entry>
+    <entry key="commissionConfiguration.lastSettlement">Last Commission Settlement</entry>
+    <entry key="comissionManagement.button.settleNow">Settle Now</entry>
+    <entry key="comissionManagement.settlementInstrumen.select">Select</entry>
+    <entry key="commissionConfiguration.percentageSelf.IConverter.BigDecimal">'${input}' is not a valid Commission Share own Transaction</entry>
+    <entry key="commissionConfiguration.percentage.IConverter.BigDecimal">'${input}' is not a valid Commission Share</entry>
+
+    <!-- ################# ERROR MESSAGE ############### -->
+    
+    <entry key="ERROR.LOAD_PAYEE_BALANCE.NO_SVA">No SVA was found for the currently selected user.</entry>
+    <entry key="ERROR.LOAD_PAYEE_BALANCE">An internal error occurred while loading the
+    reveiver's balance.</entry>
+    <entry key="ERROR.ACTIVATE_AGENT">An internal error occurred while activating agent.
+    Please try again later.</entry>
+    <entry key="ERROR.DELETE_AGENT">An internal error occurred while deleting agent.
+    Please try again later.</entry>
+    <entry key="ERROR.CHANGE_AGENT_SETTINGS">An internal error occurred while changing the agent
+    settings. Please try again later.</entry>
+    <entry key="ERROR.AGENT_ADD_BALANCE_ALERTS_FAILURE">An internal error occurred while saving balance alert
+    data. Please try again later.</entry>
+    <entry key="ERROR.AGENT_DELETE_BALANCE_ALERTS_FAILURE">An internal error occurred while deleting balance
+    alert data. Please try again later.</entry>
+    <entry key="ERROR.EDIT_AGENT_BLACKLIST_REASON_FAILURE">An internal error occurred while updating Blacklist
+    Reason. Please try again later.</entry>
+    <entry key="ERROR.EDIT_AGENT_PERSONALDATA_FAILURE">An internal error occurred while updating Personal
+    Data. Please try again later.</entry>
+    <entry key="ERROR.SETTLE_COMMISSION">An internal error occurred while commission
+    settlement. Please try again later.</entry>
+    <entry key="ERROR.MISSING_CREATE_PRIV">You are not allowed to create this user.</entry>
+    <entry key="ERROR.MISSING_MAINTAIN_PRIV">You are not allowed to maintain this user.</entry>
+    <entry key="ERROR.MISSING_TRANSFER_MONEY_PRIV">You are not allowed to transfer money.</entry>
+
+    <!-- ################# SUCCESS MESSAGE ############### -->
+    <entry key="MESSAGE.COMISSION_MANAGEMENT_DATA_SAVED">The Commission Management data saved successfully.</entry>
+    <entry key="MESSAGE.EDIT_AGENT_PERSONALDATA_UPDATED">The agent has been updated successfully.</entry>
+    <entry key="MESSAGE.EDIT_AGENT_BALANCE_ALERTS_UPDATED">The balance alert data updated successfully.</entry>
+    <entry key="MESSAGE.EDIT_AGENT_BALANCE_ALERTS_SAVED">The balance alert data saved successfully.</entry>
+    <entry key="MESSAGE.EDIT_AGENT_BALANCE_ALERTS_REMOVED">The balance alerts data removed successfully.</entry>
+    <entry key="MESSAGE.EDIT_AGENT_PASSWORD_UPDATED">The new password updated successfully.</entry>
+    <entry key="MESSAGE.EDIT_AGENTSETTING_UPDATED">The agent setting data updated successfully.</entry>
+    <entry key="MESSAGE.AGENT_ACTIVATED">The agent has been activated successfully.</entry>
+    <entry key="MESSAGE.AGENT_DELETED">The agent has been deleted successfully.</entry>
+    <entry key="MESSAGE.EDIT_AGENT_BLACKLIST_REASON_UPDATED">The Blacklist Reason updated successfully.</entry>
+    <entry key="MESSAGE.COMMISSION_SETTLEMENT_SUCCESS">The Commission Settlement completed successfully.</entry>
+    
+    <!-- ##################################Agent Edit################################### -->
+    <entry key="balanceAlert.threshold">Threshold</entry>
+	<entry key="balanceAlert.emails">Email Addresses</entry>
+	<entry key="balanceAlert.msisdns">MSISDNs</entry>
+	<entry key="balanceAlert.onlyTransition">Only Transition</entry>
+	<entry key="balanceAlert.onlyTransition.true">yes</entry>
+	<entry key="balanceAlert.onlyTransition.false">no</entry>
+	<entry key="balanceAlert.templateName">Template Name</entry>
+	<entry key="balanceAlert.language">Language</entry>
+	<entry key="balanceAlert.country">Country</entry>
+    <entry key="agentEdit.timeZone">Time Zone</entry>
+    <entry key="balanceAlert.remove.confirm">Are you sure you want to remove this balance alert?</entry>
+	<entry key="agentEdit.persdata">Personal Data</entry>
+	<entry key="agentEdit.address.firstName">First Name</entry>
+	<entry key="agentEdit.address.lastName">Last Name</entry>
+	<entry key="agentEdit.address.company">Company</entry>
+	<entry key="agentEdit.address.position">Position</entry>
+	<entry key="agentEdit.address.email">E-Mail Address</entry>
+	<entry key="agentEdit.agentSettings">Agent Settings</entry>
+	<entry key="agentEdit.role">Role ID</entry>
+	<entry key="agentEdit.limitClass.dailyCreditLimitAmount">Daily Credit Limit</entry>
+	<entry key="agentEdit.limitClass.weeklyCreditLimitAmount">Weekly Credit Limit</entry>
+	<entry key="agentEdit.limitClass.monthlyCreditLimitAmount">Monthly Credit Limit</entry>
+	<entry key="agentEdit.limitClass.absoluteCreditLimitAmount">Absolute Credit Limit</entry>
+	<entry key="agentEdit.limitClass.dailyDebitLimitAmount">Daily Debit Limit</entry>
+	<entry key="agentEdit.limitClass.weeklyDebitLimitAmount">Weekly Debit Limit</entry>
+	<entry key="agentEdit.limitClass.monthlyDebitLimitAmount">Monthly Debit Limit</entry>
+	<entry key="agentEdit.limitClass.absoluteDebitLimitAmount">Absolute Debit Limit</entry>
+	<entry key="agentEdit.balanceAlertData">Balance Alert Configuration</entry>
+	<entry key="agentEdit.balanceAlertTable.th.threshold">Threshold</entry>
+	<entry key="agentEdit.balanceAlertTable.th.emails">Email Addresses</entry>
+	<entry key="agentEdit.balanceAlertTable.th.msisdns">MSISDNs</entry>
+	<entry key="agentEdit.balanceAlertTable.th.onlyTransition">Only Transition</entry>
+	<entry key="agentEdit.balanceAlertTable.th.templateName">Template Name</entry>
+	<entry key="agentEdit.balanceAlertTable.th.language">Language</entry>
+	<entry key="agentEdit.balanceAlertTable.th.country">Country</entry>
+	<entry key="agentEdit.balance.alert.editAction">Edit</entry>
+	<entry key="agentEdit.balance.alert.removeAction">Remove</entry>
+	<entry key="agentEdit.balanceAlertTable.link.add">Add a Balance Alert</entry>
+	<entry key="agentEdit.balanceAlert.threshold">Threshold</entry>
+	<entry key="agentEdit.balanceAlert.emails">Email Addresses</entry>
+	<entry key="agentEdit.balanceAlert.msisdns">MSISDNs</entry>
+	<entry key="agentEdit.balanceAlert.onlyTransition">Only Transition</entry>
+	<entry key="agentEdit.balanceAlert.onlyTransition.true">yes</entry>
+	<entry key="agentEdit.balanceAlert.onlyTransition.false">no</entry>
+	<entry key="agentEdit.balanceAlert.templateName">Template Name</entry>
+	<entry key="agentEdit.balanceAlert.language">Language</entry>
+	<entry key="agentEdit.balanceAlert.country">Country</entry>
+	<entry key="agentEdit.logindata">Login Data</entry>
+	<entry key="agentEdit.userName">Username</entry>
+	<entry key="agentEdit.password">Password</entry>
+	<entry key="agentEdit.confirmPassword">Re-enter Password</entry>
+	<entry key="agentEdit.button.deleteAgent">Delete</entry>
+	<entry key="agentEdit.button.activateAgent">Activate</entry>
+	<entry key="customerBean.blackListReason.null">Select</entry>
+	<entry key="agentEdit.blackListReason">Blocked Status</entry>
+	<entry key="agentEdit.button.changeCredentials">Change</entry>
+    <entry key="balanceAlert.templateName.PatternValidator">'${input}' is not a valid Template Name</entry>
+    <entry key="customer.address.company.PatternValidator">'${input}' is not a valid Company</entry>
+    <entry key="customer.address.position.PatternValidator">'${input}' is not a valid Position</entry>
+    
+    
+  
+    <entry key="agentEdit.title">Edit Agent</entry>
+    <entry key="umgrHandling.titile">Edit Privileges</entry>
+    <entry key="commissionManagement.titile">Commission Management</entry>
+     <entry key="comissionManagement.subtitle">Please enter commission details</entry>
+    <entry key="transferMoney.title">Transfer Money</entry>
+    <entry key="transferReview.title">Review Transaction</entry>
+    <entry key="transferSuccess.title">Transfer Success</entry>
+    <entry key="agentHierarchy.title">Agent Hierarchy</entry>
+    
+    <entry key="balanceAlert.threshold.Required">Threshold is required</entry>
+    <entry key="balanceAlert.templateName.Required">Template Name is required</entry>
+    <entry key="balanceAlert.threshold.IConverter.long">'${input}' is not a valid Threshold</entry>
+    <entry key="balanceAlert.msisdns.PatternValidator">'${input}' is not a valid MSISDN</entry>
+    
+</properties>

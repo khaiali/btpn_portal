@@ -1,0 +1,49 @@
+<html>
+<wicket:head>
+	<link href="css/sybase.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/common.css" media="all" rel="stylesheet" type="text/css" />
+	<title>Terms and Conditions</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript">
+		function ack(elem) {
+		var agree = parent.document.getElementsByName('signUpDiv:group')[0];
+		var disagree = parent.document.getElementsByName('signUpDiv:group')[1];
+		var term= !elem.checked;
+		agree.disabled = !elem.checked;
+		disagree.disabled = !elem.checked;
+		}
+	</script>
+</wicket:head>
+<body style="padding: 5px;">
+
+	<div style="text-align: left;">
+
+		<p>
+		In English: ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+		dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+		lobortis nisl ut aliquip ex ea commodo consequat.<br/>
+		</p>
+
+		<p>
+		Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat, duis autem vel eum iriure
+		dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+		et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+		facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br/>
+		</p>
+
+		<p>
+		Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+		nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+		dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+		quod mazim placerat facer possim assum.<br/><br/>
+		</p>
+
+		<div style="color:#00234C; font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:8pt; line-height:13pt; list-style-type:decimal;margin-right:20px; font-style: italic">
+			<input type="checkbox" id="ack" onclick="ack(this)" />
+			By checking this box, you acknowledge reading the terms and conditions.
+		</div>
+
+	</div>
+
+</body>
+</html>

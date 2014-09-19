@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<!-- ############# BTPN ############# -->
+	<entry key="header.editProduct"> Edit Product </entry>
+	<entry key="header.addProduct"> Add Product </entry>
+	<entry key="label.productId"> Product Id </entry>
+	<entry key="label.productName"> Product Name </entry>
+	<entry key="label.productType"> Product Type </entry>
+	<entry key="label.productGLCode"> Product GL Code </entry>
+	<entry key="label.feeGLCode"> Fee GL Code </entry>
+	<entry key="label.minBal"> Min. Balance </entry>
+	<entry key="label.initialDep"> Initial Deposit </entry>
+	<entry key="label.adminFee"> Admin Fee </entry>
+	<entry key="label.minRange">Min Range</entry>
+	<entry key="label.maxRange">Max Range</entry>
+	<entry key="label.interests">Interests</entry>
+	<entry key="label.fixedInterest">Fixed Interest</entry>
+	<entry key="label.percentInterest">Percent Interest</entry>
+	<entry key="label.value">Value:</entry>
+	<entry key="label.roleId">Role Name</entry>
+	<entry key="label.roleDescription">Role Description</entry>
+	<entry key="Add">Add</entry>
+	<entry key="Edit">Edit</entry>
+	<entry key="Remove">Remove</entry>
+	<entry key="Cancel">Cancel</entry>
+	<entry key="edit.success">Product submitted successfully for approval.</entry>
+	<entry key="removed.success">Product removed successfully for approval.</entry>
+
+	<!-- Client side Validations -->
+	<entry key="productsBean.productName.Required">Product Name is a required field.</entry>
+	<entry key="productsBean.productType.Required">Product Type is a required field.</entry>
+	<entry key="productsBean.productGLCode.Required">Product GL code is a required field.</entry>
+	<entry key="productsBean.feeGLCode.Required">Fee GL code is a required field.</entry>
+	<entry key="productsBean.minBalance.Required">Min. Balance is a required field.</entry>
+	<entry key="productsBean.initialDeposit.Required">Initial Deposit is a required field.</entry>
+	<entry key="productsBean.roleName.Required">Role Name is a required field.</entry>
+	<entry key="productsBean.roleDescription.Required">Role Description is a required field.</entry>
+	<entry key="productsBean.adminFee.Required">Admin Fee is a required field.</entry>
+	<entry key="minRange.Required">Minimum Range is a required field.</entry>
+	<entry key="interest.Required">Please select Interest Type.</entry>
+	<entry key="value.Required">Interest Value is required.</entry>
+
+
+	<!-- Pattern Validators -->
+	<entry key="productsBean.minBalance.AmountValidator">${input} is not a valid Min Balance.</entry>
+	<entry key="productsBean.initialDeposit.AmountValidator">${input} is not a valid Initial Balance.</entry>
+	<entry key="productsBean.adminFee.AmountValidator">${input} is not a valid Admin Fee.</entry>
+	<entry key="minRange.AmountValidator">${input} Minimum Range is not valid.</entry>
+	<entry key="maxRange.AmountValidator">${input} Maximum Range is not valid.</entry>
+
+	<!-- Pattern Validators -->
+	<entry key="productsBean.minBalance.IConverter.Long">${input} is not a valid Min Balance.</entry>
+	<entry key="productsBean.initialDeposit.IConverter.Long">${input} is not a valid Initial Balance.</entry>
+	<entry key="productsBean.adminFee.IConverter.Long">${input} is not a valid Admin Fee.</entry>
+	<entry key="minRange.IConverter.Long">${input} Minimum Range is not valid.</entry>
+	<entry key="maxRange.IConverter.Long">${input} Maximum Range is not valid.</entry>
+
+	<entry key="value.FixedInterest.PatternValidator">${input} Interest Value not valid.</entry>
+	<entry key="value.PercentInterest.PatternValidator">${input} Interest Value not valid.</entry>
+
+	<!-- Other validations -->
+	<entry key="value.PercentInterest.InterestLimit">${input} Interest Value cannot be more than 100 %.</entry>
+
+	<entry key="error.update.products">An error occured while updating the products.</entry>
+
+	<entry key="error.remove.products.10028">Product Id used by the customer/consumer</entry>
+	<entry key="error.remove.products">An error occured while removing the products.</entry>
+
+	<entry key="error.10013">Product name already exists.</entry>
+	<entry key="error.10043">Role Name already exists.</entry>
+	<entry key="error.10040">Role description already exists.</entry>
+
+</properties>

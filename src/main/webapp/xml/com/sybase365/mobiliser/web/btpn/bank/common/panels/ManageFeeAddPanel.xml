@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.fee.management">Fee Management</entry>
+	<entry key="label.usecase"> Use Case </entry>
+	<entry key="label.apply.to.payee"> Apply to Payee</entry>
+	<entry key="label.fixed">Fixed</entry>
+	<entry key="label.slab">Slab</entry>
+	<entry key="label.sharing">Sharing</entry>
+	<entry key="label.productId"> Product ID </entry>
+	<entry key="label.slabFee">Slab Fee</entry>
+	<entry key="label.feeName"> Fee Name </entry>
+	<entry key="label.glCode"> GL Code </entry>
+	<entry key="Add">Add</entry>
+	
+	<!-- Required Validations -->
+	<entry key="feeBean.useCaseName.Required">Feeuse Case Id is a required field</entry>
+	<entry key="feeDetailsBean.feeName.Required">Fee Name is required.</entry>
+	<entry key="feeDetailsBean.glCode.Required">GL Code is required.</entry>
+	
+</properties>

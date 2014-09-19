@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<!-- ##### Transaction Details Page ######## -->
+
+	<entry key="txnDetails.button.cancelTransactions">Cancel Transaction</entry>
+    <entry key="txnDetails.button.captureTransactions">Capture Transaction</entry>
+    <entry key="txnDetails.button.approveTransactions">Approve Transaction</entry>
+    <entry key="txnDetails.button.rejectTransactions">Reject Transaction</entry>    
+	<entry key="txnDetails.masterTxn.title">Master Transaction</entry>
+	<entry key="txnDetails.masterTxn.txnId">TXN ID</entry>
+	<entry key="txnDetails.masterTxn.amount">Amount</entry>
+	<entry key="txnDetails.masterTxn.txnType">TXN Type</entry>
+	<entry key="txnDetails.masterTxn.useCase">Use Case</entry>
+	
+	<entry key="txnDetails.masterTxn.authCode">Auth Code</entry>
+	<entry key="txnDetails.masterTxn.agent">Agent</entry>
+	<entry key="txnDetails.masterTxn.txnText">Text</entry>
+	<entry key="txnDetails.masterTxn.date">Date</entry>
+	<entry key="txnDetails.masterTxn.payer">Payer</entry>
+	<entry key="txnDetails.masterTxn.payee">Payee</entry>
+	<entry key="txnDetails.masterTxn.txnStatus">TXN Status</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.0">Initial</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.10">Authenticated</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.15">Authenticated and OTP Acknowledged</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.2">Pre-Authorized</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.20">Authorized</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.21">Refill</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.22">Waiting for Manual decision</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.30">Captured</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.31">Backstopped</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.40">Delivered</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.5">OTP Acknowledged</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.50">Acknowledged</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.60">Authorization Cancel</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.70">Capture Cancel</entry>
+	<entry key="txnDetails.masterTxn.txnStatus.99">Fully processed</entry>
+	<entry key="txnDetails.masterTxn.orderId">Order ID</entry>
+	<entry key="txnDetails.masterTxn.error">Error</entry>
+	<entry key="txnDetails.masterTxn.cancelled">Cancelled</entry>
+	<entry key="txnDetails.masterTxn.payer">Payer</entry>
+	<entry key="txnDetails.masterTxn.cancelled.true">Yes</entry>
+	<entry key="txnDetails.masterTxn.cancelled.false">No</entry>
+	<entry key="txnDetails.subTxn.txnId">TXN ID</entry>
+	<entry key="txnDetails.subTxn.txnType">TXN Type</entry>
+	<entry key="txnDetails.subTxn.txnStatus">Status</entry>
+	<entry key="txnDetails.subTxn.date">Date</entry>
+	<entry key="txnDetails.subTxn.amount">Amount</entry>
+	<entry key="txnDetails.subTxn.feePayer">Fee Payer</entry>
+	<entry key="txnDetails.subTxn.feePayee">Fee Payee</entry>
+	<entry key="txnDetails.subTxn.vatPayer">Vat Payer</entry>
+	<entry key="txnDetails.subTxn.vatPayee">Vat Payee</entry>
+	<entry key="txnDetails.subTxn.errorCode">Error</entry>
+	<entry key="txnDetails.subTxn.title">Sub-Transactions</entry>
+	<entry key="ERROR.CANCEL_TXN_NOT_ALLOWED">You are not allowed to cancel this transaction at this time</entry>
+	<entry key="MESSAGE.CANCEL_SUCCESS">The transaction has been canceled successfully</entry>
+    <entry key="cancel.transaction.error">An error occurred while canceling the transaction</entry>
+    <entry key="MESSAGE.CAPTURE_SUCCESS">The transaction has been captured successfully</entry>
+    <entry key="capture.transaction.error">An error occurred while calling capture transaction</entry>
+    <entry key="txn.approve.error">An error occurred while approving the transaction</entry>
+    <entry key="txn.reject.error">An error occurred while rejecting the transaction</entry>
+    <entry key="txn.approved.successfull">The transaction has been approved successfully</entry>
+    <entry key="txn.rejected.successfull">The transaction has been rejected successfully</entry>
+    <entry key="taskId.fetch.error">An error occurred while fetching task id of pending tranaction</entry>    
+    
+</properties>

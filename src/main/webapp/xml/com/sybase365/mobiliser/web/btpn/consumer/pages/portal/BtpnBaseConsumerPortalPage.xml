@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.login.info">Halo %s, Anda login di btpn WOW!</entry>
+	<entry key="login.page.title">btpn WOW! Portal - BTPN System</entry>
+	<entry key="header.sva.balance">SVA Balance: IDR %s</entry>
+	<entry key="header.logout.label">Keluar</entry>
+	<entry key="application.name">BTPN Consumer Portal</entry>
+	<entry key="foooter.copyright">Copyright</entry>
+	<entry key="foooter.bank.name">PT Bank Tabungan Pensiunan Nasional Tbk. All Rights Reserved.</entry>
+	<entry key="session.timeout.counter.label">Batas waktu akses: </entry>
+	<entry key="session.timeout.counter.minutes.label"> Menit</entry>
+	<entry key="session.timeout.label">Batas waktu akses Anda sudah habis.</entry>
+</properties>

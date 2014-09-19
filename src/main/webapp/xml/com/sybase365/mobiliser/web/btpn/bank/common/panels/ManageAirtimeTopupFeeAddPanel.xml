@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.fixedFee">Fixed Fee</entry>
+	<entry key="label.percentageFee">Percentage Fee</entry>
+	<entry key="label.airtimeTopupFee"> Add AirtimeTopup Fee </entry>
+	<entry key="label.airtimeTopupFee.edit"> Edit AirtimeTopup Fee </entry>
+	<entry key="label.operator.select"> Select Operator </entry>
+	<entry key="label.operator"> Operator </entry>
+	<entry key="label.denomination"> Denomination </entry>
+	<entry key="label.productId"> Product ID </entry>
+	<entry key="label.edit.fee"> Edit Fee </entry>
+	<entry key="label.productDesc">Product Desc</entry>
+	<entry key="label.transactionAmount"> Transaction Amount </entry>
+	<entry key="label.feeName"> Fee Name </entry>
+	<entry key="label.glCode"> GL Code </entry>
+	<entry key="label.amount"> Amount </entry>
+	<entry key="label.fixed"> Fixed</entry>
+	<entry key="label.percentage"> Percentage</entry>
+	<entry key="fees.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="Add">Add</entry>
+	<entry key="Submit">Submit</entry>
+	<entry key="Create">Create Fee</entry>
+	<entry key="Cancel">Cancel</entry>
+
+	<entry key="no.items">Nothing found to display.</entry>
+
+	<entry key="feeBean.telco.Required">Telco is required.</entry>
+	<entry key="feeBean.denomination.Required">Denomination is required.</entry>
+
+	<!-- Required Field validations -->
+	<entry key="feeDetailsBean.feeName.Required">Fee Name is required.</entry>
+	<entry key="feeDetailsBean.glCode.Required">GL Code is required.</entry>
+	<entry key="feeDetailsBean.amount.Required">Fee Amount is required.</entry>
+	<entry key="feeBean.transactionAmount.Required">Transaction Amount is required.</entry>
+	<entry key="feeBean.transactionAmount.IConverter.Long">${input} Transaction Amount is invalid.</entry>
+	<entry key="feeBean.transactionAmount.AmountValidator">${input} Transaction Amount is invalid.</entry>
+	<entry key="feeDetailsBean.amount.PatternValidator">${input} Fee Amount is invalid.</entry>
+
+	<entry key="feeDetailsBean.amount.FixedInterest.PatternValidator">${input} Fee Amount is invalid.</entry>
+	<entry key="feeDetailsBean.amount.PercentInterest.PatternValidator">${input} Fee Amount is invalid.</entry>
+
+	<!-- Other validations -->
+	<entry key="feeDetailsBean.amount.PercentInterest.InterestLimit">${input} Fee Amount cannot be more than 100 %.</entry>
+
+	<entry key="fee.required">At lease one fee component is required.</entry>
+
+	<entry key="error.update.fees">An error occured while updating the fees.</entry>
+	<entry key="update.success">Fee update request submitted successfully for
+		approval.</entry>
+
+	<entry key="error.delete.fees">An error occured while deleting the fees.</entry>
+	<entry key="delete.success">Fee delete request submitted successfully for
+		approval.</entry>
+
+</properties>

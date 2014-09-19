@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="headline.registration.bankAdmin.legend.label">Bank Admin Registration Confirmation</entry>
+	<entry key="headline.registration.bankStaff.legend.label">Bank User Registration Confirmation</entry>
+	
+	<entry key="registration.customerType.label">Register User as</entry>
+	<entry key="registration.userId.label">UserId</entry>
+	<entry key="registration.name.label">Name</entry>
+    <entry key="registration.email.label">E-Mail</entry>
+	<entry key="registration.designation.label">Designation</entry>
+	<entry key="registration.language.label">Language</entry>
+	<entry key="registration.glCode.label">GL Code</entry>
+    <entry key="registration.territoryCode.label">Territory Code</entry>
+    <entry key="registration.orgUnit.label">Org Unit</entry>
+	
+	<!-- All the back end validation messages success/failure -->
+	<entry key="bank.registration.success.message">Thank You. Bank User %s was Registered Successfully</entry>
+	<entry key="bank.registration.error.7107">Username not found in LDAP system.</entry>
+	<entry key="bank.registration.error.7004">User Id already exist</entry>	
+	<entry key="bank.registration.failure.message">Registration Failed</entry>
+	<entry key="bank.registration.failure.exception">We are experiencing technical difficulties. Please try again later.</entry>
+</properties>

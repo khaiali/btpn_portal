@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<!-- ############# General Application ############# -->
+	<entry key="consumer.portal.head.title">Mobiliser Consumer Portal</entry>
+	<entry key="consumer.portal.page.title">Consumer Portal</entry>
+
+	<!-- ############# Left Menu Actions ############# -->
+	<entry key="consumer.portal.leftmenu.home">Home</entry>
+	<entry key="consumer.portal.leftmenu.viewtransaction">View Transactions</entry>
+	<entry key="consumer.portal.leftmenu.manageaccounts">Manage My Accounts</entry>
+	<entry key="consumer.portal.leftmenu.sendmoney">Send Money</entry>
+	<entry key="consumer.portal.leftmenu.sendmoneybank">Send Money to Bank</entry>
+	<entry key="consumer.portal.leftmenu.requestmoney">Request Money</entry>
+	<entry key="consumer.portal.leftmenu.airtimetopup">Airtime Topup</entry>
+	<entry key="consumer.portal.leftmenu.friendslist">Friends List</entry>
+	<entry key="consumer.portal.leftmenu.banklist">External Account List</entry>
+	<entry key="consumer.portal.leftmenu.billconfiguration">Bill Configuration</entry>
+	<entry key="consumer.portal.leftmenu.openbills">Open Bills</entry>
+	<entry key="consumer.portal.leftmenu.paybill">Pay Bill</entry>
+	<entry key="consumer.portal.leftmenu.billhistory">Bill History</entry>
+	<entry key="consumer.portal.leftmenu.changepassword">Change Password</entry>
+	<entry key="consumer.portal.leftmenu.changesecquestion">Change Security Q&amp;A</entry>
+	<entry key="consumer.portal.leftmenu.changepin">Change PIN</entry>
+	<entry key="consumer.portal.leftmenu.changeaddress">Change Address</entry>
+	<entry key="consumer.portal.leftmenu.changepreferences">Change Preferences</entry>
+	<entry key="consumer.portal.leftmenu.showhistory">Show History</entry>
+	<entry key="consumer.portal.leftmenu.contactpoints">Contact Points</entry>
+	<entry key="consumer.portal.leftmenu.mobilealerts">Mobile Alerts</entry>
+
+	<!-- ############# Home Page ############# -->
+	<entry key="consumer.portal.home.title">Welcome To Your Mobiliser Portal!</entry>
+	<entry key="consumer.portal.home.help">This portal provides you functions for managing your Mobiliser account</entry>
+	<entry key="consumer.portal.home.wallet.text">Wallet management with multiple sources of funds - for example; Bank Accounts, Credit Cards and Stored Value Accounts</entry>
+	<entry key="consumer.portal.home.bank.text">Self-service access to information related to your wallet such as account balances, transaction history, account and card management</entry>
+	<entry key="consumer.portal.home.payments.text">Bill payments, Remittance to a merchant's account or to an agent, loan repayments and airtime topup</entry>
+	<entry key="consumer.portal.home.friends.text">Manage a Friends-and-Family list and your own personal information, security and preferences</entry>
+
+	<!-- ############# View Transaction Page ############# -->
+	<entry key="transactionHistory.title">View Transactions</entry>
+	<entry key="transactionHistory.filterType">Show Transactions By</entry>
+	<entry key="transactionHistory.filterType.month">Month</entry>
+	<entry key="transactionHistory.month">Month</entry>
+	<entry key="transactionHistory.month.select">Select</entry>
+	<entry key="transactionHistory.filterType.date">Date Range</entry>
+	<entry key="transactionHistory.fromDate">From</entry>
+	<entry key="transactionHistory.toDate">To</entry>
+	<entry key="transactionHistory.table.date">Date</entry>
+	<entry key="transactionHistory.table.useCase">Type</entry>
+	<entry key="transactionHistory.table.errorCode">Error</entry>
+	<entry key="transactionHistory.table.authCode">Ref</entry>
+	<entry key="transactionHistory.table.displayName">Participant</entry>
+	<entry key="transactionHistory.table.text">Details</entry>
+	<entry key="transactionHistory.table.amount">Amount</entry>
+	<entry key="transactionHistory.table.actions">Actions</entry>
+	<entry key="transactionHistory.table.detailsAction">Details</entry>
+
+	<entry key="transactionHistory.maxNumberFetched">Not all transactions of the chosen time frame will be shown. Please rarefy your input.</entry>
+	<entry key="transactionHistory.noItemsMsg">No transactions available to display.</entry>
+	<entry key="transactionHistory.search.help">Use the options above to specify search date criteria</entry>
+
+	<!-- ############# Transaction Details Popup ############# -->
+	<entry key="txnDetails.title">Transaction Details</entry>
+	<entry key="txnDetails.date">Date</entry>
+	<entry key="txnDetails.time">Time</entry>
+	<entry key="txnDetails.useCase">Type</entry>
+	<entry key="txnDetails.errorCode">Error</entry>
+	<entry key="txnDetails.displayName">Participant</entry>
+	<entry key="txnDetails.authCode">Ref</entry>
+	<entry key="txnDetails.text">Text</entry>
+	<entry key="txnDetails.amountF">Amount</entry>
+	<entry key="txnDetails.fee">Fee</entry>
+
+	<!-- ############# Manage My Accounts Page ############# -->
+	<entry key="manageAccounts.title">Manage My Accounts</entry>
+	<entry key="walletEntry.alias">Nickname</entry>
+	<entry key="walletEntry.alias.Required">Nickname is required</entry>
+
+	<!-- ############# Manage My Accounts Page - Add/Edit Bank Account ############# -->
+	<entry key="bankAccountAddData.title">Add a Bank Account</entry>
+    <entry key="bankAccountEditData.title">Edit a Bank Account</entry>
+	<entry key="bankAccountData.help">Please enter your bank account data and click Save</entry>
+	
+	<!-- ############# Manage My Accounts Page - Add Credit Card ############# -->
+	<entry key="creditCardData.title">Add a Credit Card</entry>
+	<entry key="creditCardData.help">Please enter your credit card data and press Save.</entry>
+  
+	<!-- ############# Manage My Accounts Page - Add Funds ############# -->
+	<entry key="addFunds.title">Add Funds to SVA</entry>
+	<entry key="addFunds.help">Please choose the account and enter the amount you would like to add to your stored value account</entry>
+	<entry key="addFundsConfirm.title">Confirm Transaction</entry>
+	<entry key="addFundsConfirm.help">Please review the amount you would like to add to your stored value account</entry>
+	<entry key="addFundsFinish.title">Transaction Complete</entry>
+	<entry key="addFundsFinish.success">You have successfully added funds to your SVA!</entry>
+	<entry key="addFundsFinish.toSva"> was credited to your SVA</entry>
+	<entry key="addFundsFinish.newBalance">Your new Balance is</entry>
+
+	<!-- ############# Manage My Accounts Page - Withdraw Funds ############# -->
+	<entry key="withdrawFunds.title">Withdraw Funds</entry>
+	<entry key="withdrawFunds.help">Please choose the account and enter the amount you would like to withdraw from your stored value account</entry>
+	<entry key="withdrawFundsConfirm.title">Confirm Transaction</entry>
+	<entry key="withdrawFundsConfirm.help">Please review the amount you would like to withdraw from your stored value account</entry>
+	<entry key="withdrawFundsFinish.title">Transaction Complete</entry>
+	<entry key="withdrawFundsFinish.success">You have successfully withdrawn funds from your SVA!</entry>
+	<entry key="withdrawFundsFinish.fromSva"> was debited from your SVA</entry>
+	<entry key="withdrawFundsFinish.newBalance">Your new Balance is</entry>
+
+	<entry key="walletDelete.error">An error has occurred. Please try Again</entry>
+
+	<!-- ############# Send Money Page ############# -->
+	<entry key="sendMoney.title">Send Money</entry>
+	<entry key="sendMoney.help">Please enter the Recipient MSISDN and the amount you would like to send</entry>
+	<entry key="sendMoney.recipient">Recipient MSISDN</entry>
+	<entry key="sendMoney.amountString">Amount</entry>
+	<entry key="sendMoney.txnText">Message</entry>
+	<entry key="sendMoney.txnText.postfix"> (max. 80)</entry>
+
+
+	<entry key="sendmoney.text.length.error">Message must be no more than 50 characters long </entry>
+
+	<entry key="sendMoney.error">A technical error occured</entry>
+
+	<entry key="sendMoneyConfirm.title">Confirm Transaction</entry>
+	<entry key="sendMoneyConfirm.help">Please review your transaction</entry>
+    <entry key="sendMoneyConfirm.remittance.voucher.warning">The payee does not exist but a remittance voucher will be sent to him instead
+    </entry>
+    
+    
+	<entry key="sendMoneyConfirm.creditAmount">Credit Amount</entry>
+	<entry key="sendMoneyConfirm.feeString">Fee Amount</entry>
+	<entry key="sendMoneyConfirm.debitAmount">Debit Amount</entry>
+	<entry key="sendMoneyConfirm.recipient">Recipient MSISDN</entry>
+	<entry key="sendMoneyConfirm.txnText">Message</entry>
+
+	<entry key="sendMoneyFinish.title">Transaction Complete</entry>
+	<entry key="sendMoneyFinish.success">Send money was successful</entry>
+	<entry key="sendMoneyFinish.amount"> The Amount of</entry>
+	<entry key="sendMoneyFinish.recipient">was credited to </entry>
+	<entry key="sendMoneyFinish.txnId">Transaction Id</entry>
+	<entry key="sendMoneyFinish.authCode">Auth Code </entry>
+	<entry key="sendMoneyFinish.message">Thanks for using our send Money service. </entry>
+
+
+	<!-- ############# Airtime Topup Page ############# -->
+	<entry key="airtimeTopup.title">Airtime Topup</entry>
+
+	<!-- ############# Request Money Page ############# -->
+	<entry key="requestMoney.title">Request Money</entry>
+	<entry key="requestMoney.help">Please enter the Payer MSISDN and the amount you would like to request </entry>
+	<entry key="requestMoney.payer">Payer's MSISDN </entry>
+	<entry key="requestMoney.amountString">Amount </entry>
+	<entry key="requestMoney.txnText"> Message </entry>
+	<entry key="requestMoney.txnText.postfix"> (max. 80) </entry>
+	<entry key="requestMoney.realTimeTxn">Real-time Transaction</entry>
+	<entry key="requestMoneyConfirm.title">Confirm Transaction</entry>
+	<entry key="requestMoneyConfirm.help">Please review your request</entry>
+	<entry key="requestMoneyConfirm.creditAmount"> Credit Amount</entry>
+	<entry key="requestMoneyConfirm.feeString">Fee Amount</entry>
+	<entry key="requestMoneyConfirm.debitAmount">Debit Amount</entry>
+	<entry key="requestMoneyConfirm.payer">Payer's MSISDN</entry>
+	<entry key="requestMoneyConfirm.txnText">Message</entry>
+
+	<entry key="requestMoneyFinish.title">Transaction Complete</entry>
+	<entry key="requestMoneyFinish.success">Request money was successful</entry>
+	<entry key="requestMoneyFinish.amount">The Amount of</entry>
+	<entry key="requestMoneyFinish.realTimeTxn.success"> was credited to your SVA</entry>
+    <entry key="requestMoneyFinish.invoice.success"> was requested</entry>
+	<entry key="requestMoneyFinish.payer">Debited from</entry>
+	<entry key="requestMoneyFinish.txnId">Transaction Id</entry>
+	<entry key="requestMoneyFinish.invoiceId">Invoice Id</entry>
+	<entry key="requestMoneyFinish.authCode">Auth Code</entry>
+	<entry key="requestMoneyFinish.message">Thanks for using our request money service. </entry>
+
+	<entry key="request.money.error">A technical error occured</entry>
+	<entry key="requestMoney.nonreal.txn.payer.not.found">Payer is unknown</entry>
+
+	<!-- ############# Change Address Page ############# -->
+	<entry key="changeAddress.title">Change Address</entry>
+	<entry key="changeAddress.firstName">First Name</entry>
+	<entry key="changeAddress.lastName">Last Name</entry>
+    <entry key="changeAddress.phone">MSISDN</entry>
+	<entry key="changeAddress.houseNo">House No.</entry>
+	<entry key="changeAddress.street">Street Address</entry>
+	<entry key="changeAddress.street2">Street Address 2</entry>
+	<entry key="changeAddress.city">City</entry>
+	<entry key="changeAddress.zip">Zip</entry>
+	<entry key="changeAddress.country">Country</entry>
+	<entry key="changeAddress.state">State</entry>
+	<entry key="changeAddress.kvCountry">Country</entry>
+	<entry key="changeAddress.email">Email Address </entry>
+    
+    <entry key="customerAddress.street1.PatternValidator">'${input}' is not a valid Street Address</entry>
+    <entry key="customerAddress.street2.PatternValidator">'${input}' is not a valid Street Address2</entry>
+    <entry key="customerAddress.city.PatternValidator">'${input}' is not a valid City</entry>
+    
+	<entry key="customer.update.address.success">Customer address updated successfully</entry>
+
+	<entry key="customer.address.fetch.error">An error occurred while fetching customer address</entry>
+	<entry key="customer.update.address.error">An error occurred while updating customer address</entry>
+
+	<!-- ############# Change Password Page ############# -->
+	<entry key="changePassword.title">Change Password</entry>
+	<entry key="changePassword.help">Please enter your new password</entry>
+
+	<!-- ############# Change PIN Page ############# -->
+	<entry key="changePin.title">Change PIN</entry>
+	<entry key="changePin.pin1">Old PIN</entry>
+	<entry key="changePin.pin2">New PIN </entry>
+	<entry key="changePin.confirmNewPin">Confirm New PIN </entry>
+
+	<entry key="customer.pin.notConfirmed">The entered pin confirmation does not match the entered new pin</entry>
+	<entry key="change.pin.success">Customer pin changed successfully</entry>
+	<entry key="change.pin.error">An error occurred while updating the pin</entry>
+
+	<!-- ############# Change Preferences Page ############# -->
+	<entry key="changePreferences.title">Change Preferences</entry>
+	<entry key="changePreferences.marketing.label">Marketing Preferences</entry>
+	<entry key="changePreferences.marketing.yes">Yes</entry>
+	<entry key="changePreferences.marketing.no">No</entry>
+	<entry key="changePreferences.marketing.sms">SMS</entry>
+	<entry key="changePreferences.marketing.email">Email</entry>
+
+	<entry key="changePreferences.notification.label">Notification</entry>
+
+	<entry key="msg.change.preferences.success">You have successfully updated your preferences.</entry>
+	<entry key="ERROR.DATA_NOT_STORED">Your changes have NOT been stored!</entry>
+	<entry key="MESSAGE.CHANGE_PREFERENCES.SUCCESS">You have successfully updated your preferences.</entry>
+
+	<!-- ############# Change Security Q and A Page ############# -->
+	<entry key="changeSecQandA.title">Change Security Q&amp;A</entry>
+	<entry key="changeSecQandA.securityQuestion">Security Question</entry>
+	<entry key="changeSecQandA.seqanswer">Security Answer</entry>
+
+	<entry key="msg.changeSecQandA.update.success">You have successfully updated your security question and answer data!</entry>
+
+	<!-- ############# Friend List Page ############# -->
+	<entry key="friendsList.select">Select</entry>
+	<entry key="friendsList.title">Friends List</entry>
+	<entry key="friendsList.add.button">Add a Friend</entry>
+	<entry key="friendsList.remove.button">Remove From List</entry>
+	<entry key="friendsList.remove.confirm">Do you really want to remove the selected friends?</entry>
+
+	<entry key="friendsList.nickname">Nickname</entry>
+	<entry key="friendsList.name">Name</entry>
+	<entry key="friendsList.msisdn">MSISDN</entry>
+	<entry key="friendsList.actions">Actions</entry>
+	<entry key="friendsList.editAction">Edit</entry>
+	<entry key="friendsList.sendMoneyAction">Send Money</entry>
+	<entry key="friendsList.topupAction">Topup</entry>
+	<entry key="friendsList.noItemsMsg">No friend entries found.</entry>
+	<entry key="friendsList.addFriendHelp">Add a friend using the 'Add a Friend' link above.</entry>
+    <entry key="friend.nickname.PatternValidator">'${input}' is not a valid Nickname</entry>
+
+
+	<entry key="friendsList.load.error">An error occurred while loading friends and family list</entry>
+	<entry key="friendsList.remove.confirm">Do you really want to remove the selected friends?</entry>
+	<entry key="friendsList.remove.error">An error occurred while deleting from the friends list</entry>
+	<entry key="friendsList.nothing.selected.remove">You must select the entries you want to remove</entry>
+
+	<entry key="update.friend.error">A technical error occurred while updating the friends list</entry>
+
+	<!-- ############# Friend Add/Edit Page ############# -->
+	<entry key="addFriend.title">Add Friend to List</entry>
+    <entry key="editFriend.title">Edit Friend to List</entry>
+	<entry key="addFriend.msisdn">Friend's MSISDN</entry>
+	<entry key="addFriend.lastName">Last Name</entry>
+	<entry key="addFriend.nickname">Nickname</entry>
+	<entry key="friend.nickname.Required">Nickname is required</entry>
+	<entry key="addFriendFinish.title">Add Complete</entry>
+	<entry key="addFriendFinish.name">Name</entry>
+	<entry key="addFriendFinish.msisdn">Mobile number</entry>
+	<entry key="addFriendFinish.nickname">Nickname</entry>
+
+	<entry key="addFriend.customer.not.found.error">A user with the entered MSISDN and last name does not exist</entry>
+	<entry key="addFriend.customer.address.fetch.error">Couldn't find address for entered friend details</entry>
+	<entry key="addFriend.duplicate.nickname">The Nickname is already in use for an other friend or bank account.  </entry>
+	<entry key="addFriend.duplicate.friend.error">A user with the entered MSISDN is already in your friends list</entry>
+
+	<!-- ############# Bank List Page ############# -->
+	<entry key="bankList.title">External Bank Accounts</entry>
+	<entry key="bankList.add.button">Add an External Bank Account</entry>
+	<entry key="bankList.remove.button">Remove Accounts </entry>
+    <entry key="pending.externalAccountData.title">Approve/Reject External Account </entry>
+
+	<entry key="bankList.select">Select</entry>
+	<entry key="bankList.alias">Nickname</entry>
+	<entry key="bankList.accountNumber">Account No.</entry>
+	<entry key="bankList.bankCode">Bank Code</entry>
+	<entry key="bankList.accountHolderName">Account Holder</entry>
+	<entry key="bankList.actions">Actions</entry>
+	<entry key="bankList.editAction">Edit</entry>
+	<entry key="bankList.sendMoneyAction">Send Money</entry>
+	<entry key="bankList.noItemsMsg">No account entries found.</entry>
+	<entry key="bankList.addAccountHelp">Add an account using the 'Add an External Bank Account' link above.</entry>
+
+	<entry key="bankList.remove.confirm">Do you really want to remove the selected bank accounts?</entry>
+	<entry key="bankList.remove.success">Please select the accounts you want to remove</entry>
+	<entry key="bankList.nothing.selected.remove">You must select the entries you want to remove</entry>
+   
+	<!-- ############# Bill Configuration Page ############# -->
+	<entry key="billConfigurationList.title">Bill Configuration</entry>
+	<entry key="addBillConfiguration.title">Add Bill Configuration</entry>
+	<entry key="editBillConfiguration.title">Edit Bill Configuration</entry>
+	
+	<!-- ############# Open Bills Page ############# -->
+	<entry key="openBills.title">Open Bills</entry>	
+	<entry key="payOpenBill.title">Pay Open Bill</entry>
+	<entry key="confirmBill.title">Confirm Bill</entry>
+	<entry key="billPaymentStatus.title">Payment Status</entry>
+	<entry key="cancelOpenBill.title">Cancel Open Bill</entry>
+    <entry key="cancelOpenBill.help">Click Continue button to cancel the bill</entry>
+    <entry key="payOpenBill.help">Please select payment instrument</entry>
+    <entry key="payBill.help">Please enter bill reference, the amount you would like to pay and select payment instrument</entry>
+    <entry key="billPaymentConfirm.help">Please review your bill</entry>
+
+	<!-- ############# Pay Bill Page ############# -->
+	<entry key="payBill.title">Pay Bill</entry>
+	<entry key="makePayment.title">Make Payment</entry>
+	<entry key="confirmPayment.title">Confirm Payment</entry>
+	<entry key="cancelPayment.title">Cancel Payment</entry>
+
+	<!-- ############# Bill History Page ############# -->
+	<entry key="billHistory.title">Bill History</entry>
+    <entry key="billHistory.help">You can search for bills by specifying search parameters</entry>
+
+	<!-- ############# Show History Page ############# -->
+	<entry key="showHistory.title">Customer History</entry>
+	<entry key="showHistory.creationDate">Creation Date</entry>
+	<entry key="showHistory.fieldName">Field Name</entry>
+	<entry key="showHistory.oldValue">Old Value</entry>
+	<entry key="showHistory.newValue">New Value</entry>
+	<entry key="showHistory.noItemsMsg">No customer history changes found</entry>
+	<entry key="history.load.error">An error occurred in loading customer history. Try again later.</entry>
+
+
+	<entry key="txn.date">Date</entry>
+	<entry key="txn.type">Type</entry>
+	<entry key="txn.errorCode">Error</entry>
+	<entry key="txn.ref">Ref</entry>
+	<entry key="txn.participant">Participant</entry>
+	<entry key="txn.details">Details</entry>
+	<entry key="txn.amount">Amount</entry>
+
+	<entry key="update.bankaccount.success">The selected bank account details have been updated.</entry>
+	<entry key="add.bankaccount.success">Successfully added the bank account.</entry>
+	<entry key="credit.card.add.success">Credit Card added successfully.</entry>
+	<entry key="NavigatorLabel">${of} items found, displaying ${from} to ${to}.</entry>
+	
+	<!-- ############# Contact Points Page ############# -->
+	<entry key="manageContactPoints.title">Contact Points</entry>
+	
+		<!-- ############# Manage Alert  ############# -->
+	<entry key="manageAlerts.title">Mobile Alerts</entry>
+	<entry key="manageAlerts.addAlert.title">Add an Alert</entry>
+	
+	<!-- ############# Validation Error Messages ############# -->
+	<entry key="customerAddress.email.Required">Email is required</entry>
+	<entry key="lastName.Required">Last Name is required</entry>
+	<entry key="nickname.Required">Nickname is required</entry>
+    <entry key="lastName.PatternValidator">'${input}' is not a valid Last Name</entry>
+
+	<entry key="oldPin.Required">Old PIN is required</entry>
+	<entry key="newPin.Required">New PIN is required</entry>
+	<entry key="confirmNewPin.Required">Confirm New PIN is required</entry>
+
+	<entry key="customer.address.securityQuestion.Required">You must select a Security Question</entry>
+	<entry key="customer.address.SecQuesAns.Required">You must enter an answer to selected security question</entry>
+
+	<entry key="msisdn.Required">MSISDN is required</entry>
+	<entry key="msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+	<entry key="payer.Required">Payer is required</entry>
+	<entry key="payer.PatternValidator">'${input}' is not a valid MSISDN</entry>
+	<entry key="txnText.Required">Message is required</entry>
+	<entry key="txnText.StringValidator.maximum">You have exceeded maximum text length of 100 characters</entry>
+
+	<entry key="account.Required">Account is required</entry>
+	<entry key="bankCode.Required">Bank Code is required</entry>
+	<entry key="accountHolder.Required">Account Holder is required</entry>
+	<entry key="bankName.Required">Please enter a Bank Name</entry>
+
+	<entry key="fromDate.Required">You must enter a from date</entry>
+	<entry key="toDate.Required">You must enter a to date</entry>
+	<entry key="fromMonth.Required">You must select a month</entry>
+
+	<entry key="amountString.Required">Amount is required</entry>
+	<entry key="amountString.PatternValidator">'${input}' is not a valid Amount</entry>
+    <entry key="amountString.AmountValidator">'${input}' is not a valid Amount</entry>
+	<entry key="recipient.Required">Recipient is required</entry>
+	<entry key="recipient.PatternValidator">'${input}' is not a valid MSISDN</entry>
+
+	<entry key="no.row.selected.error">You must select the entries you want to remove.</entry>
+  
+  
+
+   <!-- ############# Add Contact Point  Page ############# -->
+   <entry key="manageContactPoint.title">Contact Points</entry>
+   <entry key="addOtherContactPoint.RegisterContactPoint">Add a Contact Point</entry>
+   <entry key="addOtherContactPoint.help">Please enter the contact details and click Save</entry>
+  
+   <entry key="pedning.bank.account.load.error">You have insufficient privilege to view bank accounts pending for approval</entry>  
+   <entry key="pedning.credit.card.load.error">You have insufficient privilege to view credit cards pending for approval</entry>
+   <entry key="pedning.external.account.load.error">You have insufficient privilege to view external accounts pending for approval</entry>
+   <entry key="pedning.cst.external.account.load.error">You have insufficient privilege to view cst external accounts pending for approval</entry>
+ 
+  <!-- ############# edit Contact Point  Page ############# -->
+   <entry key="editOtherContactPoint.RegisterContactPoint">Edit a Contact Point</entry>
+   <entry key="editOtherContactPoint.help">Please edit the contact details and click Save</entry>
+   
+    
+  
+</properties>

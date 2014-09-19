@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="authenticate.text1">We just sent a one-time passcode to your mobile phone, please enter it in the field below.</entry>
+    <entry key="authenticate.text2">Click "Resend" and we will send the one-time passcode again.</entry>
+    <entry key="authenticate.text3">Click "Cancel" and restart registration, if you are having difficulty receiving your one-time passcode.</entry>
+    <entry key="otp">Passcode</entry>
+    <entry key="otp.resend">Resend</entry>
+    <entry key="otp.resend.success">We have resent your passcode to your mobile phone</entry>
+    <entry key="otp.input.count.exceeded">You have exceeded number of attempts allowed for OTP verification</entry>
+	<entry key="resend.otp.limit.exceeded">Limit of OTP resend attempt has been exceeded</entry>
+	<entry key="otp.send.error">An error occurred while sending the OTP</entry>
+	<entry key="customer.create.failed.otp.retry">The customer exceeded the OTP verification retry limit. Registration failed</entry>
+	<entry key="register.customer.error">An error occurred while registering the customer</entry>
+    <entry key="otp.verification.error"> is not a valid Passcode</entry>
+
+ 	<entry key="register.customer.msisdn">MyPhone</entry>
+
+</properties>

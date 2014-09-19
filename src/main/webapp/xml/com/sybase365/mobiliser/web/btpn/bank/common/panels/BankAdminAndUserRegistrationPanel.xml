@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<!-- All the labels for Bank Staff Registration -->
+	<entry key="bankAdminRole.registration.legend.label">Bank Admin Registration</entry>
+	<entry key="bankOfficerRole.registration.legend.label">Bank User Registration</entry>
+	<entry key="registration.customerType.label"> Register User as </entry>
+	<entry key="registration.userId.label">User Id</entry>
+	<entry key="registration.name.label">Name</entry>
+    <entry key="registration.email.label">E-Mail</entry>
+	<entry key="registration.designation.label">Designation</entry>
+    <entry key="registration.language.label">Language</entry>
+    <entry key="registration.glCode.label">GL Code</entry>
+	<entry key="registration.territoryCode.label">Territory Code</entry>
+    <entry key="registration.orgUnit.label">Org Unit</entry>
+	
+	<entry key="registration.denotes.mandatory.label">Denotes Mandatory Field</entry>
+	<entry key="registration.button.register.label">Register</entry>
+	<entry key="registration.button.cancel.label">Cancel</entry>
+
+	<!-- All the front end Validations error messages -->
+
+	<!-- Required Validation Messages -->
+	<entry key="bankStaff.customerType.Required">Register User is a required field</entry>
+	<entry key="bankStaff.userId.Required">User Name is a required field</entry>
+	<entry key="bankStaff.name.Required">Name is a required field</entry>
+    <entry key="bankStaff.email.Required">Email Id is a required field</entry>
+	<entry key="bankStaff.designation.Required">Designation is a required field</entry>
+    <entry key="bankStaff.language.Required">Language is a required field</entry>
+    <entry key="bankStaff.glCode.Required">GL Code is a required field</entry>
+	<entry key="bankStaff.territoryCode.Required">Territory Code is a required field</entry>
+    <entry key="bankStaff.orgUnit.Required">Org Unit is a required field</entry>
+
+	<!-- Pattern Validation Messages -->
+	<entry key="bankStaff.userId.PatternValidator">${input} is not a valid User Name</entry>
+	<entry key="bankStaff.territoryCode.PatternValidator">${input} is not a valid Territory Code</entry>
+	<entry key="bankStaff.email.PatternValidator">${input} is not a valid Email Id</entry>
+</properties>

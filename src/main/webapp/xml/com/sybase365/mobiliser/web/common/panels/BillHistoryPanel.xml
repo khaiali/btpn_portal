@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="billHistory.title">Bill History</entry>
+    <entry key="billHistory.name">Name</entry>
+    <entry key="billHistory.type">Type</entry>
+    <entry key="billHistory.reference">Reference</entry>
+    <entry key="billHistory.billReference">Bill Ref.</entry>
+    <entry key="billHistory.date">Date</entry>
+    <entry key="billHistory.amount">Amount</entry>
+    <entry key="billHistory.status">Status</entry>       
+    <entry key="billHistory.noItemsMsg">No bill history entries found.</entry>
+    <entry key="billHistory.load.error">Not able to load bill history data.</entry>   
+    
+    <entry key="billHistory.filter.type">Type</entry>
+    <entry key="billHistory.filter.status">Status</entry>   
+    <entry key="billHistory.filter.fromDate">From</entry>
+    <entry key="billHistory.filter.toDate">To</entry>
+    <entry key="billHistory.month">Month</entry>
+    <entry key="billHistory.toDate">To</entry>
+    <entry key="billHistory.filter.search">Search</entry>
+    <entry key="billHistory.filterType">Show Bill History By</entry>
+    
+    <entry key="fromDate.IConverter.Date">From Date is invalid</entry>
+    <entry key="toDate.IConverter.Date">To Date is invalid</entry>
+    
+    <entry key="calendar.months.1">January</entry>
+    <entry key="calendar.months.2">February</entry>
+    <entry key="calendar.months.3">March</entry>
+    <entry key="calendar.months.4">April</entry>
+    <entry key="calendar.months.5">May</entry>
+    <entry key="calendar.months.6">June</entry>
+    <entry key="calendar.months.7">July</entry>
+    <entry key="calendar.months.8">August</entry>
+    <entry key="calendar.months.9">September</entry>
+    <entry key="calendar.months.10">October</entry>
+    <entry key="calendar.months.11">November</entry>
+    <entry key="calendar.months.12">December</entry>
+    
+     
+</properties>

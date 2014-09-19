@@ -1,0 +1,134 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+	<wicket:head>
+		<script  type="text/javascript" src="scripts/jquery/jquery.treeTable.js"></script>
+		<link href="css/jquery.treeTable.css" media="all" rel="stylesheet" type="text/css" />
+		<script type="text/javascript">
+			$j(document).ready(function()  {
+				$j("#treetable").treeTable();
+			});
+		</script>
+	</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content home">
+
+		<form wicket:id="preferencesForm">
+
+			<div class="module clear">
+
+				<h1 class="servers">
+					<span><wicket:message key="preferences.title" /></span>
+					<span><wicket:message key="application.breadcrumb.separator" /></span>
+					<span><wicket:message key="preferences.node.title" /></span>
+				</h1>
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+				<div class="module clear">
+
+					<h2 class="section preference">
+						<wicket:message key="preferences.node.selected" />
+					</h2>
+
+					<div class="cmodule clear">
+
+						<div class="input">
+							<label><wicket:message key="preferences.node.application" /></label>
+							<div class="text" wicket:id="selectedApplication">[Selected Application]</div>
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="preferences.node.path" /></label>
+							<div class="text" wicket:id="selectedNodePath">[Selected Node Path]</div>
+						</div>
+
+					</div>
+
+					<div class="column">
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="refreshButton" wicket:message="value:Refresh"  />
+							<input type="submit" class="submitForm" wicket:id="removeButton" wicket:message="value:Remove"  />
+							<input type="submit" class="submitForm" wicket:id="exportButton" wicket:message="value:preferences.node.export.button"  />
+							<input type="submit" class="submitForm" wicket:id="cancelButton" wicket:message="value:Cancel"  />
+						</div>
+					</div>
+
+				</div>
+
+				<div class="module clear">
+
+					<h2 class="section preference">
+						<wicket:message key="preferences.node.items" />
+						<input type="submit" class="additionalLink last" wicket:id="addPreference" wicket:message="value:preferences.button.add.preference" />
+					</h2>
+
+					<div class="cmodule clear">
+
+						 <!-- list paging -->
+						<ul class="tablePaging">
+							<li class="recordsLabel"><wicket:message key="table.showing" />: </li>
+							<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+							<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+						</ul>
+						<!-- end list paging -->
+
+						<div class="collapsable clear">
+
+							<table id="prefsListTable" class="listTable">
+								<wicket:enclosure child="prefsList">
+									<thead>
+										<tr>
+											<th class="prefKey"><wicket:message key="preferences.node.items.key" /></th>
+											<th class="prefValue"><wicket:message key="preferences.node.items.value" /></th>
+											<!--th class="type"><wicket:message key="preferences.node.items.type" /></th-->
+											<!--th class="description"><wicket:message key="preferences.node.items.description" /></th-->
+											<th class="actions last"><wicket:message key="preferences.node.items.actions" /></th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<td class="empty" colspan="3">
+											</td>
+										</tr>
+									</tfoot>
+									<tbody>
+										<tr wicket:id="prefsList">
+											<td><div wicket:id="key">[Key]</div></td>
+											<td><div wicket:id="value">[Value]</div></td>
+											<td>
+												<ul>
+													<li>
+														<a href="#" wicket:id="editAction"><wicket:message key="preferences.node.items.editAction">[Edit]</wicket:message></a>
+													</li>
+													<li>
+														<a href="#" wicket:id="removeAction"><wicket:message key="preferences.node.items.removeAction">[Remove]</wicket:message></a>
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</wicket:enclosure>
+							</table>
+
+							<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</form>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

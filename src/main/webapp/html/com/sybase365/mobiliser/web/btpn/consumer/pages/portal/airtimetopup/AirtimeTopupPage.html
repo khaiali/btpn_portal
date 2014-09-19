@@ -1,0 +1,83 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.ta/wicket-xhtml1.4-strict.dtd">
+<body>
+
+	<wicket:extend>
+		<div class="Main_container">
+			<div></div>
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="airtimeTopupForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="left.menu.airTimetopup" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+                            <div class="column">
+							    <div wicket:id="containers.0" class="input" style="width: 720px">
+								    <label for="opt0" wicket:id="labels.0"></label>
+								    <select name="opt0" wicket:id="opts.0"></select>
+							    </div>
+                                <div wicket:id="containers.1" class="input" style="width: 720px">
+                                    <label for="opt1" wicket:id="labels.1"></label>
+                                    <select name="opt1" wicket:id="opts.1"></select>
+                                </div>
+                                <div wicket:id="containers.2" class="input" style="width: 720px">
+                                    <label for="opt2" wicket:id="labels.2"></label>
+                                    <select name="opt2" wicket:id="opts.2"></select>
+                                </div>
+                                <div wicket:id="containers.3" class="input" style="width: 720px">
+                                    <label for="opt3" wicket:id="labels.3"></label>
+                                    <select name="opt3" wicket:id="opts.3"></select>
+                                </div>
+                                <div wicket:id="containers.4" class="input" style="width: 720px">
+                                    <label for="opt4" wicket:id="labels.4"></label>
+                                    <select name="opt4" wicket:id="opts.4"></select>
+                                </div>
+                                <div wicket:id="containers.5" class="input" style="width: 720px">
+                                    <label for="opt5" wicket:id="labels.5"></label>
+                                    <select name="opt5" wicket:id="opts.5"></select>
+                                </div>
+                                <div wicket:id="containers.6" class="input" style="width: 720px">
+                                    <label for="opt6" wicket:id="labels.6"></label>
+                                    <select name="opt6" wicket:id="opts.6"></select>
+                                </div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column twoColumn">
+								<div class="input">
+                                    <label for="airtimetopup.msisdn"><wicket:message key="label.topupmobile" /><span class="required">*</span></label>
+                                    <div class="group" wicket:id="airtimeBean.manualOrFavourite">
+                                        <input id="manual.msisdn" name="filterType" wicket:id="radio.manually"  class="radio" type="radio">
+                                        <label for="airtimetopup.manual.msisdn"><wicket:message key="label.manual" /></label>
+                                        <input id="favorite.msisdn" name="filterType" wicket:id="radio.favourite" class="radio" type="radio">
+                                        <label for="airtimetopup.favorite.msisdn"><wicket:message key="label.favourite" /></label>
+                                    </div>
+                                    <div class="column"><span class="required">*<wicket:message key="label.mandatory" /></span></div>
+								</div>
+							</div>	
+                            
+                            <div class="column twoColumn">							
+							<div class="input" wicket:id="manualContainer">
+								<label for="airtimetopup.phone"><wicket:message key="label.msisdn" /><span class="required">*</span></label>
+								<input id="msisdn" name="msisdn" type="text" wicket:id="airtimeBean.selectedMsisdn.id">
+							</div>						
+							<div class="input" wicket:id="favouriteContainer">
+								<label for="airtimeTopup.favList"><wicket:message key="label.favlist" /><span class="required">*</span></label>	
+								<select name="selectedFavMsisdn" wicket:id="airtimeBean.selectedMsisdn">
+									<option value="">Select</option>													
+								</select>
+							</div>						
+							<div class="spacer"></div>
+							<input name="showTelcoDenomination" wicket:message="value:Submit" class="submit acc_chk" type="submit" wicket:id="btnSubmit">
+						</div>		
+								
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

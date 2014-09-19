@@ -1,0 +1,61 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="addAccountForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="headLine.addAccount" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column twoColumn">
+								<div class="input">
+									<table>
+										<tr>
+											<td>
+												<label> 
+													<wicket:message key="label.name" /> 
+													<span class="required">*</span>
+												</label>
+											</td>
+											<td>
+												<input Type="text" wicket:id="subAccountBean.name" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label> 
+													<wicket:message key="label.description" />
+												</label>
+											</td>
+											<td>
+												<textarea wicket:id="subAccountBean.description" rows="1" cols="30"></textarea>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<span class="required">*</span>
+								<wicket:message key="requiredFields" />
+							</div>
+							<div class="spacer"></div>
+							<input type="submit" class="submit acc_chk"
+								wicket:id="submitButton" value="Tambah" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

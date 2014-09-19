@@ -1,0 +1,45 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" >
+<head>  
+	<wicket:head>
+	<title><wicket:message key="technicalError.title" /></title>
+	</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<!-- Technical Error -->
+
+	<form wicket:id="technicalErrorForm">
+
+		<ul class="loginForm">
+			<li>
+				<h1><wicket:message key="technicalError.problem" /></h1>
+			</li>
+			<li>
+				<div class="loginFeedbackDIV" style="margin-top: 20px;margin-bottom: 20px">
+					<span class="errorLabel">
+					<ul class="feedbackPanel">
+						<li class="feedbackPanelERROR">
+							<span class="feedbackPanelERROR" style="background: none;">
+								<div wicket:id="messages"></div>
+								<wicket:message key="technicalError.text" />
+							</span>
+						</li>
+					</ul>
+					</span>
+				</div>
+			</li>
+			<li>
+				<div class="loginActions" style="margin-left:54px">
+					<input class="submitForm" type="submit" wicket:message="value:technicalError.button" onClick="window.location.replace(unescape(window.location.pathname))"></input>
+				</div>
+			</li>
+		</ul>
+
+	</form>
+
+</wicket:extend>
+
+</body>
+</html>

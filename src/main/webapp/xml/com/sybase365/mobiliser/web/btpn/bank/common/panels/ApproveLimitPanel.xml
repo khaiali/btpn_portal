@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<!-- ############# BTPN ############# -->
+	<entry key="header.limitManagement"> Limit Management </entry>
+	<entry key="label.fieldname">Fields </entry>
+	<entry key="label.currentValue">Current Value </entry>
+	<entry key="label.newValue">New Value </entry>
+	<entry key="label.action">Action</entry>
+	<entry key="label.useCaseId">Use Case Id</entry>
+	<entry key="label.isPerCustomer">Is Per Customer</entry>
+	<entry key="label.productId">Product Id</entry>
+	<entry key="label.applyToPayee">Apply To Payee</entry>
+	<entry key="label.dailyLimit">Daily Limit</entry>
+	<entry key="label.weeklyLimit">Weekly Limit</entry>
+	<entry key="label.monthlyLimit">Monthly Limit</entry>
+	<entry key="approve.success">Request Approved successfully.</entry>
+	<entry key="reject.success">Request Rejected successfully.</entry>
+	<entry key="approve.fail">Request Approve failed.</entry>
+	<entry key="reject.fail">Request Rejection failed.</entry>
+</properties>

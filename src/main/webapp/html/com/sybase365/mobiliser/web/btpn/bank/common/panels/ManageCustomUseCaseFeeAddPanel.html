@@ -1,0 +1,187 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+                	<form wicket:id="ucFeeAddForm">
+						<fieldset>
+                            <legend class="reg_tab6">
+                                <wicket:message key="headLine.fee" />
+                            </legend>
+						
+							<div wicket:id="errorMessages"></div>
+								<br>
+								
+								<!-- USE CASE -->
+								<div class="input" style="width: 500px">
+									<label for="useCaseName"><wicket:message key="label.useCase" /><span class="required">*</span></label>
+										<select id="useCaseName" wicket:id="ucFeeBean.useCase" name="useCaseName" tabindex="1">
+										</select>
+								</div>
+								
+								<!-- DEBIT ORG UNIT -->
+								<div class="input">
+									<label for="debOrgUnit"><wicket:message key="label.debitOrgUnit" /><span class="required">*</span></label>
+										<select id="debOrgUnit" wicket:id="ucFeeBean.debitOrgUnit" name="debOrgUnit" tabindex="2"></select>
+								</div>
+								
+								<!-- CREDIT ORG UNIT -->
+								<div class="input">
+									<label for="creOrgUnit"><wicket:message key="label.creditOrgUnit" /><span class="required">*</span></label>
+										<select id="creOrgUnit" wicket:id="ucFeeBean.creditOrgUnit" name="creOrgUnit" tabindex="3"></select>
+								</div>
+								
+								<!-- DEBIT PI TYPE -->
+								<div class="input">
+									<label for="debPiType"><wicket:message key="label.debitPiType" /></label>
+										<select id="debPiType" wicket:id="ucFeeBean.debitPiType" name="debPiType" tabindex="5"></select>
+								</div>
+								
+								<!-- CREDIT PI TYPE -->
+								<div class="input">
+									<label for="crePiType"><wicket:message key="label.creditPiType" /></label>
+										<select id="crePiType" wicket:id="ucFeeBean.creditPiType" name="crePiType" tabindex="6"></select>
+								</div>
+								
+								<!-- GL CODE -->
+								<div class="input">
+									<label for="glCode"><wicket:message key="label.glCode" /><span class="required">*</span></label>
+										<select id="glCode" wicket:id="ucFeeBean.glCode" name="glCode" tabindex="4"></select>
+								</div>
+								
+								<!-- CUSTOMER TYPE -->
+								<div class="input">
+									<label for="cusType"><wicket:message key="label.customerType" /></label>
+										<select id="cusType" wicket:id="ucFeeBean.customerType" name="cusType" tabindex="7"></select>
+								</div>
+								
+								<!-- VALID FROM -->
+								<div class="input">
+									<label><wicket:message key="label.validFrom" /><span class="required">*</span></label> 
+										<input readonly="readonly" wicket:id="ucFeeBean.validFrom"  
+											id="fromDate" tabindex="8" type="text" size="10" 
+											style="width: 150px;" />
+								</div>
+								
+								<div class="input">
+									<label for="payFee"><wicket:message key="label.payeeFee" /><span class="required">*</span></label> 
+										<input style="width: 30px" id="payFee" name="payFee" wicket:id="ucFeeBean.payeeFee"  tabindex="9" type="checkbox" />
+								</div>
+								
+								<!-- CURRENCY CODE -->
+								<div class="input">
+									<label for="curCode"><wicket:message key="label.currencyCode" /><span class="required">*</span></label>
+										<select id="curCode" wicket:id="ucFeeBean.currencyCode" name="curCode" tabindex="15"></select>
+								</div>
+								
+								<!-- NOTE -->
+								<div class="input">
+									<label for="not"><wicket:message key="label.note" /></label> 
+										<input id="not" name="not" wicket:id="ucFeeBean.note"  tabindex="16" type="text" size="40" />
+								</div>
+								
+								<!-- DESCRIPTION -->
+								<div class="input">
+									<label for="desc"><wicket:message key="label.description" /><span class="required">*</span></label> 
+									<input id="desc" name="desc" wicket:id="ucFeeBean.description"  tabindex="17" type="text" size="40" />
+								</div>
+						</fieldset>
+                        
+                 
+                        <!--detail -->
+                        <div id="slabFees" wicket:id="slabFeeContainer">
+                    	  <fieldset>
+                        	  <legend class="reg_tab6"><wicket:message key="headline.billerDetail" /></legend>
+                  
+                            <div class="input" style="width: 720px">
+                                <label for="fixedFee">
+                                    <wicket:message key="label.fixedFee" /><span class="required">*</span>
+                                </label>
+                                <input wicket:id="feeDetailsBean.fixedFee" name="fixedFee" id="fixedFee" />
+                            </div>
+                            
+                            <div class="input" style="width: 720px">
+                                <label for="percentageFee">
+                                    <wicket:message key="label.percentageFee" /><span class="required">*</span>
+                                </label>
+                                <input wicket:id="percentageFee" name="percentageFee" id="percentageFee" />
+                            </div>
+                            
+                            <div class="input" style="width: 720px">
+                                <label for="maximumFee">
+                                    <wicket:message key="label.maximumFee" />
+                                </label>
+                                <input wicket:id="feeDetailsBean.maximumFee" name="maximumFee" id="maximumFee" />
+                            </div>
+                            
+                            <div class="input" style="width: 720px">
+                                <label for="minimumFee">
+                                    <wicket:message key="label.minimumFee" /><span class="required">*</span>
+                                </label>
+                                <input wicket:id="feeDetailsBean.minimumFee" name="mminimumFee" id="maximumFee" />
+                            </div>
+                            
+                            <div class="input" style="width: 720px">
+                                <label for="thresholdAmount">
+                                    <wicket:message key="label.thresholdAmount" /><span class="required">*</span>
+                                </label>
+                                <input wicket:id="feeDetailsBean.thresholdAmount" name="thresholdAmount" id="thresholdAmount" />
+                            </div>
+                  
+							<div class="spacer"></div>
+							<input name="addSlabFeeComponent" wicket:id="slabFeeButton" wicket:message="value:Add" class="submit acc_chk" type="submit" />					
+                            <div class="spacer"></div>
+    
+							<!-- DATAVIEW ADD -->
+							<div class="displayTag">
+							<label wicket:id="no.items"></label>
+							<span class="pagebanner" wicket:id="feeHeader"></span>
+							<span class="pagelinks" wicket:id="feeNavigator"></span>											
+								<wicket:enclosure child="pageable">
+									<table id="feeListTable">
+										<thead>
+											<tr>
+												<th><wicket:message key="label.minimumFee" /></th>
+												<th><wicket:message key="label.maximumFee" /></th>
+												<th><wicket:message key="label.fixedFee" /></th>
+												<th><wicket:message key="label.percentageFee" /></th>
+												<th><wicket:message key="label.thresholdAmount" /></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr wicket:id="pageable">
+												<td wicket:id="minFee"></td>
+												<td wicket:id="maxFee"></td>
+												<td wicket:id="fixedFee"></td>
+												<td wicket:id="percentageFee"></td>
+												<td wicket:id="thresholdAmount"></td>
+											</tr>
+										</tbody>
+									</table>
+								</wicket:enclosure>
+							 </div>
+                         <!-- END View detail -->
+                         
+						</fieldset> 
+					 </div>	 
+                     <!-- end detail -->
+                    
+                        
+                        <div class="spacer"></div>
+                        <div class="column">
+                            <input name="submit" wicket:id="btnSubmit" wicket:message="value:Submit" class="submit acc_chk" type="submit"> 
+                            <input name="cancel" wicket:id="btnCancel" wicket:message="value:Cancel" class="submit acc_chk" type="submit" style="left: 250px">
+                        </div>
+                        <div class="spacer"></div>
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

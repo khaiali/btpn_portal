@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<!--#############################Agent create page######################################################-->
+    <entry key="agent.create.title">Create Agent</entry>
+	<entry key="agent.personaldata.title">Personal Data</entry>
+	<entry key="agent.firstName">First Name</entry>
+	<entry key="agent.lastName">Last Name</entry>
+	<entry key="agent.company">Company</entry>
+	<entry key="agent.position">Position</entry>
+	<entry key="agent.email">E-Mail Address</entry>
+    <entry key="agent.language">Language</entry>
+    <entry key="agent.country">Country</entry>
+    <entry key="agent.timezone">Time Zone</entry>
+    
+    <entry key="agent.title">User Manager</entry>
+    <entry key="agent.role">Role</entry>
+    <entry key="agent.role.description">Role Description</entry>
+    <entry key="agent.privilege">Privilege</entry>
+    <entry key="agent.privilege.description">Privilege Description</entry>
+    
+    <entry key="agent.logindata">Login Data</entry>
+    <entry key="agent.userName">Username</entry>
+    <entry key="agent.password">Password</entry>
+    <entry key="agent.confirmPassword">Re-enter Password</entry>
+    
+    <!-- ################## FIND AGENT ################## -->
+    <entry key="agentFind.title">Find Agent</entry>
+    <entry key="agentFind.header">You can search for agents by specifying search parameters</entry>
+    <entry key="customerId.IConverter.Long">'${input}' is not a valid customer ID</entry>
+    <entry key="customer.address.firstName.Required">First Name is required</entry>
+    <entry key="customer.address.firstName.PatternValidator">'${input}' is not a valid First Name</entry>
+    <entry key="customer.address.lastName.Required">Last Name is required</entry>
+    <entry key="customer.address.lastName.PatternValidator">'${input}' is not a valid Last Name</entry>
+    <entry key="customer.userName.PatternValidator">'${input}' is not a valid Username</entry>
+    <entry key="customer.userName.Required">Username is required</entry>
+    <entry key="customer.password.Required">Password is required</entry>
+    <entry key="confirmPassword.Required">Confirm Password is required</entry>
+    <entry key="customer.address.email.Required">Email is required</entry>
+    <entry key="customer.address.email.PatternValidator">'${input}' is not a valid Email</entry>
+    <entry key="customer.address.kvCountry.Required">Country is required</entry>
+    <entry key="customer.language.Required">Language is required</entry>
+    
+    <!-- ################## FIND ROLE/PRIVILEGE ################## -->
+    <entry key="agentFind.title">Find Agent</entry>
+    <entry key="agentFind.header">You can search for agents by specifying search parameters</entry>
+    <entry key="agentFind.title">Find Agent</entry>
+    <entry key="agentFind.header">You can search for agents by specifying search parameters</entry>
+    
+    
+    <entry key="roleFind.help">You can search for roles by specifying search parameters</entry>
+    <entry key="privilegeFind.help">You can search for privileges by specifying search parameters</entry>
+    
+    <entry key="umgrRoleList.noItemsMsg">No roles found matching the search criteria</entry>
+    <entry key="role.find.error">Error occurred in find role</entry>
+    <entry key="umgrPrivilegeList.noItemsMsg">No privileges found matching the search criteria</entry>
+    <entry key="privilege.find.error">Error occurred in find privilege</entry>
+    
+    <entry key="agent.privilege">Privilege</entry>
+    <entry key="agent.privilege.description">Privilege Description</entry>
+    
+    <entry key="umgrRole.role.Required">Role Name is required</entry>
+    <entry key="umgrRole.description.Required">Role Description is required</entry>    
+    <entry key="umgrPrivilege.privilege.Required">Privilege is required</entry>
+    <entry key="umgrPrivilege.description.Required">Privilege Description is required</entry>
+    
+    <!-- ################## ERROR MESSAGES################## -->
+    <entry key="ERROR.CREATE_AGENT_FAILURE">An internal error occurred while creating Agent.
+    Please try again
+    </entry>    
+    <entry key="ERROR.CREATE_ROLE_FAILURE">An internal error occurred while creating Role.
+    Please try again
+    </entry>
+    <entry key="ERROR.UPDATE_ROLE_FAILURE">An internal error occurred while updating Role.
+    Please try again
+    </entry>
+    <entry key="ERROR.CREATE_PRIVILEGE_FAILURE">An internal error occurred while creating Privilege.
+    Please try again
+    </entry>
+    <entry key="ERROR.UPDATE_PRIVILEGE_FAILURE">An internal error occurred while updating Privilege.
+    Please try again
+    </entry>
+    <!-- ################## SUCCESSFUL MESSAGES################## -->
+    <entry key="MESSAGE.CREATE_AGENT_SUCCESS">The agent has been created successfully</entry>
+    
+    
+</properties>

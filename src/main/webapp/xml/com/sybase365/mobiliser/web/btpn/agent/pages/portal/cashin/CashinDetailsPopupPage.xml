@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="cashin.receipt.headLine">Cash-in Details</entry>
+	<entry key="cashin.receipt.fromMobileAccNo">From Mobile Acc. No.</entry>
+	<entry key="cashin.receipt.cashInAmount">Cash-in Amount</entry>
+	<entry key="cashin.receipt.fee">Fee</entry>
+	<entry key="cashin.receipt.total">Total</entry>
+	<entry key="cashin.receipt.balance">Balance</entry>
+</properties>

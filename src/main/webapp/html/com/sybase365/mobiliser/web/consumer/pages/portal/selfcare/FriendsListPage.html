@@ -1,0 +1,89 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<form wicket:id="friendsListForm">
+
+				<h1 class="friends">
+					<span><wicket:message key="friendsList.title" /></span>
+					<input class="additionalLink last" type="submit" wicket:message="value:friendsList.add.button" wicket:id="addFriend" name="addFriend">
+				</h1>
+
+				<div wicket:id="errorMessages"></div>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="friendsListTable" class="listTable">
+
+							<wicket:enclosure child="removeFriend">
+
+								<thead>
+									<tr>
+										<th class="select"><wicket:message key="friendsList.select" /></th>
+										<th class="friendsNickname" wicket:id="orderByNickname"><wicket:message key="friendsList.nickname" /></th>
+										<th class="friendsName"><wicket:message key="friendsList.name" /></th>
+										<th class="friendsMsisdn"><wicket:message key="friendsList.msisdn" /></th>
+										<th class="actions last"><wicket:message key="friendsList.actions" /></th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td class="formButtons" colspan="5">
+											<div class="buttonWrap">
+												<input class="submitForm" type="submit" wicket:message="value:friendsList.remove.button" wicket:id="removeFriend" name="removeFriend">
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+								
+							</wicket:enclosure>
+							
+							<tbody>
+								<tr wicket:id="pageable">
+									<td class="select"><input type="checkbox" wicket:id="selected" /></td>
+									<td class="friendsNickname"><div wicket:id="nickname">[Nickname]</div></td>
+									<td class="friendsName"><div wicket:id="name">[Display Name]</div></td>
+									<td class="friendsMsisdn"><div wicket:id="msisdn">[MSISDN]</div></td>
+									<td>
+										<ul>
+											<li><a href="#" wicket:id="editAction"><wicket:message key="friendsList.editAction">[Edit]</wicket:message></a></li>
+											<li><a href="#" wicket:id="sendMoneyAction"><wicket:message key="friendsList.sendMoneyAction">[Send Money]</wicket:message></a></li>
+											<li class="last"><a href="#" wicket:id="topupAction"><wicket:message key="friendsList.topupAction">[Topup]</wicket:message></a></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

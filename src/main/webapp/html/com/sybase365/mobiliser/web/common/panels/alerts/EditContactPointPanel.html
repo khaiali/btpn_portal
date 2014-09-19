@@ -1,0 +1,176 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+</wicket:head>
+</head>
+
+<body>
+
+	<wicket:panel>
+		<div wicket:id="editContactPointsDiv">
+			<form wicket:id="editContactPointForm">
+
+				<h1 class="phone">
+					<span><wicket:message key="manageContactPoints.title" /></span>
+					<span><wicket:message key="application.breadcrumb.separator" /></span>
+					<span><wicket:message key="editContactPoint.editMobileDevice" /></span>
+				</h1>
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+				<div class="module clear" wicket:id="deviceInfoContainer">
+
+					<h2 class="section phone">
+						<wicket:message key="editContactPoint.deviceInformations" />
+					</h2>
+
+					<div class="column twoColumn">
+						<div class="input">
+							<label> <wicket:message key="editContactPoint.deviceName" />
+								<span class="required">*</span>
+							</label> <input type="text" wicket:id="deviceName" />
+						</div>
+						<div class="input">
+							<label> <wicket:message key="editContactPoint.number" /></label>
+							<div class="text" wicket:id="number"></div>
+						</div>
+					</div>
+
+					<!-- Comment this out until we can figure out where to store it
+			<div class="column twoColumn">
+				<div class="input">
+					<label> <wicket:message key="editContactPoint.authSecretText" /> <span class="required">*</span> </label> 
+					<input type="text" wicket:id="authSecretText"/> 
+				</div>
+				<div class="input">
+					<label> <wicket:message key="editContactPoint.browserMsgEnabled" /></label>
+					<input type="checkbox" wicket:id="browserMsgsEnabled" class="checkbox" style="width: 15px;"></input>
+				</div>
+				<div class="input">
+					<label> <wicket:message key="editContactPoint.receiveLoginToken" /></label>
+					<input type="checkbox" wicket:id="receiveLoginToken" class="checkbox" style="width: 15px;"></input>
+				</div>
+			</div>
+			-->
+
+				</div>
+				<div class="column buffer"></div>
+
+				<div class="module clear" wicket:id="deviceAlertPrefsContainer">
+
+					<h2 class="section phone">
+						<wicket:message key="editContactPoint.deviceAlertPreferences" />
+					</h2>
+
+					<div class="cmodule clear">
+						<div class="input">
+							<input type="checkbox" wicket:id="enableTextMsgAlerts"
+								class="checkbox" style="width: 15px;"></input>
+							<wicket:message key="editContactPoint.enableTextMessageAlerts" />
+						</div>
+
+						<div class="column twoColumn">
+
+							<span>
+								<div class="input">
+									<div class="group">
+										<input type="checkbox" wicket:id="disableAlertsPeriod"
+											id="disableAlertsPeriod" class="checkbox"
+											style="width: 15px;"></input> <label
+											for="disableAlertsPeriod"><wicket:message
+												key="editContactPoint.disableAlertsDateRange" /> </label>
+									</div>
+								</div>
+							</span>
+
+						</div>
+
+						<div class="column twoColumn" wicket:id="dateRangeContainer">
+
+							<div class="input" id="filterTimeframeFrom">
+								<label><wicket:message key="transactionHistory.fromDate" /><span
+									class="required"></span> </label> <input readonly="readonly"
+									type="text" wicket:id="disableAlertsPeriodFrom"
+									id="disableAlertsPeriodFrom" style="width: 150px;" />
+							</div>
+
+							<div class="input" id="filterTimeframeTo">
+								<label><wicket:message key="transactionHistory.toDate" /><span
+									class="required"></span></label> <input readonly="readonly"
+									type="text" wicket:id="disableAlertsPeriodTo"
+									id="disableAlertsPeriodTo" style="width: 150px;" />
+							</div>
+
+						</div>
+						<div class="column">
+							<div class="column twoColumn">
+								<span>
+									<div class="input">
+										<div class="group">
+											<input type="checkbox" wicket:id="disableAlertsDay"
+												id="disableAlertsDay" class="checkbox" style="width: 15px;"></input>
+											<label id="disableAlertsDay"><wicket:message
+													key="editContactPoint.disableAlertsEveryDayFrom" /> </label>
+										</div>
+									</div>
+								</span>
+
+							</div>
+
+							<div class="column twoColumn" wicket:id="timeFrameContainer">
+
+								<div class="input" id="filterTimeframeFrom">
+									<label><wicket:message
+											key="transactionHistory.fromDate" /><span class="required"></span>
+									</label> <input readonly="readonly" type="text"
+										wicket:id="disableAlertsDayFrom" id="disableAlertsDayFrom" />
+								</div>
+
+								<div class="input" id="filterTimeframeTo">
+									<label><wicket:message key="transactionHistory.toDate" /><span
+										class="required"></span></label> <input readonly="readonly"
+										type="text" wicket:id="disableAlertsDayTo"
+										id="disableAlertsDayTo" />
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="column">
+							<div class="column twoColumn">
+								<div class="input">
+									<input type="checkbox" wicket:id="disableAlertsWeekends"
+										class="checkbox" style="width: 15px;"></input>
+									<wicket:message
+										key="editContactPoint.disableAlertsDuringWeekend" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+
+				<div class="column">
+
+					<div class="formAction">
+						<input type="submit" class="submitForm" wicket:id="ecConfirm"
+							wicket:message="value:Update" /> <input type="submit"
+							class="submitForm" wicket:id="ecConfirmback"
+							wicket:message="value:Cancel" />
+					</div>
+
+				</div>
+
+
+			</form>
+		</div>
+
+	</wicket:panel>
+
+</body>
+</html>

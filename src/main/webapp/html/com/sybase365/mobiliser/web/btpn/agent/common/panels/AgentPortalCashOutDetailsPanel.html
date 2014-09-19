@@ -1,0 +1,79 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div></div>
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="cashOutDetaislForm">
+						<div wicket:id="errorMessages"></div>
+						<fieldset>
+							<legend class="reg_tab3">
+								<wicket:message key="headLine.mobileAccountDetails" />
+							</legend>
+
+							<div class="Account_info">
+								<label><wicket:message key="label.cashOut.accountNumber" /></label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.accountNumber"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message key="label.cashOut.accountName" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.accountName"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label><wicket:message key="label.cashOut.accountType" /></label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.accountType"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label><wicket:message key="label.cashOut.mobileNumber" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.payeeMsisdn"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message
+										key="label.cashOut.accountBanlace" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.accountBalance"></label>
+								</div>
+							</div>
+						</fieldset>
+						<br> <br>
+						<fieldset>
+							<legend class="reg_tab3">
+								<wicket:message key="headLine.withdrawalFromMobileAmount" />
+							</legend>
+							<div class="input">
+								<label for="cashinamount" style="width: 100px;"><wicket:message
+										key="label.cashOut.cashOutAmount" /><span class="required">*</span>
+								</label> <input type="text" id="cashinamount"
+									wicket:id="cashOutBean.cashOutAmount" />
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<input type="submit" class="submit btnstyle" id="submit"
+									wicket:id="submitButton" wicket:message="value:Cash-out" />
+							</div>
+							<div class="spacer"></div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

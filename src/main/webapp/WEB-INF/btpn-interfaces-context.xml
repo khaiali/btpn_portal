@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+	<!-- Registration interfaces -->
+	<util:list id="registrationInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IRegistrationEndpoint
+		</value>
+	</util:list>
+
+	<!-- Support interfaces -->
+	<util:list id="supportInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.ISupportEndpoint
+		</value>
+	</util:list>
+
+	<!-- Support interfaces -->
+	<util:list id="loginInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.ILoginEndpoint
+		</value>
+	</util:list>
+
+	<!-- Fund Transfer interfaces -->
+	<util:list id="fundtransferInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IFundTransferEndpoint
+		</value>
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IWithDrawEndpoint
+		</value>
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IDepositEndpoint
+		</value>
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IManageFavoriteEndpoint
+		</value>
+
+	</util:list>
+
+	<!-- ChangeMsisdn interfaces -->
+	<util:list id="changeMsisdnInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IChangeMsisdnEndpoint
+		</value>
+	</util:list>
+
+	<!-- Product interfaces -->
+	<util:list id="productInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IProductEndpoint
+		</value>
+	</util:list>
+
+	<!-- General Ledger interfaces -->
+	<util:list id="generalLedgerInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IGeneralLedgerEndpoint
+		</value>
+	</util:list>
+
+	<!-- Limit interfaces -->
+	<util:list id="limitInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.ILimitEndpoint
+		</value>
+	</util:list>
+	<util:list id="airTimeInterface">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IAirtimeTopupEndpoint
+		</value>
+	</util:list>
+	<util:list id="billPaymentInterface">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IBillPaymentEndpoint
+		</value>
+	</util:list>
+
+
+	<!-- TransactionReversal interfaces -->
+	<util:list id="txnReversalInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.ITransactionReversalEndpoint
+		</value>
+	</util:list>
+
+	<!-- Transaction GL End Point interfaces interfaces -->
+	<util:list id="txnGLlInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.ITransactionGLEndpoint
+		</value>
+	</util:list>
+
+	<!-- Holiday Calendar End Point interfaces interfaces -->
+	<util:list id="holidayCalendarInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IHolidayCalendarEndpoint
+		</value>
+	</util:list>
+
+
+	<!-- Edit Profile End point interfaces interfaces -->
+	<util:list id="editProfileInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IEditProfileEndpoint
+		</value>
+	</util:list>
+
+	<!-- Fee End Point interfaces interfaces -->
+	<util:list id="feeInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IFeeEndpoint
+		</value>
+	</util:list>
+	
+	<!-- Fee End Point interfaces interfaces -->
+	<util:list id="bulkFileInterfaces">
+		<value>com.sybase365.mobiliser.custom.btpn.services.contract.api.IBulkFileProcessingEndpoint
+		</value>
+	</util:list>
+	
+	<!-- bulkFileFacadeInterfaces  End Point  interfaces -->
+	<util:list id="bulkFileFacadeInterfaces">
+		<value>com.btpnwow.core.bulk.facade.api.BulkFileFacade
+		</value>
+	</util:list>
+	
+	<!-- bulkFileFacadeWrkInterfaces  End Point  interfaces -->
+	<util:list id="bulkFileWrkFacadeInterfaces">
+		<value>com.btpnwow.core.bulk.facade.api.BulkFileWrkFacade
+		</value>
+	</util:list>
+	
+	<!-- Debit End Point interfaces -->
+	<util:list id="debitInterfaces">
+		<value>com.btpnwow.core.debit.facade.api.DebitFacade
+		</value>
+	</util:list>
+	
+	<!-- LimitEx End Point interfaces interfaces -->
+	<util:list id="limitExInterfaces">
+		<value>com.btpnwow.core.limitex.services.api.ILimitExEndpoint
+		</value>
+	</util:list>
+	
+	<!-- GL End Point interfaces -->
+	<util:list id="glInterfaces">
+		<value>com.btpnwow.core.gl.facade.api.GLFacade
+		</value>
+	</util:list>
+	
+	<!-- GL Wrk End Point interfaces -->
+	<util:list id="glWrkInterfaces">
+		<value>com.btpnwow.core.gl.facade.api.GLWrkFacade
+		</value>
+	</util:list>
+	
+	<!-- USE CASE FEE End Point interfaces -->
+	<util:list id="ucFeeInterfaces">
+	    <value>com.btpnwow.core.fee.facade.api.UseCaseFeeFacade</value>
+	</util:list>
+	
+	<!-- USE CASE FEE Wrk End Point interfaces -->
+	<util:list id="ucFeeWrkInterfaces">
+	    <value>com.btpnwow.core.fee.facade.api.UseCaseFeeWrkFacade</value>
+	</util:list>
+	
+	<!-- BILLER FEE End Point interfaces -->
+	<util:list id="billerFeeInterfaces">
+	    <value>com.btpnwow.core.fee.facade.api.BillerFeeFacade</value>
+	</util:list>
+	
+	<!-- BILLER FEE Wrk End Point interfaces -->
+	<util:list id="billerFeeWrkInterfaces">
+	    <value>com.btpnwow.core.fee.facade.api.BillerFeeWrkFacade</value>
+	</util:list>
+	
+	<!-- SECURITY -->
+	<util:list id="securityInterfaces">
+	    <value>com.btpnwow.core.security.facade.api.SecurityFacade</value>
+	</util:list>
+	
+	<!-- CUSTOMER WRK -->
+	<!-- 
+	<util:list id="customerWrkInterfaces">
+	    <value>com.btpnwow.core.customer.facade.api.CustomerWrkFacade</value>
+	</util:list>
+	-->
+
+	<!-- USER AND CUSTOMER -->
+	<util:list id="userInterfaces">
+	    <value>com.btpnwow.core.customer.facade.api.UserFacade</value>
+	    <value>com.btpnwow.core.customer.facade.api.CustomerFacade</value>
+	</util:list>
+
+	<!-- INTEREST End Point interfaces -->
+	<util:list id="interestInterfaces">
+	    <value>com.btpnwow.core.interest.facade.api.InterestFacade</value>
+	</util:list>
+	
+	<!-- INTEREST Wrk End Point interfaces -->
+	<util:list id="interestWrkInterfaces">
+	    <value>com.btpnwow.core.interest.facade.api.InterestWrkFacade</value>
+	</util:list>
+	
+	<!-- INTEREST TAX End Point interfaces -->
+	<util:list id="interestTaxInterfaces">
+	    <value>com.btpnwow.core.interest.facade.api.InterestTaxFacade</value>
+	</util:list>
+	
+	<!-- INTEREST TAX Wrk End Point interfaces -->
+	<util:list id="interestTaxWrkInterfaces">
+	    <value>com.btpnwow.core.interest.facade.api.InterestTaxWrkFacade</value>
+	</util:list>
+	
+	<!-- TRANSACTION HISTORY End Point interfaces -->
+	<util:list id="accountInterfaces">
+	    <value>com.btpnwow.core.account.facade.api.AccountFacade</value>
+	</util:list>
+	
+	<!-- MANAGE FAVORITE End Point interfaces -->
+	<util:list id="favInterfaces">
+	    <value>com.btpnwow.core.preregistered.facade.api.PreRegisteredFacade</value>
+	</util:list>
+	
+	<!-- WALLET -->
+	<util:list id="walletInterfaces">
+	    <value>com.sybase365.mobiliser.money.services.api.IWalletEndpoint</value>
+	</util:list>
+	
+	
+	<!-- STANDING INSTRUCTION -->
+	<util:list id="siInterfaces">
+	    <value>com.btpnwow.core.schedtxn.facade.api.SchedTxnFacade</value>
+	</util:list>
+	
+	
+</beans>

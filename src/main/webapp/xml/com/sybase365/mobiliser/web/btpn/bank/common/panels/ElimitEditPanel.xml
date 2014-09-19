@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.limitDetails">Edit Limit Details</entry>
+	<entry key="headLine.withdrawlFromMobileAmount">Withdrawl from Mobile Amount</entry>
+	
+	<entry key="label.limit.description">Decription</entry>
+	<entry key="label.limit.piType">PI Type</entry>
+	<entry key="label.limit.pi">PI</entry>
+	<entry key="label.limit.customerType">Customer Type</entry>
+	<entry key="label.limit.customer">Customer</entry>
+	<entry key="label.limit.useCase">Use Case</entry>
+	<entry key="label.limit.singleDebitMinAmount">Single Debit Min Amount</entry>
+	<entry key="label.limit.singleDebitMaxAmount">Single Debit Max Amount</entry>
+	<entry key="label.limit.singleCreditMinAmount">Single Credit Min Amount</entry>
+	<entry key="label.limit.singleCreditMaxAmount">Single Credit Max Amount</entry>
+	<entry key="label.limit.dailyDebitMaxAmount">Daily Debit Max Amount</entry>
+	<entry key="label.limit.weeklyDebitMaxAmount">Weekly Debit Max Amount</entry>
+	<entry key="label.limit.monthlyDebitMaxAmount">Monthly Debit Max Amount</entry>
+	<entry key="label.limit.dailyCreditMaxAmount">Daily Credit Max Amount</entry>
+	<entry key="label.limit.weeklyCreditMaxAmount">Weekly Credit Max Amount</entry>
+	<entry key="label.limit.monthlyCreditMaxAmount">Monthly Credit Max Amount</entry>
+	<entry key="label.limit.dailyDebitMaxCount">Daily Debit Max Count</entry>
+	<entry key="label.limit.weeklyDebitMaxCount">Weekly Debit Max Count</entry>
+	<entry key="label.limit.monthlyDebitMaxCount">Month Debit Max Count</entry>
+	<entry key="label.limit.dailyCreditMaxCount">Daily Credit Max Count</entry>
+	<entry key="label.limit.weeklyCreditMaxCount">Weekly Credit Max Count</entry>
+	<entry key="label.limit.monthlyCreditMaxCount">Monthly Credit Max Count</entry>
+	<entry key="label.limit.minimumBalance">Minimum Balance</entry>
+	<entry key="label.limit.maximumBalance">Maximum Balance</entry>
+	<entry key="label.limit.status">Status</entry>
+	<entry key="label.limit.creationDate">Creation Date</entry>
+	<entry key="label.limit.creator">Creator</entry>
+	
+	<!-- ############# Button ############# -->
+	<entry key="label.button.limit.submitEdit">Confirm</entry>
+	<entry key="label.button.limit.cancelEdit">Cancel</entry>
+	
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="cashOutBean.cashOutAmount.Required">Cash Out Amount is a required field</entry>
+	<entry key="cashOutBean.cashOutAmount.PatternValidator">'${input}' is not a valid Cash Out Amount</entry>
+	<entry key="cashOutBean.cashOutAmount.AmountValidator">${input} is not a valid Cash Out Amount</entry>
+	<entry key="cashOutBean.cashOutAmount.IConverter.Long">${input} is not a valid Cash Out Amount</entry>
+	<entry key="limitBean.description.Required">Description is a required field</entry>
+	<entry key="limitBean.customerType.Required">Description is a required field</entry>
+	<entry key="limitBean.singleDebitMinAmount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.singleDebitMaxAmount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.singleCreditMinAmount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.singleCreditMaxAmount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.dailyDebitMaxAmount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.weeklyDebitMaxAmount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.monthlyDebitMaxAmount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.dailyCreditMaxAmount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.weeklyCreditMaxAmount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.dailyDebitMaxCount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.weeklyDebitMaxCount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.monthlyDebitMaxCount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.dailyCreditMaxCount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.weeklyCreditMaxCount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.monthlyCreditMaxCount.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.maximumBalance.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.minimumBalance.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.useCase.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.customer.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.customerType.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.pi.IConverter.Long">${input} is not a valid Format</entry>
+	<entry key="limitBean.piType.IConverter.Long">${input} is not a valid Format</entry>
+
+</properties>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+	<entry key="headLine.usecase.fee">Use Case Fee Management Detail</entry>
+	<entry key="label.useCase"> Use Case </entry>
+	<entry key="label.debitOrgUnit"> Debit Org Unit </entry>
+	<entry key="label.creditOrgUnit"> Credit Org Unit </entry>
+	<entry key="label.debitPiType">Debit PI Type</entry>
+	<entry key="label.creditPiType">Credit PI Type</entry>
+	<entry key="label.glCode"> GL Code </entry>
+	<entry key="label.customerType">Customer Type</entry>
+	<entry key="label.validFrom"> Valid From </entry>
+	<entry key="label.payeeFee"> Apply to Payee</entry>
+	<entry key="label.fixedFee">Fixed Fee</entry>
+	<entry key="label.percentageFee">Percentage Fee</entry>
+	<entry key="label.maximumFee">Maximum Fee</entry>
+	<entry key="label.minimumFee">Minimum Fee</entry>
+	<entry key="label.thresholdAmount"> Thereshold Amount </entry>
+	<entry key="label.currencyCode"> Currency Code </entry>
+	<entry key="label.note"> Note </entry>
+	<entry key="label.description"> Description </entry>
+	<entry key="fees.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="no.items">Nothing found to display.</entry>
+	
+	<!-- Required Validations -->
+	<entry key="feeBean.useCaseName.Required">Feeuse Case Id is a required field</entry>
+	<entry key="feeDetailsBean.feeName.Required">Fee Name is required.</entry>
+	<entry key="feeDetailsBean.glCode.Required">GL Code is required.</entry>
+	
+</properties>

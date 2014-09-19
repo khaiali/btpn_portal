@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.favorites">Favorit</entry>
+	<entry key="label.noDataFound">Tidak ada no favorit.  Pilih 'Tambah' untuk membuat daftar favorit.</entry>
+	<entry key="label.name">Nama</entry>
+	<entry key="label.value">Deskripsi</entry><!--"Jumlah" diubah ke "deskripsi" tanggal 27/2 jam 4:56 PM-->
+	<entry key="label.type">Tipe</entry>
+	<entry key="label.details">Detail</entry>
+	<entry key="label.remove">Hapus</entry>
+
+	<entry key="approval.totalitems.header">%s item ditemukan, menampilkan %s sampai %s.</entry>
+	<entry key="pending.failure.error">An error occured while fetching approval list.</entry>
+	<entry key="selected.details.failure.error">An error occured while fetching selected approval
+		details.</entry>
+	<entry key="pending.failure.exception">Maaf Terdapat Gangguan. Silahkan Coba Kembali.</entry>
+</properties>

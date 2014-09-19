@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <!-- ############# Consumer Signup - Start Page ############# -->
+    <entry key="consumer.signup.head.title">Mobiliser Consumer Signup</entry>
+    <entry key="consumer.signup.page.title">Consumer Signup</entry>
+    <entry key="signup.title">Mobiliser Consumer Signup</entry>
+    <entry key="signup.welcome.message">Welcome to the Mobiliser Consumer Signup</entry>
+    <entry key="signup.help.text1">To use this application you need to have a valid mobile number and postal address.</entry>
+    <entry key="signup.help.text2">In the course of the signup process you will be asked information about yourself, such as;</entry>
+    <entry key="signup.help.text2.mobile">mobile number</entry>
+    <entry key="signup.help.text2.personal">personal details</entry>
+    <entry key="signup.help.text2.address">your address, and</entry>
+    <entry key="signup.help.text2.account">bank account information</entry>
+    <entry key="signup.help.text3">If you are not willing to provide us with this information you may not sign up to use this service.</entry>
+    <entry key="signup.continue.money">&#187; Continue signup as a Money consumer</entry>
+    <entry key="signup.continue.mbanking">&#187; Continue signup as an mBanking consumer</entry>
+
+    <!-- ############# Consumer Signup - Personal Data  Page ############# -->
+    <entry key="signup.personalData.title">Mobiliser Consumer Signup - Personal Data</entry>
+    <entry key="signup.personalData.help">Please supply your personal information below</entry>
+    <entry key="index.headline.personalInformation">General Information</entry>
+    <entry key="index.headline.yourAddress">Address Information</entry>
+    <entry key="index.headline.yourIdentification">Security Information</entry>
+    <entry key="index.headline.yourContactInformation">Contact Information</entry>
+    <entry key="index.headline.confirm">User Confirm</entry>
+    <entry key="signup.msisdn">MSISDN</entry>
+    <entry key="customer.networkProvider">Network Provider</entry>
+    
+    <entry key="signup.personalData.birthDate">Date Of Birth</entry>
+    <entry key="signup.personalData.street1">Street Address</entry>
+    <entry key="signup.personalData.street2">Street Address 2</entry>
+    <entry key="signup.securityQuestion.description">We will ask you this security question, when you call us:</entry>
+    <entry key="signup.personalData.securityQuestion">Security Question</entry>
+    <entry key="signup.personalData.securityAnswer">Answer</entry>
+    <entry key="customer.address.kvSecQuestions.null">- Please Select -</entry>
+    <entry key="customer.kvIdentityType.null">- Please Select -</entry>
+    <entry key="signup.pin.description">Please enter a 4-digit PIN code:</entry>
+    <entry key="signup.personalData.pin">PIN</entry>
+    <entry key="signup.personalData.pin2">Confirm PIN</entry>
+    <entry key="signup.personalData.firstName">First Name</entry>
+    <entry key="signup.personalData.lastName">Last Name</entry>
+    <entry key="signup.personalData.title">Title</entry>
+    <entry key="signup.personalData.gender">Gender</entry>
+    <entry key="signup.personalData.street">Street</entry>
+    <entry key="signup.personalData.houseNo">House No</entry>
+    <entry key="signup.personalData.zip">ZIP</entry>
+    <entry key="signup.personalData.city">City</entry>
+    <entry key="signup.personalData.state">State</entry>
+    <entry key="signup.personalData.country">Country</entry>
+    <entry key="signup.personalData.phone">Phone</entry>
+    <entry key="signup.personalData.email">Email</entry>
+    <entry key="signup.personalData.infoMode">Info Mode</entry>
+    <entry key="signup.personalData.userName">Username</entry>
+    <entry key="signup.password.description">Please enter a password, which will be used to verify your identity:</entry>
+    <entry key="signup.personalData.password">Password</entry>
+    <entry key="signup.personalData.passwordConfirm">Confirm Password</entry>
+    <entry key="signup.personalData.identityType">ID Type</entry>
+    <entry key="signup.personalData.identityValue">ID Number</entry>
+    <entry key="personalData.continue">Continue</entry>
+    <entry key="personalData.back">Back</entry>
+    <entry key="customer.address.firstName">First Name</entry>
+    <entry key="customer.address.lastName">Last Name</entry>
+    <entry key="customer.address.birthDateString">Date Of Birth</entry>
+    <entry key="customer.address.kvSecQuestions">Security Question</entry>
+    <entry key="customer.address.SecQuesAns">Security Question Answer</entry>
+    <entry key="customer.age.error">You must be over 18 years of age to register for this service</entry>
+    <entry key="customer.address.kvGender">Gender</entry>
+    <entry key="customer.kvInfoMode">Info Mode</entry>
+    <entry key="customer.userName">Username</entry>
+    <entry key="customer.password">Password</entry>
+    <entry key="passwordConfirmed">Confirm Password</entry>
+    <entry key="customer.infoMode">Info Mode</entry>
+    <entry key="customer.address.email">Email Address</entry>
+    <entry key="customer.pin.notConfirmed">The entered PIN confirmation does not match the entered PIN </entry>
+    <entry key="customer.pin">Pin</entry>
+    <entry key="pinConfirmed">Confirm Pin</entry>
+    <entry key="consumerBean.terms">Terms and Conditions.</entry>
+    <entry key="agree">You must agree to the terms and conditions</entry>
+    <entry key="consumerBean.terms.disagree">I Disagree.</entry>
+    <entry key="consumerBean.terms.agree">I Agree.</entry>
+    <entry key="terms.disAgree">You must agree to the terms and condition to complete registration</entry>
+    <entry key="customer.address.kvCountry">Country</entry>
+    <entry key="customer.msisdn">MSISDN</entry>
+    <entry key="signup.check.duplicate.msisdn.error">The entered mobile number has already been registered.  Please try it again. If you are sure that the number is correct, please contact us</entry>
+    <entry key="signup.check.duplicate.username.error">The entered username has already been registered.  Please try it again.</entry>
+    <entry key="signup.check.duplicate.msisdn.failed">Failed to check whether entered MSISDN has already registered</entry>
+    <entry key="signup.check.duplicate.userName.failed">Failed to check whether entered username has already registered</entry>
+
+    <!-- ############# Consumer Signup - Error messages ############# -->
+    <entry key="customer.msisdn.Required">MSISDN is required</entry>
+    <entry key="customer.msisdn.StringValidator.range">The entered MSISDN must contain between 8 and 20 characters</entry>
+    <entry key="customer.msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+    <entry key="customer.msisdn.AlreadyRegistered">The entered MSISDN is already registered</entry>
+    <entry key="customer.msisdn.error">A technical error occured while querying the MSISDN's status</entry>
+    <entry key="signup.continue">Continue</entry>
+    <entry key="signup.cancel">Cancel</entry>
+    <entry key="signup.username">Username</entry>
+    <entry key="signup.password">Password</entry>
+    <entry key="signup.continue">Continue</entry>
+    <entry key="signup.forgotPassword">Forgot password?</entry>
+
+    <!-- ############# Consumer Signup - Confirm Data Page ############# -->
+    <entry key="signup.confirmData.title">Confirm Personal Data</entry>
+    <entry key="confirmData.headline">Please confirm your previously entered information</entry>
+    <entry key="signup.confirmData.personalData">Personal Information</entry>
+    <entry key="signup.confirmData.bankAccountData">Bank Account Information</entry>
+    <entry key="signup.confirmData.msisdn">MSISDN</entry>
+    <entry key="signup.confirmData.firstName">First Name</entry>
+    <entry key="signup.confirmData.lastName">Last Name</entry>
+    <entry key="signup.confirmData.title">Title</entry>
+    <entry key="signup.confirmData.gender">Gender</entry>
+    <entry key="signup.confirmData.birthDate">Date Of Birth</entry>
+    <entry key="signup.confirmData.street1">Street Address</entry>
+    <entry key="signup.confirmData.street2">Street Address (addition)</entry>
+    <entry key="signup.confirmData.securityQuestion">Security Question</entry>
+    <entry key="signup.confirmData.securityAnswer">Answer</entry>
+    <entry key="signup.confirmData.houseNo">House No</entry>
+    <entry key="signup.confirmData.zip">ZIP</entry>
+    <entry key="signup.confirmData.city">City</entry>
+    <entry key="signup.confirmData.state">State</entry>
+    <entry key="signup.confirmData.country">Country</entry>
+    <entry key="signup.confirmData.phone">Phone</entry>
+    <entry key="signup.confirmData.email">Email</entry>
+    <entry key="signup.confirmData.infoMode">Info Mode</entry>
+    <entry key="signup.confirmData.userName">Username</entry>
+    <entry key="signup.confirmData.accountHolder">Account Holder</entry>
+    <entry key="signup.confirmData.accountNumber">Account Number</entry>
+    <entry key="signup.confirmData.bankCode">Bank Code</entry>
+    <entry key="signup.confirmData.bankName">Bank Name</entry>
+    <entry key="signup.confirmData.tncAccept">Accept</entry>
+    <entry key="index.headline.termsAndConditions">Terms and Conditions</entry>
+    <entry key="signup.confirmData.tnc"><![CDATA[
+  <h2 class="section">
+    Terms and Conditions of use:              
+  </h2>
+  BlaBlaBlaBlaBla 
+  ]]>
+    </entry>
+    <entry key="confirmData.continue">Continue</entry>
+    <entry key="confirmData.back">Back</entry>
+    <entry key="termsAndConditions.tncNotAccpeted">you must accpet the terms and conditions in order to proceed </entry>
+    <entry key="signup.create.error">A technical error occured</entry>
+    <entry key="nonpersistent.opt.create.failed  ">Failed to create the non persistent OTP</entry>
+    <entry key="nonpersistent.opt.send.failed  ">Failed to send the non persistent OTP</entry>
+
+    <!-- ############# Consumer Signup - Confirm OTP Page ############# -->
+    <entry key="signup.confirmOtp.title">Confirm Passcode</entry>
+    <entry key="signup.otp.welcome.message">Verify mobile phone</entry>
+    <entry key="authenticate.text1">We just sent a one-time passcode to your mobile phone, please enter it in the field below.</entry>
+    <entry key="authenticate.text2">Click "Resend" and we will send the one-time passcode again.</entry>
+    <entry key="authenticate.text3">Click "Cancel" and restart registration, if you are having difficulty receiving your one-time passcode.</entry>
+    <entry key="signup.otp">Passcode</entry>
+    <entry key="signup.otp.resend">Resend</entry>
+    <entry key="otp.resend.success">We have resent your passcode to your mobile phone</entry>
+
+    <!-- ############# Consumer Signup - Confirm OTP Errors ############# -->
+    <entry key="signup.otp">Passcode</entry>
+    <entry key="signup.otp.error">A technical error occurred while querying the MSISDN's status </entry>
+    <entry key="otp.verification.error"> is not a valid Passcode</entry>
+    <entry key="otp.input.count.exceeded">You have exceeded number of attempts allowed for OTP verification</entry>
+    <entry key="signup.create.customer.error">Failed to create customer</entry>
+    <entry key="signup.create.customer.ident.custid.error">Failed to create customer identification by customer id </entry>
+    <entry key="signup.create.customer.ident.msisdn.error">Failed to create customer identification by MSISDN</entry>
+    <entry key="signup.create.customer.ident.username.error">Failed to create customer identification by Username</entry>
+    <entry key="signup.create.credential.password.error">Failed to create customer credential(password)</entry>
+    <entry key="signup.create.credential.pin.error">Failed to create customer credential(pin)</entry>
+    <entry key="signup.create.address.error">Failed to save customer address</entry>
+    <entry key="signup.create.sva.error">Failed to create payment instrument for customer's SVA </entry>
+    <entry key="signup.create.sva.wallet.error">Failed to create wallet for customer's SVA</entry>
+
+    <!-- ############# Consumer Signup - Cancel Page ############# -->
+    <entry key="signup.cancelation.message">You have aborted the registration. Please click "Restart Registration" to start it again</entry>
+    <entry key="signup.restart">Restart Registration</entry>
+
+    <!-- ############# Consumer Signup - Finished Page ############# -->
+    <entry key="signup.finished.title">Consumer Signup Complete</entry>
+    <entry key="signup.finished">Congratulations! You are now fully registered!</entry>
+    <entry key="signup.finished.nextstep">Click the Continue button below and enter your username and password to login.</entry>
+
+    <entry key="customer.address.firstName">First Name</entry>
+    <entry key="customer.address.lastName">Last Name</entry>
+    <entry key="customer.address.birthDateString">Date Of Birth</entry>
+    <entry key="customer.address.kvSecQuestions">Security Question</entry>
+    <entry key="customer.address.SecQuesAns">Security Question Answer</entry>
+    <entry key="customer.age.error">You must be over 18 years of age to register for this service.</entry>
+
+    <!-- ############# Consumer Signup - Cancel Page ############# -->
+    <entry key="signup.cancelation.message">You have aborted the registration. Please click "Restart Registration" to start it again.</entry>
+    <entry key="signup.restart">Restart Registration</entry>
+
+</properties>

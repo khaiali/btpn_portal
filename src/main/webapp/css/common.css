@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+#labelInfo {
+	font-weight: normal;
+}
+
+#centerContent label.noUnderline {
+	border: none;
+}
+
+#centerContent .input select#consumerBean_securityQuestion{
+	width:385px;
+}
+
+#centerContent .input select#consumerBean_idType{
+	width:235px;
+}
+
+.submit {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+#centerContent .submit.left {
+	left: 75px;
+}
+
+#centerContent .submit.right {
+	left: 550px;
+}
+
+#centerContent .submit.twoButtons.left {
+	right: 175px;
+}
+
+#centerContent .submit.twoButtons.right {
+	position: relative;
+	left: 415px;
+}
+
+#centerContent .submit.threeButtons.left {
+	left: 150px;
+}
+
+#centerContent .submit.threeButtons.middle {
+	position: relative;
+	left: 400px;
+}
+
+#centerContent .submit.threeButtons.right {
+	position: relative;
+	left: 425px;
+}
+
+.footnote {
+	font-size: 10px;
+}
+
+#centerContent #resend_buffer {
+	
+	background-color: red;
+	padding: 0px;
+	margin: 0px;
+	width: 80px;
+	height: 18px;
+	display: inline;
+}
+
+#centerContent .input#inputTan {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.spacer {
+	clear: both;
+	height: 20px;
+}
+
+#centerContent .submit.pair {
+	position: relative;
+	left: 150px;
+	margin-right: 5px;
+}
+
+#centerContent h1 label {
+    border-bottom: 0px;
+    clear: none;
+    display: inline;
+    float: none;
+    font-weight: bold;
+    margin-left: 0;
+    margin-top: 4px;
+    padding: 1px 2px;
+    text-align: left;
+    width: 155px;
+}
+ul.feedbackPanel {
+    margin-bottom: 10px;
+}
+li.feedbackPanelERROR {
+	list-style: none;
+	clear: both;
+	text-align: left;
+	padding-left: 20px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background: transparent url(../images/cross-red.gif) no-repeat left center;
+	color: red;
+	font-weight: bold;
+	list-style: none;
+}
+html[dir="rtl"] li.feedbackPanelERROR {
+	padding-left: 0;
+	padding-right: 20px;
+	background: transparent url(../images/cross-red.gif) no-repeat right center;
+	text-align: right;
+}
+span.feedbackPanelERROR {
+}
+li.feedbackPanelINFO {
+	list-style: none;
+	clear: both;
+	text-align: left;
+	padding-left: 20px;
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	background: transparent url(../images/checkmark-green.gif) no-repeat left center;
+	color: green;
+	font-weight: bold;	
+	list-style: none;
+}
+html[dir="rtl"] li.feedbackPanelINFO {
+	padding-left: 0;
+	padding-right: 20px;
+	background: transparent url(../images/checkmark-green.gif) no-repeat right center;
+	text-align: right;
+}
+span.feedbackPanelINFO {
+}
+#centerContent div.column.buffer {
+    height: 10px;
+}

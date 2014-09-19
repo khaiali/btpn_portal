@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <!-- ################### Left Menu Entries ##################### -->
+    <entry key="menu.customer.details">Customer Details</entry>
+    <entry key="submenu.cashin">Cash In</entry>
+    <entry key="submenu.cashout">Cash Out</entry>
+    <entry key="submenu.remittance">Remittance</entry>
+    <entry key="submenu.pickup">Pickup</entry>
+    <entry key="submenu.txnHistory">View Transactions</entry>
+    <entry key="submenu.kycUpgrade">KYC Upgrade</entry>
+
+    <!-- ################### Cash In Page ##################### -->
+    <entry key="cashIn.title">Cash In</entry>
+    <entry key="cashIn.help">Please enter the amount of the Cash In transaction</entry>
+    <entry key="amountString">Amount</entry>
+    <entry key="cashInConfirm.title">Confirm Transaction</entry>
+    <entry key="cashInConfirm.help">Please review the Cash In transaction</entry>
+    <entry key="creditAmount">Credit Amount</entry>
+    <entry key="feeString">Fee Amount</entry>
+    <entry key="debitAmount">Debit Amount</entry>
+    <entry key="recipient">Recipient MSISDN</entry>
+    <entry key="txnText">Message</entry>
+
+    <entry key="cashInFinish.title">Transaction Complete</entry>
+    <entry key="cashInFinish.success">The Cash In transaction was successful</entry>
+    <entry key="cashInFinish.amount">Amount</entry>
+    <entry key="cashInFinish.recipient">was credited to</entry>
+    <entry key="cashInFinish.txnId">Transaction ID</entry>
+    <entry key="cashInFinish.authCode">Auth Code</entry>
+    <entry key="cashInFinish.button.printReceipt">Print Receipt</entry>
+
+    <!-- ################### Cash Out Page ##################### -->
+    <entry key="cashOut.title">Cash Out</entry>
+    <entry key="cashOut.help">Please enter the amount of the Cash Out transaction</entry>
+    <entry key="cashOut.button.next">Next</entry>
+    <entry key="cashOutConfirm.title">Confirm Transaction</entry>
+    <entry key="cashOutConfirm.help">Please confirm the Cash Out transaction</entry>
+    <entry key="payer">Payer MSISDN</entry>
+    <entry key="cashOutFinish.title">Transaction Complete</entry>
+    <entry key="cashOutFinish.success">The Cash Out was successful</entry>
+    <entry key="cashOutFinish.amount">Amount</entry>
+    <entry key="cashOutFinish.payer">was credited from</entry>
+    <entry key="cashOutFinish.txnId">Transaction ID</entry>
+    <entry key="cashOutFinish.authCode">Auth Code</entry>
+    <entry key="cashOutFinish.button.printReceipt">Print Receipt</entry>
+
+    <entry key="amountString.AmountValidator">'${input}' is not a valid Amount</entry>
+
+    <!-- ################### View Transactions Page ##################### -->
+    <entry key="viewTransactions.title">View Transactions</entry>
+
+    <!-- ############### View Transaction Details Page ################ -->
+    <entry key="txnDetails.title">Transaction Details</entry>
+
+    <!-- ################### Remittance Page ##################### -->
+    <entry key="remittance.title">Remittance</entry>
+
+    <entry key="remittance.actions">Actions</entry>
+    <entry key="remittance.remitAction">Remit</entry>
+
+    <entry key="remittance.bankAccountsTable.title">GCASH Bank Accounts</entry>
+    <entry key="remittance.button.addBankAccount">Add GCASH Bank Account</entry>
+    <entry key="remittance.bankAccountsTable.accountHolder">Account Holder</entry>
+    <entry key="remittance.bankAccountsTable.accountNumber">Account Number</entry>
+    <entry key="remittance.bankAccountsTable.bankName">Bank Name</entry>
+    <entry key="remittance.bankAccountsTable.accountHolderAddress">Holder Address</entry>
+    <entry key="remittance.bankAccountsTable.country">Country</entry>
+    <entry key="remittance.bankAccountsTable.noItemsMsg">No GCASH Bank Accounts Found</entry>
+    <entry key="remittance.bankAccountsTable.addBankAccountHelp">Click on the Add GCASH Bank Account above to add an account</entry>
+
+    <entry key="remittance.walletsTable.title">GCASH Wallets</entry>
+    <entry key="remittance.button.addWallet">Add GCash Wallet</entry>
+    <entry key="remittance.walletsTable.msisdn">MSISDN</entry>
+    <entry key="remittance.walletsTable.noItemsMsg">No GCASH Wallets Found</entry>
+    <entry key="remittance.walletsTable.addWalletHelp">Click on the Add GCASH Wallet to add an account</entry>
+
+    <!-- ################### Add Remittance Account Page ##################### -->
+    <entry key="remittanceAddAccount.title">Add Account</entry>
+    <entry key="remittanceAddAccount.account.type">Account Type</entry>
+    <entry key="remittanceAddAccount.msisdn">Benificiary MSISDN</entry>
+    <entry key="remittanceAddAccount.accountHolder">Account Holder</entry>
+    <entry key="remittanceAddAccount.accountNo">Account Number</entry>
+    <entry key="remittanceAddAccount.institutionCode">Bank Name</entry>
+    <entry key="remittanceAddAccount.account.accountHolderAddress">Holder Address</entry>
+    <entry key="remittanceAddAccount.account.city">City</entry>
+    <entry key="remittanceAddAccount.account.zip">Zip</entry>
+    <entry key="remittanceAddAccount.account.country">Country</entry>
+
+    <entry key="inputRemittanceAccount.type.Required">Account Type is required</entry>
+
+    <entry key="inputRemittanceAccount.msisdn.Required">Benificiary MSISDN is required</entry>
+    <entry key="inputRemittanceAccount.msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+
+    <entry key="inputRemittanceAccount.accountHolder.Required">Account Holder is required</entry>
+    <entry key="inputRemittanceAccount.accountNo.Required">Account Number is required</entry>
+    <entry key="inputRemittanceAccount.institutionCode.Required">Bank Name is required</entry>
+
+    <entry key="remittance.account.add.confirmation">The GCASH account has been added.</entry>
+    <entry key="remittance.add.externalAccount.error">An error occured while adding a remittance account.</entry>
+
+    <!-- ################### Remit Money Page ##################### -->
+    <entry key="remitMoney.title">Remit</entry>
+    <entry key="remitMoney.help">Please enter the data of the Remittance.</entry>
+    <entry key="remitMoney.purposeOfTransfer">Purpose of Transfer</entry>
+    <entry key="remitMoney.amount">Amount</entry>
+    <entry key="purposeOfTransfer.Required">Purpose of Transfer is required</entry>
+
+    <entry key="remitMoneyConfirm.title">Confirm Transaction</entry>
+    <entry key="remitMoneyConfirm.amount">Amount</entry>
+    <entry key="remitMoneyConfirm.senderName">Sender</entry>
+    <entry key="remitMoneyConfirm.senderMSISDN">Sender MSISDN</entry>
+    <entry key="remitMoneyConfirm.remittanceAccount.msisdn">Beneficiary MSISDN</entry>
+    <entry key="remitMoneyConfirm.remittanceAccount.accountHolder">Account Holder</entry>
+    <entry key="remitMoneyConfirm.remittanceAccount.accountNo">Account Number</entry>
+    <entry key="remitMoneyConfirm.purposeOfTransfer">Purpose of Transfer</entry>
+    <entry key="remitMoneyConfirm.txnId">Transaction Id</entry>
+    <entry key="remitMoneyConfirm.authCode">Auth Code</entry>
+
+    <entry key="remitMoneyFinish.title">Transaction Complete</entry>
+    <entry key="remitMoneyFinish.success">Your remittance has been successful</entry>
+    <entry key="remitMoneyFinish.amount">Amount</entry>
+    <entry key="remitMoneyFinish.senderName">Sender</entry>
+    <entry key="remitMoneyFinish.senderMSISDN">Sender MSISDN</entry>
+    <entry key="remitMoneyFinish.remittanceAccount.msisdn">Beneficiary MSISDN</entry>
+    <entry key="remitMoneyFinish.remittanceAccount.accountHolder">Account Holder</entry>
+    <entry key="remitMoneyFinish.remittanceAccount.accountNo">Account Number</entry>
+    <entry key="remitMoneyFinish.purposeOfTransfer">Purpose of Transfer</entry>
+    <entry key="remitMoneyFinish.txnId">Transaction Id</entry>
+    <entry key="remitMoneyFinish.authCode">Auth Code</entry>
+    <entry key="remitMoneyFinish.button.print">Print Receipt</entry>
+
+
+    <!-- ################### Pickup Page ##################### -->
+    <entry key="pickUp.title">Pickup</entry>
+    <entry key="pickUp.help">Enter the code of the transaction you want to pick up</entry>
+    <entry key="pickUp.VoucherId">Voucher Id</entry>
+    <entry key="pickUp.originalAmount">Voucher Amount</entry>
+    <entry key="pickUp.agentAmount">Payout Amount</entry>
+    <entry key="pickUp.TransactionId">Transaction ID</entry>
+    <entry key="pickUp.feeAmount">Fee Amount</entry>
+    <entry key="pickUpConfirm.title">Confirm Transaction</entry>
+    <entry key="pickUpConfirm.help">Confirm the pick up transaction</entry>
+    <entry key="pickUp.button.payoutNow">Payout Now</entry>
+    <entry key="pickUp.msisdn">MSISDN</entry>
+    <entry key="pickUpFinish.title">Transaction Complete</entry>
+    <entry key="pickUpFinish.successful">Pick up transaction was successful</entry>
+
+    <entry key="pickUpCode">Pickup Code</entry>
+
+    <entry key="pickUpCode.not.found">No Pickup Code found with given code.</entry>
+    <entry key="pickup.verify.error">Error in verifying pickup code</entry>
+    <entry key="pickup.payout.error">Error in doing payout for pickup voucher</entry>
+
+    <!-- ################### KYC Upgrade Page ##################### -->
+    <entry key="kycUpgrade.title">KYC Upgrade</entry>
+    <entry key="kycUpgrade.headline.personal">Customer Personal Data</entry>
+    <entry key="kycUpgrade.headline.attachments">Attachments</entry>
+    <entry key="kycUpgrade.customer.msisdn">MSISDN</entry>
+    <entry key="kycUpgrade.customer.address.firstName">First Name</entry>
+    <entry key="kycUpgrade.customer.address.lastName">Last Name</entry>
+    <entry key="kycUpgrade.customer.address.street1">Street</entry>
+    <entry key="kycUpgrade.customer.address.street2">Street 2</entry>
+    <entry key="kycUpgrade.customer.address.zip">Zip</entry>
+    <entry key="kycUpgrade.customer.address.city">City</entry>
+    <entry key="kycUpgrade.customer.address.state">State</entry>
+    <entry key="kycUpgrade.customer.address.kvCountry">Country</entry>
+    <entry key="kycUpgrade.customer.kvIdentityType">Identity Type</entry>
+    <entry key="kycUpgrade.customer.identityValue">Value</entry>
+    <entry key="kycUpgrade.customer.issuer">Issuer</entry>
+    <entry key="kycUpgrade.customer.expirationDate">Expiration Date</entry>
+    <entry key="expirationDate.IConverter.Date">Expiration Date is invalid</entry>
+    <entry key="kycUpgrade.customer.kvKycLevel">KYC Level</entry>
+    <entry key="kycUpgrade.customer.verified">Verified</entry>
+
+    <entry key="kycUpgrade.attachments.upload">Upload File</entry>
+    <entry key="kycUpgrade.button.addAttachment">Add Attachment</entry>
+
+    <entry key="update.customer.error">Error Updating KYC details</entry>
+    <entry key="kyc.details.updated">KYC details have been updated</entry>
+    <entry key="update.customer.error">An error occurred while updating the KYC details of customer.</entry>
+    <entry key="error.kyc.decreas">You cannot decrease the KYC level</entry>
+    <entry key="error.kyc.privilege">Privilege to increase the KYC level is missing</entry>
+    <entry key="attachment.remove.error">An error occurred while deleting the attachment</entry>
+    <entry key="attachment.remove.success">Attachment has been deleted</entry>
+    <entry key="add.attachment.success">Attachment has been added</entry>
+    <entry key="pickup.payout.error">An error occured durring pickup</entry>
+    <entry key="pickUp.PayoutAmount">Payout Amount</entry>
+	<entry key="orderId">Order Id</entry>
+</properties>

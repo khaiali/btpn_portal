@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="label.confirm.help"> Confirm Add Help</entry>
+	<entry key="label.portal"> Portal </entry>
+	<entry key="label.help.content"> Help Content </entry>
+	<entry key="label.denotes.mandatory"> Denotes Mandatory Field </entry>
+	<entry key="Confirm">Confirm</entry>
+	<entry key="Cancel">Cancel</entry>
+
+	<entry key="confirm.success">Help Content added successfully.</entry>
+	<entry key="confirm.error">Error occured while adding help content.</entry>
+</properties>

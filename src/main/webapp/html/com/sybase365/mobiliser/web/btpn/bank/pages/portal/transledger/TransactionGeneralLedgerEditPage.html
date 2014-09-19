@@ -1,0 +1,48 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="glEditForm" method="post">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="label.gl.management" /></legend>
+							<div class="input" wicket:id="errorMessages"></div>
+							<div class="column ">
+								<div class="input" id="glCodeDescBlock">
+									<label for="usecaseDesc"><wicket:message key="label.useCase" /><span class="required">*</span>
+									</label> 
+									<input id="usecaseDesc"	name="usecaseDesc" wicket:id="ledgerBean.useCaseName" tabindex="2" type="text" readonly="readonly" size="40" />
+								</div>
+								<div class="input" id="glCodeBlock" style="width: 500px">
+									<label for="glCode"><wicket:message key="label.glCode" /></label> 
+									<input id="glCode"	maxlength="10" name="glCode" wicket:id="ledgerBean.currentGL.id" tabindex="1"	type="text" readonly="readonly" size="10" />
+								</div>
+								<div class="input" id="glCodeBlock" style="width: 500px">
+									<label for="glCode"><wicket:message key="label.glDesc" /></label>
+									 <input	id="glCodeDesc" name="glCodeDesc" wicket:id="ledgerBean.currentGL.value" tabindex="1"	type="text" readonly="readonly" size="40" />
+								</div>
+								<div class="input" id="glParentCodeBlock" style="width: 500px">
+									<label for="glParentCode"><wicket:message key="label.newGLCode" /></label> 
+									<select	id="glParentCode" wicket:id="ledgerBean.newGL" name="glParentCode" tabindex="4">
+										<option value="">Please Select</option>
+									</select>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<input name="submitTrxGLCode" wicket:id="btnSubmit" wicket:message="value:Submit" class="submit acc_chk" type="submit" /> 
+								<input	style="left: 250px" name="cancel" wicket:id="btnCancel" wicket:message="value:Cancel" class="submit acc_chk" type="submit" />
+							</div>
+
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>	
+	</wicket:extend>
+</body>
+</html>

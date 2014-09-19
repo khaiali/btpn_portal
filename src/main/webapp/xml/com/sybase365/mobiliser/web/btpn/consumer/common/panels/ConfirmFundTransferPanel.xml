@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.fundTransferBtpnBankAccount">Kirim Uang Ke Rekening Bank BTPN</entry>
+	<entry key="header.fundTransferOtherBankAccount">Kirim Uang Ke Rekening Bank Lain</entry>
+	<entry key="header.fundTransferMobileToMobile">Kirim Uang Ke Handphone</entry>
+	<entry key="label.beneficiaryAccountNum">Nomor Rekening Bank Lainnya</entry>
+	<entry key="label.mobileNum">Nomor Handphone</entry>
+	<entry key="label.amount">Jumlah</entry>
+	<entry key="addStandingInst.siName">Nama Instruksi Langsung</entry>
+	<entry key="silisttable.view.frequency">Frekuensi</entry>
+	<entry key="filterType.month">BULANAN</entry>
+	<entry key="filterType.quarter">KUARTER</entry>
+	<entry key="filterType.week">MINGGUAN</entry>
+	<entry key="filterType.date">HARIAN</entry>
+	<entry key="addStandingInst.date">MULAI</entry>
+	<entry key="addStandingInst.endDate">SAMPAI</entry>
+	<entry key="addStandingInst.days">HARI</entry>
+	<entry key="si.ft.add.successMessage">Kirim Uang melalui Instruksi Favorit telah berhasil dilakukan.</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="fundTransferBean.siName.Required">Kolom Nama Instruksi Favorit Harus Diisi.</entry>
+	<entry key="fundTransferBean.siName.Required">Kolom Nama Instruksi Favorit Harus Diisi.</entry>
+	<entry key="fundTransferBean.startDate.Required">Kolom Tanggal Mulai Harus Diisi.</entry>
+	<entry key="fundTransferBean.expiryDate.Required">Kolom Tanggal Selesai Harus Diisi.</entry>
+	<entry key="fundTransferBean.selectedDay.Required">Kolom Hari Harus Diisi.</entry>
+	<entry key="fundTransferBean.subBillerType.null">Pilih Sub-Tagihan</entry>
+	<entry key="fundTransferBean.subBillerType.Required">Tipe Sub-Tagihan Harus Diisi.</entry>
+	<entry key="fundTransferBean.phonenumber.Required">Kolom Nomor Handphone Harus Diisi.</entry>
+
+	<entry key="fundTransferBean.startDate.DateValidator.minimum">Tanggal Mulai harus lebih besar dari hari ini.</entry>
+	<entry key="fundTransferBean.expiryDate.DateValidator.minimum">Tanggal Mulai harus lebih besar dari hari ini.</entry>
+	<entry key="invalid.expiry.date">Tanggal Mulai harus lebih besar dari Tanggal Mulai.</entry>
+	
+</properties>

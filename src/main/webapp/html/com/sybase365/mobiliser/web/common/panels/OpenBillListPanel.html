@@ -1,0 +1,69 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<div wicket:id="errorMessages"></div>
+
+	<div class="cmodule clear">
+
+		<!-- list paging -->
+		<ul class="tablePaging">
+			<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+			<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+			<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+		</ul>
+		<!-- end list paging -->
+
+		<div class="collapsable clear">
+
+			<table id="openBillListTable" class="listTable">
+				<wicket:enclosure child="pageable">
+				<thead>
+					<tr>
+						<th><wicket:message key="openBillList.name" /></th>
+						<th><wicket:message key="openBillList.type" /></th>
+						<th><wicket:message key="openBillList.reference" /></th>
+						<th><wicket:message key="openBillList.billReference" /></th>
+						<th wicket:id="orderByDate"><wicket:message key="openBillList.date" /></th>
+						<th style="text-align: right"><wicket:message key="openBillList.amount" /></th>
+						<th class="actions last"><wicket:message key="openBillList.actions" /></th>
+					</tr>
+				</thead>
+
+				<tfoot>
+					<tr>
+						<td class="empty" colspan="7"></td>
+					</tr>
+				</tfoot>
+
+				<tbody>
+					<tr wicket:id="pageable">
+						<td><div wicket:id="name">[Name]</div></td>
+						<td><div wicket:id="type">[Type]</div></td>
+						<td><div wicket:id="reference">[Reference]</div></td>
+						<td><div wicket:id="billReference">[Bill Reference]</div></td>
+						<td><div wicket:id="date">[Date]</div></td>
+						<td style="width: 20%; text-align: right"><span wicket:id="amount">[Amount]</span></td>
+						<td>
+							<ul>
+								<li><a href="#" wicket:id="payAction"><wicket:message key="openBillList.payAction">[Pay]</wicket:message></a></li>
+								<li><a href="#" wicket:id="cancelAction"><wicket:message key="openBillList.cancelAction">[Cancel]</wicket:message></a></li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+				</wicket:enclosure>
+			</table>
+
+			<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+		</div>
+
+	</div>
+
+
+</wicket:panel>
+
+</body>
+</html>

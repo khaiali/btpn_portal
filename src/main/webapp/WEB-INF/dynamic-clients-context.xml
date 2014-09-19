@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:prefs="http://www.sybase.com/mobiliser/util/prefs/config"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd
+  http://www.sybase.com/mobiliser/util/prefs/config http://www.sybase.com/mobiliser/util/prefs/config/sybase-prefs-config-5.0.xsd">
+  <!-- REMOTE MANAGEMENT CLIENT -->
+
+  <prefs:node id="dynamicPrefsNode" preferences-service="prefsService"
+    class="com.sybase365.mobiliser.web.util.DynamicServiceConfiguration"
+    auto-decrypt="true" />
+
+  <bean id="dynamicManagementClientConfiguration"
+    class="com.sybase365.mobiliser.web.util.DynamicServiceConfiguration">
+    <property name="preferences" ref="dynamicPrefsNode" />
+  </bean>
+
+  <!-- Uses refreshable client - allows dynamic change and refresh of server 
+    to connect to -->
+  <bean id="dynamicManagementClientSource"
+    class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+    <property name="clientInterface"
+      value="com.sybase365.mobiliser.util.management.services.api.IManagementEndpoint" />
+    <property name="endpointSuffix" value="/management" />
+    <property name="clientFactory" ref="soapClientFactory" />
+    <property name="configuration" ref="dynamicManagementClientConfiguration" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="dynamicPrefsNode" />
+    <constructor-arg ref="dynamicManagementClientSource" />
+  </bean>
+
+  <bean id="dynamicManagementClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="dynamicManagementClientSource" />
+    <property name="interfaces">
+      <list>
+        <value>com.sybase365.mobiliser.util.management.services.api.IManagementEndpoint</value>
+      </list>
+    </property>
+  </bean>
+
+  <!-- PING SERVICE CLIENT -->
+
+  <bean id="dynamicPingClientConfiguration"
+    class="com.sybase365.mobiliser.web.util.DynamicServiceConfiguration">
+    <property name="preferences" ref="dynamicPrefsNode" />
+  </bean>
+
+  <!-- Uses refreshable client - allows dynamic change and refresh of server 
+    to connect to -->
+  <bean id="dynamicPingClientSource"
+    class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+    <property name="clientInterface"
+      value="com.sybase365.mobiliser.money.services.api.IPingEndpoint" />
+    <property name="endpointSuffix" value="/ping" />
+    <property name="clientFactory" ref="soapClientFactory" />
+    <property name="configuration" ref="dynamicPingClientConfiguration" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="dynamicPrefsNode" />
+    <constructor-arg ref="dynamicPingClientSource" />
+  </bean>
+
+  <bean id="dynamicPingClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="dynamicPingClientSource" />
+    <property name="interfaces">
+      <list>
+        <value>com.sybase365.mobiliser.money.services.api.IPingEndpoint</value>
+      </list>
+    </property>
+  </bean>
+</beans>

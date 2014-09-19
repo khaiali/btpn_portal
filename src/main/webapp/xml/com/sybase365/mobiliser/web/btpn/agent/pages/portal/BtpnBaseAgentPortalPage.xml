@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.login.info">Hi %s, your login on pocket bank btpn</entry>
+	<entry key="header.logout.label">Logout</entry>
+	<entry key="application.name">BTPN Agent Portal</entry>
+	<entry key="foooter.copyright">Copyright</entry>
+	<entry key="foooter.bank.name">PT Bank Tabungan Pensiunan Nasional Tbk. 2013</entry>
+	<entry key="session.timeout.counter.label">Session Timeout: </entry>
+	<entry key="session.timeout.counter.minutes.label"> Minutes</entry>
+	<entry key="session.timeout.label">Your session has timed out.</entry>
+</properties>

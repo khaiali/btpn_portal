@@ -1,0 +1,35 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+	<div class="chooseAccountSpacer"></div>
+	<div class="input">
+		<input wicket:id="alertFrequencyChooserBean.frequencyNoLimitCheck" type="checkbox" class="checkbox" style="width: 12px" />
+		<label> 
+			<wicket:message key="manageAlerts.notificationLimit" />
+			<span class="required">*</span> 
+		</label>
+		<wicket:message key="frequency.frequencyNoLimitCheck" />
+	</div>
+	<div wicket:id="frequencyDurationContainer">
+	<div class="input">
+		<label> 
+			<wicket:message key="frequency.durationFrequency" />
+			<span class="required">*</span> 
+		</label>
+		<select wicket:id="alertFrequencyChooserBean.durationFrequency" id="paymentInstrumentId">
+			<option>dummy</option>
+		</select>
+	</div>
+	<div class="input">
+		 <label> <wicket:message key="frequency.maxFrequency" />
+			 <span class="required">*</span> 
+		 </label>
+		 <input type="text" wicket:id="alertFrequencyChooserBean.maxFrequency" />
+	</div>
+	</div>
+</wicket:panel>
+
+</body>
+</html>

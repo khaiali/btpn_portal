@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <entry key="editContactPoint.editMobileDevice">Edit Mobile Device</entry>
+    <entry key="editContactPoint.deviceInformations">Device Information</entry>
+    <entry key="editContactPoint.deviceName">Device Name</entry>
+    <entry key="editContactPoint.carrier">Carrier</entry>
+    <entry key="editContactPoint.country">Country</entry>
+    <entry key="editContactPoint.number">Number</entry>
+    <entry key="editContactPoint.deviceStatus">Device Status</entry>
+    <entry key="editContactPoint.authSecretText">Auth Secret Text</entry>
+    <entry key="editContactPoint.browserMsgEnabled">Browser Msgs Enabled</entry>
+    <entry key="editContactPoint.receiveLoginToken">Receive Login Token</entry>
+
+    <entry key="editContactPoint.deviceAlertPreferences">Device Alert preferences</entry>
+    <entry key="editContactPoint.enableTextMessageAlerts">Enable Text Message Alerts</entry>
+    <entry key="editContactPoint.disableAlertsDateRange">Disable alerts for Date Range</entry>
+    <entry key="editContactPoint.disableAlertsDuringWeekend">Disable alerts during weekends</entry>
+    <entry key="editContactPoint.disableAlertsEveryDayFrom"> Disable alerts every day from</entry>
+   
+    <entry key="editContactPoint.update.sucess">This mobile device has been saved!"</entry>
+  
+  
+
+
+</properties>

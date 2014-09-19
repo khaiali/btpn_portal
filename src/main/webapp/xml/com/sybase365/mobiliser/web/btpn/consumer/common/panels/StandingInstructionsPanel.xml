@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+	<entry key="headLine.standingInstructions">Instruksi Favorit</entry>
+	<entry key="label.name">Nama</entry>
+	<entry key="label.payer">Pembayar</entry>
+	<entry key="label.payee">Penerima</entry>
+	<entry key="label.type">Tipe</entry>
+	<entry key="label.startDate">Tanggal Mulai</entry>
+	<entry key="label.expiryDate">Tanggal Akhir</entry>
+	<entry key="label.remove">Hapus</entry>
+	<entry key="label.noAccountsFound">Tidak ada instruksi.  Pilih 'Tambah' untuk membuat daftar instruksi.</entry>
+	<entry key="instructions.totalitems.header">%s item ditemukan, Menampilkan %s sampai %s.</entry>
+	
+	<!--  ### FUND TRANSFER ### -->
+    <entry key="lookup.processingCode.100901">FT to BTPN</entry>
+    <entry key="lookup.processingCode.101001">FT to Other Bersama</entry>
+    <entry key="lookup.processingCode.101101">FT to Other Prima</entry>
+    <entry key="lookup.processingCode.100801">FT to Mobile</entry>
+    <entry key="lookup.processingCode.100701">FT to OTW</entry>
+    
+    <!-- ### AIR TIME TOPUP ### -->
+	<entry key="lookup.processingCode.100501">AIR TIME TOPUP</entry>
+	
+	<!-- ### BILL PAYMENT ### -->
+	<entry key="lookup.processingCode.100601">BILL PAYMENT</entry>
+	
+</properties>

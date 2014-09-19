@@ -1,0 +1,62 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="addFavoriteForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="headLine.addFavorite" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column twoColumn">
+								<table>
+									<tr>
+										<td><label> <wicket:message key="label.FavoriteName" /> <span
+											class="required">*</span>
+										</label></td><td> <input type="text" wicket:id="favoritesBean.favoriteName" /></td>
+									</tr>
+									<tr>
+										<td><label> <wicket:message key="label.FavoriteType" /> <span
+											class="required">*</span>
+										</label></td><td> <select wicket:id="favoritesBean.favoritesType">
+											<option>dummy</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td><label> <wicket:message key="label.FavoriteValue" /> <span
+											class="required">*</span>
+										</label></td><td> <input type="text" wicket:id="favoritesBean.favoriteValue" /></td>
+									</tr>
+									<tr>
+										<td><label> <wicket:message key="label.description" /> <span
+											class="required">*</span>
+										</label></td><td>
+										<textarea style="width: 400px; height: 200px; border:1px solid #125EAC;" wicket:id="favoritesBean.description" rows="7"
+											cols="30"></textarea></td>
+									</tr>
+								</table>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<span class="required">*</span>
+								<wicket:message key="requiredFields" />
+							</div>
+							<div class="spacer"></div>
+							<input type="submit" class="submit acc_chk"
+								wicket:id="addFavoriteButton" value="Tambah" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

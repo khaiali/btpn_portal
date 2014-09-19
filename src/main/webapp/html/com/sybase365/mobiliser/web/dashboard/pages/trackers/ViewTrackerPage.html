@@ -1,0 +1,45 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content home">
+
+		<div class="module clear">
+
+			<h1 class="trackers">
+				<span><wicket:message key="dashboard.viewtracker.title" /></span>
+			</h1>
+
+			<form wicket:id="viewTrackerForm">
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+				<div class="module clear">
+
+					<div class="cmodule content">
+
+						<div class="input">
+							<label><wicket:message key="dashboard.viewtracker.trackerSelect" /><span class="required">*</span></label>
+							<select wicket:id="selectedTracker">
+								<option selected="true">[A]</option>
+								<option>[B]</option>
+							</select>
+						</div>
+
+					</div>
+
+				</div>
+
+			</form>
+
+			<div wicket:id="trackerPanel"></div>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

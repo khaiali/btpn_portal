@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+    <!-- new Values -->
+    <entry key="alertBlackOut.heading">Do Not Disturb Settings</entry>
+    
+    <entry key="alertBlackOut.table.help">Entries are only active for this alert if they are checked</entry>
+    <entry key="alertBlackOut.table.addBlackoutSchedule">Add a Date/Time Schedule</entry>
+    <entry key="alertBlackOut.table.activeForAlert">Active</entry>
+    <entry key="alertBlackOut.table.description">Description</entry>
+    <entry key="alertBlackOut.table.validFrom">From Date</entry>
+    <entry key="alertBlackOut.table.validTo">To Date</entry>
+    <entry key="alertBlackOut.table.altTimeZone">Timezone</entry>
+    <entry key="alertBlackOut.table.validTimes">At Times of Day</entry>
+    <entry key="alertBlackOut.table.actions">Actions</entry>
+    <entry key="alertBlackOut.table.editAction">Edit</entry>
+    <entry key="alertBlackOut.table.removeAction">Remove</entry>
+    <entry key="alertBlackOut.table.remove.confirm">This will also remove this date/time schedule from all alerts it is associated with. Are you sure you want to remove this date/time schedule?</entry>
+    <entry key="alertBlackOut.table.remove.success">The date/time schedule was removed from all alerts it was associated with</entry>
+    <entry key="alertBlackOut.table.remove.error">There was a problem removing this date/time schedule</entry>
+    <entry key="alertBlackOut.table.noItemsMsg">No Do Not Disturb times available</entry>
+    <entry key="alertBlackOut.table.addItemHelp">Use the 'Add a Date/Time Schedule' link above to create a new schedule</entry>
+    
+    <entry key="alertBlackOut.schedule.description">Description</entry>
+    <entry key="alertBlackOut.schedule.validFromDate">From Date</entry>
+    <entry key="alertBlackOut.schedule.validToDate">To Date</entry>
+    <entry key="alertBlackOut.schedule.altTimezone">In Alternative TimeZone</entry>
+    <entry key="alertBlackOut.schedule.days">For Days</entry>
+    <entry key="alertBlackOut.schedule.selectedDaysOfWeek">For Days of Week</entry>
+    <entry key="alertBlackOut.schedule.selectedDaysOfWeek.monday">Mo</entry>
+    <entry key="alertBlackOut.schedule.selectedDaysOfWeek.tuesday">Tu</entry>
+    <entry key="alertBlackOut.schedule.selectedDaysOfWeek.wednesday">We</entry>
+    <entry key="alertBlackOut.schedule.selectedDaysOfWeek.thursday">Th</entry>
+    <entry key="alertBlackOut.schedule.selectedDaysOfWeek.friday">Fr</entry>
+    <entry key="alertBlackOut.schedule.selectedDaysOfWeek.saturday">Sa</entry>
+    <entry key="alertBlackOut.schedule.selectedDaysOfWeek.sunday">Su</entry>
+    <entry key="alertBlackOut.schedule.times">At Times of Day</entry>
+    <entry key="alertBlackOut.schedule.times.timeFrom">From</entry>
+    <entry key="alertBlackOut.schedule.times.timeTo">To</entry>
+    <entry key="alertBlackOut.schedule.times.add">Add</entry>
+    <entry key="alertBlackOut.schedule.times.remove">Remove</entry>
+    <entry key="alertBlackOut.schedule.times.confirm">Are you sure you want to remove this time period?</entry>
+    <entry key="alertBlackOut.schedule.active.on.success">The date/time schedule has been activated for this alert</entry>
+    <entry key="alertBlackOut.schedule.active.off.success">The date/time schedule has been de-activated for this alert</entry>
+    <entry key="alertBlackOut.schedule.active.error">There has been a problem activating or de-activating the date/time schedule for this alert</entry>
+    <entry key="alertBlackOut.schedule.dateRange.error">BlackOut Schedule already exist for entered date range</entry>
+    <entry key="alertBlackOut.schedule.datevalidation.error">From Date or To Date should not be less than current Date</entry>
+    
+    <entry key="startHr.null">--</entry>
+    <entry key="startMin.null">--</entry>
+    <entry key="endHr.null">--</entry>
+    <entry key="endMin.null">--</entry>
+   
+    <entry key="description.Required">Field 'Description' is required.</entry>
+    <entry key="validFromDate.Required">Field 'From Date' is required.</entry>
+    <entry key="validToDate.Required"> Field 'To Date' is required.</entry>
+    
+</properties>

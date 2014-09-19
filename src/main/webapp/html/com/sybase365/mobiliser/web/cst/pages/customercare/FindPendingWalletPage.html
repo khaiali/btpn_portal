@@ -1,0 +1,161 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+</wicket:head>
+</head>
+
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="search">
+				<span><wicket:message key="menu.cst.approvals" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="menu.cst.find.wallets" /></span>
+			</h1>
+
+			<h3 class="help">
+				<wicket:message key="approveWallets.help" />
+			</h3>
+
+		<form wicket:id="findWalletsForm">
+
+		<div wicket:id="errorMessages"></div>
+
+		<div class="searchContainer">
+		
+			<div class="column twoColumn">
+			
+				<span wicket:id="radioGroup">
+				
+					<div class="input">
+					
+						<label><wicket:message key="findWallets.filterType" /> </label>
+
+						<div class="group">
+							<input type="radio" class="radio" id="Month" wicket:id="Month" name="Month">
+							<label for="Month"><wicket:message key="findWallets.filterType.month" /> </label> 
+							<input type="radio" class="radio" id="Date" wicket:id="Date" name="Date"> 
+							<label for="Date"><wicket:message key="findWallets.filterType.date" /> </label>
+						</div>
+						
+					</div> 
+					
+				</span>
+				
+			</div>
+
+			<div class="column twoColumn">
+			
+				<div class="input" id="filterMonth" wicket:id="monthLabel">
+					<label><wicket:message key="findWallets.month" /></label> 
+					<select wicket:id="fromMonth">
+						<option>dummy</option>
+					</select>
+				</div>
+
+				<div class="input buffer" id="filterMonthBuffer"></div>
+
+				<div class="input" id="filterTimeframeFrom" wicket:id="fromDateLabel">
+					<label><wicket:message key="findWallets.fromDate" /> </label> 
+					<input readonly="readonly" type="text" wicket:id=fromDate id="fromDate" style="width: 150px;" /> 
+				</div>
+
+				<div class="input" id="filterTimeframeTo" wicket:id="toDateLabel">
+					<label><wicket:message key="findWallets.toDate" /></label> 
+					<input readonly="readonly" type="text" wicket:id=toDate id="toDate" style="width: 150px;" /> 
+				</div>
+				
+			</div>
+			
+			<div class="column buffer" ></div>
+
+			<div class="column twoColumn">
+
+				<div class="input">
+					<label><wicket:message key="findWallets.piType" /></label> 
+					<select wicket:id="piType">
+						<option>dummy</option>
+					</select>
+				</div>
+				
+			</div>
+
+		
+			<div class="column">
+
+				<div class="formAction">
+					<input type="submit" class="submitForm" wicket:id="findWallets" wicket:message="value:Search" />
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="column buffer"></div>
+
+		<div class="cmodule clear" wicket:id="dataViewContainer">
+
+			<!-- list paging -->
+			<ul class="tablePaging">
+				<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+				<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+				<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+			</ul>
+			<!-- end list paging -->
+
+			<div class="collapsable clear">
+
+			   <table id="pendingWalletListTable" class="listTable">
+					
+						<wicket:enclosure child="pageable">
+						
+							<thead>
+								<tr>
+									<th class="id" wicket:id="orderById"><wicket:message key="findWallets.walletId" /></th>
+									<th class="feeType"><wicket:message key="findWallets.piType" /></th>
+									<th class="feeType"><wicket:message key="findWallets.customerId" /></th>
+								</tr>
+							</thead>
+							
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="3"></td>
+								</tr>
+							</tfoot>
+
+							<tbody>
+								<tr wicket:id="pageable">
+									<td><a href="#" wicket:id="LidLink"><div wicket:id="id">[Id]</div></a></td>
+									<td class="useCase"><div wicket:id="piType">[PI Type]</div></td>
+									<td class="feeType"><div wicket:id="customerId">[Customer ID]</div></td>
+								</tr>
+							</tbody>
+							
+						</wicket:enclosure>
+						
+				</table>
+
+
+				<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+			</div>
+
+		</div>
+
+	</form>
+
+
+		</div>
+
+	</div>
+	
+
+</wicket:extend>
+</body>
+</html>

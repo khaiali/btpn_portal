@@ -1,0 +1,89 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="cashInSuccessForm">
+						<div wicket:id="errorMessages"></div>
+						<fieldset id="cashin">
+							<legend class="reg_tab">
+								<wicket:message key="headLine.cashinSuccess" />
+							</legend>
+							<div class="Account_info">
+								<label> <wicket:message
+										key="label.cashIn.success.accountNumber" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashInBean.accountNumber"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message
+										key="label.cashIn.success.mobileNumber" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashInBean.msisdn"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message key="label.cashIn.success.name" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashInBean.displayName"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message key="label.cashIn.success.type" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashInBean.accountType"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message
+										key="label.cashIn.totalSVABalance" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashInBean.totalSVABalance"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message
+										key="label.cashIn.creditingAmount" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashInBean.creditAmount"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message key="label.cashIn.cashinFee" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashInBean.cashInFeeAmount"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message key="label.cashIn.cashinAmount" />
+								</label>
+
+								<div class="input_value">
+									<label wicket:id="cashInBean.totalCashinAmount"></label>
+								</div>
+							</div>
+							<div class="column">
+								<input type="submit" class="submit acc_chk" id="submit"
+									wicket:id="finishButton" wicket:message="value:Finish" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

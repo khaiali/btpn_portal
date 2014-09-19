@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<!-- ############# BTPN ############# -->
+	<entry key="header.manageProducts"> Product Management </entry>
+	<entry key="label.maker">Maker </entry>
+	<entry key="label.productType">Product Type </entry>
+	<entry key="label.name">Name </entry>
+	<entry key="label.status">Status</entry>
+	<entry key="action">Action</entry>
+	<entry key="detailsLink">Details</entry>
+	<entry key="products.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="error.pending">An error occured while fetching the pending products</entry>
+	<entry key="no.items">Nothing found to display.</entry>
+</properties>

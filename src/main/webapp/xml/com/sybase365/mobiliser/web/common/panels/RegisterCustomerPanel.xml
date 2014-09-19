@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="generalInfo.headLine">General Information</entry>
+	<entry key="firstName">First Name</entry>
+	<entry key="gender">Gender</entry>
+	<entry key="birthDate">Date of Birth</entry>
+	<entry key="birthDateField.Required">Date of Birth is required</entry>
+	<entry key="birthDateField.IConverter.Date">Date of Birth is invalid</entry>
+	<entry key="lastName">Last Name</entry>
+	<entry key="title">Title</entry>
+	<entry key="language">Language</entry>
+    <entry key="timeZone">Time Zone</entry>
+	<entry key="addressInfo.headLine">Address Information</entry>
+	<entry key="street1">Street Address</entry>
+	<entry key="houseNo">House No</entry>
+	<entry key="state">State</entry>
+	<entry key="country">Country</entry>
+	<entry key="street2">Street Address2</entry>
+	<entry key="city">City</entry>
+	<entry key="zip">Zip</entry>
+	<entry key="contactInfo.headLine">Contact Information</entry>
+	<entry key="msisdn">MSISDN</entry>
+	<entry key="infoMode">Info Mode</entry>
+	<entry key="email">Email</entry>
+	<entry key="customer.networkProvider">Network Provider</entry>
+	
+    <entry key="customer.address.email.EmailAddressValidator">'${input}' is not a valid Email</entry>
+	<entry key="identityInfo.headLine">Identity Information</entry>
+	<entry key="identityType">ID Type</entry>
+	<entry key="identityValue">ID Number</entry>
+	<entry key="securityInfo.headLine">Security Information</entry>
+	<entry key="securityQuestion">Security Question</entry>
+	<entry key="pin">PIN</entry>
+	<entry key="customer.pin.PatternValidator">PIN contains invalid characters</entry>
+	<entry key="customer.pin2.PatternValidator">Re-entered PIN contains invalid characters</entry>
+	<entry key="password">Password</entry>
+	<entry key="password">Password</entry>
+	<entry key="userName">Username</entry>
+	<entry key="securityAnswer">Security Answer</entry>
+	<entry key="pin2">Re-enter PIN</entry>
+	<entry key="passwordConfirm">Re-enter Password</entry>
+	<entry key="register">Register</entry>
+	<entry key="networkproviders">Network Provider</entry>
+	
+	<entry key="duplicate.userName.check.failed">Failed to check whether entered username has already
+		registered</entry>
+	<entry key="duplicate.username.check.error">The entered username has already been registered.
+		Please try it again.</entry>
+	<entry key="Cancel">Cancel</entry>
+	<entry key="customerType">Customer Type</entry>
+	<entry key="index.headline.confirm">User Confirm</entry>
+	<entry key="captcha.help">Enter the characters shown in image below - click to
+		get a new image:</entry>
+	<entry key="captcha">Characters</entry>
+	<entry key="terms">Terms and Conditions</entry>
+	<entry key="terms.agree">I Agree.</entry>
+	<entry key="terms.disagree">I Disagree.</entry>
+	<entry key="terms.disAgree.message">You must agree to the terms and condition to complete
+		registration</entry>
+	<entry key="captcha.captcha.invalid">Entered characters does not match the characters shown in the image</entry>
+	<entry key="customer.age.error">You must be over 18 years of age to register for this
+		service.</entry>
+	<entry key="terms.disAgree">You must agree to the terms and condition to complete
+		registration</entry>
+	<entry key="customerRegistration.error">An error occurred while registering the customer</entry>
+	<entry key="Continue">Continue</entry>
+	<entry key="Back">Back</entry>
+	<entry key="Cancel">Cancel</entry>
+	<entry key="passwordConfirmed.EqualPasswordInputValidator">The re-entered password confirmation does not match the
+		entered password</entry>
+	<entry key="pinConfirmed.Required">Re-enter PIN is required</entry>
+	<entry key="pinConfirmed.EqualPasswordInputValidator">The re-entered PIN confirmation does not match the
+		entered PIN</entry>
+	<entry key="passwordConfirmed.Required">Re-enter Password is required</entry>
+	<entry key="Required">${label} is required</entry>
+	<entry key="PatternValidator">'${input}' is not a valid ${label}</entry>
+	<entry key="customer.address.street1.PatternValidator">'${input}' is not a valid street address</entry>
+	<entry key="captcha.Required">Characters are required</entry>
+	<entry key="customer.SecQuesAns.Required">Security Answer is required</entry>
+	<entry key="customer.securityQuestion.Required">Security Question is required</entry>
+	<entry key="register.customer.error">An error occurred while registering a customer</entry>
+	<entry key="customer.birthDateString.Required">Birth Date is required</entry>
+	<entry key="customer.customerTypeId.Required">Customer Type is required</entry>
+  
+	<entry key="customer.address.firstName.PatternValidator">'${input}' is not a valid First Name</entry>
+    <entry key="customer.address.lastName.PatternValidator">'${input}' is not a valid Last Name</entry>
+    <entry key="customer.address.street2.PatternValidator">'${input}' is not a valid Street Address2</entry>
+    <entry key="customer.address.city.PatternValidator">'${input}' is not a valid City</entry>
+    <entry key="customer.msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+    
+    <entry key="customer.address.houseNo.PatternValidator">'${input}' is not a valid House No</entry>
+    <entry key="customer.address.state.PatternValidator">'${input}' is not a valid State</entry>
+    <entry key="customer.address.zip.PatternValidator">'${input}' is not a valid Zip</entry>
+    <entry key="customer.SecQuesAns.PatternValidator">'${input}' is not a valid Security Answer</entry>
+    <entry key="customer.userName.PatternValidator">'${input}' is not a valid Username</entry>
+    <entry key="customer.address.title.PatternValidator">'${input}' is not a valid Title</entry>
+    <entry key="customer.identityValue.PatternValidator">'${input}' is not a valid ID Number</entry>
+</properties>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.fee.management"> Fee Management </entry>
+	<entry key="label.usecaseId">Use Case</entry>
+	<entry key="label.productId"> Product ID </entry>
+	<entry key="label.applyToFee"> Apply To Payee </entry>
+	<entry key="label.feeType"> Fee Type </entry>
+	<entry key="label.feeName">Fee Name</entry>
+	<entry key="label.transactionAmount"> Transaction Amount </entry>
+	<entry key="label.minRange">Min Range</entry>
+	<entry key="label.maxRange">Max Range</entry>
+	<entry key="label.glCode">GL Code</entry>
+	<entry key="label.fixedFee">Fixed Fee</entry>
+	<entry key="label.percentageFee">Percentage Fee</entry>
+	<entry key="label.action">Action</entry>
+	<entry key="fee.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="label.details">Details</entry>
+	<entry key="Create">Create</entry>
+	<entry key="Cancel">Cancel</entry>
+	<entry key="create.success">Fee submitted successfully for approval.</entry>
+	<entry key="error.create.fees">An error occured while creating the fees.</entry>
+
+	<entry key="error.10074">Fee for this use case already configured.</entry>
+	<entry key="error.10075">Fee for this use case and product already configured.</entry>
+	<entry key="error.10076">Fee name already used please give a different name.</entry>
+</properties>

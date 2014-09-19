@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <entry key="menu.report.home">Home</entry>
+
+  <entry key="report.home.title">Home</entry>
+
+  <entry key="report.default.message">Please make a report selection from the left menu</entry>
+
+  <entry key="report.not.found">Report not found</entry>
+  <entry key="report.no.parameters">No parameters for report</entry>
+
+  <entry key="dynValue.Required">Required report parameters have not been entered</entry>
+
+  <!-- Reports Menu/Page Titles -->
+  <entry key="CommissionReport">Commission</entry>
+  <entry key="DailyTransactionReport">Daily Transactions</entry>
+  <entry key="ErrorOverviewReport">Error Overview</entry>
+  <entry key="FeesAndCommissionOverviewReport">Fees &amp; Commission Overview</entry>
+  <entry key="SPBalanceMonitorOverviewReport">SP Balance Monitor Overview</entry>
+  <entry key="SVABalanceDetailReport">SVA Balance Detail</entry>
+  <entry key="SvaBalanceReport">SVA Balance</entry>
+  <entry key="TransactionDetail">Transaction Detail</entry>
+  <entry key="TransactionReport">Transactions</entry>
+  <entry key="TxnOverviewReport">Transactions Overview</entry>
+
+  <entry key="report.batch.exec">Execute every</entry>
+  <entry key="report.batch.ofEvery">of every</entry>
+  <entry key="report.batch.at">at</entry>
+  <entry key="report.batch.oclock">o'clock</entry>
+  <entry key="report.batch.exonday">Execute on day</entry>
+  <entry key="report.batch.exonthe">Execute on the</entry>
+  <entry key="report.batch.monday">Monday</entry>
+  <entry key="report.batch.tuesday">Tuesday</entry>
+  <entry key="report.batch.wednesday">Wednesday</entry>
+  <entry key="report.batch.thursday">Thursday</entry>
+  <entry key="report.batch.friday">Friday</entry>
+  <entry key="report.batch.saturday">Saturday</entry>
+  <entry key="report.batch.sunday">Sunday</entry>
+  <entry key="report.batch.months">month(s)</entry>
+  <entry key="report.batch.days">day(s)</entry>
+  <entry key="report.batch.hours">hour(s)</entry>
+  <entry key="report.batch.minutes">minute(s)</entry>
+
+  <entry key="report.batch.title">Batch Reports</entry>
+
+  <entry key="report.batch.noItemsMsg">No batch reports configured</entry>
+  <entry key="report.batch.addJobHelp">Use the Add link above to create one</entry>
+
+  <entry key="report.batch.lastExecution">Last Execution</entry>
+  <entry key="report.batch.isActive">Active</entry>
+  <entry key="report.batch.schedule">Schedule</entry>
+  <entry key="report.batch.parameters">Parameters</entry>
+  <entry key="report.batch.formatValue">Format</entry>
+  <entry key="report.batch.actions">Actions</entry>
+  <entry key="report.batch.removeAction">Remove</entry>
+  <entry key="report.batch.add">Add Batch Report Configuration</entry>
+  <entry key="report.batch.editAction">Edit</entry>
+  <entry key="report.batch.save.success">Batch report configuration saved</entry>
+  <entry key="report.batch.save.error">Error while saving batch report configuration</entry>
+
+  <entry key="report.batch.remove.confirm">Are you sure you want to remove this batch report configuration?</entry>
+  <entry key="report.batch.remove.success">Batch report has been successfully removed</entry>
+  <entry key="report.batch.remove.error">There has been an problem removing this batch report</entry>
+
+  <entry key="report.download.title">Reports Available for Download</entry>
+  <entry key="report.download.reportName">Report Name</entry>
+  <entry key="report.download.download">Download</entry>
+  <entry key="report.download.actions">Actions</entry>
+  <entry key="report.download.load.error">There was an error loading this report for download</entry>
+  <entry key="report.download.error">There was an error downloading this report</entry>
+
+</properties>

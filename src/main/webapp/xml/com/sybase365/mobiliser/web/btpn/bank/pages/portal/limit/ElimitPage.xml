@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="label.userProfile"> Limit</entry>
+	<entry key="label.status"> Status</entry>
+	<entry key="label.description"> Desciption</entry>
+	<entry key="label.creationDateFrom"> Creation Date From</entry>
+	<entry key="label.creationDateTo"> Creation Date To</entry>
+</properties>

@@ -1,0 +1,58 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="confirmForm" autocomplete="off">
+						<fieldset>
+							<legend class="reg_tab"><wicket:message key="header.limit" /></legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column">
+								<div class="input" style="width: 720px">
+									<label for="usecaseid"><wicket:message key="label.usecaseId" /></label>
+									<div class="input_value" wicket:id="bean.useCaseId.value">Consumer Cash In At Agent</div>
+								</div>
+								<div class="input" style="width: 720px">
+									<label for="productid"><wicket:message key="label.productId" /></label>
+									<div class="input_value" wicket:id="bean.productId.value"></div>
+								</div>
+								<div class="input" style="width: 720px">
+									<label for="empty"><wicket:message key="label.isPerCustomer" /></label>
+									<div class="input_value" wicket:id="bean.isPerCustomer">Yes</div>
+								</div>
+								<div class="input" style="width: 720px">
+									<label for="empty"><wicket:message key="label.applyToPayee" /></label>
+									<div class="input_value" wicket:id="bean.isApplyToPayee">Yes</div>
+								</div>
+								<div class="input" style="width: 720px">
+									<label for="dailylimit"><wicket:message key="label.dailyLimit" /></label>
+									<div class="input_value" wicket:id="bean.dailyLimit">IDR 1</div>
+								</div>
+								<div class="input" style="width: 720px">
+									<label for="dailylimit"><wicket:message key="label.weeklyLimit" /> </label>
+									<div class="input_value" wicket:id="bean.weeklyLimit">IDR 1</div>
+								</div>
+								<div class="input" style="width: 720px">
+									<label for="monthlylimit"><wicket:message key="label.monthlyLimit" /></label>
+									<div class="input_value" wicket:id="bean.monthlyLimit">IDR 1</div>
+								</div>
+							</div>
+
+							<div class="spacer"></div>
+							<input name="addLimit" wicket:message="value:Create" wicket:id="btnCreate" class="submit acc_chk"
+								type="submit"> <input style="left: 250px"
+								name="cancelAddLimit"  wicket:message="value:Cancel" wicket:id="btnCancel" class="submit acc_chk"
+								type="submit">
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

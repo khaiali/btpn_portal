@@ -1,0 +1,83 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<fieldset>
+						<legend class="reg_tab6">
+							<wicket:message key="headLine.generalLedger" />
+						</legend>
+						<form wicket:id="cusGLForm">
+							<div wicket:id="errorMessages"></div>
+								<br>
+								<div class="input">
+									<label for="glCode"><wicket:message key="label.glCode" /></label>
+										<input id="glCode" wicket:id="cusLedgerBean.glCode" maxlength="10" name="glCode" tabindex="1" type="text" size="10" />
+								</div>
+									
+								<div class="input" style="width: 500px">
+									<label for="glParentCode"><wicket:message key="label.parentGLCode" /></label> 
+										<select	id="glParentCode" wicket:id="cusLedgerBean.selectedParentGlCode" name="glParentCode" tabindex="2">
+										</select>
+								</div>
+									
+								<div class="input">
+									<label for="glCodeDesc"><wicket:message key="label.glDesc" /></label>
+										<input id="glCodeDesc"
+											name="glCodeDesc" wicket:id="cusLedgerBean.glDescription"  tabindex="3" type="text" size="40" />
+								</div>
+	
+								<div class="input" style="width: 500px">
+									<label for="glCodeType"><wicket:message key="label.type" /></label>
+										<select id="glCodeType" wicket:id="cusLedgerBean.selectedType" name="glCodeType" tabindex="4">
+										</select>
+								</div>
+									
+								<div class="input">
+									<label for="glNote"><wicket:message key="label.glNote" /></label> 
+										<input id="glNote" name="glNote" wicket:id="cusLedgerBean.note"  tabindex="5" type="text" size="40" />
+								</div>
+								
+								<div class="spacer"></div>
+								<div class="column">
+									<input name="search" wicket:id="searchBtn" wicket:message="value:Search" class="submit acc_chk" type="submit" style="left: 250px" >
+								</div>
+								<br><br>
+								
+								<!-- GL Data View Start -->
+								<div class="column" wicket:id="glContainer">
+									<div class="displayTag">
+										<label wicket:id="no.items"></label>
+										<span class="pagebanner" wicket:id="glHeader"></span> <span
+											class="pagelinks" wicket:id="glNavigator"></span>
+										<wicket:enclosure child="pageable">
+											<table id="glTable">
+												<thead>
+													<tr>
+														<th wicket:id="orderByGLCode"><wicket:message key="label.glCode" /></th>
+														<th wicket:id="orderByGLDesc"><wicket:message key="label.glDesc" /></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr wicket:id="pageable">
+														<td><a href="#" wicket:id="idLink"><span wicket:id="glLink">[GL Code]</span></a></td>
+														<td><div wicket:id="glDescription">[GL Desc]</div></td>
+													</tr>
+												</tbody>
+											</table>
+										</wicket:enclosure>
+									</div>
+								</div>
+							<!-- GL Data View End -->
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

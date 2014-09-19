@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.limit"> Approval Limit</entry>
+	<entry key="limit.description"> Description</entry>
+	<entry key="limit.status"> Status</entry>
+	<entry key="limit.dateFrom"> Creation Date From</entry>
+	<entry key="limit.dateTo"> Creation Date To</entry>
+	<entry key="limit.description">Description</entry>
+	
+	<entry key="limit.dataview.id"> ID</entry>
+	<entry key="limit.dataview.description"> Description</entry>
+	<entry key="limit.dataview.status"> Status</entry>
+	<entry key="limit.dataview.creationDate"> Creation Date</entry>
+	<entry key="limit.dataview.creator"> Creator</entry>
+	
+	
+	<entry key="cashOut.mobileNumber">MSISDN</entry>
+	<entry key="cashOut.name">Name</entry>
+	<entry key="cashOut.dataview.customerId">Customer ID</entry>
+	<entry key="cashOut.dataview.msisdn">MSISDN</entry>
+	<entry key="cashOut.dataview.displayName">Display Name</entry>
+	<entry key="cashOut.error">Cash Out Error</entry>
+	<entry key="cashOut.totalitems.header">%s items found, displaying %s to %s.</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="cashOutBean.mobileNumber.Required">Please enter MSISDN.</entry>
+	<entry key="cashOutBean.name.Required">Please enter Name.</entry>
+	<entry key="cashOutBean.mobileNumber.PatternValidator">'${input}' is not a valid MSISDN</entry>
+	<entry key="cashOutBean.name.PatternValidator">'${input}' is not a valid Name</entry>
+
+	<entry key="cashOut.emptyRecordsMessage">Nothing found to display.</entry>
+
+
+</properties>

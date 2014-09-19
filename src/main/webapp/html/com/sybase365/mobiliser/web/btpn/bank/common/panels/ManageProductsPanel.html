@@ -1,0 +1,58 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="productForm">
+						<div wicket:id="productsContainer">
+							<fieldset>
+								<legend class="reg_tab">
+									<wicket:message key="header.manageProducts" />
+								</legend>
+								<div wicket:id="errorMessages"></div>
+								<div class="spacer"></div>
+								<div class="displayTag">
+									<label wicket:id="no.items"></label>
+									<span class="pagebanner" wicket:id="productsHeader"></span> <span
+										class="pagelinks" wicket:id="productsNavigator"></span>
+									<wicket:enclosure child="pageable">
+										<table id="productListTable">
+											<thead>
+												<tr>
+													<th wicket:id="orderByProductId"><wicket:message
+															key="productId" /></th>
+													<th wicket:id="orderByName"><wicket:message key="name" /></th>
+													<th wicket:id="orderByType"><wicket:message key="type" /></th>
+													<th><wicket:message key="action" /></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr wicket:id="pageable">
+													<td><div wicket:id="productId">[Type]</div></td>
+													<td><div wicket:id="name">[Date]</div></td>
+													<td><div wicket:id="type">[]type]</div></td>
+													<td><a href="#" wicket:id="detailsLink"><span
+															wicket:id="linkName">Details</span> </a></td>
+												</tr>
+											</tbody>
+										</table>
+									</wicket:enclosure>
+								</div>
+								<div class="spacer"></div>
+								<input style="left: 300px" name="showAddProduct"
+									wicket:id="btnAdd" wicket:message="value:Add"
+									class="submit acc_chk" type="submit" />
+							</fieldset>
+							<div class="spacer"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="bulk.processing.confirm.file">Confirm File</entry>
+  <entry key="confirm.file.details">Bulk File Details</entry>
+  <entry key="bulk.processing.history.file">History</entry>
+  <entry key="history.file.details">Bulk File Details</entry>
+</properties>

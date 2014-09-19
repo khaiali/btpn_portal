@@ -1,0 +1,52 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="salaryDataErrorForm">	
+						<fieldset>
+							<legend class="reg_tab"><wicket:message key="label.errorReports" /></legend>
+							<div class="spacer"></div>							
+							<div class="input">
+								<label for="uploadsalarydata.search.filename"><wicket:message key="label.fileName" /></label>
+								<div class="input_value" wicket:id="fileName"></div>
+							</div>
+							<div class="spacer"></div>
+							<div class="displayTag" wicket:id="salaryDataContainer">
+								<label wicket:id="no.items"></label>
+								<span class="pagebanner" wicket:id="approvalHeader"></span>
+								<span class="pagelinks" wicket:id="approvalNavigator"></span>
+								<wicket:enclosure child="pageable">								
+								<table id="reportTable">
+									<thead>
+										<tr>
+											<th wicket:id="orderByLineNo"><wicket:message key="label.lineNo" /></th>
+											<th wicket:id="orderByErrorRecord"><wicket:message key="label.errorRecord" /></th>
+											<th wicket:id="orderByErrorDescription"><wicket:message key="label.errorRecordDesc" /></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr wicket:id="pageable">
+											<td><div style="width:60px;word-wrap:break-word;" wicket:id="lineNo">[Type]</div></td>
+											<td><div style="width:300px;word-wrap:break-word;" wicket:id="errorRecord">[Date]</div></td>
+											<td><div style="width:300px;word-wrap:break-word;" wicket:id="errorDescription">[Date]</div></td>
+										</tr>
+									</tbody>
+								</table>
+								</wicket:enclosure>
+							</div>
+						</fieldset>
+						<input name="backtoSearch" wicket:id="btnOk" wicket:message="value:OK" class="submit acc_chk" type="submit" />
+						<div class="spacer"></div>						
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

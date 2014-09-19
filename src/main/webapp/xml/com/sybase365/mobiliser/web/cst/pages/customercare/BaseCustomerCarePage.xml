@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+
+  <entry key="findCustomer.title">Enter Customer Details</entry>
+  <entry key="findCustomer.help">You can search for customers by specifying search parameters</entry>
+
+  <!-- ############# Contact Note ############# -->
+
+  <entry key="customer.find.error">An error occurred in find customer. Please try again</entry>
+  <entry key="create.contactNote.error">An error occurred while creating a contact note</entry>
+  
+  <!-- ############# Contact Note ############# -->
+  <entry key="contact.title">Justify Contact</entry>
+  <entry key="contact.category">Category</entry>
+  <entry key="contact.status">Status</entry>
+  <entry key="contact.subject">Subject</entry>
+  <entry key="contact.details">Details</entry>
+  <entry key="currency.lookUp.error">An error occurred while getting the currencies</entry>
+  <entry key="notecategories.lookUp.error">An error occurred while getting the contact note categories</entry>
+  <entry key="blackListReasons.lookUp.error">An error occurred while getting the blackList reasons</entry>
+  
+  
+    <!-- ############# Sub Titles  ############# -->
+    <entry key="approveCustomer.help">You can search for pending customers by specifying search parameters</entry>
+    <entry key="approveWallets.help">You can search for pending wallets by specifying search parameters</entry>
+    <entry key="approveTransactions.help">You can search for pending transactions by specifying search parameters</entry>
+     
+    <!-- ############# Approve Wallets Page ############# -->
+    <entry key="pendingWallets.load.error">An error occurred while loading pending wallets</entry>
+    <entry key="pedning.bank.account.load.error">You have insufficient privilege to view bank accounts pending for approval</entry>  
+    <entry key="pedning.credit.card.load.error">You have insufficient privilege to view credit cards pending for approval</entry>
+    
+    
+    
+    <!-- ############# Approve Customers Page Left Menu ############# -->
+    <entry key="customerType">Customer Type</entry>
+    
+    <!-- ############# Pending Customers Search Page ############# -->
+    <entry key="pending.customer.find.error">An error occurred in find pending customer. Please try again</entry>
+    <entry key="findAgent.table.displayName">Display Name</entry>
+    
+    
+    <!-- ############# Pending Wallets Search Page ############# -->
+    <entry key="findWallets.filterType">Show Wallets By</entry>
+    <entry key="findWallets.filterType.month">Month</entry>
+    <entry key="findWallets.month">Month</entry>
+    <entry key="findWallets.month.select">Select</entry>
+    <entry key="findWallets.filterType.date">Date Range</entry>
+    <entry key="findWallets.fromDate">From</entry>
+    <entry key="findWallets.toDate">To</entry>
+    <entry key="findWallets.piType">PI Type</entry>
+    
+    <entry key="findWallets.walletId">ID</entry>
+    <entry key="findWallets.piId">PI ID</entry>
+    <entry key="findWallets.customerId">Customer ID</entry>
+    
+    <entry key="findWallets.noItemsMsg">No matching pending wallets found</entry>
+    <entry key="customer.approval.config.missing.error">Failed to load pending customers as there is no approval privilege configuration found</entry>
+    <entry key="wallet.approval.config.missing.error">Failed to load pending wallets as there is no approval privilege configuration found</entry>
+    
+    <!-- ############# Contact Points Page ############# -->
+    <entry key="manageContactPoints.title">Contact Points</entry>
+  
+    <!-- ############# Add Contact Point  Page ############# -->
+    <entry key="manageContactPoint.title">Contact Points</entry>
+    <entry key="addOtherContactPoint.RegisterContactPoint">Add a Contact Point</entry>
+    <entry key="addOtherContactPoint.help">Please enter the contact details and click Save</entry>
+  
+    <!-- ############# edit Contact Point  Page ############# -->
+    <entry key="editOtherContactPoint.RegisterContactPoint">Edit a Contact Point</entry>
+    <entry key="editOtherContactPoint.help">Please edit the contact details and click Save</entry>
+  
+    <!-- ############# Manage Alert  ############# -->
+    <entry key="manageAlerts.title">Mobile Alerts</entry>
+    <entry key="manageAlerts.addAlert.title">Add an Alert</entry>
+  
+</properties>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <entry key="manageAccounts.title">Manage Accounts</entry>
+    <entry key="walletEntry.alias">Nickname</entry>
+    <entry key="walletEntry.alias.Required">Nickname is required</entry>
+    <entry key="walletEntry.bankAccount.accountNumber">Account Number</entry>
+    <entry key="walletEntry.bankAccount.accountNumber.Required">Account Number is required</entry>
+    <entry key="walletEntry.bankAccount.bankCode">Bank Code</entry>
+    <entry key="walletEntry.bankAccount.accountHolderName">Account Holder Name</entry>
+    <entry key="walletEntry.bankAccount.accountHolderName.Required">Account Holder Name is required</entry>
+
+    <entry key="manageAccounts.primary">Primary</entry>
+    <entry key="manageAccounts.editAction">Edit</entry>
+    <entry key="manageAccounts.removeAction">Remove</entry>
+    <entry key="manageAccounts.approveAction">Approve</entry>
+    <entry key="manageAccounts.actions">Actions</entry>
+
+    <entry key="manageAccounts.button.addBankAccount">Add a Bank Account</entry>
+    <entry key="manageAccounts.button.addCreditCard">Add a Credit Card</entry>
+    <entry key="manageAccounts.button.addExternalAccount">Add an External Account</entry>
+    <entry key="manageAccounts.button.addFunds">Add Funds</entry>
+    <entry key="manageAccounts.button.withdrawFunds">Withdraw Funds</entry>
+    <entry key="manageAccounts.button.credit">Credit</entry>
+    <entry key="manageAccounts.button.debit">Debit</entry>
+    <entry key="manageAccounts.button.storePrimary">Set Primary</entry>
+    <entry key="manageAccounts.button.balanceAlert">Balance Alert</entry>
+    
+
+    <entry key="manageAccounts.bankAccountsTable.title">Bank Accounts</entry>
+    <entry key="manageAccounts.bankAccountsTable.nickname">Nickname</entry>
+    <entry key="manageAccounts.bankAccountsTable.accountNumber">Account Number</entry>
+    <entry key="manageAccounts.bankAccountsTable.bankCode">Bank Code</entry>
+    <entry key="manageAccounts.bankAccountsTable.bankStatus">Status</entry>
+    <entry key="manageAccounts.bankAccountsTable.remove.confirm">Do you really want to remove this bank account?</entry>
+    <entry key="manageAccounts.bankAccountsTable.noItemsMsg">No bank account entries found</entry>
+    <entry key="manageAccounts.bankAccountsTable.addBankAccountHelp">Use the 'Add a Bank Account' link above to add an entry</entry>
+
+    <entry key="manageAccounts.creditCardsTable.title">Credit Cards</entry>
+    <entry key="manageAccounts.creditCardsTable.nickname">Nickname</entry>
+    <entry key="manageAccounts.creditCardsTable.cardType">Type</entry>
+    <entry key="manageAccounts.creditCardsTable.cardNumber">Card Number</entry>
+    <entry key="manageAccounts.creditCardsTable.remove.confirm">Do you really want to remove this credit card?</entry>
+    <entry key="manageAccounts.creditCardsTable.noItemsMsg">No credit card entries found</entry>
+    <entry key="manageAccounts.creditCardsTable.addCreditCardHelp">Use the 'Add a Credit Card' link above to add an entry</entry>
+
+    <entry key="manageAccounts.externalAccountsTable.title">External Accounts</entry>
+    <entry key="manageAccounts.externalAccountsTable.alias">Alias</entry>
+    <entry key="manageAccounts.externalAccountsTable.Id1">ID 1</entry>
+    <entry key="manageAccounts.externalAccountsTable.Id2">ID 2</entry>
+    <entry key="manageAccounts.externalAccountsTable.remove.confirm">Do you really want to remove this external account?</entry>
+    <entry key="manageAccounts.externalAccountsTable.noItemsMsg">No external account entries found</entry>
+    <entry key="manageAccounts.externalAccountsTable.addExternalAccountHelp">Use the 'Add an External Account' link above to add an entry</entry>
+
+    <entry key="manageAccounts.svasTable.title">Stored Value Account</entry>
+    <entry key="manageAccounts.svasTable.accountBalance">Account Balance</entry>
+    <entry key="manageAccounts.svasTable.noItemsMsg">No stored value account entries found</entry>
+    
+    <entry key="manageAccounts.store.primary.error">Could not store primary account</entry>
+    <entry key="manageAccounts.bank.load.error">Could not load bank account list</entry>
+    <entry key="manageAccounts.creditcard.load.error">Could not load credit card list</entry>
+    <entry key="manageAccounts.sva.load.error">Could not load SVA account</entry>
+    <entry key="walletDelete.error">An error has occurred. Please try Again</entry>
+    
+</properties>

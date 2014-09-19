@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.topupmobile">Isi Pulsa </entry>
+	<entry key="label.manual">Masukan</entry>
+	<entry key="label.favourite">Pilih Dari Daftar Favorit</entry>
+	<entry key="label.mandatory">Wajib isi</entry>
+	<entry key="label.msisdn">Nomor Handphone</entry>
+	<entry key="label.favlist">Daftar Favorit</entry>
+	<entry key="Submit">Masuk</entry>	
+	<entry key="airtimeBean.selectedMsisdn.null">Pilih Favorit</entry>
+
+	<entry key="airtimeBean.selectedMsisdn.id.Required">Kolom Nomor Handphone harus diisi.</entry>
+	<entry key="airtimeBean.selectedMsisdn.Required">Kolom Nomor Handphone harus diisi.</entry>
+</properties>

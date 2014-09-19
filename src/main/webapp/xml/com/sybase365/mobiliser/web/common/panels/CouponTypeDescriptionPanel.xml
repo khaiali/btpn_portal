@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <entry key="couponTypeDescription.locale">Language</entry>
+  <entry key="couponTypeDescription.mimeType">Format</entry>
+  <entry key="couponTypeDescription.caption">Caption</entry>
+  <entry key="couponTypeDescription.content">File</entry>
+  <entry key="couponTypeDescription.thumbnailUrl">Thumb URL</entry>
+  <entry key="couponTypeDescription.imageUrl">Picture URL</entry>	
+  <entry key="couponTypeDescription.locale.Required">Language is required</entry>
+  <entry key="couponTypeDescription.mimeType.Required">Format is required</entry>
+  <entry key="couponTypeDescription.caption.Required">Caption is required</entry>
+  <entry key="couponTypeDescription.description">Description</entry>
+  <entry key="descriptionText.Required">Description is required</entry>
+  <entry key="description.attachmentFile.required">File is required</entry>
+  <entry key="create.coupon.description.success">Description created successfully</entry>
+  <entry key="update.coupon.description.success">Description updated successfully</entry>
+  <entry key="create.coupon.description.error">An error occurred while creating description</entry>
+  <entry key="update.coupon.description.error">An error occurred while updating description</entry>
+  <entry key="load.mime.type.error">An error occurred while loading format details</entry>
+  <entry key="load.mime.type.list.error">An error occurred while loading format list</entry>
+  <entry key="coupon.description.extension.error">Invalid file extension </entry>
+  <entry key="descriptionText.length.exceeded">Maximum of 2000 characters are allowed for description</entry>
+</properties>

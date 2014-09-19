@@ -1,0 +1,142 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="contactPointsForm">
+		
+		<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+
+			<div class="module clear" wicket:id="contactPointListContainer">
+			
+				<h2 class="section phone">
+					<wicket:message key="contactPoints.contactPointsTable.title" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="cpStartIndex"></span> - <span wicket:id="cpEndIndex"></span> (<span wicket:id="cpTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="cpNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="contactPointsTable" class="listTable">
+						
+							<wicket:enclosure child="cpPageable">
+							
+								<thead>
+									<tr>
+										<th style="width:60%;" class="contact" wicket:id="cpOrderByContact"><wicket:message key="contactPoints.contactPointsTable.contact" /></th>
+										<th style="width:15%;" class="type"><wicket:message key="contactPoints.contactPointsTable.type" /></th>
+										<th style="width:25%;" class="actions" ><wicket:message key="contactPoints.actions" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="5"></td>
+									</tr>
+								</tfoot>
+								
+								<tbody>
+									<tr wicket:id="cpPageable">
+										<td><span wicket:id="cpContact">[Contact]</span></td>
+										<td><span wicket:id="cpContactType">[Type]</span></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="cpSendTextMessage"><wicket:message key="contactPoints.sendTestMessageAction">[SendTestMessage]</wicket:message> </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="cpNoItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="module clear" wicket:id="otherContactListContainer">
+
+				<h2 class="section phone">
+					<wicket:message key="contactPoints.otherContactsTable.title" />
+					<input type="submit" class="additionalLink last" wicket:id="addOtherContactPoint" wicket:message="value:contactPoints.button.otherContact" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="ocpStartIndex"></span> - <span wicket:id="ocpEndIndex"></span> (<span wicket:id="ocpTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="ocpNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="friendsListTable" class="listTable">
+						
+							<wicket:enclosure child="ocpPageable">
+							
+								<thead>
+									<tr>
+										<th style="width:40%;"><wicket:message key="contactPoints.otherContactsTable.contact" /></th>
+										<th style="width:20%;" wicket:id="ocpOrderByNickname"><wicket:message key="contactPoints.otherContactsTable.nickname" /></th>
+										<th style="width:15%;"><wicket:message key="contactPoints.otherContactsTable.type" /></th>
+										<th style="width:25%;"><wicket:message key="contactPoints.actions" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="5"></td>
+									</tr>
+								</tfoot>
+								
+								<tbody>
+									<tr wicket:id="ocpPageable">
+										<td  style="word-wrap: break-word;"><span wicket:id="ocpContact">[Contact]</span></td>
+										<td style="word-wrap: break-word;"><span wicket:id="ocpNickname">[Nickname]</span></td>
+										<td><span wicket:id="ocpContactType">[Type]</span></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="ocpEditAction"><wicket:message key="contactPoints.editAction">[Edit]</wicket:message> </a></li>
+												<li><a href="#" wicket:id="ocpRemoveAction"><wicket:message key="contactPoints.removeAction">[Remove]</wicket:message> </a></li>
+												<li><a href="#" wicket:id="ocpSendTextMessage"><wicket:message key="contactPoints.sendTestMessageAction">[SendTestMessage]</wicket:message> </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="ocpNoItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+	</form>
+
+
+</wicket:panel>
+
+</body>
+</html>

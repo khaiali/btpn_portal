@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <!-- ############# Exchange Rate Page ############# -->
+  
+    <entry key="exchangerate.rateId">Rate Id</entry>
+    <entry key="exchangerate.fromCurrency">From Currency</entry>
+    <entry key="exchangerate.toCurrency">To Currency</entry>
+    <entry key="exchangerate.ratio">Ratio</entry>
+    <entry key="exchangerate.rate">Rate</entry>
+    <entry key="exchangerate.addExchangeRateHelp">Use the 'Add a Exchange Rate' link above to add an entry</entry>
+    <entry key="exchangerate.noItemsMsg">No exchange rate found</entry>
+    <entry key="currency.exchange.title">Currency Exchange Configuration</entry>
+    <entry key="exchangeRateTable.link.add">Add a Exchange Rate</entry>
+    <entry key="forex.fromAmount.zero">From Ratio must not be 0</entry>
+    <entry key="forex.toAmount.zero">To Ratio must not be 0</entry>
+    <entry key="forex.error.fromSameAsTo">From and To currency cannot be same</entry>
+    <entry key="save.exchangerate.error">An error occurred while saving exchange rate</entry>
+    <entry key="exchangerate.remove.confirm">Are you sure you want to remove this exchange rate?</entry>
+  	<entry key="duplicate.exchangerate.error">An error occurred while checking for duplicate exchange rate</entry>
+	<entry key="exchangerate.already.exist">There already exists an exchange rate configuration for '${fromCurrency}-${toCurrency}' constellation</entry>
+	<entry key="delete.exchangerate.error">An error occurred while deleting exchange rate</entry>
+	<entry key="exchangeRate.fromCurrency.Required">From currency is required</entry>
+	<entry key="exchangeRate.toCurrency.Required">To currency is required</entry>
+	<entry key="strRate.Required">Rate is required</entry>
+	<entry key="currency.exchange.history.title">Exchange Rate History</entry>
+	<entry key="exchangerate.validTo">Valid To</entry>
+	<entry key="exchangerateHistory.agent">Agent</entry>
+	<entry key="exchangeratehistory.load.error">An error occurred while loading exchange rate history</entry>
+	<entry key="exchangerate.history.noItemsMsg">No history found to display</entry>
+    <entry key="exchangeRate.update.noExist.error">The selected exchange rate does not exist or has changed</entry>
+    <entry key="strFromAmount.AmountValidator">'${input}' is not a valid From Ratio</entry>
+    <entry key="strToAmount.AmountValidator">'${input}' is not a valid To Ratio</entry>
+    <entry key="strRate.AmountValidator">'${input}' is not a valid Rate</entry>
+  	<!-- ############# Fee Type Configuration Page ############# -->
+    <entry key="feeTypesConfiguration.title">Fees</entry>
+    <entry key="feeTypesList.noItemsMsg">No use case configuration entries found</entry>
+    <entry key="feeTypesList.addFeeTypeHelp">Add an use case configuration using the 'Add Use Case Configuration' link above.</entry>
+    <entry key="useCaseFeeTypes.load.error">An error occurred while loading use case configurations</entry>
+    <entry key="feeTypes.id">ID</entry>
+    <entry key="feeTypes.name">Fee Type</entry>
+    <entry key="feeTypes.useCase">Use Case</entry>
+    <entry key="feeType.add.button">Add a Fee Type</entry>
+    <entry key="feeType.useCase.add.button">Add Use Case Configuration</entry>
+    <entry key="feeType.useCase.yes">Yes</entry>
+    <entry key="feeType.useCase.no">No</entry>
+    
+    <entry key="feeTypes.payee.orgUnit">OrgUnit Payee</entry>
+    <entry key="feeTypes.payer.orgUnit">OrgUnit Payer</entry>
+    <entry key="feeTypes.payee.piType">PI Type Payee</entry>
+    <entry key="feeTypes.payer.piType">PI Type Payer</entry>
+    <entry key="feeTypes.payee.fee">Payee Fee</entry>
+    <entry key="feeTypes.subTxn.type">Sub Txn Type</entry>
+    <entry key="feeTypes.copyFromAuth">Copy From Auth</entry>
+    <entry key="feeTypes.payee.includeInLimit">Include In Limit</entry>
+    <entry key="feeType.remove.confirm">Do you really want to remove the selected use case configuration?</entry>
+    <entry key="create.usecaseconf.error">An error occurred while creating a new use case configuration</entry>
+    <entry key="update.usecaseconf.error">An error occurred while updating use case configuration</entry>
+    <entry key="delete.usecaseconf.error">An error occurred while deleting from use case configuration list</entry>
+    
+    
+    <entry key="useCaseFeeType.useCaseId.Required">Use Case is required</entry>
+    <entry key="useCaseFeeType.orgUnitPayer.Required">OrgUnit Payer is required</entry>
+    <entry key="useCaseFeeType.orgUnitPayee.Required">OrgUnit Payee is required</entry>
+    <entry key="useCaseFeeType.feeTypeId.Required">Fee Type is required</entry>
+    <entry key="useCaseFeeType.payeeFee.Required">Payee Fee is required</entry>
+    <entry key="useCaseFeeType.copyFromAuth.Required">Copy From Auth is required</entry>
+    <entry key="useCaseFeeType.includeInLimit.Required">Include In Limit is required</entry>
+    
+    
+    
+    <!-- ############# Add Fee Type Page ############# -->
+    <entry key="addFeeType.title">New Fee Type</entry>
+    <entry key="addFeeType.id">Fee Type ID</entry>
+    <entry key="addFeeType.name">Name</entry>
+    <entry key="addFeeType.processByTxn">Process By Txn</entry>
+    <entry key="addFeeType.includeVAT">Include VAT</entry>
+    <entry key="addFeeType.commissionFee">Commission Fee</entry>
+    <entry key="addFeeType.beneficiary">Beneficiary</entry>
+    <entry key="create.feetype.error">An error occurred while creating a new fee type</entry>
+    <entry key="addFeeType.customer.not.found.error">A user with entered customer id does not exist</entry>
+    
+    
+    <entry key="feeType.id.Required">Fee Type ID is required</entry>
+    <entry key="feeType.id.IConverter.int">'${input}' is not a valid Fee Type ID</entry>
+    <entry key="feeType.name.Required">Fee Type is required</entry>
+    <entry key="beneficiary.Required">Beneficiary is required</entry>
+    <entry key="feeType.processWithTxn.Required">Process By Txn is required</entry>
+    <entry key="feeType.includeVat.Required">Include VAT is required</entry>
+    <entry key="feeType.commission.Required">Commission Fee is required</entry>
+    <entry key="feeType.id.IConverter.Integer">'${input}' is not a valid Fee Type ID</entry>
+   
+    <entry key="billConfiguration.create.error">Error while creating bill configuration</entry>
+    <entry key="billconfiguration.reference.invalid">Invalid reference</entry>
+    <entry key="typeId.Required">Type is required</entry>
+    <entry key="name.Required">Name is required</entry>
+    <entry key="reference.Required">Reference is required</entry>
+    <entry key="name.PatternValidator">'${input}' is not a valid Name</entry>
+    <entry key="reference.PatternValidator">'${input}' is not a valid Reference</entry>
+    
+      <!-- #############Manage Restriction Number page ############# -->
+    <entry key="manageRestrictedNumbers.title">Manage Restricted Numbers</entry>
+    <entry key="manageRestrictedNumbers.Add">Add Restricted Numbers</entry>
+    <entry key="manageRestrictedNumbers.help">Devices having a restricted number are not allowed to be registered. If the device associated with the number has already been registered, it will be deleted when the number is added to the restricted list. Restricted numbers can be added one at a time or uploaded from a file.</entry>
+    <entry key="manageRestrictedNumbers.number">Number</entry>
+    <entry key="manageRestrictedNumbers.country">Country</entry>
+    <entry key="manageRestrictedNumbers.actions">Actions</entry>
+    <entry key="manageRestrictedNumbers.remove">Remove</entry>
+    <entry key="manageRestrictedNumbers.upload">Upload Restricted Numbers</entry>   
+    <entry key="manageRestrictedNumbers.uploadHelp">Click browse and navigate to the file to upload. After clicking the upload button, the numbers included in the file will appear in the 'Restricted Numbers' list above.</entry>          
+   
+    <entry key="manageRestrictedNumbers.wrong.formate.file.error">Uploaded file is in wrong format.</entry>
+    <entry key="manageRestrictedNumbers.restricted.number.uploaded.sucessfully">Restricted Numbers added successfully.</entry>
+    <entry key="manageRestrictedNumbers.upload.file.error">Please upload a file to add restricted numbers.</entry>
+    <entry key="restrictedNumber.msisdn.PatternValidator">'${input}' is not a valid phone number.</entry>
+    <entry key="restrictedNumber.msisdn">Number</entry>
+    <entry key="restrictedNumber.country">Country</entry>
+    <entry key="restrictedNumber.restrictedNumberTable.remove.confirm">Do you really want to remove this number?</entry>
+    <entry key="restrictedNumber.actionDelete.message">Restricted Number has been removed succesfully.</entry>
+    <entry key="restrictedNumber.restrictedNumberTable.noServicePackage">No Restricted Number found</entry>
+    
+    <!-- ############# Global configurations ############# -->
+    <entry key="globalConf.title">Global Configuration</entry>
+    <entry key="globalConf.orgUnitTable.title">OrgUnit Configuration</entry>
+    <entry key="globalConf.orgUnitTable.orgUnit">Org Unit</entry>
+    <entry key="globalConf.orgUnitTable.feeSet">Fee Set</entry>
+    <entry key="globalConf.orgUnitTable.limitSet">Limit Set</entry>
+    <entry key="orgUnitsList.noItemsMsg">No org unit entries found</entry>
+    <entry key="orgUnits.load.error">An error occurred while loading org unit configuration</entry>
+    <entry key="globalConf.orgUnit.update.error">An error occurred while updating org unit</entry>
+    
+        
+    <entry key="globalConf.custTypeTable.title">Customer Type Configuration</entry>
+    <entry key="globalConf.custTypeTable.type">Customer Type</entry>
+    <entry key="globalConf.custTypeTable.feeSet">Fee Set</entry>
+    <entry key="globalConf.custTypeTable.riskCategory">Risk Category</entry>
+    <entry key="globalConf.custTypeTable.umgrRole">Umgr Role</entry>
+    <entry key="customerTypesList.noItemsMsg">No customer type entries found</entry>
+    <entry key="customerTypes.load.error">An error occurred while loading customer type configuration</entry>
+    <entry key="globalConf.customerType.update.error">An error occurred while updating customer type</entry>
+    
+    <entry key="globalConf.riskCategoryTable.title">Risk Category Configuration</entry>
+    <entry key="globalConf.riskCategoryTable.riskCategory">Risk Category</entry>
+    <entry key="globalConf.riskCategoryTable.limitSet">Limit Set</entry>
+    <entry key="globalConf.riskCategoryTable.umgrRole">Umgr Role</entry>
+    <entry key="riskCategoriesList.noItemsMsg">No risk category entries found</entry>
+    <entry key="riskCategories.load.error">An error occurred while loading risk category configuration</entry>
+    <entry key="globalConf.riskCategory.update.error">An error occurred while updating risk category</entry>
+    
+    
+    
+    <!-- ############# Fee Set Configuration Page ############# -->
+    
+    <entry key="feeSetsConfiguration.title">Fee Sets</entry>
+
+    <!-- ############# Limit ############# -->
+    <entry key="cst.limit.title">Limits</entry>
+    <entry key="cst.limitSets.title">Limit Sets</entry>
+    <entry key="MESSAGE.LIMITSET_ADDED">The Limit Set data saved successfully</entry>  
+    <entry key="MESSAGE.LIMITSET_REMOVED">The Limit Set data removed successfully</entry>
+    <entry key="MESSAGE.LIMITSET_CLASS.UPDATED">The Limit Set class data updated successfully</entry>
+    <entry key="MESSAGE.LIMITSET_CLASS.SAVED">The Limit Set class data saved successfully</entry>
+    
+    <entry key="ERROR.LIMITSET_REMOVE">An internal error occurred. Please try again.</entry>  
+    <entry key="ERROR.LIMITSET_ADD">An internal error occurred. Please try again.</entry>  
+    <entry key="ERROR.LIMITSET_CLASS.SAVE">An internal error occurred. Please try again.</entry>
+    <entry key="MESSAGE.LIMITSET_CLASS.REMOVED">The Limit set class data removed successfully</entry>
+    <entry key="ERROR.LIMITSET_CLASS.REMOVE">An internal error occurred. Please try again.</entry>
+    
+    <!-- ############# Restriction Set Page ############# -->
+    
+    <entry key="restrictionGroups.title">Restriction Groups</entry>
+    <entry key="restrictionGroupsList.noItemsMsg">No restriction group entries found</entry>
+    <entry key="restrictionGroupsList.addRestrictionGrpHelp">Add a restriction group using the 'Add a Restriction Group' link above.</entry>
+    <entry key="restrictionGroups.load.error">An error occurred while loading restriction groups</entry>
+    <entry key="restrictionGroup.add.button">Add a Restriction Group</entry>
+    <entry key="restGrps.name">Restriction Group</entry>
+    <entry key="restriction.name">Restriction</entry>
+    <entry key="moveUp">Move Up</entry>
+    <entry key="moveDown">Move Down</entry>
+    <entry key="restGrps.id">ID</entry>
+    <entry key="restriction.add">Add Restriction</entry>
+    <entry key="restriction.new">New Restriction</entry>
+    <entry key="restriction.for">For</entry>
+    <entry key="restriction.for.payer">Payer</entry>
+    <entry key="restriction.for.payee">Payee</entry>
+    <entry key="restriction.priority">Priority</entry>
+    <entry key="restrictionGroup.create.error">An error occurred while creating a new restriction group</entry>
+    <entry key="restrictionGroup.remove.error">An error occurred while deleting from the restriction groups list</entry>
+    <entry key="restriction.swap.priority.error">An error occurred while swapping the priority of the restrictions</entry>
+    <entry key="restrictionGroup.remove.confirm">Do you really want to remove the selected restriction group?</entry>
+    <entry key="restrictionSet.groupId.Required">ID is required</entry>
+    <entry key="restrictionSet.name.Required">Restriction Group is required</entry>
+    <entry key="restrictionSet.groupId.IConverter.int">'${input}' is not a valid ID</entry>
+    
+    
+    <entry key="restrictionRule.minTxnAmt">Min Transaction Amount</entry>
+    <entry key="restrictionRule.maxTxnAmt">Max Transaction Amount</entry>
+    <entry key="restrictionRule.maxTxnSum">Max Transaction Sum</entry>
+    <entry key="restrictionRule.maxTxn">Max Transactions</entry>
+    
+    <entry key="restriction.appliedFor.orgunits">Org Units</entry>
+    <entry key="restriction.appliedFor">Applied For</entry>
+    <entry key="restriction.appliedFor.riskCategory">Risk Category</entry>
+    <entry key="restriction.aplliedOn">Applied On</entry>
+    <entry key="restriction.aplliedOn.useCase">Use Case</entry>
+    <entry key="restriction.remove.confirm">Do you really want to remove the selected restriction?</entry>
+    <entry key="restrictionRules.table.currency">Currency</entry>
+    <entry key="restrictionRules.table.minTxnAmt">Min Txn Amount</entry>
+    <entry key="restrictionRules.table.maxTxnAmt">Max Txn Amount</entry>
+    <entry key="restrictionRules.table.maxTxnSum">Max Txn Sum</entry>
+    <entry key="restrictionRules.table.timeframe">Time Frame</entry>
+    <entry key="restrictionRules.table.maxTxn">Max Txns</entry>
+    <entry key="restrictionRules.title">Rules</entry>
+    <entry key="restrictionRules.add.button"> Add a Rule</entry>
+    <entry key="restrictionRulesList.noItemsMsg">No restriction rule entries found</entry>
+    <entry key="restrictionRulesList.addRestrictionRuleHelp">Use the 'Add a Rule' link above to add an entry</entry>
+    <entry key="create.restriction.error">An error occurred while saving restriction </entry>
+    <entry key="restriction.remove.error">An error occurred while deleting restriction from the restrictions list</entry>
+    <entry key="restriction.fetch.error">An error occurred while fetching the restriction</entry>
+    <entry key="update.restriction.error">An error occurred while updating the restriction</entry>
+    <entry key="duration.format.error">is not a valid Time Frame</entry>
+    <entry key="restriction.priority.IConverter.long">'${input}' is not a valid Priority</entry>
+    <entry key="rule.currency.Required">Currency is required</entry>
+    <entry key="rule.maxTransactions.IConverter.Long">'${input}' is not a valid Max Txn Sum</entry>
+    <entry key="rule.minTransactionAmount.IConverter.Long">'${input}' is not a valid Min Txn Amount</entry>
+    <entry key="rule.maxTransactionAmount.IConverter.Long">'${input}' is not a valid Max Txn Amount</entry>
+    <entry key="rule.maxTransactionAmountSum.IConverter.Long">'${input}' is not a valid Max Txn Sum</entry>
+    <entry key="restriction.name.Required">Restriction is required</entry>
+    <entry key="restrictionRule.remove.confirm">Do you really want to remove the selected rule?</entry>
+    
+    <!-- ############# Approval Configuration Page ############# -->
+   <entry key="approvalConfiguration.title">Privileges</entry>
+   
+    <!-- ############# opt-in setting  Page ############# -->
+ 	 <entry key="optinSettings.title">Manage Opt-in Settings</entry>
+	<entry key="bankTerms.conditions.title">Bank Terms and Conditions</entry>
+    <entry key="bankTerms.conditions.bank">Bank</entry>
+    <entry key="bankTerms.conditions.resetDate"> Reset Date</entry>
+    <entry key="bankTerms.conditions.resetNotify">Reset Notify</entry>
+    <entry key="bankTerms.conditions.disableAlert">Disable Alert After x day</entry>
+    <entry key="bankTerms.conditions.disableNotify">Disable Notify</entry>   
+    <entry key="bankTerms.conditions.actions">Action</entry>  
+    <entry key="bankTerms.conditions.actions.edit">Edit</entry>  
+           
+    <entry key="carrier.optin.requirments">Carrier Opt-in Requirements</entry>
+    <entry key="carrier.optin.requirments.carrier">Carrier</entry>
+    <entry key="carrier.optin.requirments.resetDate"> Reset Date</entry>
+    <entry key="carrier.optin.requirments.tokenRequired">Token Required</entry>
+    <entry key="carrier.optin.requirments.resetNotify">Reset Notify</entry>
+    <entry key="carrier.optin.requirments.disableAlert">Disable Alert After X days</entry>
+    <entry key="carrier.optin.requirments.disableNotify">Disable Notify</entry>
+    <entry key="carrier.optin.requirments.action">Action</entry>
+    <entry key="carrier.optin.requirments.action.edit">Edit</entry>
+    <entry key="carrier.optin.requirments.action.edit.help">Opt-in Requirements</entry>
+    <entry key="bank.optin.requirments.action.edit.help">T&#38;&#67; Settings</entry>
+    
+    <entry key="bankTerm.conditions.noItemsMsg">No Bank Terms and Conditions found</entry>
+    <entry key="carrier.optin.requirments.noItemsMsg">No Carrier Opt-in Requirements found</entry>
+    <entry key="optin.requirments.action.edit.success">has been updated successfully.</entry>
+    <entry key="reset.date.update.success.message">Reset Date has been successfully updated.</entry>
+    
+</properties>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.accountTransfer">Transfer Rekening</entry>
+	<entry key="subAccount.select">Pilih</entry>
+	<entry key="requiredFields">Wajib isi</entry>
+	<entry key="Submit">Masuk</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="subAccountsBean.transferType.null">Pilih Tipe Rekening</entry>
+	<entry key="subAccountsBean.transferType.Required">Mohon Pilih Tipe Rekening.</entry>
+	<entry key="subAccountsBean.transferType.PatternValidator">'${input}' bukan Tipe Rekening yang valid.</entry>
+
+</properties>

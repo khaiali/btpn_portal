@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="bankportal.title">BTPN Portal - BTPN</entry>
+	<entry key="header.login.info">Hi %s, your login on pocket bank btpn</entry>
+	<entry key="header.logout.label">Logout</entry>
+	<entry key="application.name">BankPortal</entry>
+	<entry key="main.menu.consumer.care">Customer Care</entry>
+	<entry key="main.menu.agent.care">Agent Care</entry>
+	<entry key="foooter.copyright">Copyright</entry>
+	<entry key="foooter.bank.name">PT Bank Tabungan Pensiunan Nasional Tbk. 2013</entry>
+	<entry key="foooter.info">SAP | All rights reserved | Build</entry>
+	<entry key="session.timeout.counter.label">Session Timeout: </entry>
+	<entry key="session.timeout.counter.minutes.label"> Minutes</entry>
+	<entry key="session.timeout.label">Your session has timed out.</entry>
+	<entry key="txnSearchBean.timeframe">Current Customer</entry>
+	<entry key="txnSearchBean.MobileNumber">Mobile Number</entry>
+	<entry key="txnSearchBean.CustomerID">Customer ID</entry>
+	<entry key="txnSearchBean.Name">Name</entry>
+	<entry key="txnSearchBean.MobileAccNo">Mobile Acc No</entry>
+	<entry key="left.menu.maindata">Main Data</entry>
+	<entry key="left.menu.transactions">Transactions</entry>
+	<entry key="left.menu.changemobile">Change Mobile Number</entry>
+	<entry key="left.menu.blockCustomer">Block Customer</entry>
+	<entry key="txns.startDate">Start Date</entry>
+	<entry key="txns.endDate">End Date</entry>
+	<entry key="label.submit">Submit</entry>
+	<entry key="bodymessage">Try searching for customer by using search options on the left side.</entry>
+	<entry key="customerheadermsg">Customer Find - Search Results</entry>
+	<entry key="agentheadermsg">Agent Find - Search Results</entry>
+</properties>

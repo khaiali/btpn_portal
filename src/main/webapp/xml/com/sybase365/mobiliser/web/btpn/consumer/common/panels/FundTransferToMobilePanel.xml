@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.Mobile">Kirim Uang ke Nomor Handphone</entry>
+	<entry key="fundTransfer.payeeMSISDN">Nomor Handphone</entry>
+	<entry key="fundTransfer.entermanually">Masukan</entry>
+	<entry key="fundTransfer.selectFavoriteList">Pilih dari Daftar Favorit</entry>
+	<entry key="fundTransfer.phoneNumber">Nomor Handphone</entry>
+	<entry key="fundTransfer.favoriteList">Daftar Favorit</entry>
+	<entry key="fundTransfer.amount">Jumlah</entry>
+	<entry key="requiredFields">Wajib isi</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="fundTransfer.amount.Required">Kolom Jumlah harus diisi.</entry>
+	<entry key="fundTransfer.amount.PatternValidator">'${input}' bukan Jumlah yang valid.</entry>
+	<entry key="fundTransfer.amount.AmountValidator">${input} bukan Jumlah yang valid.</entry>
+	<entry key="fundTransfer.amount.IConverter.Long">${input} bukan Jumlah yang valid.</entry>
+	<entry key="fundTransfer.accountType.null">Pilih Tipe Rekening</entry>
+	<entry key="fundTransfer.accountType.Required">mohon pilih Tipe Rekening.</entry>
+	<entry key="fundTransfer.payeeMsisdn.Required">Kolom Nomor Handphone harus diisi.</entry>
+	<entry key="fundTransfer.payeeMsisdn.PatternValidator">'${input}' bukan Nomor Handphone yang valid.</entry>
+
+</properties>

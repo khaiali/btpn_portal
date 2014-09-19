@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<!-- ############# BTPN ############# -->
+	<entry key="consumer.header.registrationType">Registration Type</entry>
+	<entry key="topupagent.header.registrationType">Registration Information</entry>
+	<entry key="childagent.header.registrationType">Registration Type</entry>
+	<entry key="subagent.header.registrationType">Registration Information</entry>
+	<entry key="childagent.registrationType.value">childAgent</entry>
+	<entry key="subagent.registrationType.value">subAgent</entry>
+	<entry key="label.registrationType">Registration Type</entry>
+	<entry key="label.agent">Agent</entry>
+	<entry key="label.child">Child</entry>
+	<entry key="label.parentSVA"> Parent SVA </entry>
+	<entry key="label.productType">Product Type</entry>
+	<entry key="consumer.customerInfo.headLine">Customer Information</entry>
+	<entry key="topupagent.customerInfo.headLine">Agent Information</entry>
+	<entry key="childagent.customerInfo.headLine">Agent Information</entry>
+	<entry key="subagent.customerInfo.headLine">Agent Information</entry>
+	<entry key="label.name">Name</entry>
+	<entry key="label.shortName">Short Name</entry>
+	<entry key="label.employeeId">Employee ID</entry>
+	<entry key="label.mothersMaidenName">Mother's Maiden Name</entry>
+	<entry key="label.maritalStatus">Marital Status</entry>
+	<entry key="label.placeOfBirth">Place Of Birth</entry>
+	<entry key="label.nationality">Nationality</entry>
+	<entry key="label.language">Language</entry>
+	<entry key="label.receiptMode">Receipt Mode</entry>
+	<entry key="label.occupation">Occupation</entry>
+	<entry key="label.job">Job</entry>
+	<entry key="label.industryOfEmployer">Industry Of Employer</entry>
+	<entry key="label.purposeOfAccount">Purpose Of Account</entry>
+	<entry key="label.sourceofFound">Source Of Fund</entry>
+	<entry key="label.income">Income</entry>
+	<entry key="label.idCardNo">ID Card No</entry>
+	<entry key="label.idType">ID Type</entry>
+	<entry key="label.idExpirationDate">ID Expiration date</entry>
+	<entry key="label.highRiskCustomer">High Risk Customer</entry>
+	<entry key="label.highRiskBusiness">High Risk Business</entry>
+	<entry key="label.atmCardNo">ATM Card No</entry>
+	<entry key="label.gender">Gender</entry>
+	<entry key="label.emailId">Email ID</entry>
+	<entry key="label.customerNumber">Customer Number</entry>
+	<entry key="label.purposeOfTransaction">Purpose Of Transaction</entry>
+	<entry key="label.glCodes">GL Code</entry>
+	<entry key="label.dateOfBirth">Date Of Birth</entry>
+	<entry key="label.isTaxExempted">Is Tax Exempted</entry>
+	<entry key="label.isOptimaActivated">Is Optima Activated</entry>
+	<entry key="label.religion">Religion</entry>
+	<entry key="label.lastEducation">Last Education</entry>
+	<entry key="label.foreCastTransaction">Forecast Transaction</entry>
+	<entry key="label.taxCardNumber">Tax Card Number</entry>
+	<entry key="label.identificationAttachment">Identification Attachment</entry>
+	<entry key="attachedFile">Attached File</entry>
+	<entry key="date">Date</entry>
+	<entry key="action">Action</entry>
+	<entry key="notification.attachments.noItemsMsg">No Attachments Found.</entry>
+	<entry key="consumer.contactAddressInfo.headLine">Contact &amp; Address</entry>
+	<entry key="topupagent.contactAddressInfo.headLine">Address</entry>
+	<entry key="childagent.contactAddressInfo.headLine">Address</entry>
+	<entry key="subagent.contactAddressInfo.headLine">Address</entry>
+	<entry key="label.mobileNumber">Mobile Number</entry>
+	<entry key="label.street1">Street1</entry>
+	<entry key="label.street2">Street2</entry>
+	<entry key="label.province">Province</entry>
+	<entry key="label.city">City</entry>
+	<entry key="label.zipcode">Zip Code</entry>
+	<entry key="officerInformation.headline">Officer Information</entry>
+	<entry key="label.officerId">Officer Id</entry>
+	<entry key="label.dateCreated">Date Created</entry>
+	<entry key="label.territoryCode">Territory Code</entry>
+	<entry key="label.marketingSourceCode">Marketing Source Code</entry>
+	<entry key="label.referralNumber">Referral Number</entry>
+	<entry key="label.agentCode">Agent Code</entry>
+	<entry key="label.mandatoryField">Denotes Mandatory Field</entry>
+	<entry key="label.submit">Submit</entry>
+	<entry key="label.cancel">Cancel</entry>
+	<entry key="attachment.totalitems.header">%s items found, displaying %s to %s.</entry>
+
+	<entry key="attachment.delete.confirm">Are you sure you want to delete this attachment?</entry>
+
+	<!-- ############# Client Side Validations Required ############# -->
+	<entry key="customer.registrationType.Required">Registration Type is a required field</entry>
+	<entry key="customer.productType.Required">Product Type is a required field</entry>
+	<entry key="customer.name.Required">Display Name is a required field</entry>
+	<entry key="customer.shortName.Required">Short Name is a required field</entry>
+	<entry key="customer.employeeId.Required">Employee ID is a required field</entry>
+	<entry key="customer.mothersMaidenName.Required">Mother Maiden Name is a required field</entry>
+	<entry key="customer.maritalStatus.Required">Marital Status is a required field</entry>
+	<entry key="customer.marketingSourceCode.Required">Marketing Source Code is a required field</entry>
+	<entry key="customer.placeOfBirth.Required">Pob is a required field</entry>
+	<entry key="customer.nationality.Required">Nationality is a required field</entry>
+	<entry key="customer.language.Required">Language is a required field</entry>
+	<entry key="customer.receiptMode.Required">Receipt Mode is a required field</entry>
+	<entry key="customer.occupation.Required">Occupation is a required field</entry>
+	<entry key="customer.job.Required">Job is a required field</entry>
+	<entry key="customer.industryOfEmployee.Required">Industry Of Emp is a required field</entry>
+	<entry key="customer.optimaActivated.Required">Is Optima Activated is a required field</entry>
+	<entry key="customer.purposeOfAccount.Required">Purpose Of Acc is a required field</entry>
+	<entry key="customer.sourceofFound.Required">Source Of Fund is a required field</entry>
+	<entry key="customer.income.Required">Income is a required field</entry>
+	<entry key="customer.idCardNo.Required">Identity No is a required field</entry>
+	<entry key="customer.idType.Required">Identify Type is a required field</entry>
+	<entry key="customer.expireDateString.Required">Id Expiration Date is required field.</entry>
+	<entry key="customer.highRiskCustomer.Required">High Risk Cus is a required field</entry>
+	<entry key="customer.highRiskBusiness.Required">High Risk Bus is a required field</entry>
+	<entry key="customer.atmCardNo.Required">ATM Card No is a required field</entry>
+	<entry key="customer.gender.Required">Gender is a required field</entry>
+	<entry key="customer.emailId.Required">Email Id is a required field</entry>
+	<entry key="customer.purposeOfTransaction.Required">Purpose of Transaction is a required field</entry>
+	<entry key="customer.glCodeId.Required">GL Code is a required field</entry>
+	<entry key="customer.customerNumber.Required">Customer Number is a required field</entry>
+	<entry key="customer.birthDateString.Required">Date of Birth is a required field</entry>
+	<entry key="file.attachmentFile.Required">Attachment is a required field</entry>
+	<entry key="customer.taxExempted.Required">Is Tax Exempted is a required field</entry>
+	<entry key="customer.street1.Required">Street1 is a required field</entry>
+	<entry key="customer.street2.Required">Street2 is a required field</entry>
+	<entry key="territoryCode.Required">Territory Code is a required field.</entry>	
+	<entry key="customer.province.Required">Province is a required field.</entry>
+	<entry key="customer.city.Required">City is a required field.</entry>
+	<entry key="customer.agentCode.Required">Agent Code is a required field.</entry>
+	
+	<entry key="customer.religion.nullValid">Please Select</entry>
+	<entry key="customer.lastEducation.nullValid">Please Select</entry>
+	<entry key="customer.foreCastTransaction.nullValid">Please Select</entry>
+	
+	<!-- ############# Client Side Validations ############# -->
+	<entry key="customer.name.PatternValidator">${input} is not a valid Display Name</entry>
+	<entry key="customer.shortName.PatternValidator">${input} is not a valid Short Name</entry>
+	<entry key="customer.employeeId.PatternValidator">${input} is not a valid Employee ID</entry>
+	<entry key="customer.mothersMaidenName.PatternValidator">${input} is not a valid Mother Maiden Name</entry>
+	<entry key="customer.placeOfBirth.PatternValidator">${input} is not a valid Pob</entry>
+	<entry key="customer.expireDateString.PatternDateConverter">${input} is not a valid Id Exp Date</entry>
+	<entry key="customer.atmCardNo.PatternValidator">${input} is not a valid ATM Card No</entry>
+	<entry key="customer.atmCardNo.StringValidator.exact">ATM Card No must be at least 16 characters long</entry>
+	<entry key="customer.emailId.PatternValidator">${input} is not a valid Email Id</entry>
+	<entry key="customer.street1.PatternValidator">${input} is not a valid Street1</entry>
+	<entry key="customer.street2.PatternValidator">${input} is not a valid Street2</entry>
+	<entry key="customer.expireDateString.DateValidator.minimum">Id Expiration Date should be future date.</entry>
+	<entry key="customer.birthDateString.DateValidator.maximum">Date of Birth should not be future date.</entry>
+	<entry key="attachment.size.error">Attachment size should be less than 100 Kb.</entry>
+	
+	<entry key="customer.taxCardNumber.PatternValidator">${input} is not a valid Tax Card Number</entry>
+	<entry key="customer.zipCode.PatternValidator">${input} is not a valid Zip Code</entry>
+	<entry key="customer.marketingSourceCode.PatternValidator">${input} is not a valid Marketing Source Code</entry>
+	<entry key="customer.referralNumber.PatternValidator">${input} is not a valid Referral Number</entry>
+	<entry key="customer.agentCode.PatternValidator">${input} is not a valid Agent Code</entry>
+
+	<!-- File upload Messages -->
+	<entry key="file.upload.error">An error occurred while uploading File</entry>
+	<entry key="file.upload.success">Attachment loaded successfully</entry>
+
+</properties>

@@ -1,0 +1,62 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="customerDataPanel" method="post"
+						autocomplete="off">
+						<fieldset>
+							<div wicket:id="errorMessages"></div>
+							<legend class="reg_tab6">
+								<wicket:message key="label.header" />
+							</legend>
+							<div class="spacer"></div>
+							<div class="reg_tab_01">
+								<div class="column">
+									<span wicket:id="emptyRecordsMessage"></span>
+								</div>
+								<div class="column" wicket:id="customerListContainer">
+									<div class="displayTag">
+										<span class="pagebanner" wicket:id="approvalHeader"></span> <span
+											class="pagelinks" wicket:id="approvalNavigator"></span>
+										<wicket:enclosure child="pageable">
+											<table id="attachmentsTable">
+												<thead>
+													<tr>
+														<th wicket:id="orderByCreatedBy"><wicket:message
+																key="label.createdBy" /></th>
+														<th wicket:id="orderByCustomer"><wicket:message
+																key="label.customer" /></th>
+														<th wicket:id="orderByStatus"><wicket:message
+																key="label.status" /></th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr wicket:id="pageable">
+														<td><div wicket:id="createdBy">[createdBy]</div></td>
+														<td><div wicket:id="customer">[customer]</div></td>
+														<td><div wicket:id="status">[status]</div></td>
+														<td><a href="#" wicket:id="detailsLink"><span
+																wicket:id="detailsLinkName">[details]</span> </a></td>
+													</tr>
+												</tbody>
+											</table>
+										</wicket:enclosure>
+									</div>
+								</div>
+								<div class="spacer"></div>
+							</div>
+						</fieldset>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

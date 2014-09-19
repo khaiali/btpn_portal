@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="label.upload.bulk">Upload Batch Transaction</entry>
+	<entry key="label.file.name"> File Name  </entry>
+	<entry key="label.file.type"> File Type  </entry>
+	<entry key="Upload"> Upload </entry>
+
+	<entry key="fileUpload.Required"> File Name is a required field </entry>
+	<entry key="type.Required"> File Type is a required field </entry>
+	
+	<entry key="fileUpload.extension.csv"> Uploaded file is of wrong extension.(*.csv allowed
+		only)
+	</entry>
+	<entry key="searchBean.type.Required"> Bulk File Type is a required field </entry>
+	
+	
+	<entry key="fileUpload.success">File is uploaded successfully.</entry>
+
+	<entry key="error.6000">File name doesnot exist.</entry>
+	<entry key="error.6006">File is already approved by Checker.</entry>
+	<entry key="error.6007">File is already validation success.</entry>
+	<entry key="error.6008">Processed success file never be rejected by a user.</entry>
+	<entry key="error.6009">File doesnot exist.</entry>
+	<entry key="error.6010">File already processed successfully.</entry>
+	<entry key="error.6011">File already processed but processing failed.</entry>
+	<entry key="error.6012">Validation failed for the uploaded file. Please see the error report for more details.</entry>
+	<entry key="error.6013">An error occured while saving file data.</entry>
+	<entry key="fileUpload.error">An error occured while uploading the file.</entry>
+	<entry key="fileUpload.validation.failed">Uploaded file is not valid at line ${lineNo}, ${msg}.</entry>
+	
+</properties>

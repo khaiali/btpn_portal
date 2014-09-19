@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="feeSet.conf.title">Fee Sets Configuration</entry>
+    <entry key="feeSets.add.button">Add a Fee Set</entry>
+    <entry key="feeSets.name">Fee Set</entry>    
+    <entry key="feeSetsList.noItemsMsg">No fee set entries found</entry>
+    <entry key="feeSetsList.addFeeSetHelp">Add a fee set using the 'Add a Fee Set' link above</entry>
+    <entry key="feeSets.load.error">An error occurred while loading fee sets</entry>
+    <entry key="feeSets.remove.error">An error occurred while deleting the fee set</entry>
+    <entry key="feeSet.remove.confirm">Do you really want to remove the selected fee set?</entry>
+    <entry key="create.feeset.error">An error occurred while adding fee set</entry>
+    <entry key="create.individual.feeset.error">An error occurred while adding new individual fee set</entry>
+    <entry key="feeset.remove.error">An error occurred while deleting fee set</entry>
+    <entry key="feeSet.name.Required">Fee Set is required</entry>
+    
+    
+    <entry key="scaleStepsList.noItemsMsg">No fee type entries found</entry>
+    <entry key="scaleStepsList.addScaleStepHelp">Add a fee type using the 'Add a Fee Type' link above</entry>
+       <!-- ############# Scale Steps Page ############# -->
+    <entry key="scaleSteps.feeType.name">Fee Type</entry>
+    <entry key="scaleSteps.title">Scale Steps</entry>
+    <entry key="scaleSteps.noItemsMsg">No scale steps entries found.</entry>
+    <entry key="scaleSteps.currency">Currency</entry>
+    <entry key="scaleSteps.percentage">Percentage</entry>
+    <entry key="scaleSteps.actions">Actions</entry>
+    <entry key="scaleStep.add.button">Add a Fee Type</entry>
+    <entry key="scaleStepsList.select">Select</entry>
+    <entry key="scaleStep.remove.confirm">Do you really want to remove the selected scale step?</entry>
+    <entry key="scaleSteps.load.error">An error occurred while loading scale steps</entry>
+    <entry key="scaleSteps.remove.error">An error occurred while deleting the scale step</entry>
+    <entry key="scaleSteps.add.error">An error occurred while adding the scale step</entry>
+    <entry key="scaleStepBean.thresholdAmount.Required">Threshold is required</entry>
+    <entry key="scaleStepBean.minAmount.Required">Minimum amount is required</entry>
+    <entry key="scaleStepBean.onTop.Required">On Top amount is required</entry>
+    <entry key="scaleStepBean.percentage.Required">Percentage is required</entry>
+    <entry key="scaleStepBean.feeTypeId.Required">Fee Type is required</entry>
+    <entry key="scaleStepBean.currency.Required">Currency is required</entry>
+    
+    <entry key="scaleStepBean.thresholdAmount.IConverter.Long">'${input}' is not a valid Threshold Amount</entry>
+    <entry key="scaleStepBean.minAmount.IConverter.Long">'${input}' is not a valid Minimum Amount</entry>
+    <entry key="scaleStepBean.maxAmount.IConverter.Long">'${input}' is not a valid Maximum Amount</entry>
+    <entry key="scaleStepBean.onTop.IConverter.Long">'${input}' is not a valid On Top Amount</entry>
+    <entry key="scaleStepBean.percentage.IConverter.Float">'${input}' is not a valid Percentage</entry>
+        
+</properties>

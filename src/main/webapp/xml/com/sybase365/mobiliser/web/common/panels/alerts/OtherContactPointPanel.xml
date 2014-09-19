@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+ 	
+ 	<entry key="otherContactPoint.ContactName">Nickname</entry>
+    <entry key="otherContactPoint.ContactType">Type</entry>
+    <entry key="otherContactPoint.AddressNumber">Number/Address</entry>
+  
+     <!-- ############# label for localize error message ############# -->
+  	<entry key="customerOtherIdentification.type">Type</entry>
+  	<entry key="customerOtherIdentification.nickname">Nickname</entry>
+  	<entry key="customerOtherIdentification.identification">Number/Address</entry>
+  	<entry key="phoneText">Number/Address</entry>
+    <entry key="faxText">Number/Address</entry>
+    
+ 	 <!-- ############# Localize error message for Fax Number############# -->
+  	<entry key="faxText.PatternValidator">'${input}' is not a valid Fax Number</entry>
+ 	 <!-- ############# Localize error message for Phone Number############# -->
+  	<entry key="phoneText.PatternValidator">'${input}' is not a valid Phone Number</entry>
+   
+    <entry key="addOtherContactPoint.success">Contact Point has been added successfully.</entry>
+    <entry key="editOtherContactPoint.success">Contact Point has been updated successfully.</entry>
+    <entry key="addContactPoint.alreadyExist">Contact point already exists</entry>
+ 
+</properties>

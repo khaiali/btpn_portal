@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+            xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+            jxb:extensionBindingPrefixes="xjc"
+            jxb:version="2.0">
+
+  <xs:annotation>
+    <xs:appinfo>
+      <jxb:schemaBindings>
+        <jxb:package
+          name="com.sybase365.mobiliser.web.util.notificationmgr.jaxb" />
+      </jxb:schemaBindings>
+      <jxb:globalBindings generateIsSetMethod="true">
+        <xjc:serializable/>
+      </jxb:globalBindings>
+    </xs:appinfo>
+  </xs:annotation>
+
+  <xs:element name="MessageTemplates">
+    <xs:complexType>
+  	  <xs:sequence>
+  		<xs:element name="template" type="NotificationMessage" minOccurs="0" maxOccurs="unbounded"></xs:element>
+  	  </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="strMedium">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="80" />
+      <xs:minLength value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="strLocale">
+  	<xs:restriction base="xs:string">
+  		<xs:maxLength value="10" />
+  		<xs:minLength value="0" />
+  	</xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="MessageContent">
+    <xs:annotation>
+      <xs:documentation>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="content" type="xs:string" minOccurs="1"
+        maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+              The actual text content of a message.
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contentType" type="strMedium"
+        minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+              For certain template types, we must know what content the string
+              actually represents so this value is mandatory. For standard
+              texts, this will always be the MIME type text/plain, but it would
+              be possible to configure a template to send some other textual
+              content as the primary text content of a message (HTML for an 
+              email for example).
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="charset" type="strMedium"
+        minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+              The actual string itself of course has no charset, but for
+              conversions needed for certain template types, we need to know
+              which "minimum" charset is needed to represent the string. This
+              would be used for example in a text email to inform the MUA which
+              encoding the text is in. This is only and indicator since
+              templates allow settings of parameters which may require a
+              "better" charset than is needed for the text itself. The framework
+              is clever enough to handle those cases correctly.
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="BaseMessage">
+    <xs:annotation>
+      <xs:documentation>
+      <![CDATA[
+        Base type for message templates. Templates are preconfigured
+        objects which mobiliser can use to send correspondence to customers. A
+        template has a numeric primary key, but it's natural key is the
+        name, type, and locale.
+      ]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="locale" type="strLocale" minOccurs="0"
+        maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+             The locale for this template. Multiple templates with the same name
+             can be configured, but with multiple locales. The client send along
+             the locale to use and the framework searches for the best match.
+             The locale consists of language, country and variant. 
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="name" type="strMedium"
+        minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+             Name given to this template. Clients will request correspondence
+             be set via a template name, for a given locale and template type. 
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="sender" type="strMedium"
+        minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+             This is the sender of the correspondence. For e-mail templates,
+             this is the "From:" header, for SMS, the originating MSISDN. 
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="subject" type="strMedium"
+        minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+             This is the subject of the correspondence. For e-mail templates,
+             this is the "Subject:" header, for SMS not used. 
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="templateType" type="strMedium"
+        minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+             The type of correspondence this template represents. This can be
+             any value for which handlers have been configured in the system.
+             In most cases it will be something like email or sms.
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="content" type="MessageContent"
+        minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+             The actual content of the message. For an SMS this is just the text
+             received. For an email, the body of the message. The content is
+             optional in this contract, since we may configure certain message
+             types which only have attachments for example. Service code may
+             enforce stricter checks for the actual template type.
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="alternativeContent" type="MessageContent"
+        minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+             For template types which support alternative contents, this is the
+             alternative text. This would be used for something like email and
+             multipart/alternative MIME messages.
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="NotificationMessage">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[
+         A message template along with the IDs of the attachments to the message.
+        ]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BaseMessage">
+        <xs:sequence>
+          <xs:element name="attachments" type="MessageAttachments"
+          	minOccurs="0" maxOccurs="unbounded">
+          	<xs:annotation>
+          		<xs:documentation>
+          			<![CDATA[
+                 List of the IDs of all message attachments. Not all message
+                 types support attachments, so may be empty.
+                ]]>
+          		</xs:documentation>
+          	</xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="MessageAttachments">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[
+          Certain message types allow adding attachments to a message. This
+          complex object defines these.
+        ]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="name" type="strMedium"
+        minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+              The "name" of the given attachment. It is up to the handler to
+              decide if the name is useful, but this value is mandatory at the
+              very least so make it a bit clearer what this attachment is. For
+              an attachment to an e-mail for example, this could be used as the
+              filename in the email.
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contentType" type="strMedium"
+        minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[
+              This should be a MIME type which represents what these configured
+              bytes are. It is up to the handler implementation to decide if
+              it needs this information, but in most cases it is necessary.
+              Therefore this value is mandatory. This should be somethind like
+              application/pdf, image/png, application/x-gunzip
+            ]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

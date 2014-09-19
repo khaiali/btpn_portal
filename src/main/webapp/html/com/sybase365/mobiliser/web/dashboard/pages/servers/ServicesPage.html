@@ -1,0 +1,50 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<wicket:head>
+    <style>
+        table.wicket-tree-content {
+            width: 100%;
+        }
+        td {
+            font-size: 82%;
+        }
+    </style>
+</wicket:head>
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="servers">
+				<span><wicket:message key="dashboard.services.title" /></span>
+			</h1>
+
+			<div wicket:id="errorMessages" style="color: #ff0000"></div>
+			
+			<div class="cmodule clear">
+
+				<div class="collapsable clear">
+				
+		    		<div wicket:id="requestsTreeDiv">
+						<div wicket:id="requestsTree" class="mobiliserTree"></div>
+					</div>
+		
+					<table id="treetable" class="listTable">
+						<tfoot>
+							<tr>
+								<td class="empty" colspan="2"></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

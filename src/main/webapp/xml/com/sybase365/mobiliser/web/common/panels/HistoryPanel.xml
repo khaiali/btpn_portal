@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <!-- ############# History Panel ############# -->
+  <entry key="showHistory.title">Customer History</entry>
+  <entry key="showHistory.creationDate">Creation Date</entry>
+  <entry key="showHistory.creatorId">Agent Id</entry>
+  <entry key="showHistory.fieldName">Field Name</entry>
+  <entry key="showHistory.oldValue">Old Value</entry>
+  <entry key="showHistory.newValue">New Value</entry>
+  <entry key="showHistory.noItemsMsg">No customer history changes found</entry>
+  <entry key="history.load.error">An error occurred in loading customer history. Try again later.</entry>
+   
+
+</properties>

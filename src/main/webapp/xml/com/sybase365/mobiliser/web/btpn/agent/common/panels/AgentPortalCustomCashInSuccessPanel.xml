@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	
+	<entry key="headLine.cashin">Cash-In</entry>
+	<entry key="label.cashIn.cashinAmount">Cash-in Amount</entry>
+	<entry key="label.cashIn.success.fee">Fee</entry>
+	
+	<entry key="cashIn.success.credit">has been successfully credited to mobile account number :</entry>
+	<entry key="cashIn.success.debit">has been successfully debited.</entry>
+	<entry key="cashin.success.balance">Account balance is now... </entry>
+	
+	<entry key="headLine.cashinSuccess">Cash In Success</entry>
+	<entry key="headLine.creditIntoMobileAccount">Credit Into Mobile Account</entry>
+	
+	<entry key="label.cashIn.success.mobileNumber">MSISDN</entry>
+	<entry key="label.cashIn.success.name">NAME</entry>
+	
+	<entry key="label.cashIn.success.accountNumber">Account Number</entry>
+	<entry key="label.cashIn.accountName">Name</entry>
+	<entry key="label.cashIn.accountType">Account Type</entry>
+	<entry key="label.cashIn.mobileNumber">Mobile Number</entry>
+	<entry key="label.cashIn.accountBanlace">Account Balance</entry>
+	<entry key="label.cashIn.cashinAmount">Cash-in Amount(IDR)</entry>
+	
+	<entry key="label.cashIn.error">Error accoured in cash in details page</entry>
+	<entry key="error.cashin.fail">An error occurred while doing cash in</entry>
+	
+</properties>

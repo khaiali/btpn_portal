@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <!-- ############# Airtime Top Up Page ############# -->
+    <entry key="airtimeTopup.title">Airtime Topup</entry>
+    <entry key="airtimeTopup.help">Please enter the amount you would like to topup</entry>
+    <entry key="airtimeTopup.amountString">Amount</entry>
+    <entry key="airtimeTopup.recipient">Recipient MSISDN</entry>
+    <entry key="airtimeTopup.operator">Operator</entry>
+    <entry key="airtimeTopup.payee.not.found.error">Payee with given MSISDN does not exist or Payee details could not be properly loaded</entry>
+    <entry key="airtimeTopup.create.invoice.error">An error occurred while creating invoice</entry>
+    
+    <entry key="airtimeTopupConfirm.title">Confirm Transaction</entry>
+    <entry key="airtimeTopupConfirm.help">Please review your topup request</entry>
+    <entry key="airtimeTopupConfirm.recipient">MSISDN</entry>
+    <entry key="airtimeTopupConfirm.creditAmount">Credit Amount</entry>
+    <entry key="airtimeTopupConfirm.feeAmount">Fee Amount</entry>
+    <entry key="airtimeTopupConfirm.debitAmount">Debit Amount</entry>
+
+    <entry key="airtimeTopupFinish.title">Transaction Complete</entry>
+    <entry key="airtimeTopupFinish.success">Airtime topup was successful</entry>
+    <entry key="airtimeTopupFinish.recipient">The mobile with the MSISDN</entry>
+    <entry key="airtimeTopupFinish.amount">Was topped up with the amount of</entry>
+    <entry key="airtimeTopupFinish.txnId">Transaction Id</entry>
+    <entry key="airtimeTopupFinish.authCode">Auth Code</entry>
+
+    <entry key="airtimeTopupFinish.message">Thanks for using our topup service</entry>
+    
+    <entry key="recipient.Required">Recipient MSISDN is required</entry>
+    <entry key="recipient.PatternValidator">'${input}' is not a valid Recipient MSISDN</entry>
+    <entry key="amountString.AmountValidator">'${input}' is not a valid Amount</entry>
+    <entry key="operator.Required">Operator is required</entry>
+    
+    
+  
+</properties>

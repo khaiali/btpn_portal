@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.billPayment">Bayar Tagihan</entry>
+	<entry key="label.subBiller">Provider</entry>
+	<entry key="label.additionalData">Data Tambahan</entry>
+	<entry key="billPayment.entermanually">Masukan</entry>
+	<entry key="billPayment.selectFavoriteList">Pilih dari Daftar Favorit</entry>
+	<entry key="billPayment.phoneNumber">Nomor Handphone</entry>
+	<entry key="billPayment.billNumber">Nomor Rekening</entry>
+	<entry key="billPayment.favoriteList">Daftar Favorit</entry>
+	<entry key="requiredFields">Wajib isi</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="billPaymentBean.subBillerType.null">Pilih Tagihan</entry>
+	<entry key="billPaymentBean.subBillerType.Required">Tipe Tagihan harus diisi.</entry>
+	<entry key="billPaymentBean.favoriteNumber.Required">Kolom Nomor Handphone harus diisi.</entry>
+	<entry key="billPaymentBean.billNumber.Required">Kolom Nomor Rekening harus diisi.</entry>
+	<entry key="billPaymentBean.phonenumber.Required">Kolom Nomor Handphone harus diisi.</entry>
+	<entry key="billPaymentBean.phonenumber.PatternValidator">'${input}' bukan Nomor Handphone yang valid.</entry>
+
+</properties>

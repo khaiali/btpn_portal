@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.useCase">Use Case</entry>
+	<entry key="label.airtimeFee"> Edit AirtimeTopup Fee </entry>
+	<entry key="label.operator"> Operator </entry>
+	<entry key="label.denomination"> Biller Code </entry>
+	<entry key="label.productId"> Product ID </entry>
+	<entry key="label.productDesc"> Product Desc </entry>
+	<entry key="label.transactionAmount"> Transaction Amount </entry>
+	<entry key="label.feeName"> Fee Name </entry>
+	<entry key="label.glCode"> GL Code </entry>
+	<entry key="label.amount"> Amount </entry>
+	<entry key="label.fixedFee"> Fixed Fee</entry>
+	<entry key="label.percentageFee"> Percentage Fee</entry>
+	<entry key="label.details">Details</entry>
+	<entry key="label.action">Action</entry>
+	<entry key="fees.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="no.items">Nothing found to display.</entry>
+
+	<!-- Bill Payment fee details -->
+	<entry key="error.manage.fees">An error occured while fetching the airtime topup payment fee
+		details.</entry>
+</properties>

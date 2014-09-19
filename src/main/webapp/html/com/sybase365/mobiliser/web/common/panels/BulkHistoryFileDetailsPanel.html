@@ -1,0 +1,53 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+</wicket:head>
+</head>
+<body>
+
+	<wicket:panel>
+
+		<form wicket:id="historyDetailsForm">
+
+			<div wicket:id="errorMessages"></div>
+			<h1 class="wallet">
+				<span><wicket:message key="history.file.approve" /></span>
+			</h1>
+
+			<div class="module clear">
+
+				<div class="column">
+
+					<div class="input">
+						<label><wicket:message key="bulkFileHistoryListItem.bulkFileType" /> </label> 
+						<input type="text" wicket:id="fileType" />
+					</div>
+
+					<div class="input">
+						<label><wicket:message key="bulkFileHistoryListItem.bulkFileName" /> </label> 
+						<input type="text" wicket:id="bulkFileHistoryListItem.bulkFileName" />
+					</div>
+
+					<div class="input">
+						<label><wicket:message key="bulkFileHistoryListItem.date" /> </label> 
+						<input type="text" wicket:id="date" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="bulkFileHistoryListItem.status" /> </label> 
+						<input type="text" wicket:id="status" />
+					</div>
+				</div>
+			
+				<div class="column">
+					<div class="formAction">						
+						<input type="submit" class="submitForm" wicket:id="historyFileDownolad" wicket:message="value:Download" />						
+					</div>
+				</div>
+			</div>
+		</form>
+	</wicket:panel>
+
+</body>
+</html>

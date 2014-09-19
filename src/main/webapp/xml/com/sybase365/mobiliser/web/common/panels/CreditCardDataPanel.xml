@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <!-- ############# Manage Accounts Page - Add Credit Card ############# -->
+    <entry key="walletEntry.alias">Nickname</entry>
+    <entry key="walletEntry.alias.Required">Nickname is required</entry>
+    <entry key="walletEntry.creditCard.cardType">Card Type</entry>
+    <entry key="walletEntry.creditCard.cardType.null">Select</entry>
+    <entry key="walletEntry.creditCard.cardType.Required">Card Type is required</entry>
+    <entry key="walletEntry.creditCard.monthExpiry">Expiry Date</entry>
+    <entry key="walletEntry.creditCard.monthExpiry.null">MM</entry>
+    <entry key="walletEntry.creditCard.monthExpiry.Required">Expiry Month is required</entry>
+    <entry key="walletEntry.creditCard.yearExpiry">Expiry Year</entry>
+    <entry key="walletEntry.creditCard.yearExpiry.null">YYYY</entry>
+    <entry key="walletEntry.creditCard.yearExpiry.Required">Expiry Year is required</entry>
+    <entry key="walletEntry.creditCard.cardNumber">Card Number</entry>
+    <entry key="walletEntry.creditCard.cardNumber.Required">Card Number is required</entry>
+    <entry key="walletEntry.creditCard.securityNumber">Security Code (CCV)</entry>
+    <entry key="walletEntry.creditCard.securityNumber.Required">Security Code (CCV) is required</entry>
+    <entry key="walletEntry.creditCard.cardHolderName">Cardholder Name</entry>
+    <entry key="walletEntry.creditCard.cardHolderName.Required">Cardholder Name is required</entry>
+    <entry key="create.credit.card.error">An error occurred while creating credit card</entry>
+    <entry key="update.credit.card.error">An error occurred while updating credit card</entry>
+    <entry key="credit.card.error">An unexpected error occurred</entry>
+    <entry key="creditcard.edit.error.past">is not a valid Expiry Date</entry>
+    <entry key="creditcard.number.invalid.error"> is not a valid Card Number</entry>
+    <entry key="walletEntry.creditCard.cardHolderName.PatternValidator">'${input}' is not a valid Cardholder Name</entry>
+    <entry key="walletEntry.alias.PatternValidator">'${input}' is not a valid Nickname</entry>
+    
+    
+</properties>

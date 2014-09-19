@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="current.agent.label">Current Agent</entry>
+	<entry key="currentt.agent.id.label">Agent ID</entry>
+	<entry key="currentt.agent.balance.label">Account Balance</entry>
+	<entry key="currentt.agent.label">Current Agent</entry>
+
+	<!-- MENU ITEMS -->
+	<entry key="left.menu.home">Home</entry>
+	<entry key="left.menu.agent.registration">Agent Registration</entry>
+	<entry key="left.menu.sub.agent.registration">SubAgent Registration</entry>
+	<entry key="left.menu.agent.approval">Agent Approval</entry>
+	<entry key="left.menu.agent.manageprofile">Manage Profile</entry>
+	<entry key="left.menu.agent.cashin">Cash-in</entry>
+	<entry key="left.menu.agent.cashout">Cash-out</entry>
+	<entry key="left.menu.agent.txnhistory">View Transaction History</entry>
+	<entry key="left.menu.changepin">Change Pin</entry>
+	<entry key="left.menu.agent.viewprofile">View Agent Profile</entry>
+	<entry key="left.menu.agent.changeLanguage">Change Language</entry>
+	<entry key="left.menu.agent.viewHelp">View Help</entry>
+
+</properties>

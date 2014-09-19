@@ -1,0 +1,54 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="glForm">
+						<div wicket:id="glContainer">
+							<fieldset>
+								<legend class="reg_tab">
+									<wicket:message key="label.gl.management" />
+								</legend>
+								<div wicket:id="errorMessages"></div>
+								<div class="displayTag">
+									<label wicket:id="no.items"></label>
+									<span class="pagebanner" wicket:id="glHeader"></span> <span
+										class="pagelinks" wicket:id="glNavigator"></span>
+									<wicket:enclosure child="pageable">
+										<table id="glTable">
+											<thead>
+												<tr>
+													<th wicket:id="orderByGLCode"><wicket:message key="label.glCode" /></th>
+													<th wicket:id="orderByGLDesc"><wicket:message key="label.glDesc" /></th>
+													<th><wicket:message key="label.action" /></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr wicket:id="pageable">
+													<td wicket:id="glCode"></td>
+													<td wicket:id="glDescription"></td>
+													<td><a href="#" wicket:id="detailsLink"><wicket:message
+																key="label.details" /></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</wicket:enclosure>
+								</div>
+								<div class="spacer"></div>
+								<input style="left: 300px" name="showAddLimit"
+									wicket:id="btnAdd" value="Add" class="submit acc_chk"
+									type="submit" />
+							</fieldset>
+							<div class="spacer"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

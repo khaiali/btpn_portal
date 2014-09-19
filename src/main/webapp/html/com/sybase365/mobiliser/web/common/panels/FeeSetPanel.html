@@ -1,0 +1,210 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="feeSetConfigurationForm">
+
+		<div wicket:id="errorMessages"></div>
+
+		<div class="module clear" wicket:id="feeSetTableContainer">
+
+			<h2 class="section wallet">
+				<wicket:message key="feeSet.conf.title" />
+				<input class="additionalLink last" type="submit" wicket:message="value:feeSets.add.button" wicket:id="addFeeSet" name="addFeeSet">
+			</h2>
+
+			<div class="cmodule clear">
+
+				<!-- list paging -->
+				<ul class="tablePaging">
+					<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+					<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+					<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+				</ul>
+				<!-- end list paging -->
+
+				<div class="collapsable clear">
+
+					<table id="feeSetsListTable" class="listTable">
+					
+						<wicket:enclosure child="pageable">
+						
+							<thead>
+								<tr>
+									<th class="feeSetName" wicket:id="orderByFeeSet"><wicket:message key="feeSets.name" /></th>
+									<th class="actions last"><wicket:message key="actions" /></th>
+								</tr>
+							</thead>
+							
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="2"></td>
+								</tr>
+							</tfoot>
+							
+							<tbody>
+								<tr wicket:id="pageable">
+									<td class="feeSetName"><span wicket:id="name">[Name]</span></td>
+									<td>
+										<ul>
+											<li><a href="#" wicket:id="editAction"><wicket:message key="edit">[Edit]</wicket:message></a></li>
+											<li><a href="#" wicket:id="removeAction"><wicket:message key="remove">[Remove]</wicket:message></a></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+							
+						</wicket:enclosure>
+						
+					</table>
+
+					<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+				</div>
+
+			</div>
+			
+			<div id="addFeeSetContainer" wicket:id="addFeeSetContainer">
+
+				<div class="column">
+					<div class="input">
+						<label><wicket:message key="feeSets.name" /><span class="required">*</span></label> 
+						<input type="text" wicket:id="feeSet.name" />
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="formAction">
+						<input type="submit" class="submitForm" wicket:id="save" wicket:message="value:Save" /> 
+						<input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" />
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+
+		<div class="module clear" wicket:id="scaleStepTableContainer">
+
+			<h2 class="section wallet">
+				<wicket:message key="feeSet.conf.title" />
+				<input class="additionalLink last" type="submit" wicket:message="value:scaleStep.add.button" wicket:id="addFeeType" name="addFeeType">
+			</h2>
+
+			<div class="cmodule clear">
+
+				<!-- list paging -->
+				<ul class="tablePaging">
+					<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+					<li class="recordsNumber"><span wicket:id="sStepStartIndex" /> - <span wicket:id="sStepEndIndex" /> (<span wicket:id="sStepTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+					<li class="pageSelectorsContainer" wicket:id="sStepNavigator"></li>
+				</ul>
+				<!-- end list paging -->
+
+				<div class="collapsable clear">
+
+					<table id="friendsListTable" class="listTable">
+					
+						<wicket:enclosure child="sStepPageable">
+						
+							<thead>
+								<tr>
+									<th class="feeTypeName"><wicket:message key="scaleSteps.feeType.name" /></th>
+									<th class="currency"><wicket:message key="scaleSteps.currency" /></th>
+									<th class="threshold"><wicket:message key="scaleSteps.thresholdAmt" /></th>
+									<th class="minAmount"><wicket:message key="scaleSteps.min" /></th>
+									<th class="maxAmount"><wicket:message key="scaleSteps.max" /></th>
+									<th class="onTop"><wicket:message key="scaleSteps.onTop" /></th>
+									<th class="percentage"><wicket:message key="scaleSteps.table.percentage" /></th>
+									<th class="actions last"><wicket:message key="scaleSteps.actions" /></th>
+								</tr>
+							</thead>
+							
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="8"></td>
+								</tr>
+							</tfoot>
+							
+							<tbody>
+								<tr wicket:id="sStepPageable">
+									<td class="feeTypeName"><div wicket:id="sStepFeeType">[Fee Type]</div></td>
+									<td class="currency"><div wicket:id="sStepCurrency">[Currency]</div></td>
+									<td class="threshold"><div wicket:id="sStepThresholdAmt">[Threshold]</div></td>
+									<td class="minAmount"><div wicket:id="sStepMinAmt">[Min]</div></td>
+									<td class="maxAmount"><div wicket:id="sStepMaxAmt">[Max]</div></td>
+									<td class="onTop"><div wicket:id="sStepOnTopAmt">[On Top]</div></td>
+									<td class="percentage"><div wicket:id="sStepPercentage">[percentage]</div></td>
+									<td>
+										<ul>
+											<li><a href="#" wicket:id="sStepAddAction"><wicket:message key="add">[Add]</wicket:message></a></li>
+											<li><a href="#" wicket:id="sStepEditAction"><wicket:message key="edit">[Edit]</wicket:message></a></li>
+											<li><a href="#" wicket:id="sStepRemoveAction"><wicket:message key="remove">[Remove]</wicket:message></a></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+							
+						</wicket:enclosure>
+						
+					</table>
+
+					<div id="noItemsMsg" class="centerMsg" wicket:id="sStepNoItemsMsg">[No Items Available]</div>
+
+				</div>
+
+			</div>
+
+			<div class="column" wicket:id="addEditScaleStepContainer">
+
+				<div class="input">
+					<label><wicket:message key="scaleSteps.feeType.name" /><span class="required">*</span></label> 
+					<select wicket:id="scaleStepBean.feeTypeId" id=scaleStepBean.feeTypeId>
+						<option>dummy</option>
+					</select>
+				</div>
+				<div class="input">
+					<label><wicket:message key="scaleSteps.currency" /><span class="required">*</span></label> 
+					<select wicket:id="scaleStepBean.currency" id=scaleStepBean.currency>
+						<option>dummy</option>
+					</select>
+				</div>
+				<div class="input">
+					<label><wicket:message key="scaleSteps.thresholdAmt" /><span class="required">*</span></label> 
+					<input type="text" wicket:id="scaleStepBean.thresholdAmount" />
+				</div>
+				<div class="input">
+					<label><wicket:message key="scaleSteps.min" /><span class="required">*</span></label> 
+					<input type="text" wicket:id="scaleStepBean.minAmount" />
+				</div>
+				<div class="input">
+					<label><wicket:message key="scaleSteps.max" /></label> 
+					<input type="text" wicket:id="scaleStepBean.maxAmount" />
+				</div>
+				<div class="input">
+					<label><wicket:message key="scaleSteps.onTop" /><span class="required">*</span></label> 
+					<input type="text" wicket:id="scaleStepBean.onTop" />
+				</div>
+				<div class="input">
+					<label><wicket:message key="scaleSteps.percentage" /><span class="required">*</span></label> 
+					<input type="text" wicket:id="scaleStepBean.percentage" />
+				</div>
+
+				<div class="column">
+					<div class="formAction">
+						<input type="submit" class="submitForm" wicket:id="save" wicket:message="value:Save" /> 
+						<input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" />
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+
+	</form>
+
+</wicket:panel>
+
+</body>
+</html>

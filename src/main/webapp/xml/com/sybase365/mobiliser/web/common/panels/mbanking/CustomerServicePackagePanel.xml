@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <!-- #############  Customer Service Package  Panel ############# -->
+  <entry key="customerCare.title">Customer Care</entry>
+  <entry key="servicePackages.title">Service Package</entry>
+  <entry key="servicePackages.permissions">Permissions</entry>
+  <entry key="servicePackages.servicePackage">Service Package</entry>
+  <entry key="servicePackages.supportedChannels">Supported Channels</entry>
+  <entry key="servicePackages.supportedOperations">Supported Operations</entry>
+  <entry key="servicePackages.supportedAlerts">Supported Alerts</entry>
+  
+  <entry key="servicePackages.update.message">Service Package has been updated successfully</entry>
+  
+  <entry key="servicePackages.AccountBalanceSummaryAlert">1</entry>
+  <entry key="servicePackages.AccountBalanceThresholdAlert">2</entry>
+  <entry key="servicePackages.CustomerLockoutAlert">4</entry>
+  <entry key="servicePackages.InvalidAccountAccessAlert">6</entry>
+  <entry key="servicePackages.PasswordChangedAlert">8</entry>
+  <entry key="servicePackages.TransactionSummaryAlert">9</entry>
+  <entry key="servicePackages.BankInquiryResponseAlert">3</entry>
+  <entry key="servicePackages.InsufficientFundsAlert">5</entry>
+  <entry key="servicePackages.PanicPayAlert">7</entry>
+  <entry key="servicePackages.UnreadBankMessageAlert">10</entry>
+
+   <entry key="servicePackage.AccountBalanceSummaryAlert">Account Balance Summary</entry>
+   <entry key="servicePackage.AccountBalanceThresholdAlert">Account Balance Threshold</entry>
+   <entry key="servicePackage.BankInquiryResponseAlert">Bank Inquiry Response</entry>
+   <entry key="servicePackage.AccountBalanceSummaryAlert">Account Balance Summary</entry>
+   <entry key="servicePackage.InsufficientFundsAlert">Insufficient Funds (NSF)</entry>
+   <entry key="servicePackage.InvalidAccountAccessAlert">Invalid Account Access</entry>
+   <entry key="servicePackage.PanicPayAlert">Panic Pay</entry>
+   <entry key="servicePackage.PasswordChangedAlert">Password Change</entry>
+   <entry key="servicePackage.TransactionSummaryAlert">Transaction Summary</entry>
+   <entry key="servicePackage.UnreadBankMessageAlert">Unread Bank Message</entry>
+   <entry key="servicePackage.CustomerLockoutAlert">Customer Lockout</entry>
+  
+  
+    
+
+ </properties>

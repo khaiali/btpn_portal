@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.fee.management"> Fee Management</entry>
+	<entry key="label.usecase"> Use Case </entry>
+	<entry key="label.apply.to.payee"> Apply to Payee</entry>
+	<entry key="label.feeType"> Fee Type </entry>
+	<entry key="label.productId"> Product ID </entry>
+	<entry key="label.fixed.fee"> Fixed Fee</entry>
+	<entry key="label.productId"> Product ID </entry>
+	<entry key="label.slabFee">Slab Fee</entry>
+	<entry key="label.feeName"> Fee Name </entry>
+	<entry key="label.glCode"> GL Code </entry>
+	<entry key="label.Fixed">Fixed</entry>
+	<entry key="label.Percentage">Percentage</entry>
+	<entry key="label.Amount"> Amount </entry>
+	<entry key="label.TransactionAmount"> Transaction Amount </entry>
+	<entry key="label.range"> Range </entry>
+	<entry key="label.minValue"> Min Value</entry>
+	<entry key="label.maxValue"> Max Value </entry>
+	<entry key="label.minRange"> Min Range</entry>
+	<entry key="label.maxRange"> Max Range </entry>
+	<entry key="label.slabfee">Slab Fee</entry>
+	<entry key="label.sharingFee">Sharing Fee</entry>
+	<entry key="label.fixedFee">Fixed Fee</entry>
+	<entry key="label.percentageFee">Percentage Fee</entry>
+	<entry key="fees.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="Add">Add</entry>
+	<entry key="Update">Update</entry>
+
+	<entry key="no.items">Nothing found to display.</entry>
+
+	<!-- Required Field validations -->
+	<entry key="feeDetailsBean.feeName.Required">Fee Name is required.</entry>
+	<entry key="feeDetailsBean.glCode.Required">GL Code is required.</entry>
+	<entry key="feeDetailsBean.amount.Required">Fee Amount is required.</entry>
+	<entry key="feeBean.transactionAmount.Required">Transaction Amount is required.</entry>
+	<entry key="feeDetailsBean.amount.PatternValidator">${input} Fee Amount is invalid.</entry>
+
+	<entry key="feeBean.transactionAmount.AmountValidator">${input} Transaction Amount is invalid.</entry>
+	<entry key="feeBean.transactionAmount.IConverter.Long">${input} Transaction Amount is invalid.</entry>
+
+
+	<!-- Required Field Validations -->
+	<entry key="feeDetailsBean.minValue.Required">Min value required.</entry>
+	<entry key="feeDetailsBean.maxValue.Required">Max value required.</entry>
+	<entry key="feeDetailsBean.minValue.AmountValidator">${input} Min value is invalid.</entry>
+	<entry key="feeDetailsBean.maxValue.AmountValidator">${input} Max value is invalid.</entry>
+	<entry key="feeDetailsBean.minValue.IConverter.Long">${input} Min value is invalid.</entry>
+	<entry key="feeDetailsBean.maxValue.IConverter.Long">${input} Max value is invalid.</entry>
+
+	<entry key="feeDetailsBean.amount.FixedInterest.PatternValidator">${input} Fee Amount is invalid.</entry>
+	<entry key="feeDetailsBean.amount.PercentInterest.PatternValidator">${input} Fee Amount is invalid.</entry>
+
+	<!-- Other validations -->
+	<entry key="feeDetailsBean.amount.PercentInterest.InterestLimit">${input} Fee Amount cannot be more than 100 %.</entry>
+
+	<entry key="slabfee.required">At lease one slab fee component is required.</entry>
+	<entry key="error.add">An error occured while adding the fee. Please try
+		again.</entry>
+	<entry key="error.update.fees">An error occured while updating the fees.</entry>
+	<entry key="update.success">Fee update request submitted successfully for
+		approval.</entry>
+	<entry key="error.invalid.range">Invalid Range entered. Range Already exists.</entry>
+	<entry key="error.maxvalue">Max Value should be greater than Min Value.</entry>
+
+</properties>

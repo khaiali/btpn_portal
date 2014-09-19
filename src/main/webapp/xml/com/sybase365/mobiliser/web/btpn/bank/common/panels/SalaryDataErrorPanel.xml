@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.errorReports"> Error Reports </entry>
+	<entry key="label.fileName"> File Name </entry>
+	<entry key="no.items"> Nothing found to display. </entry>
+	<entry key="approval.totalitems.header">%s items found, displaying %s to %s.</entry>
+	
+	<entry key="label.lineNo"> Line No </entry>
+	<entry key="label.errorRecord"> Error Record </entry>
+	<entry key="label.errorRecordDesc"> Error Description </entry>
+	<entry key="OK"> OK </entry>
+</properties>

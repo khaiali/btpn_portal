@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="couponTypeBatch.id">Batch Id</entry>
+  <entry key="couponTypeBatch.created">Created</entry>
+  <entry key="couponTypeBatch.status">Status</entry>
+  <entry key="couponTypeBatch.total">Total</entry>
+  <entry key="couponTypeBatch.left">Left</entry>
+  <entry key="couponTypeBatch.action">Action</entry>
+  <entry key="couponTypeBatch.validFrom">Valid From</entry>
+  <entry key="couponTypeBatch.validTo">Valid To</entry>
+  <entry key="update.coupon.batch.success">Batch updated successfully</entry>
+  <entry key="update.coupon.batch.error">An error occurred while updating batch</entry>
+  <entry key="issueFromField.Required">Valid From is required</entry>
+  <entry key="issueToField.Required">Valid To required</entry>
+  <entry key="action.Required">Action is required</entry>
+  <entry key="action.option.enable">Enable</entry>
+  <entry key="action.option.disable">Disable</entry>
+  <entry key="activate">Activate</entry>
+  <entry key="batch.activate.success">Coupon batch activated successfully</entry>
+  <entry key="batch.activate.error">An error occurred while activating coupon batch</entry>
+  
+</properties>

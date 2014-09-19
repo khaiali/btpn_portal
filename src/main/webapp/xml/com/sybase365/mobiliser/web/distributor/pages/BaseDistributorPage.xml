@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <entry key="distributor.page.title">Partner Portal</entry>
+    <entry key="page.title">Partner Portal</entry>
+
+    <!-- ############# Left Menu Context ############# -->
+
+    <entry key="selected.context.agent">Agent</entry>
+    <entry key="selected.context.customer">Customer</entry>
+    <entry key="selected.context.name.key">Name: </entry>
+    <entry key="selected.context.id.key">Id: </entry>
+
+    <!-- ############# Left Menu Entries - Search Customer ############# -->
+
+    <entry key="menu.search.customer">Search Customer</entry>
+    <entry key="menu.register.customer">Customer Registration</entry>
+    <entry key="menu.airtime.topup">Air Time Topup</entry>
+
+    <!-- ############# Search Customer Page ############# -->
+    <entry key="searchCustomer.title">Enter Customer Details</entry>
+    <entry key="searchCustomer.help">Please enter the MSISDN of the customer </entry>
+    <entry key="msisdn">MSISDN</entry>
+
+    <entry key="customer.not.found">No customer found with given MSISDN</entry>
+    <entry key="searchCustomer.error">An error occurred while search customer. Try again later.</entry>
+
+    <!-- ############# Customer Details Page ############# -->
+    <entry key="customerDetails.title">Customer Details</entry>
+    <entry key="customerDetails.headline.personal">Personal Data</entry>
+    <entry key="customerDetails.headline.address">Address Data</entry>
+    <entry key="customerDetails.headline.attachments">Attachments</entry>
+    <entry key="customerDetails.personal.firstName">First Name</entry>
+    <entry key="customerDetails.personal.lastName">Last Name</entry>
+    <entry key="customerDetails.personal.msisdn">MSISDN</entry>
+    <entry key="customerDetails.personal.identityType">Identity Type</entry>
+    <entry key="customerDetails.personal.timeZone">Time Zone</entry>
+    <entry key="customerDetails.personal.identityValue">Value</entry>
+    <entry key="customerDetails.personal.country">Country</entry>
+    <entry key="customerDetails.address.street1">Street</entry>
+    <entry key="customerDetails.address.street2">Street 2</entry>
+    <entry key="customerDetails.address.houseNo">House Number</entry>
+    <entry key="customerDetails.address.city">City</entry>
+    <entry key="customerDetails.address.state">State</entry>
+    <entry key="customerDetails.address.zip">Zip</entry>
+    <entry key="customerDetails.address.country">Country</entry>
+    <entry key="customerDetails.attachments.upload">Upload Attachment</entry>
+    <entry key="customerDetails.button.addAttachment">Add Attachment</entry>
+
+    <!-- validation messages -->
+
+    <entry key="customer.msisdn.Required">MSISDN is required</entry>
+    <entry key="customer.msisdn.StringValidator.range">The entered MSISDN must contain between 8 and 20 characters</entry>
+    <entry key="customer.msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+
+    <entry key="msisdn.Required">MSISDN is required</entry>
+    <entry key="msisdn.StringValidator.range">The entered MSISDN must contain between 8 and 20 characters</entry>
+    <entry key="msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+
+    <entry key="amountString.Required">Amount is required</entry>
+    <entry key="amountString.PatternValidator">'${input}' is not a valid Amount</entry>
+    <entry key="amountString.AmountValidator">'${input}' is not a valid Amount</entry>
+
+    <entry key="customer.address.firstName.Required">First Name is required</entry>
+    <entry key="customer.address.firstName.PatternValidator">'${input}' is not a valid First Name</entry>
+    <entry key="customer.address.lastName.Required">Last Name is required</entry>
+    <entry key="customer.address.lastName.PatternValidator">'${input}' is not a valid Last Name</entry>
+    <entry key="customer.userName.PatternValidator">'${input}' is not a valid Username</entry>
+    <entry key="customer.kvCountry.Required">Country is required</entry>
+    <entry key="customer.kvIdentityType.Required">ID Type is required</entry>
+    <entry key="customer.identityValue.Required">ID Number is required</entry>
+    <entry key="customer.address.street1.Required">Street is required</entry>
+    <entry key="customer.address.street1.PatternValidator">'${input}' is not a valid Street</entry>
+    <entry key="customer.address.houseNo.Required">House No is required</entry>
+    <entry key="customer.address.city.Required">City is required</entry>
+    <entry key="customer.address.city.PatternValidator">'${input}' is not a valid City</entry>
+    <entry key="customer.address.state.Required">State is required</entry>
+    <entry key="customer.address.zip.Required">Zip is required</entry>
+    <entry key="customer.addresskvCountry.Required">Country is required</entry>
+    <entry key="required.attachment">An attachment is required</entry>
+    <entry key="customer.address.email.Required">Email is required</entry>
+    <entry key="customer.address.email.PatternValidator">'${input}' is not a valid Email</entry>
+    <entry key="customer.customerTypeId.Required">Role ID is required</entry>
+    <entry key="customer.userName.Required">Username is required</entry>
+    <entry key="customer.password.Required">Password is required</entry>
+    <entry key="confirmPassword.Required">Re-enter Password is required</entry>
+    <entry key="customer.issuer.Required">Issuer is required</entry>
+	<entry key="customer.expirationDate.Required">Expiry Date is required</entry>
+    <entry key="commissionConfiguration.percentage.Required">Commission Share is required</entry>
+    <entry key="commissionConfiguration.percentageSelf.Required">Commission Share own Transaction is required</entry>
+    <entry key="commissionConfiguration.piId.Required">Settlement Instrument is required</entry>
+</properties>

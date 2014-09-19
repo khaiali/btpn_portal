@@ -1,0 +1,74 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="approveForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<wicket:message key="header.feeManagement" />
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column">
+								<div class="displayTag">
+									<table id="list">
+										<thead>
+											<tr>
+												<th><wicket:message key="label.fieldname" /></th>
+												<th><wicket:message key="label.currentValue" /></th>
+												<th><wicket:message key="label.newValue" /></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="odd">
+												<td><wicket:message key="label.description" /></td>
+												<td wicket:id="generalLedgerBean.glDescription"></td>
+												<td wicket:id="generalLedgerBean.newGlDescription"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.glCode" /></td>
+												<td wicket:id="generalLedgerBean.glCode"></td>
+												<td wicket:id="generalLedgerBean.newGlCode"></td>
+											</tr>
+											<tr class="odd">
+												<td><wicket:message key="label.isLeaf" /></td>
+												<td wicket:id="generalLedgerBean.isLeaf"></td>
+												<td wicket:id="generalLedgerBean.newIsLeaf"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.isRoot" /></td>
+												<td wicket:id="generalLedgerBean.isRoot"></td>
+												<td wicket:id="generalLedgerBean.newIsRoot"></td>
+											</tr>
+											<tr class="odd">
+												<td><wicket:message key="label.parentGLCode" /></td>
+												<td wicket:id="generalLedgerBean.parentGlCode.id"></td>
+												<td wicket:id="generalLedgerBean.newParentGlCode.id"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.type" /></td>
+												<td wicket:id="generalLedgerBean.type.value"></td>
+												<td wicket:id="generalLedgerBean.newType.value"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<input name="approveProduct" wicket:id="btnApprove"	wicket:message="value:Approve" tabindex="1"	class="submit acc_chk" type="submit" /> 
+								<input style="left: 250px" wicket:id="btnReject" name="rejectProduct" wicket:message="value:Reject" tabindex="1" class="submit acc_chk" type="submit" /> 
+								<input style="left: 270px" wicket:id="btnCancel" name="cancelApproveReject" wicket:message="value:Cancel" tabindex="1" class="submit acc_chk" type="submit" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

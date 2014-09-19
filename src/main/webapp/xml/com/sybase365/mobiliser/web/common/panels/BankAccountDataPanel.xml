@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="walletEntry.alias">Nickname</entry>
+    <entry key="walletEntry.alias.Required">Nickname is required</entry>
+    <entry key="walletEntry.bankAccount.accountNumber">Account Number</entry>
+    <entry key="walletEntry.bankAccount.accountNumber.Required">Account Number is required</entry>
+    <entry key="walletEntry.bankAccount.branchCode">Branch Code</entry>
+    <entry key="walletEntry.bankAccount.bankCode">Bank Code</entry>
+    <entry key="walletEntry.bankAccount.status">Status</entry>
+    <entry key="walletEntry.bankAccount.bankCode.Required">Bank Code is required</entry>
+    <entry key="walletEntry.bankAccount.accountHolderName">Account Holder Name</entry>
+    <entry key="walletEntry.bankAccount.accountHolderName.Required">Account Holder Name is required</entry>
+    <entry key="create.bank.account.error">An error occurred while creating Bank Account</entry>
+    <entry key="update.bank.account.error">An error occurred while updating Bank Account</entry>
+    <entry key="bank.account.error">An unexpected error occurred</entry>
+    <entry key="walletEntry.alias.PatternValidator">'${input}' is not a valid Nickname</entry>
+    <entry key="walletEntry.bankAccount.accountNumber.PatternValidator">'${input}' is not a valid Account Number</entry>
+    <entry key="walletEntry.bankAccount.bankCode.PatternValidator">'${input}' is not a valid Bank Code</entry>
+    <entry key="walletEntry.bankAccount.branchCode.PatternValidator">'${input}' is not a valid Branch Code</entry>
+    <entry key="walletEntry.bankAccount.accountHolderName.PatternValidator">'${input}' is not a valid Account Holder Name</entry>
+
+</properties> 

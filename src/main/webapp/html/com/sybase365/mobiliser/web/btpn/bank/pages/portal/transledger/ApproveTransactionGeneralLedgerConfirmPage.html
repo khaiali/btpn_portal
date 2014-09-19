@@ -1,0 +1,54 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="approveForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<wicket:message key="header.feeManagement" />
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column">
+								<div class="displayTag">
+									<table id="list">
+										<thead>
+											<tr>
+												<th><wicket:message key="label.fieldname" /></th>
+												<th><wicket:message key="label.currentValue" /></th>
+												<th><wicket:message key="label.newValue" /></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="odd">
+												<td><wicket:message key="label.glCode" /></td>
+												<td wicket:id="ledgerBean.currentGL.id"></td>
+												<td wicket:id="ledgerBean.newGL.id"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.useCase" /></td>
+												<td wicket:id="ledgerBean.useCaseName"></td>
+												<td wicket:id="ledgerBean.useCaseName.new"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<input name="approveProduct" wicket:id="btnApprove"	wicket:message="value:Approve" tabindex="1"	class="submit acc_chk" type="submit" /> 
+								<input style="left: 250px" wicket:id="btnReject" name="rejectProduct" wicket:message="value:Reject" tabindex="1" class="submit acc_chk" type="submit" /> 
+								<input style="left: 270px" wicket:id="btnCancel" name="cancelApproveReject" wicket:message="value:Cancel" tabindex="1" class="submit acc_chk" type="submit" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

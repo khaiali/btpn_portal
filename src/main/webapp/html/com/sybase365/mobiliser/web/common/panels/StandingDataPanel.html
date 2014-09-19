@@ -1,0 +1,271 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+		
+			<h1 class="friends">
+				<span><wicket:message key="customerCare.title" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="standingData.title" /></span>
+			</h1>
+
+			<form wicket:id="standingDataForm">
+			
+				<div wicket:id="errorMessages"></div>
+				
+				<div class="column">
+				
+					<h2 class="section friends">
+						<wicket:message key="generalInfo.headLine" />
+					</h2>
+					
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label><wicket:message key="standingData.firstName" /><span	class="required">*</span></label> 
+							<input tabindex="1" type="text" wicket:id="customer.address.firstName" size="20" />
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="standingData.birthDate" /><span class="required">*</span></label> 
+							<input readonly="readonly" tabindex="3" type="text" wicket:id="birthDateField" id="birthDate" style="width: 150px;" /> 
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="standingData.customerType" /><span class="required">*</span></label> 
+							<select tabindex="5" wicket:id="customer.customerTypeId">
+								<option>dummy</option>
+							</select>
+						</div>
+						
+					</div>
+
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label><wicket:message key="standingData.lastName" /><span class="required">*</span></label> 
+							<input tabindex="2" type="text" wicket:id="customer.address.lastName" size="20" />
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="standingData.language" /></label> 
+							<select tabindex="4" wicket:id="customer.language">				
+								<option>dummy</option>
+							</select>
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="standingData.timeZone" /></label> 
+							<select tabindex="6" wicket:id="customer.timeZone">				
+								<option>dummy</option>
+							</select>
+						</div>
+						
+					</div>
+					
+					<div class="column buffer"></div>
+
+					<h2 class="section house">
+						<wicket:message key="addressInfo.headLine" />
+					</h2>
+					
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label><wicket:message key="standingData.street1" /></label> 
+							<input tabindex="7" type="text" wicket:id="customer.address.street1" />
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="standingData.houseNo" /></label> 
+							<input tabindex="9" type="text" wicket:id="customer.address.houseNo" />
+						</div>
+
+						<div class="input">
+							<label for=""><wicket:message key="standingData.state" /></label> 
+							<input tabindex="11" type="text" wicket:id="customer.address.state" />
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="standingData.country" /><span class="required">*</span></label> 
+							<select tabindex="13" wicket:id="customer.address.kvCountry">
+								<option>dummy</option>
+							</select>
+						</div>
+						
+					</div>
+
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label><wicket:message key="standingData.street2" /></label> 
+							<input tabindex="8" type="text" wicket:id="customer.address.street2" />
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="standingData.city" /></label> 
+							<input tabindex="10" type="text" wicket:id="customer.address.city" />
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="standingData.zip" /></label> 
+							<input tabindex="12" type="text" wicket:id="customer.address.zip" size="20" />
+						</div>
+						
+					</div>
+					
+					<div class="column buffer"></div>
+
+					<h2 class="section phone">
+						<wicket:message key="contactInfo.headLine" />
+						<input type="submit" class="additionalLink last" wicket:id="changeMsisdn" wicket:message="value:changeMsisdn" />
+					</h2>
+					
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label><wicket:message key="standingData.msisdn" /></label> 
+							<input tabindex="14" type="text" wicket:id="customer.msisdn" size="20" />
+						</div>
+						
+						<div class="input">
+							<label><wicket:message key="standingData.email" /><span class="required">*</span></label> 
+							<input tabindex="16" type="text" wicket:id="customer.address.email" size="50" />
+						</div>
+						
+					</div>
+
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label><wicket:message key="standingData.infoMode" /><span class="required">*</span></label> 
+							<select tabindex="15" wicket:id="customer.kvInfoMode">
+								<option>dummy</option>
+							</select>
+						</div>
+						
+						<div class="input" wicket:id="networkProviderDiv">
+							<label><wicket:message key="Network Provider" /><span class="required">*</span></label> 
+							<select  tabindex="17" wicket:id="customer.networkProvider">
+								<option>dummy</option>
+							</select>
+						</div>
+						
+					</div>
+
+					<div class="column buffer"></div>
+					
+					<h2 class="section wallet">
+						<wicket:message key="feeSetConf.headLine" />
+						<input type="submit" class="additionalLink last" wicket:id="limitSetConf" wicket:message="value:changeLimitSetConf" /> 
+						<input type="submit" class="additionalLink" wicket:id="feeSetConf" wicket:message="value:changeFeeSetConf" />
+					</h2>
+					
+					<div class="column twoColumn">
+						<div class="input">
+							<label><wicket:message key="standingData.feeSet" /></label> 
+							<select tabindex="17" wicket:id="customer.feeSetId">
+								<option>dummy</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="column twoColumn">
+						<div class="input">
+							<label><wicket:message key="standingData.limitSet" /></label> 
+							<select tabindex="18" wicket:id="customer.limitId">
+								<option>dummy</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="column buffer"></div>
+					
+					<h2 class="section lock">
+						<wicket:message key="securityInfo.headLine" />
+						<input type="submit" class="additionalLink last" wicket:id="resetPassword" wicket:message="value:standingData.resetPassword" /> 
+						<input type="submit" class="additionalLink" wicket:id="resetPin" wicket:message="value:standingData.resetPin" />
+					</h2>
+
+					<div class="column twoColumn">
+
+						<div class="input" style="width: 565px;">
+							<label><wicket:message key="standingData.securityQuestion" /><span class="required">*</span></label> 
+							<select tabindex="19" wicket:id="customer.securityQuestion">
+								<option>dummy</option>
+							</select>
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="standingData.username" /></label> 
+							<input tabindex="21" type="text" wicket:id="customer.userName" size="20" />
+						</div>
+
+					</div>
+
+					<div class="column twoColumn">
+
+						<div class="input">
+							<label><wicket:message key="standingData.securityAnswer" /><span class="required">*</span></label> 
+							<input tabindex="20" type="text" wicket:id="customer.SecQuesAns" />
+						</div>
+
+					</div>
+
+					<div class="column buffer"></div>
+
+					<h2 class="section lock">
+						<wicket:message key="statusInfo.headLine" />
+					</h2>
+
+					<div class="column twoColumn">
+					
+						<div class="input" style="width: 565px;">
+							<label><wicket:message key="standingData.customerStatus" /></label> 
+							<select tabindex="22" wicket:id="customer.active" id="customerStatus">
+								<option>dummy</option>
+							</select>
+						</div>
+
+						<div class="input" wicket:id="blackListReasonDiv">
+							<label><wicket:message key="standingData.blackListReason" /></label> 
+							<select tabindex="24" wicket:id="customer.blackListReason">
+								<option>dummy</option>
+							</select>
+						</div>
+
+					</div>
+
+					<div class="column twoColumn">
+						<div class="input" wicket:id="cancelDivContainer">
+							<label><wicket:message key="standingData.cancelationReason" /></label> 
+							<select tabindex="23" wicket:id="customer.cancelationReason" id="cancelationReason">
+								<option>dummy</option>
+							</select>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="column">
+					<div class="formAction" style="margin-left: 170px">
+						<input tabindex="25" type="submit" class="submitForm" wicket:id="update" wicket:message="value:update" />
+						<input tabindex="25" type="submit" class="submitForm" wicket:id="approve" wicket:message="value:Approve" />
+						<input tabindex="25" type="submit" class="submitForm" wicket:id="reject" wicket:message="value:Reject" />
+					</div>
+				</div>
+				
+			</form>
+			
+		</div>
+
+	</div>
+	
+</wicket:panel>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<!-- ############# BTPN ############# -->
+	<entry key="header.limit"> Limit Management </entry>
+	<entry key="label.usecaseId"> Use Case ID </entry>
+	<entry key="label.productId"> Product ID </entry>
+	<entry key="label.isPerCustomer">Is Per Customer </entry>
+	<entry key="label.applyToPayee">Apply to Payee </entry>
+	<entry key="label.dailyLimit"> Daily Limit </entry>
+	<entry key="label.weeklyLimit"> Weekly Limit </entry>
+	<entry key="label.monthlyLimit"> Monthly Limit </entry>
+	<entry key="Add">Add</entry>
+	<entry key="Update">Edit</entry>
+	<entry key="Delete">Remove</entry>
+	<entry key="Cancel">Cancel</entry>
+
+
+	<entry key="edit.success">Request for limit update submitted successfully for
+		Approval.</entry>
+	<entry key="removed.success">Request for limit delete submitted successfully for
+		Approval.</entry>
+
+	<entry key="checkbox.shouldbe.checked">Either Is Per Customer OR Apply to Payee field has to
+		be checked</entry>
+	<entry key="limit.required">Atleast one amount should be greater than zero from
+		Daily, Weekly and Monthly Limits</entry>
+
+	<!-- Client side Validations -->
+	<entry key="limitBean.useCaseId.Required">Use Case ID is a required field.</entry>
+
+	<!-- Pattern Validators -->
+	<entry key="limitBean.daily.weekly.limit">Weekly limit should be equal to or greater than daily limit.</entry>
+	<entry key="limitBean.weekly.monthly.limit">Monthly limit should be equal to or greater than weekly limit.</entry>
+	<entry key="limitBean.monthly.daily.limit">Monthly limit should be equal to or greater than daily limit.</entry>
+
+	<entry key="limitBean.dailyLimit.IConverter.Long">${input} is not a valid Daily Limit.</entry>
+	<entry key="limitBean.weeklyLimit.IConverter.Long">${input} is not a valid Weekly Limit.</entry>
+	<entry key="limitBean.monthlyLimit.IConverter.Long">${input} is not a valid Monthly Limit.</entry>
+	
+	<entry key="limitBean.dailyLimit.AmountValidator">${input} is not a valid Daily Limit.</entry>
+	<entry key="limitBean.weeklyLimit.AmountValidator">${input} is not a valid Weekly Limit.</entry>
+	<entry key="limitBean.monthlyLimit.AmountValidator">${input} is not a valid Monthly Limit.</entry>
+
+	<entry key="limit.update.error">An error occured while updating the limit.</entry>
+	<entry key="limit.delete.error">An error occured while deleting the limit.</entry>
+
+</properties>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.addFavorite">Tambah Favorit</entry>
+	<entry key="label.FavoriteName">Nama Favorit</entry>
+	<entry key="label.FavoriteType">Tipe Favorit</entry>
+	<entry key="label.FavoriteValue">No. Favorit</entry>
+	<entry key="label.description">Deskripsi</entry>
+	<entry key="requiredFields">Wajib isi</entry>
+
+
+	<entry key="favoritesBean.favoriteName.Required">Kolom Nama Favorit Harus Diisi</entry>
+	<entry key="favoritesBean.favoritesType.Required">Kolom Tipe Favorit Harus Diisi</entry>
+	<entry key="favoritesBean.favoriteValue.Required">Kolom No. Favorit Harus Diisi</entry>
+	<entry key="favoritesBean.description.Required">Kolom Deskripsi Favorit Harus Diisi</entry>
+	<entry key="favoritesBean.favoriteType.null">Pilih Tipe</entry>
+
+
+</properties>

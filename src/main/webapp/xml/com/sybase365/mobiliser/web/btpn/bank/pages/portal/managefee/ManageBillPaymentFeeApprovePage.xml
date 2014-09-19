@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+	<entry key="headLine.billerApp">Bill Payment Management Approval</entry>
+	<entry key="label.fromDate"> From Date </entry>
+	<entry key="label.toDate"> To Date </entry>
+	<entry key="fee.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="fee.emptyRecordsMessage">Nothing found to display.</entry>
+	<entry key="label.id"> ID </entry>
+	<entry key="label.description"> Description </entry>
+	<entry key="label.modifiedName"> Last Modified Name </entry>
+	<entry key="label.modifiedDate"> Last Modified Date </entry>
+	
+	<entry key="fee.dateRangeBegin.Required"> From Date is required.</entry>
+	<entry key="fee.dateRangeEnd.Required"> To Date is required.</entry>
+	
+</properties>

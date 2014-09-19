@@ -1,0 +1,83 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="servers">
+				<span><wicket:message key="dashboard.channels.title" /></span>
+			</h1>
+
+			<form wicket:id="channelsForm">
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+			
+				<div class="cmodule clear">
+				
+					<div class="column ">
+						<div class="input">
+							<label ><wicket:message key=dashboard.channels.availableChannels" /></label>
+							<div class="text" wicket:id="availableChannels"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.channels.receivedMessages" /></label>
+							<div class="text" wicket:id="receivedMessages"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.channels.sentMessages" /></label>
+							<div class="text" wicket:id="sentMessages"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.channels.failedMessages" /></label>
+							<div class="text" wicket:id="failedMessages"></div>
+						</div>
+											
+					</div>
+					
+					<div class="spacer"></div>
+					
+					<h2 class="section system">
+					<wicket:message key="dashboard.channels.messages.title"/>
+					<input class="additionalLink last" type="submit" wicket:message="value:dashboard.channels.messages.reload.button" wicket:id="reloadMessages" name="reloadMessages">
+					</h2>
+										
+					<div class="spacer"></div>
+					<div class="collapsable  clear" >
+						<table  class="listTable">
+							<thead>
+							<tr>
+								<th><wicket:message key="dashboard.channels.messages.title"/></th>															
+							</tr>
+							</thead>
+							<tfoot>
+							<tr>
+								<td class="empty">
+								</td>
+							</tr>
+							</tfoot>
+							<tbody>
+								<tr wicket:id="messageListView">
+									<td><div><a href="#" wicket:id="messageLink"></a></div></td>
+								</tr>
+							</tbody>
+						</table>			
+					</div>
+					
+					
+					
+							
+				</div>
+								
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

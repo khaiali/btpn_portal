@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.addAccount">Tambah Rekening</entry>
+	<entry key="label.name">Nama</entry>
+	<entry key="label.description">Deskripsi</entry>
+	<entry key="requiredFields">Wajib isi</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="subAccountBean.name.Required">Kolom Nama Harus Diisi</entry>
+	<entry key="subAccountBean.name.PatternValidator">'${input}' bukan Nama yang valid</entry>
+
+</properties>

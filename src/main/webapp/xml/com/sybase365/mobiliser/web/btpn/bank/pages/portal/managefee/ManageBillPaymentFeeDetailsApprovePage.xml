@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.billerApp">Bill Payment Management Details Approval</entry>
+	<entry key="label.description"> Description </entry>
+	<entry key="label.useCase"> Use Case </entry>
+	<entry key="label.productLabel"> Product </entry>
+	<entry key="label.orgUnit"> Debit Org Unit </entry>
+	<entry key="label.piType"> Debit Pi Type </entry>
+	<entry key="label.customerType">Customer Type </entry>
+	<entry key="label.glCode"> GL Code </entry>
+	<entry key="label.amount"> Amount </entry>
+	<entry key="label.validFrom"> Valid From </entry>
+	<entry key="label.applyToPayee"> Apply to Payee Fee </entry>
+	<entry key="label.currency">Currency code</entry>
+	<entry key="label.fixedFee">Fixed Fee</entry>
+	<entry key="label.percentageFee">Percentage Fee</entry>
+	<entry key="label.maximumFee"> Maximum Fee </entry>
+	<entry key="label.minimumFee"> Minimum Fee </entry>
+	<entry key="label.thresholdAmount"> Threshold Amount </entry>
+	<entry key="fees.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="no.items">Nothing found to display.</entry>
+	
+	<!-- Bill Payment fee details -->
+	<entry key="error.manage.fees">An error occured while fetching the bill payment fee
+		details.</entry>
+</properties>

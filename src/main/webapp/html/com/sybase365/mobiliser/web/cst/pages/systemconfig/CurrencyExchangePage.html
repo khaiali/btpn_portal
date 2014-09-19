@@ -1,0 +1,163 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content center">
+	
+		<div class="module clear">
+		
+			<h1 class="coins">
+				<span><wicket:message key="menu.cst.exchange.rate" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="currency.exchange.title" /></span>
+			</h1>
+			
+			<div wicket:id="errorMessages"></div>
+			
+			<h2>
+				<a href="#" wicket:id="exchangeRateAddLink" class="additionalLink last"><wicket:message key="exchangeRateTable.link.add" /></a>
+			</h2>
+			
+			<div class="cmodule clear">
+			
+				<!-- list paging -->
+				<ul class="tablePaging">
+					<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+					<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+					<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+				</ul>
+				<!-- end list paging -->
+				
+				<div class="collapsable clear">
+				
+					<table id="exchangeRateList" class="listTable" width="100%">
+					
+						<wicket:enclosure child="pageable">
+						
+							<thead>
+								<tr>
+									<th class="fromCurrency" wicket:id="orderByfromCurrency"><wicket:message key="exchangerate.fromCurrency" /></th>
+									<th class="currency"><wicket:message key="exchangerate.toCurrency" /></th>
+									<th class="ratio"><wicket:message key="exchangerate.ratio" /></th>
+									<th class="rate"><wicket:message key="exchangerate.rate" /></th>
+									<th class="actions last" ><wicket:message key="actions" /></th>
+								</tr>
+							</thead>
+							
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="5"></td>
+								</tr>
+							</tfoot>
+							
+							<tbody>
+								<tr wicket:id="pageable">
+									<td class="fromCurrency"><div wicket:id="fromCurrency">[From Currency]</div></td>
+									<td class="currency"><div wicket:id="toCurrency">[To Currency]</div></td>
+									<td class="ratio"><div wicket:id="ratio">[Ratio]</div></td>
+									<td class="rate"><div wicket:id="rate">[Rate]</div></td>
+									<td>
+										<ul>
+											<li><a href="#" wicket:id="editLink"><wicket:message key="edit">[Edit]</wicket:message></a></li>
+											<li><a href="#" wicket:id="removeLink"><wicket:message key="remove">[Remove]</wicket:message></a></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+							
+						</wicket:enclosure>
+						
+					</table>
+					
+					<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+					
+				</div>
+				
+			</div>
+			
+			<div wicket:id="addExchangerateContainer">
+			
+				<form wicket:id="addExchangeRateForm">
+				
+					<div class="column">
+					
+						<div class="input">
+							<label><wicket:message key="exchangerate.fromCurrency" /><span class="required">*</span></label> 
+							<select wicket:id="exchangeRate.fromCurrency">
+								<option>dummy</option>
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message key="exchangerate.toCurrency" /><span class="required">*</span></label> 
+							<select wicket:id="exchangeRate.toCurrency">
+								<option>dummy</option>
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message key="exchangerate.ratio" /></label>
+							<pre>
+								<input type="text" wicket:id="strFromAmount" style="width: 78px;" />:<input type="text" style="width: 77px;" wicket:id="strToAmount" />
+							</pre>
+						</div>
+						<div class="input">
+							<label><wicket:message key="exchangerate.rate" /><span class="required">*</span></label> 
+							<input type="text" wicket:id="strRate" />
+						</div>
+						
+					</div>
+					
+					<div class="column">
+					
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="save" wicket:message="value:Save" /> 
+							<input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" />
+						</div>
+						
+					</div>
+					
+				</form>
+				
+			</div>
+			
+			<div wicket:id="updateExchangerateContainer">
+			
+				<form wicket:id="updateExchangeRateForm">
+				
+					<div class="column">
+					
+						<div class="input">
+							<label><wicket:message key="exchangerate.ratio" /></label>
+							<pre>
+								<input type="text" wicket:id="strFromAmount" style="width: 78px;" />:<input type="text" style="width: 77px;" wicket:id="strToAmount" />
+							</pre>
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="exchangerate.rate" /><span class="required">*</span></label> 
+							<input type="text" wicket:id="strRate" />
+						</div>
+						
+					</div>
+					
+					<div class="column">
+					
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="update" wicket:message="value:Save" /> 
+							<input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" />
+						</div>
+						
+					</div>
+					
+				</form>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</wicket:extend>
+
+</body>
+</html>

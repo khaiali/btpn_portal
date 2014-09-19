@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.mobileAccountDetails">Mobile Account Details</entry>
+	<entry key="headLine.withdrawalFromMobileAmount">Withdrawal from Mobile Amount</entry>
+
+	<entry key="label.cashOut.accountNumber">Account Number</entry>
+	<entry key="label.cashOut.accountName">Name</entry>
+	<entry key="label.cashOut.accountType">Account Type</entry>
+	<entry key="label.cashOut.mobileNumber">Mobile Number</entry>
+	<entry key="label.cashOut.accountBanlace">Account Balance</entry>
+
+	<entry key="label.cashOut.cashOutAmount">Cash-Out Amount(IDR)</entry>
+	<entry key="label.cashOut.error">Error accoured in cash out details page</entry>
+	<entry key="error.cashOut.fail">An error occurred while doing cash Out</entry>
+	<!-- ############# Custom Validations ############# -->
+	<entry key="cashOutBean.cashOutAmount.Required">Cash Out Amount is a required field.</entry>
+	<entry key="cashOutBean.cashOutAmount.PatternValidator">'${input}' is not a valid Cash Out Amount</entry>
+	<entry key="cashOutBean.cashOutAmount.AmountValidator">${input} is not a valid Cash Out Amount</entry>
+	<entry key="cashOutBean.cashOutAmount.IConverter.Long">${input} is not a valid Cash Out Amount</entry>
+
+</properties>

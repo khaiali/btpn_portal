@@ -1,0 +1,105 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content center">
+					<fieldset>
+						<legend class="reg_tab3">
+							<wicket:message key="txns.header" />
+						</legend>
+						<form wicket:id="txnSearchForm">
+							<div wicket:id="errorMessages"></div>
+							<br>
+							<div class="input" style="width: 500px;">
+								<label>
+								    <wicket:message key="view.transactions.search.startDate" /> <span class="required">*</span>
+								</label>
+								<input tabindex="1" type="text" size="10" wicket:id="searchData.fromDate" id="fromDate" style="width: 150px;" />
+							</div>
+							<div class="input" style="width: 500px;">
+								<label>
+								    <wicket:message key=view.transactions.search.endDate /> <span class="required">*</span>
+								</label>
+								<input tabindex="2" type="text" size="10" wicket:id="searchData.toDate" id="toDate" style="width: 150px;" />
+							</div>
+                            <div class="input">
+                                <label>
+                                    <wicket:message key="label.paymentInstrumentId" />
+                                </label>
+                                <select tabindex="3" wicket:id="searchData.paymentInstrumentId">
+                                    <option>dummy</option>
+                                </select>
+                            </div>
+							<div class="input">
+								<label>
+								    <wicket:message key="label.type" />
+								</label>
+								<select tabindex="4" wicket:id="searchData.txnType">
+									<option>dummy</option>
+								</select>
+							</div>
+							<div class="column">
+								<br> <input type="submit" class="submit acc_chk"
+									id="officerOneSubmit" wicket:id="searchButton"
+									wicket:message="value:label.submit" />
+
+							</div>
+							<div class="spacer"></div>
+							<!--
+							<div class="column">
+								<b> <wicket:message key="label.svaBalance" /> <span
+									style="position: relative; margin-left: 6px"
+									wicket:id="searchData.svaBalance"></span></b>
+							</div>
+                            <div class="spacer"></div>
+							-->
+							<div class="displayTag" wicket:id="txnDataContainer">
+								<label wicket:id="no.items"></label> <span class="pagebanner"
+									wicket:id="approvalHeader"></span> <span class="pagelinks"
+									wicket:id="approvalNavigator"></span>
+								<wicket:enclosure child="pageable">
+									<table id="filesTable">
+										<thead>
+											<tr>
+												<th wicket:id="orderById"><wicket:message key="label.id" /></th>
+												<th wicket:id="orderByDate"><wicket:message key="label.date" /></th>
+												<th wicket:id="orderByType"><wicket:message key="label.type" /></th>
+                                                <th wicket:id="orderByDescription"><wicket:message key="label.description" /></th>
+												<th wicket:id="orderByAmount"><wicket:message key="label.amount" /></th>
+												<th wicket:id="orderByDebitAmount"><wicket:message key="label.debitAmount" /></th>
+												<th wicket:id="orderByCreditAmount"><wicket:message key="label.creditAmount" /></th>
+												<th wicket:id="orderByRunnigBalance"><wicket:message key="label.runningBalance" /></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr wicket:id="pageable">
+												<td><div wicket:id="id">[ID]</div></td>
+												<td><div wicket:id="date">[Date]</div></td>
+												<td><div wicket:id="type">[Type]</div></td>
+                                                <td><div wicket:id="description">[Description]</div></td>
+												<td><div wicket:id="amount">[Amount]</div></td>
+												<td><div wicket:id="debitAmount">[Debit Amount]</div></td>
+												<td><div wicket:id="creditAmount">[Credit Amount]</div></td>
+												<td><div wicket:id="runningBalance">[Running Balance]</div></td>
+											</tr>
+										</tbody>
+									</table>
+								</wicket:enclosure>
+
+								<div wicket:id="exportContainer" class="exportlinks"><wicket:message key="label.exportOptions" />
+									 <a wicket:id="pdfLink" href="#"><span
+										class="export pdf"><wicket:message key="label.pdf" /></span></a>
+								</div>
+							</div>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+
+					<form wicket:id="approvalMsisdnForm">
+						<fieldset>
+							<legend class="reg_tab6">
+								<wicket:message key="headLine.approvalList" />
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="reg_tab_01">
+								<div class="column">
+									<label wicket:id="emptyRecordsMessage"></label>
+								</div>
+								<div class="column" wicket:id="pendingApprovalContainer">
+									<div class="displayTag">
+										<span class="pagebanner" wicket:id="approvalHeader"></span> <span
+											class="pagelinks" wicket:id="approvalNavigator"></span>
+										<wicket:enclosure child="pageable">
+											<table id="attachmentsTable">
+												<thead>
+													<tr>
+														<th wicket:id="orderCreatedBy"><wicket:message
+																key="label.createdby" /></th>
+														<th wicket:id="orderByCustomer"><wicket:message
+																key="label.customer" /></th>
+														<th><wicket:message key="label.changeRequest" /></th>
+														<th wicket:id="orderByOldMobile"><wicket:message
+																key="label.oldMobile" /></th>
+														<th wicket:id="orderByNewMobile"><wicket:message
+																key="label.newMobile" /></th>
+														<th wicket:id="orderByStatus"><wicket:message
+																key="label.status" /></th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr wicket:id="pageable">
+														<td><div wicket:id="createdBy">[Created By]</div></td>
+														<td><div wicket:id="mobileNumber">[Customer]</div></td>
+														<td><div wicket:id="changeRequest">[Change
+																Request Type]</div></td>
+														<td><div wicket:id="oldMobile">[Old Mobile]</div></td>
+														<td><div wicket:id="newMobile">[New Mobile]</div></td>
+														<td><div wicket:id="status">[Status]</div></td>
+														<td><a href="#" wicket:id="approveLink"><span
+																wicket:id="approveLinkName">[Approve]</span> </a> / <a
+															href="#" wicket:id="rejectLink"><span
+																wicket:id="rejectLinkName">[Reject]</span> </a></td>
+													</tr>
+												</tbody>
+											</table>
+										</wicket:enclosure>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

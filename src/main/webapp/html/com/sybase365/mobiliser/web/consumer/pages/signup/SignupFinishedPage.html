@@ -1,0 +1,42 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<title><wicket:message key="consumer.signup.page.title" /></title>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<form wicket:id="signupFinishForm">
+
+			<div class="module clear">
+
+				<h1 wicket:id="successMsg" class="signup"></h1>
+
+				<div class="column" wicket:id="continueMsg">
+					<p>
+						<wicket:message key="signup.finished.nextstep" />
+					</p>
+				</div>
+
+				<div class="column">
+				
+					<div class="formAction">
+						<input type="submit" class="submitForm" wicket:id="continue" wicket:message="value:Continue" name="submit" />
+					</div>
+					
+				</div>
+
+			</div>
+
+		</form>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="left.menu.home">Home</entry>
+	<entry key="left.menu.manageprofile">Manage Profile</entry>
+	<entry key="left.menu.elimit">Limit</entry>
+	<entry key="left.menu.approvalelimit">Approval Limit</entry>
+	<entry key="left.menu.bank.admin.registration">Bank Admin Registration</entry>
+	<entry key="left.menu.bank.user.registration">Bank User Registration</entry>
+	<entry key="left.menu.consumer.approval">Approval</entry>
+	<entry key="left.menu.bank.activate.deactivate.menu">Activate/Deactivate Menu</entry>
+	<entry key="left.menu.changeLanguage">Change Language</entry>
+	<entry key="left.menu.consumerRegistration">Consumer Registration</entry>
+	<entry key="left.menu.consumer.approval">Approval</entry>
+	<entry key="left.menu.officer.approval">Officer/Agent Approval</entry>
+	<entry key="left.menu.bank.portal.cashIn">Customer Cash-In</entry>
+	<entry key="left.menu.bank.portal.cashOut">Customer Cash-Out</entry>
+	<entry key="left.menu.bank.portal.AgentCashIn">Top Agent Cash-In</entry>
+	<entry key="left.menu.bank.portal.AgentCashOut">Top Agent Cash-Out</entry>
+	<entry key="left.menu.manageProducts">Manage Products</entry>
+	<entry key="left.menu.manageLimit">Manage Limit</entry>
+	<entry key="left.menu.manageFee">Manage Fee</entry>
+	<entry key="left.menu.approveFee">Manage Fee Approval</entry>
+	
+	<!--<entry key="left.menu.manageAttFee">Manage Airtime Topup Fee</entry>-->
+	<entry key="left.menu.manageBillPaymentFee">Manage Bill Payment Fee</entry>
+	<entry key="left.menu.manageAppBillPaymentFee">Manage Bill Payment Fee Approval</entry>
+	
+	<entry key="left.menu.approveProducts">Approve Products</entry>
+	<entry key="left.menu.topup.agent.registration">Top Agent Registration</entry>
+	<entry key="left.menu.changeMsisdn">Change Mobile Number</entry>
+	<entry key="left.menu.approveMsisdn">MSISDN Change Requests</entry>
+	<entry key="left.menu.transactionReversal">Transaction Reversal</entry>
+	<entry key="left.menu.approveTransactionReversal">Approve Transaction Reversal</entry>
+	<entry key="left.menu.approve.fee.limit">Approve Fee/Limit</entry>
+	<entry key="left.menu.manageGL">Manage GL</entry>
+	<entry key="left.menu.approveGL">Approve GL</entry>
+	<entry key="left.menu.searchTxnsData">Search Transaction Data</entry>
+	<entry key="txns.startDate">From</entry>
+	<entry key="txns.endDate">To</entry>
+	<!--<entry key="left.menu.consumerUpload">Consumer Upload</entry>-->
+	<!--<entry key="left.menu.searchConsumerRegData">Search Consumer Reg Data</entry>-->
+	<entry key="left.menu.holidayCalender">Holiday Calendar</entry>
+	<entry key="left.menu.pproveHolidays">Approve Holidays</entry>
+	<entry key="addHoliday">Add Holiday</entry>
+	<entry key="fromDate">From Date</entry>
+	<entry key="toDate">To Date</entry>
+	<entry key="holiday.description">Description</entry>
+	<entry key="addHoliday.success">Holiday submitted successfully for Approval.</entry>
+	<entry key="left.menu.bulk.upload">Batch Transaction Upload</entry>
+	<entry key="left.menu.bulk.search">Search Batch Transaction Upload</entry>
+	<entry key="left.menu.transactionGL">Manage Transaction GL</entry>
+	<entry key="left.menu.approveTransactionGL">Approve Transaction GL</entry>
+	<entry key="left.menu.approveCustomerData">Approve Customer Data</entry>
+	<entry key="left.menu.addHelp">Add Help</entry>
+	<entry key="left.menu.transReport">Transaction Details Report</entry>
+	<entry key="left.menu.child.sub.agent.approval">Agent Approval</entry>	
+	<entry key="left.menu.approveAgentData">Approve Agent Update</entry>
+	<entry key="left.menu.manageInterest">Manage Interest</entry>
+	<entry key="left.menu.manageInterestTax">Manage Interest Tax</entry>
+	<entry key="left.menu.manageInterestApprove">Manage Interest Approval</entry>
+	<entry key="left.menu.manageInterestTaxApprove">Manage Interest Tax Approval</entry>
+</properties>

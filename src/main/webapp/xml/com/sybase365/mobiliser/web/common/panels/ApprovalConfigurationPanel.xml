@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+     <!-- #############Approval Configurations ############# -->
+       
+     <entry key="approvals.noCustItemsMsg">No customer approval configuration entries found</entry>  
+     <entry key="approvals.noCustItemsHelpMsg">Add an customer approval configuration using the 'Add New Configuration' link above.</entry>
+     <entry key="approvals.noWalletItemsMsg">No wallet approval configuration entries found</entry>  
+     <entry key="approvals.noWalletItemsHelpMsg">Add an wallet approval configuration using the 'Add New Configuration' link above.</entry>
+     <entry key="approvals.noUseCaseItemsMsg">No usecase approval configuration entries found</entry>  
+     <entry key="approvals.noUseCaseItemsHelpMsg">Add an usecase approval configuration using the 'Add New Configuration' link above.</entry>
+     <entry key="approvals.noFileItemsMsg">No file approval configuration entries found</entry>  
+     <entry key="approvals.noFileItemsHelpMsg">Add an file approval configuration using the 'Add New Configuration' link above.</entry>
+     
+     <entry key="approvalConfig.add.button">Add New Configuration</entry>
+
+     <entry key="approvalConfig.customerType">Customer Type</entry>
+     <entry key="approvalConfig.piType">PI Type</entry>
+     <entry key="approvalConfig.useCaseType">Use Case</entry>
+     <entry key="approvalConfig.fileType">File Type</entry>
+     <entry key="approvalConfig.customer.makerPrivilege">Maker Privilege</entry>
+     <entry key="approvalConfig.customer.checkerPrivilege">Checker Privilege</entry>
+     <entry key="approvalConfig.customer.executePrivilege">Execute Privilege</entry>
+     <entry key="approvalConfig.useCase.PayerPrivilege">Payer Privilege</entry>
+     <entry key="approvalConfig.useCase.PayeePrivilege">Payee Privilege</entry>
+     <entry key="approvalConfig.useCase.CallerPrivilege">Caller Privilege</entry>
+     <entry key="approvalConfig.useCase.CallerParentPrivilege">Caller/Parent Privilege</entry>
+     <entry key="approvalConfig.useCase.CallerSelfPrivilege">Caller/Self Privilege</entry>
+              
+     <entry key="approvalConfig.table.makerPrivilege">Maker</entry>
+     <entry key="approvalConfig.table.checkerPrivilege">Checker</entry>
+     <entry key="approvalConfig.table.executePrivilege">Execute</entry>
+     <entry key="approvalConfig.table.PayerPrivilege">Payer</entry>
+     <entry key="approvalConfig.table.PayeePrivilege">Payee</entry>
+     <entry key="approvalConfig.table.CallerPrivilege">Caller</entry>
+     <entry key="approvalConfig.table.CallerParentPrivilege">Parent</entry>
+     <entry key="approvalConfig.table.CallerSelfPrivilege">Self</entry>
+     <entry key="approval.cust.conf.title">Customer Approval Configurations</entry>  
+     
+     <entry key="approvalConfigObj.customerTypeId.Required">Customer Type is required</entry>
+     <entry key="approvalConfigObj.piTypeId.Required">PI Type is required</entry>
+     <entry key="approvalConfigObj.useCaseId.Required">Use Case is required</entry>
+     <entry key="approvalConfigObj.fileTypeId.Required">File Type is required</entry>
+     <entry key="approvalConfigObj.makerPrivilege.Required">Maker Privilege is required</entry>
+     <entry key="approvalConfigObj.checkerPrivilege.Required">Checker Privilege is required</entry>
+     <entry key="approvalConfigObj.executePrivilege.Required">Execute Privilege is required</entry>
+     <entry key="approvalConfigObj.payerPrivilege.Required">Payer Privilege is required</entry>
+     <entry key="approvalConfigObj.payeePrivilege.Required">Payee Privilege is required</entry>
+     <entry key="approvalConfigObj.callerPrivilege.Required">Caller Privilege is required</entry>
+     <entry key="approvalConfigObj.callerParentPrivilege.Required">Caller/Parent Privilege is required</entry>
+     <entry key="approvalConfigObj.callerSelfPrivilege.Required">Caller/Self Privilege is required</entry>
+     
+     <entry key="approvaltype.load.error">An error occurred while loading approval configurations</entry>
+     <entry key="approvalConfig.cust.remove.confirm">Do you really want to remove the selected customer approval configuration?</entry>
+     <entry key="approvalConfig.wallet.remove.confirm">Do you really want to remove the selected wallet approval configuration?</entry>
+     <entry key="approvalConfig.usecase.remove.confirm">Do you really want to remove the selected use case approval configuration?</entry>
+     <entry key="approvalConfig.file.remove.confirm">Do you really want to remove the selected file approval configuration?</entry>
+     <entry key="create.customer.approveConf.error">An error occurred while creating a new customer configuration</entry>
+     <entry key="create.wallet.approveConf.error">An error occurred while creating a new wallet configuration</entry>
+     <entry key="create.usecase.approveConf.error">An error occurred while creating a new use case configuration</entry>
+     <entry key="create.file.approveConf.error">An error occurred while creating a new file configuration</entry>
+     <entry key="update.customer.approveConf.error">An error occurred while updating customer configuration</entry>
+     <entry key="update.wallet.approveConf.error">An error occurred while updating wallet configuration</entry>
+     <entry key="update.usecase.approveConf.error">An error occurred while updating use case configuration</entry>
+     <entry key="update.file.approveConf.error">An error occurred while updating file configuration</entry>
+     <entry key="delete.customer.approveConf.error">An error occurred while deleting from customer configuration list</entry>
+     <entry key="delete.wallet.approveConf.error">An error occurred while deleting from wallet configuration list</entry>
+     <entry key="delete.usecase.approveConf.error">An error occurred while deleting from use case configuration list</entry>
+     <entry key="delete.file.approveConf.error">An error occurred while deleting from file configuration list</entry>
+         
+     
+     
+</properties>

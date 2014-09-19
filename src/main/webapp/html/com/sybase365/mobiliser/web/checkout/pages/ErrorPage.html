@@ -1,0 +1,39 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<title><wicket:message key="checkout.title" /></title>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+	
+		<div class="column buffer"></div>
+		<div class="column buffer"></div>
+		
+		<div class="module clear">
+		
+			<form wicket:id="failTxnForm">
+			
+				<div wicket:id="errorMessages" style="margin-left: 390px"></div>
+
+				<div class="column">
+				
+					<div class="formAction">
+						<input style="margin-left: 270px" type="submit" class="submitForm" wicket:id="continue" wicket:message="value:Continue" />
+					</div>
+					
+				</div>
+				
+			</form>
+			
+		</div>
+		
+	</div>
+	
+</wicket:extend>
+
+</body>
+</html>

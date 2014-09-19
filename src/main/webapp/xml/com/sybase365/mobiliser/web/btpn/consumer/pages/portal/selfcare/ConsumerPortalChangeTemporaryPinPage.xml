@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.change.temporary.pin">Ganti PIN Lama</entry>
+	<entry key="label.change.new.pin">PIN Baru</entry>
+	<entry key="label.change.confirm.new.pin">Konfirmasi PIN Baru</entry>
+
+	<entry key="newPin.Required">PIN Baru Harus Diisi</entry>
+	<entry key="newPin.PatternValidator">PIN Baru Tidak Valid</entry>
+	<entry key="confirmNewPin.Required">Konfirmasi PIN Baru Harus Diisi</entry>
+	<entry key="confirmNewPin.PatternValidator">Konfirmasi PIN Baru Tidak Valid</entry>
+	<entry key="confirmNewPin.EqualPasswordInputValidator">PIN yang Anda Masukkan Tidak Sesuai. Silahkan Periksa PIN Anda dan Coba Kembali.</entry>
+	<entry key="confirmNewPin.EqualInputValidator">PIN Lama dan Baru Tidak Boleh Sama.</entry>
+	<entry key="success.change.pin">Anda Berhasil Mengubah PIN.</entry>
+	<entry key="error.334">Credential is still under retention.</entry>
+	<entry key="error.temporary.pin">Terjadi Kesalahan Ketika Mengubah PIN.</entry>
+	<entry key="login.failed">Username/password Tidak Valid.</entry>
+	<entry key="login.exception">Maaf Terdapat Gangguan. Silahkan Coba Kembali.</entry>
+</properties>

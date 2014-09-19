@@ -1,0 +1,82 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content center">
+
+		<div class="module clear">
+
+			<h1 class="friends">
+				<span><wicket:message key="activateAgent.title" /></span>
+			</h1>
+
+			<div wicket:id="errorMessages"></div>
+
+			<div wicket:id="inactiveDataViewContainer">
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="agentListTable" class="listTable">
+
+							<wicket:enclosure child="pageable">
+
+								<thead>
+									<tr>
+										<th class="nickname" wicket:id="orderByFirstName"><wicket:message key="activateAgent.table.user" />
+										</th>
+										<th class="nickname"><wicket:message key="activateAgent.table.parentId" />
+										</th>
+										<th class="nickname"><wicket:message key="activateAgent.table.creationDate" />
+										</th>
+									</tr>
+								</thead>
+
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="3"></td>
+									</tr>
+								</tfoot>
+
+								<tbody>
+									<tr wicket:id="pageable">
+										<td><a href="#" wicket:id="LidLink"><div wicket:id="LuserName">[User Name]</div>
+										</a>
+										</td>
+										<td><div wicket:id="LparentId">[Parent ID]</div>
+										</td>
+										<td><div wicket:id="Lcreated">[Creation Date]</div>
+										</td>
+									</tr>
+								</tbody>
+
+							</wicket:enclosure>
+
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

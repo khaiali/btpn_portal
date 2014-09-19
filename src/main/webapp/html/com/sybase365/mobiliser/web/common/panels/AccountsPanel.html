@@ -1,0 +1,287 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="manageAccountForm">
+
+		<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+		<span wicket:id="primary">
+
+			<div class="module clear" wicket:id="baListContainer">
+			
+				<h2 class="section bank">
+					<wicket:message key="manageAccounts.bankAccountsTable.title" />
+					<input type="submit" class="additionalLink last" wicket:id="addAccount" wicket:message="value:manageAccounts.button.addBankAccount" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="baStartIndex" /> - <span wicket:id="baEndIndex" /> (<span wicket:id="baTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="baNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="friendsListTable" class="listTable">
+						
+							<wicket:enclosure child="baPageable">
+							
+								<thead>
+									<tr>
+										<th class="select"><wicket:message key="manageAccounts.primary" /></th>
+										<th class="bankCode" wicket:id="baOrderByNickname"><wicket:message key="manageAccounts.bankAccountsTable.nickname" /></th>
+										<th class="accountNumber"><wicket:message key="manageAccounts.bankAccountsTable.accountNumber" /></th>
+										<th class="bankCode"><wicket:message key="manageAccounts.bankAccountsTable.bankCode" /></th>
+										<th class="bankCode"><wicket:message key="manageAccounts.bankAccountsTable.bankStatus" /></th>
+										<th class="actions last"><wicket:message key="manageAccounts.actions" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="6"></td>
+									</tr>
+								</tfoot>
+								
+								<tbody>
+									<tr wicket:id="baPageable">
+										<td class="select"><input type="radio" wicket:id="baSelected" /></td>
+										<td><div wicket:id="baNickname">[Nickname]</div></td>
+										<td><div wicket:id="baAccountNumber">[Account Number]</div></td>
+										<td><div wicket:id="baBankCode">[Bank Code]</div></td>
+										<td><div wicket:id="baBankStatus">[Bank Status]</div></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="baEditAction"><wicket:message key="manageAccounts.editAction">[Edit]</wicket:message> </a></li>
+												<li><a href="#" wicket:id="baRemoveAction"><wicket:message key="manageAccounts.removeAction">[Remove]</wicket:message> </a></li>
+												<li><a href="#" wicket:id="baApproveAction"><wicket:message key="manageAccounts.approveAction">[Approve]</wicket:message> </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="baNoItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="module clear" wicket:id="ccListContainer">
+
+				<h2 class="section payments">
+					<wicket:message key="manageAccounts.creditCardsTable.title" />
+					<input type="submit" class="additionalLink last" wicket:id="addCreditCard" wicket:message="value:manageAccounts.button.addCreditCard" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="ccStartIndex" /> - <span wicket:id="ccEndIndex" /> (<span wicket:id="ccTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="ccNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="friendsListTable" class="listTable">
+						
+							<wicket:enclosure child="ccPageable">
+							
+								<thead>
+									<tr>
+										<th class="select"><wicket:message key="manageAccounts.primary" /></th>
+										<th class="nickname" wicket:id="ccOrderByNickname"><wicket:message key="manageAccounts.creditCardsTable.nickname" /></th>
+										<th class="cardType"><wicket:message key="manageAccounts.creditCardsTable.cardType" /></th>
+										<th class="cardNumber"><wicket:message key="manageAccounts.creditCardsTable.cardNumber" /></th>
+										<th class="actions last"><wicket:message key="manageAccounts.actions" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="5"></td>
+									</tr>
+								</tfoot>
+								
+								<tbody>
+									<tr wicket:id="ccPageable">
+										<td class="select"><input type="radio" wicket:id="ccSelected" /></td>
+										<td><div wicket:id="ccNickname">[Nickname]</div></td>
+										<td><div wicket:id="ccCardType">[Bank Code]</div></td>
+										<td><div wicket:id="ccCardNumber">[Card Number]</div></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="ccEditAction"><wicket:message key="manageAccounts.editAction">[Edit]</wicket:message> </a></li>
+												<li><a href="#" wicket:id="ccRemoveAction"><wicket:message key="manageAccounts.removeAction">[Remove]</wicket:message> </a></li>
+												<li><a href="#" wicket:id="ccApproveAction"><wicket:message key="manageAccounts.approveAction">[Approve]</wicket:message> </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="ccNoItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="module clear" wicket:id="eaListContainer">
+			
+				<h2 class="section externalBank">
+					<wicket:message key="manageAccounts.externalAccountsTable.title" />
+					<input type="submit" class="additionalLink last" wicket:id="addExternalAccount" wicket:message="value:manageAccounts.button.addExternalAccount" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="eaStartIndex" /> - <span wicket:id="eaEndIndex" /> (<span wicket:id="eaTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="eaNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="externalListTable" class="listTable">
+						
+							<wicket:enclosure child="eaPageable">
+							
+								<thead>
+									<tr>
+										<th class="select"><wicket:message key="manageAccounts.primary" /></th>
+										<th class="nickname" wicket:id="eaOrderByAlias"><wicket:message key="manageAccounts.externalAccountsTable.alias" /></th>
+										<th class="issuer"><wicket:message key="manageAccounts.externalAccountsTable.Id1" /></th>
+										<th class="piId"><wicket:message key="manageAccounts.externalAccountsTable.Id2" /></th>
+										<th class="actions last"><wicket:message key="manageAccounts.actions" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="5"></td>
+									</tr>
+								</tfoot>
+								
+								<tbody>
+									<tr wicket:id="eaPageable">
+										<td class="select"><input type="radio" wicket:id="eaSelected" /></td>
+										<td><div wicket:id="eaAlias">[Alias]</div></td>
+										<td><div wicket:id="eaId1">[ID 1]</div></td>
+										<td><div wicket:id="eaId2">[ID 2]</div></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="eaEditAction"><wicket:message key="manageAccounts.editAction">[Edit]</wicket:message> </a></li>
+												<li><a href="#" wicket:id="eaRemoveAction"><wicket:message key="manageAccounts.removeAction">[Remove]</wicket:message> </a></li>
+												<li><a href="#" wicket:id="eaApproveAction"><wicket:message key="manageAccounts.approveAction">[Remove]</wicket:message> </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="eaNoItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="module clear">
+
+				<h2 class="section coins">
+					<wicket:message key="manageAccounts.svasTable.title" />
+						<input type="submit" class="additionalLink last" wicket:id="withdrawFunds" wicket:message="value:manageAccounts.button.withdrawFunds" />
+						<input type="submit" class="additionalLink" wicket:id="addFunds" wicket:message="value:manageAccounts.button.addFunds" />
+						<input type="submit" class="additionalLink last" wicket:id="debit" wicket:message="value:manageAccounts.button.debit" />
+						<input type="submit" class="additionalLink" wicket:id="credit" wicket:message="value:manageAccounts.button.credit" />
+						<input type="submit" class="additionalLink" wicket:id="balanceAlert" wicket:message="value:manageAccounts.button.balanceAlert" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="svaStartIndex" /> - <span wicket:id="svaEndIndex" /> (<span wicket:id="svaTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="svaNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="friendsListTable" class="listTable">
+
+							<wicket:enclosure child="svaPageable">
+
+								<thead>
+									<tr>
+										<th class="select"><wicket:message key="manageAccounts.primary" /></th>
+										<th class="accountBalance"><wicket:message key="manageAccounts.svasTable.accountBalance" /></th>
+									</tr>
+								</thead>
+
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="2"></td>
+									</tr>
+								</tfoot>
+
+								<tbody>
+									<tr wicket:id="svaPageable">
+										<td class="select"><input type="radio" wicket:id="svaSelected" /></td>
+										<td><div wicket:id="svaAccountBalance">[Account Balance]</div></td>
+									</tr>
+								</tbody>
+
+							</wicket:enclosure>
+
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="svaNoItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="column">
+				<div class="buttonWrap">
+					<input type="submit" class="submitForm" wicket:id="storePrimary" wicket:message="value:manageAccounts.button.storePrimary" />
+				</div>
+			</div> 
+		</span>
+
+	</form>
+
+
+</wicket:panel>
+
+</body>
+</html>

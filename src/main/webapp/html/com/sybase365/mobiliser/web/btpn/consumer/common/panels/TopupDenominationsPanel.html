@@ -1,0 +1,36 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div></div>
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="topupDenominationsForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="header.airtimeTopup" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column twoColumn">
+								<div class="input">
+									<label><wicket:message key="topup.Denomination" /></label> <select
+										wicket:id="topupBean.denomination">
+										<option>dummy</option>
+									</select>
+								</div>
+								<input type="submit" class="submit acc_chk"
+									wicket:id="submitButton" wicket:message="value:Masuk" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

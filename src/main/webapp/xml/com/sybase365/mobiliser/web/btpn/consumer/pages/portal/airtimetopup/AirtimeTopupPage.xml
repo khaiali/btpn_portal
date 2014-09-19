@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+	<entry key="airtimeTopup.telcoList">Pilih Provider</entry>
+	<entry key="airtimeBean.telco.Required">Kolom Provider harus diisi.</entry>
+	<entry key="airtimeBean.telco.null">Pilih Provider</entry>
+	<entry key="label.topupmobile">Data Tambahan</entry>
+	<entry key="label.msisdn">MSISDN</entry>
+	<entry key="label.manual">Masukan</entry>
+	<entry key="label.favourite">Pilih Daftar Favorite</entry>
+	<entry key="label.favlist">Pilih Dari Daftar Favorite</entry>
+	<entry key="label.mandatory">Wajib Isi</entry>
+	<entry key="Submit">Masuk</entry>
+	
+</properties>

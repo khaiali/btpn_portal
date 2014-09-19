@@ -1,0 +1,445 @@
+@charset "UTF-8";
+/*********************************************************************************************
+ *
+ *	trackers.css - Jan 5, 2012
+ *
+ *	dependencies: none
+ *	
+ *	sets styles for display of operations dashboard tracker components
+ *
+ *	mark white - msw@sybase.com
+ *
+ ********************************************************************************************/
+
+.hidden {  }
+
+.trackerIndiPanel {
+    position: relative; float: left; width: 720px; z-index: 10 !important; border-radius: 6px; border: 2px solid #606060; background-color: #6F6F6F; margin:5px;
+}
+html[dir="rtl"] .trackerIndiPanel {
+    float: right;
+}
+
+.trackerMaxiPanel {
+    position: relative; float: left; width: 317px; z-index: 10 !important; border-radius: 6px; border: 2px solid #606060; background-color: #6F6F6F; margin:5px;
+}
+html[dir="rtl"] .trackerMaxiPanel {
+    float: right;
+}
+
+.trackerMiniPanel {
+    position: absolute; top: 360px; left: 225px; width: 280px; z-index: 10 !important; border-radius: 6px; border: 2px solid #606060; background-color: #6F6F6F;
+}
+
+.trackerIndiPanel .top, .trackerMaxiPanel .top, .trackerMiniPanel .top {
+    width: 100%px; z-index: 99 !important; background: #6F6F6F url('../images/tracker/tracker_panel_top.png') 0 0 repeat-x; height: 15px;
+}
+
+.trackerIndiPanel .top span,.trackerMaxiPanel .top span, .trackerMiniPanel .top span {
+    padding-left: 10px; padding-right: 10px; float: left; color: #ffffff; font-weight: bold; background-color: #6F6F6F
+}
+html[dir="rtl"] .trackerIndiPanel .top span, html[dir="rtl"] .trackerMaxiPanel .top span, html[dir="rtl"] .trackerMiniPanel .top span {
+    float:right;
+}
+
+.trackerIndiPanel .top a, .trackerMaxiPanel .top a, .trackerMiniPanel .top a {
+    float: right; background: #6F6F6F url('../images/tracker/tracker_panel_close.png') 0 0 no-repeat; height: 15px; width: 15px;
+}
+html[dir="rtl"].trackerIndiPanel .top a, html[dir="rtl"] .trackerMaxiPanel .top a, html[dir="rtl"] .trackerMiniPanel .top a {
+    float: left;
+}
+
+.tracker {
+    position: relative; float: left; margin: 5px; background-color: #ffffff; border: 1px #D9DCDF solid;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;
+}
+html[dir="rtl"] .tracker {
+    float: right;
+}
+
+.tracker .header {
+    height:20px; padding-top: 2px; text-transform: bold; border-bottom: 1px #D9DCDF solid; margin-left: 5px
+}
+
+.tracker .header.mini {
+    width:210px;
+}
+
+.tracker .header.maxi {
+    width:295px;
+}
+
+.tracker .header.indi {
+    width:698px;
+}
+
+.tracker .header .title {
+    float: left; margin-left: 10px; font-weight: bold; overflow: hidden;
+}
+html[dir="rtl"] .tracker .header .title {
+    float: right;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.tracker .header .actions {
+    float: right; margin-right: 5px;
+}
+html[dir="rtl"] .tracker .header .actions {
+    float: left; margin-right: 0; margin-left: 5px;
+}
+
+.tracker .header .additionalLink {
+    padding-right: 5px; padding-left: 5px;
+}
+
+.tracker .header .additionalLink.last {
+    padding-right: 0px;
+}
+
+.tracker .content {
+    margin:5px;
+}
+
+.tracker .content.mini {
+    width:210px; height:150px;
+}
+
+.tracker .content.maxi {
+    width:295px; height:200px;
+}
+
+.tracker .content.indi {
+    width:698px; height:250px;
+}
+
+#trackerMiniList {
+    position: relative; float: left; margin: 5px; width: 270px;background: #F6F7F8; overflow: hidden; border-radius: 5px; 
+}
+html[dir="rtl"] #trackerMiniList {
+    float: right;
+}
+
+
+#trackerMiniList .slide {
+    position: relative; margin: 5px; width: 13px; height: 185px
+}
+
+#trackerMiniInfo {
+  position: relative; float: left; width: 100%; text-align: center; margin-top: 0px; margin-bottom: 0px; height: 10px;
+}
+html[dir="rtl"] #trackerMiniInfo {
+    float: right;
+}
+
+#trackerMiniList .forward:hover {
+  background-position: 0 -18px;
+}
+
+#trackerMiniList .back:hover {
+  background-position: 0 -54px;
+}
+
+#trackerMaxiList {
+    position: relative; 
+    float: left;
+    margin-left: 20px;
+}
+html[dir="rtl"] #trackerMaxiList {
+    float: right;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+#trackerPageInfo {
+  position: relative; float: left; width: 100%; text-align: center; margin-top: 10px; margin-bottom: 0px;
+}
+html[dir="rtl"] #trackerPageInfo {
+    float: right;
+}
+
+/* Tracker Panel Slider */
+
+#prevBtn, #nextBtn {
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    text-indent: -8000px;
+}
+
+/* Tracker Panel Slider on Mini-Tracker View */
+		
+#trackerMiniList #trackerSliderContainer{	
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	width: 232px;
+	background: #fff;		
+	margin-bottom: 2em;
+}	
+			
+#trackerMiniList #trackerSliderContent{
+	position: relative;
+}			
+
+#trackerMiniList #trackerPanel ul, #trackerPanel li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#trackerMiniList #trackerPanel li { 
+	width: 232px;
+	height: 195px;
+	overflow: hidden; 
+}	
+#trackerMiniList #prevBtn, #trackerMiniList #nextBtn { 
+	display: block;
+	width: 19px;
+	height: 18px;
+	position: absolute;
+	left: -19px;
+	top: 95px;
+	z-index: 1000;
+}	
+#trackerMiniList #nextBtn { 
+	left: 232px;
+}														
+#trackerMiniList #prevBtn a, #trackerMiniList #nextBtn a { 
+	display: block;
+	position: relative;
+	width: 19px;
+    height: 18px;
+	background: url('../images/tracker/tracker-slider-arrow-small.png') no-repeat 0 0;
+	background-position: 0 -36px;
+}
+#trackerMiniList #prevBtn a:hover{ 
+	background-position: 0 -54px;
+}
+#trackerMiniList #nextBtn a { 
+	background: url('../images/tracker/tracker-slider-arrow-small.png') no-repeat 0 0;
+	background-position: 0 0;
+}
+#trackerMiniList #nextBtn a:hover{ 
+	background: url('../images/tracker/tracker-slider-arrow-small.png') no-repeat 0 0;
+	background-position: 0 -18px;
+}
+#trackerMiniList #prevBtn a.disabled { 
+	background: url('../images/tracker/tracker-slider-arrow-disabled-small.png') no-repeat 0 0;	
+	background-position: 0 -36px;
+}
+#trackerMiniList #prevBtn a.disabled:hover { 
+	background-position: 0 -54px;
+}
+#trackerMiniList #nextBtn a.disabled { 
+	background: url('../images/tracker/tracker-slider-arrow-disabled-small.png') no-repeat 0 0;	
+	background-position: 0 0;
+}	
+#trackerMiniList #nextBtn a.disabled { 
+	background-position: 0 -18px;
+}	
+
+#trackerMiniList ol#panelLink {
+	margin: 5px 0;
+}
+		
+/* Tracker Panel Slider on Maxi-Tracker View */
+		
+#trackerMaxiList #trackerSliderContainer{	
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	width: 665px;
+	background: #fff;		
+	margin-bottom: 2em;
+}	
+			
+#trackerMaxiList  #trackerSliderContent{
+	position: relative;
+}			
+
+#trackerMaxiList  #trackerPanel ul, #trackerPanel li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#trackerMaxiList #trackerPanel li { 
+	width: 665px;
+	height: 500px;
+	overflow: hidden; 
+}	
+#trackerMaxiList #prevBtn, #trackerMaxiList #nextBtn { 
+	display: block;
+	width: 38px;
+	height: 36px;
+	position: absolute;
+	left: -38px;
+	top: 255px;
+	z-index: 1000;
+}	
+#trackerMaxiList #nextBtn { 
+	left: 665px;
+}												
+html[dir="rtl"] #trackerMaxiList #prevBtn { 
+	left: 670px;
+}														
+html[dir="rtl"] #trackerMaxiList #nextBtn { 
+	left: -30px;
+}
+#trackerMaxiList #prevBtn a { 
+	display: block;
+	position: relative;
+	width: 38px;
+	height: 36px;
+	background: url('../images/tracker/tracker-slider-arrow-large.png') no-repeat 0 0;
+	background-position: 0 -72px;
+}
+html[dir="rtl"] #trackerMaxiList #prevBtn a { 
+	background: url('../images/tracker/tracker-slider-arrow-large.png') no-repeat 0 0;
+	background-position: 0 0;
+}
+#trackerMaxiList #prevBtn a:hover{ 
+	background-position: 0 -108px;
+}
+#trackerMaxiList #prevBtn a.disabled { 
+	background: url('../images/tracker/tracker-slider-arrow-disabled-large.png') no-repeat 0 0;	
+	background-position: 0 -72px;
+}
+html[dir="rtl"] #trackerMaxiList #prevBtn a.disabled { 
+	background: url('../images/tracker/tracker-slider-arrow-disabled-large.png') no-repeat 0 0;	
+	background-position: 0 0;
+}
+#trackerMaxiList #prevBtn a.disabled:hover { 
+	background-position: 0 -108px;
+}
+#trackerMaxiList #nextBtn a { 
+	display: block;
+	position: relative;
+	width: 38px;
+	height: 36px;
+	background: url('../images/tracker/tracker-slider-arrow-large.png') no-repeat 0 0;
+	background-position: 0 0;
+}
+html[dir="rtl"] #trackerMaxiList #nextBtn a { 
+	background: url('../images/tracker/tracker-slider-arrow-large.png') no-repeat 0 0;
+	background-position: 0 -72px;
+}
+#trackerMaxiList #nextBtn a:hover {
+	background: url('../images/tracker/tracker-slider-arrow-large.png') no-repeat 0 0;
+	background-position: 0 -36px;
+}
+#trackerMaxiList #nextBtn a.disabled { 
+	background: url('../images/tracker/tracker-slider-arrow-disabled-large.png') no-repeat 0 0;
+	background-position: 0 -36px;
+}
+html[dir="rtl"] #trackerMaxiList #nextBtn a.disabled { 
+	background: url('../images/tracker/tracker-slider-arrow-disabled-large.png') no-repeat 0 0;	
+	background-position: 0 -72px;
+}
+
+#trackerMaxiList ol#panelLink {
+	margin: 5px 0;
+}
+
+/* Tracker Panel Slider on Mini-Tracker View */
+		
+#trackerMiniList #trackerSliderContainer{	
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	width: 232px;
+	background: #fff;		
+	margin-bottom: 2em;
+}	
+			
+#trackerMiniList #trackerSliderContent{
+	position: relative;
+}			
+
+#trackerMiniList #trackerPanel ul, #trackerPanel li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#trackerMiniList #trackerPanel li { 
+	width: 232px;
+	height: 195px;
+	overflow: hidden; 
+}	
+#trackerMiniList #prevBtn, #trackerMiniList #nextBtn { 
+	display: block;
+	width: 19px;
+	height: 18px;
+	position: absolute;
+	left: -19px;
+	top: 95px;
+	z-index: 1000;
+}	
+#trackerMiniList #nextBtn { 
+	left: 232px;
+}														
+#trackerMiniList #prevBtn a, #trackerMiniList #nextBtn a { 
+	display: block;
+	position: relative;
+	width: 19px;
+    height: 18px;
+	background: url('../images/tracker/tracker-slider-arrow-small.png') no-repeat 0 0;
+	background-position: 0 -36px;
+}
+#trackerMiniList #prevBtn a:hover{ 
+	background-position: 0 -54px;
+}
+#trackerMiniList #nextBtn a { 
+	background: url('../images/tracker/tracker-slider-arrow-small.png') no-repeat 0 0;
+	background-position: 0 0;
+}
+#trackerMiniList #nextBtn a:hover{ 
+	background: url('../images/tracker/tracker-slider-arrow-small.png') no-repeat 0 0;
+	background-position: 0 -18px;
+}
+#trackerMiniList #prevBtn a.disabled { 
+	background: url('../images/tracker/tracker-slider-arrow-disabled-small.png') no-repeat 0 0;	
+	background-position: 0 -36px;
+}
+#trackerMiniList #prevBtn a.disabled:hover { 
+	background-position: 0 -54px;
+}
+#trackerMiniList #nextBtn a.disabled { 
+	background: url('../images/tracker/tracker-slider-arrow-disabled-small.png') no-repeat 0 0;	
+	background-position: 0 0;
+}	
+#trackerMiniList #nextBtn a.disabled { 
+	background-position: 0 -18px;
+}	
+
+#trackerMiniList ol#panelLink {
+	margin: 5px 0;
+}
+
+ol#panelLink {
+	margin: 5px 0;
+	padding: 0;
+}
+ol#panelLink li {
+	margin: 0 2px 0 0; 
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+
+.dot {
+    display: inline-block;
+    background-color: #E1E1E1;
+}
+.dot.maxi {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+.dot.mini {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+}
+.showing {
+	background-color: #8999A6;
+}

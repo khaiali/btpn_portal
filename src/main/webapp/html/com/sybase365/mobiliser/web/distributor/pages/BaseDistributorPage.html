@@ -1,0 +1,54 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<title><wicket:message key="distributor.page.title" /></title>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div id="leftContent" class="content">
+
+		<wicket:enclosure child="selected.context.name">
+		
+			<div class="cmodule">
+
+				<h2>
+					<a href="#"><span wicket:id="selected.context.item" /></a>
+				</h2>
+
+				<p>
+					<label class="key"> <span wicket:id="selected.context.name"></span> </label>
+				</p>
+				<p>
+					<label class="key"> <span wicket:id="selected.context.id"></span> </label>
+				</p>
+
+			</div>
+			
+		</wicket:enclosure>
+
+		<ul class="submenu">
+
+			<span wicket:id="leftMenu"> 
+				<span wicket:id="leftMenuItems">
+						<li wicket:id="leftMenuItem">
+							<div>
+								<a href="/accounts" wicket:id="leftMenuLink"> <span wicket:id="leftMenuLabel">Accounts</span> </a> 
+								<span wicket:id="leftMenuLabel"></span>
+							</div>
+						</li> 
+				</span> 
+			</span>
+
+		</ul>
+
+	</div>
+
+	<wicket:child />
+
+</wicket:extend>
+
+</body>
+</html>

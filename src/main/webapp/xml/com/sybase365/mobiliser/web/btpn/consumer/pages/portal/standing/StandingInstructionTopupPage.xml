@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+	<entry key="header.Mobile">Kirim Uang Ke Nomor Handphone</entry>
+	<entry key="label.topupmobile">Isi Pulsa</entry>
+	<entry key="label.msisdn">Nomor Handphone</entry>
+	<entry key="label.manual">Masukan</entry>
+	<entry key="label.favorite">Pilih dari Daftar Favorit</entry>
+	<entry key="label.phoneNumber">Nomor Handphone</entry>
+	<entry key="label.favlist">Daftar Favorit</entry>
+	<entry key="label.amount">Jumlah</entry>
+	<entry key="label.mandatory">Wajib isi</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="label.amount.Required">Jumlah Harus Diisi.</entry>
+	<entry key="label.amount.PatternValidator">'${input}' Nilai yang Anda Masukkan Salah</entry>
+	<entry key="label.amount.AmountValidator">${input} Nilai yang Anda Masukkan Salah</entry>
+	<entry key="label.amount.IConverter.Long">${input} Nilai yang Anda Masukkan Salah</entry>
+	<entry key="label.accountType.null">Pilih Tipe Rekening</entry>
+	<entry key="label.accountType.Required">Silahkan Pilih Tipe Rekening.</entry>
+	<entry key="label.payeeMsisdn.Required">No.HP Harus Diisi.</entry>
+	<entry key="label.payeeMsisdn.PatternValidator">'${input}' No.HP yang Anda Masukkan Salah.</entry>
+	<entry key="error.msisdn">No.HP yang Anda Masukkan Tidak Dapat Disimpan Diinstruksi Favorit.</entry>
+
+</properties>

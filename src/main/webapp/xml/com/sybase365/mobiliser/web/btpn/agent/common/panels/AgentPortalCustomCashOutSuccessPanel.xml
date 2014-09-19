@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.cashOut">Cash-Out</entry>
+	<entry key="label.cashOut.cashOutAmount">Cash-Out Amount</entry>
+	<entry key="headLine.cashOutSuccess">Cash Out Success</entry>
+	
+	<entry key="label.cashOut.success.mobileNumber">MSISDN</entry>
+	<entry key="label.cashOut.success.name">NAME</entry>
+	
+	<entry key="label.cashOut.success.accountNumber">Account Number</entry>
+	<entry key="label.cashOut.accountName">Name</entry>
+	<entry key="label.cashOut.accountType">Account Type</entry>
+	<entry key="label.cashOut.mobileNumber">Mobile Number</entry>
+	<entry key="label.cashOut.accountBanlace">Account Balance</entry>
+	<entry key="label.cashOut.cashOutAmount">Cash-Out Amount(IDR)</entry>
+	
+	<entry key="label.cashOut.error">Error accoured in cash out details page</entry>
+	<entry key="error.cashOut.fail">An error occurred while doing cash out</entry>
+
+</properties>

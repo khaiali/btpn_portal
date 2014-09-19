@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.checkMobileAccount">Cash-In</entry>
+	<entry key="cashIn.glAccount">GL Account</entry>
+	<entry key="cashIn.mobileNumber">MSISDN</entry>
+	<entry key="cashIn.name">Name</entry>
+	<entry key="cashIn.amount">Amount</entry>
+	<entry key="cashIn.error">Cash In Error</entry>
+	<entry key="cashIn.totalitems.header">%s items found, displaying %s to %s.</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="cashInBean.glAccount">GL Account</entry>
+	<entry key="cashInBean.msisdn">MSISDN</entry>
+	<entry key="cashInBean.cashinAmount">Amount</entry>
+	<entry key="cashInBean.msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+	<entry key="cashInBean.name.PatternValidator">'${input}' is not a valid Name</entry>
+
+	<entry key="cashIn.emptyRecordsMessage">Nothing found to display.</entry>
+		
+	<!-- ##### Error Service ##### -->
+	<entry key="error.199">No PaymentHandler found for debit PI Type [EXTERNAL|Balance MiniStatement Fee]!, please try again.</entry>
+	<entry key="error.2502">PAYEE INVALID, please try again.</entry>
+	<entry key="error.2511">PAYER UNKNOWN, please try again.</entry>
+	<entry key="error.3012">Cut Off In Progress, please try again.</entry>
+	<entry key="inquiry.fail">Cash In Inquiry Failed, please try again later. </entry>
+	<entry key="inquiry.failure.exception">We are experiencing technical difficulties. Please try
+		again later.</entry>
+
+</properties>

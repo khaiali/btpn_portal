@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="billConfigListForPayment.title">Pay Bill</entry>
+    <entry key="billConfigListForPayment.name">Name</entry>
+    <entry key="billConfigListForPayment.type">Type</entry>
+    <entry key="billConfigListForPayment.reference">Reference</entry>
+    <entry key="billConfigListForPayment.actions">Actions</entry>
+    <entry key="billConfigListForPayment.payAction">Make Payment</entry>      
+    <entry key="billConfigListForPayment.noItemsMsg">No Bill Configurations found. </entry>
+    <entry key="billConfigListForPayment.addInvoiceConfigurationHelp">Select the option “Bill configuration” from the navigation to create an Invoice Configuration.</entry>
+</properties>

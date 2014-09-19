@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="billConfigurationList.title">Bill Configuration</entry>
+    <entry key="billConfigurationList.select">Select</entry>
+    <entry key="billConfigurationList.name">Name</entry>
+    <entry key="billConfigurationList.type">Type</entry>
+    <entry key="billConfigurationList.reference">Reference</entry>
+    <entry key="billConfigurationList.actions">Actions</entry>
+    <entry key="billConfigurationList.editAction">Edit</entry>      
+    <entry key="billConfigurationList.remove.button">Remove From List</entry>
+    <entry key="billConfigurationList.add.button">Add a Bill Configuration</entry>
+    <entry key="billConfigurationList.addBilConfigurationHelp">Add a bill configuration using the 'Add a Bill Configuration' link above.</entry>
+    <entry key="billConfigurationList.noItemsMsg">No Bill Configurations found.</entry>
+    <entry key="billConfigurationList.remove.confirm">Do you really want to remove the selected bill configurations?</entry>
+    <entry key="billConfigurationList.nothing.selected.remove">You must select the entries you want to remove</entry>
+</properties>

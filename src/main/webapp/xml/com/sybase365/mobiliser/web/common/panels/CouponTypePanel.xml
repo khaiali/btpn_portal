@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="couponType.id">ID</entry>
+  <entry key="couponType.name">Name</entry>
+  <entry key="couponType.name.Required">Name is required</entry>
+  <entry key="couponType.issuer">Coupon Issuer</entry>
+  <entry key="couponType.issuer.Required">Coupon Issuer is required</entry>
+  <entry key="couponType.active">Active</entry>
+  <entry key="couponType.issueFrom">Issue From</entry>
+  <entry key="couponType.issueTo">Issue To</entry>
+  <entry key="couponType.price">Price</entry>
+  <entry key="couponType.purchasePrice.IConverter.Long">Price is invalid</entry>
+  <entry key="couponType.price.required">Price is required</entry>
+  <entry key="couponType.public">Public</entry>
+  <entry key="couponType.maxViews">Max. Views</entry>
+  <entry key="couponType.maxViews.MinimumValidator">Max. Views is invalid</entry>
+  <entry key="couponType.maxViews.IConverter.Integer">Max. Views is invalid</entry>
+  <entry key="couponType.maxUses">Max. Uses</entry>
+  <entry key="couponType.maxUses.MinimumValidator">Max. Uses is invalid</entry>
+  <entry key="couponType.maxUses.IConverter.Integer">Max. Uses is invalid</entry>
+  <entry key="couponType.codeType">Code Type</entry>
+  <entry key="couponType.codeType.Required">Code Type is required</entry>
+  <entry key="couponType.purchaseCurrency.null">Currency</entry>
+  <entry key="couponType.purchaseCurrency.required">Currency is required</entry>
+  
+  <entry key="issuer.list.load.error">An error occurred while loading issuer list</entry>
+  <entry key="create.coupon.type.error">An error occurred while creating coupon type</entry>
+  <entry key="update.coupon.type.error">An error occurred while editing coupon type</entry>
+  <entry key="update.coupon.type.success">Coupon type updated successfully</entry>
+  <entry key="create.coupon.type.success">Coupon type created successfully</entry>
+</properties>

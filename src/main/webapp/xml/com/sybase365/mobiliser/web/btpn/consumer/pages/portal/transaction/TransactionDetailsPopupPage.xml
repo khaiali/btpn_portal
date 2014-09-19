@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.transactionHeader">Detail Transaksi</entry>
+	<entry key="label.Date">Tanggal</entry>
+	<entry key="label.time">Waktu</entry>
+	<entry key="label.type">Tipe</entry>
+	<entry key="label.error.code">Kode Error</entry>
+	<entry key="label.name">Nama Partisipan</entry>
+	<entry key="label.text">Text</entry>
+	<entry key="label.amount">Jumlah</entry>
+	<entry key="label.fee">Biaya</entry>
+</properties>

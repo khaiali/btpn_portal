@@ -1,0 +1,105 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="productDetailsForm" method="post">
+						<fieldset>
+							<legend class="reg_tab">
+								<wicket:message key="header.addProduct" />
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column">
+								<div class="input">
+									<label for="productname"><wicket:message
+											key="label.productName" /></label> <div class="input_value"
+										wicket:id="productsBean.productName"></div>
+								</div>
+
+								<div class="input">
+									<label for="producttype"><wicket:message
+											key="label.productType" /></label> <div class="input_value"
+										wicket:id="productsBean.productType.value"></div>
+								</div>
+
+								<div class="input">
+									<label for="productglcode"><wicket:message
+											key="label.productGLCode" />
+									</label> <div class="input_value" wicket:id="productsBean.productGLCode.value"></div>
+								</div>
+
+								<div class="input">
+									<label for="feegl"><wicket:message
+											key="label.feeGLCode" /></label> <div class="input_value"
+										wicket:id="productsBean.feeGLCode.value"></div>
+								</div>
+
+								<div class="input">
+									<label for="feegl"><wicket:message
+											key="label.roleName" /></label> <div class="input_value"
+										wicket:id="productsBean.roleName"></div>
+								</div>
+								
+								<div class="input">
+									<label for="feegl"><wicket:message
+											key="label.roleDescription" /></label> <div class="input_value"
+										wicket:id="productsBean.roleDescription"></div>
+								</div>
+								
+								<div class="input">
+									<label for="minbalance"><wicket:message
+											key="label.minBal" /></label><div class="input_value"
+										wicket:id="productsBean.minBalance"></div>
+											
+								</div>
+
+								<div class="input">
+									<label for="initialdeposit"><wicket:message
+											key="label.initialDep" /></label><div class="input_value"
+										wicket:id="productsBean.initialDeposit"></div>
+								</div>
+
+								<div class="input">
+									<label for="adminfee"><wicket:message
+											key="label.adminFee" /></label> <div class="input_value"
+										wicket:id="productsBean.adminFee"></div>
+								</div>
+							</div>
+							<div class="displayTag" style="float: left"
+								wicket:id="productsRangeContainer">
+								<table id="tierlist" class="tierlist">
+									<thead>
+										<tr id="headRow">
+											<th><wicket:message key="label.minRange" /></th>
+											<th><wicket:message key="label.maxRange" /></th>
+											<th><wicket:message key="label.interests.fixed" /></th>
+											<th><wicket:message key="label.interests.percentage" /></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="odd" wicket:id="pageable">
+											<td><div class="input_value" wicket:id="minRange"></div></td>
+											<td><div class="input_value" wicket:id="maxRange"></div></td>
+											<td><div class="input_value" wicket:id="fixedInterest"></div></td>
+											<td><div class="input_value" wicket:id="percentInterest"></div></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<input name="addProduct" wicket:id="confirmBtn"	wicket:message="value:Confirm" tabindex="1" class="submit acc_chk" type="submit" /> 
+								<input name="editProduct" style="left:250px" wicket:id="cancelBtn" wicket:message="value:Cancel" tabindex="1" class="submit acc_chk" type="submit" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

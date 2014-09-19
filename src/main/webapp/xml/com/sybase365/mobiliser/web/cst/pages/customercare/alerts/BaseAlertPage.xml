@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+<!-- ############# Manage Alerts Page ############# -->
+
+	<entry key="manageAlerts.title">Mobile Alerts</entry>
+    <entry key="manageAlerts.Account">Account</entry>
+    <entry key="manageAlerts.ContactPoint">Contact Point</entry>
+    <entry key="manageAlerts.MinAmount">Min Amount</entry>
+    <entry key="manageAlerts.MaxAmount">Max Amount</entry>
+    <entry key="manageAlerts.MessageTypeSelection">Message Type Selection</entry>
+    <entry key="manageAlerts.MobileAlerts">Mobile Alerts</entry>
+    <entry key="manageAlerts.addMobileAlerts">Add Mobile Alerts</entry>
+    <entry key="manageAlerts.TransactionType">Type</entry>
+    <entry key="manageAlerts.Amount">Amount</entry>
+    <entry key="manageAlerts.Frequency">Frequency</entry>
+	
+	<!-- ############# Manage Alerts Page Localize lable for required field ############# -->
+	<entry key="alertAccountChooserBean.paymentInstrumentId">Account</entry>
+	<entry key="mobileAlertsBean.minAmount">Min Amount</entry>
+	<entry key="mobileAlertsBean.maxAmount">Max Amount</entry>
+	<entry key="messageTypeGroup">Message Type</entry>
+	<entry key="mobileAlertsBean.transactionType">Type</entry>
+	<entry key="mobileAlertsBean.logicOperator">Amount Type</entry>
+	<entry key="mobileAlertsBean.amount">Amount</entry>
+	<entry key="frquencyTypeGroup">Frequency Type</entry>
+	<entry key="checkgroup">Contact Point</entry>
+	
+	
+	<!-- ############# Localize error message for Min Amount,Max Amount and Amount field.############# -->
+	<entry key="mobileAlertsBean.amount.AmountValidator">'${input}' is not a valid Amount</entry>
+	<entry key="mobileAlertsBean.minAmount.AmountValidator">'${input}' is not a valid Amount</entry>
+	<entry key="mobileAlertsBean.maxAmount.AmountValidator">'${input}' is not a valid Amount</entry>
+	
+	
+	 <!-- ############# Localize error message for alert blackOut panel############# -->
+	<entry key="disableAlertsPeriodFrom">From date</entry>
+	<entry key="disableAlertsPeriodTo">To date</entry>
+	<entry key="alertBlackOutChooserBean.startHours">Start hour</entry>
+	<entry key="alertBlackOutChooserBean.startMinutes">Start minute</entry>
+	<entry key="alertBlackOutChooserBean.endsHours">End hour</entry>
+	<entry key="alertBlackOutChooserBean.endsMinutes">End minute</entry>
+	
+	<entry key="manageAlerts.alertOptions.addAlertType.1">Add Account Balance Summary Alert</entry>
+    <entry key="manageAlerts.alertOptions.addAlertType.2">Add Account Balance Threshold Alert</entry>
+    <entry key="manageAlerts.alertOptions.addAlertType.3">Add Bank Inquiry Response Alert</entry>
+    <entry key="manageAlerts.alertOptions.addAlertType.4">Add Failed Attempt Lockout Alert</entry>
+    <entry key="manageAlerts.alertOptions.addAlertType.5">Add Insufficient Funds Alert</entry>
+    <entry key="manageAlerts.alertOptions.addAlertType.6">Add Invalid Account Access Alert</entry>
+    <entry key="manageAlerts.alertOptions.addAlertType.7">Add Panic Pay Alert</entry>
+    <entry key="manageAlerts.alertOptions.addAlertType.8">Add Password Change Alert</entry>
+    <entry key="manageAlerts.alertOptions.addAlertType.9">Add Transaction Alert</entry>
+    <entry key="manageAlerts.alertOptions.addAlertType.10">Add Unread Bank Message Alert</entry>
+    
+    <entry key="manageAlerts.alertOptions.addAlertTypeHelp.1">This alert notifies the customer daily of his prior day closing balance for the selected account</entry>
+    <entry key="manageAlerts.alertOptions.addAlertTypeHelp.2">This alert notifies the customer daily when an account balance goes over or under a certain amount.</entry>
+   	<entry key="manageAlerts.alertOptions.addAlertTypeHelp.3"> 
+	 This alert notifies the customer immediately when his secure inbox contains a bank response to one of his inquiries 
+	</entry>
+    <entry key="manageAlerts.alertOptions.addAlertTypeHelp.4">This alert notifies the customer immediately when he is locked out after repeated login attempts with invalid authentication credentials.</entry>
+    <entry key="manageAlerts.alertOptions.addAlertTypeHelp.5">This alert notifies the customer daily when a transaction fails due to an insufficient account balance. By selecting Text Conversation, the customer can make a transfer to cover the insufficient funds in response to this alert.</entry>
+    <entry key="manageAlerts.alertOptions.addAlertTypeHelp.6">This alert notifies the customer immediately when his account has been accessed after an initial login attempt with invalid authentication credentials. By selecting Text Conversation, the customer can lock his user account in response to this alert.</entry>
+    <entry key="manageAlerts.alertOptions.addAlertTypeHelp.7">This alert notifies the customer daily when an unpaid bill has an approaching due date. By selecting Text Conversation, the customer can pay his bill in response to this alert.</entry>
+    <entry key="manageAlerts.alertOptions.addAlertTypeHelp.8">This alert notifies the customer immediately when his password has changed.</entry>
+    <entry key="manageAlerts.alertOptions.addAlertTypeHelp.9">This alert notifies the customer daily if any cleared transaction meets the selected critiera</entry>
+    <entry key="manageAlerts.alertOptions.addAlertTypeHelp.10">This alert notifies the customer daily when he has unread messages in his secure inbox</entry>
+    
+    <entry key="manageAlerts.alertOptions.editAlertType.1">Edit Account Balance Summary Alert</entry>
+    <entry key="manageAlerts.alertOptions.editAlertType.2">Edit Account Balance Threshold Alert</entry>
+    <entry key="manageAlerts.alertOptions.editAlertType.3">Edit Bank Inquiry Response Alert</entry>
+    <entry key="manageAlerts.alertOptions.editAlertType.4">Edit Failed Attempt Lockout Alert</entry>
+    <entry key="manageAlerts.alertOptions.editAlertType.5">Edit Insufficient Funds Alert</entry>
+    <entry key="manageAlerts.alertOptions.editAlertType.6">Edit Invalid Account Access Alert</entry>
+    <entry key="manageAlerts.alertOptions.editAlertType.7">Edit Panic Pay Alert</entry>
+    <entry key="manageAlerts.alertOptions.editAlertType.8">Edit Password Change Alert</entry>
+    <entry key="manageAlerts.alertOptions.editAlertType.9">Edit Transaction Alert</entry>
+    <entry key="manageAlerts.alertOptions.editAlertType.10">Edit Unread Bank Message Alert</entry>
+    
+    <!-- ############# Add/Edit  Alerts success message ############# -->
+    <entry key="manageAlerts.alertActionAddAlert.message">Alert has been added successfully.</entry>
+    <entry key="manageAlerts.alertActionEditAlert.message">Alert has been updated successfully. </entry>
+    
+    <entry key="anyAmount.TransactionType.amountValidation.error"> Remove amount.</entry>
+    <entry key="amount.too.small.error">Amount too small</entry>
+
+
+</properties>

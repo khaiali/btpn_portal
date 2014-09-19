@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+	<entry key="headLine.interestTax">Interest Tax Management Confirm Approval</entry>
+	<entry key="label.customerIdentifier"> CustomerIdentifier </entry>
+	<entry key="label.customerIdentifierType"> CustomerIdentifier Type </entry>
+	<entry key="label.customerTypeId"> CustomerType</entry>
+	<entry key="label.paymentInstrumentId">PaymentInstrument</entry>
+	<entry key="label.paymentInstrumentTypeId">PaymentInstrument Type</entry>
+	<entry key="label.accrueGLCode">Accrual GL Code </entry>
+	<entry key="label.taxGLCode">Tax GL Code </entry>
+	<entry key="label.validFrom"> Valid From </entry>
+	<entry key="label.thresholdAmount"> Thereshold Amount </entry>
+	<entry key="label.fixedFee">Fixed Fee</entry>
+	<entry key="label.percentageFee">Percentage Fee</entry>
+	<entry key="label.maximumFee">Maximum Fee</entry>
+	<entry key="label.minimumFee">Minimum Fee</entry>
+	<entry key="label.note"> Note </entry>
+	<entry key="label.description"> Description </entry>
+	
+	<entry key="approve.interesttax.success"> Approve Tax Interest successfully </entry>
+	<entry key="reject.interesttax.success"> Reject Tax Interest successfully </entry>
+
+</properties>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headline.biller">Bill Payment Update Management</entry>
+	<entry key="headline.billerDetail">Bill Payment Detail Management</entry>
+	<entry key="label.description"> Description </entry>
+	<entry key="label.useCase"> Use Case </entry>
+	<entry key="label.productLabel"> Product </entry>
+	<entry key="label.orgUnit"> Debit Org Unit </entry>
+	<entry key="label.piType"> Debit Pi Type </entry>
+	<entry key="label.customerType">Customer Type </entry>
+	<entry key="label.glCode"> GL Code </entry>
+	<entry key="label.amount"> Amount </entry>
+	<entry key="label.validFrom"> Valid From </entry>
+	<entry key="label.applyToPayee"> Apply to Payee Fee </entry>
+	<entry key="label.currency">Currency code</entry>
+	<entry key="label.fixedFee">Fixed Fee</entry>
+	<entry key="label.percentageFee">Percentage Fee</entry>
+	<entry key="label.maximumFee"> Maximum Fee </entry>
+	<entry key="label.minimumFee"> Minimum Fee </entry>
+	<entry key="label.thresholdAmount"> Threshold Amount </entry>
+	<entry key="label.action">Action</entry>
+	<entry key="label.details">details</entry>
+	
+	<entry key="fees.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="no.items">Nothing found to display.</entry>
+
+	<!-- Required Field validations -->
+	<entry key="feeBean.glCode.Required">GL Code is required.</entry>
+	<entry key="feeBean.applyToPayee.Required">Payee Fee is required.</entry>
+	<entry key="feeBean.validFrom.Required">Valid From is required.</entry>
+	<entry key="feeBean.currency.Required">Currency is required.</entry>
+	<entry key="feeDetailsBean.fixedFee.Required">Fixed Fee is required.</entry>
+	<entry key="feeDetailsBean.percentageFee.Required">Percentage Fee is required.</entry>
+	<entry key="feeDetailsBean.minimumFee.Required">Minimum Fee is required.</entry>
+	<entry key="feeDetailsBean.thresholdAmount.Required">Threshold Amount is required.</entry>
+	
+	
+	<entry key="feeDetailsBean.thresholdAmount.PatternValidator">${input} Fee Amount is invalid.</entry>
+	<entry key="feeDetailsBean.minimumFee.PatternValidator">${input} Fee Amount is invalid.</entry>
+	<entry key="feeDetailsBean.fixedFee.PatternValidator">${input} Fee Amount is invalid.</entry>
+
+</properties>

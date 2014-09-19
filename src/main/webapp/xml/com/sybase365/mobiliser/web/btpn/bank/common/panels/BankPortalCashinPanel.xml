@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.checkMobileAccount">Check Mobile Account</entry>
+	<entry key="cashIn.mobileNumber">MSISDN</entry>
+	<entry key="cashIn.name">Name</entry>
+	<entry key="cashIn.amount">Amount</entry>
+	<entry key="cashIn.dataview.customerId">Customer ID</entry>
+	<entry key="cashIn.dataview.msisdn">MSISDN</entry>
+	<entry key="cashIn.dataview.displayName">Display Name</entry>
+	<entry key="cashIn.error">Cash In Error</entry>
+	<entry key="cashIn.totalitems.header">%s items found, displaying %s to %s.</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="cashInBean.msisdn.Required">Please enter MSISDN.</entry>
+	<entry key="cashInBean.name.Required">Please enter Name.</entry>
+	<entry key="cashInBean.msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+	<entry key="cashInBean.name.PatternValidator">'${input}' is not a valid Name</entry>
+	<entry key="cashIn.emptyRecordsMessage">Nothing found to display.</entry>
+	<entry key="error.search">An error occured while searching.</entry>
+
+
+</properties>

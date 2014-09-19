@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="customer.find.criteria">Search For</entry>
+	<entry key="customer.find.criteria.mobileNo">Mobile Number</entry>
+	<entry key="customer.find.criteria.displayName">Display Name</entry>
+	<entry key="customer.find.criteria.employeeID">Employee ID</entry>
+	<entry key="customer.find.criteria.email">Email</entry>
+	<entry key="customer.find.criteria.status">Status</entry>
+	<entry key="Find">Find</entry>
+	<entry key="add">Add</entry>
+	<entry key="search.failure.exception">We are experiencing technical difficulties, please try again.</entry>
+	<entry key="search.empty">No Match Found.</entry>
+</properties>

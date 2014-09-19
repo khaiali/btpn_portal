@@ -1,0 +1,391 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:panel>
+		<wicket:child />
+		<div id="centerContent" class="content">
+			<form wicket:id="confirmRegistrationForm">
+				<div wicket:id="errorMessages"></div>
+				<fieldset>
+					<legend id="customerInfo" wicket:id="customerInfo.headLine"></legend>
+					<div class="column">
+						<div class="Account_info" id="displayNameBlock">
+							<label> <wicket:message key="confirmData.name" />
+							</label>
+							<div class="input_value" wicket:id="customer.name"></div>
+						</div>
+
+						<div class="Account_info" id="motherNameBlock">
+							<label for="motherName"> <wicket:message
+									key="confirmData.mothersMaidenName" />
+							</label>
+							<div class="input_value" wicket:id="customer.mothersMaidenName"></div>
+						</div>
+
+
+						<div class="Account_info" id="nationalityBlock">
+							<label for="nationality"> <wicket:message
+									key="confirmData.nationality" /></label>
+							<div class="input_value" wicket:id="customer.nationality.value"></div>
+						</div>
+
+						<div class="Account_info" id="languageBlock">
+							<label for="language"> <wicket:message
+									key="confirmData.language" />
+							</label>
+							<div class="input_value" wicket:id="customer.language.value"></div>
+						</div>
+
+						<div class="Account_info" id="idReceiptModeBlock">
+							<label for="idReceiptMode"> <wicket:message
+									key="confirmData.receiptMode" />
+							</label>
+							<div class="input_value" wicket:id="customer.receiptMode.value"></div>
+						</div>
+
+						<div class="Account_info" wicket:id="idglCodeBlock">
+							<label for="idglCode"> <wicket:message
+									key="confirmData.glCode" />
+							</label>
+							<div class="input_value" wicket:id="customer.glCodeId.value"></div>
+						</div>
+
+						<div class="Account_info" id="jobBlock">
+							<label for="job"><wicket:message key="confirmData.job" /></label>
+							<div class="input_value" wicket:id="customer.job.value"></div>
+						</div>
+
+						<div class="Account_info" id="purposeofAccBlock">
+							<label for="purposeofAcc"> <wicket:message
+									key="confirmData.purposeOfAccount" /></label>
+							<div class="input_value"
+								wicket:id="customer.purposeOfAccount.value"></div>
+						</div>
+
+						<div class="Account_info" id="incomeBlock">
+							<label for="income"> <wicket:message
+									key="confirmData.income" /></label>
+							<div class="input_value" wicket:id="customer.income.value"></div>
+						</div>
+
+						<div class="Account_info" id="highRiskOfCusBlock">
+							<label for="highRiskOfCus"> <wicket:message
+									key="confirmData.highRiskCustomer" /></label>
+							<div class="input_value"
+								wicket:id="customer.highRiskCustomer.value"></div>
+						</div>
+
+						<div class="Account_info" id="atmBlock">
+							<label for="atmCardNo"> <wicket:message
+									key="confirmData.atmCardNo" /></label>
+							<div class="input_value" wicket:id="customer.atmCardNo"></div>
+						</div>
+
+						<div class="Account_info" id="emailBlock">
+							<label for="email"><wicket:message
+									key="confirmData.emailId" /></label>
+							<div class="input_value" wicket:id="customer.emailId"></div>
+						</div>
+						<div wicket:id="attachmentListView">
+							<div class="Account_info" id="emailBlock">
+								<label for="email"><wicket:message
+										key="confirmData.identificationAttachment" /></label>
+								<div class="input_value"
+									wicket:id="customer.identificationAttachment"></div>
+							</div>
+
+							<div class="Account_info" id="idTypeBlock">
+								<label for="idType"> <wicket:message
+										key="confirmData.idType" /></label>
+								<div class="input_value" wicket:id="customer.idType.value"></div>
+							</div>
+
+							<div class="Account_info" id="idCardNoBlock">
+								<label for="idCardNo"> <wicket:message
+										key="confirmData.idCardNo" /></label>
+								<div class="input_value" wicket:id="customer.idCardNo"></div>
+							</div>
+						</div>
+						<div class="Account_info" id="shortNameBlock">
+							<label for="shortName"> <wicket:message
+									key="confirmData.shortName" /></label>
+							<div class="input_value" wicket:id="customer.shortName"></div>
+						</div>
+
+					</div>
+
+					<div class="column">
+
+						<div class="Account_info" id="employeeIDBlock">
+							<label for="employeeID"> <wicket:message
+									key="confirmData.employeeId" /></label>
+							<div class="input_value" wicket:id="customer.employeeId"></div>
+						</div>
+
+						<div class="Account_info" id="martialStatusBlock">
+							<label for="martialStatus"> <wicket:message
+									key="confirmData.maritalStatus" /></label>
+							<div class="input_value" wicket:id="customer.maritalStatus.value"></div>
+						</div>
+
+						<div class="Account_info" id="pobBlock">
+							<label for="pob"> <wicket:message
+									key="confirmData.placeOfBirth" /></label>
+							<div class="input_value" wicket:id="customer.placeOfBirth"></div>
+						</div>
+
+						<div class="Account_info" id="occupationBlock">
+							<label for="occupation"><wicket:message
+									key="confirmData.occupation" /></label>
+							<div class="input_value" wicket:id="customer.occupation.value"></div>
+						</div>
+
+						<div class="Account_info" id="industryOfEmpBlock">
+							<label for="industryOfEmp"> <wicket:message
+									key="confirmData.industryOfEmployee" /></label>
+							<div class="input_value"
+								wicket:id="customer.industryOfEmployee.value"></div>
+						</div>
+
+						<div class="Account_info" id="sourceOfFundBlock">
+							<label for="sourceOfFund" wicket:id="confirmData.sourceofFound"></label>
+							<div class="input_value" wicket:id="customer.sourceofFound.value"></div>
+						</div>
+
+						<div class="Account_info" id="highRiskOfBusBlock">
+							<label for="highRiskOfBus"><wicket:message
+									key="confirmData.highRiskBusiness" /></label>
+							<div class="input_value"
+								wicket:id="customer.highRiskBusiness.value"></div>
+						</div>
+
+						<div class="Account_info">
+							<label for="gender"> <wicket:message
+									key="confirmData.gender" /></label>
+							<div class="input_value" wicket:id="customer.gender.value"></div>
+						</div>
+
+						<div class="Account_info">
+							<label for="consumerBean_birthDate"><wicket:message
+									key="confirmData.dateOfBirth" /> </label>
+							<div class="input_value" wicket:id="customer.birthDateString"></div>
+						</div>
+
+						<div class="Account_info" id="idExpDateBlock">
+							<label for="idExpDate"> <wicket:message
+									key="confirmData.idExpirationDate" /></label>
+							<div class="input_value" wicket:id="customer.expireDateString"></div>
+						</div>
+                        <!--
+						<div class="Account_info" id="customerNumberBlock">
+							<label for="customerNumber"> <wicket:message
+									key="confirmData.customerNumber" /></label>
+							<div class="input_value" wicket:id="customer.customerNumber"></div>
+						</div>
+                        -->
+						<div class="Account_info" id="isTaxExemptedBlock">
+							<label for="isTaxExempted"> <wicket:message
+									key="confirmData.isTaxExempted" />
+							</label>
+							<div class="input_value">
+								<div class="input_value" wicket:id="customer.taxExempted.value"></div>
+							</div>
+						</div>
+
+						<div class="Account_info" id="isOptimaActivatedBlock">
+							<label for="isOptimaActivated"> <wicket:message
+									key="confirmData.isOptimaActivated" />
+							</label>
+							<div class="input_value"
+								wicket:id="customer.optimaActivated.value"></div>
+						</div>
+
+
+						<div class="Account_info" id="isOptimaActivatedBlock">
+							<label for="isOptimaActivated"> <wicket:message
+									key="label.religion" />
+							</label>
+							<div class="input_value"
+								wicket:id="customer.religion.value"></div>
+						</div>
+						
+						<div class="Account_info" id="isOptimaActivatedBlock">
+							<label for="isOptimaActivated"> <wicket:message
+									key="label.lastEducation" />
+							</label>
+							<div class="input_value"
+								wicket:id="customer.lastEducation.value"></div>
+						</div>
+						
+						<div class="Account_info" id="isOptimaActivatedBlock">
+							<label for="isOptimaActivated"> <wicket:message
+									key="label.foreCastTransaction" />
+							</label>
+							<div class="input_value"
+								wicket:id="customer.foreCastTransaction.value"></div>
+						</div>
+						
+						<div class="Account_info" id="isOptimaActivatedBlock">
+							<label for="isOptimaActivated"> <wicket:message
+									key="label.taxCardNumber" />
+							</label>
+							<div class="input_value"
+								wicket:id="customer.taxCardNumber"></div>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend id="contactDetails" wicket:id="contactDetails.headLine">
+					</legend>
+
+					<div class="column">
+
+						<div class="Account_info">
+							<label><wicket:message key="confirmData.mobileNumber" /></label>
+							<div class="input_value" wicket:id="customer.mobileNumber"></div>
+						</div>
+
+						<div class="Account_info" id="street1Block">
+							<label for="street1"> <wicket:message
+									key="confirmData.street1" /></label>
+							<div class="input_value" wicket:id="customer.street1"></div>
+						</div>
+
+						<div class="Account_info" id="street2Block">
+							<label for="street2"> <wicket:message
+									key="confirmData.street2" /></label>
+							<div class="input_value" wicket:id="customer.street2"></div>
+						</div>
+						
+						<div class="Account_info" id="street2Block">
+							<label for="street2"> <wicket:message
+									key="label.province" /></label>
+							<div class="input_value" wicket:id="customer.province.value"></div>
+						</div>
+						
+						<div class="Account_info" id="street2Block">
+							<label for="street2"> <wicket:message
+									key="label.city" /></label>
+							<div class="input_value" wicket:id="customer.city.value"></div>
+						</div>
+						
+						<div class="Account_info" id="street2Block">
+							<label for="street2"> <wicket:message
+									key="label.zipcode" /></label>
+							<div class="input_value" wicket:id="customer.zipCode"></div>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend id="registrationType" wicket:id="registrationType.headLine"></legend>
+					
+					<div class="column">
+                        <div class="column">
+                            <div class="Account_info">
+                                <label for="customer.requestType">
+                                    <wicket:message key="confirmData.requestType" />
+                                </label>
+                                <div class="input_value" wicket:id="customer.requestType"></div>
+                            </div>
+                        </div>
+						<!--
+						<div class="column">
+							<div class="Account_info">
+								<label for="customer.edit.address.RegistrationType"
+									wicket:id="confirmData.registration.type"> </label>
+								<div class="input_value"
+									wicket:id="customer.registrationType.value"></div>
+							</div>
+						</div>
+						-->
+						<div class="column">
+							<div class="Account_info">
+								<label for="customer.registration.productType"><wicket:message
+										key="confirmData.product.type" /></label>
+								<div class="input_value" wicket:id="customer.productType.value"></div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="Account_info">
+								<label for="customer.registration.marketingSourceCode"><wicket:message
+										key="label.marketingSourceCode" /></label>
+								<div class="input_value" wicket:id="customer.marketingSourceCode"></div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="Account_info">
+								<label for="customer.referralNumber">
+								    <wicket:message key="label.referralNumber" />
+								</label>
+								<div class="input_value" wicket:id="customer.referralNumber"></div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="Account_info">
+								<label for="customer.agentCode">
+								    <wicket:message key="label.agentCode" />
+								</label>
+								<div class="input_value" wicket:id="customer.agentCode"></div>
+							</div>
+						</div>
+                        <div class="column">
+                            <div class="Account_info">
+                                <label for="customer.territoryCode">
+                                    <wicket:message key="label.territoryCode" />
+                                </label>
+                                <div class="input_value" wicket:id="customer.territoryCode"></div>
+                            </div>
+                        </div>
+                        <div class="column" wicket:id="createdByContainer">
+                            <div class="Account_info">
+                                <label for="customer.edit.address.RegistrationType"><wicket:message
+                                        key="createdBy" /> </label>
+                                <div class="input_value" wicket:id="customer.createdBy"></div>
+                            </div>
+                        </div>
+                        <div class="column" wicket:id="createdDateContainer">
+                            <div class="Account_info">
+                                <label for="customer.edit.address.RegistrationType"> <wicket:message
+                                        key="createdDate" /></label>
+                                <div class="input_value" wicket:id="customer.createdDate"></div>
+                            </div>
+                        </div>
+						<div class="column" wicket:id="statusContainer">
+							<div class="Account_info">
+								<label for="customer.edit.address.RegistrationType"> <wicket:message
+										key="status" /></label>
+								<div class="input_value" wicket:id="customer.status"></div>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				<div class="column">
+					<input type="submit" class="submit acc_chk" id="submit"
+						wicket:id="confirm" wicket:message="value:Confirm"
+						onclick="loading()" 
+						style="left: 230px" /> 
+					<input type="submit" wicket:id="back"
+						wicket:message="value:Back" class="submit acc_chk" id="submit"
+						onclick="loading()" style="left: 250px" /> 
+					<input type="submit"
+						class="submit acc_chk" id="submit" wicket:id="cancel"
+						wicket:message="value:Cancel" style="left: 270px" />
+				</div>
+
+			</form>
+			<div class="spacer"></div>
+		</div>
+		<div id="loading"
+			style="position: relative; display: none; width: 100%; text-align: center; top: 100px;">
+			<img src="images/btpn/ajax-loader.gif" border="0" />
+		</div>
+		<script>
+			function loading(id) {
+				document.getElementById('centerContent').style.display = "none";
+				document.getElementById('loading').style.display = "block";
+			}
+		</script>
+	</wicket:panel>
+</body>
+</html>

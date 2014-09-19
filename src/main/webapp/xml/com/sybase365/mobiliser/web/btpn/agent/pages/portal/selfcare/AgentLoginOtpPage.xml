@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="header.login.info">Hi %s, your login on pocket bank btpn</entry>
+	<entry key="header.logout.label">Logout</entry>
+	<entry key="application.name">BTPN Agent Portal</entry>
+	<entry key="foooter.copyright">Copyright</entry>
+	<entry key="foooter.bank.name">PT Bank Tabungan Pensiunan Nasional Tbk. 2013</entry>
+	<entry key="session.timeout.counter.label">Session Timeout: </entry>
+	<entry key="session.timeout.counter.minutes.label"> Minutes</entry>
+	<entry key="session.timeout.label">Your session has timed out.</entry>
+	<entry key="enter.otp">We just sent an OTP to your mobile phone, please enter
+		it in the field below.</entry>
+	<entry key="label.otp"> OTP </entry>
+	<entry key="otp.Required">OTP is a required field</entry>
+	<entry key="otp.invalid">The pass code you entered does not match.	</entry>
+	<entry key="otp.exception"></entry>
+	<entry key="Submit">Submit</entry>
+	<entry key="footer.information">informasi lebih lanjut hubungi :</entry>
+	<entry key="footer.contact">btpncall 500 300</entry>
+	<entry key="footer.termsAndConditions">SYARAT KETENTUAN</entry>
+	<entry key="footer.faq">FAQ</entry>
+	<entry key="footer.about.btpn">TENTANG &lt;br/&gt;btpn WOW!</entry>
+	<entry key="footer.about.sybase">SAP | All rights reserved | Build</entry>
+	<entry key="otp.exception">We are experiencing technical difficulties. Please try again later.</entry>
+</properties>

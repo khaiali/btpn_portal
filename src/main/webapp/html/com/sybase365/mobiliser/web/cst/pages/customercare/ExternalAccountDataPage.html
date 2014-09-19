@@ -1,0 +1,91 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="friends">
+				<span><wicket:message key="customerCare.title" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span wicket:id="subTitle1"></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span wicket:id="subTitle2"></span>
+				<span wicket:id="subTitle2BrCrumbSep"></span>
+				<span wicket:id="subTitle3"></span>
+			</h1>
+			
+			<h3 wicket:id="h3" class="help"></h3>
+
+
+			<form wicket:id="externalAccountDataForm">
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+				<div class="module clear">
+
+					<div class="column">
+
+						<div class="input">
+							<label> <wicket:message key="walletEntry.alias" /></label> 
+							<input type="text" wicket:id="walletEntry.alias"  />
+						</div>
+						<div class="input">
+							<label> <wicket:message key="walletEntry.externalAccount.id1" /></label>
+							<input type="text" wicket:id="walletEntry.externalAccount.id1"  />
+						</div>
+						<div class="input">
+							<label> <wicket:message	key="walletEntry.externalAccount.id2" /></label>
+							<input type="text" wicket:id="walletEntry.externalAccount.id2"  />
+						</div>
+						<div class="input">
+							<label> <wicket:message key="walletEntry.externalAccount.id3" /></label> 
+							<input type="text" wicket:id="walletEntry.externalAccount.id3"  />
+						</div>
+						<div class="input">
+							<label> <wicket:message key="walletEntry.externalAccount.id4" /></label>
+							<input type="text" wicket:id="walletEntry.externalAccount.id4"  />
+						</div>
+						<div class="input">
+							<label> <wicket:message key="walletEntry.externalAccount.id5" /></label> 
+							<input type="text" wicket:id="walletEntry.externalAccount.id5"  />
+						</div>
+						<div class="input">
+							<label> <wicket:message key="walletEntry.externalAccount.id6" /></label> 
+							<input type="text" wicket:id="walletEntry.externalAccount.id6"  />
+						</div>
+						<div class="input">
+							<label> <wicket:message key="walletEntry.externalAccount.id7" /></label> 
+							<input type="text" wicket:id="walletEntry.externalAccount.id7"  />
+						</div>
+						<div class="input">
+							<label> <wicket:message key="walletEntry.externalAccount.id8" /></label> 
+							<input type="text" wicket:id="walletEntry.externalAccount.id8"  />
+						</div>
+
+					</div>
+
+					<div class="column">
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="save" wicket:message="value:Save" name="submit" /> 
+							<input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" name="submit" />
+							<input type="submit" class="submitForm" wicket:id="approve" wicket:message="value:Approve" name="submit" /> 
+							<input type="submit" class="submitForm" wicket:id="reject" wicket:message="value:Reject" name="submit" />
+		
+						</div>
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+		
+	</div>
+	
+</wicket:extend>
+
+</body>
+</html>

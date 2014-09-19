@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="cst.page.title">Customer Support Tool</entry>
+    <entry key="cst.application.name">Customer Support Tool</entry>
+
+    <entry key="selected.context.customer">Customer</entry>
+    <entry key="selected.context.agent">Agent</entry>
+    <entry key="selected.context.couponType">Coupon Type</entry>
+    <entry key="selected.context.name.key">Name: </entry>
+    <entry key="selected.context.id.key">Id: </entry>
+	<entry key="selected.context.couponCategory">Coupon Category</entry>
+    <entry key="selected.context.name.couponCategoryNamekey">Category Name: </entry>
+    <entry key="selected.context.id.couponCategorykey">Category Id: </entry>
+    <entry key="customerCare.title">Customer Care</entry>
+
+    <entry key="note.subject.Required">Subject is required</entry>
+    <entry key="note.body.Required">Details are required</entry>
+
+</properties>

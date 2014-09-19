@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<!-- ############# BTPN ############# -->
+	<entry key="header.feeManagement"> General Ledger Approval Data </entry>
+	<entry key="label.fieldname">Fields </entry>
+	<entry key="label.currentValue">Current Value </entry>
+	<entry key="label.glCode">GL Code</entry>
+	<entry key="label.newValue">New Value </entry>
+	<entry key="label.action">Action</entry>
+	<entry key="label.description">Description</entry>
+	<entry key="label.isLeaf">Is Leaf</entry>
+	<entry key="label.isRoot">Is Root</entry>
+	<entry key="label.parentGLCode">Parent GL Code</entry>
+	<entry key="label.type">Type</entry>
+
+	<entry key="no.items">Nothing found to display.</entry>
+	<entry key="approve.success">Request Approved successfully.</entry>
+
+	<entry key="reject.success">Request Rejected successfully.</entry>
+</properties>

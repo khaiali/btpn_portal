@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="calendar.months.1">January</entry>
+	<entry key="calendar.months.2">February</entry>
+	<entry key="calendar.months.3">March</entry>
+	<entry key="calendar.months.4">April</entry>
+	<entry key="calendar.months.5">May</entry>
+	<entry key="calendar.months.6">June</entry>
+	<entry key="calendar.months.7">July</entry>
+	<entry key="calendar.months.8">August</entry>
+	<entry key="calendar.months.9">September</entry>
+	<entry key="calendar.months.10">October</entry>
+	<entry key="calendar.months.11">November</entry>
+	<entry key="calendar.months.12">December</entry>
+</properties>

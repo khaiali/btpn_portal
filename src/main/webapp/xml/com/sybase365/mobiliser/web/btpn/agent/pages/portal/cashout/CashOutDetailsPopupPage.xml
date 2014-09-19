@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="cashout.receipt.headLine">Cash-Out Details</entry>
+	<entry key="cashout.receipt.fromMobileAccNo">From Mobile Acc. No.</entry>
+	<entry key="cashout.receipt.cashOutAmount">Cash-Out Amount</entry>
+	<entry key="cashout.receipt.fee">Fee</entry>
+	<entry key="cashout.receipt.total">Total</entry>
+	<entry key="cashout.receipt.balance">Balance</entry>
+</properties>

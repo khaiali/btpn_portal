@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+     <!-- ############# Limit Sets ############# -->
+    <entry key="cst.limitSets.title">Limit Sets</entry>
+    <entry key="cst.limitSet.limitSetsClassData">Limit Set Configuration</entry>
+    <entry key="cst.limitSets.limitSetsData">Limit Sets</entry>
+    <entry key="cst.limitSets.link.add">Add New Limit Set</entry>
+    <entry key="cst.limitSet.actions">Actions</entry>
+    <entry key="cst.limitSet.th.limitSetName">Limit Set</entry>
+    <entry key="cst.limitSet.editAction">Edit</entry>
+    <entry key="cst.limitSet.removeAction">Remove</entry>
+    <entry key="cst.limitSet.name">Limit Set</entry>
+    <entry key="limitSet.remove.confirm">Are you sure you want to remove this limit set?</entry>
+    <entry key="limitSetClass.remove.confirm">Are you sure you want to remove this limit set class?</entry>
+    <entry key="cst.consumerLimit.link.addUseCase">Add Use Case</entry>
+    <entry key="cst.limitSet.th.useCase">Use Case</entry>
+    <entry key="cst.limitSet.th.limitClass">Limit Class</entry>
+    <entry key="cst.consumerLimit.limitClass">Limit Class</entry>
+    <entry key="cst.consumerLimit.useCase">Use Case</entry>
+    
+    <entry key="usecase.lookUp.error ">There was a problem in getting use cases</entry>
+    <entry key="limitclass.lookUp.error ">There was a problem in getting limit classes</entry>
+    
+    <entry key="limitSet.name.Required">Limit Set is required</entry>  
+    <entry key="limitClass.Required">Limit Class is required</entry>
+    <entry key="limitSetClass.limitClass.id.Required">Limit Class is required</entry> 
+     <entry key="limitSetClass.useCaseId.Required">Use Case is required</entry>    
+    <entry key="limitSet.noItemsMsg">No limit sets found</entry>  
+    <entry key="limitSet.noItemsHelpMsg">Use the 'Add New Limit Set' link above to add an entry</entry>  
+    <entry key="limitSetClass.noItemsMsg">No limit set classes found</entry>  
+    <entry key="limitSetClass.noItemsHelpMsg">Use the 'Add Use Case' link above to add an entry</entry>  
+</properties>

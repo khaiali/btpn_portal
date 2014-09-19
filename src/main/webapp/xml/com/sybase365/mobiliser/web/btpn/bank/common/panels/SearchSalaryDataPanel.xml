@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.search.header">Search Batch Transaction</entry>
+	<entry key="label.fromDate"> From </entry>
+	<entry key="label.toDate"> To </entry>
+	<entry key="label.fileName"> File Name </entry>
+	<entry key="label.type"> File Type </entry>
+	<entry key="label.status"> Status </entry>
+	<entry key="Search"> Search </entry>
+	<entry key="no.items">Nothing found to display</entry>
+	<entry key="label.view">View</entry>
+	<entry key="label.approve">Approve</entry>
+	<entry key="label.reject">Reject</entry>
+	<entry key="label.errorReport">Error Report</entry>
+	<entry key="label.attachedFile">File Name</entry>
+	<entry key="label.status">Status</entry>
+	<entry key="label.action">Action</entry>
+	<entry key="approval.totalitems.header">%s items found, displaying %s to %s.</entry>
+
+	<entry key="searchData.dateRangeBegin.future">From Date should not be a future date.</entry>
+	<entry key="searchData.dateRangeEnd.future">To Date should not be a future date.</entry>
+	<entry key="searchData.dateRangeBegin.dateRangeEnd.after.dateRangeBegin">From Date should be before To date.</entry>
+	<entry key="searchData.status.Required"> Status is a required field </entry>
+	<entry key="searchData.type.Required"> File Type is a required field </entry>
+	<entry key="searchData.name.Required"> File Name is a required field </entry>
+	<entry key="searchData.status.nullValid">Select All</entry>
+	
+	<entry key="searchData.dateRangeBegin.Required"> From is a required field </entry>
+	<entry key="searchData.dateRangeEnd.Required"> To is a required field </entry>
+	
+	
+	<entry key="error.fetch.data">An error occured while fetching the error report.</entry>
+	<entry key="file.search.error">An error occured while searching the file details.</entry>
+	<entry key="file.download.no.content">An error occured while downloading the file. No File Content returned.</entry>
+	<entry key="file.download.error">An error occured while downloading the file.</entry>
+
+	<entry key="approve.success">File approved successfully.</entry>
+	<entry key="approve.fail">File approval failed.</entry>
+	<entry key="reject.success">File rejected successfully.</entry>
+	<entry key="reject.fail">File rejection failed.</entry>
+</properties>

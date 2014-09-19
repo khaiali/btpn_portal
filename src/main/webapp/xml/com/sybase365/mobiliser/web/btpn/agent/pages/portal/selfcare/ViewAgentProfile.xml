@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="viewprofile.agentinformation">Agent Information</entry>
+	<entry key="agent.registration.displayname">Name</entry>
+	<entry key="agent.registration.maidenName">Maiden Name</entry>
+	<entry key="agent.edit.address.country">Nationality</entry>
+	<entry key="agent.edit.address.job">Job</entry>
+	<entry key="agent.register.accountPurpose">Purpose of Account</entry>
+	<entry key="agent.register.Income">Income</entry>
+	<entry key="agent.edit.address.highRiskCustomer">High Risk Agent</entry>
+	<entry key="agent.edit.atmCard">ATM Card Number</entry>
+	<entry key="agent.edit.address.email">Email ID</entry>
+	<entry key="agent.edit.address.privatePhone">Agent Number</entry>
+	<entry key="agent.edit.address.businessPhone">ShortName</entry>
+	<entry key="consumer.edit.main.idExpDate">ID Expiration Date</entry>
+	<entry key="consumer.edit.main.isOptimaActive">Optima Active</entry>
+	<entry key="agent.edit.address.employeeID">Employee ID</entry>
+	<entry key="agent.edit.address.maritialstatus">Marital Status</entry>
+	<entry key="agent.registration.birthPlace">Place of Birth</entry>
+	<entry key="agent.registration.occupation">Occupation</entry>
+	<entry key="agent.edit.address.industrySector">Industry Sector of Employer</entry>
+	<entry key="agent.register.sourceFund">Source of Fund</entry>
+	<entry key="agent.edit.address.iDCardNo">ID Card No</entry>
+	<entry key="agent.edit.address.iDType">ID Type</entry>
+	<entry key="agent.edit.address.highRiskBusiness">High Risk Business</entry>
+	<entry key="agent.registration.gender">Gender</entry>
+	<entry key="consumer.edit.main.birthDate">Date of Birth</entry>
+	<entry key="consumer.edit.main.isTaxExempted">Tax Exempted</entry>
+	<entry key="agent.edit.address.mobileNo">Mobile Number</entry>
+	<entry key="agent.registration.street1">Street1</entry>
+	<entry key="agent.registration.street2">Street2</entry>
+	<entry key="agent.contact.address.info">Contact &amp;Address</entry>
+	<entry key="confirmData.glCode">GL Code</entry>
+</properties>

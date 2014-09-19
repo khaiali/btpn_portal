@@ -1,0 +1,59 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="customCashOutSuccessForm">
+						<div wicket:id="errorMessages"></div>
+						<fieldset id="cashOut">
+							<legend class="reg_tab">
+								<wicket:message key="headLine.cashOutSuccess" />
+							</legend>
+							<div class="Account_info">
+								<label> <wicket:message
+										key="label.cashOut.success.accountNumber" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.accountNumber"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message
+										key="label.cashOut.success.mobileNumber" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.mobileNumber"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message key="label.cashOut.success.name" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.displayName"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message
+										key="label.cashOut.cashOutAmount" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.cashOutAmount"></label>
+								</div>
+							</div>
+							<div class="column">
+								<input type="submit" class="submit acc_chk" id="submit"
+									wicket:id="finishButton" wicket:message="value:Finish" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

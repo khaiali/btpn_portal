@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="label.gl.management"> Transaction GL Approval List </entry>
+	<entry key="label.glCode">GL Code </entry>
+	<entry key="label.createdBy">Created By </entry>
+	<entry key="label.useCase">UseCase </entry>
+	<entry key="label.status">Status </entry>
+	<entry key="label.action">Action</entry>
+	<entry key="gl.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="label.details">Details</entry>
+	<entry key="no.items">Nothing found to display.</entry>
+
+	<entry key="gl.error">An error occured while fetching the the General Ledger list.</entry>
+	<entry key="gl.details.error">An error occured while fetching the General Ledger Details.</entry>
+</properties>

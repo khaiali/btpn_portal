@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+     <!-- ############# Limit Classes ############# -->
+     <entry key="cst.limitClass.link.add">Add new Limit Class</entry>
+     
+     
+     <entry key="limitClass.noItemsMsg">No limit classes found</entry>  
+     <entry key="limitClass.noItemsHelpMsg">Use the 'Add new Limit Class' link above to add an entry</entry>
+    
+     <entry key="limitClass.dailyDebitLimitCount.IConverter.Long">'${input}' is not a valid Daily Debit Limit Count</entry>
+     <entry key="limitClass.weeklyDebitLimitCount.IConverter.Long">'${input}' is not a valid Weekly Debit Limit Count</entry>
+     <entry key="limitClass.monthlyDebitLimitCount.IConverter.Long">'${input}' is not a valid Monthly Debit Limit Count</entry>
+     <entry key="limitClass.absoluteDebitLimitCount.IConverter.Long">'${input}' is not a valid Absolute Debit Limit Count</entry>
+     <entry key="limitClass.dailyCreditLimitCount.IConverter.Long">'${input}' is not a valid Daily Credit Limit Count</entry>
+     <entry key="limitClass.weeklyCreditLimitCount.IConverter.Long">'${input}' is not a valid Weekly Credit Limit Count</entry>
+     <entry key="limitClass.monthlyCreditLimitCount.IConverter.Long">'${input}' is not a valid Monthly Credit Limit Count</entry>
+     <entry key="limitClass.absoluteCreditLimitCount.IConverter.Long">'${input}' is not a valid Absolute Credit Limit Count</entry>
+     <entry key="limitClass.singleDebitLimitAmount.IConverter.Long">'${input}' is not a valid Single Debit Limit Amount</entry>
+     <entry key="limitClass.singleCreditLimitAmount.IConverter.Long">'${input}' is not a valid Single Credit Limit Amount</entry>
+     <entry key="limitClass.dailyDebitLimitAmount.IConverter.Long">'${input}' is not a valid Daily Debit Limit</entry>
+     <entry key="limitClass.weeklyDebitLimitAmount.IConverter.Long">'${input}' is not a valid Weekly Debit Limit</entry>
+     <entry key="limitClass.monthlyDebitLimitAmount.IConverter.Long">'${input}' is not a valid Monthly Debit Limit</entry>
+     <entry key="limitClass.absoluteDebitLimitAmount.IConverter.Long">'${input}' is not a valid Absolute Debit Limit</entry>
+     <entry key="limitClass.dailyCreditLimitAmount.IConverter.Long">'${input}' is not a valid Daily Credit Limit</entry>
+     <entry key="limitClass.weeklyCreditLimitAmount.IConverter.Long">'${input}' is not a valid Weekly Credit Limit</entry>
+     <entry key="limitClass.monthlyCreditLimitAmount.IConverter.Long">'${input}' is not a valid Monthly Credit Limit</entry>
+     <entry key="limitClass.absoluteCreditLimitAmount.IConverter.Long">'${input}' is not a valid Absolute Credit Limit</entry>
+     <entry key="limitClass.singleDebitMinimum.IConverter.Long">'${input}' is not a valid Single Minimum Debit</entry>
+     <entry key="limitClass.singleCreditMinimum.IConverter.Long">'${input}' is not a valid Single Minimum Credit</entry>
+     <entry key="limitClass.currency.Required">Currency is required</entry>
+     
+     <entry key="daily.debit.count.large">Daily Debit Limit Count is too large</entry>
+     <entry key="weekly.debit.count.large">Weekly Debit Limit Count is too large</entry>
+     <entry key="monthly.debit.count.large">Monthly Debit Limit Count is too large</entry>
+     <entry key="daily.credit.count.large">Daily Credit Limit Count is too large</entry>
+     <entry key="weekly.credit.count.large">Weekly Credit Limit Count is too large</entry>
+     <entry key="monthly.credit.count.large">Monthly Credit Limit Count is too large</entry>
+     <entry key="single.debit.amount.large">Single Debit Limit Amount is too large</entry>
+     <entry key="single.debit.minimum.large">Single Minimum Debit Amount is too large</entry>
+     <entry key="daily.debit.amount.large">Daily Debit Limit Amount is too large</entry>
+     <entry key="weekly.debit.amount.large">Weekly Debit Limit Amount is too large</entry>
+     <entry key="monthly.debit.amount.large">Monthly Debit Limit Amount is too large</entry>
+     <entry key="single.credit.amount.large">Single Credit Limit Amount is too large</entry>
+     <entry key="single.credit.minimum.large">Single Minimum Credit Amount is too large</entry>
+     <entry key="daily.credit.amount.large">Daily Credit Limit Amount is too large</entry>
+     <entry key="weekly.credit.amount.large">Weekly Credit Limit Amount is too large</entry>
+     <entry key="monthly.credit.amount.large">Monthly Credit Limit Amount is too large</entry>
+
+</properties>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.checkMobileAccount">Check Mobile Account</entry>
+	<entry key="cashOut.mobileNumber">Mobile Number</entry>
+	<entry key="cashOut.amount">Amount</entry>
+	<entry key="label.mandatoryField">Denotes Mandatory Field</entry>
+	<entry key="error.cashout.fail">An error occurred while doing cash out</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="cashOutBean.payerMsisdn.Required">Account Number is a required field</entry>
+	<entry key="cashOutBean.payerMsisdn.NotValid">Account Number is not valid</entry>
+	<entry key="cashOutBean.payerMsisdn.PatternValidator">'${input}' is not valid Account Number.</entry>
+
+</properties>

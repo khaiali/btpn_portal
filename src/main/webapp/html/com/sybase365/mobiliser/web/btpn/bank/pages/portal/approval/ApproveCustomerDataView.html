@@ -1,0 +1,249 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="approveCustomerDataForm">
+						<div wicket:id="errorMessages"></div>
+						<fieldset>
+							<legend class="reg_tab6">
+								<wicket:message key="header.PendingApprovalCustomerData" />
+							</legend>
+							<div class="reg_tab_01">
+								<div class="column">
+									<div class="displayTag">
+										<table id="list">
+											<thead>
+												<tr>
+													<th class="sorted order1"><wicket:message
+															key="label.fieldName" /></th>
+													<th><wicket:message key="label.currentValue" /></th>
+													<th><wicket:message key="label.newValue" /></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="odd">
+													<td><wicket:message key="label.ATMCardNo" /></td>
+													<td wicket:id="currentValue.atmCardNo"></td>
+													<td wicket:id="newValue.atmCardNo"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.blackListReason" /></td>
+													<td wicket:id="currentValue.blackListReason.value"></td>
+													<td wicket:id="newValue.blackListReason.value"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.dateOfBirth" /></td>
+													<td wicket:id="currentValue.dateOfBirth"></td>
+													<td wicket:id="newValue.dateOfBirth"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.emailID" /></td>
+													<td wicket:id="currentValue.emailId"></td>
+													<td wicket:id="newValue.emailId"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.employeeID" /></td>
+													<td wicket:id="currentValue.employeeId"></td>
+													<td wicket:id="newValue.employeeId"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.gender" /></td>
+													<td wicket:id="currentValue.gender.value"></td>
+													<td wicket:id="newValue.gender.value"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.highRiskBusiness" /></td>
+													<td wicket:id="currentValue.highRiskBusiness"></td>
+													<td wicket:id="newValue.highRiskBusiness"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.HighRiskCustomer" /></td>
+													<td wicket:id="currentValue.highRiskCustomer"></td>
+													<td wicket:id="newValue.highRiskCustomer"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.IDCardNo" /></td>
+													<td wicket:id="currentValue.idCardNo"></td>
+													<td wicket:id="newValue.idCardNo"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.IDExpirationDate" /></td>
+													<td wicket:id="currentValue.idExpirationDate"></td>
+													<td wicket:id="newValue.idExpirationDate"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.IDType" /></td>
+													<td wicket:id="currentValue.idType.value"></td>
+													<td wicket:id="newValue.idType.value"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.income" /></td>
+													<td wicket:id="currentValue.income.value"></td>
+													<td wicket:id="newValue.income.value"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.industryOfEmployee" /></td>
+													<td wicket:id="currentValue.industryOfEmployee.value"></td>
+													<td wicket:id="newValue.industryOfEmployee.value"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.isTaxExempted" /></td>
+													<td wicket:id="currentValue.taxExempted"></td>
+													<td wicket:id="newValue.taxExempted"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.Job" /></td>
+													<td wicket:id="currentValue.job.value"></td>
+													<td wicket:id="newValue.job.value"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.Language" /></td>
+													<td wicket:id="currentValue.language"></td>
+													<td wicket:id="newValue.language"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.maritalStatus" /></td>
+													<td wicket:id="currentValue.maritalStatus.value"></td>
+													<td wicket:id="newValue.maritalStatus.value"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.motherMaidenName" /></td>
+													<td wicket:id="currentValue.mothersMaidenName"></td>
+													<td wicket:id="newValue.mothersMaidenName"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.name" /></td>
+													<td wicket:id="currentValue.name"></td>
+													<td wicket:id="newValue.name"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.nationality" /></td>
+													<td wicket:id="currentValue.nationality.value"></td>
+													<td wicket:id="newValue.nationality.value"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.ocupation" /></td>
+													<td wicket:id="currentValue.occupation.value"></td>
+													<td wicket:id="newValue.occupation.value"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.placeOfBirth" /></td>
+													<td wicket:id="currentValue.placeOfBirth"></td>
+													<td wicket:id="newValue.placeOfBirth"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.purposeOfAccount" /></td>
+													<td wicket:id="currentValue.purposeOfAccount.value"></td>
+													<td wicket:id="newValue.purposeOfAccount.value"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.receiptMode" /></td>
+													<td wicket:id="currentValue.receiptMode.value"></td>
+													<td wicket:id="newValue.receiptMode.value"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.shortName" /></td>
+													<td wicket:id="currentValue.shortName"></td>
+													<td wicket:id="newValue.shortName"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.sourceOfFund" /></td>
+													<td wicket:id="currentValue.sourceofFound.value"></td>
+													<td wicket:id="newValue.sourceofFound.value"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.status" /></td>
+													<td wicket:id="currentValue.status"></td>
+													<td wicket:id="newValue.status"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.street1" /></td>
+													<td wicket:id="currentValue.street1"></td>
+													<td wicket:id="newValue.street1"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.street2" /></td>
+													<td wicket:id="currentValue.street2"></td>
+													<td wicket:id="newValue.street2"></td>
+												</tr>
+												<tr class="even" wicket:id="glCode">
+													<td><wicket:message key="label.glCodeId" /></td>
+													<td wicket:id="currentValue.glCodeId.value"></td>
+													<td wicket:id="newValue.glCodeId.value"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.religion" /></td>
+													<td wicket:id="currentValue.religion.value"></td>
+													<td wicket:id="newValue.religion.value"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.lastEducation" /></td>
+													<td wicket:id="currentValue.lastEducation.value"></td>
+													<td wicket:id="newValue.lastEducation.value"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.foreCastTransaction" /></td>
+													<td wicket:id="currentValue.foreCastTransaction.value"></td>
+													<td wicket:id="newValue.foreCastTransaction.value"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.taxCardNumber" /></td>
+													<td wicket:id="currentValue.taxCardNumber"></td>
+													<td wicket:id="newValue.taxCardNumber"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.province" /></td>
+													<td wicket:id="currentValue.province.value"></td>
+													<td wicket:id="newValue.province.value"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.city" /></td>
+													<td wicket:id="currentValue.city.value"></td>
+													<td wicket:id="newValue.city.value"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.zipcode" /></td>
+													<td wicket:id="currentValue.zipCode"></td>
+													<td wicket:id="newValue.zipCode"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.marketingSourceCode" /></td>
+													<td wicket:id="currentValue.marketingSourceCode"></td>
+													<td wicket:id="newValue.marketingSourceCode"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.referralNumber" /></td>
+													<td wicket:id="currentValue.referralNumber"></td>
+													<td wicket:id="newValue.referralNumber"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.agentCode" /></td>
+													<td wicket:id="currentValue.agentCode"></td>
+													<td wicket:id="newValue.agentCode"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="column">
+									<input id="submit" value="Approve" class="submit acc_chk"
+										type="submit" wicket:id="approveButton"> <input
+										id="submit" style="left: 250px" value="Reject"
+										class="submit acc_chk" type="submit" wicket:id="rejectButton">
+									<input id="submit" style="left: 270px" value="Back"
+										class="submit acc_chk" type="submit" wicket:id="backButton">
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+	<entry key="headLine.interest">Interest Management Edit</entry>
+	<entry key="label.customerIdentifier"> CustomerIdentifier </entry>
+	<entry key="label.customerIdentifierType"> CustomerIdentifier Type </entry>
+	<entry key="label.customerTypeId"> CustomerType</entry>
+	<entry key="label.paymentInstrumentId">PaymentInstrument</entry>
+	<entry key="label.paymentInstrumentTypeId">PaymentInstrument Type</entry>
+	<entry key="label.accrueGLCode">Accrual GL Code </entry>
+	<entry key="label.expenseGLCode">Expense GL Code </entry>
+	<entry key="label.validFrom"> Valid From </entry>
+	<entry key="label.thresholdAmount"> Thereshold Amount </entry>
+	<entry key="label.fixedFee">Fixed Fee</entry>
+	<entry key="label.percentageFee">Percentage Fee</entry>
+	<entry key="label.maximumFee">Maximum Fee</entry>
+	<entry key="label.minimumFee">Minimum Fee</entry>
+	<entry key="label.note"> Note </entry>
+	<entry key="label.description"> Description </entry>
+	
+	<!-- Required Validations -->
+	<entry key="interestBean.description.Required">Description is a required field</entry>
+	<entry key="interestBean.customerTypeId.Required">Customer Type ID is required.</entry>
+	<entry key="interestBean.accrueGLCode.Required">Accrue GL Code is required.</entry>
+	<entry key="interestBean.expenseGLCode.Required">Expense GL Code is required.</entry>
+	<entry key="interestBean.validFrom.Required">Valid From is required.</entry>
+	<entry key="interestBean.fixedFee.Required">Fixed Fee is required.</entry>
+	<entry key="interestBean.fixedFee.IConverter.Long"> ${input} is not valid Fixed Fee amount.</entry>
+	
+	<entry key="interestBean.percentageFee.Required">Percentage Fee is required.</entry>
+	<entry key="interestBean.percentageFee.IConverter.Long">${input} is not valid Minimum Fee amount.</entry>
+	
+	<entry key="interestBean.minimumFee.Required">Minimum Fee is required.</entry>
+	<entry key="interestBean.minimumFee.AmountValidator">${input} is not valid Minimum Fee amount.</entry>
+	<entry key="interestBean.minimumFee.IConverter.Long">${input} is not valid Minimum Fee amount.</entry>
+	
+	<entry key="interestBean.maximumFee.AmountValidator">${input} is not valid Maximum Fee amount.</entry>
+	<entry key="interestBean.maximumFee.IConverter.Long">${input} is not valid Maximum Fee amount.</entry>
+	
+	<entry key="interestBean.thresholdAmount.Required">Threshold Amount is required.</entry>
+	<entry key="interestBean.thresholdAmount.IConverter.Long"> ${input} is not valid Threshold Amount</entry>
+
+	
+</properties>

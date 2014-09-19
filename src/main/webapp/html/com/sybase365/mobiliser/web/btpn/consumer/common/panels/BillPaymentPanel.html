@@ -1,0 +1,43 @@
+
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="billPaymentForm">
+						<div wicket:id="errorMessages"></div>
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="header.billPayment" /></h2>
+							</legend>
+							<div class="column">
+								<div class="input">
+									<label><wicket:message key="label.biller" /><span
+										class="required">*</span></label> <select
+										wicket:id="billPaymentBean.billerType">
+										<option>dummy</option>
+									</select>
+									<div class="column">
+										<span class="required">*</span>
+										<wicket:message key="requiredFields" />
+									</div>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<input type="submit" class="submit acc_chk"
+								wicket:id="submitButton" value="Masuk" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

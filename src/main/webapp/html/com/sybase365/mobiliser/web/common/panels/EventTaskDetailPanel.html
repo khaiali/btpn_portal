@@ -1,0 +1,30 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+<form wicket:id="detailForm">
+
+		<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+		<div class="column twoColumn">
+			<div class="input" wicket:id="detailListView">
+				<label wicket:id="key"></label>
+				<div class="text" wicket:id="value"></div>
+			</div>					
+		</div>	
+		
+		<div class="column">
+		
+			<div class="formAction">					
+				<input class="submitForm" type="submit" wicket:message="value:detail.back" wicket:id="back" name="back"> 						
+			</div>
+			
+		</div>
+
+</form>
+
+</wicket:panel>
+
+</body>
+</html>

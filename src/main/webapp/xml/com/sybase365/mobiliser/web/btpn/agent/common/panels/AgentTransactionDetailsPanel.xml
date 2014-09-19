@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<!-- Labels in the panel -->
+	<entry key="agenttxn.title">View Transaction History </entry>
+	<entry key="agenttxn.daterange">Date Range</entry>
+	<entry key="txnSearchBean.from">From</entry>
+	<entry key="txnSearchBean.to">To</entry>
+	<entry key="txnSearchBean.filterBy">Filter By</entry>
+	<entry key="customer.merhantagent">Merchant/ Agent ID</entry>
+	<entry key="customer.childSubAgentMsisdn"> Child/Sub Agent Mobile Number</entry>
+	<entry key="customer.transactiontype"> Transaction Type</entry>
+	<entry key="customer.status">Transaction Status</entry>
+	<entry key="viewHierarchy">View All Hierarchy </entry>
+	<entry key="customer.mobileNumber.StringValidator">Mobile Number must be at least 6 characters long</entry>
+	<entry key="label.submit">Submit</entry>
+	<entry key="label.date">Date</entry>
+	<entry key="label.agentId">Agent Id</entry>
+	<entry key="label.payer">Payer</entry>
+	<entry key="label.txnId">Transaction Id</entry>
+	<entry key="label.txnType">Transaction Type</entry>
+	<entry key="label.consumerMobile">Consumer Mobile</entry>
+	<entry key="label.amount">Amount</entry>
+	<entry key="label.fee">Fee</entry>
+	<entry key="label.description">Description</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="searchData.fromDate.Required">From Date is a required field</entry>
+	<entry key="searchData.toDate.Required">To Date is a required field</entry>
+	<entry key="searchData.fromDate.future">From Date should not be a future date.</entry>
+	<entry key="searchData.toDate.future">To Date should not be a future date.</entry>
+	<entry key="searchData.fromDate.todate.after.fromdate">From Date should be before To date.</entry>
+	<entry key="no.items">Nothing found to display.</entry>
+
+</properties>

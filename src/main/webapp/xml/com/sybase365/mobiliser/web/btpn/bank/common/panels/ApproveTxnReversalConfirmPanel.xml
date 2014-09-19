@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="header.approveTxnReversal">Approve Transaction Reversal</entry>
+	<entry key="header.rejectTxnReversal">Reject Transaction Reversal</entry>
+	<entry key="label.fields">Fields</entry>
+	<entry key="label.currentValue">Current Value </entry>
+	<entry key="label.newValue">New Value </entry>
+	<entry key="label.msisdn">MSISDN</entry>
+	<entry key="label.transactionAmount">Transaction Amount</entry>
+	<entry key="label.transactionDate">Transaction Date</entry>
+	<entry key="label.transactionId">Transaction Id</entry>
+	<entry key="label.transactionName">Transaction Name</entry>
+	<entry key="label.usecaseId">Use Case Id</entry>
+	<entry key="approve.success">Request approved successfully.</entry>
+	<entry key="reject.success">Request rejected successfully.</entry>
+
+</properties>

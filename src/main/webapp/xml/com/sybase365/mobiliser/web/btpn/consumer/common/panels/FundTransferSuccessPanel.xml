@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.Mobile">Kirim Uang ke Nomor Handphone</entry>
+	<entry key="header.BtpnBankAccount">Kirim Uang ke Rekening Bank BTPN</entry>
+	<entry key="header.OtherBankAccount">Kirim Uang ke Rekening Bank Lainnya</entry>
+	<entry key="header.skn">Kirim Uang ke SKN</entry>
+	<entry key="header.rtgs">Kirim Uang ke RTGS</entry>
+	<entry key="fundTransfer.amount">Jumlah</entry>
+	<entry key="success">berhasil dilakukan ke</entry>
+
+</properties>

@@ -1,0 +1,124 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content center">
+
+		<div class="module clear">
+
+			<div wicket:id="transformConfirmDiv">
+
+				<form wicket:id="transferConfirmForm">
+
+					<h1 class="wallet">
+						<span><wicket:message key="transferMoney.title" /></span>
+						<span><wicket:message key="application.breadcrumb.separator" /></span>
+						<span><wicket:message key="transferSuccess.title" /></span>
+					</h1>
+
+					<h3 class="help">
+						<wicket:message key="transferConfirm.title" />
+					</h3>
+
+					<div wicket:id="errorMessages"></div>
+
+					<div class="column">
+					
+						<div class="input">
+							<label><wicket:message key="creditAmount" /></label>
+							<div class="text" wicket:id="creditAmount"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key="feeAmount" /></label>
+							<div class="text" wicket:id="feeAmount"></div>
+						</div>
+						
+						<div class="input">
+							<label><wicket:message key="debitAmount" /></label>
+							<div class="text" wicket:id="debitAmount"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key="recipient" /></label>
+							<div class="text" wicket:id="recipient"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key="orderId" /></label>
+							<div class="text" wicket:id="txnBean.orderId"></div>
+						</div>
+						
+					</div>
+					
+					<div class="column">
+					
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="transferConfirm" wicket:message="value:Confirm" /> 
+							<input type="submit" class="submitForm" wicket:id="transferBack" wicket:message="value:transferConfirm.button.back" />
+						</div>
+						
+					</div>
+					
+				</form>
+				
+			</div>
+
+			<div wicket:id="transformFinishDiv">
+
+				<form wicket:id="transferFinishForm">
+
+					<h1 class="wallet">
+						<span><wicket:message key="transferMoney.title" /></span>
+						<span><wicket:message key="application.breadcrumb.separator" /></span>
+						<span><wicket:message key="transferSuccess.title" /></span>
+					</h1>
+					
+					<ul class="messages">
+						<li wicket:id="successMsg"></li>
+						<li wicket:id="pendingApprovalMsg"></li>
+					</ul>
+					
+
+					<div wicket:id="errorMessages"></div>
+
+					<div wicket:id="dataContainer" class="column">
+					
+						<div class="input">
+							<label><wicket:message key="debitAmount" /></label>
+							<div class="text" wicket:id="debitAmount"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key="transferFinish.recipient" /></label>
+							<div class="text" wicket:id="recipient"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key="transferFinish.txnId" /></label>
+							<div class="text" wicket:id="txnBean.txnId"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key="transferFinish.authCode" /></label>
+							<div class="text" wicket:id="txnBean.authCode"></div>
+						</div>
+						
+					</div>
+
+					<div class="column">
+					
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="transferFinished" wicket:message="value:Continue" /> 
+							<input type="submit" class="submitForm" onclick="window.print()" wicket:message="value:transferFinish.button.printReceipt" />
+						</div>
+						
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

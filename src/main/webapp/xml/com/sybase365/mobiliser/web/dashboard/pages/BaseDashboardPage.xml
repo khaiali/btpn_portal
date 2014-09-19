@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <entry key="dashboard.page.title">Operations Dashboard</entry>
+    <entry key="page.title">Operations Dashboard</entry>
+
+    <!-- ############# Left Menu Context ############# -->
+    <entry key="selected.context.server">Server</entry>
+    <entry key="selected.context.tracker">Tracker</entry>
+
+    <!-- ############# Left Menu Entries - Home ############# -->
+    <entry key="dashboard.leftmenu.home">Home</entry>
+    <entry key="dashboard.leftmenu.home.preferences">Preferences</entry>
+    <entry key="dashboard.leftmenu.home.job">Jobs</entry>
+    <entry key="dashboard.leftmenu.home.changepassword">Change Password</entry>
+
+    <!-- ############# Left Menu Entries - Servers ############# -->
+    <entry key="dashboard.leftmenu.servers.list">Server List</entry>
+    <entry key="dashboard.leftmenu.servers.information">Information</entry>
+    <entry key="dashboard.leftmenu.servers.services">Requests</entry>
+    <entry key="dashboard.leftmenu.servers.data">Data</entry>
+    <entry key="dashboard.leftmenu.servers.channels">Channels</entry>
+    <entry key="dashboard.leftmenu.servers.events">Events</entry>
+    <entry key="dashboard.leftmenu.servers.tasks">Tasks</entry>
+    <entry key="dashboard.leftmenu.servers.logs">Logs</entry>
+
+    <!-- ############# Left Menu Entries - Trackers ############# -->
+    <entry key="dashboard.leftmenu.trackers.all">All Trackers</entry>
+    <entry key="dashboard.leftmenu.trackers.view">View Tracker</entry>
+    <entry key="dashboard.leftmenu.trackers.consolidate">Consolidate</entry>
+    <entry key="dashboard.leftmenu.trackers.separate">Separate</entry>
+    <entry key="dashboard.leftmenu.trackers.history">History</entry>
+
+    <!-- ############# Home Page ############# -->
+    <entry key="dashboard.home.title">Mobiliser Operations Dashboard</entry>
+    <entry key="dashboard.home.help">This dashboard provides functions for viewing the operational status of Mobiliser servers, such as:</entry>
+    <entry key="dashboard.home.servers.text">Get the health status of all your Mobiliser servers and a variety of information on 'inside-application' status and statistics; available services, messaging channels, preferences and more</entry>
+    <entry key="dashboard.home.trackers.text">Track individual statistics from your servers for monitoring throughput, health or general server operational efficiency</entry>
+
+    <!-- ############# Server List Page ############# -->
+    <entry key="serverList.title">Mobiliser Server List</entry>
+    <entry key="serverList.knownServers">Servers</entry>
+    <entry key="serverList.button.addServer">Add a Server</entry>
+    <entry key="serverList.selected">Selected?</entry>
+    <entry key="serverList.address">Address</entry>
+    <entry key="serverList.status">Status</entry>
+    <entry key="serverList.actions">Actions</entry>
+    <entry key="serverList.hostname">Hostname:</entry>
+    <entry key="serverList.port">Port:</entry>
+    <entry key="serverList.pingAction">Ping</entry>
+    <entry key="serverList.ping.success">Ping was successful for server: </entry>
+    <entry key="serverList.ping.error">Ping failed for server: </entry>
+    <entry key="serverList.selectAction">Select</entry>
+    <entry key="serverList.removeAction">Remove</entry>
+    <entry key="serverList.remove.confirm">Are you sure you want to remove this server from the list?</entry>
+    <entry key="serverList.remove.success">Server has been removed from the list</entry>
+    <entry key="serverList.remove.error">There was a problem removing the server from the list</entry>
+    <entry key="serverList.select.error.notonline">You can only select a server that is online</entry>
+    <entry key="serverList.table.noItemsMsg">No Servers found</entry>
+    <entry key="serverList.table.addServerBeanHelp">Use the Add a Server link above to add an entry</entry>
+
+    <!-- ############# Add a Server Page ############# -->
+    <entry key="dashboard.addserver.title">Add a Server</entry>
+    <entry key="addServer.hostname">Host Name/IP Address</entry>
+    <entry key="hostname.Required">Host Name/IP Address is required</entry>
+    <entry key="addServer.port">Port Number</entry>
+    <entry key="port.Required">Port Number is required</entry>
+    <entry key="addServer.success">The server has been added successfully</entry>
+    <entry key="addServer.error">There was a problem adding the server</entry>
+
+    <!-- ############# Change Password Page ############# -->
+    <entry key="changePassword.title">Change Password</entry>
+    <entry key="changePassword.help">Please enter your new password</entry>
+
+    <!-- ############# Server Information Page ############# -->
+    <entry key="dashboard.information.title">Information</entry>
+
+    <entry key="dashboard.information.environment">System Environment</entry>
+    <entry key="dashboard.information.environment.os">Operating System:</entry>
+    <entry key="dashboard.information.environment.architecture">Architecture:</entry>
+    <entry key="dashboard.information.environment.committedvirtualmemory">Committed Virt. Memory:</entry>
+    <entry key="dashboard.information.environment.totalphysicalmemory">Total Physical Memory:</entry>
+    <entry key="dashboard.information.environment.freephysicalmemory">Free Physical Memory:</entry>
+    <entry key="dashboard.information.environment.totalswapspacesize">Total Swap Space:</entry>
+    <entry key="dashboard.information.environment.freeswapspacesize">Free Swap Space:</entry>
+    <entry key="dashboard.information.environment.processors">Number of Processors:</entry>
+    <entry key="dashboard.information.environment.vm">Virtual Machine:</entry>
+    <entry key="dashboard.information.environment.vendor">Vendor:</entry>
+    <entry key="dashboard.information.environment.compiler">Compiler:</entry>
+
+    <entry key="dashboard.information.vmenvironment">VM Environment</entry>
+    <entry key="dashboard.information.environment.process">Process:</entry>
+    <entry key="dashboard.information.environment.vm">Name/Version:</entry>
+    <entry key="dashboard.information.environment.vendor">Vendor:</entry>
+    <entry key="dashboard.information.environment.uptime">Up Time:</entry>
+    <entry key="dashboard.information.environment.starttime">Start Time:</entry>
+    <entry key="dashboard.information.environment.compiler">JIT Compiler:</entry>
+
+    <entry key="dashboard.information.paths">Paths</entry>
+    <entry key="dashboard.information.environment.classpath">Class Path:</entry>
+    <entry key="dashboard.information.environment.bootclasspath">Boot Class Path:</entry>
+    <entry key="dashboard.information.environment.librarypath">Library Path:</entry>
+
+    <!-- ############# Server Services Page ############# -->
+    <entry key="dashboard.services.title">Requests</entry>
+    
+    <entry key="dashboard.services.tree.error.loading">An error occurred while loading service request types tree</entry>
+
+    <entry key="dashboard.services.service.detail.title">Statistics</entry>
+    
+    <entry key="dashboard.services.service.detail.requestType">Type</entry>
+    <entry key="dashboard.services.service.detail.requestCount">Request Count</entry>
+    <entry key="dashboard.services.service.detail.successCount">Success Count</entry>
+    <entry key="dashboard.services.service.detail.failureCount">Failure Count</entry>    
+    <entry key="dashboard.services.service.detail.averageTime">Average Time (ms)</entry>
+    
+    <entry key="dashboard.services.service.detail.back">Back</entry>
+
+    <!-- ############# Server Data Page ############# -->
+    <entry key="dashboard.data.title">Data</entry>
+    
+    <entry key="dashboard.data.general">General Settings</entry>
+    <entry key="dashboard.data.counts">Counts</entry>
+    <entry key="dashboard.data.timing">Timing</entry>
+    
+    <entry key="dashboard.data.closeStatementCount">Close Statement Count</entry>
+    <entry key="dashboard.data.flushCount">Flush Count</entry>
+    <entry key="dashboard.data.hibernateStatisticsSupported">Hibernate STAT Supported</entry>
+    <entry key="dashboard.data.maxGetTimeMillis">Max Request Duration (ms)</entry>
+    <entry key="dashboard.data.minGetTimeMillis">Min Request Duration (ms)</entry>
+    <entry key="dashboard.data.optimisticFailureCount">Optimistic Failure Count</entry>
+    <entry key="dashboard.data.prepareStatementCount">PrepareStatement Count</entry>
+    <entry key="dashboard.data.queryExecutionCount">Query Execution Count</entry>
+    <entry key="dashboard.data.queryExecutionRate">Query Execution Rate</entry>
+    <entry key="dashboard.data.regionCachesEnabled">Region Caches Enabled</entry>
+    <entry key="dashboard.data.sessionCloseCount">Session Close Count</entry>
+    <entry key="dashboard.data.sessionOpenCount">Session Open Count</entry>
+    <entry key="dashboard.data.statisticsEnabled">Statistics Enabled</entry>
+    <entry key="dashboard.data.successfulTransactionCount">Successful TXN Count</entry>
+    <entry key="dashboard.data.transactionCount">Transaction Count</entry>
+    
+
+    <!-- ############# Server Channels Page ############# -->
+    <entry key="dashboard.channels.title">Channels</entry>
+    
+    <entry key="dashboard.channels.availableChannels">Available Channels</entry>
+    <entry key="dashboard.channels.receivedMessages">Messages Received</entry>
+    <entry key="dashboard.channels.sentMessages">Messages Sent</entry>
+    <entry key="dashboard.channels.failedMessages">Messages Failed To Send</entry>
+    
+    <entry key="dashboard.channels.messages.title">Messages</entry>
+    <entry key="dashboard.channels.messages.reload.button">Reload</entry>
+    
+    <entry key="dashboard.channels.message.detail.title">Message Details</entry>
+    
+    <entry key="message.detail.sequenceNumber">Sequence Number</entry>
+    <entry key="message.detail.timestamp">Timestamp</entry>
+    <entry key="message.detail.type">Type</entry>
+    <entry key="message.detail.message">Text</entry>
+    <entry key="message.detail.back">Back</entry>
+
+    <!-- ############# Server Events Page ############# -->
+    <entry key="dashboard.events.title">Events</entry>
+
+    <entry key="dashboard.events.generator.summary">Summary</entry>
+    <entry key="dashboard.events.generator.noRegular">No. of Regular Events</entry>
+    <entry key="dashboard.events.generator.noRegenerated">No. of Regenerated Events</entry>
+    <entry key="dashboard.events.generator.noDelayed">No. of Delayed Events</entry>
+    <entry key="dashboard.events.generator.noTransient">No. of Transient Events</entry>
+    <entry key="dashboard.events.generator.noScheduled">No. of Scheduled Events</entry>
+    
+    <entry key="dashboard.events.queue.physical.title">Event Queues - Physical</entry>
+    <entry key="dashboard.events.queue.virtual.title">Event Queues - Virtual</entry>
+    <entry key="dashboard.events.scheduled.title">Scheduled Events</entry>
+    <entry key="dashboard.events.handler.title">Event Handlers</entry>
+
+    <entry key="dashboard.events.queue.name">Queue Name</entry>
+    <entry key="dashboard.events.queue.currentSize">Current Size</entry>
+    <entry key="dashboard.events.queue.maxSize">Maximum Size</entry>
+    <entry key="dashboard.events.scheduled.event">Event</entry>
+    <entry key="dashboard.events.scheduled.trigger">Trigger</entry>
+    <entry key="dashboard.events.handler.name">Handler Name</entry>
+    <entry key="dashboard.events.handler.status">Status</entry>
+    <entry key="dashboard.events.handler.event">Event</entry>
+    
+    <entry key="dashboard.events.scheduled.title">Scheduled Events</entry>
+    <entry key="dashboard.events.name">Event</entry>
+    <entry key="dashboard.events.trigger">Trigger</entry>  
+    
+    <entry key="dashboard.events.event.detail.title">Scheduled Event Details</entry>  
+    
+    <entry key="dashboard.events.handler.detail.title">Event Handler Details</entry>
+    <entry key="dashboard.events.handler.detail.configuration">Configuration</entry>
+    <entry key="dashboard.events.handler.detail.runStatistics">Run Statistics</entry>
+    <entry key="dashboard.events.handler.detail.handlerName">Handler Name</entry>
+    <entry key="dashboard.events.handler.detail.statusDescription">Status</entry>
+    <entry key="dashboard.events.handler.detail.eventName">Event Name</entry>
+    <entry key="dashboard.events.handler.detail.currentActiveThreads">Current Active Threads</entry>
+    <entry key="dashboard.events.handler.detail.currentIdleThreads">Current Idle Threads</entry>
+    <entry key="dashboard.events.handler.detail.configuredMaxActiveThreads">Max Active Threads</entry>
+    <entry key="dashboard.events.handler.detail.configuredMaxIdleThreads">Max Idle Threads</entry>
+    <entry key="dashboard.events.handler.detail.noRuns">Total Number of Runs</entry>
+    <entry key="dashboard.events.handler.detail.lastRun">Last Run At</entry>
+    <entry key="dashboard.events.handler.detail.noProcessed">Total Events Processed</entry>
+    <entry key="dashboard.events.handler.detail.avgProcessTime">Avg Process Time (ms)</entry>
+    <entry key="dashboard.events.handler.detail.noSuccess">Total Events Success</entry>
+    <entry key="dashboard.events.handler.detail.noFail">Total Events Fail</entry>
+    <entry key="dashboard.events.handler.detail.lastFail">Last Fail At</entry>
+    <entry key="dashboard.events.handler.detail.noExpire">Events Marked As Expired</entry>
+    <entry key="dashboard.events.handler.detail.noCatchup">Events Marked As Catch Up</entry>
+    
+    <entry key="dashboard.events.scheduled.noItemsMsg">No scheduled events</entry>
+    <entry key="dashboard.tasks.scheduled.noItemsMsg">No scheduled tasks</entry>
+    
+
+    <!-- ############# Server Tasks Page ############# -->
+    <entry key="dashboard.tasks.title">Tasks</entry>
+    
+    <entry key="dashboard.tasks.scheduled.title">Tasks</entry>
+    <entry key="dashboard.tasks.name">Tasks Name</entry>
+    <entry key="dashboard.tasks.cronExpression">Cron Expression</entry>
+    <entry key="dashboard.tasks.handler.title">Tasks Handlers</entry>
+    <entry key="dashboard.tasks.handler.name">Handler Name</entry>
+    <entry key="dashboard.tasks.handler.status">Status</entry>
+    <entry key="dashboard.tasks.handler.event">Event</entry>
+        
+    <entry key="dashboard.tasks.task.detail.title">Task Details</entry>    
+        
+    <entry key="dashboard.tasks.handler.detail.title">Task Handler Detail</entry>    
+ 
+    <!-- ############# Server Logs Page ############# -->
+    <entry key="dashboard.logs.title">Logs</entry>
+
+    <!-- ############# Preferences Page ############# -->
+    <entry key="preferences.title">Preferences</entry>
+    <entry key="preferences.help">Navigate to the preference node then click on it's name to select and edit</entry>
+
+    <entry key="preferences.button.application.encryption">Set Application Encryption</entry>
+    <entry key="preferences.button.application.edit">Edit Application</entry>
+    <entry key="preferences.button.add.application">Add an Application</entry>
+    <entry key="preferences.button.import.node">Import a Preference Node</entry>
+    <entry key="preferences.button.add.node">Add a Preference Node</entry>
+    <entry key="preferences.button.add.preference">Add a Preference</entry>
+
+    <entry key="preferences.application.remove.confirm">Are you sure you want to remove this preferences application?</entry>
+
+    <entry key="preferences.application.add.title">Add an Application</entry>
+    <entry key="preferences.application.edit.title">Edit an Application</entry>
+    <entry key="preferences.application.name">Application Name:</entry>
+    <entry key="preferences.application.description">Description:</entry>
+    <entry key="preferences.application.privilege.read">Read Privilege:</entry>
+    <entry key="preferences.application.privilege.write">Write Privilege:</entry>
+    <entry key="preferences.application.encryption.password">Encryption Password:</entry>
+    <entry key="preferences.application.encryption.type">Encryption Type:</entry>
+
+    <entry key="preferences.application.encryption.title">Set Application Encryption</entry>
+    <entry key="preferences.application.encryption.success">Application encryption set successfully</entry>
+    <entry key="preferences.application.encryption.error">There was a problem setting the application encryption</entry>
+
+    <!-- ############# Preferences Selected Node Page ############# -->
+    <entry key="preferences.node.title">Node</entry>
+
+    <entry key="preferences.node.selected">Selected Node</entry>
+    <entry key="preferences.node.removeAction">Remove Node</entry>
+
+    <entry key="preferences.node.export.button">Export</entry>
+
+    <entry key="preferences.node.application">Application:</entry>
+    <entry key="preferences.node.path">Node Full Path:</entry>
+    <entry key="preferences.node.parentpath">Parent Path:</entry>
+    <entry key="preferences.node.name">Full Node Path:</entry>
+
+    <entry key="preferences.node.add.title">Add a Preference Node</entry>
+    <entry key="preferences.node.item.add.title">Add a Preference</entry>
+    <entry key="preferences.node.item.edit.title">Edit a Preference</entry>
+
+    <entry key="selectedApplication.Required">Application is required</entry>
+    <entry key="nodePath.Required">Full Node Path is required</entry>
+    <entry key="name.Required">Application Name is required</entry>
+    <entry key="key.Required">Key is required</entry>
+    <entry key="value.Required">Value is required</entry>
+
+    <entry key="preferences.node.import.title">Import a Preference Node</entry>
+    <entry key="preferences.node.import.content">Preferences File</entry>
+    <entry key="preferences.node.import.button">Import</entry>
+    <entry key="preferences.node.import.file.required">A Preferences XML file is required</entry>
+    <entry key="preferences.node.import.format.error">There was a problem with the format of the Preferences XML file</entry>
+    <entry key="preferences.node.import.general.error">There was a problem import the Preferences XML file</entry>
+    <entry key="preferences.node.import.success">The preferences node and values were imported successfully</entry>
+    <entry key="preferences.node.import.application.not.found">The preferences application for this node does not exist</entry>
+
+    <entry key="preferences.node.item.add.title">Add a Preference</entry>
+    <entry key="preferences.node.item.edit.title">Edit a Preference</entry>
+    <entry key="preferences.node.items">Preferences</entry>
+
+    <entry key="preferences.node.items.key">Key</entry>
+    <entry key="preferences.node.items.value">Value</entry>
+    <entry key="preferences.node.items.type">Type</entry>
+    <entry key="preferences.node.items.description">Description</entry>
+    <entry key="preferences.node.items.actions">Actions</entry>
+    <entry key="preferences.node.items.editAction">Edit</entry>
+    <entry key="preferences.node.items.removeAction">Remove</entry>
+
+    <entry key="preferences.node.items.noItemsMsg">No preferences found for this node</entry>
+    <entry key="preferences.node.items.addPreferenceHelp">Click on Add a Preference to add a preference to this node</entry>
+
+    <entry key="preferences.node.preference.key">Key:</entry>
+    <entry key="preferences.node.preference.value">Value:</entry>
+    <entry key="preferences.node.preference.encrypt">Save With Encryption:</entry>
+    <entry key="preferences.node.preference.passphrase">Using Passphrase:</entry>
+    <entry key="preferences.node.preference.noencryption">No encryption</entry>
+    <entry key="preferences.node.preference.type">Type:</entry>
+    <entry key="preferences.node.preference.description">Description:</entry>
+    <entry key="preferences.node.preference.passphrase.required">To encrypt the value you must enter a passphrase</entry>
+
+    <entry key="preferences.application.add.success">Preferences application has been added</entry>
+    <entry key="preferences.application.add.error">There was a problem adding this preferences application</entry>
+    <entry key="preferences.application.update.success">Preferences application has been updated</entry>
+    <entry key="preferences.application.update.error">There was a problem updating this preferences application</entry>
+    <entry key="preferences.application.remove.success">Preferences application has been removed</entry>
+    <entry key="preferences.application.remove.error">There was a problem removing this preferences application</entry>
+
+    <entry key="preferences.node.add.success">Preference node has been added</entry>
+    <entry key="preferences.node.add.error">There was a problem adding this preference node</entry>
+
+    <entry key="preferences.node.remove.confirm">Are you sure you want to remove this preferences node?</entry>
+    <entry key="preferences.node.remove.success">Preferences node has been removed</entry>
+    <entry key="preferences.node.remove.error">There was a problem removing this preferences node</entry>
+
+    <entry key="preferences.node.item.add.success">Preference has been saved</entry>
+    <entry key="preferences.node.item.add.error">There was a problem adding this preference</entry>
+
+    <entry key="preferences.node.item.remove.confirm">Are you sure you want to remove this preference?</entry>
+    <entry key="preferences.node.item.remove.success">Preference has been removed</entry>
+    <entry key="preferences.node.item.remove.error">There was a problem removing this preference</entry>
+
+    <!-- ############# All Trackers Page ############# -->
+    <entry key="dashboard.alltrackers.title">All Trackers</entry>
+
+    <!-- ############# Consolidate Trackers Page ############# -->
+    <entry key="dashboard.consolidate.title">Consolidate Trackers</entry>
+
+    <!-- ############# Separate Trackers Page ############# -->
+    <entry key="dashboard.separate.title">Separate Trackers</entry>
+
+    <!-- ############# Tracker Data History Page ############# -->
+    <entry key="dashboard.history.title">History</entry>
+
+    <!-- ############# Job List Page ############# -->
+    <entry key="jobList.title">Jobs</entry>
+
+    <entry key="jobList.noItemMsg">No jobs found</entry>
+    <entry key="jobList.addJobHelp">Use the 'Add a Job' link above to create one</entry>
+
+    <entry key="jobList.add.button">Add a Job</entry>
+    <entry key="jobList.handlerName">Handler</entry>
+    <entry key="jobList.schedule">Schedule</entry>
+    <entry key="jobList.implementationUrl">Implementation</entry>
+    <entry key="jobList.actions">Actions</entry>
+    <entry key="jobList.editAction">Edit</entry>
+    <entry key="jobList.removeAction">Remove</entry>
+
+    <entry key="jobList.remove.confirm">Are you sure you want to remove this job?</entry>
+    <entry key="jobList.remove.success">Job has been successfully removed</entry>
+    <entry key="jobList.remove.error">There has been an problem removing this job</entry>
+
+    <!-- ############# Add/Edit Job Page ############# -->
+    <entry key="addJob.title">Add a Job</entry>
+    <entry key="editJob.title">Edit a Job</entry>
+
+    <entry key="addJob.handlerName">Handler</entry>
+    <entry key="addJob.jobName">Job Name</entry>
+    <entry key="addJob.implementationType">Serviced By</entry>
+    <entry key="addJob.implementationUrl">Implementation</entry>
+    <entry key="addJob.schedule">Schedule</entry>
+    <entry key="addJob.parameters">Parameters</entry>
+    <entry key="addJob.active">Active</entry>
+    <entry key="addJob.maxDelay">Max Delay</entry>
+    <entry key="addJob.maxDuration">Max Duration</entry>
+
+    <entry key="addJob.add.success">Job has been successfully created</entry>
+    <entry key="addJob.add.error">There has been an problem creating this job</entry>
+
+    <entry key="addJob.edit.success">Job has been successfully updated</entry>
+    <entry key="addJob.edit.error">There has been an problem updating this job</entry>
+
+    <!-- ############# All Trackers Page ############# -->
+    <entry key="dashboard.alltrackers.title">All Trackers</entry>
+
+    <!-- ############# View Tracker Page ############# -->
+    <entry key="dashboard.viewtracker.title">View Tracker</entry>
+    <entry key="dashboard.viewtracker.trackerSelect">Tracker</entry>
+
+</properties>

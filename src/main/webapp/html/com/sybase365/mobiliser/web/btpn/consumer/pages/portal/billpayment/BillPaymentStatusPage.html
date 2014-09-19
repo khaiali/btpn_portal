@@ -1,0 +1,27 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.ta/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="confirmBillPay">		
+							<fieldset>
+								<legend class="reg_tab">
+									<h2><wicket:message key="left.menu.billPayment" /></h2>
+								</legend>								
+								<div class="spacer"></div>
+								<div class="column">
+									<b><label wicket:id="billPayBean.statusMessage"></label></b>
+								</div>
+								<div class="spacer"></div>
+							<input name="backtoHome" wicket:id="btnOk" wicket:message="value:OK" class="submit acc_chk" type="submit" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

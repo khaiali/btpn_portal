@@ -1,0 +1,68 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+		<div id="centerContent" class="content">
+
+			<div class="module clear">
+
+				<h1 class="coupon">
+					<span><wicket:message key="menu.coupon.types" /></span>
+					<span><wicket:message key="application.breadcrumb.separator" /></span>
+					<span><wicket:message key="menu.coupon.type.categories" /></span>
+				</h1>
+
+				<h3 class="help">
+					<wicket:message key="couponType.categories.help" />
+				</h3>
+				
+				<form wicket:id="categoriesForm">
+
+					<div wicket:id="errorMessages"></div>
+
+				<div class="column">
+				
+				<div class="column twoColumn">
+				
+					<div class="input umgrRoles">
+						<label><wicket:message key="availableCategories" /></label> 
+						<select multiple="multiple" wicket:id="availableCategories" id="availableCategories" size="6">
+							<option>dummy</option>
+						</select>
+					</div>
+					<div class="column">
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="addCategory" wicket:message="value:couponTypeCategory.button.addCategory" />
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="column twoColumn">
+				
+					<div class="input umgrRoles">
+						<label><wicket:message key="assignedCategories" /></label> 
+						<select multiple="multiple" wicket:id="assignedCategories" id="assignedCategories" size="6">
+							<option>dummy</option>
+						</select>
+					</div>
+					<div class="column">
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="removeCategory" wicket:message="value:couponTypeCategory.button.removeCategory" />
+						</div>
+					</div>
+					
+				</div>				
+				
+				
+			</div>													
+				</form>
+			</div>
+
+		</div>
+
+	</wicket:extend>
+
+</body>
+</html>

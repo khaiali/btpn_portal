@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/btpn/agent-portal/portal.css" media="all"
+		rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="scripts/btpn/agent-portal/portal.js"></script>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+</wicket:head>
+</head>
+<body>
+	<wicket:extend>
+		<div id="container">
+			<!-- Start Bank Portal Application Page Header  -->
+
+			<div id="header">
+				<!-- Start Agent Info -->
+				<div id="agentInfo">
+					<span style="margin-right: 160px; color: #7c6a54;" id="timestamp"></span>
+					<span id="agent_username" style="color: #f7a11a"><label
+						wicket:id="header.login.info"></label></span> <br /> <span
+						style="color: #7c6a54"><label
+						wicket:id="header.login.customerid" /></span>| <a href="#"
+						wicket:id="header.logout" style="text-decoration: underline">
+						<wicket:message key="header.logout.label" />
+					</a> <br />
+				</div>
+				<!-- END Agent info -->
+
+				<!-- Logo -->
+				<a href="#" wicket:id="header.logo">
+					<div id="logo"></div>
+				</a>
+
+				<!-- Application and Selected Menu Name -->
+				<div style="display: none"></div>
+				<div id="applicationName" style="color: #0000">
+					<wicket:message key="application.name" />
+				</div>
+
+				<!-- Start Navigation Menu  -->
+				<div id="navigation">
+					<div id="nav">
+						<ul class="dropdown dropdown-horizontal">							
+						</ul>
+					</div>
+					<!-- END of Nav -->
+					<div id="nav_content_color_bar">
+						<div class="blueid" style="display:none"></div>
+						<div class="whiteid"></div>
+						<div class="redid" style="display:none"></div>
+						<div class="whiteid"></div>
+						<div class="greenid" style="display:none"></div>
+					</div>
+				</div>
+			</div>
+			<!-- END HEADER -->
+
+			<wicket:child />
+
+
+			<!-- Start of Bank Portal Application Footer -->
+			<div id="footer">
+				<div class="info">
+					<wicket:message key="foooter.copyright" />
+					&copy;
+					<wicket:message key="foooter.bank.name" />
+					<span style="color: inherit;" id="session.timeout.counter"></span>
+				</div>
+			</div>
+			<!-- End of Bank Portal Application Footer -->
+
+		</div>
+		<div class="print"></div>
+		
+		<!-- Session time out Messages -->
+		<div style="display:none" id="session.timeout.counter.label"><wicket:message key="session.timeout.counter.label" /></div>
+		<div style="display:none" id="session.timeout.counter.minutes.label"><wicket:message key="session.timeout.counter.minutes.label" /></div>
+		<div style="display:none" id="session.timeout.label"><wicket:message key=session.timeout.label" /></div>
+		<div style="display:none;" id="session.timeout.seconds" wicket:id="application.session.timeout.seconds"></div>
+		
+		<script type="text/javascript">				
+			<!--
+			//Display Timer
+			setupTimerDisplay();
+			//TODO : Get Session Timeout from preferences
+			var sessionTimoutSeconds = document.getElementById("session.timeout.seconds").innerHTML;			
+			sessionTimoutPrint();			
+			sessionTimoutDisplay() ;
+			-->
+		</script>
+
+	</wicket:extend>
+</body>
+</html>

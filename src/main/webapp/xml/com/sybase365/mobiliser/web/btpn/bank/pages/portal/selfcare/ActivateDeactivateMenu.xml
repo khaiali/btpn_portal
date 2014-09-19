@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="label.activate.menu"> Activate/Deactivate </entry>	
+	<entry key="label.user.roles"> User Roles </entry>
+	<entry key="label.available.tasks">All Available Tasks </entry>
+	<entry key="Remove">Remove Task</entry>
+	<entry key="Assign">Assign Tasks</entry>
+	<entry key="Find">Find Task</entry>
+</properties>

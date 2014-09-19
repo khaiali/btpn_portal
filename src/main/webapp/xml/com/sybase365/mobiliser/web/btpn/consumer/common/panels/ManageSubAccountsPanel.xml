@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.accounts">Rekening</entry>
+	<entry key="label.name">Nama</entry>
+	<entry key="label.accountId">ID Rekening</entry>
+	<entry key="label.description">Deskripsi</entry>
+	<entry key="label.balance">Saldo(IDR)</entry>
+	<entry key="label.remove">Hapus</entry>
+	<entry key="label.noAccountsFound">Tidak ada daftar rekening.  Pilih 'Tambah' untuk membuat daftar rekening.</entry>
+	<entry key="subAccounts.totalitems.header">%s item ditemukan, menampilkan %s sampai %s.</entry>
+	<entry key="remove.failedMessage">Tidak dapat menghapus Rekening.</entry>
+</properties>

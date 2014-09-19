@@ -1,0 +1,78 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="mobileAlertsForm">
+
+		<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+			<div class="module clear" wicket:id="customerAlertsListContainer">
+			
+				<h2 class="section preference">
+					<wicket:message key="manageAlerts.alertSubscriptionsTable.title" />
+					<input type="submit" class="additionalLink last" wicket:id="addAlert" wicket:message="value:manageAlerts.button.addAlert" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="calStartIndex" /> - <span wicket:id="calEndIndex" /> (<span wicket:id="calTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="calNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="alertSubscriptionsTable" class="listTable">
+						
+							<wicket:enclosure child="calPageable">
+							
+								<thead>
+									<tr>
+										<th style="width:25%" wicket:id="calOrderByNickname"><wicket:message key="manageAlerts.alertSubscriptionsTable.description" /></th>
+										<th style="width:55%" ><wicket:message key="manageAlerts.alertSubscriptionsTable.contact" /></th>
+										<th style="width:20%" class="actions last"><wicket:message key="manageAlerts.actions" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="3"></td>
+									</tr>
+								</tfoot>
+								
+								<tbody>
+									<tr wicket:id="calPageable">
+										<td><span wicket:id="calDescription">[Alert Description]</span></td>
+										<td><span wicket:id="calContactsPoint">[Contacts Points]</span></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="calEditAction"><wicket:message key="manageAlerts.editAction">[Edit]</wicket:message> </a></li>
+												<li><a href="#" wicket:id="calRemoveAction"><wicket:message key="manageAlerts.removeAction">[Remove]</wicket:message> </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+						
+						<div id="noItemsMsg" class="centerMsg" wicket:id="calNoItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+	</form>
+
+
+</wicket:panel>
+
+</body>
+</html>

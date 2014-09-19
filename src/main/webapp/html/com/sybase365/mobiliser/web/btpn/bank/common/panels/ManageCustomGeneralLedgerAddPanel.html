@@ -1,0 +1,76 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="customGLConfirmForm">
+						<div wicket:id="errorMessages"></div>
+						<fieldset>
+							<legend class="reg_tab">
+								<wicket:message key="headLine.gl.management" />
+							</legend>
+							<div class="column ">
+							
+								<div class="input" id="glCodeBlock">
+									<label for="glCode"><wicket:message key="label.glCode" /></label>
+									<div class="input_value">
+										<label wicket:id="ledgerBean.glCode"></label>
+									</div>
+								</div>
+								
+								<div class="input" id="glCodeDescBlock">
+									<label for="glCodeDesc"><wicket:message key="label.glDesc" /></label> 
+									<div class="input_value">
+										<label wicket:id="ledgerBean.glDescription"></label>
+									</div>
+								</div>
+								
+								<div class="input" id="glParentCodeBlock">
+									<label for="glParentCode"><wicket:message key="label.parentGLCode" /></label> 
+									<div class="input_value">
+										<label	wicket:id="ledgerBean.selectedParentGlCode">
+									</div>
+								</div>
+
+								<div class="input" id="glCodeTypeBlock" style="width: 500px">
+									<label for="glCodeType"><wicket:message key="label.type" /></label>
+									<div class="input_value">
+										<label wicket:id="ledgerBean.selectedType">
+									</div>
+								</div>
+								
+								<div class="input" id="glCodeDescBlock">
+									<label for="glCodeDesc"><wicket:message key="label.glCode" /></label> 
+									<div class="input_value">
+										<label wicket:id="ledgerBean.glCode"/>
+									</div>
+								</div>
+								
+								<div class="input" id="nodeBlock">
+									<label for="note"><wicket:message key="label.note" /></label> 
+									<div class="input_value">
+										<label wicket:id="ledgerBean.note"/>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="spacer"></div>
+							<div class="column">
+									<input type="submit" class="submit acc_chk" id="submit"
+										wicket:id="btnSubmit" wicket:message="value:Confirm" /> 
+									<input type="submit" class="submit acc_chk" id="submit" 
+										wicket:id="btnCancel" wicket:message="value:Cancel" style="left: 270px" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

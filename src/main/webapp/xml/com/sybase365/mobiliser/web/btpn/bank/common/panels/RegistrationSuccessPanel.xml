@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="registration.successMessage">Thanks for Registration, your request for
+		Agent/Consumer registration has been submitted to the bank approval
+		and applicant will be informed of the outcome soon via SMS. Registered
+		MSVA number is 1234567. Please use USSD to generate your PIN.</entry>
+</properties>

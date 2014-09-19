@@ -1,0 +1,69 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<fieldset id="userProfile">
+						<legend class="reg_tab"><wicket:message key="label.userProfile"/></legend>
+						<form wicket:id="profileForm" method="post">
+							<div wicket:id="errorMessages"></div>
+							<div class="Regist_sup_main">
+								<div class="input">
+									<label for="userId"><wicket:message key="label.userId"/><span class="required">*</span></label>
+									<input id="userId" name="userId" wicket:id="customer.username"
+										\ />
+								</div>
+								<div class="input">
+									<label for="displayName"><wicket:message key="label.userName"/><span class="required">*</span></label>
+									<input id="displayName" maxlength="50" name="displayName"
+										wicket:id="bankStaff.name" type="text" />
+								</div>
+								<div class="input">
+									<label for="occupation"><wicket:message key="label.userDesignation"/><span
+										class="required">*</span></label> <input id="occupation"
+										name="occupation" wicket:id="bankStaff.designation"  type="text" />
+								</div>
+								<div class="input">
+									<label for="emailId"><wicket:message key="label.userEmail"/><span class="required">*</span></label>
+									<input id="emailId" maxlength="40" name="emailId"
+										wicket:id="bankStaff.email" type="text" />
+								</div>
+
+								<div class="input">
+									<label for="tCode"><wicket:message key="label.userTerritoryCode"/></label>
+									 <input id="tCode" maxlength="50" wicket:id="bankStaff.territoryCode"  name="tCode" type="text" />
+								</div>
+
+								<div class="column">
+									<p>
+										<span class="required">*</span><wicket:message key="label.denotes.mandatory"/>
+									</p>
+								</div>
+							</div>
+							<div class="bank_reg_but">
+								<input id="submit" name="updateProfile" wicket:id="btnUpdate" wicket:message="value:Update" onclick="loading()" class="submit acc_chk" type="submit" /> 
+								<input style="left: 250px" name="cancelProfile" wicket:id="btnCancel" wicket:message="value:Cancel" class="submit acc_chk" type="submit" />
+							</div>
+							<div id="loading"
+								style="position: relative; display: none; width: 100%; text-align: center; top: 100px;">
+								<img src="css/images/ajax-loader.gif" border=0>
+							</div>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+			<script>
+				function loading() {
+					document.getElementById('userManage').style.display = "none";
+					document.getElementById('loading').style.display = "block";
+
+				}
+			</script>
+		</div>
+	</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:prefs="http://www.sybase.com/mobiliser/util/prefs/config"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:ehcache="http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
+    http://www.sybase.com/mobiliser/util/prefs/config http://www.sybase.com/mobiliser/util/prefs/config/sybase-prefs-config-5.0.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd
+    http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+    http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring
+    http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring/ehcache-spring-1.1.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<!--bean id="configurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"> 
+		<property name="locations" value="WEB-INF/context.properties" /> </bean -->
+	<context:annotation-config />
+	<!-- MOBILISER CONTROLLER APPLICATION -->
+
+	<bean id="mobiliserApplication"
+		class="com.sybase365.mobiliser.web.application.MobiliserApplication">
+		<property name="applicationSigninPage"
+			value="com.sybase365.mobiliser.web.application.pages.ApplicationLoginPage" />
+		<property name="applicationHomePage"
+			value="com.sybase365.mobiliser.web.application.pages.ApplicationStartPage" />
+		<property name="ownAuthenticationRequired">
+			<util:set>
+				<ref bean="dashboardLoginPriv" />
+				<ref bean="cstLoginPriv" />
+				<!--
+				<ref bean="dppLoginPriv" />
+				-->
+			</util:set>
+		</property>
+		<property name="authenticatedApplications">
+			<util:list>
+				<ref bean="consumerPortal" />
+				<ref bean="cst" />
+				<!--
+				<ref bean="distributorPartnerPortal" />
+				-->
+				<ref bean="dashboard" />
+			</util:list>
+		</property>
+		<!--
+		<property name="unauthenticatedApplications">
+			<util:list>
+				<ref bean="demoMerchant" />
+			</util:list>
+		</property>
+		<property name="signupApplications">
+			<util:list>
+				<ref bean="consumerSignup" />
+			</util:list>
+		</property>
+		-->
+		<property name="stringResourceLoaders">
+			<util:list>
+				<ref bean="lookupResourceLoaderImpl" />
+				<ref bean="databaseResourceLoaderImpl" />
+			</util:list>
+		</property>
+		<property name="configuration" ref="configuration" />
+	</bean>
+
+	<bean id="bankPortalMobiliserApplication"
+		class="com.sybase365.mobiliser.web.application.MobiliserBankPortalApplication">
+		<property name="applicationSigninPage"
+			value="com.sybase365.mobiliser.web.btpn.application.pages.BankPortalApplicationLoginPage" />
+		<property name="applicationHomePage"
+			value="com.sybase365.mobiliser.web.btpn.application.pages.BankPortalApplicationStartPage" />
+		<property name="authenticatedApplications">
+			<util:list>
+				<ref bean="btpnBankPortal" />
+			</util:list>
+		</property>
+		<property name="stringResourceLoaders">
+			<util:list>
+				<ref bean="lookupResourceLoaderImpl" />
+				<ref bean="databaseResourceLoaderImpl" />
+			</util:list>
+		</property>
+		<property name="configuration" ref="configuration" />
+		<property name="bankPortalPrefsConfig" ref="bankPortalConfiguration" />
+	</bean>
+
+	<bean id="agentPortalMobiliserApplication"
+		class="com.sybase365.mobiliser.web.application.MobiliserAgentPortalApplication">
+		<property name="applicationSigninPage"
+			value="com.sybase365.mobiliser.web.btpn.application.pages.AgentPortalApplicationLoginPage" />
+		<property name="applicationHomePage"
+			value="com.sybase365.mobiliser.web.btpn.application.pages.AgentPortalApplicationStartPage" />
+		<property name="authenticatedApplications">
+			<util:list>
+				<ref bean="btpnAgentPortal" />
+			</util:list>
+		</property>
+		<property name="stringResourceLoaders">
+			<util:list>
+				<ref bean="lookupResourceLoaderImpl" />
+				<ref bean="databaseResourceLoaderImpl" />
+			</util:list>
+		</property>
+		<property name="configuration" ref="configuration" />
+		<property name="agentPortalPrefsConfig" ref="agentPortalConfiguration" />
+	</bean>
+
+	<bean id="consumerPortalMobiliserApplication"
+		class="com.sybase365.mobiliser.web.application.MobiliserConsumerPortalApplication">
+		<property name="applicationSigninPage"
+			value="com.sybase365.mobiliser.web.btpn.application.pages.ConsumerPortalApplicationLoginPage" />
+		<property name="applicationHomePage"
+			value="com.sybase365.mobiliser.web.btpn.application.pages.ConsumerPortalApplicationStartPage" />
+		<property name="authenticatedApplications">
+			<util:list>
+				<ref bean="btpnConsumerPortal" />
+			</util:list>
+		</property>
+		<property name="stringResourceLoaders">
+			<util:list>
+				<ref bean="lookupResourceLoaderImpl" />
+				<ref bean="databaseResourceLoaderImpl" />
+			</util:list>
+		</property>
+		<property name="configuration" ref="configuration" />
+		<property name="consumerPortalPrefsConfig" ref="customerPortalConfiguration" />
+	</bean>
+
+
+	<util:constant id="dashboardLoginPriv"
+		static-field="com.sybase365.mobiliser.web.util.Constants.PRIV_DASHBOARD_LOGIN" />
+	<util:constant id="cstLoginPriv"
+		static-field="com.sybase365.mobiliser.web.util.Constants.PRIV_CST_LOGIN" />
+	<util:constant id="dppLoginPriv"
+		static-field="com.sybase365.mobiliser.web.util.Constants.PRIV_MERCHANT_LOGIN" />
+
+	<!-- CONTRIBUTING MOBILISER APPLICATIONS -->
+
+	<bean id="consumerSignup"
+		class="com.sybase365.mobiliser.web.consumer.pages.signup.ConsumerSignupApplication">
+		<property name="bookmarkablePages">
+			<util:map>
+				<entry key="/signup"
+					value="com.sybase365.mobiliser.web.consumer.pages.signup.SignupStartPage" />
+			</util:map>
+		</property>
+		<property name="homePage"
+			value="com.sybase365.mobiliser.web.consumer.pages.signup.SignupStartPage" />
+	</bean>
+
+	<bean id="consumerPortal"
+		class="com.sybase365.mobiliser.web.consumer.pages.portal.ConsumerPortalApplication">
+		<property name="bookmarkablePages">
+			<util:map>
+				<entry key="/consumer"
+					value="com.sybase365.mobiliser.web.consumer.pages.portal.selfcare.ConsumerHomePage" />
+			</util:map>
+		</property>
+		<property name="loginPrivilege">
+			<util:constant
+				static-field="com.sybase365.mobiliser.web.util.Constants.PRIV_CONSUMER_LOGIN" />
+		</property>
+		<property name="homePage"
+			value="com.sybase365.mobiliser.web.consumer.pages.portal.selfcare.ConsumerHomePage" />
+	</bean>
+
+	<bean id="cst" class="com.sybase365.mobiliser.web.cst.pages.CstApplication">
+		<property name="bookmarkablePages">
+			<util:map>
+				<entry key="/cst"
+					value="com.sybase365.mobiliser.web.cst.pages.selfcare.CstHomePage" />
+			</util:map>
+		</property>
+		<property name="loginPrivilege">
+			<util:constant
+				static-field="com.sybase365.mobiliser.web.util.Constants.PRIV_CST_LOGIN" />
+		</property>
+		<property name="homePage"
+			value="com.sybase365.mobiliser.web.cst.pages.selfcare.CstHomePage" />
+	</bean>
+
+	<!-- START APPLICATIONS FOR BTPN PROJECT -->
+
+	<bean id="btpnBankPortal"
+		class="com.sybase365.mobiliser.web.btpn.bank.pages.portal.BtpnBankPortalApplication">
+		<!--
+		<property name="bookmarkablePages">
+			<util:map>
+				<entry key="/bank-portal/Home"
+					value="com.sybase365.mobiliser.web.btpn.bank.pages.portal.selfcare.BankPortalHomePage" />
+			</util:map>
+		</property>
+		-->
+		<property name="loginPrivilege">
+			<util:constant
+				static-field="com.sybase365.mobiliser.web.btpn.util.BtpnConstants.PRIV_BTPN_BANK_PORTAL_LOGIN" />
+		</property>
+	</bean>
+
+	<bean id="btpnConsumerPortal"
+		class="com.sybase365.mobiliser.web.btpn.consumer.pages.portal.BtpnConsumerPortalApplication">
+		<!--
+		<property name="bookmarkablePages">
+			<util:map>
+				<entry key="/consumer-portal/Home"
+					value="com.sybase365.mobiliser.web.btpn.consumer.pages.portal.selfcare.ConsumerPortalHomePage" />
+			</util:map>
+		</property>
+		-->
+		<property name="loginPrivilege">
+			<util:constant
+				static-field="com.sybase365.mobiliser.web.btpn.util.BtpnConstants.PRIV_BTPN_CONSUMER_LOGIN" />
+		</property>
+	</bean>
+
+	<bean id="btpnAgentPortal"
+		class="com.sybase365.mobiliser.web.btpn.agent.pages.portal.BtpnAgentPortalApplication">
+		<!--
+		<property name="bookmarkablePages">
+			<util:map>
+				<entry key="/agent-portal/Home"
+					value="com.sybase365.mobiliser.web.btpn.agent.pages.portal.selfcare.AgentPortalHomePage" />
+			</util:map>
+		</property>
+		-->
+		<property name="loginPrivilege">
+			<util:constant
+				static-field="com.sybase365.mobiliser.web.btpn.util.BtpnConstants.PRIV_BTPN_AGENT_LOGIN" />
+		</property>
+	</bean>
+
+	<!-- END OF APPLICATIONS FOR BTPN -->
+
+	<bean id="dashboard"
+		class="com.sybase365.mobiliser.web.dashboard.pages.DashboardApplication">
+		<property name="bookmarkablePages">
+			<util:map>
+				<entry key="/dashboard"
+					value="com.sybase365.mobiliser.web.dashboard.pages.home.DashboardHomePage" />
+			</util:map>
+		</property>
+		<property name="loginPrivilege">
+			<util:constant
+				static-field="com.sybase365.mobiliser.web.util.Constants.PRIV_DASHBOARD_LOGIN" />
+		</property>
+		<property name="homePage"
+			value="com.sybase365.mobiliser.web.dashboard.pages.home.DashboardHomePage" />
+	</bean>
+
+	<bean id="distributorPartnerPortal"
+		class="com.sybase365.mobiliser.web.distributor.pages.DistributorApplication">
+		<property name="bookmarkablePages">
+			<util:map>
+				<entry key="/distributor"
+					value="com.sybase365.mobiliser.web.distributor.pages.selfcare.SelfCareHomePage" />
+			</util:map>
+		</property>
+		<property name="loginPrivilege">
+			<util:constant
+				static-field="com.sybase365.mobiliser.web.util.Constants.PRIV_MERCHANT_LOGIN" />
+		</property>
+		<property name="homePage"
+			value="com.sybase365.mobiliser.web.distributor.pages.selfcare.SelfCareHomePage" />
+	</bean>
+
+	<bean id="demoMerchant"
+		class="com.sybase365.mobiliser.web.demomerchant.pages.DemoMerchantApplication">
+		<property name="bookmarkablePages">
+			<util:map>
+				<entry key="/demo-merchant"
+					value="com.sybase365.mobiliser.web.demomerchant.pages.DemoMerchantHomePage" />
+			</util:map>
+		</property>
+		<property name="homePage"
+			value="com.sybase365.mobiliser.web.demomerchant.pages.DemoMerchantHomePage" />
+	</bean>
+
+	<!-- RESOURCE LOADERS -->
+
+	<bean id="lookupResourceLoaderImpl"
+		class="com.sybase365.mobiliser.util.tools.wicketutils.resourceloader.LookupResourceLoader">
+		<property name="lookupMapUtilities" ref="lookupMapUtilitiesImpl">
+		</property>
+	</bean>
+
+	<bean id="lookupMapUtilitiesImpl" class="com.sybase365.mobiliser.web.util.LookupMapCacheUtility">
+		<property name="wsSystemConfClient" ref="systemAuthSystemContextClient" />
+	</bean>
+
+	<bean id="databaseResourceLoaderImpl"
+		class="com.sybase365.mobiliser.util.tools.wicketutils.resourceloader.DatabaseResourceLoader" />
+
+	<bean id="btpnLookupMapUtilitiesImpl"
+		class="com.sybase365.mobiliser.web.btpn.util.BtpnLookupMapCacheUtility">
+		<property name="wsSystemConfClient" ref="systemAuthSystemContextClient" />
+	</bean>
+
+	<!-- EHCACHE CONFIGURATION -->
+
+	<ehcache:annotation-driven cache-manager="cacheManager" />
+
+	<bean id="cacheManager"
+		class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+		<property name="configLocation" value="/WEB-INF/ehcache.xml" />
+	</bean>
+
+	<ehcache:config cache-manager="cacheManager">
+		<ehcache:evict-expired-elements
+			interval="60" />
+	</ehcache:config>
+
+	<!-- SPRING SECURITY CONFIGURATION -->
+
+	<security:authentication-manager
+		erase-credentials="false" alias="authenticationManager">
+		<security:authentication-provider
+			ref="mobiliserAuthenticationProvider" />
+	</security:authentication-manager>
+
+	<bean id="mobiliserAuthenticationProvider"
+		class="com.sybase365.mobiliser.util.tools.wicketutils.security.MobiliserAuthenticationProvider">
+		<property name="securityClient" ref="systemAuthCustomerContextClient" />
+	</bean>
+	
+	
+	<bean id="httpSessionContextIntegrationFilter"
+		class="org.springframework.security.web.context.SecurityContextPersistenceFilter" />
+
+	<bean id="filterChainProxy" class="org.springframework.security.web.FilterChainProxy">
+		<security:filter-chain-map path-type="ant">
+			<security:filter-chain pattern="/**"
+				filters="httpSessionContextIntegrationFilter" />
+		</security:filter-chain-map>
+	</bean>
+
+	<bean
+		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name="targetClass"
+			value="org.springframework.security.core.context.SecurityContextHolder" />
+		<property name="targetMethod" value="setStrategyName" />
+		<property name="arguments">
+			<list>
+				<value>MODE_INHERITABLETHREADLOCAL</value>
+			</list>
+		</property>
+	</bean>
+	<!-- PREFERENCES CONFIGURATION -->
+
+	<bean id="backingStore"
+		class="com.sybase365.mobiliser.util.prefs.store.remote.MagicRemoteBackingStoreFactoryBean">
+		<property name="origin" value="mobiliser-web" />
+	</bean>
+
+	<alias alias="refreshConfiguration" name="backingStore" />
+	<alias alias="encryptionManager" name="backingStore" />
+
+	<bean id="prefsService"
+		class="com.sybase365.mobiliser.util.prefs.impl.PreferencesServiceFactoryBean">
+		<constructor-arg ref="backingStore" />
+		<constructor-arg ref="refreshConfiguration" />
+	</bean>
+
+	<prefs:node id="prefsNode" preferences-service="prefsService"
+		class="com.sybase365.mobiliser.util.tools.wicketutils.services.Configuration"
+		auto-decrypt="true" />
+
+	<bean id="configuration" class="com.sybase365.mobiliser.web.util.Configuration">
+		<property name="node">
+			<prefs:node id="configurationPrefsNode"
+				preferences-service="prefsService" class="com.sybase365.mobiliser.web.util.Configuration"
+				auto-decrypt="true" />
+		</property>
+	</bean>
+
+	<!-- MOBILISER SERVICE CONFIGURATION - GENERAL -->
+
+	<bean id="captchaProducer" class="com.google.code.kaptcha.impl.DefaultKaptcha">
+		<property name="config">
+			<bean class="com.google.code.kaptcha.util.Config">
+				<constructor-arg type="java.util.Properties" value="null">
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="soapClientFactory"
+		class="com.sybase365.mobiliser.web.btpn.util.BtpnSoapClientFactory" >
+		<property name="configuration" ref="configuration" />
+	</bean>
+
+	<bean id="serviceConfiguration"
+		class="com.sybase365.mobiliser.web.util.DynamicServiceConfiguration">
+		<property name="preferences" ref="dynamicPrefsNode" />
+	</bean>
+
+	<!-- ***** Bank Portal Authentication Manager for Login to Bank Portal **** -->
+
+	<bean id="bankPortalAuthenticationManager"
+		class="org.springframework.security.authentication.ProviderManager">
+		<constructor-arg>
+			<list>
+				<ref bean="bankPortalAuthenticationProvider" />
+			</list>
+		</constructor-arg>
+	</bean>
+	 
+	<bean id="bankPortalAuthenticationProvider"
+		  class="com.sybase365.mobiliser.web.btpn.util.BankPortalAuthenticationProvider">
+        <property name="securityEndpoint" ref="systemAuthSecurityClient" />
+        <property name="securityFacade" ref="securityClientProvider" />
+		<property name="userClient" ref="userClientProvider" />
+	</bean>
+
+	<!-- ***** Bank Portal Prefs Configuration **** -->
+	<bean id="bankPortalConfiguration"
+		class="com.sybase365.mobiliser.web.btpn.util.BankPortalConfiguration">
+		<property name="node">
+			<prefs:node id="bankConfigurationPrefsNode"
+				preferences-service="prefsService"
+				class="com.sybase365.mobiliser.web.btpn.util.BankPortalConfiguration"
+				auto-decrypt="true" />
+		</property>
+	</bean>
+
+
+	<!-- ***** Bank Portal Authentication Manager for Login to Bank Portal **** -->
+	<bean id="customerAuthenticationManager"
+		class="org.springframework.security.authentication.ProviderManager">
+		<constructor-arg>
+			<list>
+				<ref bean="customerAuthenticationProvider" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="customerAuthenticationProvider"
+		class="com.sybase365.mobiliser.web.btpn.util.AgentCustomerAuthenticationProvider">
+		<property name="securityEndpoint" ref="systemAuthSecurityClient" />
+		<property name="securitysClient" ref="securityClientProvider" />
+		<property name="customerClient" ref="customerClientProvider" />
+	</bean>
+
+	<!-- ***** Agent Portal Prefs Configuration **** -->
+	<bean id="agentPortalConfiguration"
+		class="com.sybase365.mobiliser.web.btpn.util.AgentPortalConfiguration">
+		<property name="node">
+			<prefs:node id="agentConfigurationPrefsNode"
+				preferences-service="prefsService"
+				class="com.sybase365.mobiliser.web.btpn.util.AgentPortalConfiguration"
+				auto-decrypt="true" />
+		</property>
+	</bean>
+
+	<!-- ***** Customer Portal Prefs Configuration **** -->
+	<bean id="customerPortalConfiguration"
+		class="com.sybase365.mobiliser.web.btpn.util.ConsumerPortalConfiguration">
+		<property name="node">
+			<prefs:node id="consumerConfigurationPrefsNode"
+				preferences-service="prefsService"
+				class="com.sybase365.mobiliser.web.btpn.util.ConsumerPortalConfiguration"
+				auto-decrypt="true" />
+		</property>
+	</bean>
+</beans>

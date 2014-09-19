@@ -1,0 +1,103 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="limitApproveForm">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="headLine.limit" /></legend>
+							<br>
+							<div wicket:id="errorMessages"></div>
+							<br>
+							 	   <div class="input" style="width: 720px">
+                                        <label> <wicket:message key="limit.description" /></label> <input
+                                            type="text" id="mobileNumber"
+                                            wicket:id="limitBean.description" />
+                                    </div>
+                                    
+                                    <!-- FROM DATE -->
+                                     <div class="input" style="width: 720px">
+                                        <label><wicket:message key="limit.dateFrom" /></label> 
+                                            <input readonly="readonly" wicket:id="limitBean.dateFrom"  
+                                                id="fromDate" tabindex="8" type="text" size="10" 
+                                                style="width: 150px;" />
+                                    </div>
+                                    
+                                    <!-- TO DATE -->
+                                    <div class="input" style="width: 720px">
+                                        <label><wicket:message key="limit.dateTo" /></label> 
+                                            <input readonly="readonly" wicket:id="limitBean.dateTo"  
+                                                id="toDate" tabindex="8" type="text" size="10" 
+                                                style="width: 150px;" />
+                                    </div>
+                                    <!-- 
+                                        <div class="input" style="width: 600px">
+                                            <label><wicket:message key="limit.status"  /></label>
+                                            <select id="status" name="status">
+                                                <option value="">
+                                                    Please Select
+                                                </option>
+                                                <option value="INITIAL">
+                                                    INITIAL
+                                                </option>	
+                                                <option value="APPROVED">
+                                                    APPROVED
+                                                </option>
+                                                <option value="REJECTED">
+                                                    REJECTED
+                                                </option>
+                                            </select>
+                                        </div>
+                                    -->
+                              
+								<div class="spacer"></div>
+								<div class="column">
+									<input name="search" wicket:id="submitButton" wicket:message="value:Search" class="submit acc_chk" type="submit" style="left: 250px" >
+								</div>
+								<br><br>
+								
+								<!-- LIMIT APPR/REJECT Data View Start -->
+								<div class="column" wicket:id="limitContainer">
+									<div class="displayTag">
+										<label wicket:id="no.items"></label>
+										<span class="pagebanner" wicket:id="limitHeader"></span> <span
+											class="pagelinks" wicket:id="limitNavigator"></span>
+										<wicket:enclosure child="pageable">
+											<table id="feeTable">
+												<thead>
+													<tr>
+														<th wicket:id="orderByCustomerId"><wicket:message key="limit.dataview.id" /></th>
+														<th wicket:id="orderByCustomerId"><wicket:message key="limit.dataview.description" /></th>
+														<th wicket:id="orderByMobileNumber"><wicket:message key="limit.dataview.status" /></th>
+														<th wicket:id="orderByDisplayName"><wicket:message key="limit.dataview.creationDate" /></th>
+														<th wicket:id="orderByDisplayName"><wicket:message key="limit.dataview.creator" /></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr wicket:id="pageable">
+														<td><a href="#" wicket:id="idLink"><span wicket:id="id">[ID]</span> </a></td>
+														<td><div wicket:id="description">[Description]</div></td>		
+														<td><div wicket:id="status">[Status]</div></td>
+														<td><div wicket:id="creationDate">[Creation Date]</div></td>
+														<td><div wicket:id="creation">[Creator]</div></td>
+                           
+													</tr>
+												</tbody>
+											</table>
+										</wicket:enclosure>
+									</div>
+								</div>
+							<!-- Data View End -->
+                            
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

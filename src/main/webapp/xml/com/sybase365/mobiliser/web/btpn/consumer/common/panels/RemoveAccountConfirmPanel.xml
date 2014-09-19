@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.confirmRemove">Konfirmasi Penghapusan Rekening</entry>
+	<entry key="label.name">Nama</entry>
+	<entry key="label.accountId">ID Rekening</entry>
+	<entry key="label.description">Deskripsi</entry>
+	<entry key="remove.successMessage">Rekening berhasil dihapus.</entry>
+</properties>

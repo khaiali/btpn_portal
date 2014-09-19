@@ -1,0 +1,32 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="sampleForm" method="post">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="label.Sample.Input" /></legend>
+							<br>
+							<div wicket:id="errorMessages"></div>
+							<div class="column">
+								<div class="spacer"></div>
+								<div class="Account_info">
+									<label for="username"><wicket:message key="label.current.username" /></label>
+									<div class="input_value" wicket:id="username"></div>
+								</div>
+							</div>
+							<div class="spacer"></div>
+						
+							<input wicket:id="submitBack" wicket:message="value:Submit" class="submit acc_chk" type="submit" /> 				<br> <br>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:prefs="http://www.sybase.com/mobiliser/util/prefs/config"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd
+  http://www.sybase.com/mobiliser/util/prefs/config http://www.sybase.com/mobiliser/util/prefs/config/sybase-prefs-config-5.0.xsd">
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to *********** REGISTRATION END POINT ************ -->
+
+	<bean id="registrationClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.IRegistrationEndpoint" />
+		<property name="endpointSuffix" value="/registration" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean id="registrationClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="registrationClientSource" />
+		<property name="interfaces" ref="registrationInterfaces" />
+	</bean>
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to SUPPORT END POINT -->
+
+	<bean id="supportClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.ISupportEndpoint" />
+		<property name="endpointSuffix" value="/support" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="supportClientSource" />
+	</bean>
+
+	<bean id="supportClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="supportClientSource" />
+		<property name="interfaces" ref="supportInterfaces" />
+	</bean>
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to ******** LOGIN END POINT ********** -->
+
+	<bean id="loginClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.ILoginEndpoint" />
+		<property name="endpointSuffix" value="/pblogin" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="loginClientSource" />
+	</bean>
+
+	<bean id="loginClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="loginClientSource" />
+		<property name="interfaces" ref="loginInterfaces" />
+	</bean>
+
+	<alias name="loginClient" alias="loginClientProvider" />
+
+	<!-- *********** FUND TRANSFER END POINT *************** -->
+
+	<bean id="fundtransferClientSource" parent="clientTargetSourceParent">
+		<property name="clientInterfaces" ref="fundtransferInterfaces" />
+		<property name="endpointSuffix" value="/fundtransfer" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="prefsNode" />
+		<constructor-arg ref="fundtransferClientSource" />
+	</bean>
+
+	<bean id="fundtransferClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="fundtransferClientSource" />
+		<property name="interfaces" ref="fundtransferInterfaces" />
+	</bean>
+
+	<alias name="fundtransferClient" alias="depositClient" />
+	<alias name="fundtransferClient" alias="withdrawClient" />
+	<alias name="fundtransferClient" alias="favoriteClient" />
+
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to CHANGE MSISDN END POINT -->
+
+	<bean id="changeMsisdnClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.IChangeMsisdnEndpoint" />
+		<property name="endpointSuffix" value="/changemsisdn" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="changeMsisdnClientSource" />
+	</bean>
+
+	<bean id="changeMsisdnClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="changeMsisdnClientSource" />
+		<property name="interfaces" ref="changeMsisdnInterfaces" />
+	</bean>
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to PRODUCT END POINT -->
+
+	<bean id="productClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.IProductEndpoint" />
+		<property name="endpointSuffix" value="/product" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="productClientSource" />
+	</bean>
+
+	<bean id="productClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="productClientSource" />
+		<property name="interfaces" ref="productInterfaces" />
+	</bean>
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to General Ledger END POINT -->
+
+	<bean id="generalLedgerClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.IGeneralLedgerEndpoint" />
+		<property name="endpointSuffix" value="/generalledger" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="generalLedgerClientSource" />
+	</bean>
+
+	<bean id="generalLedgerClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="generalLedgerClientSource" />
+		<property name="interfaces" ref="generalLedgerInterfaces" />
+	</bean>
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to General Ledger END POINT -->
+
+	<bean id="limitClientClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.ILimitEndpoint" />
+		<property name="endpointSuffix" value="/limit" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="limitClientClientSource" />
+	</bean>
+
+	<bean id="limitClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="limitClientClientSource" />
+		<property name="interfaces" ref="limitInterfaces" />
+	</bean>
+	<!-- Airtime topup configuration -->
+	<bean id="airtimeTopupClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.IAirtimeTopupEndpoint" />
+		<property name="endpointSuffix" value="/topup" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="airtimeTopupClientSource" />
+	</bean>
+
+	<bean id="airTimeClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="airtimeTopupClientSource" />
+		<property name="interfaces" ref="airTimeInterface" />
+	</bean>
+	<!-- Bill Payment configuration -->
+	<bean id="billPaymentClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.IBillPaymentEndpoint" />
+		<property name="endpointSuffix" value="/billpayment" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="billPaymentClientSource" />
+	</bean>
+
+	<bean id="billPaymentClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="billPaymentClientSource" />
+		<property name="interfaces" ref="billPaymentInterface" />
+	</bean>
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to Transaction Reversal END POINT -->
+
+	<bean id="transactionReversalClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.ITransactionReversalEndpoint" />
+		<property name="endpointSuffix" value="/transactionreversal" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="transactionReversalClientSource" />
+	</bean>
+
+	<bean id="transactionReversalClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="transactionReversalClientSource" />
+		<property name="interfaces" ref="txnReversalInterfaces" />
+	</bean>
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to Transaction GL END POINT -->
+	<bean id="transactionGLClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.ITransactionGLEndpoint" />
+		<property name="endpointSuffix" value="/transactiongl" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="transactionGLClientSource" />
+	</bean>
+
+	<bean id="transactionGLEndPoint" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="transactionGLClientSource" />
+		<property name="interfaces" ref="txnGLlInterfaces" />
+	</bean>
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to Holiday Calendar END POINT -->
+
+	<bean id="holidayCalendarClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.IHolidayCalendarEndpoint" />
+		<property name="endpointSuffix" value="/holidaycalendar" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="holidayCalendarClientSource" />
+	</bean>
+
+	<bean id="holidayCalendarClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="holidayCalendarClientSource" />
+		<property name="interfaces" ref="holidayCalendarInterfaces" />
+	</bean>
+
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to Edit Profile END POINT -->
+
+	<bean id="editProfileClientClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.IEditProfileEndpoint" />
+		<property name="endpointSuffix" value="/editprofile" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="editProfileClientClientSource" />
+	</bean>
+
+	<bean id="editProfileClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="editProfileClientClientSource" />
+		<property name="interfaces" ref="editProfileInterfaces" />
+	</bean>
+
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to Fee END POINT -->
+
+	<bean id="feeClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.IFeeEndpoint" />
+		<property name="endpointSuffix" value="/fee" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="feeClientSource" />
+	</bean>
+
+	<bean id="feeClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="feeClientSource" />
+		<property name="interfaces" ref="feeInterfaces" />
+	</bean>
+	
+	<!-- Limit Ex Endpoint -->
+		<bean id="limitExClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.limitex.services.api.ILimitExEndpoint" />
+		<property name="endpointSuffix" value="/limitEx" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="limitExClientSource" />
+	</bean>
+
+	<bean id="limitExClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="limitExClientSource" />
+		<property name="interfaces" ref="limitExInterfaces" />
+	</bean>
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to Fee END POINT -->
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="feeClientSource" />
+	</bean>
+
+	<!-- Uses Refresh client - allows dynamic change and refresh of server to 
+		connect to Bulk File Processing END POINT -->
+
+	<bean id="bulkFileProcesssingClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.custom.btpn.services.contract.api.IBulkFileProcessingEndpoint" />
+		<property name="endpointSuffix" value="/bulkfileprocessing" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="bulkFileProcesssingClientSource" />
+	</bean>
+
+	<bean id="bulkFileProcesssingClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="bulkFileProcesssingClientSource" />
+		<property name="interfaces" ref="bulkFileInterfaces" />
+	</bean>
+	
+	
+	<!-- Bulk File Client END POINT by Feny-->
+	<bean id="bulkFileClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.bulk.facade.api.BulkFileFacade" />
+		<property name="endpointSuffix" value="/bulk" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="bulkFileClientSource" />
+	</bean>
+
+	<bean id="bulkFileClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="bulkFileClientSource" />
+		<property name="interfaces" ref="bulkFileFacadeInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	<!-- BulkFileWrk by Feny-->
+	<bean id="bulkFileWrkClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.bulk.facade.api.BulkFileWrkFacade" />
+		<property name="endpointSuffix" value="/bulk" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="bulkFileWrkClientSource" />
+	</bean>
+
+	<bean id="bulkFileWrkClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="bulkFileWrkClientSource" />
+		<property name="interfaces" ref="bulkFileWrkFacadeInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	
+	<!-- DEBIT -->
+	<bean id="debitClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.debit.facade.api.DebitFacade" />
+		<property name="endpointSuffix" value="/debit" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="debitClientSource" />
+	</bean>
+	
+	<bean id="debitClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="debitClientSource" />
+		<property name="interfaces" ref="debitInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	<!-- GENERAL LEDGER -->
+	<bean id="glClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.gl.facade.api.GLFacade" />
+		<property name="endpointSuffix" value="/gl" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="glClientSource" />
+	</bean>
+	
+	<bean id="glClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="glClientSource" />
+		<property name="interfaces" ref="glInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	<!-- GENERAL LEDGER WRK -->
+	<bean id="glWrkClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.gl.facade.api.GLWrkFacade" />
+		<property name="endpointSuffix" value="/gl" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="glWrkClientSource" />
+	</bean>
+	
+	<bean id="glWrkClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="glWrkClientSource" />
+		<property name="interfaces" ref="glWrkInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	
+	<!-- USE CASE FEE -->
+	<bean id="ucFeeClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.fee.facade.api.UseCaseFeeFacade" />
+		<property name="endpointSuffix" value="/fee" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean id="ucFeeClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="ucFeeClientSource" />
+		<property name="interfaces" ref="ucFeeInterfaces" />
+	</bean>
+	
+	<!-- END -->
+	
+	<!-- USE CASE FEE WRK -->
+	<bean id="ucFeeWrkClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.fee.facade.api.UseCaseFeeWrkFacade" />
+		<property name="endpointSuffix" value="/fee" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean id="ucFeeWrkClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="ucFeeWrkClientSource" />
+		<property name="interfaces" ref="ucFeeWrkInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	<!-- BILLER FEE -->
+	<bean id="billerFeeClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.fee.facade.api.BillerFeeFacade" />
+		<property name="endpointSuffix" value="/fee" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean id="billerFeeClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="billerFeeClientSource" />
+		<property name="interfaces" ref="billerFeeInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	<!-- BILLER FEE WRK -->
+	<bean id="billerFeeWrkClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.fee.facade.api.BillerFeeWrkFacade" />
+		<property name="endpointSuffix" value="/fee" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean id="billerFeeWrkClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="billerFeeWrkClientSource" />
+		<property name="interfaces" ref="billerFeeWrkInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	<!-- SECURITY -->
+	<alias name="securitysClient" alias="securityClientProvider" />
+	
+	<bean id="securityClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+		    value="com.btpnwow.core.security.facade.api.SecurityFacade" />
+		<property name="endpointSuffix" value="/security" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean id="securitysClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="securityClientSource" />
+		<property name="interfaces" ref="securityInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	
+	<!-- USER -->
+	<alias name="userClient" alias="userClientProvider" />
+	
+	<bean id="userClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+		    value="com.btpnwow.core.customer.facade.api.UserFacade" />
+		<property name="endpointSuffix" value="/customer" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean id="userClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="userClientSource" />
+		<property name="interfaces" ref="userInterfaces" />
+	</bean>
+	<!-- END -->
+
+	
+	<!-- CUSTOMER -->
+	<alias name="customerClient" alias="customerClientProvider" />
+	
+	<bean id="customerClientSource" parent="clientTargetSourceParent">
+		<property name="clientInterfaces" ref="userInterfaces" />
+		<property name="endpointSuffix" value="/customer" />
+	</bean>
+	
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="prefsNode" />
+		<constructor-arg ref="customerClientSource" />
+	</bean>
+	 
+	<bean id="customerClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="customerClientSource" />
+		<property name="interfaces" ref="userInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	<!-- TRANSACTION HISTORY -->
+	<bean id="accountClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.account.facade.api.AccountFacade" />
+		<property name="endpointSuffix" value="/account" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="accountClientSource" />
+	</bean>
+	
+	<bean id="accountClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="accountClientSource" />
+		<property name="interfaces" ref="accountInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	
+	<!-- MANAGE FAVORITE -->
+	<bean id="favClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.preregistered.facade.api.PreRegisteredFacade" />
+		<property name="endpointSuffix" value="/preregistered" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="favClientSource" />
+	</bean>
+	
+	<bean id="favClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="favClientSource" />
+		<property name="interfaces" ref="favInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	<!-- WALLET -->
+	<bean id="walletClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.sybase365.mobiliser.money.services.api.IWalletEndpoint" />
+		<property name="endpointSuffix" value="/wallet" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="walletClientSource" />
+	</bean>
+	
+	<bean id="walletClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="walletClientSource" />
+		<property name="interfaces" ref="walletInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	<!-- MESSAGING -->
+	<bean id="messagingClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface" value="com.btpnwow.core.messaging.facade.api.MessagingFacade" />
+		<property name="endpointSuffix" value="/messaging" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="messagingClientSource" />
+	</bean>
+	
+	<bean id="messagingClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="messagingClientSource" />
+		<property name="interfaces" value="com.btpnwow.core.messaging.facade.api.MessagingFacade" />
+	</bean>
+	<!-- END -->
+	
+	
+	<!-- STANDING INSTRUCTION -->
+	<bean id="siClientSource"
+		class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+		<property name="clientInterface"
+			value="com.btpnwow.core.schedtxn.facade.api.SchedTxnFacade" />
+		<property name="endpointSuffix" value="/schedTxn" />
+		<property name="clientFactory" ref="soapClientFactory" />
+		<property name="configuration" ref="dynamicManagementClientConfiguration" />
+	</bean>
+	
+	<bean
+		class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+		<constructor-arg ref="dynamicPrefsNode" />
+		<constructor-arg ref="siClientSource" />
+	</bean>
+	
+	<bean id="siClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="targetSource" ref="siClientSource" />
+		<property name="interfaces" ref="siInterfaces" />
+	</bean>
+	<!-- END -->
+	
+	
+</beans>

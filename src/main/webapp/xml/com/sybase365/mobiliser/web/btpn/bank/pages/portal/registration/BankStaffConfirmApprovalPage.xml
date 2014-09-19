@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="headline.registration.bankStaff.legend.label">Bank User Approval Confirmation</entry>
+    
+    <entry key="registration.customerType.label">Register User as</entry>
+    <entry key="registration.userId.label">UserId</entry>
+    <entry key="registration.name.label">Name</entry>
+    <entry key="registration.email.label">E-Mail</entry>
+    <entry key="registration.designation.label">Designation</entry>
+    <entry key="registration.language.label">Language</entry>
+    <entry key="registration.glCode.label">GL Code</entry>
+    <entry key="registration.territoryCode.label">Territory Code</entry>
+    <entry key="registration.orgUnit.label">Org Unit</entry>
+    <entry key="registration.createdBy.label">Created By</entry>
+    <entry key="registration.createdDate.label">Created Date</entry>
+    
+	<entry key="Approve">Approve</entry>
+	<entry key="Reject">Reject</entry>
+	<entry key="Cancel">Cancel</entry>
+	
+    <entry key="approve.success">User has been successfully approved.</entry>
+    <entry key="reject.success">User has been rejected.</entry>
+	<entry key="approval.failure.exception">We are experiencing technical difficulties. Please try again later.</entry>
+</properties>

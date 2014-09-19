@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  	 
+  	 <entry key="servicePackage.bankServicePackage.title">Bank Service Packages</entry>
+     <entry key="servicePackage.name">Name</entry>
+     <entry key="servicePackage.addActions">Add Service Package</entry>
+     <entry key="servicePackage.serviceCode">Service Code</entry>
+     <entry key="servicePackage.actions">Actions</entry>
+     <entry key="servicePackage.title"> Manage Service Packages</entry>
+     <entry key="servicePackage.editActions">Edit</entry>
+     <entry key="servicePackage.removeActions">Remove</entry>
+     <entry key="servicePackage.servicePackageTable.remove.confirm">Do you really want to remove this Service Package?</entry>  
+     <entry key="servicePackage.servicePackageTable.noServicePackage">No Service Package found</entry>    
+
+</properties>

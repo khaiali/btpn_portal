@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.date">Date</entry>
+	<entry key="label.requesttype">Request Type</entry>
+	<entry key="label.consumertype">Type</entry>
+	<entry key="label.mobilenumber">Mobile No/User Id</entry>
+	<entry key="label.status">Status</entry>
+	<entry key="label.createdby">Created By</entry>
+	<entry key="action">Action</entry>
+	<entry key="headLine.approvalList">Approval List</entry>
+	<entry key="approval.totalitems.header">%s items found, displaying %s to %s.</entry>
+</properties>

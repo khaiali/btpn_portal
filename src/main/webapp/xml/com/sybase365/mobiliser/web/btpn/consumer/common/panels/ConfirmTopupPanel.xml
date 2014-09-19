@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.airtimeTopup">Isi Pulsa</entry>
+	<entry key="label.telco">Provider</entry>
+	<entry key="label.topupAmount">Jumlah Pulsa</entry>
+	<entry key="label.topupMobile">Pulsa Handphone</entry>
+	<entry key="addStandingInst.siName">Nama Instruksi Langsung</entry>
+	<entry key="silisttable.view.frequency">Frekuensi</entry>
+	<entry key="filterType.month">BULANAN</entry>
+	<entry key="filterType.quarter">KUARTER</entry>
+	<entry key="filterType.week">MINGGUAN</entry>
+	<entry key="filterType.date">HARIAN</entry>
+	<entry key="addStandingInst.date">Mulai</entry>
+	<entry key="addStandingInst.endDate">Sampai</entry>
+	<entry key="addStandingInst.days">Hari</entry>
+	<entry key="si.topup.add.successMessage">Isi Pulsa melalui Instruksi Favorit telah berhasil dilakukan.</entry>
+
+	<!-- ############# Custom Validations ############# -->
+
+	<entry key="topupBean.siName.Required">Kolom Nama Instruksi Favorit Harus Diisi.</entry>
+	<entry key="topupBean.startDate.Required">Kolom Tanggal Mulai Harus Diisi.</entry>
+	<entry key="topupBean.expiryDate.Required">Kolom Tanggal Selesai Harus Diisi.</entry>
+	<entry key="topupBean.selectedDay.Required">Kolom Hari Harus Diisi.</entry>
+	<entry key="topupBean.startDate.DateValidator.minimum">Tanggal Mulai harus lebih besar dari hari ini.</entry>
+	<entry key="topupBean.expiryDate.DateValidator.minimum">Tanggal Mulai harus lebih besar dari hari ini.</entry>
+	<entry key="invalid.expiry.date">Tanggal Mulai harus lebih besar dari Tanggal Mulai.</entry>
+
+</properties>

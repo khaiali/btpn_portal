@@ -1,0 +1,61 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="approveHolidayForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<wicket:message key="headLine.holidayListApproval" />
+							</legend>
+							<div wicket:id="errorMessages"></div>
+
+							<div class="reg_tab_01">
+								<div class="column">
+									<span wicket:id="emptyRecordsMessage"></span>
+								</div>
+								<div class="column" wicket:id="approveHolidayContainer">
+									<div class="displayTag">
+										<span class="pagebanner" wicket:id="approvalHeader"></span> <span
+											class="pagelinks" wicket:id="approvalNavigator"></span>
+										<wicket:enclosure child="pageable">
+											<table id="attachmentsTable">
+												<thead>
+													<tr>
+														<th wicket:id="orderCreatedBy"><wicket:message
+																key="label.createdBy" /></th>
+														<th wicket:id="orderByDescription"><wicket:message
+																key="label.description" /></th>
+														<th wicket:id="orderByStatus"><wicket:message
+																key="label.status" /></th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr wicket:id="pageable">
+														<td><div wicket:id="cretedBy">[Created By]</div></td>
+														<td><div wicket:id="description">[Description]</div></td>
+														<td><div wicket:id="status">[Status]</div></td>
+														<td><a href="#" wicket:id="detailsLink"><span
+																wicket:id="detailsLinkName">[Approve]</span> </a></td>
+													</tr>
+												</tbody>
+											</table>
+										</wicket:enclosure>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

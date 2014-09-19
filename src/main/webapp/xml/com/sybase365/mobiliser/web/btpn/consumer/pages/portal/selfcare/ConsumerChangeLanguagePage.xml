@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="label.Language"> Ganti Bahasa</entry>
+	<entry key="label.current.Language">  Bahasa yang Dipilih</entry>
+	<entry key="label.select.Language"> Pilih Bahasa</entry>
+	<entry key="Submit">Masuk</entry>
+	<entry key="label.userEmail"> Email-Id</entry>
+	<entry key="label.userTerritoryCode"> Kode Daerah</entry>
+	<entry key="label.denotes.mandatory"> Wajib isi</entry>
+	<entry key="Update">Perbaharui</entry>
+	<entry key="Cancel">Batal</entry>
+	<entry key="update.success">Bahasa Berhasil Diganti.</entry>
+	<entry key="update.error">Terjadi Kesalahan Ketika Mengubah Bahasa.</entry>
+</properties>

@@ -1,0 +1,42 @@
+
+
+
+form input.textbox, form input.select {
+	width: 250px;	
+	margin-bottom: 7px;
+	border: 1px solid gray;
+}
+
+
+.form table tr td, div.error {
+	width: 200px;
+
+}
+
+
+.input {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+
+.form table div.errorHeader {
+	display: none;
+}
+
+input.error {
+    background-color: #FFAAAA;
+    border: 1px solid #7F9DB9;
+}
+
+
+form label {
+	width: 10em;
+	display: block;
+	float: left;
+}
+
+
+

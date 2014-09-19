@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="header.limit"> Limit Management </entry>
+	<entry key="label.usecaseId"> Use Case ID </entry>
+	<entry key="label.productId"> Product ID </entry>
+	<entry key="label.isPerCustomer">Is Per Customer </entry>
+	<entry key="label.applyToPayee">Apply to Payee </entry>
+	<entry key="label.dailyLimit"> Daily Limit </entry>
+	<entry key="label.weeklyLimit"> Weekly Limit </entry>
+	<entry key="label.monthlyLimit"> Monthly Limit </entry>
+	<entry key="Create"> Create </entry>
+	<entry key="Cancel"> Cancel </entry>
+	<entry key="confirm.success">Limit submitted successfully for Approval.</entry>
+	<entry key="limit.details.error">An error occured while adding the limit. Please try
+		again.</entry>
+	<entry key="limit.details.error">An error occured while adding the limit. Please try
+		again.</entry>
+	<entry key="error.10106">Limit already configured for this use case.</entry>
+	<entry key="error.10107">Limit already configured for this use case and product.</entry>
+</properties>

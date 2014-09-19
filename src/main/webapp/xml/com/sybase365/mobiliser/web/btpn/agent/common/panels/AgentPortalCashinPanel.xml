@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.checkMobileAccount">Check Mobile Account</entry>
+	<entry key="cashIn.mobileNumber">Mobile Number</entry>
+	<entry key="label.mandatoryField">Denotes Mandatory Field</entry>
+	<entry key="error.cashin.fail">An error occurred while doing cash in</entry>
+	<entry key="mobile.does.not.exist">Sorry,the Mobile Account does not exist.</entry>
+	<entry key="hierarchy.not.match">Agent and TopAgent are not belong to same Hierarchical
+		Tree
+	</entry>
+
+	<entry key="error.invalid.msisdn.1.1">Cash in is not allowed to user.</entry>
+	<entry key="error.invalid.msisdn.1.2">Cash in is not allowed to user.</entry>
+	<entry key="error.invalid.msisdn.1.0">This operation is not allowed for the user.</entry>
+	<entry key="error.invalid.msisdn.1.3">This operation is not allowed for the user.</entry>
+
+	<entry key="error.invalid.msisdn.2.1">This operation is not allowed for the user.</entry>
+	<entry key="error.invalid.msisdn.2.2">Cash in is not allowed to user.</entry>
+	<entry key="error.invalid.msisdn.2.3">This operation is not allowed for the user.</entry>
+
+	<entry key="invalid.msisdn.88">MSISDN Pin not set</entry>
+	<entry key="invalid.msisdn.89">Un-Registered Customer</entry>
+	<entry key="invalid.msisdn.90">MSISDN Not Approved</entry>
+	<entry key="invalid.msisdn.91">Customer is inactive</entry>
+	<entry key="invalid.msisdn.92">Customer is suspended</entry>
+	<entry key="invalid.msisdn.93">Customer Account is Closed</entry>
+	<entry key="invalid.msisdn.94">MSISDN Not Approved by Optima</entry>
+	<entry key="invalid.msisdn.99">Invalid MSISDN</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="cashInBean.payeeMsisdn.Required">Account Number is a required field
+	</entry>
+	<entry key="cashInBean.payeeMsisdn.PatternValidator">'${input}' is not valid Account Number.</entry>
+
+</properties>

@@ -1,0 +1,96 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="searchSalaryDataForm">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="label.search.header" /></legend>
+							<br>
+								<div wicket:id="errorMessages"></div>
+                         	<br>
+							<div class="input">
+								
+									<label for="uploadsalarydata.search.startDate"><wicket:message key="label.fromDate" /></label> 
+									<input readonly="readonly" wicket:id="searchData.dateRangeBegin"  
+											id="fromDate" tabindex="8" type="text" size="10" 
+											style="width: 150px;" />
+							
+							</div>
+
+							<div class="input">
+								
+									<label for="uploadsalarydata.search.endDate"><wicket:message key="label.toDate" /></label> 
+									<input readonly="readonly" wicket:id="searchData.dateRangeEnd"  
+											id="toDate" tabindex="8" type="text" size="10" 
+											style="width: 150px;" />
+							
+							</div>
+
+							<div class="input">
+								<label for="uploadsalarydata.search.filename"><wicket:message key="label.fileName" />
+								</label> <input id="searchFilename" wicket:id="searchData.name" name="searchFilename" type="text" size="40" />
+							</div>
+								
+							<div class="input">
+								<label for="uploadsalarydata.search.type"><wicket:message key="label.type" /></label> 
+								<select	id="type" wicket:id="searchData.type" name="type">	
+								</select>
+							</div>
+                            
+							<div class="input">
+								<label for="uploadsalarydata.search.status"><wicket:message key="label.status" /></label> 
+								<select	id="status" wicket:id="searchData.status" name="status">	
+								</select>
+							</div>
+
+							<div class="spacer"></div>
+							<input name="showSalaryData" wicket:id="searchButton" wicket:message="value:Search" tabindex="5" class="submit acc_chk" type="submit" />
+                            <br><br>
+                            
+                            <!-- Search  Upload Approve Data View Start -->
+                            <div class="column" wicket:id="salaryDataContainer">
+                                <div class="displayTag">
+									<label wicket:id="no.items"></label>
+									<span class="pagebanner" wicket:id="approvalHeader"></span>
+									<span class="pagelinks" wicket:id="approvalNavigator"></span>
+									<wicket:enclosure child="pageable">								
+										<table id="filesTable">
+											<thead>
+												<tr>
+													<th wicket:id="orderByFileName"><wicket:message key="label.attachedFile" /></th>
+													<th wicket:id="orderByStatus"><wicket:message key="label.status" /></th>
+													<th><wicket:message key="label.view" /></th>
+													<th wicket:id="label.action"></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr wicket:id="pageable">
+													<td><div wicket:id="fileName">[Type]</div></td>
+													<td><div wicket:id="status">[Date]</div></td>
+													<td><a href="#" wicket:id="viewLink"><wicket:message key="label.view" /></a></td>
+													<td wicket:id="approveRejectContainer">
+														<a href="#" wicket:id="approveLink"><wicket:message key="label.approve" /></a>
+														<span wicket:id="line.separator"></span>
+														<a href="#" wicket:id="rejectLink"><wicket:message key="label.reject" /></a>
+														<a href="#" wicket:id="errorLink"><wicket:message key="label.errorReport" /></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</wicket:enclosure>
+                                </div>
+                            </div>
+                            
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="customCashOutConfirmForm">
+						<div wicket:id="errorMessages"></div>
+						<fieldset id="cashOut">
+							<legend class="reg_tab">
+								<wicket:message key="headLine.cashOutConfirm" />
+							</legend>
+							<div class="Account_info">
+								<label> <wicket:message
+										key="label.cashOut.confirm.accountNumber" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.accountNumber"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message
+										key="label.cashOut.confirm.mobileNumber" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.mobileNumber"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message key="label.cashOut.confirm.name" />
+								</label>
+								<div class="input_value">
+									<label wicket:id="cashOutBean.displayName"></label>
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message key="label.cashOut.cashOutAmount" />
+								</label>
+
+								<div class="input_value">
+									<label wicket:id="cashOutBean.cashOutAmount"></label>
+								</div>
+							</div>
+							<div class="column">
+								<input type="submit" class="submit acc_chk" id="submit"
+									wicket:id="submitConfirm" wicket:message="value:Confirm" /> <input
+									type="submit" class="submit acc_chk" id="submit"
+									wicket:id="submitBack" wicket:message="value:Back"
+									style="left: 250px" /> <input type="submit"
+									class="submit acc_chk" id="submit" wicket:id="submitCancle"
+									wicket:message="value:Cancel" style="left: 270px" />
+							</div>
+						</fieldset>
+						<div id="loading"
+							style="position: relative; display: none; width: 100%; text-align: center; top: 100px;">
+							<img src="images/btpn/ajax-loader.gif" border="0" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			function loading(id) {
+				document.getElementById('cashOut').style.display = "none";
+				document.getElementById('loading').style.display = "block";
+
+			}
+		</script>
+	</wicket:panel>
+</body>
+</html>

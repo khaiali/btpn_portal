@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  
+    <!-- ############# Create Message Page ############# -->
+   <entry key="createMsg.title">Create Message</entry>
+   <entry key="createMsg.help">Please enter details to create new message</entry>
+   
+    <!-- ############# Edit Message Page ############# -->
+   <entry key="editMsg.title">Edit Message</entry>
+   <entry key="editMsg.help">Please enter details to update the message</entry>
+   
+    <!-- ############# Find Message Page ############# -->
+   <entry key="findMessage.title">Find Message</entry>
+   <entry key="findMessage.help">You can search for messages by specifying search parameters</entry>
+   <entry key="find.message.name">Name</entry>
+   <entry key="message.templateType">Type</entry>
+   <entry key="find.message.locale">Locale</entry>
+   <entry key="localeStr.PatternValidator">'${input}' is not a valid Locale</entry>
+   <entry key="find.message.table.type">Type</entry>
+   <entry key="find.message.table.name">Name</entry>
+   <entry key="find.message.table.locale">Locale</entry>
+   <entry key="find.message.table.subject">Subject</entry>
+   <entry key="find.message.table.action">Actions</entry>
+   <entry key="find.message.editAction">Edit</entry>
+   <entry key="find.message.removeAction">Remove</entry>
+   <entry key="message.find.error">Error occurred in find messages</entry>
+   <entry key="findMessage.remove.confirm">Do you really want to remove this message?</entry>
+   <entry key="messageList.noItemsMsg">No messages found matching the search criteria</entry>
+   <entry key="remove.message.success">Message removed successfully</entry>
+   <entry key="remove.message.error">Error occurred in removing message</entry>
+   <entry key="find.message.table.select">Select</entry>
+   <entry key="find.message.export.button">Export Selected</entry>
+   <entry key="find.message.testAction">Test</entry>
+   <entry key="export.message.error">An error occurred in exporting message</entry>
+   <entry key="find.message.nothing.selected.export">Please select at least one message to export</entry>
+   
+    <!-- ############# Import Message Page ############# -->
+   <entry key="importMessage.title">Import Messages</entry>
+   <entry key="importMessage.help">Please select a file to import messages</entry>
+   <entry key="import.content">File</entry>
+   <entry key="importMessages.button.import">Import</entry>
+   <entry key="import.file.required">File is required</entry>
+   <entry key="import.message.format.error">The file is in invalid format</entry>
+   <entry key="all.message.success">All messages created successfully</entry>
+   <entry key="all.other.message.success">All other messages created successfully</entry>
+   <entry key="message.import.error">An error occurred while creating message of type '${templateType}', name '${name}' and locale '${locale}'</entry>
+   <entry key="message.import.exists">Message of type '${templateType}', name '${name}' and locale '${locale}' already exists</entry>
+   <entry key="message.import.illegal">Message of type '${templateType}', name '${name}' and locale '${locale}' contains illegal data</entry>
+   <entry key="message.import.missing">Message of type '${templateType}', name '${name}' and locale '${locale}' is missing mandatory data</entry>
+   <entry key="message.import.invalid.locale">Invalid locale for message of type '${templateType}', name '${name}' and locale '${locale}'</entry>
+
+    <!-- ############# Test Message Page ############# -->
+   <entry key="testMessage.title">Test Message</entry>
+   <entry key="testMessage.help">Please enter details to test the message</entry>
+   <entry key="test.message.name">Name</entry>
+   <entry key="test.message.templateType">Template Type</entry>
+   <entry key="test.message.locale">Locale</entry>
+   <entry key="test.message.receiver">Receiver</entry>
+   <entry key="receiver.Required">Receiver is required</entry>
+   <entry key="test.run.button">Run Test</entry>
+   <entry key="notification.send.success">Notification sent successfully</entry>
+   <entry key="notification.send.error">An error occurred in sending notification</entry>
+   <entry key="paramValue.Required">${label} is required</entry>
+   <entry key="invalid.receiver.email">Receiver is not a valid E-Mail</entry>
+   <entry key="invalid.receiver.msisdn">Receiver is not a valid MSIDN</entry>
+   
+    <!-- ############# Create Attachment Page ############# -->
+   <entry key="createAttachment.title">Create Attachment</entry>
+   <entry key="createAttachment.help">Please enter details to create new attachment</entry>
+   
+    <!-- ############# Edit Attachment Page ############# -->
+   <entry key="editAttachment.title">Edit Attachment</entry>
+   <entry key="editAttachment.help">Please enter details to edit the attachment</entry>
+   
+   <entry key="findAttachment.title">Find Attachment</entry>
+   <entry key="findAttachment.help">You can search for attachments by specifying search parameters</entry>
+   <entry key="find.attachment.name">Name</entry>
+   <entry key="find.attachment.contentType">Content Type</entry>
+   <entry key="find.attachment.table.name">Name</entry>
+   <entry key="find.attachment.table.type">Content Type</entry>
+   <entry key="find.attachment.table.action">Actions</entry>
+   <entry key="find.attachment.editAction">Edit</entry>
+   <entry key="attachmentList.noItemsMsg">No attachments found matching the search criteria</entry>
+   <entry key="attachment.find.error">Error occurred in find attachment</entry>
+</properties>

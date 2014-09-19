@@ -1,0 +1,59 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<title><wicket:message key="demoMerchant.title" /></title>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div class="left">
+
+		<div class="left_articles">
+
+			<h2>Your Payment</h2>
+
+			<span wicket:id="inCompleteStatusMsg">The payment is not completed yet.</span> 
+			<span wicket:id="status0">The authorization via SMS has been successful. Thank you for shopping with us.</span> 
+			<span wicket:id="status2541">You have not confirmed the transaction.</span> 
+			<span wicket:id="status2699">The payment could not be performed.</span> 
+			<span wicket:id="status2853">The payment hasn't been authorized by your SMS in time.</span> 
+			<span wicket:id="statusOther">An error has occured.Please try again later. Thanks.</span> 
+			<br /> 
+			Amount: <span wicket:id="amount"></span> 
+			<a wicket:id="showDetails" href="#" onclick="getElementById('moreInfoText').style.display = 'block';">For more Information... </a>
+
+			<div id="moreInfoText" wicket:id="moreInfo">
+				ID: <span wicket:id="txnSystemId"></span><br /> Status: <span wicket:id="txnStatus"></span><br /> errorCode: <span wicket:id="txnErrorCode"></span><br /> Text: <span wicket:id="txnText"></span><br />
+			</div>
+
+
+			<form action="#" wicket:id="doCaptureForm">
+				<input type="submit" value="Do Capture" disabled="disabled" wicket:id="doCapture"/>
+			</form>
+
+		</div>
+
+
+		<div id="right">
+		
+			<div class="boxtop"></div>
+			
+			<div class="box">
+				<p>
+					<img src="images/image_info.gif" alt="Image" title="Image" class="image" /> <b>Help</b> <br /> This is the current status of your transaction. <br />
+				</p>
+				<p>
+					<br />
+				</p>
+			</div>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

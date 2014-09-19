@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<!-- ############# BTPN ############# -->
+	<entry key="header.manageProducts"> Approve </entry>
+	<entry key="label.fieldname">Field Name </entry>
+	<entry key="label.currentValue">Current Value </entry>
+	<entry key="label.newValue">New Value </entry>
+	<entry key="label.status">Status</entry>
+	<entry key="label.action">Action</entry>
+	<entry key="label.addorupdate">Add/Update</entry>
+	<entry key="label.productId">Product ID</entry>
+	<entry key="label.productName">Product Name</entry>
+	<entry key="label.productType">Product Type</entry>
+	<entry key="label.initialDeposit">Initial Deposit</entry>
+	<entry key="label.productglcode">Product GL Code</entry>
+	<entry key="label.feeGLCode">Fee GL Code</entry>
+	<entry key="label.adminFee">Admin Fee or Comission</entry>
+	<entry key="label.minBalance">Min Balance</entry>
+	<entry key="label.minRange">Min Range</entry>
+	<entry key="label.maxRange">Max Range</entry>
+	<entry key="label.fixedInterest">Fixed Interest</entry>
+	<entry key="label.percentInterest">Percentage Interest</entry>
+	<entry key="Approve">Approve</entry>
+	<entry key="Reject">Reject</entry>
+	<entry key="Cancel">Cancel</entry>
+	<entry key="label.roleName">Role Name</entry>
+	<entry key="label.roleDescription">Role Description</entry>
+	<entry key="approve.success">Product approved successfully.</entry>
+	<entry key="reject.success">Product rejected successfully.</entry>
+	<entry key="approve.fail">Product approval failed.</entry>
+	<entry key="reject.fail">Product reject failed.</entry>
+	<entry key="error.approve.product.10027">Given productid not exists in database</entry>
+</properties>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <entry key="contactPoints.title">Contact Points</entry>
+
+    <entry key="contactPoints.actions">Actions</entry>
+    <entry key="contactPoints.editAction">Edit</entry>
+    <entry key="contactPoints.removeAction">Remove</entry>
+    <entry key="contactPoints.sendTestMessageAction">Send Test Message</entry>
+
+    <entry key="contactPoints.button.otherContact">Add a Contact Point</entry>
+
+    <entry key="contactPoints.contactPointsTable.title">Primary Contact Points</entry>
+    <entry key="contactPoints.contactPointsTable.contact">Number/Address</entry>
+    <entry key="contactPoints.contactPointsTable.type">Type</entry>
+    <entry key="contactPoints.contactPointsTable.noItemsMsg">No contact points found</entry>
+
+    <entry key="contactPoints.otherContactsTable.title">Other Contact Points</entry>
+    <entry key="contactPoints.otherContactsTable.nickname">Nickname</entry>
+    <entry key="contactPoints.otherContactsTable.type">Type</entry>
+    <entry key="contactPoints.otherContactsTable.contact">Number/Address</entry>
+    <entry key="contactPoints.otherContactsTable.remove.confirm">Do you really want to remove this contact?</entry>
+    <entry key="contactPoints.otherContactsTable.noItemsMsg">No other contact points found</entry>
+    <entry key="contactPoints.otherContactsTable.addCreditCardHelp">Use the 'Add a Contact Point' link above to add an entry</entry>
+
+    <entry key="contactPoints.load.error">Could not load contact points</entry>
+    
+    <entry key="contactPoints.contactPointsTable.remove.confirm">Are you sure you want to remove this contact point?</entry>
+    <entry key="contactPoints.otherContactsTable.addContactHelp">Use the 'Add a Contact Point' link above to add an entry</entry>
+    <entry key="contactPoints.actionDelete.message">Contact Point has been deleted successfully.</entry>
+    <entry key="contactPoints.sendTestNotification.message">A test message has been successfully sent to </entry>
+  
+</properties>

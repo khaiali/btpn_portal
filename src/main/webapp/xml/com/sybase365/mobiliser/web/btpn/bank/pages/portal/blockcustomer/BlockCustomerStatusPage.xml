@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="header.customerInformation">Block Customer Status</entry>
+	<entry key="label.oldStatus">Old Status</entry>
+	<entry key="label.newStatus">New Status</entry>
+	<entry key="requiredFields">Denotes Mandatory Field</entry>
+	<entry key="blockCustomer.success">Mobile Number change request submitted successfully
+		for approval.</entry>
+
+	<entry key="newStatus.Required">New Status is a required field</entry>
+	<entry key="newStatus.PatternValidator">Consumer mobile number is not valid.</entry>
+</properties>

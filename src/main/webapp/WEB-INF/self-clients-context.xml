@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+  <bean id="selfAuthClientTargetSourceParent" abstract="true"
+    class="com.sybase365.mobiliser.web.util.RoleAwareClientTargetSource">
+    <property name="clientFactory" ref="soapClientFactory" />
+    <property name="configuration" ref="dynamicManagementClientConfiguration" />
+  </bean>
+
+  <!-- ALERTS CONTEXT CLIENT -->
+
+  <bean id="selfAuthAlertsClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="alertsInterfaces" />
+    <property name="endpointSuffix" value="/alerts" />
+  </bean>
+
+  <bean id="selfAuthAlertsContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthAlertsClientSource" />
+    <property name="interfaces" ref="alertsInterfaces" />
+  </bean>
+
+  <alias name="selfAuthAlertsContextClient" alias="selfAuthAlertTypeManagementClient"/>
+  <alias name="selfAuthAlertsContextClient" alias="selfAuthCustomerAlertsClient"/>
+
+  <bean id="selfAuthAlertsClientLogic" class="com.sybase365.mobiliser.web.application.clients.AlertsClientLogic">
+    <property name="wsAlertTypesClient" ref="smartAuthAlertsContextClient" />
+    <property name="wsCustomerAlertsClient" ref="smartAuthAlertsContextClient" />
+  </bean>
+
+  <!-- AUDIT CONTEXT CLIENT -->
+
+  <bean id="selfAuthAuditClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="auditInterfaces" />
+    <property name="endpointSuffix" value="/audit" />
+  </bean>
+
+  <bean id="selfAuthAuditContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthAuditClientSource" />
+    <property name="interfaces" ref="auditInterfaces" />
+  </bean>
+
+  <alias name="selfAuthAuditContextClient" alias="selfAuthNoteClient"/>
+
+  <!-- CUSTOMER CONTEXT CLIENT -->
+
+  <bean id="selfAuthCustomerClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="customerInterfaces" />
+    <property name="endpointSuffix" value="/customer" />
+  </bean>
+
+  <bean id="selfAuthCustomerContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthCustomerClientSource" />
+    <property name="interfaces" ref="customerInterfaces" />
+  </bean>
+
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthFindRemittanceVoucherClient"/>
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthCommissionConfigurationClient"/>
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthIdentityClient"/>
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthAttachmentClient"/>
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthRolesPrivilegesClient"/>
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthCustomerNetworksClient"/>
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthOtpClient"/>
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthSecurityClient"/>
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthCustomerClient"/>
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthIdentificationClient"/>
+  <alias name="selfAuthCustomerContextClient" alias="selfAuthAddressClient"/>
+
+
+  <!-- WALLET CONTEXT CLIENT -->
+
+  <bean id="selfAuthWalletClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="walletInterfaces" />
+    <property name="endpointSuffix" value="/wallet" />
+  </bean>
+
+  <bean id="selfAuthWalletContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthWalletClientSource" />
+    <property name="interfaces" ref="walletInterfaces" />
+  </bean>
+
+  <alias name="selfAuthWalletContextClient" alias="selfAuthBalanceAlertClient"/>
+  <alias name="selfAuthWalletContextClient" alias="selfAuthWalletClient"/>
+
+  <!-- SYSTEM CONTEXT CLIENT -->
+
+  <bean id="selfAuthSystemClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="systemInterfaces" />
+    <property name="endpointSuffix" value="/system" />
+  </bean>
+
+  <bean id="selfAuthSystemContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthSystemClientSource" />
+    <property name="interfaces" ref="systemInterfaces" />
+  </bean>
+
+  <alias name="selfAuthSystemContextClient" alias="selfAuthTransactionRestrictionClient"/>
+  <alias name="selfAuthSystemContextClient" alias="selfAuthFeeClient"/>
+  <alias name="selfAuthSystemContextClient" alias="selfAuthJobClient"/>
+  <alias name="selfAuthSystemContextClient" alias="selfAuthSystemClient"/>
+  <alias name="selfAuthSystemContextClient" alias="selfAuthLimitClient"/>
+  <alias name="selfAuthSystemContextClient" alias="selfAuthBulkProcessingClient"/>
+
+  <!-- TRANSACTION CONTEXT CLIENT -->
+
+  <bean id="selfAuthTransactionClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="transactionInterfaces" />
+    <property name="endpointSuffix" value="/transaction" />
+  </bean>
+
+  <bean id="selfAuthTransactionContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthTransactionClientSource" />
+    <property name="interfaces" ref="transactionInterfaces" />
+  </bean>
+
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthTransactionCancelClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthConfirmVoucherClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthStartVoucherClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthDemandForPaymentClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthCancelInvoiceClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthContinuePayInvoiceClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthCheckPayInvoiceClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthPayInvoiceClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthWebContinueClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthWebStartClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthPrePickupMoneyClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthCaptureClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthAuthorisationCancelClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthCaptureCancelClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthTransactionClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthCommissionClearingClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthPreAuthContinueClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthAuthorisationClient"/>
+  <alias name="selfAuthTransactionContextClient" alias="selfAuthPreAuthorisationClient"/>
+
+  <!-- REPORT CONTEXT CLIENT -->
+
+  <bean id="selfAuthReportClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="reportInterfaces" />
+    <property name="endpointSuffix" value="/report" />
+  </bean>
+
+  <bean id="selfAuthReportContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthReportClientSource" />
+    <property name="interfaces" ref="reportInterfaces" />
+  </bean>
+
+  <alias name="selfAuthReportContextClient" alias="selfAuthReportClient"/>
+
+  <!-- MESSAGING CONTEXT CLIENT -->
+
+  <bean id="selfAuthMsgClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="messagingInterfaces" />
+    <property name="endpointSuffix" value="/messaging" />
+  </bean>
+
+  <bean id="selfAuthMessageContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthMsgClientSource" />
+    <property name="interfaces" ref="messagingInterfaces" />
+  </bean>
+
+  <alias name="selfAuthMessageContextClient" alias="selfAuthMessageLogClient"/>
+  <alias name="selfAuthMessageContextClient" alias="selfAuthTemplateClient"/>
+  <alias name="selfAuthMessageContextClient" alias="selfAuthMessagingClient"/>
+
+  <!-- INVOICE CONTEXT CLIENT -->
+
+  <bean id="selfAuthInvoiceClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="invoiceInterfaces" />
+    <property name="endpointSuffix" value="/invoice" />
+  </bean>
+
+  <bean id="selfAuthInvoiceContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthInvoiceClientSource" />
+    <property name="interfaces" ref="invoiceInterfaces" />
+  </bean>
+
+  <alias name="selfAuthInvoiceContextClient" alias="selfAuthInvoiceClient"/>
+
+  <!-- COUPON CONTEXT CLIENT -->
+
+  <bean id="selfAuthCouponClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="couponInterfaces" />
+    <property name="endpointSuffix" value="/coupons" />
+  </bean>
+
+  <bean id="selfAuthCouponContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthCouponClientSource" />
+    <property name="interfaces" ref="couponInterfaces" />
+  </bean>
+
+  <alias name="selfAuthCouponContextClient" alias="selfAuthCouponClient"/>
+
+  <!-- PREFS CONTEXT CLIENT -->
+
+  <bean id="selfAuthPrefsClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="prefsInterfaces" />
+    <property name="endpointSuffix" value="/prefs" />
+  </bean>
+
+  <bean id="selfAuthPrefsContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthPrefsClientSource" />
+    <property name="interfaces" ref="prefsInterfaces" />
+  </bean>
+
+  <alias name="selfAuthPrefsContextClient" alias="selfAuthPreferencesClient"/>
+
+  <!-- MBANKING CONTEXT CLIENTS - SELF AUTH -->
+
+  <bean id="selfAuthMBankingClientSource" parent="selfAuthClientTargetSourceParent">
+    <property name="clientInterfaces" ref="mBankingInterfaces" />
+    <property name="endpointSuffix" value="/mbanking" />
+  </bean>
+
+  <bean id="selfAuthMBankingContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="selfAuthMBankingClientSource" />
+    <property name="interfaces" ref="mBankingInterfaces" />
+  </bean>
+
+  <bean id="selfAuthMBankingClientLogic" class="com.sybase365.mobiliser.web.application.clients.MBankingClientLogic">
+    <property name="wsServicePackageMgmtEndpoint" ref="selfAuthMBankingContextClient" />
+  </bean>
+</beans>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+    <entry key="manageAlerts.MessageTypeSelection">Message Type Selection</entry>
+    
+     <!-- ############# Message  Types ############# -->
+  	<entry key="MessageType.0">Notification Only</entry>
+  	<entry key="MessageType.1">Notification with Follow-up</entry>
+  	
+</properties>

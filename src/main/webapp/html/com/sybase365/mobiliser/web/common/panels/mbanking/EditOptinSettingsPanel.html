@@ -1,0 +1,57 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="editOptinSettingsForm">
+		<div wicket:id="errorMessages" style="color: #ff0000"></div>
+		<div class="column buffer"></div>
+		<div class="input">
+			<label> 
+				<wicket:message key="edit.optin.setting.url" />
+				<span class="required">*</span> 
+			</label>
+			<input type="text" wicket:id="optInSettings.url" style="width: 320px;"/>
+		</div>
+		<div wicket:id="container">
+			<div class="input"><input type="checkbox" wicket:id="optInSettings.tokenRequired" id="tokenRequired" class="checkbox" style="width: 15px;"></input> 
+				<span class="help"><wicket:message key="edit.optin.setting.tokenRequired" /> </span>
+			</div>
+		</div>
+		<div class="input">
+			<input type="checkbox" wicket:id="enableTermAndConditions" id="termAndConditions" class="checkbox" style="width: 15px;"></input>
+			 <span class="help">
+				<wicket:message key="edit.optin.term.conditions.enabled" /> 
+			</span>
+		</div>
+		<div class="input" style="padding-left: 50px;">
+			<input type="checkbox" wicket:id="optInSettings.resetNotify" id="sendAlertWhenTandCReset" class="checkbox" style="width: 15px;"></input>
+			<span class="help"> 
+				<wicket:message key="edit.optin.sendAlert.when.TC.reset" />
+			 </span>
+		</div>
+		<div class="input" style="padding-left: 50px;">
+			<input type="checkbox" wicket:id="sendAlertWhenTandCNotAccepted" id="sendAlertWhenTandCNotAccepted" class="checkbox" style="width: 15px;"></input>
+		    <span class="help">
+		     	<wicket:message key="edit.optin.disableAlert.when.TC.notAccepted" /> 
+		     	<input type="text" wicket:id="optInSettings.disableDeviceAlertsDays" style="width: 30px;" /> 
+		     	<wicket:message key="days" /> 
+		    </span>
+		</div>
+		<div class="input" style="padding-left: 100px;">
+			<input type="checkbox" wicket:id="optInSettings.disableNotify" id="sendAlertWhenAlertDisable" class="checkbox" style="width: 15px;"></input>
+			<span class="help"> 
+				<wicket:message key="edit.optin.disableAlert.when.alert.disabled" />
+			</span>
+		</div>
+		<div class="column">
+			<div class="formAction"><input type="submit" class="submitForm" wicket:id="confirm" wicket:message="value:Save" />
+			 	<input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" />
+			</div>
+		</div>
+	</form>
+</wicket:panel>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="login.page.title">BTPN Portal - BTPN System</entry>
+	<entry key="login.fieldset.bank.title">Agent btpn WOW!</entry>
+	<entry key="login.userName">Username </entry>
+	<entry key="login.password">Password </entry>
+	<entry key="userName.Required">Agent Id is a required field </entry>
+	<entry key="password.Required">Password is a required field </entry>
+	<entry key="Login">Login</entry>
+	<entry key="reset">Reset</entry>
+	<entry key="footer.information">informasi lebih lanjut hubungi :</entry>
+	<entry key="footer.contact">btpncall 500 300</entry>
+	<entry key="footer.termsAndConditions">SYARAT KETENTUAN</entry>
+	<entry key="footer.faq">FAQ</entry>
+	<entry key="footer.about.btpn">TENTANG &lt;br/&gt;btpn WOW!</entry>
+	<entry key="footer.about.sybase">SAP | All rights reserved | Build</entry>
+
+	<!-- Service Side Validations -->
+	<entry key="login.failed">Invalid Username/password.</entry>
+	<entry key="login.failed.331">The password has expired.</entry>
+	<entry key="login.failed.332">The password has expired.</entry>
+	<entry key="login.failed.329">Invalid Username/Password. You have %s attempts left.</entry>
+	<entry key="login.failed.329.1">Invalid Username/Password. You have 1 attempts left.
+		If wrong again you will be blacklisted.</entry>
+	<entry key="login.failed.330">Invalid Username/Password. The user is blacklisted as
+		of now.</entry>
+	<entry key="login.failed.302">The user is blacklisted.</entry>
+	<entry key="login.exception">We are experiencing technical difficulties. Please try
+		again later.</entry>
+</properties>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+  <appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender">
+    <param name="File" value="${log4j.logfiles.path}/web-ui.log" />
+    <param name="Append" value="true" />
+    <param name="DatePattern" value="'.'yyyy-MM-dd" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d{ISO8601} [%t] %-5p %c:%L %x - %m%n" />
+    </layout>
+  </appender>
+  <logger name="com.sybase365">
+    <level value="TRACE" />
+  </logger>
+  <logger name="com.sybase365.mobiliser.util">
+    <level value="DEBUG" />
+  </logger>
+  <logger name="org.apache">
+    <level value="ERROR" />
+  </logger>
+  <logger name="org.apache.wicket.util.resource">
+    <level value="WARN" />
+  </logger>
+  <logger name="com.sybase365.mobiliser.web.dashboard.pages.trackers">
+      <level value="ERROR" />
+  </logger>
+  <root>
+    <level value="WARN" />
+    <appender-ref ref="FILE" />
+  </root>
+</log4j:configuration>

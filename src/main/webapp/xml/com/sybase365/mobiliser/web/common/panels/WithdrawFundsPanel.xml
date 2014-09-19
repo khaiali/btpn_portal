@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <!-- ############# Manage Accounts Page - Withdraw Funds ############# -->
+    <entry key="withdrawFunds.title">Withdraw Funds</entry>
+    <entry key="withdrawFunds.help">Please choose the account and enter the amount you would like to withdraw from stored value account</entry>
+    <entry key="withdrawFunds.amount">Amount</entry>
+    <entry key="amountString.AmountValidator">'${input}' is not a valid Amount</entry>
+    <entry key="withdrawFunds.referenceText">Reference Text</entry>
+    <entry key="withdrawFunds.accountGroup">Account</entry>
+    <entry key="withdrawFunds.bankAccount">Bank Account: </entry>
+
+    <entry key="withdrawFundsConfirm.title">Confirm Transaction</entry>
+    <entry key="withdrawFundsConfirm.help">Please review the amount you would like to withdraw from stored value account</entry>
+    <entry key="withdrawFundsConfirm.debitAmount">Debit Amount</entry>
+    <entry key="withdrawFundsConfirm.feeAmount">Fee Amount</entry>
+    <entry key="withdrawFundsConfirm.creditAmount">Credit Amount</entry>
+    <entry key="withdrawFundsConfirm.referenceText">Reference Text</entry>
+    <entry key="withdrawFundsConfirm.amountCreditedTo">The amount will be credited to</entry>
+    
+    <entry key="withdrawFundsFinish.title">Transaction Complete</entry>
+    <entry key="withdrawFundsFinish.success">You have successfully withdrawn funds from SVA!</entry>
+    <entry key="withdrawFundsFinish.debitedAmount">The Amount of</entry>
+    <entry key="withdrawFundsFinish.fromSva"> was debited from SVA</entry>
+    <entry key="withdrawFundsFinish.newBalance">The new Balance is</entry>
+    <entry key="withdrawFundsFinish.creditedTo">The amount was credited to</entry>
+    
+    <entry key="accountGroup.Required">Account is required</entry>
+    <entry key="referenceText.Required">Reference Text is required</entry>
+
+</properties>

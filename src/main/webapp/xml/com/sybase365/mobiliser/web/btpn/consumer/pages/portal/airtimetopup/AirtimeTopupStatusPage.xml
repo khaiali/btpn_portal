@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.telco">Provider </entry>
+	<entry key="label.amount">Jumlah Isi </entry>
+	<entry key="label.feeAmount">Biaya Admin </entry>
+	<entry key="label.msisdn">Isi Pulsa </entry>
+	<entry key="OK">OK</entry>
+</properties>

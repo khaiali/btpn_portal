@@ -1,0 +1,228 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head></head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div id="centerContent" class="content center">
+				<form wicket:id="viewProfilePage">
+					<fieldset>
+						<h2><wicket:message key="viewprofile.customerinformation" /></h2>
+						<div wicket:id="errorMessages"></div>
+						<div class="column twoColumn">
+							<div id="table_transaksi">
+							<table style="border:1px solid #eaeaea;">
+								<tr>
+									<td><label><wicket:message	key="customer.registration.displayname"/></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.name"/></td>
+								</tr>
+								<tr>
+									<td><label><wicket:message	key="customer.registration.maidenName"/></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.mothersMaidenName"/></td>
+								</tr>
+								<tr>
+									<td><label><wicket:message	key="customer.edit.address.country" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.nationality.value"/></td>
+								</tr>
+								<tr>
+									<td><label><wicket:message key="customer.edit.address.job" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.job.value"/></td>
+								</tr>
+								<tr>
+									<td><label><wicket:message	key="customer.register.accountPurpose" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.purposeOfAccount.value"/></td>
+								</tr>
+								<tr>
+									<td><label><wicket:message key="customer.register.Income" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.income.value"/></td>
+								</tr>
+								<tr>
+									<td><label><wicket:message	key="customer.edit.address.highRiskCustomer" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.highRiskCustomer.value"/></td>
+								</tr>
+								<tr>
+									<td><label><wicket:message key="customer.edit.atmCard" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.atmCardNo"/></td>
+								</tr>
+								<tr>
+									<td><label><wicket:message key="customer.edit.address.email" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.emailId"/></td>
+								</tr>
+								<tr>
+									<td><label><wicket:message	key="customer.edit.address.privatePhone" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.customerNumber"/></td>
+								</tr>
+								
+								<tr>
+									<td><label> <wicket:message	key="consumer.edit.main.isOptimaActive" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.optimaActivated.value"/></td>
+								</tr>
+								<tr>								
+									<td><label for="isOptimaActivated"> <wicket:message	key="label.religion" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.religion.value"/></td>
+								</tr>
+								<tr>
+									<td><label> <wicket:message	key="label.foreCastTransaction" /></label></td>
+									<td>:</td>
+									<td><font class="input_value" wicket:id="customer.foreCastTransaction.value"/></td>
+								</tr>
+							</table>
+							</div>
+						</div>
+						<div class="column twoColumn">
+							<div id="table_transaksi">
+							<table style="border:1px solid #eaeaea;">
+								<tr>
+									<td><label><wicket:message key="customer.edit.address.employeeID" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.employeeId"></div></td>
+								</tr>
+								<tr>	
+									<td><label><wicket:message	key="customer.edit.address.maritialstatus" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.maritalStatus.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label><wicket:message	key="customer.registration.birthPlace" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.placeOfBirth"></div></td>
+								</tr>
+								<tr>	
+									<td><label><wicket:message key="customer.registration.occupation" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.occupation.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label><wicket:message key="customer.edit.address.industrySector" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.industryOfEmployee.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message	key="customer.register.sourceFund" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.sourceofFound.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label><wicket:message	key="customer.edit.address.iDCardNo" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.idCardNo"></div></td>
+								</tr>
+								<tr>	
+									<td><label><wicket:message	key="customer.edit.address.iDType" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.idType.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label><wicket:message	key="customer.edit.address.highRiskBusiness" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.highRiskBusiness.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message	key="customer.registration.gender" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.gender.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message	key="consumer.edit.main.birthDate" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.birthDateString"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message	key="consumer.edit.main.isTaxExempted" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.taxExempted.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label><wicket:message	key="label.lastEducation" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.lastEducation.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message	key="label.taxCardNumber" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.taxCardNumber"></div></td>
+								</tr>
+							</table>
+							</div>
+						</div>
+					</fieldset>
+					<br /> <br />
+					<fieldset>
+						<legend class="reg_tab">
+							<h2><wicket:message key="customer.contact.address.info" /></h2>
+						</legend>
+						<!-- Start Address Column 1 -->
+						<div class="column twoColumn">
+							<div id="table_transaksi">
+							<table style="border:1px solid #eaeaea;">
+								<tr>
+									<td><label><wicket:message	key="customer.edit.address.mobileNo" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.mobileNumber"></div></td>
+								</tr>
+								<tr>	
+									<td><label><wicket:message key="customer.registration.street1" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.street1"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message	key="customer.registration.street2" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.street2"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message key="label.province" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.province.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message key="label.city" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.city.value"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message key="label.zipcode" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.zipCode"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message key="label.marketingSourceCode" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.marketingSourceCode"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message key="label.referralNumber" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.referralNumber"></div></td>
+								</tr>
+								<tr>	
+									<td><label> <wicket:message key="label.agentCode" /></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="customer.agentCode"></div></td>
+								</tr>
+							</table>
+							</div>
+						</div>
+					</fieldset>
+					<div class="column">
+						<input wicket:message="value:OK" tabindex="16" class="submit acc_chk" type="submit" wicket:id="btnOk" />
+					</div>
+					<div class="spacer"></div>
+				</form>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

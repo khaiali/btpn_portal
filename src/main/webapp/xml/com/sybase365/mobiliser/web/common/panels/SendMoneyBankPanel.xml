@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <entry key="sendMoneyBank.title">Send Money to Bank</entry>
+  
+    <!-- ############# Send Money to Bank Page ############# -->
+    <entry key="sendMoneyBank.title">Send Money to Bank</entry>
+    <entry key="sendMoneyBank.help">Please enter the bank account and the amount you would like to send</entry>
+    <entry key="sendMoneyBank.account"> Account Number</entry>
+    <entry key="sendMoneyBank.bankCode">Bank Code</entry>
+    <entry key="sendMoneyBank.accountHolder">Account Holder Name</entry>
+    <entry key="sendMoneyBank.amountString">Amount</entry>
+    <entry key="sendMoneyBank.txnText">Message</entry>
+    <entry key="sendMoneyBank.txnText.postfix"> (max. 80)</entry>
+    <entry key="sendMoneyBank.account.exist.error"> (max. 100)</entry>
+
+    <entry key="sendMoneyBankConfirm.title">Confirm Transaction</entry>
+    <entry key="sendMoneyBankConfirm.help">Please review your transaction</entry>
+    <entry key="sendMoneyBankConfirm.creditAmount">Credit Amount</entry>
+    <entry key="sendMoneyBankConfirm.feeString">Fee Amount</entry>
+    <entry key="sendMoneyBankConfirm.debitAmount">Debit Amount</entry>
+    <entry key="sendMoneyBankConfirm.account">Account</entry>
+    <entry key="sendMoneyBankConfirm.txnText">Message</entry>
+
+    <entry key="sendMoneyBankFinish.title">Transaction Complete</entry>
+    <entry key="sendMoneyBankFinish.success">Send money to bank was successful </entry>
+    <entry key="sendMoneyBankFinish.amount">The Amount of</entry>
+    <entry key="sendMoneyBankFinish.account">was credited to</entry>
+    <entry key="sendMoneyBankFinish.txnId">Transaction Id</entry>
+    <entry key="sendMoneyBankFinish.authCode">Auth Code </entry>
+    <entry key="sendMoneyBankFinish.message">Thanks for using our send money to bank service. </entry>
+    
+    <entry key="account.PatternValidator">'${input}' is not a valid Account Number</entry>
+    <entry key="bankCode.PatternValidator">'${input}' is not a valid Bank Code</entry>
+    <entry key="accountHolder.PatternValidator">'${input}' is not a valid Account Holder Name</entry>
+    <entry key="txnText.PatternValidator">'${input}' is not a valid Message</entry>
+ 
+  
+</properties>

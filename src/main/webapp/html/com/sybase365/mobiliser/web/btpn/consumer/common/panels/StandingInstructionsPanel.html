@@ -1,0 +1,79 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="standingInatructionsForm">
+
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="headLine.standingInstructions" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="spacer"></div>
+
+							<div class="reg_tab_01">
+								<div>
+									<span wicket:id="emptyRecordsMessage"></span>
+								</div>
+								<div class="column" wicket:id="instrictionsContainer">
+									<div class="displayTag">
+										<span class="pagebanner" wicket:id="instructionsHeader"></span>
+										<span class="pagelinks" wicket:id="instructionsNavigator"></span>
+										<wicket:enclosure child="pageable">
+											<div id="table_transaksi">
+											<table id="attachmentsTable">
+												<thead>
+													<tr>
+														<th wicket:id="orderByName" ><wicket:message
+																key="label.name" /></th>
+														<th wicket:id="orderByPayer" ><wicket:message
+																key="label.payer" /></th>
+														<th wicket:id="orderByPayee" ><wicket:message
+																key="label.payee" /></th>
+														<th wicket:id="orderByType" ><wicket:message
+																key="label.type" /></th>
+														<th wicket:id="orderByStartDate" ><wicket:message
+																key="label.startDate" /></th>
+														<th wicket:id="orderByExpiryDate" ><wicket:message
+																key="label.expiryDate" /></th>
+														
+														<th ><wicket:message key="label.remove" /></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr wicket:id="pageable">
+														<td ><div wicket:id="name">[Nama]</div></td>
+														<td ><div wicket:id="payer">[Pembayar]</div></td>
+														<td ><div wicket:id="payee">[Penerima]</div></td>
+														<td ><div wicket:id="type">[Tipe]</div></td>
+														<td ><div wicket:id="startDate">[Tanggal mulai]</div></td>
+														<td ><div wicket:id="expiryDate">[Tanggal akhir]</div></td>
+														<td ><a href="#" wicket:id="removeLink"><span
+																wicket:id="linkName">[Hapus]</span> </a></td>
+													</tr>
+												</tbody>
+											</table>
+											</div>
+										</wicket:enclosure>
+									</div>
+								</div>
+							</div>
+							<input type="submit" class="submit acc_chk" style="left: 300px"
+								wicket:id="addButton" value="Tambah">
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

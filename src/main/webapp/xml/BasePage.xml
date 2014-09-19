@@ -1,0 +1,2041 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <!-- ############# General Application ############# -->
+  <entry key="Cancel">Cancel</entry>
+  <entry key="Next">Next</entry>
+  <entry key="Save">Save</entry>
+  <entry key="Confirm">Confirm</entry>
+  <entry key="Continue">Continue</entry>
+  <entry key="Update">Update</entry>
+  <entry key="Search">Search</entry>
+  <entry key="add">Add</entry>
+  <entry key="edit">Edit</entry>
+  <entry key="remove">Remove</entry>
+  <entry key="actions">Actions</entry>
+  <entry key="Submit">Submit</entry>
+  <entry key="Resend">Resend</entry>
+  <entry key="Create">Create</entry>
+  <entry key="Select">Select</entry>
+  <entry key="Approve">Approve</entry>
+  <entry key="Reject">Reject</entry>
+
+  <entry key="datepicker.clear">Clear</entry>
+  <entry key="datepicker.chooseDate">Choose Date</entry>
+
+  <entry key="currency.sign.EUR">&#8364;</entry>
+  <entry key="EUR">&#8364;</entry>
+  <entry key="application.title">Money Mobiliser</entry>
+  <entry key="application.breadcrumb.separator"> &#187; </entry>
+  <entry key="application.header.loggedinas">Logged-in as:</entry>
+  <entry key="application.header.logout">Logout</entry>
+  <entry key="application.header.language">Languages</entry>
+  <entry key="application.header.language.english">English</entry>
+  <entry key="application.header.language.german">German</entry>
+  <entry key="application.footer.copyright">&#169; 2012 Sybase Inc., an SAP company</entry>
+  <entry key="application.footer.contact">Contact Support</entry>
+  <entry key="application.footer.about">About Mobiliser</entry>
+  <entry key="application.footer.session.timeout.text">Session Timeout:</entry>
+  <entry key="application.footer.session.timeout.minutes.text">Minutes</entry>
+  <entry key="application.popup.session.timeout.logout">Your session has ended</entry>
+  <entry key="application.popup.session.timeout.help">Because we haven't seen you for a while, for your
+    security we have ended your portal session.</entry>
+  <entry key="application.popup.session.timeout.button">Click Here To Start Again</entry>
+
+  <entry key="table.showing">Showing</entry>
+  <entry key="table.totalItems">Total</entry>
+  <entry key="table.itemsPerPage">Items Per Page</entry>
+
+  <!-- ############# Application Login Page ############# -->
+  <entry key="application.login.page.title">Mobiliser Login</entry>
+  <entry key="application.login.heading">Mobiliser Login</entry>
+  <entry key="application.login.signup">Consumer Signup</entry>
+  <entry key="application.login.forgot.password">Forgot Password</entry>
+
+  <entry key="username">Login ID</entry>
+  <entry key="password">Password</entry>
+  <entry key="login">Login</entry>
+
+  <!-- ############# Application Login - Error Messages ############# -->
+  <entry key="application.login.failed">Login failed. Please check your Login Id and Password</entry>
+  <entry key="customer.not.found.msisdn.error">No user found with the entered MSISDN </entry>
+  <entry key="customer.not.found.email.error">No user found with the entered EMAIL </entry>
+  <entry key="customer.ident.retrive.error">An error occurred while retrieving customer's
+    identification details</entry>
+  <entry key="customer.address.retrive.error">An error occurred while retrieving customer's address
+    details</entry>
+  <entry key="customer.privilege.retrive.error">An error occurred while retrieving customer's
+    privileges</entry>
+  <entry key="customer.privilege.retrive.error">An error occurred while retrieving customer's
+    privileges</entry>
+  <entry key="no.privilege.password.recovery.error">You are not allowed to recover your password</entry>
+  <entry key="generate.temp.credential.error">An error occurred while generating temporary password
+    for the user</entry>
+  <entry key="generate.temp.credential.success">Temporary password generated successfully</entry>
+  <entry key="temp.credential.sent.success">A new password has successfully been sent to the email
+    address</entry>
+  <entry key="customer.temp.password.generate.error">A technical error occurred while generating the
+    temporary password for the user</entry>
+  <entry key="retrieve.customer.ident.technical.error">A technical error occurred while retrieving customer's
+    identifications</entry>
+
+  <!-- ############# Change Expired Password Page ############# -->
+  <entry key="changeExpiredPassword.text">Your password has expired - please enter a new password to continue</entry>
+  <entry key="changeExpiredPassword.newPassword">New Password</entry>
+  <entry key="changeExpiredPassword.confirmPassword">Confirm Password</entry>
+  <entry key="changeExpiredPassword.button">Change Password</entry>
+
+  <!-- ############# Forgot Password Page ############# -->
+  <entry key="forgotPassword.page.title">Money Mobiliser - Forgot Password</entry>
+  <entry key="forgotPassword.title">Please enter your MSISDN and email address to receive
+    a temporary password</entry>
+  <entry key="forgotPassword.msisdn">MSISDN</entry>
+  <entry key="msisdn.Required">MSISDN is required</entry>
+    <entry key="msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+  <entry key="forgotPassword.email">Email</entry>
+  <entry key="email.Required">Email is required</entry>
+    <entry key="email.EmailAddressValidator">'${input}' is not a valid Email</entry>
+  <entry key="forgotPassword.button.cancel">Cancel</entry>
+  <entry key="forgotPassword.button.submit">Submit</entry>
+
+  <!-- ############# Forgot Password - Finished Page ############# -->
+  <entry key="forgotPasswordFinish.title">A new password was just emailed to you.</entry>
+  <entry key="forgotPasswordFinish.text">You can now log in with your temporary password.</entry>
+  <entry key="forgotPassword.login">Restart Login</entry>
+  <entry key="forgotPassword.userName">Username</entry>
+  <entry key="forgotPassword.cancel">Cancel</entry>
+  <entry key="forgotPassword.submit">Change Password</entry>
+  <entry key="forgotPassword.login">Restart Login</entry>
+  <entry key="forgot.password.error">An error occurred while reseting your password</entry>
+  <entry key="no.customer.found.error">No customer with given identification found</entry>
+  <entry key="no.email.found.error">No email has been registered for the given customer</entry>
+  <entry key="email.mismatch.error">The email provided does not match with the one
+    registered with system.</entry>
+  <entry key="missing.privilege.error">The user don't have the required privilege.</entry>
+  <entry key="error.setting.temp.credential">An error occurred while reseting the password.</entry>
+  <entry key="temp.credential.sent.success">A new password has successfully been sent to the email
+    address.</entry>
+
+  <!-- ############# Technical Error Page ############# -->
+  <entry key="technicalError.title">Technical Error</entry>
+  <entry key="technicalError.problem">We've Had a Problem</entry>
+  <entry key="technicalError.text">We are experiencing technical difficulties. Please try
+    again later.</entry>
+  <entry key="technicalError.button">Click Here to Start Again</entry>
+
+  <!-- ############# Change Temporary Password Page ############# -->
+  <entry key="changeTempPassword.text">Please change your password to continue</entry>
+  <entry key="changeTempPassword.newPassword">New Password</entry>
+  <entry key="changeTempPassword.confirmPassword">Confirm Password</entry>
+  <entry key="changeTempPassword.button">Change Password</entry>
+
+  <entry key="oldPassword.Required">Old Password is required</entry>
+  <entry key="newPassword.Required">New Password is required</entry>
+  <entry key="newPassword.StringValidator.range">Password is not between 5 and 32 characters</entry>
+  <entry key="confirmPassword.EqualPasswordInputValidator">New Password and Confirm Password do not match</entry>
+
+  <entry key="nullValid">Please Select</entry>
+
+  <entry key="sva.balance.heading">SVA Balance: </entry>
+  <entry key="noJavascript.text">Your Browser must support JavaScript in order to use
+    this web application</entry>
+  <entry key="portal.genericError">An error occurred. Try again later.</entry>
+
+
+  <entry key="top.menu.selfcare">Selfcare</entry>
+  <entry key="top.menu.customer.services">Customer Services</entry>
+  <entry key="top.menu.bulk.processing">Bulk Processing</entry>
+  <entry key="top.menu.manage.agents">Manage Agents</entry>
+  <entry key="top.menu.reports">Reports</entry>
+
+  <entry key="menu.search.customer">Search Customer</entry>
+  <entry key="menu.register.customer">Customer Registration</entry>
+  <entry key="menu.airtime.topup">Air Time Topup</entry>
+
+  <entry key="menu.bulk.upload">Upload File</entry>
+  <entry key="menu.bulk.confirm">Confirm File</entry>
+  <entry key="menu.bulk.history">History</entry>
+  
+  <entry key="menu.agent.hierarchy">Agent Hierarchy</entry>
+  <entry key="menu.activate.agent">Activate Agent</entry>
+  <entry key="menu.find.agent">Find Agent</entry>
+  <entry key="menu.create.agent">Create Agent</entry>
+  <entry key="menu.create.sub.agent">Create Sub Agent</entry>
+
+  <entry key="menu.coupon.types">Coupon Types</entry>
+  <entry key="menu.coupon.categories">Categories</entry>
+  <entry key="menu.coupon.search.coupon">Search Coupon</entry>
+
+  <entry key="menu.bulk.processing.file.upload">Upload File</entry>
+  <entry key="menu.bulk.processing.confirm.file">Confirm File</entry>
+  <entry key="menu.bulk.processing.history.file">History</entry>
+  <entry key="bulk.processing.fileupload">Upload File</entry>
+  <entry key="bulk.processing.confirmFile">Confirm File</entry>
+  <entry key="bulk.processing.history">History</entry>
+  <entry key="bulk.processing.title">Bulk Processing</entry>
+  
+  <entry key="top.menu.reports.online">Online Reports</entry>
+  <entry key="top.menu.reports.batch">Batch Reports</entry>
+  <entry key="top.menu.reports.batch.create.schedule">New Report Schedule</entry>
+  <entry key="top.menu.reports.batch.schedule">Edit Report Schedule</entry>
+  <entry key="top.menu.reports.batch.download">Download Reports</entry>
+
+  <!-- ############# Consumer Portal Top Menu ############# -->
+
+  <entry key="top.menu.consumer.selfcare">Selfcare</entry>
+  <entry key="top.menu.consumer.manageaccounts">Manage Accounts</entry>
+  <entry key="top.menu.consumer.transactions">Transactions</entry>
+  <entry key="top.menu.consumer.billpayment">Bill Payment</entry>
+
+  <!-- ############# CST Top Menu ############# -->
+
+  <entry key="top.menu.cst.selfcare">Selfcare</entry>
+  <entry key="top.menu.cst.customer.care">Customer Care</entry>
+  <entry key="top.menu.cst.configuration">System Configuration</entry>
+  <entry key="top.menu.cst.bulk.processing">Bulk Processing</entry>
+  <entry key="top.menu.cst.coupons">Coupon Admin</entry>
+  <entry key="top.menu.cst.user.manager">User Manager</entry>
+  <entry key="top.menu.cst.notification.mgr">Notification Manager</entry>
+
+  <entry key="menu.cst.register.custormer">Customer Registration</entry>
+  <entry key="menu.cst.find.customer">Find Customer</entry>
+  <entry key="menu.cst.find.wallets">Wallets</entry>
+  <entry key="menu.cst.approvals">Find Pending Approval</entry>
+  <entry key="menu.cst.approve.custormer">Customers</entry>
+  <entry key="menu.cst.approve.wallets">Wallets</entry>
+  <entry key="menu.cst.approve.transactions">Transactions</entry>
+  <entry key="menu.cst.exchange.rate">Exchange Rate</entry>
+  <entry key="menu.cst.currency.exchange">Currency Exchange</entry>
+  <entry key="menu.cst.currency.exchangehistory">Exchange Rate History</entry>
+  <entry key="menu.cst.service.packages">Service Packages</entry>
+  <entry key="menu.cst.number.restrictions">Number Restrictions</entry>
+  <entry key="menu.cst.optin.settings">Opt-In Settings</entry>
+  <entry key="menu.cst.configuration.fee">Fees</entry>
+  <entry key="menu.cst.configuration.fee.feeTypes">Fee Types</entry>
+  <entry key="menu.cst.configuration.fee.feeSets">Fee Sets</entry>
+  <entry key="menu.cst.configuration.limits">Limits</entry>
+  <entry key="menu.cst.configuration.limitsets">Limit Sets</entry>
+  <entry key="menu.cst.configuration.limitClasses">Limit Classes</entry>
+  <entry key="menu.cst.configuration.privileges">Privileges</entry>
+  <entry key="menu.cst.configuration.global">Global Configuration</entry>
+  <entry key="menu.cst.configuration.privileges.customers">Create Customers</entry>
+  <entry key="menu.cst.configuration.privileges.wallets">Add Wallet Entries</entry>
+  <entry key="menu.cst.configuration.privileges.transactions">Transactions</entry>
+  <entry key="menu.cst.configuration.privileges.files">File Types</entry>
+     
+  <entry key="menu.cst.restrictions">Restrictions</entry>
+  <entry key="menu.find/edit.agent">Find/Edit Agent</entry>
+  <entry key="menu.role.agent">Create Role</entry>
+  <entry key="menu.find/edit.role.agent">Find/Edit Role</entry>
+  <entry key="menu.find.role.agent">Find Role</entry>
+  <entry key="menu.create.privilege.agent">Create Privilege</entry>
+  <entry key="menu.find/edit.privilege.agent">Find/Edit Privilege</entry>
+  <entry key="menu.find.privilege.agent">Find Privilege</entry>
+
+  <entry key="menu.cst.find.message">Find/Edit Message</entry>
+  <entry key="menu.cst.create.message">Create Message</entry>
+  <entry key="menu.cst.import.message">Import Message</entry>
+  <entry key="menu.cst.create.attachment">Create Attachment</entry>
+  <entry key="menu.cst.find.attachment">Find/Edit Attachment</entry>
+
+  <!-- ############# Dashboard Top Menu ############# -->
+
+  <entry key="top.menu.dashboard.home">Home</entry>
+  <entry key="top.menu.dashboard.servers">Servers</entry>
+  <entry key="top.menu.dashboard.trackers">Trackers</entry>
+
+  <!-- error messages -->
+  <entry key="customer.address.firstName">First Name</entry>
+  <entry key="customer.address.lastName">Last Name</entry>
+  <entry key="customer.address.birthDateString">Date Of Birth</entry>
+  <entry key="customer.address.kvSecQuestions">Security Question</entry>
+  <entry key="customer.address.SecQuesAns">Security Question Answer</entry>
+  <entry key="customer.age.error">You must be over 18 years of age to register for
+    Vanilla.</entry>
+  <entry key="preauthorization.error">An error occurred during Preauthorization</entry>
+  <entry key="preauthorization.continue.error">An error occurred during Preauthorization Continue</entry>
+
+  <!--
+    <entry key="customer.address.birthDateString">The Date of birth must
+    be of mm/dd/yyyy format</entry>
+  -->
+  <!--
+    <entry key="customer.address.firstName">Text you have entered for
+    First Name is invalid</entry>
+  -->
+  <!--
+    <entry key="customer.address.lastName">Text you have entered for Last
+    Name is invalid</entry>
+  -->
+
+  <entry key="customer.address.kvGender">Gender</entry>
+  <entry key="customer.kvInfoMode">Info Mode</entry>
+  <entry key="customer.userName">Username</entry>
+  <entry key="customer.password">Password</entry>
+  <entry key="passwordConfirmed">Confirm Password</entry>
+  <entry key="customer.infoMode">Info Mode</entry>
+  <entry key="customer.address.email">Email Address</entry>
+
+  <!--
+    <entry key="customer.address.birthDateString">The Date of birth must
+    be of mm/dd/yyyy format</entry>
+  -->
+  <!--
+    <entry key="customer.address.firstName">Text you have entered for
+    First Name is invalid</entry>
+  -->
+  <!--
+    <entry key="customer.address.lastName">Text you have entered for Last
+    Name is invalid</entry>
+  -->
+
+  <entry key="customer.password.notConfirmed">The entered password confirmation does not match the
+    entered password</entry>
+  
+
+  <entry key="customer.pin.notConfirmed">The entered PIN confirmation does not match the
+    entered PIN</entry>
+
+  <!--
+    <entry key="customer.address.birthDateString">You must enter a birth
+    date</entry>
+  -->
+  <entry key="customer.pin">Pin</entry>
+  <entry key="pinConfirmed">Confirm Pin</entry>
+
+  <!--
+    <entry key="customer.pin">Pin must be exactly of 4 characters</entry>
+  -->
+  <!--
+    <entry key="pinConfirmed">Confirm Pin must be exactly of 4
+    characters</entry>
+  -->
+  <!--
+    <entry key="pinConfirmed">Confirm Pin must be exactly of 4
+    characters</entry>
+  -->
+  <entry key="consumerBean.terms">Terms and Conditions.</entry>
+  <entry key="agree">You must agree to the terms and conditions</entry>
+  <entry key="consumerBean.terms.disagree">I Disagree.</entry>
+  <entry key="consumerBean.terms.agree">I Agree.</entry>
+  <entry key="username.inuse.error">The provided username already exists</entry>
+  <entry key="terms.disAgree">You must agree to the terms and condition to complete
+    registration.</entry>
+  <entry key="customer.address.kvCountry">Country</entry>
+  <entry key="customer.msisdn">MSISDN</entry>
+  <entry key="msisdn.inuse.error">The entered mobile number has already been registered.
+    Please try it again. If you are sure that the number is correct,
+    please contact us.</entry>
+  <entry key="msisdn.inuse.check.failed">Failed to check whether entered MSISDN has already
+    registered</entry>
+
+  <!-- Signup Cancel Page -->
+  <entry key="signup.cancelation.message">You have aborted the registration. Please click
+    "Restart Registration" to start it again.</entry>
+  <entry key="signup.restart">Restart Registration</entry>
+
+  <entry key="technicalerror.heading">Technical Error</entry>
+
+  <entry key="change.temp.password">Change password</entry>
+  <entry key="otp.input.count.exceeded">You have exceeded number of attempts allowed for OTP
+    verification.</entry>
+
+  <entry key="page.heading">Login</entry>
+  <entry key="username">Login ID</entry>
+  <entry key="username.Required">Login ID is required</entry>
+  <entry key="password">Password</entry>
+  <entry key="password.Required">Password is required</entry>
+  <entry key="login">Login</entry>
+  <entry key="nullValid">Please Select</entry>
+
+  <entry key="currency.sign.EUR">&#8364;</entry>
+
+  <entry key="application.name">Distribution Partner Portal</entry>
+  <entry key="language.head">Languages</entry>
+  <entry key="sva.balance.heading">SVA Balance: </entry>
+  <entry key="noJavascript.text">Your Browser must support JavaScript in order to use
+    this web application</entry>
+
+  <entry key="txnHistory.headline">Transaction Details</entry>
+  <entry key="txnHistoryBean.date">Date</entry>
+  <entry key="txnHistoryBean.type">Type</entry>
+  <entry key="txnHistoryBean.errorCode">Error</entry>
+  <entry key="txnHistoryBean.reference">Reference</entry>
+  <entry key="txnHistoryBean.participantName">Participant's Name</entry>
+  <entry key="txnHistoryBean.details">Details</entry>
+  <entry key="txnHistoryBean.amount">Amount</entry>
+  <entry key="txnHistoryBean.fee">Fee</entry>
+  <entry key="fetch.txns.error">An error occurred while searching transactions</entry>
+  <entry key="transactions.load.error">An error occurred while loading customer's transactions</entry>
+
+
+
+  <entry key="calendar.months.1">January</entry>
+  <entry key="calendar.months.2">February</entry>
+  <entry key="calendar.months.3">March</entry>
+  <entry key="calendar.months.4">April</entry>
+  <entry key="calendar.months.5">May</entry>
+  <entry key="calendar.months.6">June</entry>
+  <entry key="calendar.months.7">July</entry>
+  <entry key="calendar.months.8">August</entry>
+  <entry key="calendar.months.9">September</entry>
+  <entry key="calendar.months.10">October</entry>
+  <entry key="calendar.months.11">November</entry>
+  <entry key="calendar.months.12">December</entry>
+
+  <entry key="customer.creditCard.kvMonthExpiry.null">MM</entry>
+  <entry key="lookup.monthExpiry.1">01</entry>
+  <entry key="lookup.monthExpiry.2">02</entry>
+  <entry key="lookup.monthExpiry.3">03</entry>
+  <entry key="lookup.monthExpiry.4">04</entry>
+  <entry key="lookup.monthExpiry.5">05</entry>
+  <entry key="lookup.monthExpiry.6">06</entry>
+  <entry key="lookup.monthExpiry.7">07</entry>
+  <entry key="lookup.monthExpiry.8">08</entry>
+  <entry key="lookup.monthExpiry.9">09</entry>
+  <entry key="lookup.monthExpiry.10">10</entry>
+  <entry key="lookup.monthExpiry.11">11</entry>
+  <entry key="lookup.monthExpiry.12">12</entry>
+  
+  <!-- ############# Bank Account Status for Mobile############# -->
+  <entry key="lookup.bankAccountStatus.0">Active for mobile</entry>
+  <entry key="lookup.bankAccountStatus.3">Inactive for mobile</entry>
+  
+   <!-- ############# Alert frequency duration############# --> 
+  <entry key="lookup.frequencyDurations.1_D">Day</entry>
+  <entry key="lookup.frequencyDurations.2_W">Week</entry>
+  <entry key="lookup.frequencyDurations.3_F">Fortnight</entry>
+  <entry key="lookup.frequencyDurations.4_M">Month</entry>
+  <entry key="lookup.frequencyDurations.5_Q">Quarter </entry>
+  <entry key="lookup.frequencyDurations.6_Y">Year</entry>
+  
+  <!-- ############# Alert convert Durations To Display ############# --> 
+  <entry key="lookup.convertDurationsToDisplay.D">1_D</entry>
+  <entry key="lookup.convertDurationsToDisplay.W">2_W</entry>
+  <entry key="lookup.convertDurationsToDisplay.F">3_F</entry>
+  <entry key="lookup.convertDurationsToDisplay.M">4_M</entry>
+  <entry key="lookup.convertDurationsToDisplay.Q">5_Q</entry>
+  <entry key="lookup.convertDurationsToDisplay.Y">6_Y</entry>
+
+  <entry key="customer.creditCard.kvYearExpiry.null">YYYY</entry>
+
+  <entry key="language.change.success">Language has been changed successfully.</entry>
+  <entry key="otp.send.error">An error occurred while sending the OTP</entry>
+
+  <!-- ############# Time Frame ############# -->
+  <entry key="timeframe.1">All</entry>
+  <entry key="timeframe.2">Last 3 Months</entry>
+  <entry key="timeframe.3">Last Month</entry>
+  <entry key="timeframe.4">Last 10 days</entry>
+  <entry key="timeframe.5">Last Week</entry>
+  <entry key="timeframe.6">Last 2 days</entry>
+
+  <!-- ############# Limit Set ############# -->
+  <entry key="cst.limit.title">Limits</entry>
+  <entry key="cst.limitSets.title">Limit Sets</entry>
+
+  <entry key="ERROR.INDIVIDUAL_LIMITSET_EXIST">The Individual Limit Set data already exist</entry>
+  <entry key="MESSAGE.LIMITSET_ADDED">The Limit Set data saved successfully</entry>
+  <entry key="MESSAGE.INDIVIDUAL_LIMITSET_ADDED">The Individual Limit Set data saved successfully</entry>
+  <entry key="MESSAGE.LIMITSET_REMOVED">The Limit Set data removed successfully</entry>
+  <entry key="MESSAGE.LIMITSET_CLASS.UPDATED">The Limit Set class data updated successfully</entry>
+  <entry key="MESSAGE.LIMITSET_CLASS.SAVED">The Limit Set class data saved successfully</entry>
+
+  <entry key="ERROR.LIMITSET_REMOVE">An internal error occurred. Please try again.</entry>
+  <entry key="ERROR.LIMITSET_ADD">An internal error occurred. Please try again.</entry>
+  <entry key="ERROR.LIMITSET_CLASS.SAVE">An internal error occurred. Please try again.</entry>
+  <entry key="MESSAGE.LIMITSET_CLASS.REMOVED">The Limit set class data removed successfully</entry>
+  <entry key="ERROR.LIMITSET_CLASS.REMOVE">An internal error occurred. Please try again.</entry>
+
+  <!-- ############# Limit Classes ############# -->
+  <entry key="cst.limitClass.name">Limit Class Name</entry>
+  <entry key="cst.limitClass.title">Limit Class</entry>
+  <entry key="cst.limitClass.limitSetsData">Limit Class</entry>
+
+  <entry key="cst.limitClass.editAction">Edit</entry>
+  <entry key="cst.limitClass.removeAction">Remove</entry>
+  <entry key="limitClass.remove.confirm">Are you sure you want to remove this limit class?</entry>
+
+  <entry key="MESSAGE.LIMICLASS_REMOVED">The Limit Class data removed successfully</entry>
+  <entry key="limitClass.name.Required">Limit Class is required</entry>
+  <entry key="cst.limitClass.th.limiClass">Limit Class</entry>
+  <entry key="cst.limitClass.actions">Actions</entry>
+  <entry key="ERROR.LIMITCLASS_SAVE">An internal error occurred. Please try again.</entry>
+  <entry key="MESSAGE.LIMITCLASS_ADDED">The Limit Class data saved successfully</entry>
+  <entry key="MESSAGE.LIMITCLASS_UPDATED">The Limit Class data updated successfully</entry>
+  <entry key="ERROR.LIMICLASS_REMOVE">An internal error occurred. Please try again.</entry>
+
+    <!-- ############# Limit Classes ############# -->
+  <entry key="cst.limitClass.dailyDebitLimitCount">Daily Debit Limit Count</entry>
+  <entry key="cst.limitClass.weeklyDebitLimitCount">Weekly Debit Limit Count</entry>
+  <entry key="cst.limitClass.monthlyDebitLimitCount">Monthly Debit Limit Count</entry>
+  <entry key="cst.limitClass.absoluteDebitLimitCount">Absolute Debit Limit Count</entry>
+  <entry key="cst.limitClass.dailyCreditLimitCount">Daily Credit Limit Count</entry>
+  <entry key="cst.limitClass.weeklyCreditLimitCount">Weekly Credit Limit Count</entry>
+  <entry key="cst.limitClass.monthlyCreditLimitCount">Monthly Credit Limit Count</entry>
+  <entry key="cst.limitClass.absoluteCreditLimitCount">Absolute Credit Limit Count</entry>
+  <entry key="cst.limitClass.singleDebitLimitAmount">Single Debit Limit Amount</entry>
+  <entry key="cst.limitClass.singleCreditLimitAmount">Single Credit Limit Amount</entry>
+  <entry key="cst.limitClass.currency">Currency</entry>
+  <entry key="cst.limitClass.dailyDebitLimitAmount">Daily Debit Limit</entry>
+  <entry key="cst.limitClass.weeklyDebitLimitAmount">Weekly Debit Limit</entry>
+  <entry key="cst.limitClass.monthlyDebitLimitAmount">Monthly Debit Limit</entry>
+  <entry key="cst.limitClass.absoluteDebitLimitAmount">Absolute Debit Limit</entry>
+  <entry key="cst.limitClass.dailyCreditLimitAmount">Daily Credit Limit</entry>
+  <entry key="cst.limitClass.weeklyCreditLimitAmount">Weekly Credit Limit</entry>
+  <entry key="cst.limitClass.monthlyCreditLimitAmount">Monthly Credit Limit</entry>
+  <entry key="cst.limitClass.absoluteCreditLimitAmount">Absolute Credit Limit</entry>
+  <entry key="cst.limitClass.singleDebitMinimum">Single Minimum Debit</entry>
+  <entry key="cst.limitClass.singleCreditMinimum">Single Minimum Credit</entry>
+  <entry key="ERROR.AGENT_LIMITSET">is not a valid</entry>
+  
+  <!-- ############# Fee Set ############# -->
+  <entry key="scaleSteps.thresholdAmt">Threshold</entry>
+  <entry key="scaleSteps.min">Min</entry>
+  <entry key="scaleSteps.max">Max</entry>
+  <entry key="scaleSteps.onTop">On Top</entry>
+  <entry key="scaleSteps.table.percentage">%</entry>
+  
+  <!-- ############# Approvals ############# -->
+  <entry key="pendingApproval.msg">Your request has been processed successfully, but is pending approval</entry>
+    
+    
+    <!-- ############# Countries ############# -->
+    <entry key="lookup.countries.AD">Andorra</entry>
+    <entry key="lookup.countries.AE">United Arab Emirates</entry>
+    <entry key="lookup.countries.AF">Afghanistan</entry>
+    <entry key="lookup.countries.AG">Antigua and Barbuda</entry>
+    <entry key="lookup.countries.AI">Anguilla</entry>
+    <entry key="lookup.countries.AL">Albania</entry>
+    <entry key="lookup.countries.AM">Armenia</entry>
+    <entry key="lookup.countries.AN">Netherlands Antilles</entry>
+    <entry key="lookup.countries.AO">Angola</entry>
+    <entry key="lookup.countries.AQ">Antarctica</entry>
+    <entry key="lookup.countries.AR">Argentina</entry>
+    <entry key="lookup.countries.AS">American Samoa</entry>
+    <entry key="lookup.countries.AT">Austria</entry>
+    <entry key="lookup.countries.AU">Australia</entry>
+    <entry key="lookup.countries.AW">Aruba</entry>
+    <entry key="lookup.countries.AX">Aland Islands \u00c5land Islands</entry>
+    <entry key="lookup.countries.AZ">Azerbaijan</entry>
+    <entry key="lookup.countries.BA">Bosnia and Herzegovina</entry>
+    <entry key="lookup.countries.BB">Barbados</entry>
+    <entry key="lookup.countries.BD">Bangladesh</entry>
+    <entry key="lookup.countries.BE">Belgium</entry>
+    <entry key="lookup.countries.BF">Burkina Faso</entry>
+    <entry key="lookup.countries.BG">Bulgaria</entry>
+    <entry key="lookup.countries.BH">Bahrain</entry>
+    <entry key="lookup.countries.BI">Burundi</entry>
+    <entry key="lookup.countries.BJ">Benin</entry>
+    <entry key="lookup.countries.BL">Saint Barthelemy Saint Barth\u00e9lemy</entry>
+    <entry key="lookup.countries.BM">Bermuda</entry>
+    <entry key="lookup.countries.BN">Brunei Darussalam</entry>
+    <entry key="lookup.countries.BO">Bolivia</entry>
+    <entry key="lookup.countries.BR">Brazil</entry>
+    <entry key="lookup.countries.BS">Bahamas</entry>
+    <entry key="lookup.countries.BT">Bhutan</entry>
+    <entry key="lookup.countries.BV">Bouvet Island</entry>
+    <entry key="lookup.countries.BW">Botswana</entry>
+    <entry key="lookup.countries.BY">Belarus</entry>
+    <entry key="lookup.countries.BZ">Belize</entry>
+    <entry key="lookup.countries.CA">Canada</entry>
+    <entry key="lookup.countries.CC">Cocos (Keeling) Islands</entry>
+    <entry key="lookup.countries.CD">Congo, the Democratic Republic of the</entry>
+    <entry key="lookup.countries.CF">Central African Republic</entry>
+    <entry key="lookup.countries.CG">Congo</entry>
+    <entry key="lookup.countries.CH">Switzerland</entry>
+    <entry key="lookup.countries.CI">Cote d'Ivoire C\u00f4te d'Ivoire</entry>
+    <entry key="lookup.countries.CK">Cook Islands</entry>
+    <entry key="lookup.countries.CL">Chile</entry>
+    <entry key="lookup.countries.CM">Cameroon</entry>
+    <entry key="lookup.countries.CN">China</entry>
+    <entry key="lookup.countries.CO">Colombia</entry>
+    <entry key="lookup.countries.CR">Costa Rica</entry>
+    <entry key="lookup.countries.CU">Cuba</entry>
+    <entry key="lookup.countries.CV">Cape Verde</entry>
+    <entry key="lookup.countries.CX">Christmas Island</entry>
+    <entry key="lookup.countries.CY">Cyprus</entry>
+    <entry key="lookup.countries.CZ">Czech Republic</entry>
+    <entry key="lookup.countries.DE">Germany</entry>
+    <entry key="lookup.countries.DJ">Djibouti</entry>
+    <entry key="lookup.countries.DK">Denmark</entry>
+    <entry key="lookup.countries.DM">Dominica</entry>
+    <entry key="lookup.countries.DO">Dominican Republic</entry>
+    <entry key="lookup.countries.DZ">Algeria</entry>
+    <entry key="lookup.countries.EC">Ecuador</entry>
+    <entry key="lookup.countries.EE">Estonia</entry>
+    <entry key="lookup.countries.EG">Egypt</entry>
+    <entry key="lookup.countries.EH">Western Sahara</entry>
+    <entry key="lookup.countries.ER">Eritrea</entry>
+    <entry key="lookup.countries.ES">Spain</entry>
+    <entry key="lookup.countries.ET">Ethiopia</entry>
+    <entry key="lookup.countries.FI">Finland</entry>
+    <entry key="lookup.countries.FJ">Fiji</entry>
+    <entry key="lookup.countries.FK">Falkland Islands (Malvinas)</entry>
+    <entry key="lookup.countries.FM">Micronesia, Federated States of</entry>
+    <entry key="lookup.countries.FO">Faroe Islands</entry>
+    <entry key="lookup.countries.FR">France</entry>
+    <entry key="lookup.countries.GA">Gabon</entry>
+    <entry key="lookup.countries.GB">United Kingdom</entry>
+    <entry key="lookup.countries.GD">Grenada</entry>
+    <entry key="lookup.countries.GE">Georgia</entry>
+    <entry key="lookup.countries.GF">French Guiana</entry>
+    <entry key="lookup.countries.GG">Guernsey</entry>
+    <entry key="lookup.countries.GH">Ghana</entry>
+    <entry key="lookup.countries.GI">Gibraltar</entry>
+    <entry key="lookup.countries.GL">Greenland</entry>
+    <entry key="lookup.countries.GM">Gambia</entry>
+    <entry key="lookup.countries.GN">Guinea</entry>
+    <entry key="lookup.countries.GP">Guadeloupe</entry>
+    <entry key="lookup.countries.GQ">Equatorial Guinea</entry>
+    <entry key="lookup.countries.GR">Greece</entry>
+    <entry key="lookup.countries.GS">South Georgia and the South Sandwich Islands</entry>
+    <entry key="lookup.countries.GT">Guatemala</entry>
+    <entry key="lookup.countries.GU">Guam</entry>
+    <entry key="lookup.countries.GW">Guinea-Bissau</entry>
+    <entry key="lookup.countries.GY">Guyana</entry>
+    <entry key="lookup.countries.HK">Hong Kong</entry>
+    <entry key="lookup.countries.HM">Heard Island and McDonald Islands</entry>
+    <entry key="lookup.countries.HN">Honduras</entry>
+    <entry key="lookup.countries.HR">Croatia</entry>
+    <entry key="lookup.countries.HT">Haiti</entry>
+    <entry key="lookup.countries.HU">Hungary</entry>
+    <entry key="lookup.countries.ID">Indonesia</entry>
+    <entry key="lookup.countries.IE">Ireland</entry>
+    <entry key="lookup.countries.IL">Israel</entry>
+    <entry key="lookup.countries.IM">Isle of Man</entry>
+    <entry key="lookup.countries.IN">India</entry>
+    <entry key="lookup.countries.IO">British Indian Ocean Territory</entry>
+    <entry key="lookup.countries.IQ">Iraq</entry>
+    <entry key="lookup.countries.IR">Iran, Islamic Republic of</entry>
+    <entry key="lookup.countries.IS">Iceland</entry>
+    <entry key="lookup.countries.IT">Italy</entry>
+    <entry key="lookup.countries.JE">Jersey</entry>
+    <entry key="lookup.countries.JM">Jamaica</entry>
+    <entry key="lookup.countries.JO">Jordan</entry>
+    <entry key="lookup.countries.JP">Japan</entry>
+    <entry key="lookup.countries.KE">Kenya</entry>
+    <entry key="lookup.countries.KG">Kyrgyzstan</entry>
+    <entry key="lookup.countries.KH">Cambodia</entry>
+    <entry key="lookup.countries.KI">Kiribati</entry>
+    <entry key="lookup.countries.KM">Comoros</entry>
+    <entry key="lookup.countries.KN">Saint Kitts and Nevis</entry>
+    <entry key="lookup.countries.KP">Korea, Democratic People's Republic of</entry>
+    <entry key="lookup.countries.KR">Korea, Republic of</entry>
+    <entry key="lookup.countries.KW">Kuwait</entry>
+    <entry key="lookup.countries.KY">Cayman Islands</entry>
+    <entry key="lookup.countries.KZ">Kazakhstan</entry>
+    <entry key="lookup.countries.LA">Lao People's Democratic Republic</entry>
+    <entry key="lookup.countries.LB">Lebanon</entry>
+    <entry key="lookup.countries.LC">Saint Lucia</entry>
+    <entry key="lookup.countries.LI">Liechtenstein</entry>
+    <entry key="lookup.countries.LK">Sri Lanka</entry>
+    <entry key="lookup.countries.LR">Liberia</entry>
+    <entry key="lookup.countries.LS">Lesotho</entry>
+    <entry key="lookup.countries.LT">Lithuania</entry>
+    <entry key="lookup.countries.LU">Luxembourg</entry>
+    <entry key="lookup.countries.LV">Latvia</entry>
+    <entry key="lookup.countries.LY">Libyan Arab Jamahiriya</entry>
+    <entry key="lookup.countries.MA">Morocco</entry>
+    <entry key="lookup.countries.MC">Monaco</entry>
+    <entry key="lookup.countries.MD">Moldova</entry>
+    <entry key="lookup.countries.ME">Montenegro</entry>
+    <entry key="lookup.countries.MF">Saint Martin (French part)</entry>
+    <entry key="lookup.countries.MG">Madagascar</entry>
+    <entry key="lookup.countries.MH">Marshall Islands</entry>
+    <entry key="lookup.countries.MK">Macedonia, the former Yugoslav Republic of</entry>
+    <entry key="lookup.countries.ML">Mali</entry>
+    <entry key="lookup.countries.MM">Myanmar</entry>
+    <entry key="lookup.countries.MN">Mongolia</entry>
+    <entry key="lookup.countries.MO">Macao</entry>
+    <entry key="lookup.countries.MP">Northern Mariana Islands</entry>
+    <entry key="lookup.countries.MQ">Martinique</entry>
+    <entry key="lookup.countries.MR">Mauritania</entry>
+    <entry key="lookup.countries.MS">Montserrat</entry>
+    <entry key="lookup.countries.MT">Malta</entry>
+    <entry key="lookup.countries.MU">Mauritius</entry>
+    <entry key="lookup.countries.MV">Maldives</entry>
+    <entry key="lookup.countries.MW">Malawi</entry>
+    <entry key="lookup.countries.MX">Mexico</entry>
+    <entry key="lookup.countries.MY">Malaysia</entry>
+    <entry key="lookup.countries.MZ">Mozambique</entry>
+    <entry key="lookup.countries.NA">Namibia</entry>
+    <entry key="lookup.countries.NC">New Caledonia</entry>
+    <entry key="lookup.countries.NE">Niger</entry>
+    <entry key="lookup.countries.NF">Norfolk Island</entry>
+    <entry key="lookup.countries.NG">Nigeria</entry>
+    <entry key="lookup.countries.NI">Nicaragua</entry>
+    <entry key="lookup.countries.NL">Netherlands</entry>
+    <entry key="lookup.countries.NO">Norway</entry>
+    <entry key="lookup.countries.NP">Nepal</entry>
+    <entry key="lookup.countries.NR">Nauru</entry>
+    <entry key="lookup.countries.NU">Niue</entry>
+    <entry key="lookup.countries.NZ">New Zealand</entry>
+    <entry key="lookup.countries.OM">Oman</entry>
+    <entry key="lookup.countries.PA">Panama</entry>
+    <entry key="lookup.countries.PE">Peru</entry>
+    <entry key="lookup.countries.PF">French Polynesia</entry>
+    <entry key="lookup.countries.PG">Papua New Guinea</entry>
+    <entry key="lookup.countries.PH">Philippines</entry>
+    <entry key="lookup.countries.PK">Pakistan</entry>
+    <entry key="lookup.countries.PL">Poland</entry>
+    <entry key="lookup.countries.PM">Saint Pierre and Miquelon</entry>
+    <entry key="lookup.countries.PN">Pitcairn</entry>
+    <entry key="lookup.countries.PR">Puerto Rico</entry>
+    <entry key="lookup.countries.PS">Palestinian Territory, Occupied</entry>
+    <entry key="lookup.countries.PT">Portugal</entry>
+    <entry key="lookup.countries.PW">Palau</entry>
+    <entry key="lookup.countries.PY">Paraguay</entry>
+    <entry key="lookup.countries.QA">Qatar</entry>
+    <entry key="lookup.countries.RE">Reunion</entry>
+    <entry key="lookup.countries.RO">Romania</entry>
+    <entry key="lookup.countries.RS">Serbia</entry>
+    <entry key="lookup.countries.RU">Russian Federation</entry>
+    <entry key="lookup.countries.RW">Rwanda</entry>
+    <entry key="lookup.countries.SA">Saudi Arabia</entry>
+    <entry key="lookup.countries.SB">Solomon Islands</entry>
+    <entry key="lookup.countries.SC">Seychelles</entry>
+    <entry key="lookup.countries.SD">Sudan</entry>
+    <entry key="lookup.countries.SE">Sweden</entry>
+    <entry key="lookup.countries.SG">Singapore</entry>
+    <entry key="lookup.countries.SH">Saint Helena</entry>
+    <entry key="lookup.countries.SI">Slovenia</entry>
+    <entry key="lookup.countries.SJ">Svalbard and Jan Mayen</entry>
+    <entry key="lookup.countries.SK">Slovakia</entry>
+    <entry key="lookup.countries.SL">Sierra Leone</entry>
+    <entry key="lookup.countries.SM">San Marino</entry>
+    <entry key="lookup.countries.SN">Senegal</entry>
+    <entry key="lookup.countries.SO">Somalia</entry>
+    <entry key="lookup.countries.SR">Suriname</entry>
+    <entry key="lookup.countries.ST">Sao Tome and Principe</entry>
+    <entry key="lookup.countries.SV">El Salvador</entry>
+    <entry key="lookup.countries.SY">Syrian Arab Republic</entry>
+    <entry key="lookup.countries.SZ">Swaziland</entry>
+    <entry key="lookup.countries.TC">Turks and Caicos Islands</entry>
+    <entry key="lookup.countries.TD">Chad</entry>
+    <entry key="lookup.countries.TF">French Southern Territories</entry>
+    <entry key="lookup.countries.TG">Togo</entry>
+    <entry key="lookup.countries.TH">Thailand</entry>
+    <entry key="lookup.countries.TJ">Tajikistan</entry>
+    <entry key="lookup.countries.TK">Tokelau</entry>
+    <entry key="lookup.countries.TL">Timor-Leste</entry>
+    <entry key="lookup.countries.TM">Turkmenistan</entry>
+    <entry key="lookup.countries.TN">Tunisia</entry>
+    <entry key="lookup.countries.TO">Tonga</entry>
+    <entry key="lookup.countries.TR">Turkey</entry>
+    <entry key="lookup.countries.TT">Trinidad and Tobago</entry>
+    <entry key="lookup.countries.TV">Tuvalu</entry>
+    <entry key="lookup.countries.TW">Taiwan, Province of China</entry>
+    <entry key="lookup.countries.TZ">Tanzania, United Republic of</entry>
+    <entry key="lookup.countries.UA">Ukraine</entry>
+    <entry key="lookup.countries.UG">Uganda</entry>
+    <entry key="lookup.countries.UM">United States Minor Outlying Islands</entry>
+    <entry key="lookup.countries.US">United States</entry>
+    <entry key="lookup.countries.UY">Uruguay</entry>
+    <entry key="lookup.countries.UZ">Uzbekistan</entry>
+    <entry key="lookup.countries.VA">Holy See (Vatican City State)</entry>
+    <entry key="lookup.countries.VC">Saint Vincent and the Grenadines</entry>
+    <entry key="lookup.countries.VE">Venezuela</entry>
+    <entry key="lookup.countries.VG">Virgin Islands, British</entry>
+    <entry key="lookup.countries.VI">Virgin Islands, U.S.</entry>
+    <entry key="lookup.countries.VN">Viet Nam</entry>
+    <entry key="lookup.countries.VU">Vanuatu</entry>
+    <entry key="lookup.countries.WF">Wallis and Futuna</entry>
+    <entry key="lookup.countries.WS">Samoa</entry>
+    <entry key="lookup.countries.YE">Yemen</entry>
+    <entry key="lookup.countries.YT">Mayotte</entry>
+    <entry key="lookup.countries.ZA">South Africa</entry>
+    <entry key="lookup.countries.ZM">Zambia</entry>
+    <entry key="lookup.countries.ZW">Zimbabwe</entry>
+    
+    <!--  TIMEZONES -->
+    
+    <entry key="lookup.timezones.Etc/GMT+12">Etc/GMT+12</entry>
+    <entry key="lookup.timezones.Etc/GMT+11">Etc/GMT+11</entry>
+    <entry key="lookup.timezones.America/Atka">America/Atka</entry>
+    <entry key="lookup.timezones.SystemV/CST6">SystemV/CST6</entry>
+    <entry key="lookup.timezones.SystemV/CST6CDT">SystemV/CST6CDT</entry>
+    <entry key="lookup.timezones.US/Central">US/Central</entry>
+    <entry key="lookup.timezones.America/Bogota">America/Bogota</entry>
+    <entry key="lookup.timezones.America/Cayman">America/Cayman</entry>
+    <entry key="lookup.timezones.America/Coral_Harbour">America/Coral_Harbour</entry>
+    <entry key="lookup.timezones.America/Detroit">America/Detroit</entry>
+    <entry key="lookup.timezones.America/Eirunepe">America/Eirunepe</entry>
+    <entry key="lookup.timezones.America/Fort_Wayne">America/Fort_Wayne</entry>
+    <entry key="lookup.timezones.America/Grand_Turk">America/Grand_Turk</entry>
+    <entry key="lookup.timezones.Etc/GMT+10">Etc/GMT+10</entry>
+    <entry key="lookup.timezones.America/Guayaquil">America/Guayaquil</entry>
+    <entry key="lookup.timezones.America/Havana">America/Havana</entry>
+    <entry key="lookup.timezones.America/Indiana/Indianapolis">America/Indiana/Indianapolis</entry>
+    <entry key="lookup.timezones.America/Indiana/Knox">America/Indiana/Knox</entry>
+    <entry key="lookup.timezones.America/Indiana/Marengo">America/Indiana/Marengo</entry>
+    <entry key="lookup.timezones.America/Indiana/Vevay">America/Indiana/Vevay</entry>
+    <entry key="lookup.timezones.America/Indianapolis">America/Indianapolis</entry>
+    <entry key="lookup.timezones.America/Iqaluit">America/Iqaluit</entry>
+    <entry key="lookup.timezones.America/Jamaica">America/Jamaica</entry>
+    <entry key="lookup.timezones.America/Kentucky/Louisville">America/Kentucky/Louisville</entry>
+    <entry key="lookup.timezones.HST">HST</entry>
+    <entry key="lookup.timezones.America/Kentucky/Monticello">America/Kentucky/Monticello</entry>
+    <entry key="lookup.timezones.America/Knox_IN">America/Knox_IN</entry>
+    <entry key="lookup.timezones.America/Lima">America/Lima</entry>
+    <entry key="lookup.timezones.America/Louisville">America/Louisville</entry>
+    <entry key="lookup.timezones.America/Montreal">America/Montreal</entry>
+    <entry key="lookup.timezones.America/Nassau">America/Nassau</entry>
+    <entry key="lookup.timezones.America/New_York">America/New_York</entry>
+    <entry key="lookup.timezones.America/Nipigon">America/Nipigon</entry>
+    <entry key="lookup.timezones.America/Panama">America/Panama</entry>
+    <entry key="lookup.timezones.America/Pangnirtung">America/Pangnirtung</entry>
+    <entry key="lookup.timezones.Pacific/Fakaofo">Pacific/Fakaofo</entry>
+    <entry key="lookup.timezones.America/Port-au-Prince">America/Port-au-Prince</entry>
+    <entry key="lookup.timezones.America/Porto_Acre">America/Porto_Acre</entry>
+    <entry key="lookup.timezones.America/Rio_Branco">America/Rio_Branco</entry>
+    <entry key="lookup.timezones.America/Thunder_Bay">America/Thunder_Bay</entry>
+    <entry key="lookup.timezones.America/Toronto">America/Toronto</entry>
+    <entry key="lookup.timezones.Brazil/Acre">Brazil/Acre</entry>
+    <entry key="lookup.timezones.Canada/Eastern">Canada/Eastern</entry>
+    <entry key="lookup.timezones.Cuba">Cuba</entry>
+    <entry key="lookup.timezones.EST">EST</entry>
+    <entry key="lookup.timezones.EST5EDT">EST5EDT</entry>
+    <entry key="lookup.timezones.Pacific/Honolulu">Pacific/Honolulu</entry>
+    <entry key="lookup.timezones.Etc/GMT+5">Etc/GMT+5</entry>
+    <entry key="lookup.timezones.IET">IET</entry>
+    <entry key="lookup.timezones.Jamaica">Jamaica</entry>
+    <entry key="lookup.timezones.SystemV/EST5">SystemV/EST5</entry>
+    <entry key="lookup.timezones.SystemV/EST5EDT">SystemV/EST5EDT</entry>
+    <entry key="lookup.timezones.US/East-Indiana">US/East-Indiana</entry>
+    <entry key="lookup.timezones.US/Eastern">US/Eastern</entry>
+    <entry key="lookup.timezones.US/Indiana-Starke">US/Indiana-Starke</entry>
+    <entry key="lookup.timezones.US/Michigan">US/Michigan</entry>
+    <entry key="lookup.timezones.America/Anguilla">America/Anguilla</entry>
+    <entry key="lookup.timezones.Pacific/Johnston">Pacific/Johnston</entry>
+    <entry key="lookup.timezones.America/Antigua">America/Antigua</entry>
+    <entry key="lookup.timezones.America/Aruba">America/Aruba</entry>
+    <entry key="lookup.timezones.America/Asuncion">America/Asuncion</entry>
+    <entry key="lookup.timezones.America/Barbados">America/Barbados</entry>
+    <entry key="lookup.timezones.America/Boa_Vista">America/Boa_Vista</entry>
+    <entry key="lookup.timezones.America/Campo_Grande">America/Campo_Grande</entry>
+    <entry key="lookup.timezones.America/Caracas">America/Caracas</entry>
+    <entry key="lookup.timezones.America/Cuiaba">America/Cuiaba</entry>
+    <entry key="lookup.timezones.America/Curacao">America/Curacao</entry>
+    <entry key="lookup.timezones.America/Dominica">America/Dominica</entry>
+    <entry key="lookup.timezones.Pacific/Rarotonga">Pacific/Rarotonga</entry>
+    <entry key="lookup.timezones.America/Glace_Bay">America/Glace_Bay</entry>
+    <entry key="lookup.timezones.America/Goose_Bay">America/Goose_Bay</entry>
+    <entry key="lookup.timezones.America/Grenada">America/Grenada</entry>
+    <entry key="lookup.timezones.America/Guadeloupe">America/Guadeloupe</entry>
+    <entry key="lookup.timezones.America/Guyana">America/Guyana</entry>
+    <entry key="lookup.timezones.America/Halifax">America/Halifax</entry>
+    <entry key="lookup.timezones.America/La_Paz">America/La_Paz</entry>
+    <entry key="lookup.timezones.America/Manaus">America/Manaus</entry>
+    <entry key="lookup.timezones.America/Martinique">America/Martinique</entry>
+    <entry key="lookup.timezones.America/Montserrat">America/Montserrat</entry>
+    <entry key="lookup.timezones.Pacific/Tahiti">Pacific/Tahiti</entry>
+    <entry key="lookup.timezones.America/Port_of_Spain">America/Port_of_Spain</entry>
+    <entry key="lookup.timezones.America/Porto_Velho">America/Porto_Velho</entry>
+    <entry key="lookup.timezones.America/Puerto_Rico">America/Puerto_Rico</entry>
+    <entry key="lookup.timezones.America/Santiago">America/Santiago</entry>
+    <entry key="lookup.timezones.America/Santo_Domingo">America/Santo_Domingo</entry>
+    <entry key="lookup.timezones.America/St_Kitts">America/St_Kitts</entry>
+    <entry key="lookup.timezones.America/St_Lucia">America/St_Lucia</entry>
+    <entry key="lookup.timezones.America/St_Thomas">America/St_Thomas</entry>
+    <entry key="lookup.timezones.America/St_Vincent">America/St_Vincent</entry>
+    <entry key="lookup.timezones.America/Thule">America/Thule</entry>
+    <entry key="lookup.timezones.SystemV/HST10">SystemV/HST10</entry>
+    <entry key="lookup.timezones.America/Tortola">America/Tortola</entry>
+    <entry key="lookup.timezones.America/Virgin">America/Virgin</entry>
+    <entry key="lookup.timezones.Antarctica/Palmer">Antarctica/Palmer</entry>
+    <entry key="lookup.timezones.Atlantic/Bermuda">Atlantic/Bermuda</entry>
+    <entry key="lookup.timezones.Atlantic/Stanley">Atlantic/Stanley</entry>
+    <entry key="lookup.timezones.Brazil/West">Brazil/West</entry>
+    <entry key="lookup.timezones.Canada/Atlantic">Canada/Atlantic</entry>
+    <entry key="lookup.timezones.Chile/Continental">Chile/Continental</entry>
+    <entry key="lookup.timezones.Etc/GMT+4">Etc/GMT+4</entry>
+    <entry key="lookup.timezones.PRT">PRT</entry>
+    <entry key="lookup.timezones.US/Aleutian">US/Aleutian</entry>
+    <entry key="lookup.timezones.SystemV/AST4">SystemV/AST4</entry>
+    <entry key="lookup.timezones.SystemV/AST4ADT">SystemV/AST4ADT</entry>
+    <entry key="lookup.timezones.America/St_Johns">America/St_Johns</entry>
+    <entry key="lookup.timezones.CNT">CNT</entry>
+    <entry key="lookup.timezones.Canada/Newfoundland">Canada/Newfoundland</entry>
+    <entry key="lookup.timezones.AGT">AGT</entry>
+    <entry key="lookup.timezones.America/Araguaina">America/Araguaina</entry>
+    <entry key="lookup.timezones.America/Argentina/Buenos_Aires">America/Argentina/Buenos_Aires</entry>
+    <entry key="lookup.timezones.America/Argentina/Catamarca">America/Argentina/Catamarca</entry>
+    <entry key="lookup.timezones.America/Argentina/ComodRivadavia">America/Argentina/ComodRivadavia</entry>
+    <entry key="lookup.timezones.MIT">MIT</entry>
+    <entry key="lookup.timezones.US/Hawaii">US/Hawaii</entry>
+    <entry key="lookup.timezones.America/Argentina/Cordoba">America/Argentina/Cordoba</entry>
+    <entry key="lookup.timezones.America/Argentina/Jujuy">America/Argentina/Jujuy</entry>
+    <entry key="lookup.timezones.America/Argentina/La_Rioja">America/Argentina/La_Rioja</entry>
+    <entry key="lookup.timezones.America/Argentina/Mendoza">America/Argentina/Mendoza</entry>
+    <entry key="lookup.timezones.America/Argentina/Rio_Gallegos">America/Argentina/Rio_Gallegos</entry>
+    <entry key="lookup.timezones.America/Argentina/San_Juan">America/Argentina/San_Juan</entry>
+    <entry key="lookup.timezones.America/Argentina/Tucuman">America/Argentina/Tucuman</entry>
+    <entry key="lookup.timezones.America/Argentina/Ushuaia">America/Argentina/Ushuaia</entry>
+    <entry key="lookup.timezones.America/Bahia">America/Bahia</entry>
+    <entry key="lookup.timezones.America/Belem">America/Belem</entry>
+    <entry key="lookup.timezones.Pacific/Marquesas">Pacific/Marquesas</entry>
+    <entry key="lookup.timezones.America/Buenos_Aires">America/Buenos_Aires</entry>
+    <entry key="lookup.timezones.America/Catamarca">America/Catamarca</entry>
+    <entry key="lookup.timezones.America/Cayenne">America/Cayenne</entry>
+    <entry key="lookup.timezones.America/Cordoba">America/Cordoba</entry>
+    <entry key="lookup.timezones.America/Fortaleza">America/Fortaleza</entry>
+    <entry key="lookup.timezones.America/Godthab">America/Godthab</entry>
+    <entry key="lookup.timezones.America/Jujuy">America/Jujuy</entry>
+    <entry key="lookup.timezones.America/Maceio">America/Maceio</entry>
+    <entry key="lookup.timezones.America/Mendoza">America/Mendoza</entry>
+    <entry key="lookup.timezones.America/Miquelon">America/Miquelon</entry>
+    <entry key="lookup.timezones.AST">AST</entry>
+    <entry key="lookup.timezones.America/Montevideo">America/Montevideo</entry>
+    <entry key="lookup.timezones.America/Paramaribo">America/Paramaribo</entry>
+    <entry key="lookup.timezones.America/Recife">America/Recife</entry>
+    <entry key="lookup.timezones.America/Rosario">America/Rosario</entry>
+    <entry key="lookup.timezones.America/Sao_Paulo">America/Sao_Paulo</entry>
+    <entry key="lookup.timezones.Antarctica/Rothera">Antarctica/Rothera</entry>
+    <entry key="lookup.timezones.BET">BET</entry>
+    <entry key="lookup.timezones.Brazil/East">Brazil/East</entry>
+    <entry key="lookup.timezones.Etc/GMT+3">Etc/GMT+3</entry>
+    <entry key="lookup.timezones.America/Noronha">America/Noronha</entry>
+    <entry key="lookup.timezones.America/Anchorage">America/Anchorage</entry>
+    <entry key="lookup.timezones.Atlantic/South_Georgia">Atlantic/South_Georgia</entry>
+    <entry key="lookup.timezones.Brazil/DeNoronha">Brazil/DeNoronha</entry>
+    <entry key="lookup.timezones.Etc/GMT+2">Etc/GMT+2</entry>
+    <entry key="lookup.timezones.America/Scoresbysund">America/Scoresbysund</entry>
+    <entry key="lookup.timezones.Atlantic/Azores">Atlantic/Azores</entry>
+    <entry key="lookup.timezones.Atlantic/Cape_Verde">Atlantic/Cape_Verde</entry>
+    <entry key="lookup.timezones.Etc/GMT+1">Etc/GMT+1</entry>
+    <entry key="lookup.timezones.Africa/Abidjan">Africa/Abidjan</entry>
+    <entry key="lookup.timezones.Africa/Accra">Africa/Accra</entry>
+    <entry key="lookup.timezones.Africa/Bamako">Africa/Bamako</entry>
+    <entry key="lookup.timezones.America/Juneau">America/Juneau</entry>
+    <entry key="lookup.timezones.Africa/Banjul">Africa/Banjul</entry>
+    <entry key="lookup.timezones.Africa/Bissau">Africa/Bissau</entry>
+    <entry key="lookup.timezones.Africa/Casablanca">Africa/Casablanca</entry>
+    <entry key="lookup.timezones.Africa/Conakry">Africa/Conakry</entry>
+    <entry key="lookup.timezones.Africa/Dakar">Africa/Dakar</entry>
+    <entry key="lookup.timezones.Africa/El_Aaiun">Africa/El_Aaiun</entry>
+    <entry key="lookup.timezones.Africa/Freetown">Africa/Freetown</entry>
+    <entry key="lookup.timezones.Africa/Lome">Africa/Lome</entry>
+    <entry key="lookup.timezones.Africa/Monrovia">Africa/Monrovia</entry>
+    <entry key="lookup.timezones.Africa/Nouakchott">Africa/Nouakchott</entry>
+    <entry key="lookup.timezones.America/Nome">America/Nome</entry>
+    <entry key="lookup.timezones.Africa/Ouagadougou">Africa/Ouagadougou</entry>
+    <entry key="lookup.timezones.Africa/Sao_Tome">Africa/Sao_Tome</entry>
+    <entry key="lookup.timezones.Africa/Timbuktu">Africa/Timbuktu</entry>
+    <entry key="lookup.timezones.America/Danmarkshavn">America/Danmarkshavn</entry>
+    <entry key="lookup.timezones.Atlantic/Canary">Atlantic/Canary</entry>
+    <entry key="lookup.timezones.Atlantic/Faeroe">Atlantic/Faeroe</entry>
+    <entry key="lookup.timezones.Atlantic/Madeira">Atlantic/Madeira</entry>
+    <entry key="lookup.timezones.Atlantic/Reykjavik">Atlantic/Reykjavik</entry>
+    <entry key="lookup.timezones.Atlantic/St_Helena">Atlantic/St_Helena</entry>
+    <entry key="lookup.timezones.Eire">Eire</entry>
+    <entry key="lookup.timezones.America/Yakutat">America/Yakutat</entry>
+    <entry key="lookup.timezones.Etc/GMT">Etc/GMT</entry>
+    <entry key="lookup.timezones.Etc/GMT+0">Etc/GMT+0</entry>
+    <entry key="lookup.timezones.Etc/GMT-0">Etc/GMT-0</entry>
+    <entry key="lookup.timezones.Etc/GMT0">Etc/GMT0</entry>
+    <entry key="lookup.timezones.Etc/Greenwich">Etc/Greenwich</entry>
+    <entry key="lookup.timezones.Etc/UCT">Etc/UCT</entry>
+    <entry key="lookup.timezones.Etc/UTC">Etc/UTC</entry>
+    <entry key="lookup.timezones.Etc/Universal">Etc/Universal</entry>
+    <entry key="lookup.timezones.Etc/Zulu">Etc/Zulu</entry>
+    <entry key="lookup.timezones.Europe/Belfast">Europe/Belfast</entry>
+    <entry key="lookup.timezones.Etc/GMT+9">Etc/GMT+9</entry>
+    <entry key="lookup.timezones.Europe/Dublin">Europe/Dublin</entry>
+    <entry key="lookup.timezones.Europe/Lisbon">Europe/Lisbon</entry>
+    <entry key="lookup.timezones.Europe/London">Europe/London</entry>
+    <entry key="lookup.timezones.GB">GB</entry>
+    <entry key="lookup.timezones.GB-Eire">GB-Eire</entry>
+    <entry key="lookup.timezones.GMT">GMT</entry>
+    <entry key="lookup.timezones.GMT0">GMT0</entry>
+    <entry key="lookup.timezones.Greenwich">Greenwich</entry>
+    <entry key="lookup.timezones.Iceland">Iceland</entry>
+    <entry key="lookup.timezones.Portugal">Portugal</entry>
+    <entry key="lookup.timezones.Pacific/Gambier">Pacific/Gambier</entry>
+    <entry key="lookup.timezones.UCT">UCT</entry>
+    <entry key="lookup.timezones.UTC">UTC</entry>
+    <entry key="lookup.timezones.Universal">Universal</entry>
+    <entry key="lookup.timezones.WET">WET</entry>
+    <entry key="lookup.timezones.Zulu">Zulu</entry>
+    <entry key="lookup.timezones.Africa/Algiers">Africa/Algiers</entry>
+    <entry key="lookup.timezones.Africa/Bangui">Africa/Bangui</entry>
+    <entry key="lookup.timezones.Africa/Brazzaville">Africa/Brazzaville</entry>
+    <entry key="lookup.timezones.Africa/Ceuta">Africa/Ceuta</entry>
+    <entry key="lookup.timezones.Africa/Douala">Africa/Douala</entry>
+    <entry key="lookup.timezones.SystemV/YST9">SystemV/YST9</entry>
+    <entry key="lookup.timezones.Africa/Kinshasa">Africa/Kinshasa</entry>
+    <entry key="lookup.timezones.Africa/Lagos">Africa/Lagos</entry>
+    <entry key="lookup.timezones.Africa/Libreville">Africa/Libreville</entry>
+    <entry key="lookup.timezones.Africa/Luanda">Africa/Luanda</entry>
+    <entry key="lookup.timezones.Africa/Malabo">Africa/Malabo</entry>
+    <entry key="lookup.timezones.Africa/Ndjamena">Africa/Ndjamena</entry>
+    <entry key="lookup.timezones.Africa/Niamey">Africa/Niamey</entry>
+    <entry key="lookup.timezones.Africa/Porto-Novo">Africa/Porto-Novo</entry>
+    <entry key="lookup.timezones.Africa/Tunis">Africa/Tunis</entry>
+    <entry key="lookup.timezones.Africa/Windhoek">Africa/Windhoek</entry>
+    <entry key="lookup.timezones.acific/Apia">Pacific/Apia</entry>
+    <entry key="lookup.timezones.SystemV/YST9YDT">SystemV/YST9YDT</entry>
+    <entry key="lookup.timezones.Arctic/Longyearbyen">Arctic/Longyearbyen</entry>
+    <entry key="lookup.timezones.Atlantic/Jan_Mayen">Atlantic/Jan_Mayen</entry>
+    <entry key="lookup.timezones.CET">CET</entry>
+    <entry key="lookup.timezones.ECT">ECT</entry>
+    <entry key="lookup.timezones.Etc/GMT-1">Etc/GMT-1</entry>
+    <entry key="lookup.timezones.Europe/Amsterdam">Europe/Amsterdam</entry>
+    <entry key="lookup.timezones.Europe/Andorra">Europe/Andorra</entry>
+    <entry key="lookup.timezones.Europe/Belgrade">Europe/Belgrade</entry>
+    <entry key="lookup.timezones.Europe/Berlin">Europe/Berlin</entry>
+    <entry key="lookup.timezones.Europe/Bratislava">Europe/Bratislava</entry>
+    <entry key="lookup.timezones.US/Alaska">US/Alaska</entry>
+    <entry key="lookup.timezones.Europe/Brussels">Europe/Brussels</entry>
+    <entry key="lookup.timezones.Europe/Budapest">Europe/Budapest</entry>
+    <entry key="lookup.timezones.Europe/Copenhagen">Europe/Copenhagen</entry>
+    <entry key="lookup.timezones.Europe/Gibraltar">Europe/Gibraltar</entry>
+    <entry key="lookup.timezones.Europe/Ljubljana">Europe/Ljubljana</entry>
+    <entry key="lookup.timezones.Europe/Luxembourg">Europe/Luxembourg</entry>
+    <entry key="lookup.timezones.Europe/Madrid">Europe/Madrid</entry>
+    <entry key="lookup.timezones.Europe/Malta">Europe/Malta</entry>
+    <entry key="lookup.timezones.Europe/Monaco">Europe/Monaco</entry>
+    <entry key="lookup.timezones.Europe/Oslo">Europe/Oslo</entry>
+    <entry key="lookup.timezones.America/Dawson">America/Dawson</entry>
+    <entry key="lookup.timezones.Europe/Paris">Europe/Paris</entry>
+    <entry key="lookup.timezones.Europe/Prague">Europe/Prague</entry>
+    <entry key="lookup.timezones.Europe/Rome">Europe/Rome</entry>
+    <entry key="lookup.timezones.Europe/San_Marino">Europe/San_Marino</entry>
+    <entry key="lookup.timezones.Europe/Sarajevo">Europe/Sarajevo</entry>
+    <entry key="lookup.timezones.Europe/Skopje">Europe/Skopje</entry>
+    <entry key="lookup.timezones.Europe/Stockholm">Europe/Stockholm</entry>
+    <entry key="lookup.timezones.Europe/Tirane">Europe/Tirane</entry>
+    <entry key="lookup.timezones.Europe/Vaduz">Europe/Vaduz</entry>
+    <entry key="lookup.timezones.Europe/Vatican">Europe/Vatican</entry>
+    <entry key="lookup.timezones.America/Ensenada">America/Ensenada</entry>
+    <entry key="lookup.timezones.Europe/Vienna">Europe/Vienna</entry>
+    <entry key="lookup.timezones.Europe/Warsaw">Europe/Warsaw</entry>
+    <entry key="lookup.timezones.Europe/Zagreb">Europe/Zagreb</entry>
+    <entry key="lookup.timezones.Europe/Zurich">Europe/Zurich</entry>
+    <entry key="lookup.timezones.MET">MET</entry>
+    <entry key="lookup.timezones.Poland">Poland</entry>
+    <entry key="lookup.timezones.ART">ART</entry>
+    <entry key="lookup.timezones.Africa/Blantyre">Africa/Blantyre</entry>
+    <entry key="lookup.timezones.Africa/Bujumbura">Africa/Bujumbura</entry>
+    <entry key="lookup.timezones.Africa/Cairo">Africa/Cairo</entry>
+    <entry key="lookup.timezones.America/Los_Angeles">America/Los_Angeles</entry>
+    <entry key="lookup.timezones.Africa/Gaborone">Africa/Gaborone</entry>
+    <entry key="lookup.timezones.Africa/Harare">Africa/Harare</entry>
+    <entry key="lookup.timezones.Africa/Johannesburg">Africa/Johannesburg</entry>
+    <entry key="lookup.timezones.Africa/Kigali">Africa/Kigali</entry>
+    <entry key="lookup.timezones.Africa/Lubumbashi">Africa/Lubumbashi</entry>
+    <entry key="lookup.timezones.Africa/Lusaka">Africa/Lusaka</entry>
+    <entry key="lookup.timezones.Africa/Maputo">Africa/Maputo</entry>
+    <entry key="lookup.timezones.Africa/Maseru">Africa/Maseru</entry>
+    <entry key="lookup.timezones.Africa/Mbabane">Africa/Mbabane</entry>
+    <entry key="lookup.timezones.Africa/Tripoli">Africa/Tripoli</entry>
+    <entry key="lookup.timezones.America/Tijuana">America/Tijuana</entry>
+    <entry key="lookup.timezones.Asia/Amman">Asia/Amman</entry>
+    <entry key="lookup.timezones.Asia/Beirut">Asia/Beirut</entry>
+    <entry key="lookup.timezones.Asia/Damascus">Asia/Damascus</entry>
+    <entry key="lookup.timezones.Asia/Gaza">Asia/Gaza</entry>
+    <entry key="lookup.timezones.Asia/Istanbul">Asia/Istanbul</entry>
+    <entry key="lookup.timezones.Asia/Jerusalem">Asia/Jerusalem</entry>
+    <entry key="lookup.timezones.Asia/Nicosia">Asia/Nicosia</entry>
+    <entry key="lookup.timezones.Asia/Tel_Aviv">Asia/Tel_Aviv</entry>
+    <entry key="lookup.timezones.CAT">CAT</entry>
+    <entry key="lookup.timezones.EET">EET</entry>
+    <entry key="lookup.timezones.America/Vancouver">America/Vancouver</entry>
+    <entry key="lookup.timezones.Egypt">Egypt</entry>
+    <entry key="lookup.timezones.Etc/GMT-2">Etc/GMT-2</entry>
+    <entry key="lookup.timezones.Europe/Athens">Europe/Athens</entry>
+    <entry key="lookup.timezones.Europe/Bucharest">Europe/Bucharest</entry>
+    <entry key="lookup.timezones.Europe/Chisinau">Europe/Chisinau</entry>
+    <entry key="lookup.timezones.Europe/Helsinki">Europe/Helsinki</entry>
+    <entry key="lookup.timezones.Europe/Istanbul">Europe/Istanbul</entry>
+    <entry key="lookup.timezones.Europe/Kaliningrad">Europe/Kaliningrad</entry>
+    <entry key="lookup.timezones.Europe/Kiev">Europe/Kiev</entry>
+    <entry key="lookup.timezones.Europe/Mariehamn">Europe/Mariehamn</entry>
+    <entry key="lookup.timezones.America/Whitehorse">America/Whitehorse</entry>
+    <entry key="lookup.timezones.Europe/Minsk">Europe/Minsk</entry>
+    <entry key="lookup.timezones.Europe/Nicosia">Europe/Nicosia</entry>
+    <entry key="lookup.timezones.Europe/Riga">Europe/Riga</entry>
+    <entry key="lookup.timezones.Europe/Simferopol">Europe/Simferopol</entry>
+    <entry key="lookup.timezones.Europe/Sofia">Europe/Sofia</entry>
+    <entry key="lookup.timezones.Europe/Tallinn">Europe/Tallinn</entry>
+    <entry key="lookup.timezones.Europe/Tiraspol">Europe/Tiraspol</entry>
+    <entry key="lookup.timezones.Europe/Uzhgorod">Europe/Uzhgorod</entry>
+    <entry key="lookup.timezones.Europe/Vilnius">Europe/Vilnius</entry>
+    <entry key="lookup.timezones.Europe/Zaporozhye">Europe/Zaporozhye</entry>
+    <entry key="lookup.timezones.Canada/Pacific">Canada/Pacific</entry>
+    <entry key="lookup.timezones.Israel">Israel</entry>
+    <entry key="lookup.timezones.Libya">Libya</entry>
+    <entry key="lookup.timezones.Turkey">Turkey</entry>
+    <entry key="lookup.timezones.Africa/Addis_Ababa">Africa/Addis_Ababa</entry>
+    <entry key="lookup.timezones.Africa/Asmera">Africa/Asmera</entry>
+    <entry key="lookup.timezones.Africa/Dar_es_Salaam">Africa/Dar_es_Salaam</entry>
+    <entry key="lookup.timezones.Africa/Djibouti">Africa/Djibouti</entry>
+    <entry key="lookup.timezones.Africa/Kampala">Africa/Kampala</entry>
+    <entry key="lookup.timezones.Africa/Khartoum">Africa/Khartoum</entry>
+    <entry key="lookup.timezones.Africa/Mogadishu">Africa/Mogadishu</entry>
+    <entry key="lookup.timezones.Canada/Yukon">Canada/Yukon</entry>
+    <entry key="lookup.timezones.Africa/Nairobi">Africa/Nairobi</entry>
+    <entry key="lookup.timezones.Antarctica/Syowa">Antarctica/Syowa</entry>
+    <entry key="lookup.timezones.Asia/Aden">Asia/Aden</entry>
+    <entry key="lookup.timezones.Asia/Baghdad">Asia/Baghdad</entry>
+    <entry key="lookup.timezones.Asia/Bahrain">Asia/Bahrain</entry>
+    <entry key="lookup.timezones.Asia/Kuwait">Asia/Kuwait</entry>
+    <entry key="lookup.timezones.Asia/Qatar">Asia/Qatar</entry>
+    <entry key="lookup.timezones.Asia/Riyadh">Asia/Riyadh</entry>
+    <entry key="lookup.timezones.Asia/Tbilisi">Asia/Tbilisi</entry>
+    <entry key="lookup.timezones.EAT">EAT</entry>
+    <entry key="lookup.timezones.Pacific/Midway">Pacific/Midway</entry>
+    <entry key="lookup.timezones.Etc/GMT+8">Etc/GMT+8</entry>
+    <entry key="lookup.timezones.Etc/GMT-3">Etc/GMT-3</entry>
+    <entry key="lookup.timezones.Europe/Moscow">Europe/Moscow</entry>
+    <entry key="lookup.timezones.Indian/Antananarivo">Indian/Antananarivo</entry>
+    <entry key="lookup.timezones.Indian/Comoro">Indian/Comoro</entry>
+    <entry key="lookup.timezones.Indian/Mayotte">Indian/Mayotte</entry>
+    <entry key="lookup.timezones.W-SU">W-SU</entry>
+    <entry key="lookup.timezones.Asia/Riyadh87">Asia/Riyadh87</entry>
+    <entry key="lookup.timezones.Asia/Riyadh88">Asia/Riyadh88</entry>
+    <entry key="lookup.timezones.Asia/Riyadh89">Asia/Riyadh89</entry>
+    <entry key="lookup.timezones.Mideast/Riyadh87">Mideast/Riyadh87</entry>
+    <entry key="lookup.timezones.Mexico/BajaNorte">Mexico/BajaNorte</entry>
+    <entry key="lookup.timezones.Mideast/Riyadh88">Mideast/Riyadh88</entry>
+    <entry key="lookup.timezones.Mideast/Riyadh89">Mideast/Riyadh89</entry>
+    <entry key="lookup.timezones.Asia/Tehran">Asia/Tehran</entry>
+    <entry key="lookup.timezones.Iran">Iran</entry>
+    <entry key="lookup.timezones.Asia/Baku">Asia/Baku</entry>
+    <entry key="lookup.timezones.Asia/Dubai">Asia/Dubai</entry>
+    <entry key="lookup.timezones.Asia/Muscat">Asia/Muscat</entry>
+    <entry key="lookup.timezones.Asia/Yerevan">Asia/Yerevan</entry>
+    <entry key="lookup.timezones.Etc/GMT-4">Etc/GMT-4</entry>
+    <entry key="lookup.timezones.Europe/Samara">Europe/Samara</entry>
+    <entry key="lookup.timezones.PST">PST</entry>
+    <entry key="lookup.timezones.Indian/Mahe">Indian/Mahe</entry>
+    <entry key="lookup.timezones.Indian/Mauritius">Indian/Mauritius</entry>
+    <entry key="lookup.timezones.Indian/Reunion">Indian/Reunion</entry>
+    <entry key="lookup.timezones.NET">NET</entry>
+    <entry key="lookup.timezones.Asia/Kabul">Asia/Kabul</entry>
+    <entry key="lookup.timezones.Asia/Aqtau">Asia/Aqtau</entry>
+    <entry key="lookup.timezones.Asia/Aqtobe">Asia/Aqtobe</entry>
+    <entry key="lookup.timezones.Asia/Ashgabat">Asia/Ashgabat</entry>
+    <entry key="lookup.timezones.Asia/Ashkhabad">Asia/Ashkhabad</entry>
+    <entry key="lookup.timezones.Asia/Bishkek">Asia/Bishkek</entry>
+    <entry key="lookup.timezones.PST8PDT">PST8PDT</entry>
+    <entry key="lookup.timezones.Asia/Dushanbe">Asia/Dushanbe</entry>
+    <entry key="lookup.timezones.Asia/Karachi">Asia/Karachi</entry>
+    <entry key="lookup.timezones.Asia/Oral">Asia/Oral</entry>
+    <entry key="lookup.timezones.Asia/Samarkand">Asia/Samarkand</entry>
+    <entry key="lookup.timezones.Asia/Tashkent">Asia/Tashkent</entry>
+    <entry key="lookup.timezones.Asia/Yekaterinburg">Asia/Yekaterinburg</entry>
+    <entry key="lookup.timezones.Etc/GMT-5">Etc/GMT-5</entry>
+    <entry key="lookup.timezones.Indian/Kerguelen">Indian/Kerguelen</entry>
+    <entry key="lookup.timezones.Canada/East-Saskatchewan">Canada/East-Saskatchewan</entry>
+    <entry key="lookup.timezones.Canada/Saskatchewan">Canada/Saskatchewan</entry>
+    <entry key="lookup.timezones.Chile/EasterIsland">Chile/EasterIsland</entry>
+    <entry key="lookup.timezones.Etc/GMT+6">Etc/GMT+6</entry>
+    <entry key="lookup.timezones.Mexico/General">Mexico/General</entry>
+    <entry key="lookup.timezones.Pacific/Easter">Pacific/Easter</entry>
+    <entry key="lookup.timezones.Pacific/Galapagos">Pacific/Galapagos</entry>
+    <entry key="lookup.timezones.Indian/Maldives">Indian/Maldives</entry>
+    <entry key="lookup.timezones.PLT">PLT</entry>
+    <entry key="lookup.timezones.Pacific/Pitcairn">Pacific/Pitcairn</entry>
+    <entry key="lookup.timezones.Asia/Calcutta">Asia/Calcutta</entry>
+    <entry key="lookup.timezones.IST">IST</entry>
+    <entry key="lookup.timezones.Asia/Katmandu">Asia/Katmandu</entry>
+    <entry key="lookup.timezones.Antarctica/Mawson">Antarctica/Mawson</entry>
+    <entry key="lookup.timezones.Antarctica/Vostok">Antarctica/Vostok</entry>
+    <entry key="lookup.timezones.Asia/Almaty">Asia/Almaty</entry>
+    <entry key="lookup.timezones.Asia/Colombo">Asia/Colombo</entry>
+    <entry key="lookup.timezones.Asia/Dacca">Asia/Dacca</entry>
+    <entry key="lookup.timezones.Asia/Dhaka">Asia/Dhaka</entry>
+    <entry key="lookup.timezones.Asia/Novosibirsk">Asia/Novosibirsk</entry>
+    <entry key="lookup.timezones.SystemV/PST8">SystemV/PST8</entry>
+    <entry key="lookup.timezones.Asia/Omsk">Asia/Omsk</entry>
+    <entry key="lookup.timezones.Asia/Qyzylorda">Asia/Qyzylorda</entry>            
+    <entry key="lookup.timezones.Asia/Thimbu">Asia/Thimbu</entry>
+    <entry key="lookup.timezones.Asia/Thimphu">Asia/Thimphu</entry>
+    <entry key="lookup.timezones.BST">BST</entry>
+    <entry key="lookup.timezones.Etc/GMT-6">Etc/GMT-6</entry>
+    <entry key="lookup.timezones.Indian/Chagos">Indian/Chagos</entry>
+    <entry key="lookup.timezones.Asia/Rangoon">Asia/Rangoon</entry>
+    <entry key="lookup.timezones.Indian/Cocos">Indian/Cocos</entry>
+    <entry key="lookup.timezones.Antarctica/Davis">Antarctica/Davis</entry>
+    <entry key="lookup.timezones.SystemV/PST8PDT">SystemV/PST8PDT</entry>
+    <entry key="lookup.timezones.Asia/Bangkok">Asia/Bangkok</entry>
+    <entry key="lookup.timezones.Asia/Hovd">Asia/Hovd</entry>
+    <entry key="lookup.timezones.Asia/Jakarta">Asia/Jakarta</entry>
+    <entry key="lookup.timezones.Asia/Krasnoyarsk">Asia/Krasnoyarsk</entry>
+    <entry key="lookup.timezones.Asia/Phnom_Penh">Asia/Phnom_Penh</entry>
+    <entry key="lookup.timezones.Asia/Pontianak">Asia/Pontianak</entry>
+    <entry key="lookup.timezones.Asia/Saigon">Asia/Saigon</entry>
+    <entry key="lookup.timezones.Asia/Vientiane">Asia/Vientiane</entry>
+    <entry key="lookup.timezones.Etc/GMT-7">Etc/GMT-7</entry>
+    <entry key="lookup.timezones.Indian/Christmas">Indian/Christmas</entry>
+    <entry key="lookup.timezones.US/Pacific">US/Pacific</entry>
+    <entry key="lookup.timezones.VST">VST</entry>
+    <entry key="lookup.timezones.Antarctica/Casey">Antarctica/Casey</entry>
+    <entry key="lookup.timezones.Asia/Brunei">Asia/Brunei</entry>
+    <entry key="lookup.timezones.Asia/Chongqing">Asia/Chongqing</entry>
+    <entry key="lookup.timezones.Asia/Chungking">Asia/Chungking</entry>
+    <entry key="lookup.timezones.Asia/Harbin">Asia/Harbin</entry>
+    <entry key="lookup.timezones.Asia/Hong_Kong">Asia/Hong_Kong</entry>
+    <entry key="lookup.timezones.Asia/Irkutsk">Asia/Irkutsk</entry>
+    <entry key="lookup.timezones.Asia/Kashgar">Asia/Kashgar</entry>
+    <entry key="lookup.timezones.Asia/Kuala_Lumpur">Asia/Kuala_Lumpur</entry>
+    <entry key="lookup.timezones.US/Pacific-New">US/Pacific-New</entry>
+    <entry key="lookup.timezones.Asia/Kuching">Asia/Kuching</entry>
+    <entry key="lookup.timezones.Asia/Macao">Asia/Macao</entry>
+    <entry key="lookup.timezones.Asia/Macau">Asia/Macau</entry>
+    <entry key="lookup.timezones.Asia/Makassar">Asia/Makassar</entry>
+    <entry key="lookup.timezones.Asia/Manila">Asia/Manila</entry>
+    <entry key="lookup.timezones.Asia/Shanghai">Asia/Shanghai</entry>
+    <entry key="lookup.timezones.Asia/Singapore">Asia/Singapore</entry>
+    <entry key="lookup.timezones.Asia/Taipei">Asia/Taipei</entry>
+    <entry key="lookup.timezones.Asia/Ujung_Pandang">Asia/Ujung_Pandang</entry>
+    <entry key="lookup.timezones.Asia/Ulaanbaatar">Asia/Ulaanbaatar</entry>
+    <entry key="lookup.timezones.America/Boise">America/Boise</entry>
+    <entry key="lookup.timezones.Asia/Ulan_Bator">Asia/Ulan_Bator</entry>
+    <entry key="lookup.timezones.Asia/Urumqi">Asia/Urumqi</entry>
+    <entry key="lookup.timezones.Australia/Perth">Australia/Perth</entry>
+    <entry key="lookup.timezones.Australia/West">Australia/West</entry>
+    <entry key="lookup.timezones.CTT">CTT</entry>
+    <entry key="lookup.timezones.Etc/GMT-8">Etc/GMT-8</entry>
+    <entry key="lookup.timezones.Hongkong">Hongkong</entry>
+    <entry key="lookup.timezones.PRC">PRC</entry>
+    <entry key="lookup.timezones.Singapore">Singapore</entry>
+    <entry key="lookup.timezones.Asia/Choibalsan">Asia/Choibalsan</entry>
+    <entry key="lookup.timezones.Pacific/Niue">Pacific/Niue</entry>
+    <entry key="lookup.timezones.America/Cambridge_Bay">America/Cambridge_Bay</entry>
+    <entry key="lookup.timezones.Asia/Dili">Asia/Dili</entry>
+    <entry key="lookup.timezones.Asia/Jayapura">Asia/Jayapura</entry>
+    <entry key="lookup.timezones.Asia/Pyongyang">Asia/Pyongyang</entry>
+    <entry key="lookup.timezones.Asia/Seoul">Asia/Seoul</entry>
+    <entry key="lookup.timezones.Asia/Tokyo">Asia/Tokyo</entry>
+    <entry key="lookup.timezones.Asia/Yakutsk">Asia/Yakutsk</entry>
+    <entry key="lookup.timezones.Etc/GMT-9">Etc/GMT-9</entry>
+    <entry key="lookup.timezones.JST">JST</entry>
+    <entry key="lookup.timezones.Japan">Japan</entry>
+    <entry key="lookup.timezones.Pacific/Palau">Pacific/Palau</entry>
+    <entry key="lookup.timezones.America/Chihuahua">America/Chihuahua</entry>
+    <entry key="lookup.timezones.ROK">ROK</entry>
+    <entry key="lookup.timezones.ACT">ACT</entry>
+    <entry key="lookup.timezones.Australia/Adelaide">Australia/Adelaide</entry>
+    <entry key="lookup.timezones.Australia/Broken_Hill">Australia/Broken_Hill</entry>
+    <entry key="lookup.timezones.Australia/Darwin">Australia/Darwin</entry>
+    <entry key="lookup.timezones.Australia/North">Australia/North</entry>
+    <entry key="lookup.timezones.Australia/South">Australia/South</entry>
+    <entry key="lookup.timezones.Australia/Yancowinna">Australia/Yancowinna</entry>
+    <entry key="lookup.timezones.AET">AET</entry>
+    <entry key="lookup.timezones.Antarctica/DumontDUrville">Antarctica/DumontDUrville</entry>
+    <entry key="lookup.timezones.America/Dawson_Creek">America/Dawson_Creek</entry>
+    <entry key="lookup.timezones.Asia/Sakhalin">Asia/Sakhalin</entry>
+    <entry key="lookup.timezones.Asia/Vladivostok">Asia/Vladivostok</entry>
+    <entry key="lookup.timezones.Australia/ACT">Australia/ACT</entry>
+    <entry key="lookup.timezones.Australia/Brisbane">Australia/Brisbane</entry>
+    <entry key="lookup.timezones.Australia/Canberra">Australia/Canberra</entry>
+    <entry key="lookup.timezones.Australia/Currie">Australia/Currie</entry>
+    <entry key="lookup.timezones.Australia/Hobart">Australia/Hobart</entry>
+    <entry key="lookup.timezones.Australia/Lindeman">Australia/Lindeman</entry>
+    <entry key="lookup.timezones.Australia/Melbourne">Australia/Melbourne</entry>
+    <entry key="lookup.timezones.Australia/NSW">Australia/NSW</entry>
+    <entry key="lookup.timezones.America/Denver">America/Denver</entry>
+    <entry key="lookup.timezones.Australia/Queensland">Australia/Queensland</entry>
+    <entry key="lookup.timezones.Australia/Sydney">Australia/Sydney</entry>
+    <entry key="lookup.timezones.Australia/Tasmania">Australia/Tasmania</entry>
+    <entry key="lookup.timezones.Australia/Victoria">Australia/Victoria</entry>
+    <entry key="lookup.timezones.Etc/GMT-10">Etc/GMT-10</entry>
+    <entry key="lookup.timezones.Pacific/Guam">Pacific/Guam</entry>
+    <entry key="lookup.timezones.Pacific/Port_Moresby">Pacific/Port_Moresby</entry>
+    <entry key="lookup.timezones.Pacific/Saipan">Pacific/Saipan</entry>
+    <entry key="lookup.timezones.Pacific/Truk">Pacific/Truk</entry>
+    <entry key="lookup.timezones.Pacific/Yap">Pacific/Yap</entry>
+    <entry key="lookup.timezones.America/Edmonton">America/Edmonton</entry>
+    <entry key="lookup.timezones.Australia/LHI">Australia/LHI</entry>
+    <entry key="lookup.timezones.Australia/Lord_Howe">Australia/Lord_Howe</entry>
+    <entry key="lookup.timezones.Asia/Magadan">Asia/Magadan</entry>
+    <entry key="lookup.timezones.Etc/GMT-11">Etc/GMT-11</entry>
+    <entry key="lookup.timezones.Pacific/Efate">Pacific/Efate</entry>
+    <entry key="lookup.timezones.Pacific/Guadalcanal">Pacific/Guadalcanal</entry>
+    <entry key="lookup.timezones.Pacific/Kosrae">Pacific/Kosrae</entry>
+    <entry key="lookup.timezones.Pacific/Noumea">Pacific/Noumea</entry>
+    <entry key="lookup.timezones.Pacific/Ponape">Pacific/Ponape</entry>
+    <entry key="lookup.timezones.SST">SST</entry>
+    <entry key="lookup.timezones.America/Hermosillo">America/Hermosillo</entry>
+    <entry key="lookup.timezones.Pacific/Norfolk">Pacific/Norfolk</entry>
+    <entry key="lookup.timezones.Antarctica/McMurdo">Antarctica/McMurdo</entry>
+    <entry key="lookup.timezones.Antarctica/South_Pole">Antarctica/South_Pole</entry>
+    <entry key="lookup.timezones.Asia/Anadyr">Asia/Anadyr</entry>
+    <entry key="lookup.timezones.Asia/Kamchatka">Asia/Kamchatka</entry>
+    <entry key="lookup.timezones.Etc/GMT-12">Etc/GMT-12</entry>
+    <entry key="lookup.timezones.Kwajalein">Kwajalein</entry>
+    <entry key="lookup.timezones.NST">NST</entry>
+    <entry key="lookup.timezones.NZ">NZ</entry>
+    <entry key="lookup.timezones.Pacific/Auckland">Pacific/Auckland</entry>
+    <entry key="lookup.timezones.America/Inuvik">America/Inuvik</entry>
+    <entry key="lookup.timezones.Pacific/Fiji">Pacific/Fiji</entry>
+    <entry key="lookup.timezones.Pacific/Funafuti">Pacific/Funafuti</entry>
+    <entry key="lookup.timezones.Pacific/Kwajalein">Pacific/Kwajalein</entry>
+    <entry key="lookup.timezones.Pacific/Majuro">Pacific/Majuro</entry>
+    <entry key="lookup.timezones.Pacific/Nauru">Pacific/Nauru</entry>
+    <entry key="lookup.timezones.Pacific/Tarawa">Pacific/Tarawa</entry>
+    <entry key="lookup.timezones.Pacific/Wake">Pacific/Wake</entry>
+    <entry key="lookup.timezones.Pacific/Wallis">Pacific/Wallis</entry>
+    <entry key="lookup.timezones.NZ-CHAT">NZ-CHAT</entry>
+    <entry key="lookup.timezones.Pacific/Chatham">Pacific/Chatham</entry>
+    <entry key="lookup.timezones.America/Mazatlan">America/Mazatlan</entry>
+    <entry key="lookup.timezones.Etc/GMT-13">Etc/GMT-13</entry>
+    <entry key="lookup.timezones.Pacific/Enderbury">Pacific/Enderbury</entry>
+    <entry key="lookup.timezones.Pacific/Tongatapu">Pacific/Tongatapu</entry>
+    <entry key="lookup.timezones.Etc/GMT-14">Etc/GMT-14</entry>
+    <entry key="lookup.timezones.Pacific/Kiritimati">Pacific/Kiritimati</entry>
+    <entry key="lookup.timezones.America/Phoenix">America/Phoenix</entry>
+    <entry key="lookup.timezones.America/Shiprock">America/Shiprock</entry>
+    <entry key="lookup.timezones.Pacific/Pago_Pago">Pacific/Pago_Pago</entry>
+    <entry key="lookup.timezones.America/Yellowknife">America/Yellowknife</entry>
+    <entry key="lookup.timezones.Canada/Mountain">Canada/Mountain</entry>
+    <entry key="lookup.timezones.Etc/GMT+7">Etc/GMT+7</entry>
+    <entry key="lookup.timezones.MST">MST</entry>
+    <entry key="lookup.timezones.MST7MDT">MST7MDT</entry>
+    <entry key="lookup.timezones.Mexico/BajaSur">Mexico/BajaSur</entry>
+    <entry key="lookup.timezones.Navajo">Navajo</entry>
+    <entry key="lookup.timezones.PNT">PNT</entry>
+    <entry key="lookup.timezones.SystemV/MST7">SystemV/MST7</entry>
+    <entry key="lookup.timezones.SystemV/MST7MDT">SystemV/MST7MDT</entry>
+    <entry key="lookup.timezones.Pacific/Samoa">Pacific/Samoa</entry>
+    <entry key="lookup.timezones.US/Arizona">US/Arizona</entry>
+    <entry key="lookup.timezones.US/Mountain">US/Mountain</entry>
+    <entry key="lookup.timezones.America/Belize">America/Belize</entry>
+    <entry key="lookup.timezones.America/Cancun">America/Cancun</entry>
+    <entry key="lookup.timezones.America/Chicago">America/Chicago</entry>
+    <entry key="lookup.timezones.America/Costa_Rica">America/Costa_Rica</entry>
+    <entry key="lookup.timezones.America/El_Salvador">America/El_Salvador</entry>
+    <entry key="lookup.timezones.America/Guatemala">America/Guatemala</entry>
+    <entry key="lookup.timezones.America/Managua">America/Managua</entry>
+    <entry key="lookup.timezones.America/Menominee">America/Menominee</entry>
+    <entry key="lookup.timezones.US/Samoa">US/Samoa</entry>
+    <entry key="lookup.timezones.America/Merida">America/Merida</entry>
+    <entry key="lookup.timezones.America/Mexico_City">America/Mexico_City</entry>
+    <entry key="lookup.timezones.America/Monterrey">America/Monterrey</entry>
+    <entry key="lookup.timezones.America/North_Dakota/Center">America/North_Dakota/Center</entry>
+    <entry key="lookup.timezones.America/Rainy_River">America/Rainy_River</entry>
+    <entry key="lookup.timezones.America/Rankin_Inlet">America/Rankin_Inlet</entry>
+    <entry key="lookup.timezones.America/Regina">America/Regina</entry>
+    <entry key="lookup.timezones.America/Swift_Current">America/Swift_Current</entry>
+    <entry key="lookup.timezones.America/Tegucigalpa">America/Tegucigalpa</entry>
+    <entry key="lookup.timezones.America/Winnipeg">America/Winnipeg</entry>
+    <entry key="lookup.timezones.America/Adak">America/Adak</entry>
+    <entry key="lookup.timezones.CST">CST</entry>
+    <entry key="lookup.timezones.CST6CDT">CST6CDT</entry>
+    <entry key="lookup.timezones.Canada/Central">Canada/Central</entry>
+          
+     <!-- ############# logicOperator  Types ############# -->
+     <entry key="lookup.logicOperators.any">Any Amount</entry>
+     <entry key="lookup.logicOperators.less">Less Than</entry>
+     <entry key="lookup.logicOperators.more">More Than</entry>
+     <entry key="lookup.logicOperators.=">Exactly</entry>
+     
+      <!-- ############# Contactable Identification Types ############# -->
+     <entry key="lookup.contTypes.0">Mobile</entry>
+     <entry key="lookup.contTypes.7">Email</entry>
+     <entry key="lookup.contTypes.8">Fax</entry>
+     
+        <!-- ############# supported Devices ############# -->
+     <entry key="lookup.supportedDevices.0">0</entry>
+     <entry key="lookup.supportedDevices.1">1</entry>
+     <entry key="lookup.supportedDevices.2">2</entry>
+     <entry key="lookup.supportedDevices.3">3</entry>
+     <entry key="lookup.supportedDevices.4">4</entry>
+     <entry key="lookup.supportedDevices.5">5</entry>
+     <entry key="lookup.supportedDevices.6">6</entry>
+     <entry key="lookup.supportedDevices.7">7</entry>
+     <entry key="lookup.supportedDevices.8">8</entry>
+     <entry key="lookup.supportedDevices.9">9</entry>
+     <entry key="lookup.supportedDevices.10">10</entry>
+       
+       <!-- ############# Hours ############# -->
+     <entry key="lookup.hours.0">0</entry>
+     <entry key="lookup.hours.1">1</entry>
+     <entry key="lookup.hours.2">2</entry>
+     <entry key="lookup.hours.3">3</entry>
+     <entry key="lookup.hours.4">4</entry>
+     <entry key="lookup.hours.5">5</entry>
+     <entry key="lookup.hours.6">6</entry>
+     <entry key="lookup.hours.7">7</entry>
+     <entry key="lookup.hours.8">8</entry>
+     <entry key="lookup.hours.9">9</entry>
+     <entry key="lookup.hours.10">10</entry>
+     <entry key="lookup.hours.11">11</entry>
+     <entry key="lookup.hours.12">12</entry>
+     <entry key="lookup.hours.13">13</entry>
+     <entry key="lookup.hours.14">14</entry>
+     <entry key="lookup.hours.15">15</entry>
+     <entry key="lookup.hours.16">16</entry>
+     <entry key="lookup.hours.17">17</entry>
+     <entry key="lookup.hours.18">18</entry>
+     <entry key="lookup.hours.19">19</entry>
+     <entry key="lookup.hours.20">20</entry>
+     <entry key="lookup.hours.21">21</entry>
+     <entry key="lookup.hours.22">22</entry>
+     <entry key="lookup.hours.23">23</entry>
+    
+    <!-- ############# minutes ############# -->
+     <entry key="lookup.minutes.0">0</entry>
+     <entry key="lookup.minutes.5">5</entry>
+     <entry key="lookup.minutes.10">10</entry>
+     <entry key="lookup.minutes.15">15</entry>
+     <entry key="lookup.minutes.20">20</entry>
+     <entry key="lookup.minutes.25">25</entry>
+     <entry key="lookup.minutes.30">30</entry>
+     <entry key="lookup.minutes.35">35</entry>
+     <entry key="lookup.minutes.40">40</entry>
+     <entry key="lookup.minutes.45">45</entry>
+     <entry key="lookup.minutes.50">50</entry>
+     <entry key="lookup.minutes.55">55</entry>
+   
+   <!-- ############# Blocked Status ############# -->
+     <entry key="lookup.blackListReasons.0">Active</entry>
+     <entry key="lookup.blackListReasons.1">3 times wrong MPIN / PW</entry>
+     <entry key="lookup.blackListReasons.2">Device lost</entry>
+     <entry key="lookup.blackListReasons.3">Payment dispute</entry>
+     <entry key="lookup.blackListReasons.4">Fraud suspicion</entry>
+     <entry key="lookup.blackListReasons.5">Registration Pending</entry>
+    
+   <!-- ############# Clearing Frequency ############# -->
+     <entry key="lookup.clearingFrequencys.DD">Daily</entry>
+     <entry key="lookup.clearingFrequencys.MM">Monthly</entry>
+     <entry key="lookup.clearingFrequencys.WBM">Weekly on monday</entry>
+     
+     <!-- ############# Use Cases ############# -->
+     
+     <entry key="lookup.usecases.195">Standard B2B push</entry>
+     <entry key="lookup.usecases.199">Standard B2C pull</entry>
+     <entry key="lookup.usecases.198">Standard B2C push</entry>
+     <entry key="lookup.usecases.197">Anonymous push</entry>
+     <entry key="lookup.usecases.191">Bill Payment</entry>
+     <entry key="lookup.usecases.186">Standard subscription pull</entry>
+     <entry key="lookup.usecases.177">Standard micro payment for PI activation push</entry>
+     <entry key="lookup.usecases.184">Standard self-topup pull</entry>
+     <entry key="lookup.usecases.193">Send Money</entry>
+     <entry key="lookup.usecases.194">Request Money</entry>
+     <entry key="lookup.usecases.171">Cash In</entry>
+     <entry key="lookup.usecases.172">Cash Out</entry>
+     <entry key="lookup.usecases.174">Send Voucher</entry>
+     <entry key="lookup.usecases.160">Add Funds to SVA</entry>
+     <entry key="lookup.usecases.161">Withdraw Funds from SVA</entry>
+     <entry key="lookup.usecases.150">Load Internal Voucher</entry>
+     <entry key="lookup.usecases.173">Air Time Topup</entry>
+     <entry key="lookup.usecases.175">Pickup</entry>
+     <entry key="lookup.usecases.201">Commission Settlement</entry>
+     <entry key="lookup.usecases.202">Demand for Payment</entry>
+     <entry key="lookup.usecases.179">Merchant to Merchant</entry>
+     <entry key="lookup.usecases.7001">Remittance to Wallet</entry>
+     <entry key="lookup.usecases.7002">Remittance to Bank Account</entry>
+     <entry key="lookup.usecases.7003">Remittance to Advice and Pay</entry>
+     
+     <!-- ############# Risk Categories ############# -->
+     
+     <entry key="lookup.riskcategories.0">Default</entry>
+     <entry key="lookup.riskcategories.1">MSISDN</entry>
+     <entry key="lookup.riskcategories.2">MSISDN, NAME</entry>
+     <entry key="lookup.riskcategories.3">MSISDN, NAME, ADDRESS</entry>
+     <entry key="lookup.riskcategories.4">MSISDN, NAME, ADDRESS, FACE-TO-FACE</entry>
+     <entry key="lookup.riskcategories.5">MSISDN, NAME, ID/PASSPORT DATA, FACE-TO-FACE</entry>
+     <entry key="lookup.riskcategories.6">MSISDN, NAME, ADDRESS, ID/PASSPORT DATA, FACE-TO-FACE</entry>
+     <entry key="lookup.riskcategories.7">MSISDN, NAME, ADDRESS, ID/PASSPORT DATA, SCANNED IMAGE</entry>
+     <entry key="lookup.riskcategories.102">with limits</entry>
+     
+      <!-- ############# Invoice Status ############# -->
+     <entry key="lookup.invoicestatus.0">New</entry>
+     <entry key="lookup.invoicestatus.1">Active</entry>
+     <entry key="lookup.invoicestatus.2">Paid</entry>
+     <entry key="lookup.invoicestatus.3">Expired</entry>
+     <entry key="lookup.invoicestatus.4">Cancelled by Customer</entry>
+     <entry key="lookup.invoicestatus.5">Cancelled by Issuer</entry>
+     <entry key="lookup.invoicestatus.6">Payment Reversed</entry>
+     <entry key="lookup.invoicestatus.101">Failed</entry>
+     <entry key="lookup.invoicestatus.102">Payment Failed</entry>
+
+     <!-- ############# Languages ############# -->
+     <entry key="lookup.languages.aa">Afar</entry>
+     <entry key="lookup.languages.ab">Abkhazian</entry>
+     <entry key="lookup.languages.af">Afrikaans</entry>
+     <entry key="lookup.languages.am">Amharic</entry>
+     <entry key="lookup.languages.ar">Arabic</entry>
+     <entry key="lookup.languages.as">Assamese</entry>
+     <entry key="lookup.languages.ay">Aymara</entry>
+     <entry key="lookup.languages.az">Azerbaijani</entry>
+     <entry key="lookup.languages.ba">Bashkir</entry>
+     <entry key="lookup.languages.be">Byelorussian</entry>
+     <entry key="lookup.languages.bg">Bulgarian</entry>
+     <entry key="lookup.languages.bh">Bihari</entry>
+     <entry key="lookup.languages.bi">Bislama</entry>
+     <entry key="lookup.languages.bn">Bengali - Bangla</entry>
+     <entry key="lookup.languages.bo">Tibetan</entry>
+     <entry key="lookup.languages.br">Breton</entry>
+     <entry key="lookup.languages.ca">Catalan</entry>
+     <entry key="lookup.languages.co">Corsican</entry>
+     <entry key="lookup.languages.cs">Czech</entry>
+     <entry key="lookup.languages.cy">Welsh</entry>
+     <entry key="lookup.languages.da">Danish</entry>
+     <entry key="lookup.languages.de">German</entry>
+     <entry key="lookup.languages.dz">Bhutani</entry>
+     <entry key="lookup.languages.el">Greek</entry>
+     <entry key="lookup.languages.en">English</entry>
+     <entry key="lookup.languages.eo">Esperanto</entry>
+     <entry key="lookup.languages.es">Spanish</entry>
+     <entry key="lookup.languages.et">Estonian</entry>
+     <entry key="lookup.languages.eu">Basque</entry>
+     <entry key="lookup.languages.fa">Persian</entry>
+     <entry key="lookup.languages.fi">Finnish</entry>
+     <entry key="lookup.languages.fj">Fiji</entry>
+     <entry key="lookup.languages.fo">Faeroese</entry>
+     <entry key="lookup.languages.fr">French</entry>
+     <entry key="lookup.languages.fy">Frisian</entry>
+     <entry key="lookup.languages.ga">Irish</entry>
+     <entry key="lookup.languages.gd">Scots Gaelic</entry>
+     <entry key="lookup.languages.gl">Galician</entry>
+     <entry key="lookup.languages.gn">Guarani</entry>
+     <entry key="lookup.languages.gu">Gujarati</entry>
+     <entry key="lookup.languages.ha">Hausa</entry>
+     <entry key="lookup.languages.hi">Hindi</entry>
+     <entry key="lookup.languages.hr">Croatian</entry>
+     <entry key="lookup.languages.hu">Hungarian</entry>
+     <entry key="lookup.languages.hy">Armenian</entry>
+     <entry key="lookup.languages.ia">Interlingua</entry>
+     <entry key="lookup.languages.ie">Interlingue</entry>
+     <entry key="lookup.languages.ik">Inupiak</entry>
+     <entry key="lookup.languages.in">Indonesian</entry>
+     <entry key="lookup.languages.is">Icelandic</entry>
+     <entry key="lookup.languages.it">Italian</entry>
+     <entry key="lookup.languages.iw">Hebrew</entry>
+     <entry key="lookup.languages.ja">Japanese</entry>
+     <entry key="lookup.languages.ji">Yiddish</entry>
+     <entry key="lookup.languages.jw">Javanese</entry>
+     <entry key="lookup.languages.ka">Georgian</entry>
+     <entry key="lookup.languages.kk">Kazakh</entry>
+     <entry key="lookup.languages.kl">Greenlandic</entry>
+     <entry key="lookup.languages.km">Cambodian</entry>
+     <entry key="lookup.languages.kn">Kannada</entry>
+     <entry key="lookup.languages.ko">Korean</entry>
+     <entry key="lookup.languages.ks">Kashmiri</entry>
+     <entry key="lookup.languages.ku">Kurdish</entry>
+     <entry key="lookup.languages.ky">Kirghiz</entry>
+     <entry key="lookup.languages.la">Latin</entry>
+     <entry key="lookup.languages.ln">Lingala</entry>
+     <entry key="lookup.languages.lo">Laothian</entry>
+     <entry key="lookup.languages.lt">Lithuanian</entry>
+     <entry key="lookup.languages.lv">Latvian, Lettish</entry>
+     <entry key="lookup.languages.mg">Malagasy</entry>
+     <entry key="lookup.languages.mi">Maori</entry>
+     <entry key="lookup.languages.mk">Macedonian</entry>
+     <entry key="lookup.languages.ml">Malayalam</entry>
+     <entry key="lookup.languages.mn">Mongolian</entry>
+     <entry key="lookup.languages.mo">Moldavian</entry>
+     <entry key="lookup.languages.mr">Marathi</entry>
+     <entry key="lookup.languages.ms">Malay</entry>
+     <entry key="lookup.languages.mt">Maltese</entry>
+     <entry key="lookup.languages.my">Burmese</entry>
+     <entry key="lookup.languages.na">Nauru</entry>
+     <entry key="lookup.languages.ne">Nepali</entry>
+     <entry key="lookup.languages.nl">Dutch</entry>
+     <entry key="lookup.languages.no">Norwegian</entry>
+     <entry key="lookup.languages.oc">Occitan</entry>
+     <entry key="lookup.languages.om">(Afan) Oromo</entry>
+     <entry key="lookup.languages.or">Oriya</entry>
+     <entry key="lookup.languages.pa">Punjabi</entry>
+     <entry key="lookup.languages.pl">Polish</entry>
+     <entry key="lookup.languages.ps">Pashto, Pushto</entry>
+     <entry key="lookup.languages.pt">Portugues</entry>
+     <entry key="lookup.languages.qu">Quechua</entry>
+     <entry key="lookup.languages.rm">Rhaeto-Romance</entry>
+     <entry key="lookup.languages.rn">Kirundi</entry>
+     <entry key="lookup.languages.ro">Romanian</entry>
+     <entry key="lookup.languages.ru">Russian</entry>
+     <entry key="lookup.languages.rw">Kinyarwanda</entry>
+     <entry key="lookup.languages.sa">Sanskrit</entry>
+     <entry key="lookup.languages.sd">Sindhi</entry>
+     <entry key="lookup.languages.sg">Sangro</entry>
+     <entry key="lookup.languages.sh">Serbo-Croatian</entry>
+     <entry key="lookup.languages.si">Singhales</entry>
+     <entry key="lookup.languages.sk">Slovak</entry>
+     <entry key="lookup.languages.sl">Slovenian</entry>
+     <entry key="lookup.languages.sm">Samoan</entry>
+     <entry key="lookup.languages.sn">Shona</entry>
+     <entry key="lookup.languages.so">Somali</entry>
+     <entry key="lookup.languages.sq">Albanian</entry>
+     <entry key="lookup.languages.sr">Serbian</entry>
+     <entry key="lookup.languages.ss">Siswati</entry>
+     <entry key="lookup.languages.st">Sesotho</entry>
+     <entry key="lookup.languages.su">Sundanese</entry>
+     <entry key="lookup.languages.sv">Swedish</entry>
+     <entry key="lookup.languages.sw">Swahili</entry>
+     <entry key="lookup.languages.ta">Tamil</entry>
+     <entry key="lookup.languages.te">Tegulu</entry>
+     <entry key="lookup.languages.tg">Tajik</entry>
+     <entry key="lookup.languages.th">Thai</entry>
+     <entry key="lookup.languages.ti">Tigrinya</entry>
+     <entry key="lookup.languages.tk">Turkmen</entry>
+     <entry key="lookup.languages.tl">Tagalog</entry>
+     <entry key="lookup.languages.tn">Setswana</entry>
+     <entry key="lookup.languages.to">Tonga</entry>
+     <entry key="lookup.languages.tr">Turkish</entry>
+     <entry key="lookup.languages.ts">Tsonga</entry>
+     <entry key="lookup.languages.tt">Tatar</entry>
+     <entry key="lookup.languages.tw">Twi</entry>
+     <entry key="lookup.languages.uk">Ukrainian</entry>
+     <entry key="lookup.languages.ur">Urdu</entry>
+     <entry key="lookup.languages.uz">Uzbek</entry>
+     <entry key="lookup.languages.vi">Vietnames</entry>
+     <entry key="lookup.languages.vo">Volapuk</entry>
+     <entry key="lookup.languages.wo">Wolof</entry>
+     <entry key="lookup.languages.xh">Xhosa</entry>
+     <entry key="lookup.languages.yo">Yoruba</entry>
+     <entry key="lookup.languages.zh">Chinese</entry>
+     <entry key="lookup.languages.zu">Zulu</entry>
+       
+     <!-- ############# Invoice Status ############# -->
+     <entry key="lookup.invoicestatus.0">New</entry>
+     <entry key="lookup.invoicestatus.1">Active</entry>
+     <entry key="lookup.invoicestatus.2">Paid</entry>
+     <entry key="lookup.invoicestatus.3">Expired</entry>
+     <entry key="lookup.invoicestatus.4">Cancelled by Customer</entry>
+     <entry key="lookup.invoicestatus.5">Cancelled by Issuer</entry>
+     <entry key="lookup.invoicestatus.6">Payment Reversed</entry>
+     <entry key="lookup.invoicestatus.101">Failed</entry>
+     <entry key="lookup.invoicestatus.102">Payment Failed</entry>
+
+     
+     
+     <!-- ############# MultiSelect drop down for CST Restrctions ############# -->
+     <entry key="lookup.orgunits.All">All</entry>
+     <entry key="lookup.usecases.9999">All</entry>
+     <entry key="lookup.riskcategories.9999">All</entry>
+     
+     <!-- ############# Identity Types ############# -->
+     <entry key="customer.identityTypes.0">Generic</entry>
+     <entry key="customer.identityTypes.1">Citizenship Card</entry>
+     <entry key="customer.identityTypes.2">Identity Card</entry>
+     <entry key="customer.identityTypes.3">Foreigner Card</entry>
+     <entry key="customer.identityTypes.4">Personal Tax Id Number</entry>
+     <entry key="customer.identityTypes.5">Business Tax Id Number</entry>
+     <entry key="customer.identityTypes.6">Independent patrimony</entry>
+     <entry key="customer.identityTypes.7">Passport</entry>
+     <entry key="customer.identityTypes.8">Correspondent</entry>
+     <entry key="customer.identityTypes.9">Foreignes Tax Id Number</entry>
+     <entry key="customer.identityTypes.10">Civil Registration</entry>
+     <entry key="customer.identityTypes.100">Driving License</entry>
+     <entry key="customer.identityTypes.101">Birth Certificate</entry>
+     <entry key="customer.identityTypes.102">Social Security Number</entry>
+     <entry key="customer.identityTypes.103">Cellular Customer Account Number</entry>
+     
+     <!-- ####### Balance Alert Page######### -->
+     <entry key="balanceAlert.title">Balance Alert</entry>
+     <entry key="balanceAlert.help">Please enter Balance Alert data</entry>
+     <entry key="balance.alert.noItemsMsg">No balance alerts found</entry>
+   <entry key="balance.alert.noItemsHelpMsg">Use the 'Add a Balance Alert' link above to add an entry</entry>
+  
+   <entry key="MESSAGE.BALANCE_ALERTS_UPDATED">The balance alert data updated successfully.</entry>
+     <entry key="MESSAGE.BALANCE_ALERTS_SAVED">The balance alert data saved successfully.</entry>
+     <entry key="MESSAGE.BALANCE_ALERTS_REMOVED">The balance alerts data removed successfully.</entry>
+     <entry key="balanceAlert.remove.confirm">Are you sure you want to remove this balance alert?</entry>
+    
+     <entry key="ERROR.ADD_BALANCE_ALERTS_FAILURE">An internal error occurred while saving balance alert
+     data. Please try again later.</entry>
+     <entry key="ERROR.DELETE_BALANCE_ALERTS_FAILURE">An internal error occurred while deleting balance
+     alert data. Please try again later.</entry>
+     <entry key="ERROR.GET_BALANCE_ALERT_FAILURE">An internal error occurred while getting balance alert.
+     Please try again.
+     </entry>
+
+     <entry key="lookup.riskcategories.0">unknown</entry>
+     <entry key="lookup.riskcategories.1">Mobile</entry>
+     <entry key="lookup.riskcategories.2">Name</entry>
+     <entry key="lookup.riskcategories.3">Address</entry>
+     <entry key="lookup.riskcategories.4">Address, verified</entry>
+     <entry key="lookup.riskcategories.5">ID, verified</entry>
+     <entry key="lookup.riskcategories.6">Address and ID, verified</entry>
+     <entry key="lookup.riskcategories.7">Address and ID + soft copy</entry>
+     
+     <entry key="lookup.templateType.sms">SMS</entry>
+     <entry key="lookup.templateType.email">E-Mail</entry>
+     
+     <!-- ####### securityQuestions ######### -->
+     <entry key="lookup.securityQuestions.securityQuestion_1">What was my first pet's name?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_2">Who was my most memorable school teacher?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_3">What was the first company that I worked for?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_4">What make of car did I first drive?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_5">What was the first city that I visited outside of North America?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_6">What was my favourite toy as a child?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_7">What was the first musical instrument I ever played?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_8">What was my favourite game as a child?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_9">What was my favourite subject in elementary school?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_10">When did I meet my significant other?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_11">What was the last name of my childhood best friend?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_12">What city/town did I get married in?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_13">Where did I go for my honeymoon?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_14">Where did I attend college/university?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_15">My favourite high school teacher?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_16">First name of my best friend in elementary school?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_17">The one word that best describes me?</entry>
+     <entry key="lookup.securityQuestions.securityQuestion_18">My all-time favourite hobby/life's passion?</entry>
+     
+     <!-- ####### Remittance Account types ######### -->
+     <entry key="lookup.remittanceAccountTypes.76">GCash Wallet</entry>
+     <entry key="lookup.remittanceAccountTypes.79">GCash With Bank Account</entry>
+     
+     <!-- ####### Remittance Purpose types ######### -->
+     <entry key="lookup.remittancePurposeTypes.personalNeeds">PERSONAL NEEDS</entry>
+     <entry key="lookup.remittancePurposeTypes.tradeImport">TRADE/IMPORT</entry>
+     <entry key="lookup.remittancePurposeTypes.familyExpenses">FAMILY EXPENSES</entry>
+     <entry key="lookup.remittancePurposeTypes.tutionFees">TUITION FEES</entry>
+     <entry key="lookup.remittancePurposeTypes.travel">TRAVEL</entry>
+     <entry key="lookup.remittancePurposeTypes.insurance">INSURANCE</entry>
+     <entry key="lookup.remittancePurposeTypes.medicalTreatment">MEDICAL TREATMENT</entry>
+     <entry key="lookup.remittancePurposeTypes.hotelExpenses">HOTEL EXPENSES</entry>
+     <entry key="lookup.remittancePurposeTypes.investment">INVESTMENT</entry>
+     <entry key="lookup.remittancePurposeTypes.billPayments">BILL PAYMENTS</entry>
+     
+      <!-- ####### Transaction Status ######### -->
+     <entry key="lookup.txnStatus.0">Initial</entry>
+     <entry key="lookup.txnStatus.10">Authenticated</entry>
+     <entry key="lookup.txnStatus.15">Pending For Approval</entry> 
+     <entry key="lookup.txnStatus.2 ">Pre-Authorized</entry>
+     <entry key="lookup.txnStatus.20">Authorized</entry>   
+     <entry key="lookup.txnStatus.21">Refill</entry>
+     <entry key="lookup.txnStatus.30">Captured</entry>
+     <entry key="lookup.txnStatus.31">Backstopped</entry>
+     <entry key="lookup.txnStatus.40">Delivered</entry>
+     <entry key="lookup.txnStatus.5 ">OTP Acknowledged</entry> 
+     <entry key="lookup.txnStatus.50">Acknowledged</entry> 
+     <entry key="lookup.txnStatus.60">Authorization Cancel</entry> 
+     <entry key="lookup.txnStatus.70">Capture Cancel</entry> 
+     <entry key="lookup.txnStatus.99">Fully processed</entry>  
+     
+     <!-- ####### Error Codes ######### -->
+     <entry key="lookup.errorCode.51">Repeat flag missing</entry>
+     <entry key="lookup.errorCode.52">Tracing still in progress</entry>
+     <entry key="lookup.errorCode.53">Wrong user specified for repeat</entry>
+     <entry key="lookup.errorCode.54">Tracing repeat is set but no message was found</entry>
+     <entry key="lookup.errorCode.55">Tracing no response cached</entry>
+     <entry key="lookup.errorCode.101">Customer setup is incomplete or invalid</entry>
+     <entry key="lookup.errorCode.191">License is expired</entry>
+     <entry key="lookup.errorCode.199">Database is inconsistent or mis configured</entry>
+     <entry key="lookup.errorCode.201">Entity not found</entry>
+     <entry key="lookup.errorCode.202">Entity not unique</entry>
+     <entry key="lookup.errorCode.203">Entity is mandatory</entry>
+     <entry key="lookup.errorCode.204">Illegal Data</entry>
+     <entry key="lookup.errorCode.205">You have insufficient privilege to perform this operation</entry>
+     <entry key="lookup.errorCode.299">A technical error has occurred</entry>
+     <entry key="lookup.errorCode.301">Customer is inactive</entry>
+     <entry key="lookup.errorCode.302">Customer is black listed</entry>
+     <entry key="lookup.errorCode.303">Customer could not be found</entry>
+     <entry key="lookup.errorCode.321">Your credential has expired</entry>
+     <entry key="lookup.errorCode.322">The entered credential is blocked</entry> 
+     <entry key="lookup.errorCode.323">Your credential is invalid</entry>
+     <entry key="lookup.errorCode.324"> The entered credential is too weak</entry> 
+     <entry key="lookup.errorCode.325">Your credential is invalid</entry>
+     <entry key="lookup.errorCode.326">Your credential is invalid</entry>
+     <entry key="lookup.errorCode.327">Your credential is too long</entry>
+     <entry key="lookup.errorCode.328">Your credential is too short</entry>
+     <entry key="lookup.errorCode.329">Your credential is wrong</entry>
+     <entry key="lookup.errorCode.330">You have entered the credential incorrectly too many times so your account has been blocked</entry> 
+     <entry key="lookup.errorCode.331">Your credential has expired</entry>
+     <entry key="lookup.errorCode.332">Your credential has expired</entry>
+     <entry key="lookup.errorCode.333">The entered credential could not be verified due to technical problems</entry> 
+     <entry key="lookup.errorCode.334">Your new credential matches a previous one</entry>
+     <entry key="lookup.errorCode.351">Too many in session</entry>
+     <entry key="lookup.errorCode.352">Session is closed</entry>
+     <entry key="lookup.errorCode.353">Session has expired</entry>
+     <entry key="lookup.errorCode.354">Session is not supported</entry>
+     <entry key="lookup.errorCode.355">Session could not be found</entry>
+     <entry key="lookup.errorCode.399">Customer BL error</entry>
+     <entry key="lookup.errorCode.1001">Request invalid</entry>
+     <entry key="lookup.errorCode.1002">Entered MSISDN is invalid</entry>
+     <entry key="lookup.errorCode.1003">Transaction is unknown</entry>
+     <entry key="lookup.errorCode.1004">Invalid transaction</entry>
+     <entry key="lookup.errorCode.1005">Transaction  is in invalid status</entry>
+     <entry key="lookup.errorCode.1006">Customer is in active</entry>
+     <entry key="lookup.errorCode.1007">Customer can not participate in test transaction</entry>
+     <entry key="lookup.errorCode.1008">Customer is black listed</entry>
+     <entry key="lookup.errorCode.1009">Request with the same origin and trace number was executed within the last 24 hours</entry>
+     <entry key="lookup.errorCode.1012">Customer is unknown</entry>
+     <entry key="lookup.errorCode.1050">Transaction is locked by another process and could not be handled right now</entry>    
+     <entry key="lookup.errorCode.1101">Authetication data is missing</entry>
+     <entry key="lookup.errorCode.1102">Authentication data is invalid, protocol violations or unknown/invalid encryption is used</entry>
+     <entry key="lookup.errorCode.1111">Authentication failed because the user does not exist</entry>   
+     <entry key="lookup.errorCode.1112">Authentication failed because the user is in a status prohibiting to execute anything</entry>
+     <entry key="lookup.errorCode.1113">Authentication failed because the credentials are incorrect</entry>
+     <entry key="lookup.errorCode.1114">The user is blocked due to the number of times wrong credentials have been specified</entry>
+     <entry key="lookup.errorCode.1115">Authentication failed because the user is blacklisted</entry>
+     <entry key="lookup.errorCode.1116">Authentication failed because the user is blacklisted credentials are incorrect and the customer is blocked as of now</entry>
+     <entry key="lookup.errorCode.1117">Authentication failed because the user is blacklisted credentials are incorrect and the customer is blocked as of now</entry>
+     <entry key="lookup.errorCode.1121">Credentials have expired and need to be updated</entry>    
+     <entry key="lookup.errorCode.1201">Authorisation failed because no agent/user data is given</entry>
+     <entry key="lookup.errorCode.1202">Authorisation failed because the agent/user is in a status prohibiting to execute anything</entry>
+     <entry key="lookup.errorCode.1203">Authorisation failed because the agent misses at least one privilege</entry>
+     <entry key="lookup.errorCode.1211">Authorisation failed because the agent misses at least one privilege</entry>
+     <entry key="lookup.errorCode.1221">Authorised access to an unauthorised resource was detected</entry>
+     <entry key="lookup.errorCode.1250">The transaction was pending in initial state too long and invalidated automatically</entry>
+     <entry key="lookup.errorCode.1301">Login failed because there is still an active session</entry>
+     <entry key="lookup.errorCode.1302">The customer has reached his limit of parallel sessions</entry>    
+     <entry key="lookup.errorCode.1391">The used application needs to be updated</entry>
+     <entry key="lookup.errorCode.2401">Could not connect to message notification server</entry>
+     <entry key="lookup.errorCode.2402">Connection to the message notification server has timed out</entry>
+     <entry key="lookup.errorCode.2403">Connection timed out while reading the data from message notification server</entry>
+     <entry key="lookup.errorCode.2404">The data sent by message notification server is either unexpected or not fitting the protocol</entry>
+     <entry key="lookup.errorCode.2405">Sending message via message notification server failed</entry>
+     <entry key="lookup.errorCode.2601">The payment instrument is inactive</entry>
+     <entry key="lookup.errorCode.2602">Communication with the payment instrument's processor failed</entry>
+     <entry key="lookup.errorCode.2603">There is an inconsistency between the payment instrument's processor and the Money Mobiliser</entry>
+     <entry key="lookup.errorCode.2604">The payment instrument is in a wrong status for the current request</entry>
+     <entry key="lookup.errorCode.2605">The payment instrument is not allowed for this use case</entry>
+     <entry key="lookup.errorCode.2606">The payment instrument's weekly limit is hit</entry>
+     <entry key="lookup.errorCode.2607">The payment instrument's daily limit is hit</entry>
+     <entry key="lookup.errorCode.2608">The payment instrument's monthly limit is hit</entry>   
+     <entry key="lookup.errorCode.2609">The payment instrument's absolute limit is hit</entry>       
+     <entry key="lookup.errorCode.2610">The payment instrument's single txn limit is hit</entry>
+     <entry key="lookup.errorCode.2611">The payment instrument has no funds available</entry>   
+     <entry key="lookup.errorCode.2621">The authorisation of the payment instrument's processor has expired</entry>
+     <entry key="lookup.errorCode.2622">Capture cancel with this payment instrument's processor can only cancel the full capture amount</entry>
+     <entry key="lookup.errorCode.2623">Capture of the payment instrument's processor has "frozen" and can no longer be cancelled</entry>
+     <entry key="lookup.errorCode.2631">The payment instrument is blocked on the issuer side (blacklisted)</entry>   
+     <entry key="lookup.errorCode.2641">The CVD validation of the payment instrument failed</entry>    
+     <entry key="lookup.errorCode.2650">The transaction has no pickup code attached</entry>
+     <entry key="lookup.errorCode.2651">The maximum number of attempts for pickup has been exceeded</entry>
+     <entry key="lookup.errorCode.2652">The pickup code is invalid</entry>
+     <entry key="lookup.errorCode.2653">The pickup code of the transaction is not unique</entry>
+     <entry key="lookup.errorCode.2654">No internal voucher associated with the transaction can be found</entry>
+     <entry key="lookup.errorCode.2655">No internal voucher transaction associated with the transactionId can be found</entry>
+     <entry key="lookup.errorCode.2656">Internal voucher associated with this transaction is inactive</entry>    
+     <entry key="lookup.errorCode.2660">Wallet entry is invalid</entry>    
+     <entry key="lookup.errorCode.2661">Wallet entry exists for the same customer with a different Payment Instrument</entry>
+     <entry key="lookup.errorCode.2662">Wallet entry exists for the same customer having the same debit or credit priority</entry>
+     <entry key="lookup.errorCode.2691">This payment instrument does not support balance enquiry</entry>
+     <entry key="lookup.errorCode.2699">The payment instrument's processor returned an unknown error</entry>
+     <entry key="lookup.errorCode.2501">Payee is unknown</entry>  
+     <entry key="lookup.errorCode.2502">Payee is invalid and may be missing atleast one privilege</entry>
+     <entry key="lookup.errorCode.2503">Payee has no payment instrument</entry>
+     <entry key="lookup.errorCode.2504">Payee's Payment instrument does not match transaction's currency</entry>
+     <entry key="lookup.errorCode.2505">Payee's Payment instrument does not support credit</entry>
+     <entry key="lookup.errorCode.2507">Payee's Payment instrument is unknown</entry>
+     <entry key="lookup.errorCode.2508">Caller can not act as delegate for the payee</entry>
+     <entry key="lookup.errorCode.2511">Payer is unknown</entry>
+     <entry key="lookup.errorCode.2512">Payer is invalid and may be missing atleast one privilege</entry>
+     <entry key="lookup.errorCode.2513">Payer has no payment instrument</entry>
+     <entry key="lookup.errorCode.2514">Payer's Payment instrument does not match transaction's currency</entry>
+     <entry key="lookup.errorCode.2515">Payer's Payment instrument does not support debit</entry>
+     <entry key="lookup.errorCode.2516">Payer's Payment instrument is not supported</entry>
+     <entry key="lookup.errorCode.2517">Payer's Payment instrument is unknown</entry>
+     <entry key="lookup.errorCode.2518">Caller can not act as delegate for the payer</entry>
+     <entry key="lookup.errorCode.2519">Authorization expired</entry>
+     <entry key="lookup.errorCode.2521">OTP is required for this transaction</entry>
+     <entry key="lookup.errorCode.2522">OTP is wrong</entry>
+     <entry key="lookup.errorCode.2524">OTP is wrong so transaction failed permanently</entry>
+     <entry key="lookup.errorCode.2525">customer's credential is required for this transaction</entry>
+     <entry key="lookup.errorCode.2531">The capture amount exceeds the resveration amount</entry>
+     <entry key="lookup.errorCode.2532">The capture cancel amount exceeds the capture amount</entry>
+     <entry key="lookup.errorCode.2533">The transaction is not allowed because payer and payee are the same customer</entry>
+     <entry key="lookup.errorCode.2534">The sub transaction amount differs from original transaction amount</entry>
+     <entry key="lookup.errorCode.2535">The payee has another open transaction and thus cannot open a new one</entry>
+     <entry key="lookup.errorCode.2536">The payer has another open transaction and thus cannot open a new one</entry>
+     <entry key="lookup.errorCode.2537">No open transaction was found</entry>
+     <entry key="lookup.errorCode.2538">Customer has multiple open transactions</entry>
+     <entry key="lookup.errorCode.2539">The backstop authorization failed</entry>
+     <entry key="lookup.errorCode.2541">The payer denied the transaction during the authorization proces</entry>
+     <entry key="lookup.errorCode.2542">The system was not able to communicate with the payer during the authorization process</entry>      
+     <entry key="lookup.errorCode.2550">The subscription is unknown</entry>    
+     <entry key="lookup.errorCode.2555">There is no activation transaction for the Payment instrument to be activated</entry>
+     <entry key="lookup.errorCode.2556">The activation amounts are wrong</entry>    
+     <entry key="lookup.errorCode.2557">At least one of the activation amounts was wrong thus the activation transaction is invalidated</entry>   
+     <entry key="lookup.errorCode.2561">Payee's absolute limit is hit</entry>
+     <entry key="lookup.errorCode.2562">Payer's absolute limit is hit</entry>
+     <entry key="lookup.errorCode.2563">Payee's monthly limit is hit</entry>
+     <entry key="lookup.errorCode.2564">Payer's monthly limit is hit</entry>
+     <entry key="lookup.errorCode.2565">Payee's daily limit is hit</entry>
+     <entry key="lookup.errorCode.2566">Payer's daily limit is hit</entry>
+     <entry key="lookup.errorCode.2567">Payee's weekly limit is hit</entry>
+     <entry key="lookup.errorCode.2568">Payer's weekly limit is hit</entry>
+     <entry key="lookup.errorCode.2569">Payee's single transaction limit is hit</entry>
+     <entry key="lookup.errorCode.2570">Payer's single transaction limit is hit</entry>
+     <entry key="lookup.errorCode.2571">Payee's wallet absolute limit is hit</entry>
+     <entry key="lookup.errorCode.2572">Payer's wallet absolute limit is hit</entry>
+     <entry key="lookup.errorCode.2573">Payee's wallet monthly limit is hit</entry>
+     <entry key="lookup.errorCode.2574">Payer's wallet monthly limit is hit</entry>
+     <entry key="lookup.errorCode.2575">Payee's wallet daily limit is hit</entry>
+     <entry key="lookup.errorCode.2576">Payer's wallet daily limit is hit</entry>
+     <entry key="lookup.errorCode.2577">Payee's wallet weekly limit is hit</entry>
+     <entry key="lookup.errorCode.2578">Payer's wallet weekly limit is hit</entry>
+     <entry key="lookup.errorCode.2579">Payee's wallet single limit is hit</entry>
+     <entry key="lookup.errorCode.2580">Payer's wallet single limit is hit</entry>
+     <entry key="lookup.errorCode.2581">There is a transaction restriction for the payee concerning the transaction amount</entry>
+     <entry key="lookup.errorCode.2582">There is a transaction restriction for the payer concerning the transaction amount</entry>
+     <entry key="lookup.errorCode.2583">There is a transaction restriction for the payee concerning the number of transactions</entry>
+     <entry key="lookup.errorCode.2584">There is a transaction restriction for the payer concerning the number of transactions</entry>
+     <entry key="lookup.errorCode.2585">There is a transaction restriction for the payee concerning the sum of transaction amounts</entry>
+     <entry key="lookup.errorCode.2586">There is a transaction restriction for the payer concerning the sum of transaction amounts</entry>
+     <entry key="lookup.errorCode.2587">There is a transaction restriction for the payee concerning the transaction amount</entry>
+     <entry key="lookup.errorCode.2588">There is a transaction restriction for the payer concerning the transaction amount</entry>
+     <entry key="lookup.errorCode.2589">There is an individual restriction for this txn type and customers</entry>
+     <entry key="lookup.errorCode.2590">Payer has insufficient KYC level</entry>
+     <entry key="lookup.errorCode.2591">Payee has insufficient KYC level</entry> 
+     <entry key="lookup.errorCode.2599">Transaction processing requires manual intervention</entry>
+     <entry key="lookup.errorCode.2801">Connecting to the IVR failed</entry>
+     <entry key="lookup.errorCode.2802">IVR service timeout occurred</entry>
+     <entry key="lookup.errorCode.2803">IVR service timeout occurred</entry>
+     <entry key="lookup.errorCode.2804">IVR user did not gave any input</entry>
+     <entry key="lookup.errorCode.2805">User did not pickup the phone</entry>
+     <entry key="lookup.errorCode.2806">Phone was busy</entry>
+     <entry key="lookup.errorCode.2811">User ended an IVR call by hanging up</entry>
+     <entry key="lookup.errorCode.2899">An unexpected IVR error occurred</entry>
+     <entry key="lookup.errorCode.3001">The coupon is in invalid status for this operation</entry>    
+     <entry key="lookup.errorCode.3002">No coupon instance is available</entry>
+     <entry key="lookup.errorCode.3101">An error occured while parsing coupon batch file</entry>
+     <entry key="lookup.errorCode.3102">Coupon batch file is in incorrect format</entry>
+     <entry key="lookup.errorCode.9935">An unexpected database error occurred</entry>
+     <entry key="lookup.errorCode.9999">An unexpected error occurred</entry> 
+
+     <entry key="lookup.historyEntry.MOB_CREDIT_CARDS.ID_CARD_TYPE">Card Type</entry>
+     <entry key="lookup.historyEntry.MOB_CREDIT_CARDS.INT_CARD_ISSUE_NUMBER">Card Issue Number</entry>
+     <entry key="lookup.historyEntry.MOB_CREDIT_CARDS.STR_CARD_HOLDER_NAME">Card Holder Name</entry>
+     <entry key="lookup.historyEntry.MOB_CREDIT_CARDS.MNTH_VALID_TO">Expiry</entry>
+     <entry key="lookup.historyEntry.MOB_CREDIT_CARDS.STR_CARD_NUMBER">Card Number</entry>
+     <entry key="lookup.historyEntry.MOB_CREDIT_CARDS">Credit Card</entry>
+     <entry key="lookup.historyEntry.MOB_PIS.BOL_IS_ACTIVE">Payment Instrument Active</entry>
+     <entry key="lookup.historyEntry.MOB_BANK_ACCOUNTS.ID_COUNTRYBANK">Country of Bank</entry>
+     <entry key="lookup.historyEntry.MOB_BANK_ACCOUNTS.STR_ACCOUNTNO">Account Number</entry>
+     <entry key="lookup.historyEntry.MOB_BANK_ACCOUNTS.STR_BRANCH_CODE">Branch Code</entry>
+     <entry key="lookup.historyEntry.MOB_BANK_ACCOUNTS.STR_CITYBANK">City of Bank</entry>
+     <entry key="lookup.historyEntry.MOB_BANK_ACCOUNTS.STR_COMPANY">Account Holder (Company)</entry>
+     <entry key="lookup.historyEntry.MOB_BANK_ACCOUNTS.STR_INSTITUTION_CODE">Bank Code</entry>
+     <entry key="lookup.historyEntry.MOB_BANK_ACCOUNTS.STR_NAME">Account Holder</entry>
+     <entry key="lookup.historyEntry.MOB_BANK_ACCOUNTS.STR_NAMEBANK">Name of Bank</entry>
+     <entry key="lookup.historyEntry.MOB_BANK_ACCOUNTS">Bank Account</entry>
+     <entry key="lookup.historyEntry.MOB_WALLET.STR_ALIAS">Bank Account Alias</entry>
+     <entry key="lookup.historyEntry.wallet_entry_DELETED">deleted</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.ID_CUSTOMER">Customer ID</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.ID_ADDRESS_TYPE">Address Type</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.ID_ADDRESS_STATUS">Address Status</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.ID_GENDER">Gender</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_FIRST_NAME">First Name</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_MIDDLE_NAME">Middle Name</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_LAST_NAME">Last Name</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_TITLE">Relationship</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_COMPANY1">Nature of the Business</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_COMPANY2">Incorporation Number</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_COMPANY_SHORTNAME">Place of Issue</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_POSITION">Occupation</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_STREET1">Street Address</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_STREET2">Street (2)</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_HOUSE_NUMBER">Apt no</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_ZIP">Postal Code</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_CITY">City</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_STATE">Province</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.ID_COUNTRY">Country</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_PHONE1">Home Phone</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_PHONE2">Business Phone</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_FAX">3rd party birth date</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_EMAIL">E-Mail</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_URL">URL</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.DAT_ADDRESS_SINCE">Address Since</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_DE_FIRST_LAST_NAME">First/Last Name (de)</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_DE_NAME_ADDR">Address Name (de)</entry>
+     <entry key="lookup.historyEntry.MOB_ADDRESSES.STR_NAME_ADDRESS">Address Name</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.ID_ORGUNIT">OrgUnit</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.ID_BLACKLISTREASON">Blacklist Reason</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.ID_PARENT">Parent ID</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.BOL_IS_ACTIVE">Active</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.BOL_IS_TEST">Test</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.STR_DISPLAY_NAME">Display Name</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.INT_WRONG_CREDENTIALS">Wrong Credentials</entry> 
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.ID_LANGUAGE">Language</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.ID_COUNTRY">Country</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.DAT_BLOCKED_UNTIL">Blocked Until</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.STR_SECURITY_QUESTION">Identification Question</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.STR_SECURITY_ANSWER">Security Answer</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.ID_TIME_ZONE">Time Zone</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_CREDENTIALS.INT_WRONG_CREDENTIALS">Wrong Credentials</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_CREDENTIALS.ID_CUSTOMER">Customer ID</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_CREDENTIALS.ID_CREDENTIAL_TYPE">Credential Type</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_CREDENTIALS.STR_CREDENTIAL">Credential</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_CREDENTIALS.STR_CREDENTIAL_PIN">PIN</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_CREDENTIALS.STR_CREDENTIAL_PWD">Password</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_CREDENTIALS.BOL_IS_ACTIVE">Active</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_IDENTIFICATIONS.ID_CUSTOMER">Customer ID</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_IDENTIFICATIONS.ID_IDENTIFICATION_TYPE">Identification Type</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_IDENTIFICATIONS.STR_IDENTIFICATION">Identifier</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_IDENTIFICATIONS.STR_IDENTIFICATION_EMAIL">E-Mail Address</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_IDENTIFICATIONS.STR_IDENTIFICATION_MSISDN">Mobile Phone Number</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_IDENTIFICATIONS.BOL_IS_ACTIVE">Active</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS_IDENTIFICATIONS.ID_PROVIDER">Network Provider ID</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.ID_CURRENCY">Currency</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_DAILY_DEBIT_LIMIT">Daily Debit Limit</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_MONTHLY_DEBIT_LIMIT">Monthly Debit Limit</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_ABSOLUTE_DEBIT_LIMIT">Absolute Debit Limit</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_DAILY_DEBIT_SUM">Daily Debit Sum</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_MONTHLY_DEBIT_SUM">Monthly Debit Sum</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_ABSOLUTE_DEBIT_SUM">Absolute Debit Sum</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_DAILY_CREDIT_LIMIT">Daily Credit Limit</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_MONTHLY_CREDIT_LIMIT">Monthly Credit Limit</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_ABSOLUTE_CREDIT_LIMIT">Absolute Credit Limit</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_DAILY_CREDIT_SUM">Credit Daily Sum</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_MONTHLY_CREDIT_SUM">Monthly Credit Sum</entry>
+     <entry key="lookup.historyEntry.MOB_LIMIT_CLASSES.AMNT_ABSOLUTE_CREDIT_SUM">Absolute Credit Sum</entry>
+     <entry key="lookup.historyEntry.MOB_TXNS.ID_SUBSYSTEM">Subsystem</entry>
+     <entry key="lookup.historyEntry.MOB_TXNS.ID_TXN_TYPE">Transaction Type</entry>
+     <entry key="lookup.historyEntry.MOB_TXNS.ID_TXN_STATUS">Transaction Status</entry>
+     <entry key="lookup.historyEntry.MOB_TXNS.ID_ERROR_CODE">Error Code</entry>
+     <entry key="lookup.historyEntry.MOB_TXNS.STR_AUTHORIZATION_CODE">Authorisation Code</entry>
+     <entry key="lookup.historyEntry.MOB_TXNS.BOL_IS_TEST">Test</entry>
+     <entry key="lookup.historyEntry.MOB_TXNS.ID_REF_TXN">Reference Transaction</entry>
+     <entry key="lookup.historyEntry.MOB_TXNS.STR_ORIGIN">Origin</entry>
+     <entry key="lookup.historyEntry.MOB_TXNS.ID_ORDER_CHANNEL">Order Channel</entry>
+     <entry key="lookup.historyEntry.MOB_TXNS.STR_TRACE_NUMBER">Trace Number</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.ID_NOTIFICATION_MODE">Marketing Preferences</entry>
+     <entry key="lookup.historyEntry.MOB_CUSTOMERS.DAT_DATE_OF_BIRTH">Date of Birth</entry>      
+      
+     <!-- ####### Credit Card Types ######### --> 
+     <entry key="lookup.cardtypes.1">VISA</entry>
+     <entry key="lookup.cardtypes.2">Master Card</entry>
+  
+  	<!-- ####### Sub Transaction Types ######### -->
+  	<entry key="lookup.subTxnTypes.101">AUTHORISATION</entry>
+  	<entry key="lookup.subTxnTypes.111">CAPTURE</entry>
+  	<entry key="lookup.subTxnTypes.121">AUTHORISATION CANCEL</entry>
+  	<entry key="lookup.subTxnTypes.131">CAPTURE CANCEL</entry>
+  	
+  
+    <!-- ############# PI Types ############# -->
+    <entry key="lookup.pitypes.0">System SVA</entry>
+    <entry key="lookup.pitypes.40">Standard Bank Account</entry>
+    <entry key="lookup.pitypes.41">Standard Bank Account</entry>
+    <entry key="lookup.pitypes.45">Standard Bank Account</entry>
+    <entry key="lookup.pitypes.20">Standard Credit Card</entry>
+    <entry key="lookup.pitypes.21">Standard Credit Card</entry>
+    <entry key="lookup.pitypes.60">Generic Internal Voucher</entry>
+    <entry key="lookup.pitypes.46">Send Money To Bank</entry>
+    <entry key="lookup.pitypes.71">Airtime Topup</entry>
+    <entry key="lookup.pitypes.70">CST External Account</entry>
+    <entry key="lookup.pitypes.76">GCash Wallet</entry>
+    <entry key="lookup.pitypes.79">GCash Bank</entry>
+    
+    <entry key="wallet.approve.error">An error occurred while approving the account</entry>
+    <entry key="wallet.reject.error">An error occurred while rejecting the account</entry>
+    <entry key="lookup.identificationType.5">User Name</entry>
+    
+    <entry key="lookup.action.true">Enable</entry>
+    <entry key="lookup.action.false">Disable</entry>
+
+    <entry key="lookup.identificationType.0">MSISDN</entry>
+    <entry key="lookup.identificationType.1">Customer Id</entry>
+    <entry key="lookup.identificationType.5">User Name</entry>
+    <entry key="lookup.bulkFileType.1">Customer Registration File</entry>
+    <entry key="lookup.bulkFileType.2">Customer Deactivation File</entry>
+    <entry key="lookup.bulkFileType.11">Transaction Upload File</entry>
+    <entry key="lookup.bulkFileType.12">Transaction Cancellation File</entry>
+    <entry key="lookup.bulkStatus.0">Initial</entry>
+    <entry key="lookup.bulkStatus.3">Rejected</entry>
+    <entry key="lookup.bulkStatus.5">In process</entry>
+    <entry key="lookup.bulkStatus.10">Fully sucessfully processed</entry>
+    <entry key="lookup.bulkStatus.11">Partially successfully processed</entry>
+    <entry key="lookup.bulkStatus.12">Processing failed</entry>
+</properties>

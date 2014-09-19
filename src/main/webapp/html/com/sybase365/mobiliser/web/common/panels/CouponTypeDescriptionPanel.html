@@ -1,0 +1,59 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="couponTypeDescriptionForm">
+		<div wicket:id="errorMessages"></div>
+		<div class="column">
+			<div class="input">
+				<label><wicket:message key="couponTypeDescription.locale" /><span class="required">*</span> </label> 
+				<select wicket:id="couponTypeDescription.locale">
+					<option>dummy</option>
+				</select>
+			</div>
+			<div class="input">
+				<label><wicket:message key="couponTypeDescription.mimeType" /><span class="required">*</span> </label> 
+				<select wicket:id="couponTypeDescription.mimeType">
+					<option>dummy</option>
+				</select>
+			</div>
+			<div class="input">
+				<label> <wicket:message key="couponTypeDescription.thumbnailUrl" /> </label> 
+				<input type="text" wicket:id="couponTypeDescription.thumbnailUrl" />
+			</div>
+			<div class="input">
+				<label> <wicket:message key="couponTypeDescription.imageUrl" /> </label> 
+				<input type="text" wicket:id="couponTypeDescription.imageUrl" />
+			</div>
+			<div class="input">
+				<label> <wicket:message key="couponTypeDescription.caption" /><span class="required"> *</span> </label> 
+				<input type="text" wicket:id="couponTypeDescription.caption" />
+			</div>
+			<div wicket:id="descriptionContainer">
+				<div class="input">
+					<label><wicket:message key="couponTypeDescription.description" /><span class="required"> *</span> </label>
+					<textarea wicket:id="descriptionText" style="width: 345px; height: 80px;"></textarea>
+				</div>
+			</div>
+			<div wicket:id="fileContainer">
+				<div class="input" style="width: 758px; display: inline; clear: none; float: left; padding: 0 0 0 0px;">
+					<label style="width: 155px;"><wicket:message key="couponTypeDescription.content" /><span class="required">*</span> </label>
+					<div class="fileattachement" style="float: left;">
+						<input type="file" tabindex="14" wicket:id="content" style="float: left;" size="65">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="formAction">
+				<input type="submit" class="submitForm" wicket:id="Save" wicket:message="value:Save" name="submit" /> 
+				<input type="submit" class="submitForm" wicket:id="Cancel" wicket:message="value:Cancel" name="cancel" />
+			</div>
+		</div>
+	</form>
+
+</wicket:panel>
+</body>
+</html>

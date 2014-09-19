@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/slider.css" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="scripts/jquery-1.3.1.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="scripts/setting_slider.js"></script>
+	<title><wicket:message key="login.page.title" /></title>
+	<style type="text/css">
+		#error
+		{
+			color : white;
+			//background-color : white;
+			border : red 1px;
+			padding-bottom: 10px;
+		}
+		form li,ul
+		{
+			list-style : none;
+			list-style-type : none;
+		}
+	</style>
+</wicket:head>
+</head>
+<body>
+	<wicket:extend>
+		<div id="background-header">
+			<div id="header">
+				<div id="logo_front"></div>
+				<div id="logo_right"></div>
+				<div id="nav-top">
+					<wicket:link>
+						<div id="nav-container">
+							<a href="Promo.html" class="nav-promo"></a>
+						</div>
+						<div id="nav-container">
+							<a href="/portal/agent-portal/" class="nav-agen"></a>
+						</div>
+						<div id="nav-container">
+							<a href="FAQ.html" class="nav-faq"></a>
+						</div>
+						<div id="nav-container">
+							<a href="AboutWow.html" class="nav-tentang"></a>
+						</div>
+					</wicket:link>
+				</div>
+			</div>
+		</div>
+		
+		<div id="container">
+		<div id="contentfullpage">
+			<div id="contentbox-left">
+				<div id="slider">
+
+					<div id="mask-gallery">
+						<ul id="gallery">
+							<li><img src="images/slider/slider-1.jpg" width="100%"
+								height="280" alt="" /></li>
+							<li><img src="images/slider/slider-2.jpg" width="100%"
+								height="280" alt="" /></li>
+							<li><img src="images/slider/slider-3.jpg" width="100%"
+								height="280" alt="" /></li>
+						</ul>
+					</div>
+
+					<div id="mask-excerpt">
+						<ul id="excerpt">
+							<li><p>
+									Daftarkan nomor Handphone Anda<br/>menjadi nomor rekening tabungan<br/> btpn WOW! 
+							</p></li>
+							<li><p>
+									Nikmati layanan berbank ditangan Anda.<br/> Aman menggunakan PIN rahasia Anda. <br/>Rekening hape btpn WOW! cepat, mudah dan gampang.
+							</p></li>
+							<li><p>
+									Rekening hape btpn WOW!<br/> bebas biaya admin bulanan, <br/>dapatkan bunga tabungan lebih tinggi.
+							</p></li>
+						</ul>
+					</div>
+
+				</div>
+				<div id="buttons">
+					<a href="#" id="btn-prev">Prev</a> <a href="#" id="btn-next">Next</a>
+				</div>
+			</div>
+			<div id="contentbox-right">
+				<div id="widget">
+					<div id="title_login">
+						<p>Nasabah btpn WOW</p>
+					</div>
+					<div id="form_login">
+						<form wicket:id="loginForm" autocomplete="off">
+							<strong><div id="error" wicket:id="feedbackMessagePanel"><br/></div></strong>
+							<hr/>
+							<p>
+								<wicket:message key="login.userName" />
+								<br /> <input type="text" name="no_ponsel"
+									placeholder="Ex : 081234567890" class="textInput"
+									wicket:id="userName" autofocus autocomplete="off" /><br>
+							</p>
+							<p>
+								<wicket:message key="login.password" />
+								<br /> <input type="password" name="no_ponsel"
+									placeholder="Ex : 231237" class="textInput"
+									wicket:id="password" autocomplete="off" /><br />
+							</p>
+							
+							<p>
+								
+								<input type="submit"
+								class="submit_login" wicket:id="submitButton"
+								wicket:message="value:Login" />
+								
+							</p>
+							
+							<!--<div id="reset_pin">
+								<wicket:link>
+								<a href="AdminPinRecovery.html">
+									<wicket:message key="reset" />
+								</a>
+								</wicket:link>
+							</div>-->
+							<div style="padding-top: 50px;" id="lupa_pin">
+								<a wicket:id="forgotPasswordLink" href="#"><font style="color: white; font-size: 15px;"><wicket:message	key="login.forgot.password" tabindex="5" /></font></a>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div id="widget">
+					<p class="text">
+						Belum punya rekening <br>hape btpn WOW! ?
+					</p>
+					<p class="text">Lakukan pembukaan rekening hape di agen kios
+						WOW! atau kantor cabang bank BTPN terdekat</p>
+				</div>
+				
+				<!--<p class="info_lanjut">-->
+				<p style="padding-top: 47px;">
+					<font style="color: white; font-size: 15px;">Anda mengalami masalah?<br>Info lengkap hubungi</font>
+				</p>
+				<div id="info_lanjut"></div>
+
+			</div>
+			<div id="container-widget-bottom">
+				<div id="widget-bottom-1">
+					<p>
+						Pastikan komputer Anda<br>terbebas dari virus.<br>Situs
+						ini dilindungi oleh<br>Norton Secured.
+					</p>
+					<br> <br> <img src="images/norton_secure.png">
+				</div>
+				<div id="widget-bottom-2">
+					<br>
+					<center>
+						<p>
+							kios WOW!<br>peluang usaha<br>jadi agen bank
+						</p>
+						<br>
+						<wicket:link>
+							<a href="/portal/agent-portal/" class="selengkapnya">Daftar disini</a>
+						</wicket:link>
+					</center>
+				</div>
+				<div id="widget-bottom-3">
+					<p>
+						Pakai btpn<br>WOW! untuk<br>bayar tagihan<br>PDAM
+						Anda
+					</p>
+					<br>
+					<center>
+						<wicket:link>
+							<a href="ConsumerPortalTips.html" class="selengkapnya">Lihat
+								Caranya..</a>
+						</wicket:link>
+					</center>
+				</div>
+				<div id="widget-bottom-4">
+					<p>
+						Dari btpn WOW!<br>bisa jualan pulsa<br>hape loh..!
+					</p>
+					<br>
+					<center>
+						<wicket:link>
+							<a href="ConsumerPortalTips.html" class="selengkapnya">Lihat
+								Caranya..</a>
+						</wicket:link>
+					</center>
+				</div>
+			</div>
+		</div>
+		<div id="footer_right">
+			All Rights Reserved.
+			
+			Copyright &copy; 2013 <br>PT. Bank Tabungan Pensiunan Nasional
+			Tbk.
+		</div>
+		<div id="footer_bg"></div>
+	</div>
+
+		<wicket:child />
+
+	</wicket:extend>
+</body>
+</html>

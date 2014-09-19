@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+  <bean id="smartAuthClientInterceptorParent" abstract="true"
+    class="com.sybase365.mobiliser.web.util.SmartClientInterceptor">
+  </bean>
+
+  <!-- ALERTS CLIENT -->
+  
+  <bean id="smartAuthAlertsClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthAlertsContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthAlertsContextClient" />
+  </bean>
+
+  <bean id="smartAuthAlertsContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthAlertsClientSource</value>
+    </property>
+    <property name="interfaces" ref="alertsInterfaces" />
+  </bean>
+  
+  <bean id="smartAuthAlertsClientLogic" class="com.sybase365.mobiliser.web.application.clients.AlertsClientLogic">
+    <property name="wsAlertTypesClient" ref="smartAuthAlertsContextClient" />
+    <property name="wsCustomerAlertsClient" ref="smartAuthAlertsContextClient" />
+  </bean>
+
+  <alias name="smartAuthAlertsContextClient" alias="smartAuthAlertTypeManagementClient"/>
+  <alias name="smartAuthAlertsContextClient" alias="smartAuthCustomerAlertsClient"/>
+
+  <!-- AUDIT CONTEXT CLIENT -->
+
+  <bean id="smartAuthAuditClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthAuditContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthAuditContextClient" />
+  </bean>
+
+  <bean id="smartAuthAuditContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthAuditClientSource</value>
+    </property>
+    <property name="interfaces" ref="auditInterfaces" />
+  </bean>
+
+  <alias name="smartAuthAuditContextClient" alias="smartAuthNoteClient"/>
+
+  <!-- CUSTOMER CONTEXT CLIENT -->
+
+  <bean id="smartAuthCustomerClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthCustomerContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthCustomerContextClient" />
+  </bean>
+
+  <bean id="smartAuthCustomerContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthCustomerClientSource</value>
+    </property>
+    <property name="interfaces" ref="customerInterfaces" />
+  </bean>
+
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthFindRemittanceVoucherClient"/>
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthCommissionConfigurationClient"/>
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthIdentityClient"/>
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthAttachmentClient"/>
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthRolesPrivilegesClient"/>
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthCustomerNetworksClient"/>
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthOtpClient"/>
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthSecurityClient"/>
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthCustomerClient"/>
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthIdentificationClient"/>
+  <alias name="smartAuthCustomerContextClient" alias="smartAuthAddressClient"/>
+
+  <!-- WALLET CONTEXT CLIENT -->
+
+  <bean id="smartAuthWalletClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthWalletContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthWalletContextClient" />
+  </bean>
+
+  <bean id="smartAuthWalletContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthWalletClientSource</value>
+    </property>
+    <property name="interfaces" ref="walletInterfaces" />
+  </bean>
+
+  <alias name="smartAuthWalletContextClient" alias="smartAuthBalanceAlertClient"/>
+  <alias name="smartAuthWalletContextClient" alias="smartAuthWalletClient"/>
+
+  <!-- SYSTEM CONTEXT CLIENT -->
+
+  <bean id="smartAuthSystemClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthSystemContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthSystemContextClient" />
+  </bean>
+
+  <bean id="smartAuthSystemContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthSystemClientSource</value>
+    </property>
+    <property name="interfaces" ref="systemInterfaces" />
+  </bean>
+
+  <alias name="smartAuthSystemContextClient" alias="smartAuthTransactionRestrictionClient"/>
+  <alias name="smartAuthSystemContextClient" alias="smartAuthFeeClient"/>
+  <alias name="smartAuthSystemContextClient" alias="smartAuthJobClient"/>
+  <alias name="smartAuthSystemContextClient" alias="smartAuthSystemClient"/>
+  <alias name="smartAuthSystemContextClient" alias="smartAuthLimitClient"/>
+  <alias name="smartAuthSystemContextClient"  alias="smartAuthBulkProcessingClient"/>
+
+  <!-- TRANSACTION CONTEXT CLIENT -->
+
+  <bean id="smartAuthTransactionClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthTransactionContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthTransactionContextClient" />
+  </bean>
+
+  <bean id="smartAuthTransactionContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthTransactionClientSource</value>
+    </property>
+    <property name="interfaces" ref="transactionInterfaces" />
+  </bean>
+
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthTransactionCancelClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthConfirmVoucherClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthStartVoucherClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthDemandForPaymentClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthCancelInvoiceClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthContinuePayInvoiceClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthCheckPayInvoiceClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthPayInvoiceClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthWebContinueClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthWebStartClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthPrePickupMoneyClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthCaptureClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthAuthorisationCancelClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthCaptureCancelClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthTransactionClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthCommissionClearingClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthPreAuthContinueClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthAuthorisationClient"/>
+  <alias name="smartAuthTransactionContextClient" alias="smartAuthPreAuthorisationClient"/>
+
+  <!-- REPORT CONTEXT CLIENT -->
+
+  <bean id="smartAuthReportClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthReportContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthReportContextClient" />
+  </bean>
+
+  <bean id="smartAuthReportContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthReportClientSource</value>
+    </property>
+    <property name="interfaces" ref="reportInterfaces" />
+  </bean>
+
+  <alias name="smartAuthReportContextClient" alias="smartAuthReportClient"/>
+
+  <!-- MESSAGING CONTEXT CLIENT -->
+
+  <bean id="smartAuthMsgClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthMessageContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthMessageContextClient" />
+  </bean>
+
+  <bean id="smartAuthMessageContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthMsgClientSource</value>
+    </property>
+    <property name="interfaces" ref="messagingInterfaces" />
+  </bean>
+
+  <alias name="smartAuthMessageContextClient" alias="smartAuthMessageLogClient"/>
+  <alias name="smartAuthMessageContextClient" alias="smartAuthTemplateClient"/>
+  <alias name="smartAuthMessageContextClient" alias="smartAuthMessagingClient"/>
+
+  <!-- INVOICE CONTEXT CLIENT -->
+
+  <bean id="smartAuthInvoiceClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthInvoiceContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthInvoiceContextClient" />
+  </bean>
+
+  <bean id="smartAuthInvoiceContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthInvoiceClientSource</value>
+    </property>
+    <property name="interfaces" ref="invoiceInterfaces" />
+  </bean>
+
+  <alias name="smartAuthInvoiceContextClient" alias="smartAuthInvoiceClient"/>
+
+  <!-- COUPON CONTEXT CLIENT -->
+
+  <bean id="smartAuthCouponClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthCouponContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthCouponContextClient" />
+  </bean>
+
+  <bean id="smartAuthCouponContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthCouponClientSource</value>
+    </property>
+    <property name="interfaces" ref="couponInterfaces" />
+  </bean>
+
+  <alias name="smartAuthCouponContextClient" alias="smartAuthCouponClient"/>
+
+  <!-- PREFS CONTEXT CLIENT -->
+
+  <bean id="smartAuthPrefsClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthPrefsContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthPrefsContextClient" />
+  </bean>
+
+  <bean id="smartAuthPrefsContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthPrefsClientSource</value>
+    </property>
+    <property name="interfaces" ref="prefsInterfaces" />
+  </bean>
+
+  <alias name="smartAuthPrefsContextClient" alias="smartAuthPreferencesClient"/>
+
+  <!-- MBANKING CONTEXT CLIENTS - SMART AUTH -->
+  
+  <bean id="smartAuthMBankingClientSource" parent="smartAuthClientInterceptorParent">
+    <property name="selfAuthTarget" ref="selfAuthMBankingContextClient" />
+    <property name="systemAuthTarget" ref="systemAuthMBankingContextClient" />
+  </bean>
+
+  <bean id="smartAuthMBankingContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="interceptorNames">
+      <value>smartAuthMBankingClientSource</value>
+    </property>
+    <property name="interfaces" ref="mBankingInterfaces" />
+  </bean>
+
+  <bean id="smartAuthMBankingClientLogic" class="com.sybase365.mobiliser.web.application.clients.MBankingClientLogic">
+    <property name="wsServicePackageMgmtEndpoint" ref="smartAuthMBankingContextClient" />
+    <property name="wsNumberRestrictionsMgmtEndpoint" ref="smartAuthMBankingContextClient" />
+  </bean>
+
+</beans>

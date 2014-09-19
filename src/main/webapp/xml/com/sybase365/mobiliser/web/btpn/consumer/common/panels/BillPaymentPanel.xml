@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.billPayment">Bayar Tagihan</entry>
+	<entry key="label.biller">Tagihan</entry>
+	<entry key="requiredFields">Wajib isi</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="billPaymentBean.billerType.null">Pilih Tagihan</entry>
+	<entry key="billPaymentBean.billerType.Required">Kolom Tagihan Harus Diisi.</entry>
+
+</properties>

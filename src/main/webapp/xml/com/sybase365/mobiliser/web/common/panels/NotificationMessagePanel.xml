@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+<entry key="message.title">Notification Message</entry>
+<entry key="message.name">Name</entry>
+<entry key="message.name.Required">Name is required</entry>
+<entry key="message.templateType">Template Type</entry>
+<entry key="message.templateType.Required">Template Type is required</entry>
+<entry key="message.locale">Locale</entry>
+<entry key="localeStr.PatternValidator">'${input}' is not a valid Locale</entry>
+<entry key="message.sender">Sender</entry>
+<entry key="message.sender.Required">Sender is required</entry>
+<entry key="message.text.sms">SMS text</entry>
+<entry key="smsText.Required">SMS text is required</entry>
+<entry key="message.subject">Subject</entry>
+<entry key="message.subject.Required">Subject is required</entry>
+<entry key="message.text.plain">Plain Text</entry>
+<entry key="plainText.Required">Plain Text is required</entry>
+<entry key="message.text.html">HTML Text</entry>
+<entry key="msgAttachments.title">Message Attachments</entry>
+<entry key="msgAttachments.link.add">Add Attachment to Message</entry>
+<entry key="msgAttachments.select">Select</entry>
+<entry key="msgAttachments.name">Attachment Name</entry>
+<entry key="message.confidential">Confidential</entry>
+<entry key="message.text.principle">Principle Text</entry>
+<entry key="msgAttachments.remove.button">Remove Attachments</entry>
+<entry key="message.attachment">Attachment</entry>
+<entry key="msgAttachments.load.error">Error in loading template attachments list</entry>
+<entry key="msgAttachments.remove.confirm">Do you really want to remove this attachments from message?</entry>
+<entry key="msgAttachments.noItemsMsg">No attachments found for this message</entry>
+<entry key="msgAttachments.addMsgAttachmentsHelp">Use the 'Add an Attachment' link above to add an entry</entry>
+<entry key="msgAttachment.nothing.selected.remove">You must select the entries you want to remove</entry>
+<entry key="msgAttachment.remove.success">Selected attachments removed successfully</entry>
+<entry key="create.message.success">Message template created successfully</entry>
+<entry key="create.message.error">Error in creating message template</entry>
+<entry key="update.message.success">Message template updated successfully</entry>
+<entry key="update.message.error">Error in updating message template</entry>
+<entry key="remove.attachment.success">Attachment removed successfully</entry>
+<entry key="remove.attachment.error">Error in removing selected attachments</entry>
+<entry key="add.attachment.success">Attachment added successfully</entry>
+<entry key="add.attachment.error">Error in adding the attachment to message</entry>
+<entry key="load.attachment.error">Error in uploading attachment</entry>
+<entry key="button.export">Export</entry>
+<entry key="button.test">Test</entry>
+<entry key="export.message.error">An error occurred in exporting message</entry>
+</properties>

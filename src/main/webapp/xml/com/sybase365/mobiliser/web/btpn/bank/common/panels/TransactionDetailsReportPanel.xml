@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="label.header">Transaction Details</entry>
+	<entry key="transactionHistory.fromDate">From </entry>
+	<entry key="transactionHistory.toDate">To </entry>
+	<entry key="transactionHistory.agentMsisdn">Agent MSISDN </entry>
+	<entry key="transactionHistory.agentType">Agent Type </entry>
+	<entry key="transactionHistory.reportScope">Report Scope </entry>
+	<entry key="transactionHistory.transactionType">Transaction Type </entry>
+	<entry key="label.date">Date &amp; Time</entry>
+	<entry key="label.customerAccount">Customer Account #</entry>
+	<entry key="label.agentType">Agent Type</entry>
+	<entry key="label.agentId">Agent ID</entry>
+	<entry key="label.transactionType">Transaction Type</entry>
+	<entry key="label.amount">Amount</entry>
+	<entry key="label.biller">Biller</entry>
+	<entry key="label.beneificary">Beneficiary</entry>
+	<entry key="searchData.txnType.nullValid">Select all</entry>
+	<entry key="no.items">Nothing found to display.</entry>
+	<entry key="approval.totalitems.header">%s items found, displaying %s to %s.</entry>
+
+	<!-- Front End Validations -->
+	<entry key="searchData.fromDate.Required">From Date is a required field</entry>
+	<entry key="searchData.toDate.Required">To Date is a required field</entry>
+	<entry key="searchData.fromDate.future">From Date should not be a future date.</entry>
+	<entry key="searchData.toDate.future">To Date should not be a future date.</entry>
+	<entry key="searchData.fromDate.todate.after.fromdate">From Date should be before To date.</entry>
+	<entry key="searchData.agentMsisdn.Required">Agent Msisdn is a required field</entry>
+	<entry key="searchData.agentMsisdn.PatternValidator">${input} is not a valid Msisdn.</entry>
+
+	<entry key="error.transactions">An error occured while fetching the transaction
+		details.</entry>
+	<entry key="error.8104">Agent not found.</entry>
+</properties>

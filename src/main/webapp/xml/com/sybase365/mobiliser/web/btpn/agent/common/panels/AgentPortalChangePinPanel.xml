@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.changePin">Please change your mobile PIN</entry>
+	<entry key="label.oldPin">Old PIN</entry>
+	<entry key="label.newPin">New PIN</entry>
+	<entry key="label.confirmNewPin">Confirm new PIN</entry>
+	<entry key="requiredFields">Denotes Mandatory Field</entry>
+	<entry key="changePin.attempts">You have 2 more attempts left to perform this
+		function.</entry>
+	<entry key="pin.same">Old and new pin can not be same.</entry>
+	<entry key="Pin.lenth">Confirm new PIN must be at least 6 characters long</entry>
+	<entry key="Pin.notMatch">The PIN you entered does not match. Please check your
+		PIN and try again.</entry>
+	<entry key="changePinSuccessMessage">You have successfully changed your PIN!</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="changePinBean.oldPin.Required">Old PIN is a required field</entry>
+	<entry key="changePinBean.newPin.Required">New PIN is a required field</entry>
+	<entry key="changePinBean.confirmNewPin.Required">Confirm new PIN is a required field</entry>
+	<entry key="changePinBean.confirmNewPin.PatternValidator">Confirm new PIN must be at least 6 characters long</entry>
+
+
+</properties>

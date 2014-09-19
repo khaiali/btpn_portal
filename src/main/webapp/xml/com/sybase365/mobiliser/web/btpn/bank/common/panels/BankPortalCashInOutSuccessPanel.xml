@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="label.cashIn.success.glAccount">GL Account</entry>
+	<entry key="label.cashIn.success.mobileNumber">Mobile Number</entry>
+	<entry key="label.cashIn.success.name">Name</entry>
+	<entry key="label.cashIn.cashinFee">Fee</entry>
+	<entry key="label.cashIn.cashinAmount">Total Amount</entry>
+	
+</properties>

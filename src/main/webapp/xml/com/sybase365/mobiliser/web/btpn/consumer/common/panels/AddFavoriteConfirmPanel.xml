@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.addFavorite">Tambah Favorit</entry>
+	<entry key="headLine.confirmRemove">Confirm Remove</entry>
+	<entry key="label.FavoriteName">Nama Favorit</entry>
+	<entry key="label.FavoriteType">Tipe Favorit</entry>
+	<entry key="label.FavoriteValue">No. Favorit</entry>
+	<entry key="label.description">Deskripsi</entry>
+
+	<entry key="favorite.add.success">Favorit berhasil ditambahkan</entry>
+	<entry key="favorite.remove.success">Favorite berhasil dihapus</entry>
+
+</properties>

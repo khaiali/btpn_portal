@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  
+  <entry key="application.name">Mobile Commerce Portal</entry>
+  <entry key="language.head">Languages</entry>
+  
+  <entry key="noJavascript.text">Your Browser must support JavaScript in order to use this web application</entry>
+  
+  <entry key="requiredFields">Required fields</entry>
+  
+  <entry key="customer.address.kvGender.nullValid">- Please Select -</entry>
+  <entry key="customer.address.kvCountry.null">- Please Select -</entry>
+  <entry key="signup.personalData.gender.0">Unknown</entry>
+  <entry key="signup.personalData.gender.1">Male</entry>
+  <entry key="signup.personalData.gender.2">Female</entry>
+  <entry key="signup.personalData.gender.3">Company</entry>
+  <entry key="null">- Please Select -</entry>
+  <entry key="customer.kvInfoMode.null">- Please Select -</entry>
+  <entry key="signup.personalData.infoMode.0">None</entry>
+  <entry key="signup.personalData.infoMode.1">SMS</entry>
+  <entry key="signup.personalData.infoMode.2">Email</entry>
+  <entry key="signup.personalData.infoMode.3">SMS and Email</entry>
+  <entry key="cst.customercare.feeset.none">None</entry>
+  <entry key="cst.customercare.feeset.individual">Individual Configuration</entry>
+  <entry key="cst.customercare.limitset.individual">Individual Configuration</entry>
+  <entry key="customer.limitId.nullValid">None</entry>
+  <entry key="signup.genericError">An error occured during the signup process.</entry>
+  
+  <entry key="txnStatus.20">Authorized</entry>
+  <entry key="txnStatus.30">Captured</entry>
+  <entry key="txnStatus.70">Capture Cancel</entry>
+  
+  <entry key="useCase.100">P2P</entry>
+  <entry key="useCase.200">Withdrawl</entry>
+  <entry key="useCase.300">TopUp</entry>
+  
+  <entry key="errorCode.0">OK</entry>
+  <entry key="errorCode.1234">Failed</entry>
+  <entry key="errorCode.4321">Cancel requested</entry>
+
+  <entry key="customer.creditCard.kvCardType.null">- Please Select -</entry>
+  <entry key="customer.creditCard.type.1">Visa</entry>
+  <entry key="customer.creditCard.type.2">Master Card</entry>
+ 
+  <entry key="ERROR.PLATFORM">We are experiencing technical difficulties. Please try again later.</entry>
+  <entry key="consumer.status_true">Active</entry>
+  <entry key="consumer.status_false">Inactive</entry>
+</properties>

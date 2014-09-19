@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.header.AdviceList">Daftar Transaksi</entry>
+	<entry key="label.transactionId">ID Transaksi</entry>
+	<entry key="label.transactionDate">Tanggal Transaksi</entry>
+	<entry key="label.amount">Jumlah</entry>
+	<entry key="label.billerid">ID Tagihan</entry>
+	<entry key="label.feeAmount">Jumlah Biaya</entry>
+	<entry key="label.action">Action</entry>
+	<entry key="label.no.items.found">Transaksi tidak ditemukan.</entry>
+	<entry key="advice.totalitems.header">%s item yang ditemukan, Menampilkan %s Sampai %s.</entry>	
+	<entry key="retry.advice.success">Transaksi Manual Berhasil Dilakukan.</entry>
+	<entry key="error.retry.manual.advice">An error occurred while retrying manual advice.</entry>
+	<entry key="error.manual.advice">An error occurred while fetching the manual advice list.</entry>
+</properties>

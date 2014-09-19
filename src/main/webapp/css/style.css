@@ -1,0 +1,803 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+body {
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+
+#background-header {
+	/*width: 100%;*/
+	width: 100%;
+	/*max-width: 1015px;*/
+	background: #125eac;
+	height: 65px;
+	margin-right:0px;
+}
+
+#background-header_transaction_detail {
+	width: 100%;
+	background: #125eac;
+	height: 8px;
+	border-bottom: 2px solid #a3a4a6;
+}
+
+#header {
+	/*width: 1015px;*/
+	/*width:100%;*/
+	background: #125eac;
+	width:1020px;
+	height: 65px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#logo {
+	margin-left: 20px;
+	width: 114px;
+	height: 65px;
+	background-image: url("../images/logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+}
+
+#logo_front {
+	margin-left: 0px;
+	width: 154px;
+	height: 65px;
+	background-image: url("../images/logo_front.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 154px 65px;
+	float: left;
+}
+
+#profilebox {
+	margin-left: 20px;
+	width: 300px;
+	height: 65px;
+	float: right;
+	text-align: right;
+	margin-top: 10px;
+	margin-right: 50px;
+}
+
+#waktu {
+	margin-left: 160px;
+	width: 150px;
+	height: 65px;
+	float: left;
+	text-align: left;
+	margin-top: 10px;
+	margin-right: 50px;
+}
+
+#waktu p {
+	color: #fff;
+}
+
+#profilebox p {
+	color: #fff;
+}
+/* -------------- Form ---------------- */
+select {
+	padding: 3px;
+	background: #97cff0;
+	color: #115dab;
+	border: 1px solid #00adef;
+}
+
+.keluar_button {
+	font-size: 1.1em;
+	width: 80px;
+	padding: 3px;
+	background: #00adef;
+	margin-top: 10px;
+	color: #fff;
+	font-weight: bold;
+}
+
+#form_container {
+	padding: 2px;
+	margin-top: 15px;
+	width: 200px;
+	height: auto;
+	background: #125eac;
+	padding: 15px;
+	float: left;
+}
+
+#form_container_koderahasia {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	margin-top: 15px;
+	width: 200px;
+	min-height: 140px;
+	height: auto;
+	background: #125eac;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+#title_koderahasia {
+	background: #11a8dd;
+	padding: 1px;
+	text-align: center;
+}
+
+#title_koderahasia p {
+	color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+#form_container p,a {
+	color: #fff;
+	line-height: 1.8em;
+	font-size: 1.2em;
+}
+
+.textInput {
+	font-size: 1.1em;
+	width: 100%;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+
+.submit_button {
+	font-size: 1em;
+	width: 80px;
+	padding: 3px;
+	background: #f68b1f;
+	margin-top: 10px;
+	float: left;
+	color: #fff;
+}
+
+.submit_button_transaksi {
+	font-size: 1em;
+	width: 130px;
+	padding: 3px;
+	background: #f68b1f;
+	margin-top: 10px;
+	float: left;
+	color: #fff;
+}
+
+#title_login {
+	background: #57caf6;
+	padding: 2px;
+	text-align: center;
+}
+
+#title_login p {
+	color: #fff;
+	font-size: 17px;
+}
+
+#form_login {
+	padding: 2px;
+	margin-top: 15px;
+}
+
+#form_login p,a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.submit_login {
+	font-size: 1.1em;
+	width: 100px;
+	padding: 3px;
+	background: #f68b1f;
+	margin-top: 10px;
+	float: left;
+	color: #fff;
+	font-weight: bold;
+}
+
+#reset_pin {
+	padding: 5px;
+	margin-top: 10px;
+	margin-left: 15px;
+	float: left;
+}
+
+#reset_pin a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#lupa_pin a {
+	margin-top: 0px;
+	color: #fff;
+}
+/* end of form*/
+#logo_right {
+	margin-right: 20px;
+	width: 114px;
+	height: 65px;
+	background-image: url("../images/logo_header_right.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	float: right;
+}
+
+#container {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	width: 1015px;
+	border-top: 0px;
+	border-left: 2px solid #00adef;
+	border-right: 2px solid #00adef;
+	border-bottom: 2px solid #00adef;
+	padding-top: 0px;
+	text-align: left;
+	height: auto;
+}
+
+#content {
+	margin-left: 285px;
+	padding: 20px 20px 10px 0px;
+}
+
+#contentfullpage {
+	height: 63%;
+	margin-left: 20px;
+	padding: 20px 20px 10px 0px;
+}
+
+#content-transdetail {
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#content-transdetail p {
+	line-height: 1.5em;
+}
+
+#content-transdetail h2 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 1.6em;
+	margin-bottom: 10px;
+}
+
+#contentbox {
+	padding: 20px 20px 20px 20px;
+	border: 1px solid #00adef;
+	height: auto;
+}
+
+#contentbox input{
+	border: 1px solid #125EAC;
+}
+
+#contentboxfullpage {
+	padding: 50px 300px 50px 50px;
+	border: 1px solid #00adef;
+	height: 74px;
+}
+
+#contentbox-left {
+	padding-left: 0px;
+	margin-right: 20px;
+	height: 290px;
+	float: left;
+	width: 72%;
+	border-bottom: 10px solid #57caf6;
+	border-right: 10px solid #57caf6;
+}
+
+#contentbox-right {
+	padding: 20px;
+	border: 1px solid #00adef;
+	height: auto;
+	height: 460;
+	float: right;
+	width: 20%;
+	background: #125eac;
+	margin-bottom: 10px;
+}
+
+#container-widget-bottom {
+	width: 720px;
+	height: auto;
+}
+
+#widget-bottom-1 {
+	width: 150px;
+	height: 130px;
+	float: left;
+	margin-right: 8px;
+	margin-top: 20px;
+	padding: 0px;
+}
+
+#widget-bottom-2 {
+	background: #f8bf32 url(../images/orange_polcadot.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 140px;
+	height: 140px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 20px;
+	padding: 15px;
+}
+
+#widget-bottom-3 {
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #000;
+	background: #3fc8f4;
+	border: 15px solid #00adef;
+}
+
+#widget-bottom-4 {
+	background: #0f75bd;
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 15px solid #125eac;
+}
+
+#widget-bottom-1 p {
+	color: #115dab;
+	font-size: 13px;
+	line-height: 1.5em;
+}
+
+#widget-bottom-2 p {
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+#widget-bottom-3 p {
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.4em;
+}
+
+#widget-bottom-4 p {
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.4em;
+}
+
+#widget-bottom-2 a.selengkapnya {
+	background: #f2964d;
+	color: #fff;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#widget-bottom-3 a.selengkapnya {
+	background: #11a8dd;
+	color: #fff;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#widget-bottom-4 a.selengkapnya {
+	background: #00adef;
+	color: #fff;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#widget {
+	border-bottom: 1px solid #fff;
+}
+
+#widget p.text {
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#info_lanjut {
+	background: url(../images/info_lanjut.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	margin-right: auto;
+	width: 195px;
+	height: 45px;
+}
+
+#contentbox h2 {
+	color: #135ca9;
+	font-weight: 300;
+	line-height: 1.5em;
+	font-size: 1.6em;
+	margin-bottom: 15px;
+}
+
+#contentbox h2 b {
+	color: #135ca9;
+	line-height: 1.5em;
+	font-size: 1em;
+	margin-bottom: 15px;
+}
+
+#contentbox h3 {
+	color: #f68121;
+	font-weight: 300;
+	line-height: 1.5em;
+	font-size: 1.6em;
+	margin-bottom: 15px;
+}
+
+#contentbox h3 b {
+	color: #f68121;
+	line-height: 1.5em;
+	font-size: 1em;
+	margin-bottom: 15px;
+}
+
+#contentboxfullpage p {
+	color: #135ca9;
+	line-height: 1.8em;
+	font-size: 1.2em;
+}
+
+#contentbox p {
+	color: #135ca9;
+	line-height: 1.8em;
+	font-size: 1.2em;
+}
+
+#contentbox p.noline {
+	color: #135ca9;
+	line-height: 1em;
+	font-size: 1.2em;
+}
+
+#contentbox li {
+	color: #135ca9;
+	line-height: 1.8em;
+	font-size: 1.2em;
+	margin-left: 20px;
+}
+
+#label-transaksi {
+	color: #135ca9;
+	font-weight: 300;
+	font-size: 1.6em;
+	margin-bottom: 15px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #00adef;
+}
+
+#content-transaksi {
+	color: #135ca9;
+	font-size: 1.2em;
+}
+
+/*------------ paging ----------------- */
+#paging_trasaksi_table {
+	float: right;
+	width: 370px;
+	height: 25px;
+	text-align: right;
+}
+
+div.paging {
+	padding: 2px;
+	margin: 2px;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+
+div.paging a {
+	padding: 2px 6px;
+	margin-right: 2px;
+	border: none;
+	text-decoration: underline;
+	color: #0061DE;
+	background-position: bottom;
+}
+
+div.paging a:hover {
+	text-decoration: none;
+	border: 1px solid #fff;
+}
+
+div.paging span.current {
+	border: none;
+	padding: 2px 6px;
+	margin-right: 2px;
+	font-weight: bold;
+	color: #0061DE;
+}
+
+div.paging span.disabled {
+	padding: 2px 6px;
+	margin-right: 2px;
+	color: #ADAAAD;
+	font-weight: bold;
+}
+
+div.paging span.prevnext {
+	font-weight: bold;
+}
+
+div.paging span.prevnext a {
+	border: none;
+}
+
+div.paging span.prevnext a:hover {
+	color: #fff;
+}
+
+/* --- end of paging */
+#menu {
+	position: relative;
+	float: left;
+	top: 15px;
+	left: 10px;
+	width: 265px;
+	margin-right: 15px;
+}
+
+#menu p {
+	margin-left: 15px;
+	color: #135cab;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#menu li {
+	width: 250px;
+	border-bottom: 1px solid #969BA5;
+	margin: 8px;
+	padding: 0;
+	font-size: 80%;
+	vertical-align: bottom;
+}
+
+/*tambahan*/
+#menu ul span li.selected {
+	background-color: #eaeaea;
+}
+
+#menu a:current {
+	background-color: red;
+}
+/*tambahan end*/
+
+	
+#menu a:link,#menu a:visited {
+	display: block;
+	padding: 5px 5px 5px 20px;
+	border: 0px;
+	background-color: #125eac;
+	color: #fff;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	background-color: #009dd9;
+	color: #FFFFFF;
+}
+
+#menu ul li a.current {
+	background-color: #00adef;
+	color: #FFFFFF;
+}
+
+a:link,a:visited {
+	color: #265180;
+}
+
+a:hover {
+	color: #FF6600;
+	text-decoration: none;
+}
+
+h1 {
+	color: #135ca9;
+	font-size: 15px;
+}
+
+h1 b {
+	color: #135ca9;
+	font-size: 25px;
+}
+
+p.info_lanjut {
+	padding-left: 10px;
+	color: #fff;
+	font-size: 16px;
+}
+
+#table_transaksi {
+	margin-top: 20px;
+}
+
+#table_transaksi table th {
+	background: #97cff0;
+	color: #125eac;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#table_transaksi table tr {
+	background: #dceffd;
+	color: #125eac;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#table_transaksi table tr:nth-child(even) {
+	background: #ffffff;
+	color: #125eac;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+	color: #115da9;
+	font-size: 80%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#footer_right {
+	clear: both;
+	width: 96%;
+	color: #115da9;
+	font-size: 80%;
+	text-align: right;
+	height: 35px;
+}
+
+#footer_bg {
+	background: url(../images/footer_bg.png);
+	clear: both;
+	width: 100%;
+	height: 75px;
+}
+
+#background-footer_transaction_detail {
+	width: 100%;
+	background: #125eac;
+	height: 8px;
+	border-bottom: 2px solid #a3a4a6;
+}
+
+/*------------ navigation menu --------------*/
+#nav-top {
+	margin-left: 0px;
+	width: 500px;
+	height: 55px;
+	float: right;
+	text-align: center;
+	margin-top: 8px;
+	margin-right: 140px;
+}
+
+#nav-container {
+	margin-left: 0px;
+	width: 66px;
+	height: 47px;
+	float: right;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.nav-tentang {
+	margin-bottom: 10px;
+	width: 66px;
+	height: 47px;
+	display: block;
+	background: transparent url('../images/icon_tentang_wow.png') center top
+		no-repeat;
+	background-size: 65px 46px;
+}
+
+.nav-faq {
+	margin-bottom: 10px;
+	width: 66px;
+	height: 47px;
+	float: left;
+	background: transparent url('../images/icon_faq.png') center top no-repeat;
+	background-size: 65px 46px;
+}
+
+.nav-agen {
+	margin-bottom: 10px;
+	width: 66px;
+	height: 47px;
+	float: left;
+	background: transparent url('../images/icon_agen.png') center top no-repeat;
+	background-size: 65px 46px;
+}
+
+.nav-promo {
+	margin-bottom: 10px;
+	width: 66px;
+	height: 47px;
+	float: left;
+	background: transparent url('../images/icon_promo.png') center top
+		no-repeat;
+	background-size: 65px 46px;
+}
+
+.nav-tentang:hover {
+	background-image: url('../images/icon_tentang_wow-hover.png');
+}
+
+.nav-faq:hover {
+	background-image: url('../images/icon_faq-hover.png');
+}
+
+.nav-agen:hover {
+	background-image: url('../images/icon_agen-hover.png');
+}
+
+.nav-promo:hover {
+	background-image: url('../images/icon_promo-hover.png');
+}
+
+/*tambahan*/
+div.column {
+	padding: 0px;
+	margin: 0 0 5px 3px;
+	clear: both;
+	width: 735px;
+}
+div.column.twoColumn {
+	clear: none;
+	width: 330px;
+	/*   height: 210px; */
+	float: left;
+	padding-left: 0px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+.input label{
+	margin-bottom:10px;
+}
+
+/*button*/
+
+.acc_chk {
+	background: none repeat scroll 0 0 #F68B1F;
+	color: white;
+}

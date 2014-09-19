@@ -1,0 +1,92 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="subAccountConfirmForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="headLine.accountTransfer" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column twoColumn">
+								<div class="spacer"></div>
+								<b><span wicket:id="accountType"></span></b>
+								<div class="input">
+									<table>
+										<tr>
+											<td>
+												<label> <wicket:message key="label.name" /></label>
+											</td>
+											<td>:</td>
+											<td>
+												<label wicket:id="subAccountBean.name"></label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label> <wicket:message key="label.description" /></label>
+											</td>	
+											<td>:</td>
+											<td>
+												<label wicket:id="subAccountBean.description"></label>
+											</td>	
+										</tr>
+										<tr>
+											<td>
+												<label> <wicket:message key="label.accountId" /></label>
+											</td>
+											<td>:</td>
+											<td>
+												<label wicket:id="subAccountBean.accountId"></label>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+								<div class="input">
+									<table>
+										<tr>
+											<td>
+												<label for="transferAmount" style="width: 100px;"> 
+													<wicket:message key="label.amount" />
+													<span class="required">*</span>
+												</label>
+											</td>
+											<td>
+												<input Type="text" wicket:id="subAccountBean.amount"/>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label for="remarks" style="width: 100px;"> 
+													<wicket:message key="label.remarks" />
+												</label>
+											</td>
+											<td>
+												<textarea wicket:id="subAccountBean.remarks" rows="1" cols="30" style="border:1px solid #125EAC;"></textarea>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<input type="submit" class="submit acc_chk"
+								wicket:id="cancelButton" value="Batal" style="left: 300px" />
+							<input type="submit" class="submit acc_chk"
+								wicket:id="confirmButton" value="Konfirmasi" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

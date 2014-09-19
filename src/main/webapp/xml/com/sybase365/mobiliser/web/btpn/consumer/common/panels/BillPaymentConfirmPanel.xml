@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.billPayment">Bayar Tagihan</entry>
+	<entry key="label.biller">Tagihan</entry>
+	<entry key="label.subBiller">Provider</entry>
+	<entry key="label.amountType">Jenis Pembayaran</entry>
+	<entry key="label.charged">Tertagih</entry>
+	<entry key="label.fixed">Tetap</entry>
+	<entry key="requiredFields">Wajib isi</entry>
+	<entry key="label.baseAmount">Jumlah pokok Pembayaran</entry>
+	<entry key="baseamount.note">Instruksi Pembayaran akan diproses jika Tagihan 
+		lebih kecil dari Jumlah Pokok.</entry>
+	<entry key="addStandingInst.siName">Nama Instruksi Favorit</entry>
+	<entry key="silisttable.view.frequency">Frekuensi</entry>
+	<entry key="filterType.month">BULAN</entry>
+	<entry key="filterType.quarter">KUARTER</entry>
+	<entry key="filterType.week">MINGGUAN</entry>
+	<entry key="filterType.date">HARIAN</entry>
+	<entry key="addStandingInst.date">Mulai</entry>
+	<entry key="addStandingInst.endDate">Sampai</entry>
+	<entry key="addStandingInst.days">Hari</entry>
+	<entry key="si.billpayment.success">Instruksi Favorit untuk Pembayaran Tagihan berhasil ditambahkan.</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="amountRadioGroup.Required">Tipe Jumlah harus diisi.</entry>
+	<entry key="frequencyRadioGroup.Required">Frekuensi Harus Dipilih.</entry>
+	<entry key="billPaymentBean.baseAmount.Required">Jumlah Pokok harus diisi.</entry>
+	<entry key="billPaymentBean.baseAmount.PatternValidator">'${input}' bukan Jumlah Pokok yang valid</entry>
+	<entry key="billPaymentBean.baseAmount.AmountValidator">${input} bukan Jumlah Pokok yang valid</entry>
+	<entry key="billPaymentBean.baseAmount.IConverter.Long">${input} bukan Jumlah Pokok yang valid</entry>
+	<entry key="billPaymentBean.siName.Required">Kolom Nama Instruksi Favorit Harus Diisi.</entry>
+	<entry key="billPaymentBean.startDate.Required">Kolom Tanggal Mulai Harus Diisi.</entry>
+	<entry key="billPaymentBean.expiryDate.Required">Kolom Tanggal Selesai Harus Diisi.</entry>
+	<entry key="billPaymentBean.selectedDay.Required">Kolom Hari Harus Diisi.</entry>
+	<entry key="billPaymentBean.subBillerType.null">Pilih Tagihan</entry>
+	<entry key="billPaymentBean.subBillerType.Required">Tipe Tagihan harus diisi.</entry>
+	<entry key="billPaymentBean.phonenumber.Required">Kolom No.HP Harus Diisi.</entry>
+
+	<entry key="billPaymentBean.startDate.DateValidator.minimum">Tanggal Mulai harus lebih besar dari hari ini.</entry>
+	<entry key="billPaymentBean.expiryDate.DateValidator.minimum">Tanggal Selesai harus lebih besar dari hari ini.</entry>
+	<entry key="invalid.expiry.date">Tanggal Selesai harus lebih besar dari Tanggal Mulai.</entry>
+
+</properties>

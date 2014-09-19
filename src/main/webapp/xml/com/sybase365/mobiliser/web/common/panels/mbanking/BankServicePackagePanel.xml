@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  
+     <entry key="manageServicePackage.title">Manage Service Packages</entry>
+     <entry key="servicePackage.title">Service Package</entry>
+    
+     <entry key="editServicePackage.editBasicServicePackage">Edit Service Package Basic</entry>
+     <entry key="editServicePackage.packageName">Package Name</entry>
+     <entry key="editServicePackage.serviceCode">Service Code</entry>
+     <entry key="editServicePackage.defaultServicePackages">Default Service Package</entry>
+     <entry key="editServicePackage.supportedChannelAndDevices">Supported Channels and Devices</entry>  
+     <entry key="editServicePackage.numberOfSupportedDevices">Number of supported devices</entry> 
+    
+     <entry key="servicePackage.name">Package Name</entry>
+     <entry key="servicePackage.supportedDevices">Supported Devices</entry>
+     <entry key="servicePackage.servicePackageId">Service Code</entry>
+    
+     <entry key="editServicePackage.supportedOperations">Supported Operations</entry>
+     <entry key="editServicePackage.supportedAlert">Supported Alerts</entry> 
+     <entry key="servicePackage.AccountBalanceSummaryAlert">Account Balance Summary</entry>
+   	 <entry key="servicePackage.AccountBalanceThresholdAlert">Account Balance Threshold</entry>
+   	 <entry key="servicePackage.BankInquiryResponseAlert">Bank Inquiry Response</entry>
+   	 <entry key="servicePackage.AccountBalanceSummaryAlert">Account Balance Summary</entry>
+   	 <entry key="servicePackage.InsufficientFundsAlert">Insufficient Funds (NSF)</entry>
+   	 <entry key="servicePackage.InvalidAccountAccessAlert">Invalid Account Access</entry>
+   	 <entry key="servicePackage.PanicPayAlert">Panic Pay</entry>
+   	 <entry key="servicePackage.PasswordChangedAlert">Password Change</entry>
+   	 <entry key="servicePackage.TransactionSummaryAlert">Transaction Summary</entry>
+   	 <entry key="servicePackage.UnreadBankMessageAlert">Unread Bank Message</entry>
+   	 <entry key="servicePackage.CustomerLockoutAlert">Customer Lockout</entry>
+     
+ 	<entry key="editServicePackage.editServiceSuccess"> service package has been updated successfully.</entry>   
+  	<entry key="addServicePackage.addServiceSuccess">service package has been added successfully.</entry>   
+  	
+</properties>

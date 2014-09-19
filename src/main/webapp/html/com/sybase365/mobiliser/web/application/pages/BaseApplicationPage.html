@@ -1,0 +1,261 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div class="bodyWrap">
+
+		<div class="navBar"></div>
+
+		<div id="pageWrap">
+
+			<!-- header here -->
+			<div id="newHeader">
+
+			<!-- Application Name -->
+			<div id="applicationName" wicket:id="applicationName" />
+
+				<!-- top navigation -->
+				<ul class="topMenu right">
+
+					<wicket:enclosure child="logout">
+						<li class="topMenuItem loginName">
+							<span class="topMenuLabel"><wicket:message key="application.header.loggedinas" /></span>
+							<span wicket:id="loginDetails"></span>
+						</li>
+						<li class="topMenuItem">
+							<a href="#" wicket:id="logout"><wicket:message key="application.header.logout" /></a>
+						</li>
+					</wicket:enclosure>
+					<li class="topMenuItem last">
+						<span>
+							<a id="switchLanguageLink" href="#"><wicket:message key="application.header.language"/>
+							<img id="switchLanguageButton" src="images/button_languages.gif"/></a>
+							<script type="text/javascript">
+							$j("#switchLanguageLink").click(function () {
+								$j("#languageSelector").toggle("medium");
+							});
+							</script>
+						</span>
+					</li>
+
+				</ul>
+				<!-- end top navigation -->
+
+			</div>
+
+			<div id="languageSelector">
+				<script type="text/javascript">//<![CDATA[
+
+					function _switch() {
+					$j("#languageSelector").toggle("medium");
+					return false;
+					}
+					//]]></script>
+				<ul id="language-select">
+					<li>
+						<a onclick="_switch()" wicket:id="changeToEnglish">
+							<wicket:message key="application.header.language.english"/>
+						</a>
+					</li>
+					<li>
+						<a onclick="_switch()" wicket:id="changeToGerman">
+							<wicket:message key="application.header.language.german"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- end header -->
+
+			<!-- Page navigation bar -->
+			<div class="mainNavWrap">
+
+			<ul class="dropdown dropdown-horizontal">
+
+				<span wicket:id="menu">
+
+				<span wicket:id="menuLevel1items">
+					<li wicket:id="menuLevel1item">
+					<a href="#" wicket:id="menuLevel1link">
+						<span wicket:id="menuLevel1label">Level1kkk</span>
+					</a>
+					<span onclick="void(0);" wicket:id="menuLevel1label"/>
+					<!--span class="submenu" wicket:id="submenu">
+						[ <span wicket:id="submenuText">lvl2</span> <span wicket:id="submenu2"> <img src="images/arrow_right.gif" height="8" width="7" alt="-" /> 
+						<span wicket:id="submenuText2">lvl3</span></span> ]
+					</span-->
+					<ul>
+						<span wicket:id="menuLevel2items">
+						<li wicket:id="menuLevel2item">
+							<a href="#" wicket:id="menuLevel2link">
+							<span wicket:id="menuLevel2label">Level2</span>
+							</a>
+							<span onclick="void(0);" wicket:id="menuLevel2label"/>
+							<ul>
+							<span wicket:id="menuLevel3items">
+								<li wicket:id="menuLevel3item">
+								<a href="#" wicket:id="menuLevel3link">
+									<span wicket:id="menuLevel3label">Level3</span>
+								</a>
+								</li>
+							</span>
+							</ul>
+						</li>
+						</span>
+					</ul>
+					</li>
+				</span>
+
+				</span>
+
+				<wicket:remove>
+				<li><a href="/home">Home</a></li>
+
+				<li class="dir"><a href="/care">Customer Care</a>
+					<ul>
+					<li class=""><a href="/register">Customer Registration</a></li>
+					</ul>
+				</li>
+
+				<li class="dir selected"><a href="/config">System Configuration
+					<span class="submenu">
+						[ <span>Currency Exchange</span> <span> <img src="images/arrow_right.gif" height="8" width="7" alt="-" /> 
+						<span>History</span></span> ]
+					</span></a>
+					<ul>
+					<li class="dir selected"><a href="/cuurency">Currency Exchange</a>
+						<ul>
+						<li class="selected"><a href="/history">Exchange Rate History</a></li>
+						</ul>
+					</li>
+					<li class=""><a href="/fee">Fee Configuration</a></li>
+					<li class=""><a href="/restrictions">Restrictions</a></li>
+					</ul>
+				</li>
+				</wicket:remove>
+
+			</ul>
+
+			<!-- nav menu info -->
+			<ul class="mainNavInfo">
+				<li>
+					<span wicket:id="svaBalance"></span>
+				</li>
+			</ul>
+
+
+			<!-- end menuContainer -->
+
+			</div>
+			<!-- end navigation bar -->
+
+			<div class="contentWrap">
+
+				<div id="content">
+
+					<!-- left menu here -->
+					<!-- main content here -->
+					<wicket:child />
+
+					<noscript>
+					<div style="text-align: center; height: 200px;padding-top: 100px;">
+						<wicket:message key="noJavascript.text" />
+					</div>
+					</noscript>
+				</div>
+
+			</div>
+
+			<!-- footer -->
+			<div id="newFooter" class="clear">
+				<ul class="footerMenu left">
+					<li class="first"><wicket:message key="application.footer.copyright"/></li>
+					<li><a href="http://www.sybase.com/contactus/support" target="_blank"><wicket:message key="application.footer.contact"/></a></li>
+					<li><a href="#" onclick="alert(document.getElementById('about.name').innerHTML+'\n'+document.getElementById('about.version').innerHTML+' '+document.getElementById('about.date').innerHTML+'\n'+document.getElementById('about.tag').innerHTML+' - '+document.getElementById('about.revision').innerHTML);return false;"><wicket:message key="application.footer.about"/></a></li>
+					<li class="last" id="session.timeout.counter"></li>
+				</ul>
+				<a class="right" href="http://www.sybase.com" target="_blank"><img src="images/logos/sybaseMainLogo.png" alt="sybase corporate logo"/></a>
+			</div>
+
+			<div id="opaque" onclick="" style="display: none; "></div>
+
+		</div>
+
+		<div id="sessionEndWrapper" class="loaded" style="display: none;">
+			<div id="sessionEnd" class="content" tabindex="-1">
+				<div id="sessionEndInner">
+					<div id="sessionEndCont">
+						<div class="logoutWarning">
+							<h2><wicket:message key="application.popup.session.timeout.logout"/></h2>
+							<div class="logoutMsg">
+								<p><strong><wicket:message key="application.popup.session.timeout.help"/></strong></p>
+							</div>
+							<div id="sessionEndButton">
+								<input class="submitForm" type="submit" wicket:message="value:application.popup.session.timeout.button" onClick="window.location.replace(unescape(window.location.pathname))"></input>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="display:none;" id="about.name" wicket:id="applicationAboutName"></div>
+		<div style="display:none;" id="about.version" wicket:id="applicationAboutVersion"></div>
+		<div style="display:none;" id="about.date" wicket:id="applicationAboutDate"></div>
+		<div style="display:none;" id="about.tag" wicket:id="applicationAboutTag"></div>
+		<div style="display:none;" id="about.revision" wicket:id="applicationAboutRevision"></div>
+
+		<div style="display:none;" id="session.timeout.text"><wicket:message key="application.footer.session.timeout.text"/></div>
+		<div style="display:none;" id="session.timeout.minutes.text"><wicket:message key="application.footer.session.timeout.minutes.text"/></div>
+		<div style="display:none;" id="session.timeout.logout"><wicket:message key="application.popup.session.timeout.logout"/></div>
+		<div style="display:none;" id="session.timeout.seconds" wicket:id="application.session.timeout.seconds"></div>
+
+		<!-- /footer -->
+
+		<script type="text/javascript">
+			<!--
+			//
+			function sessionTimeoutPrint() {
+			var min = '' + parseInt(sessionTimeoutSeconds / 60);
+			var sec = '' + sessionTimeoutSeconds % 60;
+			if (sec.length == 1)
+				sec = 0 + '' + sec;
+			if (sessionTimeoutSeconds > 0) {
+				var timeoutText = document.getElementById("session.timeout.text").innerHTML;
+				var minuteText = document.getElementById("session.timeout.minutes.text").innerHTML;
+				document.getElementById("session.timeout.counter").innerHTML= timeoutText + " " + min + ":" +sec + " " + minuteText;
+			}
+			else {
+				var logoutText = document.getElementById("session.timeout.logout").innerHTML;
+				document.getElementById("session.timeout.counter").innerHTML= "Your session has timed out.";
+				document.getElementById("opaque").style.display='block';
+				document.getElementById("sessionEndWrapper").style.display='block';
+			}
+			}
+
+			var sessionTimeoutSeconds = document.getElementById("session.timeout.seconds").innerHTML;
+			sessionTimeoutPrint();
+
+			function sessionTimeoutDisplay(){
+			if (sessionTimeoutSeconds>0){
+				sessionTimeoutSeconds-=1 ;
+			}
+
+			sessionTimeoutPrint();
+			setTimeout("sessionTimeoutDisplay()",1000);
+			}
+
+			sessionTimeoutDisplay()
+			-->
+		</script>
+
+		<script type="text/javascript">
+
+		</script>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

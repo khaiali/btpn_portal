@@ -1,0 +1,123 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="interestEditForm">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="headLine.interest" /></legend>
+							<br>
+								<div wicket:id="errorMessages"></div>
+                         	<br>
+							<!-- DESCRIPTION -->
+								<div class="input">
+									<label for="desc"><wicket:message key="label.description" /><span class="required">*</span></label> 
+									<input id="desc" name="desc" wicket:id="interestBean.description"  tabindex="17" type="text" size="40" />
+								</div>
+                                
+								<!-- CUST IDENTIFIERTYPE & CUST IDENTIFIERID -->
+                                	<div class="input" style="width: 500px">
+									<label for="customerIdentifierType"><wicket:message key="label.customerIdentifierType" /><span class="required"></span></label>
+										<!--<select id="customerIdentifierType" wicket:id="interestBean.customerIdentifierType" name="customerIdentifierType" tabindex="1"></select>-->
+                                <input id="customerIdentifierType" name="customerIdentifierType" wicket:id="interestBean.customerIdentifierType"  tabindex="17" type="text" size="40" />
+							        
+								</div>
+                                <div class="input">
+									<label for="customerIdentifier"><wicket:message key="label.customerIdentifier" /><span class="required"></span></label> 
+									<input id="customerIdentifier" name="desc" wicket:id="interestBean.customerIdentifier"  tabindex="17" type="text" size="40" />
+								</div>
+								
+								<!-- CUST TYPEID -->
+								<div class="input">
+									<label for="customerTypeId"><wicket:message key="label.customerTypeId" /><span class="required"></span></label>
+										<select id="customerTypeId" wicket:id="interestBean.customerTypeId" name="customerType" tabindex="2"></select>
+								</div>
+								
+								<!-- PI Id & PI TypeId  -->
+                                  <div class="input">
+									<label for="paymentInstrument"><wicket:message key="label.paymentInstrumentId" /><span class="required"></span></label> 
+									<input id="paymentInstrument" name="paymentInstrument" wicket:id="interestBean.paymentInstrumentId"  tabindex="17" type="text" size="40" />
+								</div>
+                                
+								<div class="input">
+									<label for="paymentInstrumentType"><wicket:message key="label.paymentInstrumentTypeId" /><span class="required"></span></label>
+										<select id="creOrgUnit" wicket:id="interestBean.paymentInstrumentTypeId" name="paymentInstrumentType" tabindex="3"></select>
+								</div>
+								
+								<!-- ACC GL CODE  & EXP GL CODE-->
+								<div class="input">
+									<label for="accrueGLCode"><wicket:message key="label.accrueGLCode" /><span class="required">*</span></label>
+										<select id="accrueGLCode" wicket:id="interestBean.accrueGLCode" name="accrueGLCode" tabindex="4"></select>
+								</div>
+                                
+                                <div class="input">
+									<label for="expenseGLCode"><wicket:message key="label.expenseGLCode" /><span class="required">*</span></label>
+										<select id="expenseGLCode" wicket:id="interestBean.expenseGLCode" name="expenseGLCode" tabindex="4"></select>
+								</div>
+								
+								<!-- VALID FROM -->
+								<div class="input">
+									<label><wicket:message key="label.validFrom" /></label> 
+										<input readonly="readonly" wicket:id="interestBean.validFrom"  
+											id="fromDate" tabindex="8" type="text" size="10" 
+											style="width: 150px;" />
+								</div>
+								
+								
+								
+								<!-- FIXED FEE -->
+								<div class="input">
+									<label for="fixedFee"><wicket:message key="label.fixedFee" /><span class="required">*</span></label> 
+										<input id="fixedFee" name="fixFee" wicket:id="interestBean.fixedFee"  tabindex="10" type="text" size="40" />
+								</div>
+								
+								<!-- PERCENTAGE FEE -->
+								<div class="input">
+									<label for="percentageFee"><wicket:message key="label.percentageFee" /><span class="required">*</span></label> 
+										<input id="percentageFee" name="percentageFee" wicket:id="interestBean.percentageFee"  tabindex="11" type="text" size="40" />
+								</div>
+								
+								<!-- MAXIMUM FEE -->
+								<div class="input">
+									<label for="maximumFee"><wicket:message key="label.maximumFee" /></label> 
+										<input id="maximumFee" name="maximumFee" wicket:id="interestBean.maximumFee"  tabindex="12" type="text" size="40" />
+								</div>
+								
+								<!-- MINIMUM FEE -->
+								<div class="input">
+									<label for="minimumFee"><wicket:message key="label.minimumFee" /><span class="required">*</span></label> 
+										<input id="minimumFee" name="minimumFee" wicket:id="interestBean.minimumFee"  tabindex="13" type="text" size="40" />
+								</div>
+								
+								<!-- THRESHOLD AMOUNT -->
+								<div class="input">
+									<label for="thresholdAmount"><wicket:message key="label.thresholdAmount" /><span class="required">*</span></label> 
+										<input id="thresholdAmount" name="thresholdAmount" wicket:id="interestBean.thresholdAmount"  tabindex="14" type="text" size="40" />
+								</div>
+								
+		
+								<!-- NOTE -->
+								<div class="input">
+									<label for="not"><wicket:message key="label.note" /></label> 
+										<input id="not" name="not" wicket:id="interestBean.note"  tabindex="16" type="text" size="40" />
+								</div>
+								
+								
+								<div class="spacer"></div>
+								<div class="column">
+									<input name="submit" wicket:id="btnSubmit" wicket:message="value:Submit" class="submit acc_chk" type="submit"> 
+									<input name="cancel" wicket:id="btnCancel" wicket:message="value:Cancel" class="submit acc_chk" type="submit" style="left: 250px">
+								</div>
+                            
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

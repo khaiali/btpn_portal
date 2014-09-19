@@ -1,0 +1,62 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="holidayPanel" method="post" autocomplete="off">
+						<fieldset>
+							<div wicket:id="errorMessages"></div>
+							<legend class="reg_tab6">
+								<wicket:message key="label.header" />
+							</legend>
+							<div class="spacer"></div>
+							<div class="reg_tab_01">
+								<div class="column">
+									<span wicket:id="emptyRecordsMessage"></span>
+								</div>
+								<div class="column" wicket:id="holidayListContainer">
+									<div class="displayTag">
+										<span class="pagebanner" wicket:id="approvalHeader"></span> <span
+											class="pagelinks" wicket:id="approvalNavigator"></span>
+										<wicket:enclosure child="pageable">
+											<table id="attachmentsTable">
+												<thead>
+													<tr>
+														<th wicket:id="orderByDescription"><wicket:message
+																key="label.descritpion" /></th>
+														<th wicket:id="orderByFromDate"><wicket:message
+																key="label.fromdate" /></th>
+														<th wicket:id="orderBytoDate"><wicket:message
+																key="label.toDate" /></th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr wicket:id="pageable">
+														<td><div wicket:id="description">[description]</div></td>
+														<td><div wicket:id="fromDate">[fromDate]</div></td>
+														<td><div wicket:id="toDate">[toDate]</div></td>
+														<td><a href="#" wicket:id="deleteLink"><span
+																wicket:id="deleteLinkName">[delete]</span> </a></td>
+													</tr>
+												</tbody>
+											</table>
+										</wicket:enclosure>
+									</div>
+								</div>
+								<div class="spacer"></div>
+								<input wicket:message="value:Add" class="submit acc_chk"
+									type="submit" wicket:id="addButton">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

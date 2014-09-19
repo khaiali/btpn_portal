@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.confirmApprove">Confirm Approve</entry>
+	<entry key="headLine.confirmReject">Confirm Reject</entry>
+	<entry key="label.oldMobileNumber">Old Mobile Number</entry>
+	<entry key="label.newMobileNumber">New Mobile Number</entry>
+	<entry key="successMessage">Request Approved successfully</entry>
+	<entry key="rejectMessage">Request Rejected successfully</entry>
+
+	<entry key="pending.failure.exception">We are experiencing technical difficulties. Please try
+		again later.</entry>
+</properties>

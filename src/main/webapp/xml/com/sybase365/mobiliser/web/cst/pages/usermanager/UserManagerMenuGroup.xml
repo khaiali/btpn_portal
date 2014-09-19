@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="menu.usrmgr.data">Agent Data</entry>
+	<entry key="menu.usrmgr.changePassword">Change Password</entry>
+	<entry key="menu.usrmgr.addRolesPriv">Edit Roles/Privileges</entry>
+	<entry key="menu.usrmgr.addPrivileges">Add Privileges</entry>
+	<entry key="agent.edit.title">Edit Agent</entry>
+
+	<!-- ################# SUCCESS MESSAGE ############### -->
+	<entry key="MESSAGE.EDIT_AGENT_PERSONALDATA_UPDATED">The agent has been updated successfully.</entry>
+
+	<!-- ################# ERROR MESSAGE ############### -->
+	<entry key="ERROR.EDIT_AGENT_PERSONALDATA_FAILURE">An internal error occurred while updating Personal
+		Data. Please try again later.</entry>
+	<entry key="customer.update.error">An error occurred while updating customer details</entry>
+
+	<!-- #####################Add Role/Privileges########################### -->
+	<entry key="editRolePriv.titile">Edit Role/Privileges</entry> 
+    <entry key="editRole.titile">Edit Role</entry> 
+    <entry key="editPriv.titile">Edit Privilege</entry> 
+  
+
+    <!-- ############# Change Password Page ############# -->
+    <entry key="changePassword.title">Change Password</entry>
+    <entry key="changePassword.help">Please enter your new password</entry>
+    
+    <entry key="changePassword.newPassword">New Password</entry>
+    <entry key="changePassword.confirmPassword">Confirm Password</entry>
+
+    <entry key="change.password.success">Your password has been changed successfully</entry>
+    <entry key="change.password.error">An error occurred while updating the password</entry>
+    <entry key="confirmPassword.Required">Confirm Password is required</entry>
+    
+    <entry key="selected.context.role">Role</entry>
+    <entry key="selected.context.privilege">Privilege</entry>
+    <entry key="selected.context.description.key">Description: </entry>
+    
+    <!-- ############# Approve agents ############# -->
+    <entry key="agent.approved.successfull">The agent has been approved successfully</entry>
+    <entry key="agent.approval.error">An error occurred while approving the agent</entry>
+    <entry key="agent.rejection.error">An error occurred while rejecting the agent</entry>
+    <entry key="agent.rejected.successfull">The agent has been rejected successfully</entry>
+    <entry key="pending.agents.title">Approve/Reject Agent</entry>
+  
+
+</properties>

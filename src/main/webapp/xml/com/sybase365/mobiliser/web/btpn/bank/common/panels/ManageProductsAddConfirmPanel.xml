@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<!-- ############# BTPN ############# -->
+	<entry key="header.addProduct"> Add Product </entry>
+	<entry key="label.productId"> Product Id </entry>
+	<entry key="label.productName"> Product Name </entry>
+	<entry key="label.productType"> Product Type </entry>
+	<entry key="label.productGLCode"> Product GL Code </entry>
+	<entry key="label.feeGLCode"> Fee GL Code </entry>
+	<entry key="label.minBal"> Min. Balance </entry>
+	<entry key="label.initialDep"> Initial Deposit </entry>
+	<entry key="label.adminFee"> Admin Fee </entry>
+	<entry key="label.minRange">Min Range</entry>
+	<entry key="label.maxRange">Max Range</entry>
+	<entry key="label.interests">Interests</entry>
+	<entry key="label.interests.fixed">Fixed Interest</entry>
+	<entry key="label.interests.percentage">Percent Interest</entry>
+	<entry key="Confirm">Confirm</entry>
+	<entry key="Cancel">Cancel</entry>
+	<entry key="currency">IDR </entry>
+	<entry key="default.percentage">0.0 </entry>
+	<entry key="default.fixed">0</entry>
+	<entry key="percentage"> %</entry>
+	<entry key="label.roleName">Role Name</entry>
+	<entry key="label.roleDescription">Role Description</entry>
+
+	<entry key="error.create.products">An error occured while adding
+		product.</entry>
+	<entry key="confirm.success">Product submitted successfully for approval.</entry>
+	<entry key="removed.success">Product removed successfully for approval.</entry>
+	<entry key="error.10013">Product name already exists.</entry>
+	<entry key="error.10043">Role Name already exists.</entry>
+	<entry key="error.10040">Role description already exists.</entry>
+
+</properties>

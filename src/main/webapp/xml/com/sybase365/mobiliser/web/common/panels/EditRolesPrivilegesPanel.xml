@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="editRole.privileges.title">Please select the privileges you want to grant to the role</entry>
+	<entry key="editPrivilege.roles.title">Please select the roles you want to grant to the privilege</entry>
+	<entry key="availableRoles">Available Roles</entry>
+	<entry key="editRolePrivilege.button.addRole">Add To Privilege</entry>
+	<entry key="assignedRoles">Assigned Roles</entry>
+	<entry key="editRolePrivilege.button.removeRole">Remove From Privilege</entry>
+	<entry key="availablePrivileges">Available Privileges</entry>
+	<entry key="editRolePrivilege.button.addPrivilege">Add To Role</entry>
+	<entry key="assignedPrivileges">Assigned Privileges</entry>
+	<entry key="editRolePrivilege.button.removePrivilege">Remove From Role</entry>
+	<entry key="ERROR.REMOVE_PRIVILEGE">An internal error occurred. Please try again</entry>
+	<entry key="ERROR.ADD_PRIVILEGE">An internal error occurred. Please try again</entry>
+	<entry key="ERROR.REMOVE_ROLE">An internal error occurred. Please try again</entry>
+    <entry key="ERROR.ADD_ROLE">An internal error occurred. Please try again</entry>
+    <entry key="availableRoles.Required">Select the role(s) to add</entry>
+    <entry key="assignedRoles.Required">Select the role(s) to remove</entry>
+    <entry key="availablePrivileges.Required">Select the privilege(s) to add</entry>
+    <entry key="assignedPrivileges.Required">Select the privilege(s) to remove</entry>
+    <entry key="find.filter.name">Filter</entry>
+</properties>

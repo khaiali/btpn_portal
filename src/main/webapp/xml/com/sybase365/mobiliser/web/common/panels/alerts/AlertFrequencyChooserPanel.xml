@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+    <entry key="manageAlerts.notificationLimit">Notification Limit</entry>
+	<entry key="frequency.frequencyNoLimitCheck">No Limit</entry>
+	<entry key="frequency.durationFrequency">In Duration</entry>
+	<entry key="frequency.maxFrequency">Max</entry>
+	<entry key="alertFrequencyChooserBean.durationFrequency">Duration</entry>
+	<entry key="alertFrequencyChooserBean.maxFrequency.AmountValidator">${input}' is not a valid Max</entry>
+	<entry key="alertFrequencyChooserBean.maxFrequency">Max</entry>
+	
+</properties>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <entry key="manageAlerts.addAction">Add</entry>
+    <entry key="manageAlerts.actions">Actions</entry>
+    
+    <entry key="manageAlerts.alertOptionsTable.title">Alert Options</entry>
+    <entry key="manageAlerts.alertOptionsTable.name">Name</entry>
+    <entry key="manageAlerts.alertOptionsTable.description">Description</entry>
+    
+    <entry key="manageAlerts.name.1">Account Balance Summary</entry>
+    <entry key="manageAlerts.name.2">Account Balance Threshold</entry>
+    <entry key="manageAlerts.name.3">Bank Inquiry Response</entry>
+    <entry key="manageAlerts.name.4">Customer Lockout</entry>
+    <entry key="manageAlerts.name.5">Insufficient Funds (NSF)</entry>
+    <entry key="manageAlerts.name.6">Invalid Account Access</entry>
+    <entry key="manageAlerts.name.7">Panic Pay</entry>
+    <entry key="manageAlerts.name.8">Password Change</entry>
+    <entry key="manageAlerts.name.9">Transaction Summary</entry>
+    <entry key="manageAlerts.name.10">Unread Bank Message</entry>
+    
+    <entry key="manageAlerts.desc.1">This alert notifies you daily of your prior closing balance for the selected account</entry>
+    <entry key="manageAlerts.desc.2">This alert notifies you daily when an account balance goes over or under a certain amount</entry>
+    <entry key="manageAlerts.desc.3">This alert notifies you immediately when your secure inbox contains a bank response to one of your queries</entry>
+    <entry key="manageAlerts.desc.4">This alert notifies you immediately when your account has been locked out after repeated login attempts with invalid authentication credentials</entry>
+    <entry key="manageAlerts.desc.5">This alert notifies you daily when a transaction fails due to an insufficient account balance</entry>
+    <entry key="manageAlerts.desc.6">This alert notifies you immediately when your account has a login attempt with invalid authentication credentials</entry>
+    <entry key="manageAlerts.desc.7">This alert notifies you daily when an unpaid bill is approaching it's due date</entry>
+    <entry key="manageAlerts.desc.8">This alert notifies you immediately when your password is changed</entry>
+    <entry key="manageAlerts.desc.9">This alert notifies you daily if any cleared transaction meets your selected criteria</entry>
+    <entry key="manageAlerts.desc.10">This alert notifies you daily when you have unread messages in your secure inbox</entry>
+    
+    <entry key="mobileAlerts.alertsTable.noItemsMsg">No alert entries found</entry>
+    
+    <entry key="manageAlerts.store.primary.error">Could not store primary account</entry>
+    <entry key="manageAlerts.bank.load.error">Could not load bank account list</entry>
+    <entry key="manageAlerts.creditcard.load.error">Could not load credit card list</entry>
+    <entry key="manageAlerts.sva.load.error">Could not load SVA account</entry>
+    <entry key="manageAlerts.error">An error has occurred. Please try Again</entry>
+
+</properties>

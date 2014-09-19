@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="history.filterType">Search By : </entry>
+  <entry key="history.filterType.month">By Month</entry>
+  <entry key="history.filterType.date">By Date</entry>
+  <entry key="history.month">Month</entry>
+  <entry key="history.fromDate">From Date</entry>
+  <entry key="history.toDate">To Date</entry>
+  <entry key="history.fileName">File Name</entry>
+  <entry key="history.mimeType">File Type</entry>
+  <entry key="history.Lid">Id</entry>
+  <entry key="history.type">File Type</entry>
+  <entry key="history.name">File Name</entry>
+  <entry key="history.date">Upload Date</entry>
+  <entry key="history.status">Status</entry>
+  <entry key="bulk.processing.load.filetypes.error">An error occurred while loading bulk file types</entry>
+  <entry key="search.files.noItemMsg">No Files found</entry>
+  <entry key="search.history.files.error">An error occurred while searching for files</entry>
+</properties>

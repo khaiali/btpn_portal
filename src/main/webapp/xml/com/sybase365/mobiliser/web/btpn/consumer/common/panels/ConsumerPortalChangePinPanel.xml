@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.changePin">Silahkan ganti PIN HP anda</entry>
+	<entry key="label.oldPin">PIN Lama</entry>
+	<entry key="label.newPin">PIN Baru</entry>
+	<entry key="label.confirmNewPin">Konfirmasi PIN Baru</entry>
+	<entry key="requiredFields">Wajib isi</entry>
+	<entry key="changePin.attempts">Anda Punya 2 Sisa Kesempatan Lagi.</entry>
+	<entry key="pin.same">PIN Lama dan Baru Tidak Boleh Sama.</entry>
+	<entry key="Pin.lenth">Konfirmasi PIN Baru harus terdiri dari 6 karakter.</entry>
+	<entry key="Pin.notMatch">PIN yang Anda masukkan tidak sesuai. Silahkan periksa PIN Anda dan coba kembali.</entry>
+	<entry key="changePinSuccessMessage">Anda telah berhasil mengubah PIN anda.</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="changePinBean.oldPin.Required">Kolom PIN Lama harus diisi.</entry>
+	<entry key="changePinBean.newPin.Required">Kolom PIN Baru harus diisi.</entry>
+	<entry key="changePinBean.confirmNewPin.Required">Kolom Konfirmasi PIN Baru harus diisi.</entry>
+	<entry key="changePinBean.confirmNewPin.PatternValidator">Konfirmasi PIN Baru harus terdiri dari 6 karakter.</entry>
+
+</properties>

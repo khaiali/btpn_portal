@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <!-- ############ Find Customer For Report Helper Panel ############ -->
+  <entry key="findCustomer.help">Search on customer for report  (use * for wildcard):</entry>
+  <entry key="msisdn">MSISDN</entry>
+  <entry key="firstName">First Name</entry>
+  <entry key="lastName">Last Name</entry>
+
+  <entry key="report.search.customer.found">Customer(s) found, use drop-down on left to select customer for report</entry>
+  <entry key="report.search.customer.none">No customer(s) found</entry>
+  <entry key="report.search.customer.entry.required">Please enter at least one of First Name, Last Name and MSISDN</entry>
+  <entry key="report.search.customer.error">An error occurred in the search. Please try again</entry>
+  
+  <entry key="msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+
+</properties>

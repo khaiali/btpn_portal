@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.BtpnBankAccount">Kirim Uang ke Rekening Bank BTPN</entry>
+	<entry key="header.OtherBankAccount">Kirim Uang ke Rekening Bank Lainnya</entry>
+	<entry key="header.skn">Kirim Uang ke SKN</entry>
+	<entry key="header.rtgs">Kirim Uang ke RTGS</entry>
+	<entry key="fundTransfer.beneficiaryAccNo">Nomor Rekening Bank Lainnya</entry>
+	<entry key="fundTransfer.entermanually">Masukan</entry>
+	<entry key="fundTransfer.selectFavoriteList">Pilih dari Daftar Favorit</entry>
+	<entry key="fundTransfer.bankCode">Kode Bank</entry>
+	<entry key="fundTransfer.beneficiaryName">Nama Pemilik Rekening</entry>
+	<entry key="fundTransfer.amount">Jumlah</entry>
+	<entry key="fundTransfer.accountNo">Nomor Rekening</entry>
+	<entry key="fundTransfer.favoriteList">Daftar Favorit</entry>
+
+	<entry key="requiredFields">Wajib isi</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="fundTransfer.amount.Required">Kolom Jumlah harus diisi.</entry>
+	<entry key="fundTransfer.accountNo.Required">Kolom Nomor Rekening harus diisi.</entry>
+	<entry key="fundTransfer.favoriteNum.Required">Kolom Nomor Favorit harus diisi.</entry>
+	<entry key="fundTransfer.amount.PatternValidator">'${input}' bukan Jumlah yang valid.</entry>
+	<entry key="fundTransfer.amount.AmountValidator">${input} bukan Jumlah yang valid.</entry>
+	<entry key="fundTransfer.amount.IConverter.Long">${input} bukan Jumlah yang valid.</entry>
+	<entry key="fundTransfer.accountType.null">Pilih Tipe Rekening</entry>
+	<entry key="fundTransfer.accountType.Required">Mohon pilih Tipe Rekening.</entry>
+	<entry key="fundTransfer.accountType.PatternValidator">'${input}' bukan Nomor Handphone yang valid.</entry>
+	<entry key="fundTransfer.accountNo.PatternValidator">${input} bukan Nomor Rekening yang valid.</entry>
+
+</properties>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="openBillList.title">Open Bills</entry>
+    <entry key="openBillList.name">Name</entry>
+    <entry key="openBillList.type">Type</entry>
+    <entry key="openBillList.reference">Reference</entry>
+    <entry key="openBillList.billReference">Bill Ref.</entry>
+    <entry key="openBillList.date">Date</entry>
+    <entry key="openBillList.amount">Amount</entry>
+    <entry key="openBillList.actions">Actions</entry>
+    <entry key="openBillList.payAction">Pay</entry>
+    <entry key="openBillList.cancelAction">Cancel</entry>          
+    <entry key="openBillList.noItemsMsg">No open bills found.</entry>
+    <entry key="openBillList.load.error">Not able to load open bills data.</entry>    
+</properties>

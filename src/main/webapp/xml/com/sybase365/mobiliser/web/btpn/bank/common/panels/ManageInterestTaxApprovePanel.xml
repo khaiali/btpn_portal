@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+	<entry key="headLine.interestTax">Interest Tax Management Approval</entry>
+	<entry key="label.fromDate"> From Date </entry>
+	<entry key="label.toDate"> To Date </entry>
+	<entry key="interest.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="interest.emptyRecordsMessage">Nothing found to display.</entry>
+	<entry key="label.id"> ID </entry>
+	<entry key="label.description"> Description </entry>
+	<entry key="label.modifiedName"> Last Modified Name </entry>
+</properties>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="viewprofile.customerinformation">Informasi Nasabah</entry>
+	<entry key="customer.registration.displayname">Nama</entry>
+	<entry key="customer.registration.maidenName">Nama Ibu Kandung</entry>
+	<entry key="customer.edit.address.country">Nationality</entry>
+	<entry key="customer.edit.address.job">Pekerjaan</entry>
+	<entry key="customer.register.accountPurpose">Tujuan Rekening</entry>
+	<entry key="customer.register.Income">Penghasilan</entry>
+	<entry key="customer.edit.address.highRiskCustomer">Nasabah Resiko Tinggi</entry>
+	<entry key="customer.edit.atmCard">Nomor Kartu ATM</entry>
+	<entry key="customer.edit.address.email">Email ID</entry>
+	<entry key="customer.edit.address.privatePhone">Nomor Nasabah</entry>
+	<entry key="customer.edit.address.businessPhone">Nama Panggilan</entry>
+	<entry key="consumer.edit.main.idExpDate">Tanggal Kadaluarsa</entry>
+	<entry key="consumer.edit.main.isOptimaActive">Optima Active</entry>
+	<entry key="customer.edit.address.employeeID">Employee ID</entry>
+	<entry key="customer.edit.address.maritialstatus">Status Perkawinan</entry>
+	<entry key="customer.registration.birthPlace">Tempat Lahir</entry>
+	<entry key="customer.registration.occupation">Pekerjaan</entry>
+	<entry key="customer.edit.address.industrySector">Sektor Industri</entry>
+	<entry key="customer.register.sourceFund">Sumber Dana</entry>
+	<entry key="customer.edit.address.iDCardNo">ID Card No</entry>
+	<entry key="customer.edit.address.iDType">ID Type</entry>
+	<entry key="customer.edit.address.highRiskBusiness">Bisnis Resiko Tinggi</entry>
+	<entry key="customer.registration.gender">Jenis Kelamin</entry>
+	<entry key="consumer.edit.main.birthDate">Tanggal Lahir</entry>
+	<entry key="consumer.edit.main.isTaxExempted">Pengecualian Pajak</entry>
+	<entry key="customer.edit.address.mobileNo">Nomor HP</entry>
+	<entry key="customer.registration.street1">Alamat 1</entry>
+	<entry key="customer.registration.street2">Alamat 2</entry>
+	<entry key="customer.contact.address.info">Kontak &amp; Alamat</entry>
+	<entry key="label.religion">Agama</entry>
+	<entry key="label.lastEducation">Pendidikan Terakhir</entry>
+	<entry key="label.foreCastTransaction">Transaksi Prediksi</entry>
+	<entry key="label.taxCardNumber">Nomor Kartu Pajak</entry>
+	<entry key="label.province">Provinsi</entry>
+	<entry key="label.city">Kota</entry>
+	<entry key="label.zipcode">Kode Pos</entry>
+	<entry key="label.marketingSourceCode">Kode Sumber Marketing</entry>
+	<entry key="label.referralNumber">Referral Number</entry>
+	<entry key="label.agentCode">Kode Agen</entry>
+</properties>

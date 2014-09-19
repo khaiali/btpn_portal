@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="confirmFile.filterType">Search By : </entry>
+  <entry key="confirmFile.filterType.month">By Month</entry>
+  <entry key="confirmFile.filterType.date">By Date</entry>
+  <entry key="confirmFile.month">Month</entry>
+  <entry key="confirmFile.fromDate">From Date</entry>
+  <entry key="confirmFile.toDate">To Date</entry>
+  <entry key="confirmFile.month">Month</entry>
+  <entry key="confirmFile.fileName">File Name</entry>
+  <entry key="confirmFile.mimeType">File Type</entry>
+  <entry key="confirm.name">Name</entry>
+  <entry key="confirm.type">File Type</entry>
+  <entry key="confirm.date">Upload Date</entry>
+  <entry key="confirm.id">Id</entry>
+  <entry key="bulk.processing.load.filetypes.error">An error occurred while loading bulk file types</entry>
+  <entry key="search.confirm.files.error">An error occured while searching for pending files</entry>
+  <entry key="search.files.noItemMsg">No Files found</entry>
+</properties>

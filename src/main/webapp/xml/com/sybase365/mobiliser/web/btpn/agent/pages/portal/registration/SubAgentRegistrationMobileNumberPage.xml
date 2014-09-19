@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="registrationType.default.key">subAgent</entry>
+	<entry key="registrationType.default.value">subAgent</entry>
+	<entry key="nationality.default.key">ID</entry>
+	<entry key="nationality.default.value">Indonesia </entry>
+	<entry key="recieptmode.default.key">1</entry>
+	<entry key="recieptmode.default.value">SMS</entry>
+	<entry key="optimaactivated.default.key">N</entry>
+	<entry key="optimaactivated.default.value">No</entry>
+</properties>

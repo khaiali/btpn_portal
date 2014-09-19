@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.enter.pin">Mohon masukkan PIN Anda untuk melakukan Transaksi.</entry>
+	<entry key="label.telco">Operator </entry>
+	<entry key="label.amount">Jumlah Isi </entry>
+	<entry key="label.feeAmount">Biaya Admin </entry>
+	<entry key="label.msisdn">Isi Pulsa </entry>
+	<entry key="label.pin">Pin</entry>
+	<entry key="Submit">Masuk</entry>
+	<entry key="label.login.PIN">Mohon masukkan PIN Anda untuk melakukan Transaksi.</entry>
+	<entry key="airtimeBean.pin.Required">Kolom PIN harus diisi.</entry>
+	<entry key="success.perform.airitime">Isi Pulsa telah berhasil dilakukan.</entry>
+	<entry key="error.perform.airitime">Isi Pulsa Gagal.</entry>
+	<entry key="error.invalid.pin">PIN yang Anda masukkan salah, Mohon coba kembali.</entry>
+
+	<entry key="error.3024">Gagal, Silahkan coba beberapa saat lagi.</entry>
+	<entry key="error.3025">Gagal, Ada gangguan pada operator.</entry>
+	<entry key="error.3026">Gagal, Ditolak oleh provider.</entry>
+	<entry key="error.3027">Gagal, Transaksi telah di-refund, silahkan mengualang kembali.</entry>
+	<entry key="error.3028">Gagal, NO HP tidak tersedia.</entry>
+	<entry key="error.3029">Gagal, Denom tidak terdaftar.</entry>
+	<entry key="error.3030">Sedang dalam proses transaksi.</entry>
+	<entry key="error.3040">Gagal, Error koneksi ke provider</entry>
+	<entry key="error.3041">Gagal, Denom sedang gangguan.</entry>
+	<entry key="error.3042">Gagal, Prefix tidak benar.</entry>
+	<entry key="error.3043">Transaksi masih dalam proses.</entry>
+	<entry key="error.3045">Isi pulsa gagal.</entry>
+	<entry key="error.8000">Gagal koneksi ke middleware.</entry>
+</properties>

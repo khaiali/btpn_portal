@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="label.userProfile">User Profile</entry>
+	<entry key="label.userId"> UserId</entry>
+	<entry key="label.userName"> Name</entry>
+	<entry key="label.userDesignation"> Designation</entry>
+	<entry key="label.userEmail"> Email-Id</entry>
+	<entry key="label.userTerritoryCode"> Territory Code</entry>
+	<entry key="label.denotes.mandatory"> Denotes Mandatory Field</entry>
+	<entry key="Update">Update</entry>
+	<entry key="Cancel">Cancel</entry>
+
+	<!-- Required Validation Messages -->
+	<entry key="bankStaff.userId.Required">User Name is a required field</entry>
+	<entry key="bankStaff.name.Required">Name is a required field</entry>
+	<entry key="bankStaff.designation.Required">Designation is a required field</entry>
+	<entry key="bankStaff.email.Required">Email Id is a required field</entry>
+
+	<!-- Pattern Validation Messages -->
+	<entry key="bankStaff.userId.PatternValidator">${input} is not a valid User Name</entry>
+	<entry key="bankStaff.territoryCode.PatternValidator">${input} is not a valid Territory Code</entry>
+	<entry key="bankStaff.email.PatternValidator">${input} is not a valid Email Id</entry>
+
+	<entry key="update.success">User data updated successfully.</entry>
+	<entry key="fetch.error">An error occured while fetching profile data</entry>
+	<entry key="update.error">An error occured while updating profile data</entry>
+</properties>

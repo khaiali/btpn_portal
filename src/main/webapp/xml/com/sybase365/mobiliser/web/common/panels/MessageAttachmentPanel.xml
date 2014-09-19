@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="attachment.title">Attachment</entry>
+  <entry key="attachment.name">Attachment Name</entry>
+  <entry key="attachment.contentType">Content Type</entry>
+  <entry key="attachment.charset">Charset</entry>
+  <entry key="content.upload">Content</entry>
+  <entry key="addAttachments.button.add">Save</entry>
+  <entry key="attachment.name.Required">Attachment Name is required</entry>
+  <entry key="addAttachments.file.required">Content is required</entry>
+  <entry key="create.attachment.success">Attachment created successfully</entry>
+  <entry key="create.attachment.error">Error in creating attachment</entry>
+  <entry key="update.attachment.success">Attachment updated successfully</entry>
+  <entry key="update.attachment.error">Error in updating attachment</entry>
+  <entry key="upload.attachment.error">Unable to upload attachment</entry>
+  <entry key="edit.wrong.type.error">This file seems to have the wrong type. Please choose a file with the same type as the old attachment.</entry>
+</properties>

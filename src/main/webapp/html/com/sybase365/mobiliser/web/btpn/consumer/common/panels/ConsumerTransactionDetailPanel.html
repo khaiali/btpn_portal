@@ -1,0 +1,150 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+</wicket:head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div id="centerContent" class="content">
+				<form wicket:id="consumerTxnPanel">
+					<fieldset>
+						<legend class="reg_tab">
+							<h2><wicket:message key="label.header" /></h2>
+						</legend>
+						<div wicket:id="errorMessages"></div>
+						<div class="column twoColumn">
+							<div class="input">
+								<label>
+									<wicket:message key="transactionHistroy.filterType" />
+									<span class="required">*</span>
+								</label>
+								<div  style="margin-top:10px;" class="group" wicket:id="searchData.filterType">
+									<input id="transactionHistroy.filterType.month" class="radio" type="radio" wicket:id="radio.month"> 
+									
+									<label><wicket:message key="transactionHistroy.filterType.month" /></label>
+									
+									<div class="spacer"></div>
+									
+									<input id="transactionHistroy.filterType.date" class="radio" type="radio" wicket:id="radio.date"> 
+									<label>
+										 <wicket:message key="transactionHistroy.filterType.date" />
+									</label>
+								</div>
+								<div class="column">
+									<span class="required">*</span>Wajib isi
+								</div>
+							</div>
+						</div>
+						
+						<div wicket:id="monthMarkupContainer">
+							<div class="input">
+								<table>
+									<tr>
+										<td>
+											<label for="usecaseid">
+												<wicket:message	key="transactionHistory.month" /><span class="required">*</span>
+											</label>
+										</td>
+										<td><select wicket:id="searchData.month"></select></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div wicket:id="dateMarkupContainer">
+							<div class="input">
+								<table>
+									<tr>
+										<td>
+											<label>
+												<wicket:message key="transactionHistory.fromDate" /><span class="required">*</span>
+											</label> 
+										</td>
+										<td>
+											<input wicket:id="searchData.fromDate" style="width: 70px" readonly="readonly"	id="fromDate" type="text">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label> 
+												<wicket:message key="transactionHistory.toDate" /><span
+												class="required">*</span>
+											</label> 
+										</td>
+										<td>										
+											<input wicket:id="searchData.toDate" style="width: 70px" id="toDate" readonly="readonly" type="text">
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="input">
+							<table>
+								<tr>
+									<td>
+										<label><wicket:message key="transactionHistory.transactionType"/></label>
+									</td>
+									<td>
+										<select wicket:id="searchData.txnType"></select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label><wicket:message key="transactionHistory.subAccount" /></label>
+									</td>
+									<td>
+										<select wicket:id="searchData.subAccount"></select>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<input name="showTransactions" value="Cari" class="submit acc_chk" type="submit" wicket:id="searchButton">
+						<div class="spacer"></div>
+						<div class="spacer"></div>
+						<div class="displayTag" wicket:id="txnDataContainer">
+							<label wicket:id="no.items"></label>
+							 <span class="pagebanner" wicket:id="approvalHeader"></span> 
+							 <span class="pagelinks" wicket:id="approvalNavigator"></span>
+							<wicket:enclosure child="pageable">
+								<div id="table_transaksi">
+								<table id="filesTable">
+									<thead>
+										<tr>
+											<th wicket:id="orderByDate"><wicket:message	key="label.date" /></th>
+											<th wicket:id="orderByTxnId"><wicket:message key="label.txnId" /></th>
+											<th wicket:id="orderByType"><wicket:message	key="label.type" /></th>
+											<th wicket:id="orderByDetails"><wicket:message key="label.details" /></th>
+											<th wicket:id="orderByFee"><wicket:message key="label.fee" /></th>
+											<th wicket:id="orderByDebitDesc"><wicket:message key="label.debitDesc" /></th>
+											<th wicket:id="orderByAmount"><wicket:message key="label.amount" /></th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr wicket:id="pageable">
+											<td style="text-align: center;"><span wicket:id="date"></span></td>
+											<td wicket:id="txnId" style="text-align: center;"></td>
+											<td wicket:id="type"></td>
+											<td style="text-align: left;" wicket:id="details"></td>
+											<td style="width:75px; text-align: right;" wicket:id="fee"></td>
+											<td style="width:75px; text-align: right;" wicket:id="debitDesc"></td>
+											<td style="width:75px; text-align: right;" wicket:id="amount"></td>
+											<td><a href="#" wicket:id="detailsLink" ><span wicket:id="detailsLinkName">[hapus]</span> </a></td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</wicket:enclosure>
+							<div wicket:id="exportContainer" class="exportlinks"><wicket:message key="label.exportOptions" />
+								<a wicket:id="csvLink" href="#"><span class="export csv"><wicket:message key="label.csv" /></span></a>
+							</div>							
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

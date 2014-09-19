@@ -1,0 +1,82 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="mobileAlertsOptionsForm">
+
+		<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+			<div class="module clear" wicket:id="alertsListContainer">
+			
+				<h2 class="section preference">
+					<wicket:message key="manageAlerts.alertOptionsTable.title" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="alStartIndex" /> - <span wicket:id="alEndIndex" /> (<span wicket:id="alTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="alNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="alertOptionsTable" class="listTable">
+						
+							<wicket:enclosure child="alPageable">
+							
+								<thead>
+									<tr>
+										<th style="width:25%" class="name" wicket:id="alOrderByName"><wicket:message key="manageAlerts.alertOptionsTable.name" /></th>
+										<th style="width:55%" class="description"><wicket:message key="manageAlerts.alertOptionsTable.description" /></th>
+										<th style="width:20%" class="actions last"><wicket:message key="manageAlerts.actions" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="3"></td>
+									</tr>
+								</tfoot>
+								
+								<tbody>
+									<tr wicket:id="alPageable">
+										<td><span wicket:id="alName">[Alert Type]</span></td>
+										<td><span wicket:id="alDescription">[Description]</span></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="alAddAction"><wicket:message key="manageAlerts.addAction">[Add]</wicket:message> </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+						
+						<div id="noItemsMsg" class="centerMsg" wicket:id="alNoItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			
+			<div class="column">
+				<div class="buttonWrap">
+					<input type="submit" class="submitForm" wicket:id="back" wicket:message="value:Back" />
+				</div>
+			</div> 
+
+	</form>
+
+
+</wicket:panel>
+
+</body>
+</html>

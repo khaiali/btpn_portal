@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.cashout">Cash-out</entry>
+	<entry key="label.cashOut.success.cashoutAmount">Cash-out Amount</entry>
+	<entry key="label.cashOut.success.fee">Fee</entry>
+	<entry key="label.cashOut.success.total">Total</entry>
+
+	<entry key="cashOut.success.credit">has been successfully credited. Account balance is
+		now...
+	</entry>
+	<entry key="cashOut.success.debit">has been successfully debited from mobile account
+		number :</entry>
+
+	<entry key="label.print">Print Receipt</entry>
+
+</properties>

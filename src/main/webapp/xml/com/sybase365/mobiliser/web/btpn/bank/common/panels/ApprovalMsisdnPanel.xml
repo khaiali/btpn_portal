@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.approvalList">Approval List</entry>
+	<entry key="label.noDataFound">No data found.</entry>
+	<entry key="label.createdby">Created By</entry>
+	<entry key="label.customer">Customer</entry>
+	<entry key="label.changeRequest">Change Request</entry>
+	<entry key="label.oldMobile">Old Mobile</entry>
+	<entry key="label.newMobile">New Mobile</entry>
+	<entry key="label.status">Status</entry>
+
+	<entry key="approval.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="pending.failure.error">An error occured while fetching approval list.</entry>
+	<entry key="selected.details.failure.error">An error occured while fetching selected approval
+		details.</entry>
+	<entry key="pending.failure.exception">We are experiencing technical difficulties. Please try
+		again later.</entry>
+</properties>

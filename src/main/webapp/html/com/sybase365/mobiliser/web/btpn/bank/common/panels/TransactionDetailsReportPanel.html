@@ -1,0 +1,94 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+</wicket:head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div id="centerContent" class="content">
+				<form wicket:id="consumerTxnPanel">
+					<fieldset>
+						<legend class="reg_tab">
+							<wicket:message key="label.header" />
+						</legend>
+						<div wicket:id="errorMessages"></div>
+							<div class="input">
+								<label><wicket:message key="transactionHistory.fromDate" />
+								<span class="required">*</span></label> 
+								<input wicket:id="searchData.fromDate" readonly="readonly"	id="fromDate" type="text">
+							</div>
+						<div class="input">
+							<label> <wicket:message key="transactionHistory.toDate" /><span
+								class="required">*</span></label> 
+							<input wicket:id="searchData.toDate" id="toDate" readonly="readonly" type="text">
+						</div>
+						<div class="input">
+							<label><wicket:message
+									key="transactionHistory.agentMsisdn" />
+									<span class="required">*</span> </label>
+							<input wicket:id="searchData.agentMsisdn" type="text">
+						</div>
+						<div class="input">
+							<label><wicket:message
+									key="transactionHistory.agentType" /> </label>
+							<input wicket:id="searchData.agentType" type="text">
+						</div>
+						<div class="input">
+							<label><wicket:message key="transactionHistory.reportScope" /></label>
+							 <select wicket:id="searchData.reportScope" style="width:200px">
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message
+									key="transactionHistory.transactionType" /> </label> <select
+								wicket:id="searchData.txnType">
+							</select>
+						</div>		
+						<div class="spacer"></div>							
+						<div class="column">
+							<input name="showTransactions" value="Submit" class="submit acc_chk" type="submit" wicket:id="searchButton">
+						</div>						
+						<div class="spacer"></div>
+						<div class="displayTag" wicket:id="txnDataContainer">
+							<label wicket:id="no.items"></label>
+							 <span class="pagebanner" wicket:id="approvalHeader"></span> 
+							 <span class="pagelinks" wicket:id="approvalNavigator"></span>
+							<wicket:enclosure child="pageable">
+								<table id="filesTable">
+									<thead>
+										<tr>
+											<th wicket:id="orderByDate"><wicket:message	key="label.date" /></th>
+											<th wicket:id="orderByCustomerAccount"><wicket:message	key="label.customerAccount" /></th>
+											<th wicket:id="orderByAgentType"><wicket:message key="label.agentType"/></th>
+											<th wicket:id="orderByAgentId"><wicket:message key="label.agentId" /></th>
+											<th wicket:id="orderByTransactionType"><wicket:message	key="label.transactionType" /></th>
+											<th wicket:id="orderByAmount"><wicket:message key="label.amount" /></th>
+											<th wicket:id="orderByBiller"><wicket:message key="label.biller" /></th>
+											<th wicket:id="orderByBeneificary"><wicket:message key="label.beneificary" /></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr wicket:id="pageable">
+											<td style="text-align: center;"><span wicket:id="date"></span></td>
+											<td wicket:id="customerAccount"></td>
+											<td wicket:id="agentType"></td>
+											<td wicket:id="agentId" style="text-align: center;"></td>
+											<td style="text-align: left;" wicket:id="transactionType"></td>
+											<td style="text-align: left;" wicket:id="amount"></td>
+											<td style="width:75px; text-align: right;" wicket:id="biller"></td>
+											<td style="width:75px; text-align: right;" wicket:id="beneificary"></td>
+										</tr>
+									</tbody>
+								</table>
+							</wicket:enclosure>							
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

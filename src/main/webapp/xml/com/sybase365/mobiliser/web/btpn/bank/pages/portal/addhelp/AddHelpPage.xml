@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="label.add.help"> Add Help</entry>
+	<entry key="label.consumer.portal"> Consumer Portal </entry>
+	<entry key="label.consumer.portal.text">Adding new help text for consumer portal</entry>
+	<entry key="label.agent.portal"> Agent Portal </entry>
+	<entry key="label.agent.portal.text">Adding New Help text from Agent portal</entry>
+	<entry key="Add">Add</entry>
+	<entry key="fetch.error">An error occured while fetching help text.</entry>
+</properties>

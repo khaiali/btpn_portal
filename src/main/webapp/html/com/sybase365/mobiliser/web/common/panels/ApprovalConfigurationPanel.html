@@ -1,0 +1,214 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+    <div id="centerContent" class="content">
+
+	    <div class="module clear">
+			
+		    <form wicket:id="approvalConfigForm">
+
+			    <div wicket:id="errorMessages"></div>
+
+				<h2>
+					<input class="additionalLink last" type="submit" wicket:message="value:approvalConfig.add.button" wicket:id="addConf" name="addFeeSet">
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="couponTypeList" class="listTable" width="100%">
+
+							<wicket:enclosure child="pageable">
+
+								<thead>
+									<tr>
+										<th class="custType" wicket:id="orderByCustType" ><wicket:message key="approvalConfig.customerType" /></th>
+										<th class="piType" wicket:id="orderByPiType" ><wicket:message key="approvalConfig.piType" /></th>
+										<th class="useCaseType" wicket:id="orderByUseCaseType" ><wicket:message key="approvalConfig.useCaseType" /></th>
+										<th class="piType" wicket:id="orderByFileType" ><wicket:message key="approvalConfig.fileType" /></th>
+										
+										<th class="custType" wicket:id="HpayerPrivilege"></th>
+										<th class="custType" wicket:id="HpayeePrivilege"></th>
+										<th class="custType" wicket:id="HcallerPrivilege"></th>
+										
+										<th class="payerPrivilege" wicket:id="HmakerPrivilege"></th>
+										<th class="payeePrivilege" wicket:id="HcheckerPrivilege"></th>																			
+										<th class="callerPrivilege" wicket:id="HexecutePrivilege"></th>
+										
+										<th class="actions last"><wicket:message key="actions" /></th>
+									</tr>
+								</thead>
+
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="5"></td>
+									</tr>
+								</tfoot>
+
+								<tbody>
+									<tr wicket:id="pageable">
+										<wicket:enclosure child="customerType"><td class="custType" ><div wicket:id="customerType">[Customer Type]</div></td></wicket:enclosure>
+										<wicket:enclosure child="piType"><td  class="piType"><div wicket:id="piType">[Wallet Type]</div></td></wicket:enclosure>
+										<wicket:enclosure child="useCaseType"><td class="useCaseType"><div wicket:id="useCaseType">[UseCase Type]</div></td></wicket:enclosure>
+									    <wicket:enclosure child="fileType"><td class="piType"><div wicket:id="fileType">[File Type]</div></td></wicket:enclosure>
+										
+										
+										<wicket:enclosure child="payerPrivilege"><td class="payerPrivilege"><div wicket:id="payerPrivilege">[Payer Privilege]</div></td></wicket:enclosure>
+										<wicket:enclosure child="payeePrivilege"><td class="payeePrivilege"><div wicket:id="payeePrivilege">[Payee Privilege]</div></td></wicket:enclosure>
+										<wicket:enclosure child="callerPrivilege"><td class="callerPrivilege"><div wicket:id="callerPrivilege">[Caller Privilege]</div></td></wicket:enclosure>
+										
+										
+										
+										<wicket:enclosure child="makerPrivilege"><td class="makerPrivilege"><div wicket:id="makerPrivilege">[Maker Privilege]</div></td></wicket:enclosure>
+										<wicket:enclosure child="checkerPrivilege"><td class="checkerPrivilege"><div wicket:id="checkerPrivilege">[Checker Privilege]</div></td></wicket:enclosure>
+										<wicket:enclosure child="executePrivilege"><td class="executePrivilege"><div wicket:id="executePrivilege">[Execute Privilege]</div></td></wicket:enclosure>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="editAction"><wicket:message key="edit">[Edit]</wicket:message></a></li>
+												<li><a href="#" wicket:id="removeAction"><wicket:message key="remove">[Remove]</wicket:message></a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+
+							</wicket:enclosure>
+
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+					</div>
+					
+				</div>
+				
+				<div id="approval_conf" wicket:id="approvalConfigContainer">
+				
+				    <div class="column twoColumn">
+				        
+				        <div wicket:id="custTypeDiv">
+				            <div class="input">
+					       	    <label><wicket:message key="approvalConfig.customerType" /><span class="required">*</span></label> 
+					       	    <select wicket:id="approvalConfigObj.customerTypeId">
+						 	        <option>dummy</option>
+						        </select>
+				            </div>
+				     	</div>
+				     	
+				     	<div wicket:id="walletTypeDiv">
+				           <div class="input" >
+					           <label><wicket:message key="approvalConfig.piType" /><span class="required">*</span></label> 
+					           <select wicket:id="approvalConfigObj.piTypeId">
+						 	       <option>dummy</option>
+						       </select>
+				           </div>
+				     	</div>
+				     
+				     	<div wicket:id="useCaseTypeDiv">
+				            <div class="input" >
+					        	<label><wicket:message key="approvalConfig.useCaseType" /><span class="required">*</span></label> 
+					        	<select wicket:id="approvalConfigObj.useCaseId">
+						 	     <option>dummy</option>
+						     	</select>
+				        	</div>	
+				        	
+				        <div class="input">
+					 		<label><wicket:message key="approvalConfig.useCase.PayerPrivilege" /></label> 
+					 		<select wicket:id="approvalConfigObj.payerPrivilege">
+					      		<option>dummy</option>
+				     		</select>
+				        </div>	
+				        
+				        <div class="input">
+					 		<label><wicket:message key="approvalConfig.useCase.PayeePrivilege" /></label> 
+					 		<select wicket:id="approvalConfigObj.payeePrivilege">
+					      		<option>dummy</option>
+				     	</select>
+				        
+				          </div>	
+				          <div class="input">
+					 <label><wicket:message key="approvalConfig.useCase.CallerPrivilege" /><span class="required">*</span></label> 
+					 <select wicket:id="approvalConfigObj.callerPrivilege">
+					      <option>dummy</option>
+				     </select>
+				          </div>
+				          <div class="input">
+					 <label><wicket:message key="approvalConfig.useCase.CallerParentPrivilege" /><span class="required">*</span></label> 
+					 <select wicket:id="approvalConfigObj.callerParentPrivilege">
+					      <option>dummy</option>
+				     </select>
+				          </div>
+				          <div class="input">
+					 <label><wicket:message key="approvalConfig.useCase.CallerSelfPrivilege" /><span class="required">*</span></label> 
+					 <select wicket:id="approvalConfigObj.callerSelfPrivilege">
+					      <option>dummy</option>
+				     </select>
+				          </div>	
+				     </div>
+				     	
+			    <div wicket:id="bulkFileTypeDiv">
+					<div class="input" >
+						<label><wicket:message key="approvalConfig.fileType" /><span class="required">*</span></label> 
+					    	<select wicket:id="approvalConfigObj.bulkFileTypeId">
+						 		<option value="">dummy</option>
+						    </select>
+				    </div>
+			    </div>	     	
+				     				        
+		     </div>
+					
+					<div class="column twoColumn">
+					
+						<div class="input">
+				        	 <label><wicket:message key="approvalConfig.customer.makerPrivilege" /><span class="required">*</span></label> 
+						           <select wicket:id="approvalConfigObj.makerPrivilege">
+							           <option>dummy</option>
+						           </select>
+					    </div>				       
+				    
+					    <div class="input">
+			  		        <label><wicket:message key="approvalConfig.customer.checkerPrivilege" /><span class="required">*</span></label> 
+						    <select wicket:id="approvalConfigObj.checkerPrivilege">
+							    <option>dummy</option>
+						    </select>
+					    </div>				      
+			    	
+			    	    <div class="input">
+				    		<label><wicket:message key="approvalConfig.customer.executePrivilege" /><span class="required">*</span></label> 
+				        	<select wicket:id="approvalConfigObj.executePrivilege">
+					          <option>dummy</option>
+				          	</select>
+			          	</div>
+		          	
+		           </div>      	
+		    
+				   <div class="column">
+				       <div class="formAction">
+					       <input type="submit" class="submitForm" wicket:id="save" wicket:message="value:Save" /> 
+						   <input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" />
+					   </div>
+				   </div>	
+							
+				</div>
+
+		   </form>
+				
+	   </div>
+			
+   </div>
+
+</wicket:panel>
+
+</body>
+
+</html>

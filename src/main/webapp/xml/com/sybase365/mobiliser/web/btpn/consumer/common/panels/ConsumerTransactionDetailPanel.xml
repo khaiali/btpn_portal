@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="label.header">Lihat Transaksi</entry>
+	<entry key="transactionHistroy.filterType">Filter</entry>
+	<entry key="transactionHistroy.filterType.month">Bulan</entry>
+	<entry key="transactionHistroy.filterType.date">Tanggal</entry>
+	<entry key="transactionHistory.month">Bulan</entry>
+	<entry key="transactionHistory.fromDate">Dari</entry>
+	<entry key="transactionHistory.toDate">Sampai</entry>
+	<entry key="transactionHistory.transactionType">Pilih Transaksi</entry>
+	<entry key="transactionHistory.subAccount">Rekening Tambahan</entry>
+	<entry key="label.date">Tanggal</entry>
+	<entry key="label.type">Tipe</entry>
+	<entry key="label.errorCode">Kode Eror</entry>
+	<entry key="label.txnId">ID Transaksi</entry>
+	<entry key="label.name">Nama Peserta</entry>
+	<entry key="label.details">Detail</entry>
+	<entry key="label.fee">Fee</entry>
+	<entry key="label.debitDesc">Debit / Kredit</entry>
+	<entry key="label.amount">Jumlah</entry>
+	<entry key="label.action">Action</entry>
+	<entry key="searchData.month.null">Pilih</entry>
+	<entry key="searchData.txnType.null">Pilih Semua</entry>
+	<entry key="searchData.subAccount.null">Pilih Salah Satu</entry>
+	<entry key="label.exportOptions">Pilihan Ekspor: </entry>
+	<entry key="label.csv">CSV </entry>
+
+	<!-- Front End Validations -->
+	<entry key="error.transactions">Terjadi Kesalahan ketika menampilkan detail transaksi.</entry>
+	<entry key="searchData.fromDate.Required">Kolom Dari harus diisi.</entry>
+	<entry key="searchData.toDate.Required">Kolom Sampai harus diisi.</entry>
+	<entry key="searchData.fromDate.future">Kolom Dari harus lebih besar dari hari ini.</entry>
+	<entry key="searchData.toDate.future">Kolom Sampai harus lebih besar dari hari ini.</entry>
+	<entry key="searchData.fromDate.todate.after.fromdate">Tanggal Mulai harus lebih kecil dari hari ini.</entry>
+	<entry key="searchData.month.Required">Kolom Bulan harus diisi.</entry>
+	<entry key="no.items">Tidak ada item yang ditemukan untuk ditampilkan.</entry>
+	<entry key="approval.totalitems.header">%s item ditemukan, Menampilkan %s sampai %s.</entry>
+</properties>

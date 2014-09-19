@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:security="http://www.springframework.org/schema/security"
+  xmlns:prefs="http://www.sybase.com/mobiliser/util/prefs/config"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+  xmlns:ehcache="http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
+    http://www.sybase.com/mobiliser/util/prefs/config http://www.sybase.com/mobiliser/util/prefs/config/sybase-prefs-config-5.0.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd
+    http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+    http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring
+    http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring/ehcache-spring-1.1.xsd">
+
+  <bean id="springAware" class="com.sybase365.mobiliser.web.dashboard.base.SpringAware" />
+
+  <bean id="scheduledExecutorFactory"
+    class="org.springframework.scheduling.concurrent.ScheduledExecutorFactoryBean">
+    <property name="threadNamePrefix" value="tracker-" />
+  </bean>
+
+  <!-- DASHBOARD TRACKERS DATA SERIES DAO -->
+
+  <bean id="trackersDataSeriesDao" 
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.dao.impl.TrackersDataSeriesJmxDaoImpl">
+    <property name="endpointSuffix" value="/management" />
+  </bean>
+
+  <!-- DASHBOARD TRACKERS -->
+
+  <bean id="loginReqCntDataSeries" 
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerDataSeriesBean">
+    <property name="server" value="localhost:8080" />
+    <property name="objectName" value="com.sybase365.mobiliser.framework.service.audit.jmx:product=IAuditManager,instance=JmxAuditManager" />
+    <property name="attribute" value="TypeAuditStatistics" />
+    <property name="keyName" value="requestType" />
+    <property name="keyValue" value="com.sybase365.mobiliser.money.contract.v5_0.customer.security.LoginCustomerRequest" />
+    <property name="valueName" value="successCount" />
+    <property name="numberOfDataPoints" value="10" />
+    <property name="dataSeriesDao" ref="trackersDataSeriesDao" />
+  </bean>
+
+  <bean id="loginReqCntTracker"
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean"
+    init-method="init" destroy-method="destroy">
+    <property name="name" value="Login Count" />
+    <property name="type" ref="LINE" />
+    <property name="sampleInterval" value="30" />
+    <property name="sampleIntervalTimeUnit" ref="SECONDS" />
+    <property name="pointsToDisplay" value="10" />
+    <property name="dataSeries">
+      <util:list>
+	<ref local="loginReqCntDataSeries"/>
+      </util:list>
+    </property>
+  </bean>
+
+  <bean id="preAuthTxnReqCntDataSeries" 
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerDataSeriesBean">
+    <property name="server" value="localhost:8080" />
+    <property name="objectName" value="com.sybase365.mobiliser.framework.service.audit.jmx:product=IAuditManager,instance=JmxAuditManager" />
+    <property name="attribute" value="TypeAuditStatistics" />
+    <property name="keyName" value="requestType" />
+    <property name="keyValue" value="com.sybase365.mobiliser.money.contract.v5_0.transaction.PreAuthorisation" />
+    <property name="valueName" value="successCount" />
+    <property name="numberOfDataPoints" value="10" />
+    <property name="dataSeriesDao" ref="trackersDataSeriesDao" />
+  </bean>
+
+  <bean id="preAuthTxnReqCntTracker"
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean"
+    init-method="init" destroy-method="destroy">
+    <property name="name" value="Pre-Auth Txn Count" />
+    <property name="type" ref="LINE" />
+    <property name="sampleInterval" value="30" />
+    <property name="sampleIntervalTimeUnit" ref="SECONDS" />
+    <property name="pointsToDisplay" value="10" />
+    <property name="dataSeries">
+      <util:list>
+	<ref local="preAuthTxnReqCntDataSeries"/>
+      </util:list>
+    </property>
+  </bean>
+
+  <bean id="loginReqDurationDataSeries" 
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerDataSeriesBean">
+    <property name="server" value="localhost:8080" />
+    <property name="objectName" value="com.sybase365.mobiliser.framework.service.audit.jmx:product=IAuditManager,instance=JmxAuditManager" />
+    <property name="attribute" value="TypeAuditStatistics" />
+    <property name="keyName" value="requestType" />
+    <property name="keyValue" value="com.sybase365.mobiliser.money.contract.v5_0.customer.security.LoginCustomerRequest" />
+    <property name="valueName" value="averageTime" />
+    <property name="numberOfDataPoints" value="10" />
+    <property name="dataSeriesDao" ref="trackersDataSeriesDao" />
+  </bean>
+
+  <bean id="loginReqDurationTracker"
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean"
+    init-method="init" destroy-method="destroy">
+    <property name="name" value="Login Duration (ms)" />
+    <property name="type" ref="GAUGE" />
+    <property name="sampleInterval" value="30" />
+    <property name="sampleIntervalTimeUnit" ref="SECONDS" />
+    <property name="pointsToDisplay" value="1" />
+    <property name="dataSeries">
+      <util:list>
+	<ref local="loginReqDurationDataSeries"/>
+      </util:list>
+    </property>
+  </bean>
+
+  <bean id="preAuthTxnReqDurationDataSeries" 
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerDataSeriesBean">
+    <property name="server" value="localhost:8080" />
+    <property name="objectName" value="com.sybase365.mobiliser.framework.service.audit.jmx:product=IAuditManager,instance=JmxAuditManager" />
+    <property name="attribute" value="TypeAuditStatistics" />
+    <property name="keyName" value="requestType" />
+    <property name="keyValue" value="com.sybase365.mobiliser.money.contract.v5_0.transaction.PreAuthorisation" />
+    <property name="valueName" value="averageTime" />
+    <property name="numberOfDataPoints" value="10" />
+    <property name="dataSeriesDao" ref="trackersDataSeriesDao" />
+  </bean>
+
+  <bean id="preAuthTxnReqDurationTracker"
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean"
+    init-method="init" destroy-method="destroy">
+    <property name="name" value="Pre-Auth Txn Duration (ms)" />
+    <property name="type" ref="GAUGE" />
+    <property name="sampleInterval" value="30" />
+    <property name="sampleIntervalTimeUnit" ref="SECONDS" />
+    <property name="pointsToDisplay" value="1" />
+    <property name="dataSeries">
+      <util:list>
+	<ref local="preAuthTxnReqDurationDataSeries"/>
+      </util:list>
+    </property>
+  </bean>
+
+  <bean id="messagesSentCntDataSeries" 
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerDataSeriesBean">
+    <property name="server" value="localhost:8080" />
+    <property name="objectName" value="com.sybase365.mobiliser.util.messaging.channelmanager:product=ChannelManager,instance=com.sybase365.mobiliser.util.messaging.channelmanager.engine.impl.ChannelManagerImpl,category=Util" />
+    <property name="attribute" value="SentMessages" />
+    <property name="numberOfDataPoints" value="10" />
+    <property name="dataSeriesDao" ref="trackersDataSeriesDao" />
+  </bean>
+
+  <bean id="messagesSentCntTracker"
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean"
+    init-method="init" destroy-method="destroy">
+    <property name="name" value="Messages Sent" />
+    <property name="type" ref="BAR" />
+    <property name="sampleInterval" value="30" />
+    <property name="sampleIntervalTimeUnit" ref="SECONDS" />
+    <property name="pointsToDisplay" value="10" />
+    <property name="dataSeries">
+      <util:list>
+	<ref local="messagesSentCntDataSeries"/>
+      </util:list>
+    </property>
+  </bean>
+
+  <bean id="transientEventCountDataSeries" 
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerDataSeriesBean">
+    <property name="server" value="localhost:8080" />
+    <property name="objectName" value="com.sybase365.mobiliser.framework.event:product=Generator,instance=Generator,category=Generator" />
+    <property name="attribute" value="NoTransient" />
+    <property name="numberOfDataPoints" value="100" />
+    <property name="dataSeriesDao" ref="trackersDataSeriesDao" />
+  </bean>
+
+  <bean id="eventCntTracker"
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean"
+    init-method="init" destroy-method="destroy">
+    <property name="name" value="Events Count" />
+    <property name="type" ref="LINE" />
+    <property name="sampleInterval" value="30" />
+    <property name="sampleIntervalTimeUnit" ref="SECONDS" />
+    <property name="pointsToDisplay" value="10" />
+    <property name="dataSeries">
+      <util:list>
+	<ref local="transientEventCountDataSeries"/>
+      </util:list>
+    </property>
+  </bean>
+
+  <bean id="freePhysicalMemoryDataSeries" 
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerDataSeriesBean">
+    <property name="server" value="localhost:8080" />
+    <property name="objectName" value="java.lang:type=OperatingSystem" />
+    <property name="attribute" value="FreePhysicalMemorySize" />
+    <property name="numberOfDataPoints" value="100" />
+    <property name="factor" value="0.000001" />
+    <property name="dataSeriesDao" ref="trackersDataSeriesDao" />
+  </bean>
+
+  <bean id="memoryTracker"
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean"
+    init-method="init" destroy-method="destroy">
+    <property name="name" value="Memory Usage (Mb)" />
+    <property name="type" ref="BAR" />
+    <property name="sampleInterval" value="30" />
+    <property name="sampleIntervalTimeUnit" ref="SECONDS" />
+    <property name="pointsToDisplay" value="10" />
+    <property name="dataSeries">
+      <util:list>
+	<ref local="freePhysicalMemoryDataSeries"/>
+      </util:list>
+    </property>
+  </bean>
+
+  <!-- DASHBOARD TRACKERS DAO -->
+
+  <bean id="trackersDao" 
+    class="com.sybase365.mobiliser.web.dashboard.pages.trackers.dao.impl.TrackersSpringDaoImpl">
+    <property name="trackers">
+      <util:list>
+	<ref local="preAuthTxnReqCntTracker"/>
+	<ref local="preAuthTxnReqDurationTracker"/>
+	<ref local="messagesSentCntTracker"/>
+	<ref local="eventCntTracker"/>
+	<ref local="loginReqCntTracker"/>
+	<ref local="loginReqDurationTracker"/>
+	<ref local="memoryTracker"/>
+      </util:list>
+    </property>
+  </bean>
+
+  <!-- DASHBOARD TRACKERS ENUMS -->
+
+  <bean id="LINE" class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean.TrackerChartType" factory-method="valueOf">
+    <constructor-arg><value>LINE</value></constructor-arg>
+  </bean>
+
+  <bean id="GAUGE" class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean.TrackerChartType" factory-method="valueOf">
+    <constructor-arg><value>GAUGE</value></constructor-arg>
+  </bean>
+
+  <bean id="BAR" class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean.TrackerChartType" factory-method="valueOf">
+    <constructor-arg><value>BAR</value></constructor-arg>
+  </bean>
+
+  <bean id="CANDLESTICK" class="com.sybase365.mobiliser.web.dashboard.pages.trackers.beans.TrackerBean.TrackerChartType" factory-method="valueOf">
+    <constructor-arg><value>CANDLESTICK</value></constructor-arg>
+  </bean>
+
+  <bean id="SECONDS" class="java.util.concurrent.TimeUnit" factory-method="valueOf">
+    <constructor-arg><value>SECONDS</value></constructor-arg>
+  </bean>
+
+  <bean id="MINUTES" class="java.util.concurrent.TimeUnit" factory-method="valueOf">
+    <constructor-arg><value>MINUTES</value></constructor-arg>
+  </bean>
+
+</beans>

@@ -1,0 +1,58 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div id="centerContent" class="content">
+				<form wicket:id="txnReversalForm">
+					<div wicket:id="errorMessages"></div>
+					<fieldset>
+						<legend class="reg_tab">
+							<wicket:message key="headLine.requestTransactionReversal" />
+						</legend>
+						<div class="column">
+							<div class="input" style="margin: 16px 0 0 0;">
+								<label> <wicket:message key="label.transactionID" /> <span
+									class="required">*</span>
+								</label> <input type="text" wicket:id="txnBean.transactionID" />
+							</div>
+							<div wicket:id="txnContainer">
+								<div class="input" style="margin: 16px 0 0 0;">
+									<label> <wicket:message key="label.transactionName" />
+										<span class="required">*</span>
+									</label> <input type="text" wicket:id="txnBean.transactionName"
+										readonly="readonly" />
+								</div>
+								<div class="input" style="margin: 16px 0 0 0;">
+									<label> <wicket:message key="label.transactionDate" />
+										<span class="required">*</span>
+									</label> <input type="text" wicket:id="txnBean.transactionDate"
+										readonly="readonly" />
+								</div>
+								<div class="input" style="margin: 16px 0 0 0;">
+									<label> <wicket:message key="label.transactionAmount" />
+										<span class="required">*</span>
+									</label> <input type="text" wicket:id="txnBean.transactionAmount"
+										readonly="readonly" />
+								</div>
+								<div class="input" style="margin: 16px 0 0 0;">
+									<label> <wicket:message key="label.mobileNo" />
+									</label> <input type="text" wicket:id="txnBean.mobileNumber" />
+								</div>
+							</div>
+						</div>
+						<div class="spacer"></div>
+						<div class="column">
+							<input type="submit" class="submit acc_chk"
+								wicket:id="submitButton" value="Submit" />
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

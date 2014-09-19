@@ -1,0 +1,52 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.ta/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="airtimeStatusPage">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="left.menu.airTimetopup" /></h2>
+							</legend>
+							<div class="spacer"></div>
+							<div wicket:id="errorMessages"></div>
+							<div class="column twoColumn">
+								
+								<div class="Account_info">
+									<label for="accountconsumer"><wicket:message key="label.telco" /></label>
+									<div class="input_value" wicket:id="airtimeBean.productName"></div>
+								</div>
+								<div class="space"></div>
+								
+								<div class="Account_info">
+									<label for="accountconsumer"><wicket:message key="label.amount" /></label>
+									<div class="input_value" wicket:id="airtimeBean.label"></div>
+								</div>
+								<div class="space"></div>
+								
+								<div class="Account_info">
+									<label for="accountconsumer"><wicket:message key="label.feeAmount" /></label>
+									<div class="input_value" wicket:id="airtimeBean.feeAmount"></div>
+								</div>
+								
+								<div class="space"></div>
+								<div class="Account_info">
+									<label for="accountconsumer"><wicket:message key="label.msisdn" /></label>
+									<div class="input_value" wicket:id="airtimeBean.selectedMsisdn.id"></div>
+								</div>
+								
+							</div>
+							<div class="spacer"></div>
+							<input name="backtoHome" wicket:id="btnOk"
+									wicket:message="value:OK" class="submit acc_chk" type="submit" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

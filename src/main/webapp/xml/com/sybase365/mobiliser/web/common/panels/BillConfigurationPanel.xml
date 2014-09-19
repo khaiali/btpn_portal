@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="billConfiguration.title">Bill Configuration</entry>
+    <entry key="billConfigurationList.select">Select</entry>
+    <entry key="billConfiguration.name">Name</entry>
+    <entry key="billConfiguration.type">Type</entry>
+    <entry key="billConfiguration.reference">Reference</entry>
+    <entry key="billConfiguration.pi">Default Payment Instrument</entry>   
+    <entry key="billConfiguration.update.error">Error while updating bill configuration</entry>          
+    <entry key="billConfiguration.create.error">Error while creating bill configuration</entry>
+    <entry key="billconfiguration.reference.invalid">Invalid reference</entry>
+    <entry key="typeId.Required">Type is required</entry>
+    <entry key="name.Required">Name is required</entry>
+    <entry key="reference.Required">Reference is required</entry>
+    <entry key="name.PatternValidator">'${input}' is not a valid Name</entry>
+    <entry key="reference.PatternValidator">'${input}' is not a valid Reference</entry>
+                
+</properties>

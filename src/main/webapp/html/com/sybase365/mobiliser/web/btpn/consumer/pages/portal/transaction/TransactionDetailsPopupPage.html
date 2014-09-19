@@ -1,0 +1,82 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="css/btpn/consumer-portal/sybase.css" media="all"
+		rel="stylesheet" type="text/css" />
+</wicket:head>
+</head>
+<body>
+	<wicket:extend>
+		<div id="nav_content_color_bar"></div>
+		<div id="popupContent" class="content">
+			<div class="column twoColumn">
+				<h2><wicket:message key="label.transactionHeader" /></h2>
+				<form wicket:id="detailsForm" method="post">
+					<div class="spacer"></div>
+					<div class="input">
+						<h1>
+							<label><wicket:message key="label.Date" /></label>
+						</h1>
+						<div class="text" wicket:id="txnDetails.date"></div>
+					</div>
+					<div class="spacer"></div>
+					<div class="input">
+						<h1>
+							<label><wicket:message key="label.time" /></label>
+						</h1>
+						<div class="text" wicket:id="txnDetails.time"></div>
+					</div>
+					<div class="spacer"></div>
+					<div class="input">
+						<h1>
+							<label><wicket:message key="label.type" /></label>
+						</h1>
+						<div class="text" wicket:id="txnDetails.type"></div>
+					</div>
+					<div class="spacer"></div>
+					<div class="input">
+						<h1>
+							<label><wicket:message key="label.error.code" /></label>
+						</h1>
+						<div class="text" wicket:id="txnDetails.errorCode"></div>
+					</div>
+					<div class="spacer"></div>
+					<div class="input">
+						<h1>
+							<label><wicket:message key="label.name" /></label>
+						</h1>
+						<div class="text" wicket:id="txnDetails.name"></div>
+					</div>
+					<div class="spacer"></div>
+					<div class="input">
+						<h1>
+							<label><wicket:message key="label.text" /></label>
+						</h1>
+						<div class="text" wicket:id="txnDetails.details"></div>
+					</div>
+					<div class="spacer"></div>
+					<div class="input">
+						<h1>
+							<label><wicket:message key="label.amount" /></label>
+						</h1>
+						<div class="text" wicket:id="txnDetails.amount"></div>
+					</div>
+					<div class="spacer"></div>
+					<div class="input">
+						<h1>
+							<label><wicket:message key="label.fee" /></label>
+						</h1>
+						<div class="text" wicket:id="txnDetails.fee"></div>
+					</div>
+					<div class="spacer"></div>
+
+					<input id="pageprint" style="cursor: pointer" name="pageprint"	value="Cetak Detail" class="submit" onclick="window.print()" type="button" />
+				</form>
+			</div>
+		</div>
+		<div id="nav_content_color_bar" style="left: 0px;"></div>
+	</wicket:extend>
+</body>
+</html>

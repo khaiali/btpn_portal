@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="header.addStandingInstructions">Penambahan Instruksi Favorit</entry>
+	<entry key="label.instructionType">Tipe Instruksi</entry>
+	<entry key="requiredFields">Wajib isi</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="instructionsBean.instructionType.null">Pilih Tipe</entry>
+	<entry key="instructionsBean.instructionType.Required">Kolom Tipe Instruksi Harus Diisi</entry>
+
+</properties>

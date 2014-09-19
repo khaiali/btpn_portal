@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="createdBy">Created By</entry>
+	<entry key="createdDate">Date Created</entry>
+	<entry key="status">Status</entry>
+	<entry key="consumer.registrationType.headLine">Request Information</entry>
+	<entry key="topupagent.registrationType.headLine">Request Information</entry>
+	<entry key="childagent.registrationType.headLine">Request Information</entry>
+	<entry key="subagent.registrationType.headLine">Request Information</entry>
+	<entry key="Confirm">Approve</entry>
+	<entry key="Back">Reject</entry>
+	<entry key="Cancel">Cancel</entry>
+	<entry key="approve.success">Your mobile account has been successfully authorized.</entry>
+	<entry key="reject.success">Dear User,Registration has been Rejected.</entry>
+	<entry key="approve.fail">Error occured during mobile account Approval.</entry>
+	<entry key="reject.fail">Error occured during mobile account rejection.</entry>
+	<entry key="approval.failure.exception">We are experiencing technical difficulties. Please try again later.</entry>
+</properties>

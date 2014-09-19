@@ -1,0 +1,30 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript">
+		function confirmDeactivation(message) {
+			var deac = document.getElementById('customerStatus')[document.getElementById('customerStatus').selectedIndex].value == "1";
+
+			if (deac == false && confirm(message) != true)
+				document.getElementById('customerStatus')[0].selected = 1;
+		}
+
+		function confirmCancellation(message) {
+
+			var deac = document.getElementById('cancelationReason')[document.getElementById('cancelationReason').selectedIndex].value == "0";
+
+			if (deac == false && confirm(message) != true)
+				document.getElementById('cancelationReason')[0].selected = true;
+		}
+	</script>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+	<div wicket:id="standingDataPanel"></div>
+</wicket:extend>
+
+</body>
+</html>

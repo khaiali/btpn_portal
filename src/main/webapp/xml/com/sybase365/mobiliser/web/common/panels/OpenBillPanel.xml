@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="openBill.title">Bill Configuration</entry>    
+    <entry key="openBill.status">Status</entry> 
+    <entry key="openBill.transactionId">Transaction ID</entry> 
+    <entry key="openBill.name">Name</entry>
+    <entry key="openBill.type">Type</entry>
+    <entry key="openBill.reference">Reference</entry>
+    <entry key="openBill.billReference">Bill Reference</entry>
+    <entry key="openBill.date">Date</entry>
+    <entry key="openBill.amount">Amount</entry>
+    <entry key="openBill.pi">Payment Instrument</entry>   
+    <entry key="openBill.fee">Fee</entry> 
+    <entry key="openBill.back">Back</entry>
+    <entry key="openBill.pay">Continue</entry> 
+    <entry key="openBill.cancel">Cancel</entry>  
+    <entry key="openBill.confirm">Confirm</entry>
+    <entry key="openBill.continue">Continue</entry> 
+    <entry key="openBill.pay.error">Can not pay invoice</entry> 
+    <entry key="openBill.cancel.error">Can not cancel invoice</entry> 
+    <entry key="openBill.pay.success">Bill was paid successfully</entry> 
+    <entry key="openBill.billreference.invalid">Invalid bill reference</entry>
+    <entry key="amountString.AmountValidator">'${input}' is not a valid Amount</entry>
+    <entry key="billReference.Required">Bill Reference is required</entry>    
+</properties>

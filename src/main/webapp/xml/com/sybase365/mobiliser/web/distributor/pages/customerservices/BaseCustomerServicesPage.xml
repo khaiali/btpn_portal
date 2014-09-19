@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <!-- ################### Airtime Topup Page ##################### -->
+    <entry key="airTimeTopup.title">Airtime Topup</entry>
+    
+    <!-- ################### Register New Customer Page ##################### -->
+    <entry key="registerCustomer.title">Customer Registration</entry>
+    <entry key="registerCustomer.headline">Personal Information</entry>
+    <entry key="registerCustomer.headline.address">Address Information</entry>
+    <entry key="registerCustomer.msisdn">MSISDN</entry>
+    <entry key="registerCustomer.firstName">First Name</entry>
+    <entry key="registerCustomer.lastName">Last Name</entry>
+    <entry key="registerCustomer.address.street1">Street</entry>
+    <entry key="registerCustomer.address.street2">Street 2</entry>
+    <entry key="registerCustomer.address.houseNo">House No</entry>
+    <entry key="registerCustomer.address.zip">Zip</entry>
+    <entry key="registerCustomer.address.city">City</entry>
+    <entry key="registerCustomer.address.state">State</entry>
+    <entry key="registerCustomer.address.kvCountry">Country</entry>
+    <entry key="registerCustomer.kvIdentityType">Identity Type</entry>
+    <entry key="registerCustomer.identityValue">Value</entry>
+    <entry key="registerCustomer.button.register">Register</entry>
+    <entry key="msisdn.inuse.error">The entered mobile number has already been registered. Please try it again. If you are sure that the number is correct, please contact us.</entry>
+
+</properties>

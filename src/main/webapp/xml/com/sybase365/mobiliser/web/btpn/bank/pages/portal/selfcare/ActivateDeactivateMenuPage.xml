@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="label.activate.menu"> Activate/Deactivate </entry>
+	<entry key="label.user.roles"> User Roles </entry>
+	<entry key="label.available.tasks">All Available Tasks </entry>
+	<entry key="label.assign.tasks">Assign Tasks</entry>
+	<entry key="Remove">Remove Task</entry>
+	<entry key="Assign">Assign Tasks</entry>
+	<entry key="Find">Find Task</entry>
+
+	<entry key="roleSelected.Required">User Roles is a required field.</entry>
+	<entry key="privSelected.Required">Assign Tasks is a required field.</entry>
+	<entry key="taskSelected.Required">All Available Tasks is a required field.</entry>
+
+
+	<entry key="success.find.privs">Find privileges successful.</entry>
+	<entry key="error.find.privs">Privilege find failed.</entry>
+
+	<entry key="success.add.privs">Add privileges successful.</entry>
+	<entry key="error.assign.privs">Privilege addition failed.</entry>
+	<entry key="error.assign.202">Privilege already exists for the role.</entry>
+
+
+	<entry key="success.remove.privs">Remove privileges successful.</entry>
+	<entry key="error.remove.privs">Privilege removal failed.</entry>
+
+	<entry key="error.all.privs">An error occured while fetching all tasks.</entry>
+</properties>

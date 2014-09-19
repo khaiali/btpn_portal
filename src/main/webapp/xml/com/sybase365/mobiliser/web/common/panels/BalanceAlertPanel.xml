@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="balertPanel.balanceAlertData">Balance Alert Configuration</entry>
+	<entry key="balertPanel.balanceAlertTable.th.threshold">Threshold</entry>
+	<entry key="balertPanel.balanceAlertTable.th.emails">Email Addresses</entry>
+	<entry key="balertPanel.balanceAlertTable.th.msisdns">MSISDNs</entry>
+	<entry key="balertPanel.balanceAlertTable.th.onlyTransition">Only Transition</entry>
+	<entry key="balertPanel.balanceAlertTable.th.templateName">Template Name</entry>
+	<entry key="balertPanel.balanceAlertTable.th.msisdn">MSISDNs</entry>
+	<entry key="balertPanel.balanceAlertTable.th.language">Language</entry>
+	<entry key="balertPanel.balanceAlertTable.th.country">Country</entry>
+	<entry key="balertPanel.balance.alert.editAction">Edit</entry>
+	<entry key="balertPanel.balance.alert.removeAction">Remove</entry>
+	<entry key="balertPanel.balanceAlertTable.link.add">Add a Balance Alert</entry>
+	<entry key="balertPanel.balanceAlert.threshold">Threshold</entry>
+	<entry key="balertPanel.balanceAlert.emails">Email Addresses</entry>
+	<entry key="balertPanel.balanceAlert.msisdns">MSISDNs</entry>
+	<entry key="balertPanel.balanceAlert.onlyTransition">Only Transition</entry>
+	<entry key="balertPanel.balanceAlert.onlyTransition.true">yes</entry>
+	<entry key="balertPanel.balanceAlert.onlyTransition.false">no</entry>
+	<entry key="balertPanel.balanceAlert.templateName">Template Name</entry>
+	<entry key="balertPanel.balanceAlert.language">Language</entry>
+	<entry key="balertPanel.balanceAlert.country">Country</entry>
+	<entry key="balance.alert.actions">Actions</entry>
+	
+	<entry key="balanceAlert.threshold.Required">Threshold is required</entry>
+    <entry key="balanceAlert.templateName.Required">Template Name is required</entry>
+    <entry key="balanceAlert.threshold.IConverter.long">'${input}' is not a valid Threshold</entry>
+    <entry key="balanceAlert.emails.PatternValidator">'${input}' is not a valid Email</entry>
+	
+</properties>

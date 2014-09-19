@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <!-- ############# View Transaction Page ############# -->
+    <entry key="transactionHistory.title">View Transactions</entry>
+    <entry key="transactionHistory.filterType">Show Transactions By</entry>
+    <entry key="transactionHistory.filterType.month">Month</entry>
+    <entry key="transactionHistory.month">Month</entry>
+    <entry key="transactionHistory.month.select">Select</entry>
+    <entry key="transactionHistory.filterType.date">Date Range</entry>
+    <entry key="transactionHistory.fromDate">From</entry>
+    <entry key="fromDate.IConverter.Date">From Date is invalid</entry>
+    <entry key="transactionHistory.toDate">To</entry>
+    <entry key="toDate.IConverter.Date">To Date is invalid</entry>
+    <entry key="transactionHistory.table.date">Date</entry>
+    <entry key="transactionHistory.table.txnId">ID</entry>
+    <entry key="transactionHistory.table.useCase">Type</entry>
+    <entry key="transactionHistory.table.errorCode">Error</entry>
+    <entry key="transactionHistory.table.authCode">Ref</entry>
+    <entry key="transactionHistory.cstTxn.participant">Participant</entry>
+    <entry key="transactionHistory.table.payeeId">Payee ID</entry>
+    <entry key="transactionHistory.table.payerId">Payer ID</entry>
+    <entry key="transactionHistory.table.text">Details</entry>
+    <entry key="transactionHistory.table.amount">Amount</entry>
+    <entry key="transactionHistory.table.actions">Actions</entry>
+    <entry key="transactionHistory.table.detailsAction">Details</entry>
+    <entry key="transactionHistory.cstTxn.timeframe">Time Frame</entry>
+    <entry key="transactionHistory.cstTxn.status">Status</entry>
+    <entry key="transactionHistory.pendingTxn.useCase">Use Case</entry>
+    <entry key="transactionHistory.cstTxn.consumerIsPayer">Consumer is Payer</entry>
+    <entry key="transactionHistory.cstTxn.txnId">Transaction ID</entry>
+    <entry key="transactionHistory.cstTxn.showFaulty">Show Faulty</entry>
+    <entry key="transactionHistory.cstTxn.showInitial">Show Initial</entry>
+    <entry key="transactionHistory.cstTxn.orderId">Order ID</entry>
+    <entry key="consumerIsPayer.nullValid">Either One</entry>
+    <entry key="fromDate.IConverter.Date">From Date is invalid</entry>
+    <entry key="toDate.IConverter.Date">To Date is invalid</entry>
+    <entry key="fromDate.Required">You must enter a from date</entry>
+    <entry key="toDate.Required">You must enter a to date</entry>
+    <entry key="fromMonth.Required">You must select a month</entry>
+    
+    <entry key="cstTxn.status.0">Initial</entry>
+    <entry key="cstTxn.status.2">Pre-Authorized</entry>
+    <entry key="cstTxn.status.5">Authentication required both</entry>
+    <entry key="cstTxn.status.6">Authentication required payer</entry>
+    <entry key="cstTxn.status.7">Authentication required payee</entry>
+    <entry key="cstTxn.status.10">Authenticated</entry>
+    <entry key="cstTxn.status.15">Pending For Approval</entry>
+    <entry key="cstTxn.status.20">Authorised</entry>
+    <entry key="cstTxn.status.30">Captured</entry>
+    <entry key="cstTxn.status.40">Delivered</entry>
+    <entry key="cstTxn.status.50">Acknowledged</entry>
+    <entry key="cstTxn.status.60">Authorisation Cancel</entry>
+    <entry key="cstTxn.status.70">Capture Cancel</entry>
+    <entry key="cstTxn.status.99">Fully processed</entry>
+    
+     
+    <entry key="cstTxn.option.true">Yes</entry>
+    <entry key="cstTxn.option.false">No</entry>
+    
+    <entry key="transactionHistory.maxNumberFetched">Not all transactions of the chosen time frame will be shown. Please rarefy your input.</entry>
+    <entry key="transactionHistory.noItemsMsg">No transactions available to display.</entry>
+    <entry key="transactionHistory.search.help">Use the options above to specify search date criteria</entry>
+
+    <!-- ############# Use Case IDs ############# -->
+    <entry key="useCase.150">Load Internal Voucher</entry>
+    <entry key="useCase.160">Add Funds</entry>
+    <entry key="useCase.161">Withdraw Funds</entry>
+    <entry key="useCase.193">Send Money</entry>
+    <entry key="useCase.1004">Send Money Bank</entry>
+    <entry key="useCase.194">Request Money</entry>
+    <entry key="useCase.171">Cash In</entry>
+    <entry key="useCase.172">Cash Out</entry>
+    <entry key="useCase.173">Air Time Topup</entry>
+    <entry key="useCase.175">Pickup</entry>
+    <entry key="useCase.7001">Remittance to Wallet</entry>
+    <entry key="useCase.7002">Remittance to Bank Account</entry>
+    <entry key="useCase.7003">Remittance to Advice and Pay</entry>
+    
+    
+
+</properties>

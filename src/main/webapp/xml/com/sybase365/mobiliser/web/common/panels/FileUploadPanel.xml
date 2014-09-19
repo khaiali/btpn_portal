@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="bulkFileType.bulkTypeId">File Type</entry>
+  <entry key="bulkFileType.file">File</entry>
+  <entry key="bulkFileTypeId.Required">File Type is required</entry>
+  <entry key="file.attachmentFile.required">File is required</entry>
+  <entry key="bulk.processing.load.filetypes.error">An error occurred while loading bulk file types</entry>
+  <entry key="bulk.processing.upload.error">An error occurred while uploading File</entry>
+  <entry key="upload.file.bulk">File uploaded successfully</entry>
+</properties>

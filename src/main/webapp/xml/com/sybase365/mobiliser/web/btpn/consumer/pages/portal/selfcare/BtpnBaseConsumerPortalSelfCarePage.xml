@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="left.menu.home">Menu Utama</entry>
+	<entry key="left.menu.viewtransaction">Lihat Transaksi</entry>
+	<entry key="left.menu.changepin">Ganti Pin</entry>
+	<entry key="left.menu.viewprofile">Lihat Profil</entry>
+	<entry key="left.menu.fundTrasfer">Kirim Uang</entry>
+	<entry key="left.menu.billPayment">Bayar Tagihan</entry>
+	<entry key="left.menu.airTimetopup">Isi Pulsa</entry>
+	<entry key="left.menu.manageFavorites">Pengaturan Daftar Favorit</entry>
+	<entry key="left.menu.manageSubAccounts">Pengaturan Dompet Tabungan</entry>
+	<entry key="left.menu.subAccountTransfer">Transfer Dompet Tabungan</entry>
+	<entry key="left.menu.standingInstructions">Instruksi Favorit</entry>
+	<entry key="left.menu.changelanguage">Ganti Bahasa</entry>
+	<entry key="left.menu.viewHelp">Bantuan</entry>
+	<entry key="left.menu.changeRecieptMode">Pilih Jenis Notifikasi</entry>
+	<entry key="left.menu.manualAdvice">Transaksi Manual</entry>
+</properties>

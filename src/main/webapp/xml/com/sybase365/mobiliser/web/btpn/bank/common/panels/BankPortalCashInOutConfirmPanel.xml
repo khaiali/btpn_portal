@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="label.cashIn.confirm.glAccount">GL Account</entry>
+	<entry key="label.cashIn.confirm.mobileNumber">Mobile Number</entry>
+	<entry key="label.cashIn.confirm.name">Name</entry>
+	<entry key="label.cashIn.cashinFee">Fee</entry>
+	<entry key="label.cashIn.totalAmount">Total Amount</entry>
+	<entry key="error.cashin.fail">An error occurred while cash in to agent</entry>
+	
+	<!-- ##### Error Service ##### -->
+	<entry key="error.2511">PAYER UNKNOWN, please try again.</entry>
+	<entry key="posting.fail">Posting Failed, please try again later. </entry>
+	<entry key="posting.failure.exception">We are experiencing technical difficulties. Please try
+		again later.</entry>
+		
+		
+</properties>

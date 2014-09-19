@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.limitRejectConfirm">Limit Reject Confirm</entry>
+	
+	<entry key="label.limit.description">Decription</entry>
+	<entry key="label.limit.piType">PI Type</entry>
+	<entry key="label.limit.pi">PI</entry>
+	<entry key="label.limit.customerType">Customer Type</entry>
+	<entry key="label.limit.customer">Customer</entry>
+	<entry key="label.limit.useCase">Use Case</entry>
+	<entry key="label.limit.singleDebitMinAmount">Single Debit Min Amount</entry>
+	<entry key="label.limit.singleDebitMaxAmount">Single Debit Max Amount</entry>
+	<entry key="label.limit.singleCreditMinAmount">Single Credit Min Amount</entry>
+	<entry key="label.limit.singleCreditMaxAmount">Single Credit Max Amount</entry>
+	<entry key="label.limit.dailyDebitMaxAmount">Daily Debit Max Amount</entry>
+	<entry key="label.limit.weeklyDebitMaxAmount">Weekly Debit Max Amount</entry>
+	<entry key="label.limit.monthlyDebitMaxAmount">Monthly Debit Max Amount</entry>
+	<entry key="label.limit.dailyCreditMaxAmount">Daily Credit Max Amount</entry>
+	<entry key="label.limit.weeklyCreditMaxAmount">Weekly Credit Max Amount</entry>
+	<entry key="label.limit.monthlyCreditMaxAmount">Monthly Credit Max Amount</entry>
+	<entry key="label.limit.dailyDebitMaxCount">Daily Debit Max Count</entry>
+	<entry key="label.limit.weeklyDebitMaxCount">Weekly Debit Max Count</entry>
+	<entry key="label.limit.monthlyDebitMaxCount">Month Debit Max Count</entry>
+	<entry key="label.limit.dailyCreditMaxCount">Daily Credit Max Count</entry>
+	<entry key="label.limit.weeklyCreditMaxCount">Weekly Credit Max Count</entry>
+	<entry key="label.limit.monthlyCreditMaxCount">Monthly Credit Max Count</entry>
+	<entry key="label.limit.minimumBalance">Minimum Balance</entry>
+	<entry key="label.limit.maximumBalance">Maximum Balance</entry>
+	<entry key="label.limit.status">Status</entry>
+	<entry key="label.limit.creationDate">Creation Date</entry>
+	<entry key="label.limit.creator">Creator</entry>
+	
+	<!-- ############# Button ############# -->
+	<entry key="label.button.limit.submit">Confirm</entry>
+	<entry key="label.button.limit.back">Back</entry>
+	<entry key="label.button.limit.cancel">Cancel</entry>
+	
+	 <entry key="reject.success">Reject Limit submitted successfully</entry>
+
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="cashOutBean.cashOutAmount.Required">Cash Out Amount is a required field</entry>
+	<entry key="cashOutBean.cashOutAmount.PatternValidator">'${input}' is not a valid Cash Out Amount</entry>
+	<entry key="cashOutBean.cashOutAmount.AmountValidator">${input} is not a valid Cash Out Amount</entry>
+	<entry key="cashOutBean.cashOutAmount.IConverter.Long">${input} is not a valid Cash Out Amount</entry>
+
+</properties>

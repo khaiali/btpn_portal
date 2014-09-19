@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.requestTransactionReversal">Request Transaction Reversal</entry>
+
+	<entry key="label.transactionID">Transaction ID</entry>
+	<entry key="label.transactionName">Transaction Name</entry>
+	<entry key="label.transactionDate">Transaction Date</entry>
+	<entry key="label.transactionAmount">Transaction Amount</entry>
+	<entry key="label.mobileNo">Mobile No.</entry>
+	<entry key="txnreversal.add.success">Request added successfully.</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="txnBean.transactionID.Required">Transaction ID is required field.</entry>
+	<entry key="txnBean.transactionName.Required">Transaction Name is required field.</entry>
+	<entry key="txnBean.transactionDate.Required">Transaction Date is required field.</entry>
+	<entry key="txnBean.transactionAmount.Required">Transaction Amount is required field.</entry>
+	
+	<entry key="error.perform.reversal">An error occurred while performing reversal.</entry>
+	<entry key="error.10108">Invalid Reversal Request. Transaction already settled.</entry>
+
+</properties>

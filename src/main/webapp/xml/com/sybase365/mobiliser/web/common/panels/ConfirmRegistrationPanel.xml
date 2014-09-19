@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="confirmData.title">Confirm Personal Data</entry>
+	<entry key="confirmData.headline">Please confirm your previously entered information</entry>
+	<entry key="confirmData.personalData">Personal Information</entry>
+	<entry key="confirmData.msisdn">MSISDN</entry>
+	<entry key="confirmData.firstName">First Name</entry>
+	<entry key="confirmData.lastName">Last Name</entry>
+	<entry key="confirmData.title">Title</entry>
+	<entry key="confirmData.gender">Gender</entry>
+	<entry key="confirmData.birthDate">Date Of Birth</entry>
+	<entry key="confirmData.customerType">Customer Type</entry>
+	<entry key="confirmData.street1">Street Address</entry>
+	<entry key="confirmData.street2">Street Address (addition)</entry>
+	<entry key="confirmData.securityQuestion">Security Question</entry>
+	<entry key="confirmData.securityAnswer">Answer</entry>
+	<entry key="confirmData.houseNo">House No</entry>
+	<entry key="confirmData.zip">ZIP</entry>
+	<entry key="confirmData.city">City</entry>
+	<entry key="confirmData.state">State</entry>
+	<entry key="confirmData.country">Country</entry>
+	<entry key="confirmData.phone">Phone</entry>
+	<entry key="confirmData.language">Language</entry>
+	<entry key="confirmData.timeZone">Time Zone</entry>
+	<entry key="confirmData.email">Email</entry>
+	<entry key="confirmData.infoMode">Info Mode</entry>
+	<entry key="confirmData.userName">Username</entry>
+	<entry key="index.headline.personalInformation">General Information</entry>
+	<entry key="index.headline.yourAddress">Address Information</entry>
+	<entry key="index.headline.yourIdentification">Security Information</entry>
+	<entry key="index.headline.yourContactInformation">Contact Information</entry>
+	<entry key="personalData.gender.0">Unknown</entry>
+	<entry key="personalData.gender.1">Male</entry>
+	<entry key="personalData.gender.2">Female</entry>
+	<entry key="personalData.gender.3">Company</entry>
+	<entry key="customer.kvInfoMode.null">- Please Select -</entry>
+	<entry key="personalData.infoMode.0">None</entry>
+	<entry key="personalData.infoMode.1">SMS</entry>
+	<entry key="personalData.infoMode.2">Email</entry>
+	<entry key="personalData.infoMode.3">SMS and Email</entry>
+	<entry key="register.customer.error">An error occurred while registering the customer</entry>
+	<entry key="confirmData.networkProvider">Network Provider</entry>
+	<entry key="registration.successMessage">Thanks for Registration, your request for Agent/Consumer registration has been submitted to the bank approval and applicant will be informed of the outcome soon via SMS. Registered MSVA number is %s. Please use USSD to generate your PIN.</entry>
+	<entry key="registration.failure.exception">Registration Failed</entry>
+
+
+</properties>

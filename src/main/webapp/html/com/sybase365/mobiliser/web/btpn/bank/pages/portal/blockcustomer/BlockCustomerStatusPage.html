@@ -1,0 +1,35 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.ta/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div id="centerContent" class="content">
+				<form wicket:id="blockCustomerStatusForm">
+					<div wicket:id="errorMessages"></div>
+					<fieldset>
+						<legend class="reg_tab7">
+							<wicket:message key="header.customerInformation" />
+						</legend>
+                        <div class="column">
+                            <div class="input">
+                                <label for="Status">
+                                    <wicket:message key="label.oldStatus" />
+                                </label>
+                                <div wicket:id="oldStatus"></div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="input">
+                                <label>
+                                    <wicket:message key="label.newStatus" />
+                                </label>
+                                <div wicket:id="newStatus"></div>
+                            </div>
+                        </div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

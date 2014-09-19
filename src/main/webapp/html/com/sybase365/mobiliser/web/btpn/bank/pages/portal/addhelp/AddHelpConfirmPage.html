@@ -1,0 +1,44 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head></head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="confirmAddHelpForm" method="post">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="label.confirm.help"/></legend>
+							<div class="reg_tab_01">
+								<div class="column">
+									<div class="input">
+										<label for="help.portal"><wicket:message key="label.portal"/><span
+											class="required">*</span>
+										</label>
+										<div class="input_value" wicket:id="portalType.value"></div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label for="help.description"><wicket:message key="label.help.content"/><span
+											class="required">*</span>
+										</label>
+										<textarea id="helpDescription" wicket:id="helpText" cols="20" style="height: 200px"
+											name="helpDescription" readonly="readonly" rows="5"></textarea>
+									</div>
+									<div class="spacer"></div>
+									<p>
+										<span class="required">*</span><wicket:message key="label.denotes.mandatory"/>
+									</p>
+									<input name="addHelp" wicket:id="btnUpdate" wicket:message="value:Confirm" tabindex="27"	class="submit acc_chk" type="submit" /> 
+									<input style="left: 250px"  wicket:id="btnCancel" name="cancelAddHelp" wicket:message="value:Cancel" tabindex="27" class="submit acc_chk" type="submit" />
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="manageSubAccountsForm">
+
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="headLine.accounts" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="spacer"></div>
+
+							<div class="reg_tab_01">
+								<div>
+									<span wicket:id="emptyRecordsMessage"></span>
+								</div>
+								<div class="column" wicket:id="subAccountsContainer">
+									<div class="displayTag">
+										<span class="pagebanner" wicket:id="subAccountsHeader"></span>
+										<span class="pagelinks" wicket:id="subAccountsNavigator"></span>
+										<wicket:enclosure child="pageable">
+											<div id="table_transaksi">
+											<table id="attachmentsTable" style="border:1px solid #eaeaea;width:80%;">
+												<thead>
+													<tr>
+														<th wicket:id="orderByName" ><wicket:message key="label.name" /></th>
+														<th ><wicket:message key="label.accountId" /></th>
+														<th ><wicket:message key="label.description" /></th>
+														<th ><wicket:message key="label.balance" /></th>
+														<th ><wicket:message key="label.remove" /></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr wicket:id="pageable">
+														<td><div wicket:id="name">[Nama]</div></td>
+														<td><div wicket:id="accountId">[ID Rekening]</div></td>
+														<td><div wicket:id="description">[Dekripsi]</div></td>
+														<td><div wicket:id="balance">[Balance]</div></td>
+														<td><a href="#" wicket:id="removeLink"><span
+																wicket:id="linkName">[Hapus]</span> </a></td>
+													</tr>
+												</tbody>
+											</table>
+											</div>
+										</wicket:enclosure>
+									</div>
+								</div>
+							</div>
+							<input type="submit" class="submit acc_chk" style="left: 300px"
+								wicket:id="submitButton" value="Tambah">
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

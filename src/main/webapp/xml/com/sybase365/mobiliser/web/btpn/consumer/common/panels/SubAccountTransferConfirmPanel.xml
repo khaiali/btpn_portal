@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.accountTransfer">Transfer Rekening</entry>
+	<entry key="label.toAccount">Ke Rekening:</entry>
+	<entry key="label.fromAccount">Dari Rekening:</entry>
+	<entry key="label.name">Nama</entry>
+	<entry key="label.description">Deskripsi</entry>
+	<entry key="label.accountId">ID Rekening</entry>
+	<entry key="label.amount">Jumlah</entry>
+	<entry key="label.remarks">Remarks</entry>
+	<entry key="requiredFields">Wajib isi</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="subAccountBean.amount.Required">Kolom Jumlah harus diisi.</entry>
+	<entry key="subAccountBean.amount.PatternValidator">'${input}' bukan Jumlah yang valid.</entry>
+	<entry key="subAccountBean.amount.AmountValidator">${input} bukan Jumlah yang valid.</entry>
+	<entry key="subAccountBean.amount.IConverter.Long">${input} bukan Jumlah yang valid.</entry>
+
+</properties>

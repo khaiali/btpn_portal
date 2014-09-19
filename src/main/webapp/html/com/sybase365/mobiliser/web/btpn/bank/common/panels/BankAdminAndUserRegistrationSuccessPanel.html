@@ -1,0 +1,88 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="regSuccessForm">
+						<fieldset id="adminRegister">
+                            <legend class="reg_tab" wicket:id="headline.registration.legend.label"></legend>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.customerType.label" />
+                                </label>
+                                <div class="input_value">
+                                    <label wicket:id="bankStaffBean.customerType.idAndValue"></label>
+                                </div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.userId.label" />
+                                </label>
+                                <div class="input_value">
+                                    <label wicket:id="bankStaffBean.userId"></label>
+                                </div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.name.label" />
+                                </label>
+                                <div class="input_value">
+                                    <label wicket:id="bankStaffBean.name"></label>
+                                </div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.email.label" />
+                                </label>
+                                <div class="input_value">
+                                    <label wicket:id="bankStaffBean.email"></label>
+                                </div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.designation.label" />
+                                </label>
+                                <div class="input_value">
+                                    <label wicket:id="bankStaffBean.designation"></label>
+                                </div>
+                            </div>
+                            <div class="Account_info">
+                                <label> <wicket:message key="registration.language.label" /></label>
+                                <div class="input_value">
+                                    <label wicket:id="bankStaffBean.language.idAndValue"></label>
+                                </div>
+                            </div>
+                            <div class="Account_info">
+                                <label> <wicket:message key="registration.glCode.label" /></label>
+                                <div class="input_value">
+                                    <label wicket:id="bankStaffBean.glCode.idAndValue"></label>
+                                </div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.territoryCode.label" />
+                                </label>
+                                <div class="input_value">
+                                    <label wicket:id="bankStaffBean.territoryCode"></label>
+                                </div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.orgUnit.label" />
+                                </label>
+                                <div class="input_value">
+                                    <label wicket:id="bankStaffBean.orgUnit.idAndValue"></label>
+                                </div>
+                            </div>
+							<div class="column">
+								<input type="submit" class="submit acc_chk" id="submit" wicket:id="finishButton" wicket:message="value:registration.button.finish" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

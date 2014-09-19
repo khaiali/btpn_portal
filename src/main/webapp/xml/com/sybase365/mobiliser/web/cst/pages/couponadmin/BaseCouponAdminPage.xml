@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <!--#### CouponTypesPage -->
+  <entry key="couponType.name">Name</entry>
+  <entry key="couponType.active">Active</entry>
+  <entry key="couponTypeTable.link.add">Add a Coupon Type</entry>
+  <entry key="couponType.addCouponTypeHelp">Use the 'Add a Coupon Type' link above to add an entry</entry>
+  <entry key="couponType.noItemsMsg">No Coupon Type found</entry>
+  <entry key="coupontype.load.error">An error occurred while loading coupon types</entry>
+  
+  <!--#### CouponCategoriesPage -->
+  <entry key="coupon.category">Category</entry>
+  <entry key="couponCategory.name">Category Name</entry>
+  <entry key="couponCategory.parentCategory">Parent Category</entry>
+  <entry key="couponTypeTable.link.addCategories">Add a Coupon Category</entry>
+  <entry key="couponCategory.addCouponCategoryHelp">Use the 'Add a Coupon Category' link above to add an entry</entry>
+  <entry key="couponCategory.noItemsMsg">No Coupon Category found</entry>
+  <entry key="load.category.detail.error">An error occurred while loading category details</entry>
+  <entry key="load.category.all.error">An error occurred while loading categories</entry>
+  <entry key="category.not.found">No Category found. Use the 'Add a Coupon Category' link to add a category</entry>
+
+  <!--#### SearchCouponPage -->
+  <entry key="find.coupon.serialNumber">Coupon Serial Number</entry>
+  <entry key="find.coupon.customerIdentification">Customer Identification</entry>
+  <entry key="findCoupon.help">You can search for coupons by specifying search parameters</entry>
+  <entry key="coupon.id">Coupon Id</entry>
+  <entry key="coupon.type">Coupon Type</entry>
+  <entry key="coupon.serialNumber">Serial Number</entry>
+  <entry key="coupon.issueDate">Issue Date</entry>
+  <entry key="coupon.issuedTo">Issued To</entry>
+  <entry key="search.coupon.error">An error occurred while searching coupons</entry>
+  <entry key="search.coupon.noItemMsg">No matching coupons found</entry>
+  <entry key="search.coupon.compulsory">Either Customer Identification or Coupon Serial number is mandatory</entry>
+  <!--#### Edit Coupon Page -->
+  <entry key="editCoupon.title">Edit Coupon</entry>
+  <entry key="editCoupon.help">Please enter details to edit the Coupon</entry>
+  <!-- ########## Create Coupon Type Page ######## -->
+  <entry key="createCouponType.title">Create Coupon Type</entry>
+  <entry key="createCouponType.help">Please enter details to create new coupon type</entry>
+
+  <!-- ########## Edit Coupon Type Page ######## -->
+  <entry key="menu.edit.coupon.type">Main</entry>
+  <entry key="menu.description.coupon.type">Description</entry>
+  <entry key="editCouponType.title">Edit Coupon Type</entry>
+  <entry key="editCouponType.help">Please enter details to edit the coupon type</entry>
+  <entry key="edit.coupon.id">Coupon Id</entry>
+  <entry key="edit.coupon.type">Coupon Type</entry>
+  <entry key="edit.coupon.serialNumber">Serial Number</entry>
+  <entry key="edit.coupon.issueDate">Issue Date</entry>
+  <entry key="edit.coupon.issuedTo">Issued To</entry>
+  <entry key="edit.coupon.status">Status</entry>
+  <entry key="update.coupon.success">Coupon updated successfully</entry>
+  <entry key="update.coupon.error">An error occurred while editing coupon</entry>
+
+  <!-- ########## Coupon Type Description Page ######## -->
+  
+  <entry key="menu.coupon.description">Description</entry>
+  <entry key="couponTypeDescription.noItemsMsg">No Coupon Descriptions found</entry>
+  <entry key="couponTypeDescription.addCouponDescriptionHelp">Use the 'Add a Description' link above to add an entry</entry>
+  <entry key="couponDescription.load.error">An error occurred while loading coupon type descriptions</entry>
+  <entry key="couponTypeDescription.link.add">Add a Description</entry>
+  <entry key="couponType.description.locale">Language</entry>
+  <entry key="couponType.description.mimeType">Format</entry>
+
+  <!-- ########## Create Coupon Type Description Page ######## -->
+  <entry key="createCouponTypeDescription.help">Please enter details to create description</entry>
+  <entry key="createCouponTypeDescription.title">Create Description</entry>
+
+
+  <!-- ########## Edit Coupon Type Description Page ######## -->
+  <entry key="editCouponTypeDescription.title">Edit Coupon Description</entry>
+  <entry key="editCouponTypeDescription.help">Please enter details to edit the description</entry>
+
+  <!-- ######### Coupon Type Keywords Page ####### -->
+  <entry key="menu.coupon.type.keyword">Keyword</entry>
+  <entry key="keyword.help">Keywords are searchable by user. Enter comma separated keywords for coupon type</entry>
+  <entry key="coupon.type.keyword">Keywords</entry>
+  <entry key="keywordString.Required">Keyword is required</entry>
+  <entry key="create.keyword.success">Keywords added successfully</entry>
+  <entry key="create.keyword.error">An error occurred while creating keyword</entry>
+  <entry key="keyword.load.error">An error occurred while loading keyword list</entry>
+
+
+  <entry key="create.coupon.batch.upload.success">Coupon batch uploaded successfully</entry>
+  
+  <!-- ######### Coupon Type Locations Page ####### -->
+  <entry key="menu.coupon.type.locations">Locations</entry>
+  <entry key="couponTypeLocation.noItemsMsg">No Coupon Locations found</entry>
+  <entry key="couponTypeLocation.addCouponLocationHelp">Use the 'Add a Location' link above to add an entry</entry>
+  <entry key="couponTypeLocation.link.add">Add a Location</entry>
+  <entry key="couponType.location.longitude">Longitude</entry>
+  <entry key="couponType.location.latitude">Latitude</entry>
+  <entry key="couponType.location.radius">Radius</entry>
+  <entry key="editCouponLocation.help">Please enter details to edit the batch</entry>
+  <entry key="location.remove.confirm">Are you sure you want to remove this location?</entry>
+  <entry key="delete.location.error">An error occurred while deleting location</entry>
+
+  <!-- ######### Create Coupon Type Locations Page ####### -->
+  <entry key="createCouponTypeLocation.title">Create Location</entry>
+  <entry key="createCouponTypeLocation.help">Please enter details to create location</entry>
+  <entry key="coupontype.location.load.error">An error occurred while loading coupon locations</entry>
+
+  <!-- ########## Edit Coupon Type Locations Page ######## -->
+  <entry key="editCouponTypeLocation.title">Edit Coupon Location</entry>
+  <entry key="editCouponTypeLocation.help">Please enter details to edit the location</entry>
+
+  <!-- ######### Coupon Type Assign Page ####### -->
+  <entry key="menu.coupon.type.assign">Assign</entry>
+  <entry key="assignPage.help">Please enter customer identification separated by comma (Maximum of 1000)</entry>
+  <entry key="coupon.type.assign.customerIdentifications">Customer Identifications</entry>
+  <entry key="customerIdsString.Required">Customer Identifications is required</entry>
+  <entry key="assing.couponType.success">Customer's assigned successfully</entry>
+  <entry key="assign.couponType.error">An error occurred while assigning coupons to customers</entry>
+  <entry key="assign.customerIds.max">More than 1000 customer identifications are not allowed</entry>
+  <entry key="assignPage.identificationType">Identification Type</entry>
+  <entry key="identificationType.Required">Identification Type is required</entry>
+
+  <!-- ######### Coupon Type Categories Page ####### -->
+  
+  <entry key="couponTypeCategory.button.addCategory">Assign Category</entry>
+  <entry key="couponTypeCategory.button.removeCategory">Remove Category</entry>
+  <entry key="availableCategories.Required">Existing Categories is required</entry>
+  <entry key="assignedCategories.Required">Assigned Categories is required</entry>
+  <entry key="menu.coupon.type.categories">Categories</entry>
+  <entry key="couponType.categories.help">Categories are browsable by user</entry>
+  <entry key="availableCategories">Existing Categories</entry>
+  <entry key="assign.category.success">Categories assigned successfully</entry>
+  <entry key="remove.category.success">Categories removed successfully</entry>
+  
+  <entry key="assignedCategories">Assigned Categories</entry>
+  <entry key="assign.category.error">An error occurred while assigning the categories for coupon type</entry>
+  <entry key="remove.category.error">An error occurred while removing assigned the categories for coupon type</entry>
+  <entry key="update.category.success">Categories updated successfully for coupon type</entry>
+  <entry key="load.coupon.assigned.error">An error occurred while loading the assigned categories list</entry>
+  <entry key="load.all.category.error">An error occurred while loading the available categories list</entry>
+  <entry key="availableCategories.not.selected">Please select at least one category from available categories list</entry>
+  <entry key="assignedCategories.not.selected">Please select at least one category from assigned categories list</entry>
+
+  <!-- ######### Generate Coupon Batch Page ####### -->
+  <entry key="menu.coupon.type.generate">Generate</entry>
+  <entry key="couponType.generate.help">Please enter details to generate Coupons</entry>
+  <entry key="coupon.quantity">Quantity</entry>
+  <entry key="quantity.Required">Quantity is required</entry>
+  <entry key="coupon.issueStartDate">Issue Start Date</entry>
+  <entry key="coupon.issueEndDate">Issue End Date</entry>
+  <entry key="coupon.serialNumber">Serial No.</entry>
+  <entry key="serialNumber.Required">Serial No. is required</entry>
+  <entry key="coupon.code">Coupon Code</entry>
+  <entry key="codeHash.Required">Coupon Code is required</entry>
+  <entry key="coupon.validUntil">Valid Until</entry>
+  <entry key="validUntilField.Required">Valid Until is required</entry>
+  <entry key="quantity.MinimumValidator">'${input}' is invalid Quantity</entry>
+  <entry key="quantity.IConverter.Long">'${input}' is invalid Quantity</entry>
+  <entry key="generate.issueStartDate.invalid">Issue Start Date is invalid</entry>
+  <entry key="generate.error.validUntilDate">Valid Until Date is invalid </entry>
+  <entry key="generate.error.issueStartDate">Start date should be less than end date</entry>
+  <entry key="generate.error.validUntilDate">Valid Until is invalid date</entry>
+  
+  <entry key="generate.coupon.success">Coupon Batch generated successfully</entry>
+  <entry key="generate.coupon.error">An error occurred while generating coupon batch</entry>
+
+  <!-- ######### Coupon Type Batches Page ####### -->
+  <entry key="menu.coupon.type.batches">Batches</entry>
+  <entry key="couponTypeBatch.noItemsMsg">No Coupon Batches found</entry>
+  <entry key="couponTypeBatch.addCouponBatchHelp">Use the 'Add a Coupon Batch' link above to add an entry</entry>
+  <entry key="couponTypeBatch.link.add">Add a Coupon Batch</entry>
+  <entry key="couponTypeBatch.id">Id</entry>
+  <entry key="couponTypeBatch.created">Created</entry>
+  <entry key="couponTypeBatch.status">Status</entry>
+  <entry key="couponTypeBatch.total">Total</entry>
+  <entry key="couponTypeBatch.left">Left</entry>
+  <entry key="couponTypeBatch.content">File</entry>
+  <entry key="couponTypeBatch.attachmentFile.required">Attachment File is required </entry>
+  <entry key="editCouponTypeBatch.title">Edit Batch</entry>
+  <entry key="editCouponBatchType.help">Please enter details to edit the batch</entry>
+  <entry key="couponbatch.load.error">An error occurred while loading coupon batches</entry>
+  <entry key="create.coupon.batch.upload.error">An error occurred while creating coupon batch</entry>
+
+  <!-- ######### Coupon Categories Page ####### -->
+  <entry key="categoryName.Required">Category name is required</entry>
+  <entry key="parentCategory.Required">Parent category is required</entry>
+  <entry key="create.coupon.category.success">Coupon category added successfully</entry>
+  <entry key="create.coupon.category.error">An error occurred while adding coupon category</entry>
+  <entry key="update.coupon.category.success">Coupon category updated successfully</entry>
+  <entry key="update.coupon.category.error">An error occurred while updating coupon category</entry>
+  <entry key="load.coupon.category.error">An error occurred while loading coupon categories</entry>
+
+  <!--#### Edit Coupon Categories Page -->
+  <entry key="editCouponCategory.title">Edit Coupon Category</entry>
+  <entry key="couponCategoryDescription.link.add">Add a Category Description</entry>
+  <entry key="couponCategory.description.locale">Language</entry>
+  <entry key="couponCategory.description">Description</entry>
+  <entry key="parent.category.load.error">An error occurred while loading parent category</entry>
+  
+    <!--#### Edit Coupon Categories Page -->
+  <entry key="menu.coupon.category.main">Main</entry>  
+  <entry key="menu.coupon.category.description">Description</entry>
+  <entry key="editCouponCategory.title">Edit Coupon Category</entry>  
+  <entry key="editCouponCategory.help">Please enter details to edit the Coupon category</entry>
+  <entry key="couponCategory.active">Active</entry>
+  <entry key="couponCategory.name.Required">Category Name is required</entry>
+  <entry key="couponCategory.parentCategory.Required">Parent Category is required</entry>
+  <entry key="menu.edit.couponCategory.description">Description</entry>
+  
+    <!--#### Coupon Categories Description Page -->
+  <entry key="description.remove.confirm">Are you sure you want to remove this description?</entry>
+  <entry key="couponCategory.addCategoryDescriptionHelp">Use the 'Add a Category Description' link above to add an entry</entry>
+  <entry key="couponCategoryDescription.noItemsMsg">No category descriptions are found</entry>
+  <entry key="locale">Language</entry>
+  <entry key="caption">Description</entry>
+  <entry key="couponCategoryDescription.locale.Required">Language is required</entry>
+  <entry key="couponCategoryDescription.caption.Required">Description is required</entry>
+  <entry key="create.category.description.error">An error occurred while adding coupon category description</entry>
+  <entry key="load.description.language.error">An error occurred while loading languages for category description</entry>
+  <entry key="delete.category.description.error">An error occurred while deleting coupon category description</entry>
+  <entry key="remove.desc.to.add.new">Category Description exists for all languages. Delete description to add new</entry>
+  
+  
+  <!--#### Coupon Type Assign Page Result -->
+  <entry key="menu.coupon.assign.status">Status</entry>
+  <entry key="coupon.type.assign.success">Success</entry>
+  <entry key="coupon.type.assign.failed">Failed</entry>
+</properties>

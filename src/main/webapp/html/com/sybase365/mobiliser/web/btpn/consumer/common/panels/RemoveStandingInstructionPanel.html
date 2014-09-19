@@ -1,0 +1,112 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="removeStandingInstructionForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="headLine.standingInstructions" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="reg_tab">
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.name" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="instructionsBean.name"></label>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.payer" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="instructionsBean.payer"></label>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.payee" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="instructionsBean.payee"></label>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.startDate" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="instructionsBean.startDate"></label>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.expiryDate" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="instructionsBean.expiryDate"></label>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.frequency" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="instructionsBean.frequency"></label>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.weekday" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="instructionsBean.weekDay"></label>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.type" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="instructionsBean.type"></label>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.amount" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="instructionsBean.amount"></label>
+										</div>
+									</div>
+									<div class="spacer"></div>
+									<input type="submit" wicket:id="confirmButton"
+										class="submit acc_chk" value="Konfirmasi"> <input
+										type="submit" wicket:id="cancelButton" class="submit acc_chk"
+										style="left: 250px" value="Batal" />
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

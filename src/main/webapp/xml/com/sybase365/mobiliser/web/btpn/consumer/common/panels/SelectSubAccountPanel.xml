@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="headLine.accountTransfer">Transfer Rekening</entry>
+	<entry key="headLine.creditMessage">Please select account to credit the amount in it</entry>
+	<entry key="headLine.debitMessage">Please select account to debit the amount in it</entry>
+	<entry key="noAccountsExistsMessage">Tidak ada daftar rekening</entry>
+	<!-- <entry key="noAccountsExistsMessage">No accounts exists. Please click 
+		on 'Add' to start creating accounts.</entry> -->
+	<entry key="label.name">Nama</entry>
+	<entry key="label.accountId">ID Rekening</entry>
+	<entry key="label.description">Deskripsi</entry>
+	<entry key="label.balance">Saldo(IDR)</entry>
+	<entry key="label.select">Pilih</entry>
+
+	<entry key="subAccounts.totalitems.header">%s item ditemukan, menampilkan %s sampai %s.</entry>
+</properties>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+	<entry key="view.transactions.search.startDate">From Date</entry>
+	<entry key="view.transactions.search.endDate">End Date</entry>
+	<entry key="label.type">Type</entry>
+	<entry key="label.submit">Search</entry>
+	<entry key="no.items">No transactions are available for this customer</entry>
+	<entry key="label.id">ID</entry>
+	<entry key="label.date">Date</entry>
+	<entry key="label.paymentInstrumentId">Rekening</entry>
+	<entry key="label.type">Type</entry>
+    <entry key="label.description">Description</entry>
+	<entry key="label.amount">Amount</entry>
+	<entry key="label.debitAmount">Debit Amount</entry>
+	<entry key="label.creditAmount">Credit Amount</entry>
+	<entry key="label.runningBalance">Running Balance</entry>
+	<entry key="txns.header">Transactions</entry>
+	<entry key="label.svaBalance">SVABalance :</entry>
+	<entry key="label.exportOptions">Export options:</entry>
+	<entry key="label.pdf">PDF</entry>
+
+	<entry key="approval.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="pending.failure.error">An error occured while fetching approval list.</entry>
+	<entry key="selected.details.failure.error">An error occured while fetching selected approval
+		details.</entry>
+	<entry key="pending.failure.exception">We are experiencing technical difficulties. Please try
+		again later.</entry>
+
+	<!-- ############# Custom Validations ############# -->
+	<entry key="searchData.fromDate.Required">Start Date is a required field.</entry>
+	<entry key="searchData.toDate.Required">End Date is a required field.</entry>
+	<entry key="searchData.fromDate.future">Start Date should not be a future date.</entry>
+	<entry key="searchData.toDate.future">End Date should not be a future date.</entry>
+	<entry key="searchData.fromDate.todate.after.fromdate">Start Date should be before End date.</entry>
+
+</properties>

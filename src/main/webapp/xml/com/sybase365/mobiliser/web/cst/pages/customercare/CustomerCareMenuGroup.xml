@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <entry key="menu.standing.data">Standing Data</entry>
+  <entry key="menu.service.packages">Service Package</entry>
+  <entry key="menu.accounts">Accounts</entry>
+  <entry key="menu.history">History</entry>
+  <entry key="menu.contacts">Contacts</entry>
+  <entry key="menu.mobileAlerts">Mobile Alerts</entry>
+  <entry key="menu.contactPoints">Contact Points</entry>
+  
+  <entry key="menu.transactions">Transactions</entry>
+  <entry key="menu.agent.transactions">Agent Transactions</entry>
+  <entry key="menu.attachments">Attachments</entry>
+  <entry key="menu.invoice.configurations">Bill Configuration</entry>
+  <entry key="menu.invoices">Open Bills</entry>
+  <entry key="menu.invoice.history">Bill History</entry>
+  <entry key="menu.sms.traffic">SMS Traffic</entry>
+  <entry key="menu.fee.configuration">Fee Configuration</entry>
+  <entry key="menu.limit.configuration">Limit Configuration</entry>
+  
+  
+  <!--  ###### Validation error messages ######## -->
+  <entry key="fromDate.IConverter.Date">From Date is invalid</entry>
+  <entry key="toDate.IConverter.Date">To Date is invalid</entry>
+  
+  <!-- ####### Show History Page ######### -->
+  <entry key="showHistory.title">History</entry>
+  <entry key="showHistory.fromDate">From Date</entry>
+  <entry key="showHistory.timeframe">Timeframe</entry>
+  <entry key="showHistory.agentId">Agent ID</entry>
+  <entry key="showHistory.toDate">To Date</entry>
+  <entry key="history.load.error">An error occurred in loading customer history. Try again later.</entry>
+  <entry key="agentId.IConverter.Long">'${input}' is not a valid Agent ID</entry>
+  
+  <!-- ####### Account Page ######### -->
+    <entry key="manageAccounts.title">Accounts</entry>
+    
+ 
+      
+  <!-- ####### Add/Edit Bank Account Page ######### -->
+    <entry key="bankAccountData.title">Add a Bank Account</entry>
+    <entry key="bankAccountEditData.title">Edit a Bank Account</entry>
+    <entry key="pending.bankAccountData.title">Approve/Reject Bank Account</entry>
+    <entry key="pending.externalAccountData.title">Approve/Reject External Account </entry>
+    <entry key="bankAccountData.help">Please enter your bank account data and click Save</entry>
+
+  <!-- ####### Add/Edit Credit Card Page ######### -->
+    <entry key="creditCardData.title">Add a Credit Card</entry>
+    <entry key="creditCardEditData.title">Edit a Credit Card</entry>
+    <entry key="pending.creditCardData.title">Approve/Reject Credit Card</entry>
+    <entry key="creditCardData.help">Please enter your credit card data and press Save.</entry>
+
+  <!-- ####### Add/Edit External Account Page ######### -->
+    <entry key="walletEntry.alias">Alias</entry>
+    <entry key="externalAccountData.title">Add an External Account</entry>
+    <entry key="externalAccountEditData.title">Edit an External Account</entry>
+    <entry key="pending.externalAccountData.title">Approve/Reject External Account</entry>
+    <entry key="externalAccountData.help">Please enter your external account data and press Save.</entry>
+    <entry key="walletEntry.externalAccount.id1">ID 1</entry>  
+    <entry key="walletEntry.externalAccount.id2">ID 2</entry>  
+    <entry key="walletEntry.externalAccount.id3">ID 3</entry>  
+    <entry key="walletEntry.externalAccount.id4">ID 4</entry>  
+    <entry key="walletEntry.externalAccount.id5">ID 5</entry>  
+    <entry key="walletEntry.externalAccount.id6">ID 6</entry>  
+    <entry key="walletEntry.externalAccount.id7">ID 7</entry>  
+    <entry key="walletEntry.externalAccount.id8">ID 8</entry>  
+    <entry key="create.external.account.error">An error occurred while creating External Account</entry>
+    <entry key="update.external.account.error">An error occurred while updating External Account</entry>
+
+  <!-- ####### Credit SVA Page######### -->
+    <entry key="creditSva.title">Credit SVA</entry>
+    <entry key="creditSva.help">Please enter the amount of the Credit transaction</entry>
+    <entry key="creditAmount">Amount</entry>
+    <entry key="creditAmount.Reuired">Amount is required</entry>
+    <entry key="creditAmount.AmountValidator">'${input}' is not a valid Amount</entry>
+    <entry key="credit.text">Text</entry>
+    <entry key="credit.orderId">Order ID</entry>
+    <entry key="credit.sva.error">An error occurred in Credit Transaction</entry>
+    <entry key="credit.sva.success">SVA credit is successful</entry>
+    <entry key="text.PatternValidator">'${input}' is not a valid Text</entry>    
+    <entry key="orderId.PatternValidator">'${input}' is not a valid Order ID</entry>
+    
+  <!-- ####### Debit SVA Page######### -->
+    <entry key="debitSva.title">Debit SVA</entry>
+    <entry key="debitSva.help">Please enter the amount of the Debit transaction</entry>
+    <entry key="debitAmount">Amount</entry>
+    <entry key="debitAmount.Reuired">Amount is required</entry>
+    <entry key="debitAmount.AmountValidator">'${input}' is not a valid Amount</entry>
+    <entry key="debit.text">Text</entry>
+    <entry key="debit.orderId">Order ID</entry>
+    <entry key="debit.sva.error">An error occurred in Debit Transaction</entry>
+    <entry key="debit.sva.success">SVA debit is successful</entry>
+
+    <!-- ############# Manage Accounts Page - Add Funds ############# -->
+    <entry key="addFunds.title">Add Funds to SVA</entry>
+    <entry key="addFunds.help">Please choose the account and enter the amount you would like to add to stored value account</entry>
+    <entry key="addFundsConfirm.title">Confirm Transaction</entry>
+    <entry key="addFundsConfirm.help">Please review the amount you would like to add to stored value account</entry>
+    <entry key="addFundsFinish.title">Transaction Complete</entry>
+    <entry key="addFundsFinish.success">You have successfully added funds to SVA!</entry>
+    <entry key="addFundsFinish.toSva"> was credited to SVA</entry>
+    <entry key="addFundsFinish.newBalance">The new Balance is</entry>
+
+    <!-- ############# Manage Accounts Page - Withdraw Funds ############# -->
+    <entry key="withdrawFunds.title">Withdraw Funds</entry>
+    <entry key="withdrawFunds.help">Please choose the account and enter the amount you would like to withdraw from stored value account</entry>
+    <entry key="withdrawFundsConfirm.title">Confirm Transaction</entry>
+    <entry key="withdrawFundsConfirm.help">Please review the amount you would like to withdraw from stored value account</entry>
+    <entry key="withdrawFundsFinish.title">Transaction Complete</entry>
+    <entry key="withdrawFundsFinish.success">You have successfully withdrawn funds from SVA!</entry>
+    <entry key="withdrawFundsFinish.fromSva"> was debited from SVA</entry>
+    <entry key="withdrawFundsFinish.newBalance">The new Balance is</entry>
+
+    <!-- ####### CST TRANSACTION ######### -->
+    <entry key="transactions.findCustomer">Find Customer</entry>
+    <entry key="viewTransactions.title">Transactions</entry>
+    <entry key="agentTransactions.title">Agent Transactions</entry> 
+    <entry key="txnDetails.title">Transaction Details</entry>
+    <entry key="agentTxnDetails.title">Agent Transaction Details</entry>
+    <entry key="consumerIsPayer.null">Either One</entry>
+    
+    <!-- ################# Contacts#################### -->
+	<entry key="contact.note.noItemsMsg">No Contact Notes found to display</entry>
+	<entry key="findcontact.title">Contacts</entry>
+	<entry key="findContacts.fromDate">From Date</entry>
+	<entry key="findContacts.timeframe">Timeframe</entry>
+	<entry key="findContacts.category">Category</entry>
+	<entry key="findContacts.contactId">Contact Id</entry>
+	<entry key="findContacts.agentName">Agent Name</entry>
+	<entry key="findContacts.toDate">To Date</entry>
+	<entry key="findContacts.status">Status</entry>
+	<entry key="findContacts.subject">Subject</entry>
+	<entry key="contactNote.id">Contact Id</entry>
+	<entry key="contactNote.text">Text</entry>
+	<entry key="contactNote.category">Category</entry>
+	<entry key="contactNote.subject">Subject</entry>
+	<entry key="contactNote.status">Status</entry>
+	<entry key="contactNote.date">Date</entry>
+	<entry key="contactNote.agent">Agent</entry>
+	<entry key="contactNotes.list.failure">An error occurred while loading contact notes list</entry>
+	<entry key="invalid.fromDate">The provided from date is invalid</entry>
+	<entry key="invalid.toDate">The provided to date is invalid</entry>
+	<entry key="from.larger.than.to">The "Date From" value has to be less or equal to the "Date To" value.</entry>
+  	<entry key="contact.detail.title">Details Contact #</entry>
+  	<!-- ################# Standing Data ########################## -->
+	<entry key="standingData.title">Standing Data</entry>
+	<entry key="generalInfo.headLine">General Information</entry>
+	<entry key="addressInfo.headLine">Address Information</entry>
+	<entry key="contactInfo.headLine">Contact Information</entry>
+    <entry key="feeSetConf.headLine">Fees And Limits</entry>
+	<entry key="securityInfo.headLine">Security Information</entry>
+	<entry key="standingData.firstName">First Name</entry>
+	<entry key="standingData.birthDate">Date of Birth</entry>
+	<entry key="standingData.lastName">Last Name</entry>
+	<entry key="standingData.language">Language</entry>
+    <entry key="standingData.timeZone">Time Zone</entry>
+	<entry key="standingData.street1">Street Address</entry>
+	<entry key="standingData.houseNo">House No</entry>
+	<entry key="standingData.state">State</entry>
+	<entry key="standingData.country">Country</entry>
+	<entry key="standingData.street2">Street Address2</entry>
+	<entry key="standingData.city">City</entry>
+	<entry key="standingData.zip">Zip</entry>
+	<entry key="standingData.msisdn">MSISDN</entry>
+	<entry key="standingData.infoMode">Info Mode</entry>
+    <entry key="standingData.feeSet">Fee Set</entry>
+    <entry key="standingData.limitSet">Limit Set</entry>
+	<entry key="standingData.email">Email</entry>
+	<entry key="standingData.customerType">Customer Type</entry>
+	<entry key="standingData.securityQuestion">Security Question</entry>
+	<entry key="standingData.securityAnswer">Security Answer</entry>
+    <entry key="standingData.username">Username</entry>
+	<entry key="statusInfo.headLine">Status Information</entry>
+	<entry key="standingData.customerStatus">Customer Status</entry>
+	<entry key="standingData.blackListReason">BlackList Reason</entry>
+	<entry key="standingData.resetPassword">Reset Password</entry>
+	<entry key="standingData.resetPin">Reset Pin</entry>
+	<entry key="standingData.cancelationReason">Cancellation Reason</entry>
+	<entry key="reset">Reset</entry>
+    <entry key="changeFeeSetConf">Configure Individual Fee</entry>
+    <entry key="changeLimitSetConf">Configure Individual Limit</entry>
+	<entry key="update">Update</entry>
+	<entry key="Required">${label} is required</entry>
+	<entry key="PatternValidator">${label} is not a recognized name pattern</entry>
+	<entry key="customer.update.error">An error occurred while updating customer details</entry>
+	<entry key="data.update.successful">The data has been updated successfully</entry>
+    <entry key="customer.approved.successfull">The customer has been approved successfully</entry>
+    <entry key="wallet.approved.successfull">The wallet has been approved successfully</entry>
+    <entry key="wallet.rejected.successfull">The wallet has been rejected successfully</entry>
+    <entry key="customer.approval.error">An error occurred while approving the customer</entry>
+    <entry key="customer.rejection.error">An error occurred while rejecting the customer</entry>
+    <entry key="customer.rejected.successfull">The customer has been rejected successfully</entry>
+	<entry key="customer.deactivate.warning">If you choose to de-activate a customer this customer including all of his identifications will be disabled. Also this customer is no longer shown in the search results.</entry>
+	<entry key="customer.birthDateString.Required">Date of Birth is required</entry>
+	<entry key="birthDateField.Required">Date of Birth is required</entry>
+	<entry key="customer.blackListReason.Required">Blacklist reason is required</entry>
+	<entry key="customer.birthDateString.PatternValidator">$'{input}' is not a valid Birth date</entry>
+	<entry key="customer.securityQuestion.Required">Security Question is required</entry>
+	<entry key="customer.SecQuesAns.Required">Security Answer is required</entry>
+	<entry key="customer.language.null">--Please Select--</entry>
+	<entry key="customer.address.street1.PatternValidator">'${input}' is not a valid Street Address</entry>
+	<entry key="customer.address.street2.PatternValidator">'${input}' is not a valid Street Address2</entry>
+	<entry key="customer.address.firstName.PatternValidator">'${input}' is not a valid First Name</entry>
+	<entry key="customer.address.lastName.PatternValidator">'${input}' is not a valid Last Name</entry>
+	<entry key="customer.address.city.PatternValidator">'${input}' is not a valid City</entry>
+    <entry key="customer.address.state.PatternValidator">'${input}' is not a valid State</entry>
+    <entry key="customer.address.zip.PatternValidator">'${input}' is not a valid Zip</entry>
+	<entry key="customer.SecQuesAns.PatternValidator">'${input}' is not a valid Security Answer</entry>
+    <entry key="customer.userName.PatternValidator">'${input}' is not a valid Username</entry>
+    <entry key="feeSets.remove.error">An error occurred while deleting the fee set</entry>
+    
+    <!-- ################# Contacts#################### -->
+    <entry key="cst.attachment.title">Attachments</entry>
+    
+    <!-- ###################### Reset Credential############################ -->
+    <entry key="resetPin.title">Confirm Reset PIN</entry>
+    <entry key="resetConfirm">OK</entry>
+    <entry key="confirm.pinReset.message">Click on OK to generate a temporary PIN which will be sent to the customer</entry>
+    <entry key="confirm.passwordReset.message">Click on OK to generate a temporary Password which will be sent to the customer</entry>
+    <entry key="resetPassword.title">Confirm Reset Password</entry>
+    <entry key="reset.unknown.method">The given "reset method" is not known</entry>
+    <entry key="customer.cancel.warning">If you choose to cancel a customer this customer including all of his identifications will be disabled. Also this customer is no longer shown in the search results</entry>
+    <entry key="newMsisdn.help">After entering the new MSISDN and submitting the change an OTP will be sent out to the customer</entry>
+    <entry key="newMsisdn.title">Enter New MSISDN</entry>
+    <entry key="changeMsisdn.msisdn">New MSISDN</entry>
+    <entry key="changeMsisdn">Change MSISDN</entry>
+    <entry key="change.msisdn.title">Enter New MSISDN</entry>
+    <entry key="confirmOtp.title">Enter the confirmation OTP</entry>
+    <entry key="confirmOtp.help">Enter the OTP to confirm the MSIDN change and finish the process</entry>
+    <entry key="confirmOtp">Confirmation OTP</entry>
+    <entry key="resendOtp">Resend OTP</entry>
+    <entry key="confirmOtp">Confirm OTP</entry>
+    <entry key="current.new.msidn.identical">The new MSISDN is identical with the customers current MSISDN</entry>
+    <entry key="get.customer.address.error">An error occurred while getting customer address</entry>
+    <entry key="get.customerBy.identification.error">An error occurred while getting customer by identification</entry>
+    <entry key="customer.reset.password.noMsisdn">No MSISDN set for the customer to send the confirmation SMS to</entry>
+    <entry key="customer.reset.password.noEmail">No E-Mail address set for the customer to send the confirmation E-Mail to</entry>
+    <entry key="customer.msisdn.change.error.customerinactive">Cannot change the MSISDN for a inactive or canceled customer</entry>
+    <entry key="otp.send.success">An OTP has been sent to the customer - Use this OTP to confirm the MSISDN change</entry>
+    <entry key="otp.limit.hit.error">The customer exceeded the OTP verification retry limit. Change request failed</entry>
+    <entry key="otp.mismatch.error">The entered OTP is not correct</entry>
+    <entry key="msisdn.changed.success">The MSISDN has been changed successfully</entry>
+    <entry key="otp.send.limit.hit">The maximum limit for OTP resend has been exceeded</entry>
+    <entry key="otp.resend.success">A new OTP has been successfully sent</entry>
+    <entry key="customer.deactivated.success">The customer has been successfully deactivated</entry>
+    <entry key="change.msisdn.error">An error occurred while changing the MSISDN</entry>
+    <entry key="confirm.otp.title">Confirm OTP</entry>
+    <entry key="reset.pin.failed">The PIN could not be reset due to technical errors</entry>
+    <entry key="reset.pin.ok">The PIN for consumer was successfully reset.</entry>
+    <entry key="reset.password.ok">The password for consumer was successfully reset</entry>
+    <entry key="reset.password.failed">The password could not be reset due to technical errors</entry>
+    <entry key="msisdn.change.error">An error occurred while sending OTP for changing MSISDN</entry>
+    
+    <!-- ###################### Individual Fee Configuration Page############################ -->
+    <entry key="feeSetConfigurations.title">Fee Sets</entry>
+    
+    <!-- ################## SMS Traffic -->
+    <entry key="smsTraffic.fromDate">From Date</entry>
+    <entry key="smsTraffic.toDate">To Date</entry>
+    <entry key="smsTraffic.month">Month</entry>
+    <entry key="smsTraffic.templateName">Template Name</entry>
+    <entry key="smsTraffic.title">SMS Traffic</entry>
+    <entry key="messageLog.id">Id</entry>
+    <entry key="messageLog.templateName">Template Name</entry>
+    <entry key="messageLog.messageText">Message Text</entry>
+    <entry key="detailsAction">Details</entry>
+    <entry key="messageLog.sentDate">Sent</entry>
+    <entry key="transactionHistory.filterType.month">By Month</entry>
+    <entry key="transactionHistory.filterType.date">By Date</entry>
+    <entry key="transactionHistory.filterType">Search By:</entry>
+    <entry key="messageLog.noItemsMsg">No message logs are found to display</entry>
+    <entry key="messageLog.list.failure">An error occurred while getting the list of message logs</entry>
+    <entry key="messageLog.detail.title">Message Log Detail</entry>
+    
+    <!-- ############# Bill Configuration Page ############# -->
+    <entry key="billConfigurationList.title">Bill Configuration</entry>
+    <entry key="addBillConfiguration.title">Add Bill Configuration</entry>
+    <entry key="editBillConfiguration.title">Edit Bill Configuration</entry>
+    
+    <!-- ############# Open Bills Page ############# -->
+    <entry key="openBills.title">Open Bills</entry> 
+    <entry key="payOpenBill.title">Pay Open Bill</entry>
+    <entry key="confirmBill.title">Confirm Bill</entry>
+    <entry key="billPaymentStatus.title">Payment Status</entry>
+    <entry key="cancelOpenBill.title">Cancel Open Bill</entry>
+    <entry key="cancelOpenBill.help">Click Continue button to cancel the bill</entry>
+    <entry key="payOpenBill.help">Please select payment instrument</entry>
+    <entry key="payBill.help">Please enter bill reference, the amount you would like to pay and select payment instrument</entry>
+    <entry key="billPaymentConfirm.help">Please review your bill</entry>
+    
+    <!-- ############# Bill History Page ############# -->
+    <entry key="billHistory.title">Bill History</entry>
+    <entry key="billHistory.help">You can search for bills by specifying search parameters</entry>
+    <entry key="pending.agents.title">Approve/Reject Agent</entry>
+    
+</properties>

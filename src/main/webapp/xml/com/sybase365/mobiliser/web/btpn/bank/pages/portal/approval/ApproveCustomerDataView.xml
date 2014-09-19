@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="header.PendingApprovalCustomerData">Pending Approval Customer Data</entry>
+	<entry key="label.fieldName">Field Name</entry>
+	<entry key="label.currentValue">Current Value</entry>
+	<entry key="label.newValue">New Value</entry>
+	<entry key="label.ATMCardNo">ATM Card No.</entry>
+	<entry key="label.blackListReason">Blacklist Reason</entry>
+	<entry key="label.dateOfBirth">Date Of Birth</entry>
+	<entry key="label.emailID">Email ID</entry>
+	<entry key="label.employeeID">Employee ID</entry>
+	<entry key="label.gender">Gender</entry>
+	<entry key="label.highRiskBusiness">High Risk Business</entry>
+	<entry key="label.HighRiskCustomer">High Risk Customer</entry>
+	<entry key="label.IDCardNo">ID Card No.</entry>
+	<entry key="label.IDExpirationDate">ID Expiration Date</entry>
+	<entry key="label.IDType">IDType</entry>
+	<entry key="label.income">Income</entry>
+	<entry key="label.industryOfEmployee">Industry Of Employee</entry>
+	<entry key="label.isTaxExempted">Is Tax Exempted</entry>
+	<entry key="label.glCodeId">GL Code</entry>
+	<entry key="label.Job">Job</entry>
+	<entry key="label.Language">Language</entry>
+	<entry key="label.maritalStatus">Marital Status</entry>
+	<entry key="label.motherMaidenName">Mother's Maiden Name</entry>
+	<entry key="label.name">Name</entry>
+	<entry key="label.nationality">Nationality</entry>
+	<entry key="label.ocupation">Occupation</entry>
+	<entry key="label.placeOfBirth">Place Of Birth</entry>
+	<entry key="label.purposeOfAccount">Purpose Of Account</entry>
+	<entry key="label.receiptMode">Receipt Mode</entry>
+	<entry key="label.shortName">Short Name</entry>
+	<entry key="label.sourceOfFund">Source Of Fund</entry>
+	<entry key="label.status">Status</entry>
+	<entry key="label.street1">Street1</entry>
+	<entry key="label.street2">Street2</entry>
+	<entry key="label.religion">Religion</entry>
+	<entry key="label.lastEducation">Last Education</entry>
+	<entry key="label.foreCastTransaction">Forecast Transaction</entry>
+	<entry key="label.taxCardNumber">Tax Card Number</entry>
+	<entry key="label.province">Province</entry>
+	<entry key="label.city">City</entry>
+	<entry key="label.zipcode">Zip Code</entry>
+	<entry key="label.marketingSourceCode">Marketing Source Code</entry>
+	<entry key="label.referralNumber">Referral Number</entry>
+	<entry key="label.agentCode">Agent Code</entry>
+	
+	<entry key="approve.success">Update data approved successfully</entry>
+	<entry key="reject.success">Update data rejected successfully</entry>
+
+	<entry key="agent.approve.success">Update data approved successfully</entry>
+	<entry key="agent.reject.success">Update data rejected successfully</entry>
+
+	<entry key="approve.fail">Failed to approve data update</entry>
+	<entry key="reject.fail">Failed to reject data update</entry>
+
+	<entry key="agent.approve.fail">Failed to approve data update</entry>
+	<entry key="agent.reject.fail">Failed to reject data update</entry>
+
+</properties>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.denomination">Pilih Nominal </entry>
+	<entry key="Submit">Masuk</entry>
+	<entry key="airtimeBean.denomination.Required">Kolom Nominal harus diisi.</entry>
+	<entry key="airtimeBean.denomination.null">Pilih Nominal</entry>
+	<entry key="error.perform.airitime">Terjadi kesalahan ketika melakukan isi pulsa.</entry>
+
+	<entry key="error.3024">Gagal, Silahkan coba beberapa saat lagi.</entry>
+	<entry key="error.3025">Gagal, Ada gangguan pada operator.</entry>
+	<entry key="error.3026">Gagal, Ditolak oleh provider.</entry>
+	<entry key="error.3027">Gagal, Transaksi telah di-refund, silahkan mengualang kembali.</entry>
+	<entry key="error.3028">Gagal, NO HP tidak tersedia.</entry>
+	<entry key="error.3029">Gagal, Denom tidak terdaftar.</entry>
+	<entry key="error.3030">Sedang dalam proses transaksi.</entry>
+	<entry key="error.3040">Gagal, Error koneksi ke provider</entry>
+	<entry key="error.3041">Gagal, Denom sedang gangguan.</entry>
+	<entry key="error.3042">Gagal, Prefix tidak benar.</entry>
+	<entry key="error.3043">Transaksi masih dalam proses.</entry>
+	<entry key="error.3045">Isi pulsa gagal.</entry>
+	<entry key="error.8000">Gagal koneksi ke middleware.</entry>
+</properties>

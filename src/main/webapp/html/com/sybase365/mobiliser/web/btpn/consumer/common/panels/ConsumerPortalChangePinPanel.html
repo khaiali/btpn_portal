@@ -1,0 +1,43 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+	<style>
+		.feedbackPanelERROR{
+			color: white;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<wicket:panel>
+		<h2><wicket:message key="header.changePin" /></h2>
+		<div>
+			<form wicket:id="changePinForm" style="padding: 10px;">
+				<span style="color:white;">
+					<font wicket:id="errorMessages"></font>
+				</span>
+				<div style="background-color: #125eac; border: blue; width: 170px; height: auto; padding:20px;">
+					<label style="color: white; font-size: 12px;"><wicket:message key="label.oldPin" />
+						<span class="required">*</span>
+					</label><br/>
+					<input type="password" wicket:id="changePinBean.oldPin" style="font-size: 1.1em; margin-bottom: 5px; padding: 3px; width: 100%;" />
+					<br/>
+					<label style="color: white; font-size: 12px;"><wicket:message key="label.newPin" />
+						<span class="required">*</span>
+					</label><br/> 
+					<input type="password" wicket:id="changePinBean.newPin" style="font-size: 1.1em; margin-bottom: 5px; padding: 3px; width: 100%;"/>
+					<br/>
+					<label style="color: white; font-size: 12px;"><wicket:message key="label.confirmNewPin" />
+						<span class="required">*</span>
+					</label style="color: white; font-size: 12px;"><br/> 
+					<input type="password" wicket:id="changePinBean.confirmNewPin" style="font-size: 1.1em; margin-bottom: 5px; padding: 3px; width: 100%;"/>
+					<br/>
+					<font style="color: white; font-size: 12px;">*<wicket:message key="requiredFields" /></font>
+					<br/>
+					<input type="submit" class="submit acc_chk" wicket:id="submitButton" value="Ganti" style="margin-top: 10px; font-size: 12px; border: none;" />
+				</div>
+			</form>	
+		</div>
+	</wicket:panel>
+</body>
+</html>

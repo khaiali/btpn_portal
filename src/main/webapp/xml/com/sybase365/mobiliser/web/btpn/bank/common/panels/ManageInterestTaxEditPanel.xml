@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+	<entry key="headLine.interestTax">Interest Tax Management Edit</entry>
+	<entry key="label.customerIdentifier"> CustomerIdentifier </entry>
+	<entry key="label.customerIdentifierType"> CustomerIdentifier Type </entry>
+	<entry key="label.customerTypeId"> CustomerType</entry>
+	<entry key="label.paymentInstrumentId">PaymentInstrument</entry>
+	<entry key="label.paymentInstrumentTypeId">PaymentInstrument Type</entry>
+	<entry key="label.accrueGLCode">Accrual GL Code </entry>
+	<entry key="label.taxGLCode">Tax GL Code </entry>
+	<entry key="label.validFrom"> Valid From </entry>
+	<entry key="label.thresholdAmount"> Thereshold Amount </entry>
+	<entry key="label.fixedFee">Fixed Fee</entry>
+	<entry key="label.percentageFee">Percentage Fee</entry>
+	<entry key="label.maximumFee">Maximum Fee</entry>
+	<entry key="label.minimumFee">Minimum Fee</entry>
+	<entry key="label.note"> Note </entry>
+	<entry key="label.description"> Description </entry>
+	
+	<!-- Required Validations -->
+	<entry key="interestTaxBean.description.Required">Description is a required field</entry>
+	<entry key="interestTaxBean.customerTypeId.Required">Customer Type ID is required.</entry>
+	<entry key="interestTaxBean.accrueGLCode.Required">Accrue GL Code is required.</entry>
+	<entry key="interestTaxBean.taxGLCode.Required">Tax GL Code is required.</entry>
+	<entry key="interestTaxBean.validFrom.Required">Valid From is required.</entry>
+	<entry key="interestTaxBean.fixedFee.Required">Fixed Fee is required.</entry>
+	<entry key="interestTaxBean.fixedFee.IConverter.Long"> ${input} is not valid Fixed Fee amount.</entry>
+	
+	<entry key="interestTaxBean.percentageFee.Required">Percentage Fee is required.</entry>
+	<entry key="interestTaxBean.minimumFee.Required">Minimum Fee is required.</entry>
+	<entry key="interestTaxBean.minimumFee.AmountValidator">${input} is not valid Minimum Fee amount.</entry>
+	
+	<entry key="interestTaxBean.maximumFee.AmountValidator">${input} is not valid Maximum Fee amount.</entry>
+	
+	<entry key="interestTaxBean.thresholdAmount.Required">Threshold Amount is required.</entry>
+	<entry key="interestTaxBean.thresholdAmount.IConverter.Long"> ${input} is not valid Threshold Amount</entry>
+	
+	
+</properties>

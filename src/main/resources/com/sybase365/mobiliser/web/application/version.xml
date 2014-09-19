@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<version> 
+  <name>${project.name}</name>
+  <version>${project.version}</version>
+  <date>${buildTimestamp}</date>
+  <tag>${buildTag}</tag>
+  <revision>${buildRevision}</revision>
+</version>

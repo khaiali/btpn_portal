@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="headLine.standingInstructions">Instruksi Favorit</entry>
+	<entry key="label.name">Nama</entry>
+	<entry key="label.payer">Pembayar</entry>
+	<entry key="label.payee">Penerima</entry>
+	<entry key="label.startDate">Mulai</entry>
+	<entry key="label.expiryDate">Sampai</entry>
+	<entry key="label.frequency">Frekuensi</entry>
+	<entry key="label.weekday">Week Day</entry>
+	<entry key="label.type">Tipe</entry>
+	<entry key="label.amount">Jumlah</entry>
+	<entry key="remove.successMessage">Instruksi Favorit berhasil dihapus.</entry>
+</properties>

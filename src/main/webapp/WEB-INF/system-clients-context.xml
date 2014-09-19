@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+  <bean id="clientTargetSourceParent" abstract="true"
+    class="com.sybase365.mobiliser.util.tools.clientutils.api.RefreshableClientTargetSource">
+    <property name="clientFactory" ref="soapClientFactory" />
+    <property name="configuration" ref="dynamicManagementClientConfiguration" />
+  </bean>
+
+  <!-- ALERTS CONTEXT CLIENT -->
+
+  <bean id="systemAuthAlertsClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="alertsInterfaces" />
+    <property name="endpointSuffix" value="/alerts" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthAlertsClientSource" />
+  </bean>
+
+  <bean id="systemAuthAlertsContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthAlertsClientSource" />
+    <property name="interfaces" ref="alertsInterfaces" />
+  </bean>
+  
+  <bean id="systemAuthAlertsClientLogic" class="com.sybase365.mobiliser.web.application.clients.AlertsClientLogic">
+    <property name="wsAlertTypesClient" ref="smartAuthAlertsContextClient" />
+    <property name="wsCustomerAlertsClient" ref="smartAuthAlertsContextClient" />
+  </bean>
+
+  <alias name="systemAuthAlertsContextClient" alias="systemAuthAlertTypeManagementClient"/>
+  <alias name="systemAuthAlertsContextClient" alias="systemAuthCustomerAlertsClient"/>
+  
+  <!-- AUDIT CONTEXT CLIENT -->
+
+  <bean id="systemAuthAuditClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="auditInterfaces" />
+    <property name="endpointSuffix" value="/audit" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthAuditClientSource" />
+  </bean>
+
+  <bean id="systemAuthAuditContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthAuditClientSource" />
+    <property name="interfaces" ref="auditInterfaces" />
+  </bean>
+
+  <alias name="systemAuthAuditContextClient" alias="systemAuthNoteClient"/>
+
+  <!-- CUSTOMER CONTEXT CLIENT -->
+
+  <bean id="systemAuthCustomerClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="customerInterfaces" />
+    <property name="endpointSuffix" value="/customer" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthCustomerClientSource" />
+  </bean>
+
+  <bean id="systemAuthCustomerContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthCustomerClientSource" />
+    <property name="interfaces" ref="customerInterfaces" />
+  </bean>
+
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthFindRemittanceVoucherClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthCommissionConfigurationClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthIdentityClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthAttachmentClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthRolesPrivilegesClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthCustomerNetworksClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthOtpClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthSecurityClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthCustomerClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthIdentificationClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthAddressClient"/>
+  <alias name="systemAuthCustomerContextClient" alias="systemAuthAttributeClient"/>
+
+  <!-- WALLET CONTEXT CLIENT -->
+
+  <bean id="systemAuthWalletClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="walletInterfaces" />
+    <property name="endpointSuffix" value="/wallet" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthWalletClientSource" />
+  </bean>
+
+  <bean id="systemAuthWalletContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthWalletClientSource" />
+    <property name="interfaces" ref="walletInterfaces" />
+  </bean>
+
+  <alias name="systemAuthWalletContextClient" alias="systemAuthBalanceAlertClient"/>
+  <alias name="systemAuthWalletContextClient" alias="systemAuthWalletClient"/>
+
+  <!-- SYSTEM CONTEXT CLIENT -->
+
+  <bean id="systemAuthSystemClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="systemInterfaces" />
+    <property name="endpointSuffix" value="/system" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthSystemClientSource" />
+  </bean>
+
+  <bean id="systemAuthSystemContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthSystemClientSource" />
+    <property name="interfaces" ref="systemInterfaces" />
+  </bean>
+
+  <alias name="systemAuthSystemContextClient" alias="systemAuthTransactionRestrictionClient"/>
+  <alias name="systemAuthSystemContextClient" alias="systemAuthFeeClient"/>
+  <alias name="systemAuthSystemContextClient" alias="systemAuthJobClient"/>
+  <alias name="systemAuthSystemContextClient" alias="systemAuthSystemClient"/>
+  <alias name="systemAuthSystemContextClient" alias="systemAuthLimitClient"/>
+  <alias name="systemAuthSystemContextClient"   alias="systemAuthBulkProcessingClient"/>
+
+  <!-- TRANSACTION CONTEXT CLIENT -->
+
+  <bean id="systemAuthTransactionClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="transactionInterfaces" />
+    <property name="endpointSuffix" value="/transaction" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthTransactionClientSource" />
+  </bean>
+
+  <bean id="systemAuthTransactionContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthTransactionClientSource" />
+    <property name="interfaces" ref="transactionInterfaces" />
+  </bean>
+
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthTransactionCancelClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthConfirmVoucherClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthStartVoucherClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthDemandForPaymentClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthCancelInvoiceClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthContinuePayInvoiceClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthCheckPayInvoiceClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthPayInvoiceClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthWebContinueClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthWebStartClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthPrePickupMoneyClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthCaptureClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthAuthorisationCancelClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthCaptureCancelClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthTransactionClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthCommissionClearingClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthPreAuthContinueClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthAuthorisationClient"/>
+  <alias name="systemAuthTransactionContextClient" alias="systemAuthPreAuthorisationClient"/>
+  <!-- REPORT CONTEXT CLIENT -->
+
+  <bean id="systemAuthReportClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="reportInterfaces" />
+    <property name="endpointSuffix" value="/report" />
+  </bean>
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthReportClientSource" />
+  </bean>
+
+  <bean id="systemAuthReportContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthReportClientSource" />
+    <property name="interfaces" ref="reportInterfaces" />
+  </bean>
+
+  <alias name="systemAuthReportContextClient" alias="systemAuthReportClient"/>
+
+  <!-- MESSAGING CONTEXT CLIENT -->
+
+  <bean id="systemAuthMsgClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="messagingInterfaces" />
+    <property name="endpointSuffix" value="/messaging" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthMsgClientSource" />
+  </bean>
+
+  <bean id="systemAuthMessageContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthMsgClientSource" />
+    <property name="interfaces" ref="messagingInterfaces" />
+  </bean>
+
+  <alias name="systemAuthMessageContextClient" alias="systemAuthMessageLogClient"/>
+  <alias name="systemAuthMessageContextClient" alias="systemAuthTemplateClient"/>
+  <alias name="systemAuthMessageContextClient" alias="systemAuthMessagingClient"/>
+
+  <!-- INVOICE CONTEXT CLIENT -->
+
+  <bean id="systemAuthInvoiceClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="invoiceInterfaces" />
+    <property name="endpointSuffix" value="/invoice" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthInvoiceClientSource" />
+  </bean>
+
+  <bean id="systemAuthInvoiceContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthInvoiceClientSource" />
+    <property name="interfaces" ref="invoiceInterfaces" />
+  </bean>
+
+  <alias name="systemAuthInvoiceContextClient" alias="systemAuthInvoiceClient"/>
+
+  <!-- COUPON CONTEXT CLIENT -->
+
+  <bean id="systemAuthCouponClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="couponInterfaces" />
+    <property name="endpointSuffix" value="/coupons" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthCouponClientSource" />
+  </bean>
+
+  <bean id="systemAuthCouponContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthCouponClientSource" />
+    <property name="interfaces" ref="couponInterfaces" />
+  </bean>
+
+  <alias name="systemAuthCouponContextClient" alias="systemAuthCouponClient"/>
+
+  <!-- PREFS CONTEXT CLIENT -->
+
+  <bean id="systemAuthPrefsClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="prefsInterfaces" />
+    <property name="endpointSuffix" value="/prefs" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthPrefsClientSource" />
+  </bean>
+
+  <bean id="systemAuthPrefsContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthPrefsClientSource" />
+    <property name="interfaces" ref="prefsInterfaces" />
+  </bean>
+
+  <alias name="systemAuthPrefsContextClient" alias="systemAuthPreferencesClient"/>
+
+  <!-- MBANKING CONTEXT CLIENTS - SYSTEM AUTH -->
+  
+  <bean id="systemAuthMBankingClientSource" parent="clientTargetSourceParent">
+    <property name="clientInterfaces" ref="mBankingInterfaces" />
+    <property name="endpointSuffix" value="/mbanking" />
+  </bean>
+
+  <bean
+    class="com.sybase365.mobiliser.util.prefs.util.RegisterChangeListenerFactoryBean">
+    <constructor-arg ref="prefsNode" />
+    <constructor-arg ref="systemAuthMBankingClientSource" />
+  </bean>
+
+  <bean id="systemAuthMBankingContextClient" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="targetSource" ref="systemAuthMBankingClientSource" />
+    <property name="interfaces" ref="mBankingInterfaces" />
+  </bean>
+  
+  <bean id="systemAuthMBankingClientLogic" class="com.sybase365.mobiliser.web.application.clients.MBankingClientLogic">
+    <property name="wsServicePackageMgmtEndpoint" ref="systemAuthMBankingContextClient" />
+    <property name="wsOptInManagementEndpoint" ref="systemAuthMBankingContextClient" />
+    <property name="wsCustomerEndpoint" ref="systemAuthMBankingContextClient" />
+  </bean>
+
+</beans>

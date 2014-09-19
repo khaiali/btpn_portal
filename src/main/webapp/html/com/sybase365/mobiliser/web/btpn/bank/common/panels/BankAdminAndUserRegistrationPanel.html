@@ -1,0 +1,96 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="registrationForm">
+						<fieldset id="adminRegister">
+							<legend class="reg_tab" wicket:id="registration.legend.label"></legend>
+							<div class="Regist_sup_main">
+								<div wicket:id="errorMessages"></div>
+								<div class="input">
+									<label for="bankAdmin.register">
+									   <wicket:message key="registration.customerType.label" /> <span class="required">*</span>
+									</label>
+									<select id="registerAdmin" name="registerAdmin" wicket:id="bankStaffBean.customerType" tabindex="1">
+										<option value="">Please Select</option>
+									</select>
+								</div>
+								<div class="input">
+									<label for="userName">
+									   <wicket:message key="registration.userId.label" /> <span class="required">*</span>
+									</label>
+									<input tabindex="2" type="text" wicket:id="bankStaffBean.userId" size="20" />
+								</div>
+                                <div class="input">
+                                    <label for="email">
+                                       <wicket:message key="registration.email.label" />
+                                    </label>
+                                    <input id="email" name="email" wicket:id="bankStaffBean.email" tabindex="3" type="text" />
+                                </div>
+								<div class="input">
+									<label for="designation">
+									   <wicket:message key="registration.designation.label" />
+									</label>
+									<input id="designation" name="designation" wicket:id="bankStaffBean.designation" tabindex="4" type="text" />
+								</div>
+								<div class="input">
+									<label for="language">
+									   <wicket:message key="registration.language.label" /> <span class="required">*</span>
+									</label>
+									<select tabindex="5" wicket:id="bankStaffBean.language" id="language" name="language">
+										<option value="">Please Select</option>
+									</select>
+								</div>
+								<div class="input">
+									<label for="glCode" wicket:id="registration.glCode.label"></label>
+                                    <select tabindex="6" wicket:id="bankStaffBean.glCode" id="glCode" name="glCode">
+                                        <option value="">Please Select</option>
+                                    </select>
+								</div>
+                                <div class="input">
+                                    <label for="territoryCode">
+                                        <wicket:message key="registration.territoryCode.label" />
+                                    </label>
+                                    <input id="territoryCode" tabindex="7" wicket:id="bankStaffBean.territoryCode" maxlength="9" name="territoryCode" type="text" />
+                                </div>
+                                <div class="input">
+                                    <label for="orgUnit" wicket:id="registration.orgUnit.label"></label>
+                                    <select tabindex="8" wicket:id="bankStaffBean.orgUnit" id="orgUnit" name="orgUnit">
+                                        <option value="">Please Select</option>
+                                        <option value="in">0901</option>
+                                    </select>
+                                </div>
+								<div class="column">
+									<p>
+										<span class="required">*</span>
+										<wicket:message key="registration.denotes.mandatory.label" />
+									</p>
+								</div>
+								<div class="column">
+									<input id="submit" tabindex="9" wicket:id="register" wicket:message="value:registration.button.register.label" class="submit acc_chk" type="submit" />
+									<input tabindex="10" style="left: 250px" wicket:id="cancel" wicket:message="value:registration.button.cancel.label" class="submit acc_chk" type="submit" />
+								</div>
+							</div>
+						</fieldset>
+						<div id="loading" style="position: relative; display: none; width: 100%; text-align: center; top: 100px;">
+							<img src="images/btpn/ajax-loader.gif" border="0" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			function loading(id) {
+				document.getElementById('adminRegister').style.display = "none";
+				document.getElementById('loading').style.display = "block";
+			}
+			function unloading() {
+				document.getElementById('adminRegister').style.display = "block";
+				document.getElementById('loading').style.display = "none";
+			}
+		</script>
+	</wicket:panel>
+</body>
+</html>

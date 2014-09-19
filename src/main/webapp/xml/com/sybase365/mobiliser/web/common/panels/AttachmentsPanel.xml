@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <!-- ############# Attachments Panel ############# -->
+    <entry key="attachments.headline">Attachments</entry>
+    <entry key="attachments.upload">Attachment File</entry>
+    <entry key="attachments.button.addAttachment">Add Attachment</entry>
+    <entry key="attachments.table.name">Name</entry>
+    <entry key="attachments.table.actions">Actions</entry>
+    <entry key="attachments.viewAction">View</entry>
+    <entry key="attachments.removeAction">Remove</entry>
+
+    <entry key="attachments.file.required">Attachment file is required</entry>
+
+    <entry key="attachments.add.success">Attachment has been added</entry>
+    <entry key="attachments.add.error">There was a problem uploading this attachment</entry>
+    <entry key="attachments.download.error">There was a problem downloading this attachment</entry>
+    <entry key="attachments.delete.error">There was a problem deleting this attachment</entry>
+    <entry key="attachments.load.error">There was a problem loading the attachments</entry>
+    <entry key="attachments.table.noItemsMsg">No attachments found</entry>
+    <entry key="attachments.table.addAttachmentHelp">Select the attachment file and click Add Attachment to upload</entry>
+    <entry key="attachments.remove.confirm">Are you sure you want to remove this attachment?</entry>
+
+</properties>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="headline.biller">Bill Payment Fee Management</entry>
+	<entry key="label.id"> ID </entry>
+	<entry key="label.description">Description</entry>
+	<entry key="fee.totalitems.header">%s items found, displaying %s to %s.</entry>
+	<entry key="fee.emptyRecordsMessage">Nothing found to display.</entry>
+	
+	
+</properties>

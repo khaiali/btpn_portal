@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <!-- ############# CST Home Page ############# -->
+
+  <entry key="page.heading">Welcome </entry>
+  <entry key="home.welcome.message">The System Configuration Menu offers several options
+    to configure system internals, such as fees, exchange rates or
+    transaction restrictions (more to come). Choose one of the options
+    to load the appropriate configuration screens. </entry>
+    
+    
+    <!-- ############# Home Left Menu ############# -->
+    <entry key="menu.home">Home</entry>
+    <entry key="menu.myDetails">My Details</entry>
+    <entry key="menu.myPrivileges">My Privileges</entry>
+    <entry key="menu.changePassword">Change Password</entry>
+    
+    <!-- ############# My details Page ############# -->
+    <entry key="myDetails.title">My Details</entry>
+    <entry key="myDetail.id">ID</entry>
+    <entry key="myDetail.displayName">Display Name</entry>
+    <entry key="myDetail.loginName">Login Name</entry>
+    
+    <!-- ############# My privileges Page ############# -->
+    <entry key="myPrivileges.title">My Privileges</entry>
+    <entry key="myPrivileges.roles">Roles</entry>
+    <entry key="myPrivileges.privileges">Privileges</entry>
+    
+    <!-- ############# Change Password Page ############# -->
+    <entry key="changePassword.title">Change Password</entry>
+    <entry key="changePassword.help">Please enter your new password</entry>
+    
+</properties>

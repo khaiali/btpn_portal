@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="demoMerchant.title">Merchant Demo Shop</entry>
+	<entry key="webstart.error">An error occurred while initializing web transaction</entry>
+	<entry key="status0_msg">The authorization via SMS has been successful. Thank you for shopping with us</entry>
+	<entry key="inCompleteStatusMsg">The payment is not completed yet</entry>
+	<entry key="status2541_msg">You have not confirmed the transaction</entry>
+	<entry key="status2699_msg">The payment could not be performed</entry>
+	<entry key="status2853_msg">The payment hasn't been authorized by your SMS in time.</entry>
+	<entry key="statusOther_msg">An error has occured.Please try again later. Thanks.</entry>
+	<entry key="get.txn.status.error">An error occurred while getting transaction detail</entry>
+</properties>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="headline.registration.bankAdmin.legend.label">Bank Admin Registration Success</entry>
+    <entry key="headline.registration.bankStaff.legend.label">Bank User Registration Success</entry>
+	
+    <entry key="registration.customerType.label">Register User as</entry>
+    <entry key="registration.userId.label">UserId</entry>
+    <entry key="registration.name.label">Name</entry>
+    <entry key="registration.email.label">E-Mail</entry>
+    <entry key="registration.designation.label">Designation</entry>
+    <entry key="registration.language.label">Language</entry>
+    <entry key="registration.glCode.label">GL Code</entry>
+    <entry key="registration.territoryCode.label">Territory Code</entry>
+    <entry key="registration.orgUnit.label">Org Unit</entry>
+	
+	<entry key="registration.button.finish">Finish</entry>
+</properties>

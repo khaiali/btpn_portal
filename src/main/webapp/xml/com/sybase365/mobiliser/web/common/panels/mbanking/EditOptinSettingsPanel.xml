@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="edit.bank.term.and.setting">Edit Bank T&amp;C Settings</entry>
+    <entry key="edit.optin.setting.tokenRequired">Token required as part of device registration</entry>
+    <entry key="edit.optin.term.conditions.enabled">Term and Conditions enabled</entry>
+    <entry key="edit.optin.sendAlert.when.TC.reset">Send alert to registered contact points when T&amp;C reset</entry>
+    <entry key="edit.optin.disableAlert.when.TC.notAccepted">Disable alerts to contact points that have not accepted T&amp;C after</entry>
+    <entry key="days">days</entry>
+    <entry key="optInSettings.url">Url</entry>
+    <entry key="edit.optin.setting.url">Url</entry>
+    <entry key="edit.optin.disableAlert.when.alert.disabled">Send alert to devices to notify the user that alerts has been disabled</entry> 
+    <entry key="optInSettings.disableDeviceAlertsDays">days</entry>  
+</properties>

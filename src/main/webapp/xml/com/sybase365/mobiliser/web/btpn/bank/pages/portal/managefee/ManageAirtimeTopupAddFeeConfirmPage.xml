@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="label.airtimeTopupFee"> AirtimeTopup Fee </entry>
+	<entry key="label.operator"> Operator </entry>
+	<entry key="label.denomination"> Denomination </entry>
+	<entry key="label.productId"> Product ID </entry>
+	<entry key="label.transactionAmount"> Transaction Amount </entry>
+	<entry key="label.feeName"> Fee Name </entry>
+	<entry key="label.glCode"> GL Code </entry>
+	<entry key="label.amount"> Amount </entry>
+	<entry key="label.fixedFee"> Fixed Fee</entry>
+	<entry key="label.percentageFee"> Percentage Fee</entry>
+	<entry key="fees.totalitems.header">%s items found, displaying %s to %s.</entry>
+	
+	
+	<entry key="create.success">Airtime topup fee submitted successfully for Approval.</entry>
+	<entry key="error.create.fees">An error occured while creating the fees.</entry>
+	<entry key="error.10083">Fee already configured for this particular telco Id
+		and denomination.</entry>
+</properties>

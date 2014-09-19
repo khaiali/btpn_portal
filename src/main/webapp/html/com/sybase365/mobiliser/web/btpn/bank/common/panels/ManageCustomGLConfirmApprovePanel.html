@@ -1,0 +1,68 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<fieldset>
+						<form wicket:id="cusGLConfirmAppForm">
+							<div wicket:id="errorMessages"></div>
+							<legend class="reg_tab6" wicket:id="headLine.generalLedger">
+							</legend>
+								<br>
+								<div class="Account_info">
+									<label><wicket:message key="label.glCode" /></label>
+									<div class="input_value">	
+										<label wicket:id="cusLedgerBean.glCode"></label>
+									</div>	
+								</div>
+								
+								<div class="Account_info">
+									<label><wicket:message key="label.parentGLCode" /></label>
+									<div class="input_value">	
+										<label wicket:id="cusLedgerBean.selectedParentGlCode.id"></label>
+									</div>	
+								</div>
+								
+								<div class="Account_info">
+									<label><wicket:message key="label.glDesc" /></label>
+									<div class="input_value">	
+										<label wicket:id="cusLedgerBean.glDescription"></label>
+									</div>	
+								</div>
+									
+								<div class="Account_info">
+									<label><wicket:message key="label.type" /></label>
+									<div class="input_value">	
+										<label wicket:id="cusLedgerBean.selectedType.value"></label>
+									</div>	
+								</div>
+								
+								<div class="Account_info">
+									<label><wicket:message key="label.glNote" /></label>
+									<div class="input_value">	
+										<label wicket:id="cusLedgerBean.note"></label>
+									</div>	
+								</div>
+								
+								<div class="spacer"></div>
+								<div class="column">
+									<input type="submit" class="submit acc_chk" id="submit"
+										wicket:id="confirmBtn" wicket:message="value:Confirm" /> <input
+										type="submit" class="submit acc_chk" id="submit"
+										wicket:id="backBtn" wicket:message="value:Back"
+										style="left: 250px" /> <input type="submit"
+										class="submit acc_chk" id="submit" wicket:id="cancelBtn"
+										wicket:message="value:Cancel" style="left: 270px" />
+								</div>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

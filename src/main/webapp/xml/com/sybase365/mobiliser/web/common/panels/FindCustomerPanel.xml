@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <!-- ############# Find Customer Panel ############# -->
+  <entry key="findCustomer.title">Find Customer</entry>
+  <entry key="msisdn">MSISDN</entry>
+  <entry key="customerId">ID</entry>
+  <entry key="userName">Username</entry>
+  <entry key="firstName">First Name</entry>
+  <entry key="lastName">Last Name</entry>
+  <entry key="email">E-Mail Address</entry>
+  <entry key="displayName">Display Name</entry>  
+  <entry key="street">Street</entry>  
+  <entry key="city">City</entry>  
+  <entry key="zip">Zip</entry>  
+  <entry key="findAgent.table.id">ID</entry>
+  <entry key="findAgent.table.username">Username</entry>
+  <entry key="findAgent.table.firstname">First Name</entry>
+  <entry key="findAgent.table.parentId">Parent ID</entry>
+  <entry key="findAgent.table.creationDate">Creation Date</entry>
+  <entry key="findAgent.table.lastname">Last Name</entry>
+  <entry key="findAgent.table.email">E-Mail Address</entry>
+  <entry key="findAgent.table.displayName">Display Name</entry>
+  <entry key="findAgent.table.msisdn">MSISDN</entry>
+  <entry key="agent.find.error">An error occurred while loading customers</entry>
+  <entry key="agentList.noItemsMsg">No matching agents found</entry>
+  <entry key="pending.customers.noItemsMsg">No matching pending customers found</entry>
+  <entry key="agent.find.single.search.identity">Either "ID" or "Username" can be given. Search can not be done on both.</entry>
+  
+  <entry key="email.PatternValidator">'${input}' is not a valid E-Mail</entry>
+  <entry key="msisdn.PatternValidator">'${input}' is not a valid MSISDN</entry>
+  
+  <entry key="findCustomer.filterType">Show Customers By</entry>
+  <entry key="findCustomer.filterType.month">Month</entry>
+  <entry key="findCustomer.month">Month</entry>
+  <entry key="findCustomer.month.select">Select</entry>
+  <entry key="findCustomer.filterType.date">Date Range</entry>
+  <entry key="findCustomer.fromDate">From</entry>
+  <entry key="findCustomer.toDate">To</entry>
+
+</properties>

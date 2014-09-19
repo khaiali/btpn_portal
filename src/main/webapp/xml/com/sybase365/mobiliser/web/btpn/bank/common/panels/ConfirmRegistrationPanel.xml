@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<!-- ############# BTPN ############# -->
+	<entry key="consumer.customerInfo.headLine">Customer Information</entry>
+	<entry key="topupagent.customerInfo.headLine">Agent Information</entry>
+	<entry key="childagent.customerInfo.headLine">Agent Information</entry>
+	<entry key="subagent.customerInfo.headLine">Agent Information</entry>
+	<entry key="consumer.registrationType.headLine">Registration Type</entry>
+	<entry key="topupagent.registrationType.headLine">Top Agent Registration</entry>
+	<entry key="childagent.registrationType.headLine">Registration Type</entry>
+	<entry key="subagent.registrationType.headLine">Registration Type</entry>
+	<entry key="consumer.confirmData.registration.type">Registration Type</entry>
+	<entry key="topupagent.confirmData.registration.type">Top Agent Registration</entry>
+	<entry key="childagent.confirmData.registration.type">Registration Type</entry>
+	<entry key="subagent.confirmData.registration.type">Registration Type</entry>
+	<entry key="confirmData.glCode">GL Code</entry>
+	<entry key="confirmData.requestType">Request Type</entry>
+	<entry key="confirmData.product.type">Product Type</entry>
+	<entry key="confirmData.name">Name</entry>
+	<entry key="confirmData.shortName">Short Name</entry>
+	<entry key="confirmData.employeeId">Employee ID</entry>
+	<entry key="confirmData.mothersMaidenName">Mother's Maiden Name</entry>
+	<entry key="confirmData.maritalStatus">Marital Status</entry>
+	<entry key="confirmData.placeOfBirth">Place Of Birth</entry>
+	<entry key="confirmData.nationality">Nationality</entry>
+	<entry key="confirmData.language">Language</entry>
+	<entry key="confirmData.receiptMode">Receipt Mode</entry>
+	<entry key="confirmData.occupation">Occupation</entry>
+	<entry key="confirmData.job">Job</entry>
+	<entry key="confirmData.industryOfEmployee">Industry Of Employer</entry>
+	<entry key="confirmData.purposeOfAccount">Purpose Of Account</entry>
+	<entry key="consumer.confirmData.sourceofFound">Source Of Fund</entry>
+	<entry key="topupagent.confirmData.sourceofFound">Source Of Income</entry>
+	<entry key="childagent.confirmData.sourceofFound">Source Of Income</entry>
+	<entry key="subagent.confirmData.sourceofFound">Source Of Income</entry>
+	<entry key="confirmData.income">Income</entry>
+	<entry key="confirmData.idCardNo">ID Card No</entry>
+	<entry key="confirmData.idType">ID Type</entry>
+	<entry key="confirmData.idExpirationDate">ID Expiration date</entry>
+	<entry key="confirmData.highRiskCustomer">High Risk Customer</entry>
+	<entry key="confirmData.highRiskBusiness">High Risk Business</entry>
+	<entry key="confirmData.atmCardNo">ATM Card No</entry>
+	<entry key="confirmData.gender">Gender</entry>
+	<entry key="confirmData.emailId">Email ID</entry>
+	<entry key="confirmData.customerNumber">Customer Number</entry>
+	<entry key="confirmData.dateOfBirth">Date Of Birth</entry>
+	<entry key="confirmData.isTaxExempted">Is Tax Exempted</entry>
+	<entry key="confirmData.isOptimaActivated">Is Optima Activated </entry>
+	<entry key="label.religion">Religion</entry>
+	<entry key="label.lastEducation">Last Education</entry>
+	<entry key="label.foreCastTransaction">Forecast Transaction</entry>
+	<entry key="label.taxCardNumber">Tax Card Number</entry>
+	<entry key="confirmData.identificationAttachment">Identification Attachment</entry>
+
+	<entry key="attachedFile">Attached File</entry>
+	<entry key="date">Date</entry>
+	<entry key="action">Action</entry>
+
+	<entry key="consumer.contactDetails.headLine">Contact &amp; Address</entry>
+	<entry key="topupagent.contactDetails.headLine">Contact</entry>
+	<entry key="childagent.contactDetails.headLine">Contact</entry>
+	<entry key="subagent.contactDetails.headLine">Contact</entry>
+	<entry key="confirmData.mobileNumber">Mobile Number</entry>
+	<entry key="confirmData.street1">Street1</entry>
+	<entry key="confirmData.street2">Street2</entry>
+	<entry key="label.province">Province</entry>
+	<entry key="label.city">City</entry>
+	<entry key="label.zipcode">Zip Code</entry>
+
+	<entry key="otherInformation.headline">Other Information</entry>
+	<entry key="confirmData.officerId">Officer Id</entry>
+	<entry key="confirmData.dateCreated">Date Created</entry>
+	<entry key="confirmData.territoryCode">Territory Code</entry>
+	<entry key="label.marketingSourceCode">Marketing Source Code</entry>
+	<entry key="label.referralNumber">Referral Number</entry>
+	<entry key="label.agentCode">Agent Code</entry>
+	<entry key="label.territoryCode">Territory Code</entry>
+	<entry key="confirmData.mandatoryField">Denotes Mandatory Field</entry>
+
+	<entry key="registration.successMessage">Thanks for Registration, your request for
+		Agent/Consumer registration has been submitted to the bank approval
+		and applicant will be informed of the outcome soon via SMS. Registered
+		MSVA number is %s. Please use USSD to generate your PIN.</entry>
+	<entry key="registration.failure.exception">Registration Failed</entry>
+	<entry key="error.7101">ATM Card no already exists in system. Registration
+		Failed, please try again.</entry>
+	<entry key="registration.fail">Registration Failed, please try again later. </entry>
+	<entry key="registration.failure.exception">We are experiencing technical difficulties. Please try
+		again later.</entry>
+</properties>

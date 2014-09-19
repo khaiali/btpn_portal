@@ -1,0 +1,41 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="coupon">
+				<span><wicket:message key="menu.coupon.types" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="menu.coupon.type.assign" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="menu.coupon.assign.status" /></span>
+			</h1>
+
+			<form wicket:id="assignPageResultForm">
+
+				<div class="column" style="padding-bottom: 50px;">
+					<div class="input">
+						<label><wicket:message key="coupon.type.assign.success" /></label>
+						<textarea wicket:id="sussessfullyAssigned" style="width: 345px; height: 100px; "></textarea>
+					</div>
+				</div>
+				<div class="column">
+					<div class="input">
+						<label><wicket:message key="coupon.type.assign.failed" /></label>
+						<textarea wicket:id="failed" style="width: 345px; height: 100px;"></textarea>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

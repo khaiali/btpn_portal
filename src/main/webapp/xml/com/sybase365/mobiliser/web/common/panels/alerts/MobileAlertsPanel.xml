@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <entry key="manageAlerts.addAction">Add</entry>
+    <entry key="manageAlerts.editAction">Edit</entry>
+    <entry key="manageAlerts.removeAction">Remove</entry>
+    <entry key="manageAlerts.actions">Actions</entry>
+
+    <entry key="manageAlerts.button.otherContact">Add Contact Point</entry>
+    <entry key="manageAlerts.button.addAlert">Add an Alert</entry>
+    
+    <entry key="manageAlerts.alertSubscriptionsTable.title">Alert Subscriptions</entry>
+    <entry key="manageAlerts.alertSubscriptionsTable.description">Name</entry>
+    <entry key="manageAlerts.alertSubscriptionsTable.contact">Contact Point(s)</entry>
+    <entry key="manageAlerts.alertSubscriptionsTable.remove.confirm">Do you really want to remove this Alert?</entry>
+    <entry key="manageAlerts.alertSubscriptionsTable.noItemsMsg">No contact points found</entry>
+    <entry key="manageAlerts.alertSubscriptionsTable.addBankAccountHelp">Use the 'Add Contact point' link above to add an entry</entry>
+
+    <entry key="manageAlerts.name.1">Account Balance Summary</entry>
+    <entry key="manageAlerts.name.2">Account Balance Threshold</entry>
+    <entry key="manageAlerts.name.3">Bank Inquiry Response</entry>
+    <entry key="manageAlerts.name.4">Customer Lockout</entry>
+    <entry key="manageAlerts.name.5">Insufficient Funds (NSF)</entry>
+    <entry key="manageAlerts.name.6">Invalid Account Access</entry>
+    <entry key="manageAlerts.name.7">Panic Pay</entry>
+    <entry key="manageAlerts.name.8">Password Change</entry>
+    <entry key="manageAlerts.name.9">Transaction Summary</entry>
+    <entry key="manageAlerts.name.10">Unread Bank Message</entry>
+    
+    <entry key="mobileAlerts.alertsTable.noItemsMsg">No alert entries found</entry>
+    <entry key="mobileAlerts.alertsTable.addAlertHelp">Use the 'Add an Alert' link above to add an entry</entry>
+    <entry key="mobileAlerts.alertsTable.remove.confirm">Do you really want to remove this alert?</entry>
+    <entry key="mobileAlerts.alertsTable.load.error">An error has occurred loading your alerts</entry>
+        
+    <entry key="manageAlerts.store.primary.error">Could not store primary account</entry>
+    <entry key="manageAlerts.bank.load.error">Could not load bank account list</entry>
+    <entry key="manageAlerts.creditcard.load.error">Could not load credit card list</entry>
+    <entry key="manageAlerts.sva.load.error">Could not load SVA account</entry>
+    <entry key="manageAlerts.error">An error has occurred. Please try Again</entry>
+
+	<entry key="manageAlerts.alertActionDelete.message">Alert has been removed successfully.</entry>
+    
+</properties>

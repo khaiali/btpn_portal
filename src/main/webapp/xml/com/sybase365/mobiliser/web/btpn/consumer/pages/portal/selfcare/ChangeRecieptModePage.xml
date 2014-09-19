@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.reciept.mode"> Pilih Jenis Notifikasi </entry>
+	<entry key="label.reciept.current.mode"> Jenis Notifikasi Lama </entry>
+	<entry key="label.reciept.new.mode"> Jenis Notifikasi Baru </entry>
+	<entry key="reciept.success">Jenis Notifikasi Berhasil Diganti.</entry>
+	<entry key="reciept.fail">Terjadi Kesalahan Ketika Mengubah Jenis Notifikasi.</entry>
+</properties>

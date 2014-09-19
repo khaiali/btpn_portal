@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    
+	<entry key="headLine.interest">Interest Management</entry>
+	<entry key="label.customerTypeId"> CustomerType</entry>
+	<entry key="label.customerIdentifier"> CustomerIdentifier </entry>
+	<entry key="label.customerIdentifierType"> CustomerIdentifier Type </entry>
+	<entry key="label.paymentInstrumentId">PaymentInstrument</entry>
+	<entry key="label.paymentInstrumentTypeId">PaymentInstrument Type</entry>
+	<entry key="label.accrueGLCode">Accrual GL Code </entry>
+	<entry key="label.expenseGLCode">Expense GL Code </entry>
+	<entry key="label.validFrom"> Valid From </entry>
+	<entry key="label.thresholdAmount"> Thereshold Amount </entry>
+	<entry key="label.fixedFee">Fixed Fee</entry>
+	<entry key="label.percentageFee">Percentage Fee</entry>
+	<entry key="label.minimumFee">Minimum Fee</entry>
+	<entry key="label.description"> Description </entry>
+	
+	<entry key="delete.interest.success">Remove Interest submitted successfully for Approval</entry>
+	<entry key="update.interest.success">Updated Interest submitted successfully for Approval</entry>
+	<entry key="add.interest.success">Create Interest submitted successfully for Approval</entry>
+</properties>

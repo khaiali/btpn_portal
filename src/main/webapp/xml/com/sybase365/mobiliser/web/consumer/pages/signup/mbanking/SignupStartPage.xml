@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <!-- ############# Consumer Signup - Start Page ############# -->
+    <entry key="consumer.signup.head.title">mBanking Mobiliser Consumer Signup</entry>
+    <entry key="consumer.signup.page.title">Consumer Signup</entry>
+    <entry key="signup.title">mBanking Mobiliser Consumer Signup</entry>
+    <entry key="signup.welcome.message">Welcome to the mBanking Mobiliser Consumer Signup</entry>
+
+    <!-- ############# Consumer Signup - Personal Data  Page ############# -->
+    <entry key="signup.personalData.title">mBanking Mobiliser Consumer Signup - Personal Data</entry>
+
+</properties>

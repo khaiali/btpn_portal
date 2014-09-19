@@ -1,0 +1,100 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+<wicket:panel>
+	
+	<div class="module clear" wicket:id="alertBlackOutContainer">
+
+		<form wicket:id="addBlackoutScheduleForm">
+		
+			<h2 class="section preference">
+				<wicket:message key="alertBlackOut.heading" />
+				<input type="submit" class="additionalLink last" wicket:id="addBlackoutSchedule" wicket:message="value:alertBlackOut.table.addBlackoutSchedule" />
+			</h2>
+		
+		</form>
+		
+		<h3 class="help" style="margin-top:5px; margin-bottom:5px;">
+			<wicket:message key="alertBlackOut.table.help" />
+		</h3>
+
+		<div class="cmodule clear">
+
+			<!-- list paging -->
+			<ul class="tablePaging">
+				<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+				<li class="recordsNumber"><span wicket:id="bosStartIndex" /> - <span wicket:id="bosEndIndex" /> (<span wicket:id="bosTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+				<li class="pageSelectorsContainer" wicket:id="bosNavigator"></li>
+			</ul>
+			<!-- end list paging -->
+
+			<div class="collapsable clear">
+
+				<table id="blackoutScheduleTable" class="listTable">
+
+					<wicket:enclosure child="bosPageable">
+
+					<thead>
+						<tr>
+							<th style="width:7%" class="active"><wicket:message key="alertBlackOut.table.activeForAlert" /></th>
+							<th style="width:20%" class="description"><wicket:message key="alertBlackOut.table.description" /></th>
+							<th style="width:11%" class="validFrom"><wicket:message key="alertBlackOut.table.validFrom" /></th>
+							<th style="width:11%" class="validTo"><wicket:message key="alertBlackOut.table.validTo" /></th>
+							<th style="width:32%" class="validTimes"><wicket:message key="alertBlackOut.table.validTimes" /></th>
+							<th style="width:13%" class="altTimeZone"><wicket:message key="alertBlackOut.table.altTimeZone" /></th>
+							<th style="width:10%" class="actions last"><wicket:message key="alertBlackOut.table.actions" /></th>
+						</tr>
+					</thead>
+
+					<tfoot>
+						<tr>
+							<td class="empty" colspan="7"></td>
+						</tr>
+					</tfoot>
+
+					<tbody>
+						<tr wicket:id="bosPageable">
+							<td class="select"><input wicket:id="bosActive" type="checkbox" /></td>
+							<td style="word-wrap: break-word;"><div wicket:id="bosDescription">[Description]</div></td>
+							<td><div wicket:id="bosValidFrom">[10/10/2010]</div></td>
+							<td><div wicket:id="bosValidTo">[10/12/2012]</div></td>
+							<td>
+								<ul wicket:id="bosTimePeriodList">
+									<li wicket:id="bosTimePeriod">[00:00 - 07:00 / Mo,Tu,We,Th,Fr,Sa,Su]</li>
+								</ul>
+							</td>
+							<td><div wicket:id="bosAltTimeZone">[GMT+8]</div></td>
+							<td>
+								<ul>
+									<li><a href="#" wicket:id="bosEditAction"><wicket:message key="alertBlackOut.table.editAction">[Edit]</wicket:message></a></li>
+									<li><a href="#" wicket:id="bosRemoveAction"><wicket:message key="alertBlackOut.table.removeAction">[Remove]</wicket:message></a></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+
+					</wicket:enclosure>
+
+				</table>
+
+				<div wicket:id="bosNoItemsMsg" id="noItemsMsg" class="centerMsg">[No Items Available]</div>
+
+			</div>
+
+		</div>
+
+		<wicket:enclosure child="bosEditPanel">
+
+		<div class="cmodule clear" wicket:id="bosEditPanel">
+
+		</div>
+		
+		</wicket:enclosure>
+
+	</div>
+	
+</wicket:panel>
+</body>
+</html>

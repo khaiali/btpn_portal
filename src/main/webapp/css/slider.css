@@ -1,0 +1,100 @@
+#slider {
+
+	/* You MUST specify the width and height */
+	width:702px;
+	height:300px;
+	position:relative;	
+	overflow:hidden;
+}
+
+#mask-gallery {
+	overflow:hidden;	
+	border: 10px solid #57caf6;
+	
+}
+
+#gallery {
+	
+	/* Clear the list style */
+	list-style:none;
+	margin:0;
+	padding:0;
+	
+	z-index:0;
+	
+	/* width = total items multiply with #mask gallery width */
+	width:900px;
+	overflow:hidden;
+}
+
+	#gallery li {
+
+		
+		/* float left, so that the items are arrangged horizontally */
+		float:left;
+	}
+
+
+#mask-excerpt {
+	
+	/* Set the position */
+	position:absolute;	
+	top:0;
+	left:40px;
+	z-index:500;
+	
+	/* width should be lesser than #slider width */
+	width:250px;
+	overflow:hidden;
+	
+
+}
+	
+#excerpt {
+	/* Opacity setting for different browsers */
+	filter:alpha(opacity=85);
+	-moz-opacity:0.85;  
+	-khtml-opacity: 0.85;
+	opacity: 0.85;  
+	
+	/* Clear the list style */
+	list-style:none;
+	margin:0;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:60px;
+	
+	/* Set the position */
+	z-index:10;
+	position:absolute;
+	top:0;
+	left:0;
+	
+	/* Set the style */
+	width:200px;
+	background-color:#57caf6;
+	overflow:hidden;
+	font-family:arial;
+	font-size:30px;
+	color:#fff;	
+}
+
+	#excerpt li {
+		padding:5px;
+		color: #fff;
+	}
+#excerpt p {
+	padding:5px;
+	color: #fff;
+	font-size: 20px;
+}
+	
+
+
+.clear {
+	clear:both;	
+}
+
+#buttons {
+	float: right;
+}
