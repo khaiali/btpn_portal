@@ -30,6 +30,8 @@ import java.util.List;
 public class CSVParser {
 
     private final char separator;
+    
+    private final char git;
 
     private final char quotechar;
 
