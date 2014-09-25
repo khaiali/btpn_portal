@@ -33,6 +33,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/portal_lib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jasperlib"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
