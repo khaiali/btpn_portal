@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.mandatory">Wajib isi </entry>
+	<entry key="billPayment.biller">Pilih Tagihan </entry>
+	<entry key="label.billNumber">Nomor Tagihan </entry>
+	<entry key="billPayment.label.manual">Masukan </entry>
+	<entry key="billPayment.label.fav">Pilih dari Daftar Favorit </entry>
+	<entry key="billPayment.label.mandatory">Wajib isi </entry>
+	<entry key="Submit">Masuk</entry>
+	<entry key="error.perform.billpay">Terjadi kesalahan ketika melakukan pembayaran.</entry>
+	<entry key="billPayBean.fillBillerId.null">Pilih Nomor Pembayaran</entry>
+	
+	<!-- Client Side Validations -->
+	<entry key="billPayBean.fillBillerId.Required">Kolom Nomor Tagihan harus diisi.</entry>
+	<entry key="billPayBean.fillBillerId.Required">Kolom Nomor Tagihan harus diisi.</entry>
+	<entry key="billPayBean.fillBillerId.Required">Kolom Nomor Tagihan harus diisi.</entry>
+	<entry key="billPayBean.fillBillerId.phonenumber.Required">Kolom Nomor Handphone harus diisi.</entry>
+</properties>

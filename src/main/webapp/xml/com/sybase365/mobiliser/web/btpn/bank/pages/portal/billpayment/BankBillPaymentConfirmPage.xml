@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="label.biller">Tagihan</entry>
+	<entry key="label.subbiller">Provider</entry>
+	<entry key="label.feeamount">Jumlah Biaya</entry>
+	<entry key="label.amount">Jumlah</entry>
+	<entry key="label.customer.name">Nama Nasabah</entry>
+	<entry key="label.pin">Pin</entry>
+	<entry key="label.denotes.mandatory">Wajib isi</entry>
+	<entry key="Confirm">Konfirmasi</entry>
+	<entry key="billPayBean.pin.Required">Kolom PIN harus diisi.</entry>
+
+	<entry key="success.perform.billpayment">Bayar Tagihan berhasil dilakukan.</entry>
+	<entry key="error.confirm.billpay">Bayar Tagihan gagal dilakukan.</entry>
+	<entry key="error.invalid.pin">PIN yang Anda masukkan salah, Mohon coba kembali.</entry>
+
+	<entry key="error.3016">Reversal reject, cannot find original transaction.</entry>
+	<entry key="error.3017">Phone number not exist / Billing ID not exist.</entry>
+	<entry key="error.3018">DB Error Occured in middleware</entry>
+	<entry key="error.3019">Invalid Amount Sent.</entry>
+	<entry key="error.3020">Bill Already Paid.</entry>
+	<entry key="error.3021">Link error Occured in middleware.</entry>
+	<entry key="error.3023">Other error Occured in middleware.</entry>
+	<entry key="error.3060">Invalid Meter Number.</entry>
+	<entry key="error.3061">Request Timeout,BTPN must send Payment Advice.</entry>
+	<entry key="error.3062">Over KWH Limit.</entry>
+	<entry key="error.3063">Invalid Product ID.</entry>
+	<entry key="error.3064">Invalid Denomination.</entry>
+	<entry key="error.3065">Transaction Reject, cut off in progress.</entry>
+	<entry key="error.3066">Payment Advice failed, can't find previous Purchase.</entry>
+	<entry key="error.3067">Transaction Reject, PLN Reference Number mismatch
+		between Inquiry and Payment.</entry>
+	<entry key="error.8000">An error occured while connecting to middleware.</entry>
+
+</properties>
