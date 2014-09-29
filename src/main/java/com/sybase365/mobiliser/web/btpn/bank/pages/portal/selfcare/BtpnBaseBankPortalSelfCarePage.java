@@ -11,6 +11,7 @@ import com.sybase365.mobiliser.util.tools.wicketutils.menu.IMenuEntry;
 import com.sybase365.mobiliser.util.tools.wicketutils.menu.MenuEntry;
 import com.sybase365.mobiliser.web.btpn.bank.pages.portal.BtpnBaseBankPortalPage;
 import com.sybase365.mobiliser.web.btpn.bank.pages.portal.addhelp.AddHelpPage;
+import com.sybase365.mobiliser.web.btpn.bank.pages.portal.billpayment.BankBillPaymentPage;
 import com.sybase365.mobiliser.web.btpn.bank.pages.portal.cashin.BankPortalCustomCashInPage;
 import com.sybase365.mobiliser.web.btpn.bank.pages.portal.cashin.BankPortalTopAgentCashInPage;
 import com.sybase365.mobiliser.web.btpn.bank.pages.portal.cashout.BankPortalCustomCashOutPage;
@@ -268,6 +269,12 @@ public abstract class BtpnBaseBankPortalSelfCarePage extends BtpnBaseBankPortalP
 				ManageCustomUseCaseFeeApprovePage.class);
 		mgFeeEntry.setActive(false);   
 		menuItems.add(aprFeeEntry);
+		
+		// Add BillPayment by : Imam
+		final MenuEntry pgBillPayment = new MenuEntry("left.menu.billPayment", BtpnConstants.PRIV_UI_BANK_PORTAL_BILL_PAYMENT,
+				BankBillPaymentPage.class);
+		pgBillPayment.setActive(false);   
+		menuItems.add(pgBillPayment);
 		
 		// Add Manage Biller Fee Page 
 		//@author :Andi Samalangi ManageCustomBillerFeePage, 

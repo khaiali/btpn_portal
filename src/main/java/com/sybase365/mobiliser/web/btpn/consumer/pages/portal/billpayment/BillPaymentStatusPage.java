@@ -90,12 +90,20 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 			new CompoundPropertyModel<BillPaymentStatusPage>(this));
 		form.add(new Label("billPayBean.statusMessage").setRenderBodyOnly(true));
 		
+<<<<<<< HEAD
+=======
+		parsingAdditionalData();
+>>>>>>> origin/master
 
 		
 		form.add(new Label("label.reg.number", getLocalizer().getString("label.reg.number", this))).setVisible(showRegNumber);
 		form.add(new Label("billPayBean.regNumber").setVisible(showRegNumber));
 		
+<<<<<<< HEAD
 		form.add(new Label("label.date.reg", getLocalizer().getString("label.date.reg", this))).setVisible(showDateReg);
+=======
+		form.add(new Label("label.date.number", getLocalizer().getString("label.date.number", this))).setVisible(showDateReg);
+>>>>>>> origin/master
 		form.add(new Label("billPayBean.dateReg").setVisible(showDateReg));
 		
 		form.add(new Label("label.meter.number", getLocalizer().getString("label.meter.number", this))).setVisible(showMeterNumber);
@@ -108,7 +116,11 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 		form.add(new Label("billPayBean.customerName").setVisible(showCustNameandBillAmount));
 		
 		form.add(new Label("label.tarifDaya", getLocalizer().getString("label.tarifDaya", this))).setVisible(showTarifDaya);
+<<<<<<< HEAD
 		form.add(new Label("billPayBean.tarif").setVisible(showTarifDaya));
+=======
+		form.add(new Label("billPayBean.tarif".concat("/").concat("billPayBean.daya")).setVisible(showTarifDaya));
+>>>>>>> origin/master
 		
 		form.add(new Label("label.monthYear", getLocalizer().getString("label.monthYear", this))).setVisible(showMonth);
 		form.add(new Label("billPayBean.monthYear").setVisible(showMonth));
@@ -117,6 +129,7 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 		form.add(new Label("billPayBean.stdMeter").setVisible(showStdMeter));
 		
 		form.add(new Label("label.bill.amount", getLocalizer().getString("label.bill.amount", this))).setVisible(showCustNameandBillAmount);
+<<<<<<< HEAD
 		form.add(new Label("billPayBean.billAmount").setVisible(showCustNameandBillAmount));
 
 		form.add(new Label("label.fee.amount", getLocalizer().getString("label.fee.amount", this))).setVisible(showFee);
@@ -139,6 +152,30 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 		
 		form.add(new Label("label.token.amount", getLocalizer().getString("label.token.amount", this))).setVisible(showTokenAmount);
 		form.add(new Label("billPayBean.tokenAmount").setVisible(showTokenAmount));
+=======
+		form.add(new Label("RP ".concat("billPayBean.billAmount").concat(",00")).setVisible(showCustNameandBillAmount));
+
+		form.add(new Label("label.fee.amount", getLocalizer().getString("label.fee.amount", this))).setVisible(showFee);
+		form.add(new Label("RP ".concat("billPayBean.feeAmount").concat(",00")).setVisible(showFee));
+		
+		form.add(new Label("label.total.amount", getLocalizer().getString("label.total.amount", this))).setVisible(showTotalAmount);
+		form.add(new Label("RP ".concat("billPayBean.totalAmount").concat(",00")).setVisible(showTotalAmount));
+		
+		form.add(new Label("label.materai", getLocalizer().getString("label.materai", this))).setVisible(showMaterai);
+		form.add(new Label("RP ".concat("billPayBean.materai").concat(",00")).setVisible(showMaterai));
+		
+		form.add(new Label("label.ppn", getLocalizer().getString("label.ppn", this))).setVisible(showPPN);
+		form.add(new Label("RP ".concat("billPayBean.ppn").concat(",00")).setVisible(showPPN));
+		
+		form.add(new Label("label.ppj", getLocalizer().getString("label.ppj", this))).setVisible(showPPJ);
+		form.add(new Label("RP ".concat("billPayBean.ppj").concat(",00")).setVisible(showPPJ));
+		
+		form.add(new Label("label.angsuran", getLocalizer().getString("label.angsuran", this))).setVisible(showAngsuran);
+		form.add(new Label("RP ".concat("billPayBean.angsuran").concat(",00")).setVisible(showAngsuran));
+		
+		form.add(new Label("label.token.amount", getLocalizer().getString("label.token.amount", this))).setVisible(showTokenAmount);
+		form.add(new Label("RP ".concat("billPayBean.tokenAmount").concat(",00")).setVisible(showTokenAmount));
+>>>>>>> origin/master
 		
 		form.add(new Label("label.kwh", getLocalizer().getString("label.kwh", this))).setVisible(showKwh);
 		form.add(new Label("billPayBean.kwh").setVisible(showKwh));
@@ -175,6 +212,7 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 		Long totalAmount = billPayBean.getBillAmount() + billPayBean.getFeeAmount();
 		switch (Integer.parseInt(billPayBean.getBillerId())) {
 		case 91901: //PLN PrePaid
+<<<<<<< HEAD
 			billPayBean.setMeterNumber(removePadding(additionalData.substring(7,18), "right", "0"));
 			billPayBean.setBillNumber(removePadding(additionalData.substring(18,30), "right", "0"));
 			billPayBean.setCustomerName(additionalData.substring(95,120).trim());
@@ -201,6 +239,34 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 			billPayBean.setRegNumber(additionalData.substring(0,13).trim());
 			billPayBean.setDateReg(dateFormat(additionalData.substring(38,46)));
 			billPayBean.setCustomerName(additionalData.substring(66,91).trim());
+=======
+			billPayBean.setMeterNumber(additionalData.substring(7,18));
+			billPayBean.setBillNumber(additionalData.substring(18,30));
+			billPayBean.setCustomerName(additionalData.substring(95,120));
+			billPayBean.setTarif(additionalData.substring(128,132));
+			billPayBean.setDaya(additionalData.substring(132,141));
+			billPayBean.setMaterai(additionalData.substring(154,164));
+			billPayBean.setPpn(additionalData.substring(165,175));
+			billPayBean.setPpj(additionalData.substring(176,186));
+			billPayBean.setAngsuran(additionalData.substring(187,197));
+			billPayBean.setTokenAmount(additionalData.substring(198,210));
+			billPayBean.setKwh(additionalData.substring(211,221));
+			billPayBean.setToken(additionalData.substring(221,241));
+			break;
+		case 91951: //PLN PostPaid
+			billPayBean.setBillNumber(additionalData.substring(0,12));
+			billPayBean.setCustomerName(additionalData.substring(47,72));
+			billPayBean.setTarif(additionalData.substring(125,129));
+			billPayBean.setDaya(additionalData.substring(129,138));
+			billPayBean.setMonthYear(additionalData.substring(147,153));
+			billPayBean.setStdMeter(additionalData.substring(210,218).concat("-").concat(additionalData.substring(218,226)));
+			billPayBean.setTotalAmount(totalAmount);
+			break;
+		case 91999://PLN NonTagLis
+			billPayBean.setRegNumber(additionalData.substring(0,13));
+			billPayBean.setDateReg(dateFormat(additionalData.substring(38,46)));
+			billPayBean.setCustomerName(additionalData.substring(66,91));
+>>>>>>> origin/master
 			billPayBean.setBillNumber(additionalData.substring(7,18));
 			break;
 		default: 
@@ -222,6 +288,7 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 		}
 		return newDate;
 	}
+<<<<<<< HEAD
 	
 	public static String removePadding(String text, String allign, String type) {
 		String result = "";
@@ -244,4 +311,6 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 		}
 		return result;
 	}
+=======
+>>>>>>> origin/master
 }

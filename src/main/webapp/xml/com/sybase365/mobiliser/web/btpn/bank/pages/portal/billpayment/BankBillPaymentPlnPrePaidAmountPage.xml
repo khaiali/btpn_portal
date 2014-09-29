@@ -22,7 +22,7 @@
 	<entry key="billPayBean.selectedBillerId.Required">Kolom Nomor Tagihan harus diisi.</entry>
 	<entry key="billPayBean.selectedBillerId.id.phonenumber.Required">Kolom Nomor Handphone harus diisi.</entry>
 	<entry key="billPayBean.selectedBillerId.phonenumber.Required">Kolom Nomor Handphone harus diisi.</entry>
-	<entry key="error.perform.billpay">Terjadi kesalahan ketika melakukan pembayaran.<</entry>
+	<entry key="error.perform.billpay">Terjadi kesalahan ketika melakukan pembayaran.</entry>
 	<entry key="billPayBean.billAmount.AmountValidator">${input} bukan jumlah Prabayar yang valid.</entry>
 	<entry key="billPayBean.billAmount.Required">Kolom Jumlah Prabayar harus diisi.</entry>
 	<entry key="billPayBean.billAmount.IConverter.Long">${input} bukan jumlah Prabayar yang valid.</entry>

@@ -6,8 +6,10 @@ import id.co.btpn.corp.dev.appmdwdev02.com_btpn_biller_ws_provider.btpnbillerwsb
 import id.co.btpn.corp.dev.appmdwdev02.com_btpn_biller_ws_provider.btpnbillerwsbillpayment.PaymentBillerResponse;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import javax.xml.transform.TransformerException;
@@ -70,6 +72,7 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 	 */
 	
 	public void parsingAdditionalData() {
+<<<<<<< HEAD
 		String AdditionalData = billPayBean.getAdditionalData();
 		switch (Integer.parseInt(billPayBean.getBillerId())) {
 		case 91901:
@@ -84,12 +87,72 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 		case 91999:
 			billPayBean.setCustomerName(AdditionalData.substring(66,91).trim());
 			billPayBean.setRegNumber(AdditionalData.substring(0,13).trim());
+=======
+		String additionalData = billPayBean.getAdditionalData();
+		Long totalAmount = billPayBean.getBillAmount() + billPayBean.getFeeAmount();
+		switch (Integer.parseInt(billPayBean.getBillerId())) {
+		case 91901:
+			billPayBean.setCustomerName(additionalData.substring(95,120));
+			billPayBean.setMeterNumber(additionalData.substring(7,18));
+			billPayBean.setBillNumber(additionalData.substring(18,30));
+			billPayBean.setTarif(additionalData.substring(120,124).concat("/").concat(additionalData.substring(132,141)));
+			//billPayBean.setDaya(additionalData.substring(132,141));
+			/*
+			 * Data yang dibutuhkan tidak ada di inquiry response
+			billPayBean.setMaterai(additionalData.substring(154,164));
+			billPayBean.setPpn(additionalData.substring(165,175));
+			billPayBean.setPpj(additionalData.substring(176,186));
+			billPayBean.setAngsuran(additionalData.substring(187,197));
+			billPayBean.setTokenAmount(additionalData.substring(198,210));
+			billPayBean.setKwh(additionalData.substring(211,221));
+			billPayBean.setToken(additionalData.substring(221,241));
+			 */
+			break;
+		case 91951:
+			billPayBean.setCustomerName(additionalData.substring(47,72));
+			billPayBean.setBillNumber(additionalData.substring(0,12));
+			billPayBean.setTarif(additionalData.substring(92,96));
+			billPayBean.setDaya(additionalData.substring(96,105));
+			billPayBean.setMonthYear(additionalData.substring(114,120));
+			billPayBean.setTotalAmount(totalAmount);
+			/*
+			 * Data yang dibutuhkan tidak ada di inquiry reponse
+			 * billPayBean.setStdMeter(additionalData.substring(210,218).concat("-").concat(additionalData.substring(218,226)));
+			 */
+			break;
+		case 91999:
+			billPayBean.setCustomerName(additionalData.substring(66,91));
+			billPayBean.setRegNumber(additionalData.substring(0,13));
+			billPayBean.setDateReg(dateFormat(additionalData.substring(28,36)));
+			billPayBean.setBillNumber(additionalData.substring(44,56));
+>>>>>>> origin/master
 			break;
 		default:
 		}
 		return ;
 	}
 	
+<<<<<<< HEAD
+=======
+	/*
+	 * This is for convert the date format
+	 */
+	
+	public String dateFormat(String date){
+		String newDate = null;
+		try {
+			SimpleDateFormat inputFormat  = new SimpleDateFormat("YYYYMMDD");
+	        SimpleDateFormat outputFormat = new SimpleDateFormat("ddMMMYY");
+
+	        Date parsedDate = inputFormat.parse(date);
+	        System.out.println(outputFormat.format(parsedDate));
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return newDate;
+	}
+	
+>>>>>>> origin/master
 	/**
 	 * This is the init page components for Bill Pay Perform page.
 	 */
@@ -235,6 +298,7 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 		}
 		
 	}
+<<<<<<< HEAD
 	
 	
 	public static String removePadding(String text, String allign, String type) {
@@ -258,4 +322,18 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 		}
 		return result;
 	}
+=======
+
+	public void printStrukPrepaid(){
+		
+		try {
+			
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+>>>>>>> origin/master
 }
