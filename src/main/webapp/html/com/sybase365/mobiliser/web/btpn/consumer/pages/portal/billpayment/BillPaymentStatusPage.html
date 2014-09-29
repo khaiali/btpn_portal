@@ -6,15 +6,109 @@
 			<div>
 				<div id="centerContent" class="content">
 					<form wicket:id="confirmBillPay">		
-							<fieldset>
-								<legend class="reg_tab">
-									<h2><wicket:message key="left.menu.billPayment" /></h2>
-								</legend>								
-								<div class="spacer"></div>
-								<div class="column">
-									<b><label wicket:id="billPayBean.statusMessage"></label></b>
-								</div>
-								<div class="spacer"></div>
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="left.menu.billPayment" /></h2>
+							</legend>								
+							<div class="spacer"></div>
+							<div class="column">
+								<b><label wicket:id="billPayBean.statusMessage"></label></b>
+							</div>
+							<div class="spacer"></div>
+							
+							<table>
+								<tr>
+									<td><label for="billPayBean.regNumber" wicket:id="label.reg.number"></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="billPayBean.regNumber"></div></td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.date.reg" wicket:id="label.date.reg"></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="billPayBean.dateReg"></div></td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.meterNumber" wicket:id="label.meter.number"></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="billPayBean.meterNumber"></div></td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.bill.number" wicket:id="label.bill.number"></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="billPayBean.billNumber"></div></td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.customer.name" wicket:id="label.customer.name"></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="billPayBean.customerName"></div></td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.tarifDaya" wicket:id="label.tarifDaya"></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="billPayBean.tarif"></div></td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.monthYear" wicket:id="label.monthYear"></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="billPayBean.monthYear"></div></td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.std.meter" wicket:id="label.std.meter"></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="billPayBean.stdMeter"></div></td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.bill.amount" wicket:id="label.bill.amount"></label></td>
+									<td>:</td>
+									<td>Rp <div class="input_value" wicket:id="billPayBean.billAmount"></div>,00</td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.fee.amount" wicket:id="label.fee.amount"></label></td>
+									<td>:</td>
+									<td>Rp <div class="input_value" wicket:id="billPayBean.feeAmount"></div>,00</td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.total.amount" wicket:id="label.total.amount"></label></td>
+									<td>:</td>
+									<td>Rp <div class="input_value" wicket:id="billPayBean.totalAmount"></div>,00</td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.materai" wicket:id="label.materai"></label></td>
+									<td>:</td>
+									<td>Rp <div class="input_value" wicket:id="billPayBean.materai"></div>,00</td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.ppn" wicket:id="label.ppn"></label></td>
+									<td>:</td>
+									<td>Rp <div class="input_value" wicket:id="billPayBean.ppn"></div>,00</td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.ppj" wicket:id="label.ppj"></label></td>
+									<td>:</td>
+									<td>Rp <div class="input_value" wicket:id="billPayBean.ppj"></div>,00</td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.angsuran" wicket:id="label.angsuran"></label></td>
+									<td>:</td>
+									<td>Rp <div class="input_value" wicket:id="billPayBean.angsuran"></div>,00</td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.token.amount" wicket:id="label.token.amount"></label></td>
+									<td>:</td>
+									<td>Rp <div class="input_value" wicket:id="billPayBean.tokenAmount"></div>,00</td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.kwh" wicket:id="label.kwh"></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="billPayBean.kwh"></div></td>
+								</tr>
+								<tr>
+									<td><label for="billPayBean.token" wicket:id="label.token"></label></td>
+									<td>:</td>
+									<td><div class="input_value" wicket:id="billPayBean.token"></div></td>
+								</tr>
+							</table>
+							
 							<input name="backtoHome" wicket:id="btnOk" wicket:message="value:OK" class="submit acc_chk" type="submit" />
 						</fieldset>
 						<div class="spacer"></div>

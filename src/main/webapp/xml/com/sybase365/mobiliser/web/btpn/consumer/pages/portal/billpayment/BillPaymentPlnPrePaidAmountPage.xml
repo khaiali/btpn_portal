@@ -2,28 +2,17 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 
 <properties>
-	<entry key="billPayment.customer">Data Customer</entry>
-	<entry key="billPayment.label.noMeter">METER NUMBER / PELANGGAN : </entry>
-	<entry key="billPayment.label.name">NAMA : </entry>
+	<entry key="label.biller">Tagihan </entry>
+	<entry key="label.subbiller">Provider </entry>
+	<entry key="billPayment.bill.number">No. Meter </entry>
+	<entry key="label.customer.name">Nama Nasabah </entry>
 	<entry key="billPayment.additional.data">Data Tambahan </entry>
-	<entry key="billPayment.label.amount">Masukkan amount</entry>
-	<entry key="billpayment.label.unsold">TOKEN UNSOLD</entry>
-	<entry key="billPayment.label.mandatory">Wajib isi </entry>
-	<entry key="label.amount">Jumlah amount</entry>
-
-	<entry key="billPayment.biller">Tagihan </entry>
-	<entry key="billPayment.subBiller">Provider </entry>
-	<entry key="billPayment.additional.data">Data Tambahan </entry>
-	<entry key="billPayment.label.manual">Masukan </entry>
-	<entry key="billPayment.label.fav">Pilih dari Daftar Favorit </entry>
+	<entry key="billPayment.label.manual">Tentukan jumlah </entry>
+	<entry key="billPayment.label.unsold1">Unsold 1 </entry>
+	<entry key="billPayment.label.unsold2">Unsold 2 </entry>
 	<entry key="billPayment.label.mandatory">Wajib isi </entry>
 	<entry key="Submit">Masuk</entry>
 	<entry key="error.perform.billpay">Terjadi kesalahan ketika melakukan pembayaran.</entry>
-	<entry key="label.billNumber">Nomor Rekening </entry>
-	<entry key="label.phoneNumber">Nomor HP </entry>
-	<entry key="label.favourite">Pilih Dari Daftar Favorit </entry>
-	<entry key="billPayBean.subBillerType.null">Pilih Tagihan</entry>
-	<entry key="billPayBean.selectedBillerId.null">Pilih Nomor Tagihan</entry>
 	<entry key="label.prepaid.note">*Untuk PLN_PREPAID, mohon masukan nomor pelanggan.</entry>
 	<entry key="label.amount">Jumlah </entry>
 
@@ -33,7 +22,7 @@
 	<entry key="billPayBean.selectedBillerId.Required">Kolom Nomor Tagihan harus diisi.</entry>
 	<entry key="billPayBean.selectedBillerId.id.phonenumber.Required">Kolom Nomor Handphone harus diisi.</entry>
 	<entry key="billPayBean.selectedBillerId.phonenumber.Required">Kolom Nomor Handphone harus diisi.</entry>
-	<entry key="error.perform.billpay">Terjadi kesalahan ketika melakukan pembayaran.<</entry>
+	<entry key="error.perform.billpay">Terjadi kesalahan ketika melakukan pembayaran.</entry>
 	<entry key="billPayBean.billAmount.AmountValidator">${input} bukan jumlah Prabayar yang valid.</entry>
 	<entry key="billPayBean.billAmount.Required">Kolom Jumlah Prabayar harus diisi.</entry>
 	<entry key="billPayBean.billAmount.IConverter.Long">${input} bukan jumlah Prabayar yang valid.</entry>

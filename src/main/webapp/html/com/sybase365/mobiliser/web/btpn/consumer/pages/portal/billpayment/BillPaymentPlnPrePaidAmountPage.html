@@ -1,65 +1,71 @@
 <html
 	xmlns:wicket="http://wicket.apache.org/dtds.ta/wicket-xhtml1.4-strict.dtd">
 <body>
-
 	<wicket:extend>
 		<div class="Main_container">
-			<div></div>
 			<div>
 				<div id="centerContent" class="content">
-					<form wicket:id="billPaymentForm">
+					<form id="formBillAmount" wicket:id="subBillPaymentForm">
 						<fieldset>
 							<legend class="reg_tab">
-								<h2><wicket:message key="left.menu.billPayment" /></h2>
-								<h3><wicket:message key="billPayment.customer" /></h3>
-							</legend>
+							<h2><wicket:message key="left.menu.billPayment" /></h2></legend>
 							<div wicket:id="errorMessages"></div>
-							<div class="spacer"></div>
-							<div class="column">
-								<label><wicket:message key="billPayment.label.noMeter" /></label>
-								<input wicket:id="radio.manually" name="filterType" class="radio" type="radio" checked="checked">
-								<label><wicket:message key="billPayment.label.name" /></label>
-								<input wicket:id="radio.manually" name="filterType" class="radio" type="radio" checked="checked">
-							</div>
 							<div class="column twoColumn">
 								<div class="input">
-									<label>
-										<wicket:message key="billPayment.additional.data" /> <span class="required">*</span>
-									</label>
-									<div class="group"
-										wicket:id="billPayBean.manualOrFavourite">
-										<div>
-											<input wicket:id="radio.manually" name="filterType"	class="radio" type="radio" checked="checked">
-											<label><wicket:message key="billPayment.label.amount" /></label>
-										</div>
-										<div>
-											<input wicket:id="radio.manually" name="filterType"	class="radio" type="radio" checked="checked">
-											<label><wicket:message key="billpayment.label.unsold" /></label>
-										</div>
-										<div>
-											<input wicket:id="radio.manually" name="filterType"	class="radio" type="radio" checked="checked">
-											<label><wicket:message key="billpayment.label.unsold" /></label>
-										</div>
-									</div>
-									<div class="column">
-										<span class="required">*</span><wicket:message	key="billPayment.label.mandatory" />
-									</div>
+									<table>
+										<tr>
+											<td><label for="billPayment.billerType"><wicket:message key="label.biller" /></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.billerLabel"></div></td>
+										</tr>
+										<tr>
+											<td><label for="billPayment.subbillerType"><wicket:message key="label.subbiller" /></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.productLabel"></div></td>
+										</tr>
+										<tr>
+											<td><label for="billPayment.billNumberType"><wicket:message key="billPayment.bill.number" /></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.billNumber"></div></td>
+										</tr>
+										
+										<tr>
+											<td><label for="billPayment.customerName"><wicket:message key="label.customer.name" /></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.customerName"></div></td>
+										</tr>
+									</table>
 								</div>
 							</div>
-
+							<div class="spacer"></div>
 							<div class="column twoColumn">
-								<div class="input" wicket:id="manualContainer">
-									<label><span wicket:id="billPayment.label.amount"></span><span class="required">*</span></label> 
-									<input wicket:id="billPayBean.selectedBillerId.id" name="billNumber" type="text">
-									<!--<div class="column"><span><wicket:message key="label.prepaid.note" /></span></div>-->
+								<p><label for="billPayment.additionalData"><wicket:message key="billPayment.additional.data" /></label> 
+								<br />
+								<span wicket:id="hosting"></span>
+								</p>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<span class="required">*</span><wicket:message key="billPayment.label.mandatory" />
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<div class="input" wicket:id ="amountContainer">
+									<label for="billPayment.billamount"><wicket:message key="label.amount" /></label> <span
+										class="required">*</span>
+									<input id="prepaidAmount"
+										name="prepaidAmount" wicket:id="billPayBean.billAmount" type="text" />
 								</div>
-								<input name="checkandCallPreAuth" wicket:message="value:Masuk" class="submit acc_chk" type="submit" wicket:id="btnSubmit">
+
+							<input name="doBillPaymentPreAuth" value="Masuk"
+								class="submit acc_chk" wicket:id="btnSubmit" type="submit" />
 							</div>
 						</fieldset>
 						<div class="spacer"></div>
 					</form>
 				</div>
 			</div>
+			<div></div>
 		</div>
 	</wicket:extend>
 </body>

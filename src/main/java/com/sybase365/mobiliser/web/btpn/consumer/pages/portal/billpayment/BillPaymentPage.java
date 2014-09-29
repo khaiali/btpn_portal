@@ -37,6 +37,7 @@ import org.springframework.ws.client.core.WebServiceMessageCallback;
 import org.springframework.ws.client.core.WebServiceOperations;
 import org.springframework.ws.soap.SoapMessage;
 
+import id.co.btpn.corp.dev.appmdwdev02.com_btpn_biller_ws_provider.btpnbillerwsbillpayment.ObjectFactory;
 import com.btpnwow.portal.common.util.BillerProductLookup;
 import com.btpnwow.portal.common.util.BillerProductLookup.BillerProduct;
 import com.btpnwow.portal.common.util.MobiliserUtils;
@@ -86,7 +87,6 @@ public class BillPaymentPage extends BtpnBaseConsumerPortalSelfCarePage {
 	
 	private WebMarkupContainer favouriteContainer;
 	private WebMarkupContainer manualContainer;
-	
 
 	/**
 	 * Constructor for the BillPayment Page.
@@ -317,6 +317,7 @@ public class BillPaymentPage extends BtpnBaseConsumerPortalSelfCarePage {
 					}
 				}
 				
+				
 				if (finalId == null) {
 					error(BillPaymentPage.this.getLocalizer().getString("product.required", BillPaymentPage.this));
 				} 
@@ -336,7 +337,7 @@ public class BillPaymentPage extends BtpnBaseConsumerPortalSelfCarePage {
 				}
 			}
 		}.setDefaultFormProcessing(true));
-	}
+	}	
 	
 	/**
 	 * This method is used for performing bill payment.
@@ -347,40 +348,57 @@ public class BillPaymentPage extends BtpnBaseConsumerPortalSelfCarePage {
 		try {
 			// call middleware service for bill payment inquiry
 				InqDebitBillPayment request = new InqDebitBillPayment();
-				CommonParam2 commonParam = new CommonParam2();
+				
+				ObjectFactory f = new ObjectFactory();
+				CommonParam2 commonParam = f.createCommonParam2();
 				billPayBean.setReferenceNumber(MobiliserUtils.getExternalReferenceNo(isystemEndpoint));
 				billPayBean.setPayDate(PortalUtils.getSaveXMLGregorianCalendar(Calendar.getInstance()).toXMLFormat());
 				
 				
 				//TODO  debit Account  => debitIdentifierType, debitOrgUnitId
 				
-				commonParam.setPan("1234511234511234");
-				commonParam.setProcessingCode("100601");
-				commonParam.setChannelId("6017");
-				commonParam.setChannelType("PB");
-				commonParam.setNode("WOW_CHANNEL");
-				commonParam.setCurrencyAmount("IDR");
-				commonParam.setAmount(String.valueOf(0));
-				commonParam.setTransmissionDateTime( billPayBean.getPayDate());
-				commonParam.setRequestId( billPayBean.getReferenceNumber() );
-				commonParam.setAcqId("213");
-				commonParam.setReferenceNo( billPayBean.getReferenceNumber() );
-				commonParam.setTerminalId("WOW");
-				commonParam.setTerminalName("WOW");
-				commonParam.setOriginal("USSD");
+				switch (Integer.parseInt(billPayBean.getBillerId())) {
+				case 91901:
+					commonParam.setPan(f.createCommonParam2Pan("053502"));
+					break;
+				case 91951:
+					commonParam.setPan(f.createCommonParam2Pan("053501"));
+					break;
+				case 91999:
+					commonParam.setPan(f.createCommonParam2Pan("053504"));
+				default :
+					commonParam.setPan(f.createCommonParam2Pan("1234511234511234"));
+					break;
+				}
+
+				commonParam.setProcessingCode(f.createCommonParam2ProcessingCode("100601"));
+				commonParam.setChannelId(f.createCommonParam2ChannelId("6017"));
+				commonParam.setChannelType(f.createCommonParam2ChannelType("PB"));
+				commonParam.setNode(f.createCommonParam2Node("WOW_CHANNEL"));
+				commonParam.setCurrencyAmount(f.createCommonParam2CurrencyAmount("IDR"));
+				commonParam.setAmount(f.createCommonParam2Amount(String.valueOf(0)));
+				commonParam.setTransmissionDateTime(f.createCommonParam2TransmissionDateTime(billPayBean.getPayDate()));
+				commonParam.setRequestId(f.createCommonParam2RequestId(billPayBean.getReferenceNumber()));
+				commonParam.setAcqId(f.createCommonParam2AcqId("213"));
+				commonParam.setReferenceNo(f.createCommonParam2ReferenceNo(billPayBean.getReferenceNumber()));
+				commonParam.setTerminalId(f.createCommonParam2TerminalId("WOW"));
+				commonParam.setTerminalName(f.createCommonParam2TerminalName("WOW"));
+				commonParam.setOriginal(f.createCommonParam2Original("USSD"));
 			
 				request.setCommonParam(commonParam);
 				PhoneNumber phone = new PhoneNumber(this.getMobiliserWebSession().getBtpnLoggedInCustomer().getUsername());
 				request.setAccountNo( phone.getNationalFormat()); //msisdn
 				request.setProductID( billPayBean.getProductId());
-				request.setInstitutionCode(billPayBean.getBillerId());
-				request.setBillerCustNo( billPayBean.getSelectedBillerId().getId() );
+				//request.setInstitutionCode(billPayBean.getBillerId());
+				//request.setBillerCustNo( billPayBean.getSelectedBillerId().getId() );
 				request.setDebitType("MSISDN");
-				request.setUnitId("0901");
-				request.setAdditionalData1("Bill Payment ");
-				request.setAdditionalData2(billPayBean.getBillerId());
-				request.setAdditionalData3(" ");
+				request.setUnitId("");
+				request.setProcessingCodeBiller("380000");
+				request.setAdditionalData1("534611446505" /*billPayBean.getSelectedBillerId().getId()*/);
+				//request.setAdditionalData2(billPayBean.getBillerId());
+				//request.setAdditionalData3(" ");
 			
+				
 				
 			
 				InqDebitBillPaymentResponse response = new InqDebitBillPaymentResponse();
@@ -404,10 +422,18 @@ public class BillPaymentPage extends BtpnBaseConsumerPortalSelfCarePage {
 					if(response.getClass().getTypeParameters()==null){
 						billerAmount = "0";
 					}
-					billPayBean.setAdditionalData(response.getAdditionalData());
+					switch (Integer.parseInt(billPayBean.getBillerId())) {
+					case 91901:
+						billPayBean.setAdditionalData(response.getAdditionalData());
+						billPayBean.setAdditionalData2(response.getAdditionalData2());
+						break;
+					default:
+						billPayBean.setAdditionalData(response.getAdditionalData());
+						break;
+					}
 					billPayBean.setReferenceNumber(MobiliserUtils.getExternalReferenceNo(isystemEndpoint));
-					commonParam.setAmount(String.valueOf(billerAmount));
-					commonParam.setReferenceNo(billPayBean.getReferenceNumber());
+					commonParam.setAmount(f.createCommonParam2Amount(String.valueOf(billerAmount)));
+					commonParam.setReferenceNo(f.createCommonParam2ReferenceNo(billPayBean.getReferenceNumber()));
 		
 					response2 = (InqDebitBillPaymentResponse) webServiceTemplate.marshalSendAndReceive(request,
 							new WebServiceMessageCallback() {
@@ -421,12 +447,12 @@ public class BillPaymentPage extends BtpnBaseConsumerPortalSelfCarePage {
 					LOG.info("Response 2 : "+response2.getResponseCode()+"##"+response2.getResponseDesc());
 					if (response2.getResponseCode().equals("00")) {
 						// -- Output Transaction Id --
-						billPayBean.setBillAmount(Long.valueOf(response2.getTransactionAmount()) );
-						billPayBean.setFeeAmount( Long.valueOf(response2.getFee()) );
+						billPayBean.setBillAmount(Long.valueOf(removePadding(response2.getTransactionAmount(), "right", "0")) );
+						billPayBean.setFeeAmount( Long.valueOf(removePadding(response2.getFee(), "right", "0")) );
 						billPayBean.setTxnId("1");
 						billPayBean.setFeeCurrency(response2.getFeeCurrency());
 						
-						setResponsePage(new BillPaymentConfirmPage(billPayBean));
+						switchPanel(billPayBean);
 					}
 					else{
 						error(MobiliserUtils.errorMessage(response2.getResponseCode(), response2.getResponseDesc(), getLocalizer(), this));
@@ -443,4 +469,40 @@ public class BillPaymentPage extends BtpnBaseConsumerPortalSelfCarePage {
 		}
 	}
 	
+	/*
+	 * For PrePaid PLN
+	 */
+	
+	public void switchPanel (BillPaymentPerformBean billPayBean) {
+		switch (Integer.parseInt(billPayBean.getBillerId())) {
+		case 91901:
+			setResponsePage(new BillPaymentPlnPrePaidAmountPage(billPayBean));
+			break;
+		default :
+			setResponsePage(new BillPaymentConfirmPage(billPayBean));
+			break;
+		}
+	}
+	
+	public static String removePadding(String text, String allign, String type) {
+		String result = "";
+		char[] textChar = text.toCharArray();
+		if(allign.equalsIgnoreCase("right")) {
+			for(int i=0; i<textChar.length; i++) {
+				if(!String.valueOf(textChar[i]).equals(type)) {
+					result = text.substring(i);
+					break;
+				}
+			}
+		}
+		else if(allign.equalsIgnoreCase("left")) {
+			for(int i=textChar.length-1; i>0; i--) {
+				if(!String.valueOf(textChar[i]).equals(type)) {
+					result = text.substring(0,i+1);
+					break;
+				}
+			}
+		}
+		return result;
+	}
 }

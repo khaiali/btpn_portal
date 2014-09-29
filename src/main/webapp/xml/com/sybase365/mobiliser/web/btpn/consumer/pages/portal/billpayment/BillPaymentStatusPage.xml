@@ -5,4 +5,26 @@
 	<entry key="success.perform.billpayment">Bayar Tagihan berhasil dilakukan.</entry>
 	<entry key="error.confirm.billpay">Bayar Tagihan gagal dilakukan.</entry>
 	<entry key="OK">OK</entry>
+	
+	
+	<entry key="label.reg.number">NO REGISTRATION</entry>
+	<entry key="label.date.reg">TGL REGISTRATION</entry>
+	<entry key="label.meter.number">NO METER</entry>
+	<entry key="label.bill.number">ID PELANGGAN</entry>
+	<entry key="label.customer.name">NAMA</entry>
+	<entry key="label.tarifDaya">TARIF/DAYA</entry>
+	<entry key="label.bill.amount">RP BAYAR</entry>
+	<entry key="label.materai">MATERAI</entry>
+	<entry key="label.ppn">PPn</entry>
+	<entry key="label.ppj">PPj</entry>
+	<entry key="label.angsuran">ANGSURAN</entry>
+	<entry key="label.token.amount">RP STROOM/TOKEN</entry>
+	<entry key="label.kwh">JUMLAH KWH</entry>
+	<entry key="label.token">STROOM/TOKEN</entry>
+	<entry key="label.monthYear">BL/TH</entry>
+	<entry key="label.std.meter">STAND METER</entry>
+	<entry key="label.bill.amount">RP TAG PLN</entry>
+	<entry key="label.fee.amount">ADMIN BANK</entry>
+	<entry key="label.total.amount">TOTAL BAYAR</entry>
+	
 </properties>

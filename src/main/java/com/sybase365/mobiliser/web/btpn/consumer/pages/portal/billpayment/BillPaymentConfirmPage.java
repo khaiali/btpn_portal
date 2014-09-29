@@ -1,6 +1,7 @@
 package com.sybase365.mobiliser.web.btpn.consumer.pages.portal.billpayment;
 
 import id.co.btpn.corp.dev.appmdwdev02.com_btpn_biller_ws_provider.btpnbillerwsbillpayment.CommonParam2;
+import id.co.btpn.corp.dev.appmdwdev02.com_btpn_biller_ws_provider.btpnbillerwsbillpayment.ObjectFactory;
 import id.co.btpn.corp.dev.appmdwdev02.com_btpn_biller_ws_provider.btpnbillerwsbillpayment.PaymentBiller;
 import id.co.btpn.corp.dev.appmdwdev02.com_btpn_biller_ws_provider.btpnbillerwsbillpayment.PaymentBillerResponse;
 
@@ -60,13 +61,58 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 		this.billPayBean = billPayBean;
 		billPayConsumerNameList = Arrays.asList(this.getCustomerPortalPrefsConfig().getPlnPrePaidNosForCustomerName()
 			.split(","));
+		parsingAdditionalData();
 		initPageComponents();
 	}
 
+	/*
+	 * for get data in additional data 1
+	 */
+	
+	public void parsingAdditionalData() {
+		String AdditionalData = billPayBean.getAdditionalData();
+		switch (Integer.parseInt(billPayBean.getBillerId())) {
+		case 91901:
+			billPayBean.setCustomerName(AdditionalData.substring(95,120).trim());
+			billPayBean.setMeterNumber(removePadding(AdditionalData.substring(7,18), "right", "0"));
+			billPayBean.setBillNumber(removePadding(AdditionalData.substring(18,30), "right", "0"));
+			break;
+		case 91951:
+			billPayBean.setCustomerName(AdditionalData.substring(47,72).trim());
+			billPayBean.setBillNumber(removePadding(AdditionalData.substring(0,12), "right", "0"));
+			break;
+		case 91999:
+			billPayBean.setCustomerName(AdditionalData.substring(66,91).trim());
+			billPayBean.setRegNumber(AdditionalData.substring(0,13).trim());
+			break;
+		default:
+		}
+		return ;
+	}
+	
 	/**
 	 * This is the init page components for Bill Pay Perform page.
 	 */
 	public void initPageComponents() {
+		
+		boolean showMeterID 	= false;
+		boolean showBillerID 	= false;
+		boolean showRegID		= false;
+		boolean fillMeterID		= false;
+		boolean fillBillerID 	= false;
+		boolean fillRegID		= false;
+		if(billPayBean.getBillerId().equals("91901")) { //prepaid
+			showMeterID 	= true;
+			showBillerID 	= true;
+			fillMeterID		= true;
+			fillBillerID	= true;
+		} else if(billPayBean.getBillerId().equals("91951")) { //postpaid
+			showBillerID 	= true;
+			fillBillerID	= true;
+		} else if(billPayBean.getBillerId().equals("91999")) { //nontaglis
+			showRegID		= true;
+			fillRegID		= true;
+		}
 		
 		final Form<BillPaymentConfirmPage> form = new Form<BillPaymentConfirmPage>("confirmBillPay",
 			new CompoundPropertyModel<BillPaymentConfirmPage>(this));
@@ -75,11 +121,18 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 		form.add(new Label("billPayBean.productLabel"));
 		form.add(new Label("billPayBean.billAmount"));
 		form.add(new AmountLabel("billPayBean.feeAmount"));
-		final boolean showCustomerName = billPayConsumerNameList.contains(billPayBean.getProductId());
-		form.add(new Label("label.customer.name", getLocalizer().getString("label.customer.name", this))
-			.setVisible(showCustomerName)); 
-		form.add(new Label("billPayBean.customerName").setVisible(showCustomerName));
+		final boolean showNameandBillNumber = billPayConsumerNameList.contains(billPayBean.getBillerId());
+		form.add(new Label("label.customer.name", getLocalizer().getString("label.customer.name", this)).setVisible(showNameandBillNumber)); 
+		form.add(new Label("billPayBean.customerName").setVisible(showNameandBillNumber));
+		form.add(new Label("label.meter.number", getLocalizer().getString("label.meter.number", this)).setVisible(showMeterID));
+		form.add(new Label("billPayBean.meterNumber").setVisible(fillMeterID));
+		form.add(new Label("label.bill.number", getLocalizer().getString("label.bill.number", this)).setVisible(showBillerID));
+		form.add(new Label("billPayBean.billNumber").setVisible(fillBillerID));
+		form.add(new Label("label.reg.number", getLocalizer().getString("label.reg.number", this)).setVisible(showRegID));
+		form.add(new Label("billPayBean.regNumber").setVisible(fillRegID));
+		
 		form.add(new PasswordTextField("billPayBean.pin").add(new ErrorIndicator()));
+		
 		addSubmitButton(form);
 		
 		add(form);
@@ -116,24 +169,25 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 	private void handleConfirmBillPayment() {
 		try {
 			 	PaymentBiller request = new PaymentBiller();
-			    CommonParam2 commonParam = new CommonParam2();
+			 	ObjectFactory f = new ObjectFactory();
+				CommonParam2 commonParam = f.createCommonParam2();
 			    
-			    commonParam.setProcessingCode("100601");
-				commonParam.setChannelId("6018");
-				commonParam.setChannelType("PB");
-				commonParam.setNode("WOW_CHANNEL");
-				commonParam.setCurrencyAmount("IDR");
-				commonParam.setAmount(String.valueOf(billPayBean.getBillAmount()));
-				commonParam.setCurrencyfee(billPayBean.getFeeCurrency());
-				commonParam.setFee(String.valueOf(billPayBean.getFeeAmount()));
-				commonParam.setTransmissionDateTime(PortalUtils.getSaveXMLGregorianCalendar(Calendar.getInstance()).toXMLFormat());
-				commonParam.setRequestId(MobiliserUtils.getExternalReferenceNo(isystemEndpoint));
-				commonParam.setAcqId("213");
-				commonParam.setReferenceNo(String.valueOf(billPayBean.getReferenceNumber()));
-				commonParam.setTerminalId("WOW");
-				commonParam.setTerminalName("WOW");
+			    commonParam.setProcessingCode(f.createCommonParam2ProcessingCode("100601"));
+				commonParam.setChannelId(f.createCommonParam2ChannelId("6018"));
+				commonParam.setChannelType(f.createCommonParam2ChannelType("PB"));
+				commonParam.setNode(f.createCommonParam2Node("WOW_CHANNEL"));
+				commonParam.setCurrencyAmount(f.createCommonParam2CurrencyAmount("IDR"));
+				commonParam.setAmount(f.createCommonParam2Amount(String.valueOf(billPayBean.getBillAmount())));
+				commonParam.setCurrencyfee(f.createCommonParam2Currencyfee(billPayBean.getFeeCurrency()));
+				commonParam.setFee(f.createCommonParam2Fee(String.valueOf(billPayBean.getFeeAmount())));
+				commonParam.setTransmissionDateTime(f.createCommonParam2TransmissionDateTime(PortalUtils.getSaveXMLGregorianCalendar(Calendar.getInstance()).toXMLFormat()));
+				commonParam.setRequestId(f.createCommonParam2RequestId(MobiliserUtils.getExternalReferenceNo(isystemEndpoint)));
+				commonParam.setAcqId(f.createCommonParam2AcqId("213"));
+				commonParam.setReferenceNo(f.createCommonParam2ReferenceNo(String.valueOf(billPayBean.getReferenceNumber())));
+				commonParam.setTerminalId(f.createCommonParam2TerminalId("WOW"));
+				commonParam.setTerminalName(f.createCommonParam2TerminalName("WOW"));
 				//commonParam.setOriginal("USSD");benico pindah jd additional data
-				commonParam.setOriginal(billPayBean.getAdditionalData());
+				commonParam.setOriginal(f.createCommonParam2Original(billPayBean.getAdditionalData()));
 				
 				request.setCommonParam(commonParam);
 				PhoneNumber phone = new PhoneNumber(this.getMobiliserWebSession().getBtpnLoggedInCustomer().getUsername());
@@ -147,7 +201,7 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 				
 				String desc1="Bill Payment ";
 				String desc2= billPayBean.getBillerId();
-				String desc3=" ";
+				String desc3="";
 				
 				request.setAdditionalData1(desc1);
 				request.setAdditionalData2(desc2);
@@ -162,7 +216,7 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 							public void doWithMessage(WebServiceMessage message) throws IOException,
 									TransformerException {
 								((SoapMessage) message)
-								.setSoapAction("com_btpn_biller_ws_provider_BtpnBillerWsTopup_Binder_topupBiller");
+								.setSoapAction("com_btpn_biller_ws_provider_BtpnBillerWsTopup_Binder_paymentBiller");
 							}
 				});
 			    
@@ -180,5 +234,28 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 			LOG.error("An exception was thrown", e);
 		}
 		
+	}
+	
+	
+	public static String removePadding(String text, String allign, String type) {
+		String result = "";
+		char[] textChar = text.toCharArray();
+		if(allign.equalsIgnoreCase("right")) {
+			for(int i=0; i<textChar.length; i++) {
+				if(!String.valueOf(textChar[i]).equals(type)) {
+					result = text.substring(i);
+					break;
+				}
+			}
+		}
+		else if(allign.equalsIgnoreCase("left")) {
+			for(int i=textChar.length-1; i>0; i--) {
+				if(!String.valueOf(textChar[i]).equals(type)) {
+					result = text.substring(0,i+1);
+					break;
+				}
+			}
+		}
+		return result;
 	}
 }

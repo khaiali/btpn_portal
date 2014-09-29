@@ -2,12 +2,15 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 
 <properties>
-	<entry key="label.biller">Tagihan</entry>
-	<entry key="label.subbiller">Provider</entry>
-	<entry key="label.feeamount">Jumlah Biaya</entry>
-	<entry key="label.amount">Jumlah</entry>
-	<entry key="label.customer.name">Nama Nasabah</entry>
-	<entry key="label.pin">Pin</entry>
+	<entry key="label.biller">Tagihan </entry>
+	<entry key="label.subbiller">Provider </entry>
+	<entry key="label.feeamount">Jumlah Biaya </entry>
+	<entry key="label.amount">Jumlah </entry>
+	<entry key="label.customer.name">Nama Nasabah </entry>
+	<entry key="label.meter.number">Nomor Meter </entry>
+	<entry key="label.bill.number">ID Pelanggan </entry>
+	<entry key="label.reg.number">Nomor Registrasi </entry>
+	<entry key="label.pin">Pin </entry>
 	<entry key="label.denotes.mandatory">Wajib isi</entry>
 	<entry key="Confirm">Konfirmasi</entry>
 	<entry key="billPayBean.pin.Required">Kolom PIN harus diisi.</entry>
