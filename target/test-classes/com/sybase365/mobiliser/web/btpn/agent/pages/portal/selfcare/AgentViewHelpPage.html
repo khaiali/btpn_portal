@@ -1,0 +1,28 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head></head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="formHelp" name="formHelp" method="post">
+						<fieldset>
+							<div wicket:id="errorMessages"></div>
+							<legend class="reg_tab"><wicket:message key="label.view.help" /></legend>
+							<div class="column" style="width: 600px">
+								<div class="input" style="width: 600px">
+									<label for="viewhelp.helpdescription"><wicket:message key="label.description" /></label>
+									<textarea style="width: 400px; height: 200px"
+										name="helpDescription" readonly="readonly" wicket:id="agentPortalText"></textarea>
+								</div>
+							</div>
+							<div class="spacer"></div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

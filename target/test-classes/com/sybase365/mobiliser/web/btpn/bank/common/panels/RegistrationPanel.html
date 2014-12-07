@@ -1,0 +1,386 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+</wicket:head>
+</head>
+<body>
+	<wicket:panel>
+		<div id="centerContent" class="content">
+			
+		<form wicket:id="consumerRegistrationForm" enctype="multipart/form-data">
+			<div wicket:id="errorMessages"></div>
+				<fieldset>
+					<legend id="legendRegType" class="reg_tab" wicket:id="header.registrationType"></legend>
+					<div class="column twoColumn" style="width: 750px;">
+						<div class="reg_tab_01">
+							<label id="productLabel"><wicket:message key="label.productType" /> <span class="required">*</span></label>
+							<select tabindex="1" wicket:id="customer.productType">
+								<option>dummy</option>
+							</select>
+						</div>
+					</div>
+				</fieldset>
+				
+				<fieldset>
+					<legend class="reg_tab" wicket:id="customerInfo.headLine"></legend>
+					<div class="column twoColumn" style="width: 750px;">
+						<div class="reg_tab_01">
+							<div class="input" id="displayNameBlock">
+								<label> <wicket:message key="label.name" /><span class="required">*</span></label> 
+								<input id="displayName" tabindex="3" type="text" wicket:id="customer.name" size="20" />
+							</div>
+
+							<div class="input" id="shortNameBlock">
+								<label><wicket:message key="label.shortName" /><span class="required">*</span></label>
+								<input id="shortName" tabindex="4" type="text" wicket:id="customer.shortName" size="20" />
+							</div>
+
+							<div class="input" id="employeeIDBlock">
+								<label><wicket:message key="label.employeeId" /></label>
+								<input type="text" wicket:id="customer.employeeId" id="employeeID" tabindex="5" maxlength="20" />
+							</div>
+
+							<div class="input" id="motherMaidenNameBlock">
+								<label> <wicket:message key="label.mothersMaidenName" /><span class="required">*</span></label> 
+								<input id="motherMaidenName" tabindex="6" type="text" wicket:id="customer.mothersMaidenName" size="20" />
+							</div>
+
+							<div class="input" id="maritalStatusBlock">
+								<label> <wicket:message key="label.maritalStatus" /><span class="required">*</span></label> 
+								<select tabindex="7" wicket:id="customer.maritalStatus">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="pobBlock">
+								<label> <wicket:message key="label.placeOfBirth" /><span class="required">*</span></label> 
+								<input tabindex="8" type="text" id="pob" wicket:id="customer.placeOfBirth" size="20" />
+							</div>
+
+							<div class="input" id="nationalityBlock">
+								<label> <wicket:message key="label.nationality" /><span class="required">*</span></label> 
+								<select tabindex="9" wicket:id="customer.nationality">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="languageBlock">
+								<label for="language"> <wicket:message key="label.language" /> <span class="required">*</span></label> 
+								<select tabindex="10" wicket:id="customer.language">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="idReceiptModeBlock">
+								<label> <wicket:message key="label.receiptMode" /> <span class="required">*</span></label> 
+								<select tabindex="11" wicket:id="customer.receiptMode">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="occupationBlock">
+								<label> <wicket:message key="label.occupation" /><span class="required">*</span></label>
+								<select tabindex="12" wicket:id="customer.occupation">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="jobBlock">
+								<label> <wicket:message key="label.job" /><span class="required">*</span></label>
+								<select tabindex="13" wicket:id="customer.job">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="industryOfEmpBlock">
+								<label> <wicket:message key="label.industryOfEmployer" /><span class="required">*</span></label> 
+								<select tabindex="14" wicket:id="customer.industryOfEmployee">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="purposeOfAccBlock">
+								<label for="purposeOfAcc"> <wicket:message key="label.purposeOfAccount" /><span class="required">*</span></label> 
+								<select tabindex="15" wicket:id="customer.purposeOfAccount">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="sourceOfFundBlock">
+								<label for="sourceOfFund"> <wicket:message key="label.sourceofFound" /><span class="required">*</span></label> 
+								<select tabindex="16" wicket:id="customer.sourceofFound">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="incomeBlock">
+								<label for="income"> <wicket:message key="label.income" /><span class="required">*</span></label> 
+								<select tabindex="17" wicket:id="customer.income">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="idCardNoBlock">
+								<label for="idCardNo"> <wicket:message key="label.idCardNo" /><span class="required">*</span></label> 
+								<input tabindex="18" type="text" id="identifyNo" wicket:id="customer.idCardNo" size="20" />
+							</div>
+
+							<div class="input" id="idTypelock">
+								<label for="idType"> <wicket:message key="label.idType" /><span class="required">*</span></label> 
+								<select tabindex="19" wicket:id="customer.idType">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="idExpDateBlock"
+								style="width: 355px; float: left;">
+								<div class="date_Div">
+									<label><wicket:message key="label.idExpirationDate" /><span
+										class="required">*</span></label> <input readonly="readonly"
+										tabindex="20" type="text" size="10"
+										wicket:id="customer.expireDateString" id="expirationDate"
+										style="width: 150px;" />
+								</div>
+							</div>
+
+							<div class="input" id="highRiskCusBlock">
+								<label for="highRiskCus"> <wicket:message key="label.highRiskCustomer" /><span class="required">*</span></label>
+								<select tabindex="21" wicket:id="customer.highRiskCustomer">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="highRiskBusBlock">
+								<label for="highRiskBus"> <wicket:message key="label.highRiskBusiness" /><span class="required">*</span></label>
+								<select tabindex="22" wicket:id="customer.highRiskBusiness">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="ATMCardNoBlock">
+								<label for="ATMCardNo"><wicket:message key="label.atmCardNo" /></label>
+								<input tabindex="23" id="ATMCardNo" type="text" wicket:id="customer.atmCardNo" size="20" />
+							</div>
+
+							<div class="input" id="genderBlock">
+								<label for="gender"> <wicket:message key="label.gender" /><span class="required">*</span></label>
+								<select tabindex="24" wicket:id="customer.gender">
+									<option>dummy</option>
+								</select>
+							</div>
+
+							<div class="input" id="emailBlock">
+								<label for="emailId"> <wicket:message key="label.emailId" /><span class="required">*</span></label> 
+								<input tabindex="25" id="emailId" type="text" wicket:id="customer.emailId" size="50" />
+							</div>
+							
+							<div class="input" id="purposeOfTransactionBlock" wicket:id="purposeOfTransactionBlock">
+	      						<label for="transPurpose"><wicket:message key="label.purposeOfTransaction" /><span class="required">*</span></label>
+	      						<input wicket:id="customer.purposeOfTransaction" name="transPurpose" tabindex="26" type="text" />
+	    					</div>
+						
+	    					<div class="input" id="dateOfBirthBlock" style="width: 355px; float: left;">
+								<div class="date_Div">
+									<label><wicket:message key="label.dateOfBirth" /><span class="required">*</span></label> 
+									<input readonly="readonly" 
+										tabindex="27" type="text" size="10"
+										wicket:id="customer.birthDateString" id="birthDate"
+										style="width: 150px;" />
+								</div>
+							</div>
+
+							<div class="input" id="isTaxExemptBlock">
+								<label for="isTaxExempted"> <wicket:message key="label.isTaxExempted" /><span class="required">*</span></label> 
+								<select tabindex="28" wicket:id="customer.taxExempted">
+									<option>dummy</option>
+								</select>
+							</div>
+							
+							<div class="input" id="isOptimaActivatedBlock">
+								<label for="isOptimaActivated"><wicket:message key="label.isOptimaActivated" /> <span class="required">*</span></label>
+								<select tabindex="29" wicket:id="customer.optimaActivated">
+									<option>dummy</option>
+								</select>
+								<input id="isOptimaActivated" wicket:id="customer.optimaActivated.text" name="isOptimaActivated" tabindex="30" type="text" readonly="readonly" />
+							</div>
+
+							<!--
+							<div class="input" id="isOptimaActivatedBlock">
+								<label for="isOptimaActivated"><wicket:message key="label.isOptimaActivated" /> <span class="required">*</span></label>
+								<input id="isOptimaActivated" wicket:id="customer.optimaActivated.text" name="isOptimaActivated" tabindex="30" type="text" readonly="readonly" />
+							</div>
+							-->
+							
+							<div class="input" id="religion">
+								<label for="religion"> <wicket:message key="label.religion" /></label>
+								<select tabindex="31" wicket:id="customer.religion">
+									<option>dummy</option>
+								</select>									
+							</div>
+						
+							<div class="input" id="lastEducation">
+								<label for="lastEducation"> <wicket:message key="label.lastEducation" /></label>
+								<select tabindex="32" wicket:id="customer.lastEducation">
+									<option>dummy</option>
+								</select>									
+							</div>
+						
+							<div class="input" id="foreCastTransaction">
+								<label for="foreCastTransaction"> <wicket:message key="label.foreCastTransaction" /></label>
+								<select tabindex="33" wicket:id="customer.foreCastTransaction">
+									<option>dummy</option>
+								</select>									
+							</div>
+						
+							<div class="input" id="taxCardNumber">
+								<label for="taxCardNumber"> <wicket:message key="label.taxCardNumber" /></label>
+								<input tabindex="34" wicket:id="customer.taxCardNumber" type="text" />
+							</div>
+						</div>
+					</div>
+					
+					 
+					<div class="column twoColumn" style="width: 750px; margin-top: 0; padding-top: 0;">
+						<div class="reg_tab_01" style="margin-top: 0; padding-top: 0;">
+							<form wicket:id="fileuploadForm">
+								<div class="input" style="width: 710px;">
+									<label for="fileBean"> <wicket:message key="label.identificationAttachment" /> <span class="required">*</span></label>
+									<div class="fileattachement">
+										<input type="file" wicket:id="fileUpload" id="fileBean" tabindex="35" style="width: 200px"></input>
+									</div>
+									<div class="browsefile">
+										<input type="submit" class="submit" value="Upload" wicket:id="uploadButton" tabindex="36" />
+									</div>
+								</div>
+							</form>
+							<div id="spaceDiv" style="display:none"/>
+							<div class="spacer"></div>
+							<div class="spacer"></div>
+						</div>
+							
+						<div class="column" id="attachmentId" wicket:id="attachmentsContainer">
+							<div class="displayTag">
+								<span class="pagebanner" wicket:id="attachmentHeader"></span>
+								<span class="pagelinks" wicket:id="attachmentNavigator"></span>											
+									<wicket:enclosure child="pageable">
+										<table id="attachmentsTable">
+											<thead>
+												<tr>
+													<th wicket:id="orderByFileName"><wicket:message key="attachedFile" /></th>
+													<th wicket:id="orderByUploadedDate"><wicket:message key="date" /></th>
+													<th><wicket:message key="action" /></th>
+												</tr>
+											</thead>
+	
+											<tbody>
+												<tr wicket:id="pageable">
+													<td><div wicket:id="fileType">[Type]</div></td>
+													<td><div wicket:id="uploadedDate">[Date]</div></td>
+													<td><a href="#" wicket:id="deleteLink"><span wicket:id="linkName">[Delete]</span> </a></td>
+												</tr>
+											</tbody>
+										</table>
+									</wicket:enclosure>											
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				
+				<fieldset>
+					<legend class="reg_tab" wicket:id="contactAddressInfo.headLine"></legend>
+					<div class="column twoColumn" style="width: 750px">
+						<div class="input" id="mobileNoBlock" style="display: block;">
+							<label> <wicket:message key="label.mobileNumber" /> <span class="required">*</span></label> 
+							<input tabindex="37" type="text" readonly="readonly" id="mobileNo" wicket:id="customer.mobileNumber" />
+						</div>
+
+						<div class="input" id="street1Block">
+							<label for="street1"> <wicket:message key="label.street1" /> <span class="required">*</span></label> 
+							<input tabindex="38" id="street1" type="text" wicket:id="customer.street1" />
+						</div>
+
+						<div class="input" id="street2Block">
+							<label for="street2"> <wicket:message key="label.street2" /></label>
+							<input tabindex="39" type="text" id="street2" wicket:id="customer.street2" />
+						</div>
+						
+						<div class="input" id="province">
+							<label for="province"> <wicket:message key="label.province" />	<span class="required">*</span>									
+							</label><select tabindex="40" wicket:id="customer.province">
+								<option>dummy</option>
+							</select>									
+						</div>
+						
+						<div class="input" id="city">
+							<label for="city"> <wicket:message key="label.city" /><span class="required">*</span>								
+							</label><select tabindex="41" wicket:id="customer.city">
+								<option>dummy</option>
+							</select>									
+						</div>
+						
+						<div class="input" id="taxCardNumber">
+							<label for="taxCardNumber"> <wicket:message key="label.zipcode" /></label>
+							<input wicket:id="customer.zipCode" type="text" tabindex="42" />
+						</div>
+					</div>
+				</fieldset>
+				<div class="spacer"></div>
+				<fieldset>
+					<legend class="reg_tab"><wicket:message key="officerInformation.headline" /></legend>
+
+					<div class="input" style="width: 750px;">
+						<div class="reg_tab_01">
+							<label for="customer.registration.officerId"><wicket:message key="label.officerId" /><span class="required">*</span> </label> 
+							<input tabindex="43" type="text" readonly="readonly" wicket:id="officerId" />
+						</div>
+					</div>
+					
+					<div class="input">
+						<div class="reg_tab_01">
+							<label for="customer.registration.datecreated"><wicket:message key="label.dateCreated" /> <span class="required">*</span> </label>
+							<input wicket:id="datecreated" tabindex="44" type="text" readonly="readonly" />
+						</div>
+					</div>
+
+					<div class="input">
+						<label for="customer.edit.address.territorycode"><wicket:message key="label.territoryCode" /></label>
+						<input tabindex="45" type="text" wicket:id="customer.territoryCode" size="20" />
+					</div>
+
+					<div class="input">
+						<label for="customer.marketingSourceCode"><wicket:message key="label.marketingSourceCode" /> <span class="required">*</span></label>
+						<input tabindex="46" type="text" wicket:id="customer.marketingSourceCode" size="20" />
+					</div>
+					
+					<div class="input">
+						<label for="customer.referralNumber"><wicket:message key="label.referralNumber" /></label> 
+						<input tabindex="47" type="text" wicket:id="customer.referralNumber" size="20" />
+
+					</div>
+					
+					<div class="input">
+						<label for="customer.edit.address.agentcode"><wicket:message key="label.agentCode" /> <span class="required">*</span></label>
+						<input tabindex="48" type="text" wicket:id="customer.agentCode" size="20" />
+					</div>
+				</fieldset>
+				
+				<div class="spacer"> </div>
+				<div class="column twoColumn"></div>
+				<div class="column">
+					<p><span class="required">*</span><wicket:message key="label.mandatoryField" /></p>
+				</div>
+				
+				<div class="column">
+					<input type="submit" class="submit acc_chk" id="officerOneSubmit"
+						wicket:id="submitButton" wicket:message="value:label.submit" 
+						style="left: 280px;"/> 
+					<input type="submit" wicket:id="cancelButton"
+						wicket:message="value:label.cancel" class="submit acc_chk"
+						style="left: 300px;" />
+				</div>
+			</form>
+		</div>			
+	</wicket:panel>
+</body>
+</html>

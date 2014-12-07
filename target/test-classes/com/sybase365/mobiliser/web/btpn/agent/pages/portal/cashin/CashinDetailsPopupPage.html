@@ -1,0 +1,64 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/btpn/agent-portal/sybase.css" media="all"
+		rel="stylesheet" type="text/css" />
+</wicket:head>
+</head>
+<body>
+	<div id="centerContent" class="content"
+		style="float: left; width: 370px">
+		<div class="column twoColumn">
+			<h1>
+				<wicket:message key="cashin.receipt.headLine" />
+			</h1>
+			<form wicket:id="cashinReceiptForm">
+				<div class="spacer"></div>
+				<div class="column">
+					<label for="balance"> <b><wicket:message
+								key="cashin.receipt.fromMobileAccNo" /> </b>
+					</label>
+					<div class="input_value" wicket:id="cashInBean.payeeMsisdn">
+					</div>
+				</div>
+				<br /> <br />
+				<div class="column">
+					<label for="creditamount"> <b><wicket:message
+								key="cashin.receipt.cashInAmount" /></b>
+					</label>
+					<div class="input_value" wicket:id="cashInBean.cashinAmount">
+					</div>
+				</div>
+
+				<br /> <br />
+				<div class="column">
+					<label for="debitAmount"> <b><wicket:message
+								key="cashin.receipt.fee" /></b>
+					</label>
+					<div class="input_value" wicket:id="cashInBean.feeAmount"></div>
+				</div>
+				<br /> <br />
+				<div class="column">
+					<label for="totalamount"><b><wicket:message
+								key="cashin.receipt.total" /> </b></label>
+					<div class="input_value" wicket:id="cashInBean.totalAmount">
+					</div>
+				</div>
+				<br /> <br />
+				<div class="column">
+					<label for="balance"> <b><wicket:message
+								key="cashin.receipt.balance" /></b>
+					</label>
+					<div class="input_value" wicket:id="cashInBean.accountBalance">
+					</div>
+				</div>
+				<br /> <br /> <input type="submit" value="Print"
+					onclick="window.print()" class="submit acc_chk"
+					style="cursor: pointer" />
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" >
+<body>
+
+<wicket:extend>
+
+	<div class="bottomBg">
+
+		<div class="loginWrap">
+
+			<div id="languageOnlyHeader">
+
+				<!-- top navigation -->
+				<ul class="topMenu right">
+
+					<li class="topMenuItem last">
+						<a id="switchLanguageLink" href="#"><wicket:message key="application.header.language"/>
+						<img id="switchLanguageButton" src="images/button_languages.gif"/></a>
+						<script type="text/javascript">
+						$j("#switchLanguageLink").click(function () {
+							$j("#languageSelector").toggle("medium");
+						});
+						</script>
+					</li>
+
+				</ul>
+				<!-- end top navigation -->
+
+			</div>
+
+			<div id="languageSelector">
+				<script type="text/javascript">//<![CDATA[
+
+				function _switch() {
+					$j("#languageSelector").toggle("medium");
+					return false;
+				}
+				//]]></script>
+				<ul id="language-select">
+					<li>
+						<a onclick="_switch()" wicket:id="changeToEnglish">
+						<wicket:message key="application.header.language.english"/>
+						</a>
+					</li>
+					<li>
+						<a onclick="_switch()" wicket:id="changeToGerman">
+						<wicket:message key="application.header.language.german"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="inner">
+
+				<div class="loginContainer">
+
+					<wicket:child/>
+
+				</div>
+
+				<div id="footerNew">
+					<ul class="footerMenu left">
+						<li class="first"><wicket:message key="application.footer.copyright"/></li>
+						<li><a href="http://www.sybase.com/contactus/support" target="_blank"><wicket:message key="application.footer.contact"/></a></li>
+						<li class="last"><a href="#" onclick="alert(document.getElementById('about.name').innerHTML+'\n'+document.getElementById('about.version').innerHTML+' '+document.getElementById('about.date').innerHTML+'\n'+document.getElementById('about.tag').innerHTML+' - '+document.getElementById('about.revision').innerHTML);return false;"><wicket:message key="application.footer.about"/></a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div style="display:none;" id="about.name" wicket:id="applicationAboutName"></div>
+	<div style="display:none;" id="about.version" wicket:id="applicationAboutVersion"></div>
+	<div style="display:none;" id="about.date" wicket:id="applicationAboutDate"></div>
+	<div style="display:none;" id="about.tag" wicket:id="applicationAboutTag"></div>
+	<div style="display:none;" id="about.revision" wicket:id="applicationAboutRevision"></div>
+
+</wicket:extend>
+
+</body>
+</html>

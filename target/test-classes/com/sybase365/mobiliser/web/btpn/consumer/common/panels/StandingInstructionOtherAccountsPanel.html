@@ -1,0 +1,88 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div></div>
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="fundTransferBtpnBankForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2 wicket:id="fundTransferHeaderMessage"></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column twoColumn" wicket:id="radioGroup">
+								<div class="input">
+									<label><wicket:message
+											key="fundTransfer.beneficiaryAccNo" /><span class="required">*</span></label>
+									<div class="group">
+										<input type="radio" class="radio" wicket:id="EnterManually" />
+										<label><wicket:message
+												key="fundTransfer.entermanually" /></label> <input type="radio"
+											class="radio" wicket:id="FavoriteList" /> <label><wicket:message
+												key="fundTransfer.selectFavoriteList" /></label>
+									</div>
+								</div>
+							</div>
+							<div class="column twoColumn">
+								<div class="input" wicket:id="enterManualllyDiv">
+									<label><wicket:message key="fundTransfer.accountNo" /><span
+										class="required">*</span></label> <input Type="text"
+										wicket:id="fundTransfer.accountNo" />
+								</div>
+								<div class="input" wicket:id="selectFromFavoriteDiv">
+									<label><wicket:message key="fundTransfer.favoriteList" /><span
+										class="required">*</span></label> <select
+										wicket:id="fundTransfer.favoriteNum">
+										<option>dummy</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="column">
+								<div class="input" wicket:id="bankCodeDiv">
+									<label for="benificiaryName"><wicket:message
+											key="fundTransfer.bankCode" /><span class="required">*</span></label>
+									<select wicket:id="fundTransfer.bankCode">
+										<option>dummy</option>
+									</select>
+									<div class="column"></div>
+								</div>
+							</div>
+
+
+							<div class="column">
+								<div class="input">
+									<label for="benificiaryName"><wicket:message
+											key="fundTransfer.beneficiaryName" /></label> <input type="text"
+										wicket:id="fundTransfer.beneficiaryName" />
+									<div class="column"></div>
+								</div>
+							</div>
+							<div class="column">
+								<div class="input">
+									<label for="transAmount"><wicket:message
+											key="fundTransfer.amount" /><span class="required">*</span></label>
+									<input type="text" wicket:id="fundTransfer.amount" />
+									<div class="column">
+										<span class="required">*</span>
+										<wicket:message key="requiredFields" />
+									</div>
+								</div>
+							</div>
+							<input type="submit" class="submit acc_chk"
+								wicket:id="submitButton" value="Masuk" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

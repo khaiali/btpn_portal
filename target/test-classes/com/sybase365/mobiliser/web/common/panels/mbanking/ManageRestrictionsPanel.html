@@ -1,0 +1,77 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<div wicket:id="addRestrictedNumberDiv">
+		<div wicket:id="errorMessages"></div>
+		<h1 class="wallet">
+			<span><wicket:message key="manageRestrictedNumbers.title" /></span>
+		</h1>
+		
+		<h2 class="section bank">
+				<wicket:message key="manageRestrictedNumbers.Add/Remove"/>
+			</h2>
+	
+		
+		<h3 class="help">
+			<wicket:message key="manageRestrictedNumbers.help" />
+		</h3>
+		<form wicket:id="addRestrictedNumberForm">
+	
+			
+			<div class="module clear">
+				<div wicket:id="addNumberDiv">
+					<div class="input">
+						<label><wicket:message key="manageRestrictedNumbers.number" /></label> 
+						<input type="text" wicket:id="msisdn"/> 
+					</div>
+					
+					<div class="input">
+						<label><wicket:message key="manageRestrictedNumbers.country" /></label> 
+						<select wicket:id="restrictedNumber.country" id="countryList">
+							<option>dummy</option>
+						</select>
+					</div>
+				</div>
+			</div>
+				<div class="column">
+					<div class="formAction">
+						<input type="submit" class="submitForm" wicket:id="addRestrictedNumber" wicket:message="value:Add" /> 
+					</div>
+				</div>
+				<div class="column buffer"></div>
+				<div class="input">
+					<label><wicket:message key="Restricted Number"/></label> 
+						<select wicket:id="restrictedNumberList" id="supportedOperations">
+							<option>dummy</option>
+						</select>
+				</div>
+				
+				<div class="column buffer"></div>
+				<div class="module clear">
+		
+					<h2 class="section bank">
+						<wicket:message key="manageRestrictedNumbers.upload"/>
+					</h2>
+					<h3 class="help">
+						<wicket:message key="manageRestrictedNumbers.uploadHelp" />
+					</h3>
+					<div class="column buffer"></div>
+					<div wicket:id="uploadRestrictionNumberDiv">
+						<div class="input" align ="center">
+							<input wicket:id="fileUpload" size="60" type="file"/>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="formAction">
+						<input type="submit" class="submitForm" wicket:id="UploadRestrictedNumber" wicket:message="value:UPLOAD RESTRICTED NUMBERS" /> 
+					</div>
+				</div>
+		
+		</form>
+	</div>
+</wicket:panel>
+</body>
+</html>

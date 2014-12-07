@@ -1,0 +1,116 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+    <div id="centerContent" class="content">
+
+        <div class="module clear">
+
+            <h1 class="coupon">
+                <span><wicket:message key="menu.coupon.categories" /></span>
+                <span><wicket:message key="application.breadcrumb.separator" /></span>
+                <span><wicket:message key="menu.coupon.description" /></span>
+            </h1>
+            <div wicket:id="errorMessages"></div>
+
+
+            <h2>
+                <a href="#" wicket:id="couponCategoryDescriptionAddLink" class="additionalLink last"><wicket:message key="couponCategoryDescription.link.add" /></a>
+            </h2>
+
+            <div class="cmodule clear">
+
+                <!-- list paging -->
+                <ul class="tablePaging">
+                    <li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+                    <li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+                    <li class="pageSelectorsContainer" wicket:id="navigator"></li>
+                </ul>
+                <!-- end list paging -->
+
+                <div class="collapsable clear">
+
+                    <table id="couponTypeList" class="listTable" width="100%">
+
+                        <wicket:enclosure child="pageable">
+
+                            <thead>
+                                <tr>
+                                    <th wicket:id="orderByName"><wicket:message key="couponCategory.description.locale" /></th>
+                                    <th><wicket:message key="couponCategory.description" /></th>
+                                    <th class="actions last"><wicket:message key="actions" /></th>
+                                </tr>
+                            </thead>
+
+                            <tfoot>
+                                <tr>
+                                    <td class="empty" colspan="3"></td>
+                                </tr>
+                            </tfoot>
+
+                            <tbody>
+                                <tr wicket:id="pageable">
+                                    <td><span wicket:id="locale">[Language]</span></td>
+                                    <td><span wicket:id="description">[Description]</span></td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="#" wicket:id="deleteLink"><wicket:message key="delete">[Delete]</wicket:message> </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </wicket:enclosure>
+
+                    </table>
+
+                    <div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+                </div>
+
+            </div>
+
+            <div wicket:id="addCouponDescriptionFormDiv">
+
+					<form wicket:id="addCouponCategoryDescriptionForm">
+
+						<div class="column">
+
+							<div class="input">
+								<label><wicket:message key="locale" /> </label> 
+								<select wicket:id="couponCategoryDescription.locale">
+									<option>dummy</option>
+								</select>
+							</div>
+							
+							<div class="input">
+								<label><wicket:message key="caption" /><span class="required">*</span> </label> 
+								<input type="text" wicket:id="couponCategoryDescription.caption" />
+							</div>
+
+							
+
+						</div>
+
+						<div class="column">
+
+							<div class="formAction">
+								<input type="submit" class="submitForm" wicket:id="save" wicket:message="value:Save" /> 
+								<input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" />
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+        </div>
+
+
+    </div>
+
+</wicket:extend>
+
+</body>
+</html>

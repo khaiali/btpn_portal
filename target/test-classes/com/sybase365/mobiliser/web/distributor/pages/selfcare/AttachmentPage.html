@@ -1,0 +1,90 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content home">
+
+		<div class="module clear">
+
+			<h1 class="attachment">
+				<span><wicket:message key="attachment.title" /></span>
+			</h1>
+
+			<h3 class="help">
+				<wicket:message key="attachment.heading" />
+			</h3>
+
+			<div wicket:id="errorMessages"></div>
+
+			<div class="column">
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />
+						</li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="friendsListTable" class="listTable">
+						
+							<wicket:enclosure child="pageable">
+							
+								<thead>
+									<tr>
+										<th class="id"><wicket:message key="attachment.table.name" /></th>
+										<th class="attachmentDate"><wicket:message key="attachment.table.date" /></th>
+										<th class="attachmentType"><wicket:message key="attachment.table.type" /></th>
+										<th class="attachmentName"><wicket:message key="attachment.table.name" /></th>
+										<th class="attachmentContentType"><wicket:message key="attachment.table.contentType" /></th>
+										<th class="actions last"><wicket:message key="attachment.table.actions" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="6"></td>
+									</tr>
+								</tfoot>
+								
+							</wicket:enclosure>
+							
+							<tbody>
+								<tr wicket:id="pageable">
+									<td class="id"><div wicket:id="id">[Id]</div></td>
+									<td class="attachmentDate"><div wicket:id="date">[Date]</div></td>
+									<td class="attachmentType"><div wicket:id="type">[Type]</div></td>
+									<td class="attachmentName"><div wicket:id="name">[Name]</div></td>
+									<td class="attachmentContentType"><div wicket:id="contentType">[Content Type]</div></td>
+									<td>
+										<ul>
+											<li><a href="#" wicket:id="viewAction" target="blank"><wicket:message key="attachment.viewAction">[View]</wicket:message></a></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

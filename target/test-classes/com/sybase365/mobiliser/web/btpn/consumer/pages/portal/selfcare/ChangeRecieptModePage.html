@@ -1,0 +1,45 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head></head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="recieptModeForm" method="post">
+						<fieldset>
+							<legend class="reg_tab"><h2><wicket:message key="label.reciept.mode" /></h2></legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column twoColumn">
+								<table>
+									<div class="spacer"></div>
+									<tr>
+										<td>
+											<div class="Account_info">
+												<label for="currentlanguage"><wicket:message key="label.reciept.current.mode" /></label>
+												<div class="input_value" wicket:id="recieptMode.value"></div>
+											</div>
+										</td>
+									</tr>
+									<div class="spacer"></div>
+									<tr>
+										<td>
+											<div class="Account_info">
+												<label for="changereceiptmode.receipt"><wicket:message key="label.reciept.new.mode" /></label>
+												 <select id="receiptMode" wicket:id="recieptMode" name="receiptMode">
+												</select>
+											</div>
+										</td>
+									</tr>
+								</table>
+								<input name="confirmChangeReceiptMode" wicket:id="btnAdd" value="OK" class="submit acc_chk" type="submit" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

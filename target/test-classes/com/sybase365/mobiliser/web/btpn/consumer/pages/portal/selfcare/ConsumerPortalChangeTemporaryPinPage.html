@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title><wicket:message key="page.title" /></title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<style type="text/css">
+		#error
+		{
+			color : white;
+			//background-color : white;
+			border : red 1px;
+			padding-bottom: 10px;
+			list-style : none;
+			list-style-type : none;
+		}
+		form li,ul
+		{
+			list-style : none;
+			list-style-type : none;
+		}
+	</style>
+</wicket:head>
+</head>
+<body>
+	<div id="background-header">
+		<div id="header">
+			<div id="logo"></div>
+			<div id="logo_right"></div>
+			<div id="profilebox"></div>
+		</div>
+		<div id="container">
+			<div id="contentfullpage">
+				<div id="contentboxfullpage" style="height:auto;">
+					<p style="height: 130px;">
+										
+					</p>
+					<div id="form_container_koderahasia" style="height:auto;">
+						<div id="title_koderahasia">
+							<p>
+								<font color="#ffffff" style="font-size:15px;"><wicket:message key="label.change.temporary.pin" /></font>
+							</p>
+						</div>
+						<br/>
+						<form wicket:id="temporaryPinForm">
+							<div id="error" wicket:id="errorMessages"></div>
+							<label>
+								<font color="#ffffff">
+									<wicket:message key="label.change.new.pin" />*
+								</font>
+							</label><br/>
+							<input	id="changeTempPassword.newPassword" class="textInput" style="width:165px;" wicket:id="newPin" name="newPassword" type="password" /><br/>
+							
+							<label>
+								<font color="#ffffff">
+									<wicket:message key="label.change.confirm.new.pin" />* 
+								</font>
+							</label><br/>
+							<input id="changeTempPassword.confirmedPassword" class="textInput" style="width:165px;" wicket:id="confirmNewPin" name="confirmedPassword" type="password" /><br/>
+							
+							<input name="changePasswordNewMethod" value="Masuk" wicket:id="btnSubmit" class="submit_login" type="submit" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

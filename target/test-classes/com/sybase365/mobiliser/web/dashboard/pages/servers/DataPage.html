@@ -1,0 +1,136 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="servers">
+				<span><wicket:message key="dashboard.data.title" /></span>
+			</h1>
+			
+
+			<form wicket:id="dataForm">
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+			
+				<div class="cmodule clear">
+						
+					<div class="column"  >
+					
+						<h2 class="section system">
+						<wicket:message key="dashboard.data.general"/>
+						</h2>
+						
+						<div class="column twoColumn">
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.statisticsEnabled" /></label>
+								<div class="text" wicket:id="statisticsEnabled"></div>
+							</div>
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.hibernateStatisticsSupported" /></label>
+								<div class="text" wicket:id="hibernateStatisticsSupported"></div>
+							</div>
+							
+						</div>
+						
+						<div class="column twoColumn">
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.regionCachesEnabled" /></label>
+								<div class="text" wicket:id="regionCachesEnabled"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="spacer"></div>
+					
+					<div class="column"  >
+					
+						<h2 class="section system">
+						<wicket:message key="dashboard.data.counts"/>
+						</h2>
+												
+						<div class="column twoColumn">
+						
+														
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.prepareStatementCount" /></label>
+								<div class="text" wicket:id="prepareStatementCount"></div>
+							</div>
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.queryExecutionCount" /></label>
+								<div class="text" wicket:id="queryExecutionCount"></div>
+							</div>
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.closeStatementCount" /></label>
+								<div class="text" wicket:id="closeStatementCount"></div>
+							</div>
+							
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.sessionOpenCount" /></label>
+								<div class="text" wicket:id="sessionOpenCount"></div>
+							</div>
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.sessionCloseCount" /></label>
+								<div class="text" wicket:id="sessionCloseCount"></div>
+							</div>
+						</div>
+						<div class="column twoColumn">
+							
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.transactionCount" /></label>
+								<div class="text" wicket:id="transactionCount"></div>
+							</div>
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.successfulTransactionCount" /></label>
+								<div class="text" wicket:id="successfulTransactionCount"></div>
+							</div>	
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.flushCount" /></label>
+								<div class="text" wicket:id="flushCount"></div>
+							</div>
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.optimisticFailureCount" /></label>
+								<div class="text" wicket:id="optimisticFailureCount"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="spacer"></div>
+					
+					<div class="column"  >
+					
+						<h2 class="section system">
+						<wicket:message key="dashboard.data.timing"/>
+						</h2>
+												
+						<div class="column twoColumn">
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.maxGetTimeMillis" /></label>
+								<div class="text" wicket:id="maxGetTimeMillis"></div>
+							</div>
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.minGetTimeMillis" /></label>
+								<div class="text" wicket:id="minGetTimeMillis"></div>
+							</div>	
+						</div>
+						
+						<div class="column twoColumn">
+							<div class="input" >
+								<label><wicket:message key=dashboard.data.queryExecutionRate" /></label>
+								<div class="text" wicket:id="queryExecutionRate"></div>
+							</div>
+						</div>
+					</div>
+				</div>					
+			</form>	
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

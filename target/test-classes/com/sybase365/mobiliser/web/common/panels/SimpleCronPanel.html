@@ -1,0 +1,270 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+
+<wicket:panel>
+
+	<!-- include the Tools-->
+
+	<script type="text/javascript" src="scripts/jquery/jquery.tools.min.js"></script>
+
+
+	<!-- tab pane styling -->
+	<style>
+
+
+/* root element for tabs  */
+ul.tabs {
+	list-style:none;
+	margin:0 !important;
+	padding:0;
+	border-bottom:1px solid #666;
+	height:30px;
+}
+
+/* single tab */
+ul.tabs li {
+	float:left;
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important;
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a {
+	background: #798598;
+	font-size:11px;
+	display:block;
+	height: 30px;
+	line-height:30px;
+	width: 134px;
+	text-align:center;
+	text-decoration:none;
+	color:#FFFFFF;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:0px;
+}
+
+ul.tabs a:active {
+	outline:none;
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+	background-position: -420px -31px;
+	color:#fff;
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	background-position: -420px -62px;
+	cursor:default !important;
+	color:#000 !important;
+}
+
+/* Different widths for tabs: use a class name: s, l, xl */
+
+
+/* width 1 */
+ul.tabs a.s 			{ background-position: -553px 0; width:81px; }
+ul.tabs a.s:hover 	{ background-position: -553px -31px; }
+ul.tabs a.s.current  { background-position: -553px -62px; }
+
+/* width 2 */
+ul.tabs a.l 			{ width:90px; }
+
+
+/* initially all panes are hidden */
+.panes .pane {
+	display:none;
+}
+
+
+
+/* tab pane styling */
+.panes div {
+	display:none;
+	padding:15px 10px;
+	border-top:0;
+	font-size:12px;
+	background-color:#fff;
+}
+
+/* styling for elements inside overlay */
+	.details {
+		position:absolute;
+		top:15px;
+		right:15px;
+		font-size:11px;
+		color:#fff;
+		width:150px;
+	}
+
+	.details h3 {
+		color:#aba;
+		font-size:15px;
+		margin:0 0 -10px 0;
+	}
+
+/* the overlayed element */
+.simple_overlay {
+
+	/* must be initially hidden */
+	display:none;
+
+	/* place overlay on top of other elements */
+	z-index:10000;
+
+	/* styling */
+	background-color:#FFFFFF;
+
+	width:540px;
+	min-height:100px;
+	border:1px solid #666;
+
+	/* CSS3 styling for latest browsers */
+	-moz-box-shadow:0 0 90px 5px #000;
+	-webkit-box-shadow: 0 0 90px #000;
+}
+
+
+#centerContent div.croninput {
+    clear: both;
+    display: block;
+    margin: 0 0 4px;
+    padding: 0;
+    text-align: left;
+    width: 457px;
+}
+
+
+#centerContent div.croninput input.file, #centerContent div.croninput select, #centerContent div.croninput textarea, #centerContent div.croninput input {
+    border: 1px solid #8CA7C0;
+    margin: 3px;
+    padding: 1px 2px;
+    width: 130px;
+}
+
+
+#centerContent div.croninput input.submit {
+    border: 0 none;
+    clear: both;
+    left: 0;
+}
+#centerContent div.croninput select {
+    margin-top: 1px;
+    width: 136px;
+}
+
+#centerContent .croninput .leftLabel
+{
+text-align: inherit;
+font-weight: bold;
+    margin-left: 5px;
+    margin-top: 4px;
+    padding: 1px 2px;
+    text-align: left;
+    width: 155px;
+    vertical-align: text-top;
+}
+
+#centerContent div.croninput input.checkbox {
+    margin-top: 1px;
+  display:block;
+  clear:both;
+  float:left;
+  margin-left:100px;
+}
+
+
+
+
+	</style>
+
+<!-- first overlay. id attribute matches our selector -->
+<div class="simple_overlay" id="cron">
+
+
+
+<!-- the tabs -->
+<ul class="tabs">
+	<li><a class="l" href="#">Minutes</a></li>
+	<li><a class="l" href="#">Hours</a></li>
+	<li><a class="l" href="#">Days</a></li>
+	<li><a class="l" href="#">Selected Days</a></li>
+	<li><a class="l" href="#">Month</a></li>
+	<li><a class="l" href="#">Days of Month</a></li>
+</ul>
+
+
+
+<!-- tab "panes" -->
+<div class="panes">
+	<div><form wicket:id="minuteForm">
+	<div class="croninput">
+		<label><span wicket:id="mLabel1"></span></label><input type="text" wicket:id="minuteText"/><span wicket:id="mLabel2" class="leftLabel"></span><br/><br/>
+		<input type="submit" class="submitForm" wicket:id="minuteButton"  wicket:message="value:Generate and close">
+	</div>
+</form></div>
+	<div><form wicket:id="hourForm">
+	<div class="croninput">
+		<label><span wicket:id="hLabel1"></span></label><input type="text" wicket:id="hourText"/><span class="leftLabel" wicket:id="hLabel2"></span><br/><br/>
+		<input type="submit" class="submitForm" wicket:id="hourButton" wicket:message="value:Generate and close">
+	</div>
+</form>
+</div>
+	<div><form wicket:id="dailyForm">
+	<div class="croninput">
+		<label><span wicket:id="dLabel1"></span></label><input type="text" wicket:id="dailyText"/><span class="leftLabel" wicket:id="dLabel2"></span><br/>
+		<label><span wicket:id="dLabel3"></span></label><select wicket:id="dailyHourText"></select><span class="leftLabel" wicket:id="dLabel4"></span><br/><br/>
+		<input type="submit" class="submitForm" wicket:id="dailyButton" wicket:message="value:Generate and close">
+	</div>
+</form>
+</div>
+<div><form wicket:id="weekdayForm">
+	<div class="croninput">
+		<label><span wicket:id="wkdLabel1"></span></label><br/>
+<br/>
+		<input type="checkbox" wicket:id="mondayCheck"/><span wicket:id="wkdLabelMon"></span><br/>
+		<input type="checkbox" wicket:id="tuesdayCheck"/><span wicket:id="wkdLabelTue"></span><br/>
+		<input type="checkbox" wicket:id="wednesdayCheck"/><span wicket:id="wkdLabelWed"></span><br/>
+		<input type="checkbox" wicket:id="thursdayCheck"/><span wicket:id="wkdLabelThu"></span><br/>
+		<input type="checkbox" wicket:id="fridayCheck"/><span wicket:id="wkdLabelFri"></span><br/>
+		<input type="checkbox" wicket:id="saturdayCheck"/><span wicket:id="wkdLabelSat"></span><br/>
+		<input type="checkbox" wicket:id="sundayCheck"/><span wicket:id="wkdLabelSun"></span><br/>
+<br/>
+		<label><span wicket:id="wkdLabel2"></span></label><select wicket:id="wkdHourText"></select><span class="leftLabel" wicket:id="wkdLabel3"></span><br/><br/>
+		<input type="submit" class="submitForm" wicket:id="wkdButton" wicket:message="value:Generate and close">
+	</div>
+</form></div>
+<div><form wicket:id="monthlyForm">
+	<div class="croninput">
+		<label><span wicket:id="monthLabel1"></span></label><input type="text" wicket:id="monthDayText"/><label><span wicket:id="monthLabel2"></span></label><br/>
+		<input type="text" wicket:id="monthText"/><span class="leftLabel" wicket:id="monthLabel3"></span><br/>
+		<label><span wicket:id="monthLabel4"></span></label><select wicket:id="monthHourText"></select><span class="leftLabel" wicket:id="monthLabel5"></span><br/><br/>
+		<input type="submit" class="submitForm" wicket:id="monthButton" wicket:message="value:Generate and close">
+	</div>
+</form></div>
+<div><form wicket:id="monthlyAdvancedForm">
+	<div class="croninput">
+		<label><span wicket:id="monthAdvLabel1"></span></label><select wicket:id="monthWeekText"/><select wicket:id="advDayText"></select><br/>
+		<label><span wicket:id="monthAdvLabel3"></span></label><input type="text" wicket:id="monthAdvText"/><span  class="leftLabel" wicket:id="monthAdvLabel4"></span><br/>
+		<label><span wicket:id="monthAdvLabel5"></span></label><select wicket:id="monthAdvHourText"></select><span class="leftLabel" wicket:id="monthAdvLabel6"></span><br/><br/>
+		<input type="submit" class="submitForm" wicket:id="monthAdvButton" wicket:message="value:Generate and close">
+	</div>
+</form></div>
+
+</div>
+</div>
+<script type="text/javascript" >$("ul.tabs").tabs("div.panes > div");
+var cronJobWizardOverlay = $("input[rel]").overlay({closeOnClick:true,top: '50%',api:true
+
+	});
+
+
+</script>
+
+</wicket:panel>
+
+</html>

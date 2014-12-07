@@ -1,0 +1,62 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.ta/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div></div>
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="airtimeConfirmForm">						
+					<fieldset>
+						<legend class="reg_tab">
+								<h2><wicket:message key="left.menu.airTimetopup"/></h2>
+						</legend>
+						<div wicket:id="errorMessages"></div>
+						<div class="column twoColumn">
+							<b><wicket:message key="label.login.PIN" /></b>
+							<div class="Account_info">
+								<table>
+									<tr>
+										<td><label for="accountconsumer"> <wicket:message key="label.telco" /></label></td>
+										<td>:</td>
+										<td><div class="input_value" wicket:id="airtimeBean.productName"></div></td>
+									</tr>
+									<tr>
+										<td><label for="accountconsumer"> <wicket:message key="label.amount" /></label></td>
+										<td>:</td>
+										<td><div class="input_value" wicket:id="airtimeBean.label"></div></td>
+									</tr>
+									<tr>
+										<td><label for="accountconsumer"> <wicket:message key="label.feeAmount" /></label></td>
+										<td>:</td>
+										<td><div class="input_value" wicket:id="airtimeBean.feeAmount"></div></td>
+									</tr>
+									<tr>
+										<td><label for="accountconsumer"> <wicket:message key="label.msisdn" /></label></td>
+										<td>:</td>
+										<td><div class="input_value" wicket:id="airtimeBean.selectedMsisdn.id"></div></td>
+									</tr>
+									<tr>
+										<td><label for="txnpin"><wicket:message key="label.pin" /></label></td>
+										<td>:</td>
+										<td><input type="password" id="txnpin" name="txnpin" wicket:id="airtimeBean.pin" ></input></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>															
+											<input type="submit" class="submit acc_chk" wicket:id="btnSubmit" wicket:message="value:Submit" name="airtimeTopupAuth" />
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>				
+					</fieldset>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

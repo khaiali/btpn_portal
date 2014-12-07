@@ -1,0 +1,259 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content home">
+
+		<div class="module clear">
+
+			<h1 class="friends">
+				<span><wicket:message key="agentData.title" /></span>
+			</h1>
+
+			<div wicket:id="errorMessages"></div>
+
+			<div class="column">
+
+				<h2 class="section house">
+					<wicket:message key="agentData.heading" />
+				</h2>
+
+				<div class="input">
+					<label><wicket:message key="agentData.name" /></label>
+					<div class="text" wicket:id="fullName"></div>
+				</div>
+				<div class="input" wicket:id="companyDiv">
+					<label><wicket:message key="agentData.company" /></label>
+					<div class="text" wicket:id="address.company"></div>
+				</div>
+				<div class="input" wicket:id="positionDiv">
+					<label><wicket:message key="agentData.position" /></label>
+					<div class="text" wicket:id="address.position"></div>
+				</div>
+				<div class="input" wicket:id="emailDiv">
+					<label><wicket:message key="agentData.email" /></label>
+					<div class="text" wicket:id="address.email"></div>
+				</div>
+				
+			</div>
+
+			<div class="column buffer"></div>
+
+			<!-- START column -->
+			<div class="column" wicket:id="addressDiv">
+
+				<h2 class="section house">
+					<wicket:message key="agentData.headline.address" />
+				</h2>
+
+				<!-- START left column -->
+				<div class="column twoColumn" wicket:id="addressLeftDiv">
+				
+					<div class="input" wicket:id="street1Div">
+						<label><wicket:message key="agentData.address.street1" /></label>
+						<div class="text" wicket:id="address.street1"></div>
+					</div>
+					<div class="input" wicket:id="street2Div">
+						<label><wicket:message key="agentData.address.street2" /></label>
+						<div class="text" wicket:id="address.street2"></div>
+					</div>
+					<div class="input" wicket:id="houseNumberDiv">
+						<label><wicket:message key="agentData.address.houseNumber" /></label>
+						<div class="text" wicket:id="address.houseNumber"></div>
+					</div>
+					<div class="input" wicket:id="cityDiv">
+						<label><wicket:message key="agentData.address.city" /></label>
+						<div class="text" wicket:id="address.city"></div>
+					</div>
+					
+				</div>
+				<!-- END left column -->
+				
+				<!-- START right column -->
+				<div class="column twoColumn" wicket:id="addressRightDiv">
+				
+					<div class="input" wicket:id="stateDiv">
+						<label><wicket:message key="agentData.address.state" /></label>
+						<div class="text" wicket:id="address.state"></div>
+					</div>
+					<div class="input" wicket:id="zipDiv">
+						<label><wicket:message key="agentData.address.zip" /></label>
+						<div class="text" wicket:id="address.zip"></div>
+					</div>
+					<div class="input" wicket:id="countryDiv">
+						<label><wicket:message key="agentData.address.country" /></label>
+						<div class="text" wicket:id="address.country"></div>
+					</div>
+					
+				</div>
+				<!-- END right column -->
+				<!-- END column -->
+			</div>
+
+			<div class="column buffer"></div>
+
+			<div class="module clear" wicket:id="bankAccountsTableDiv">
+
+				<h2 class="section bank">
+					<wicket:message key="agentData.bankAccountsTable.title" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="baStartIndex" /> - <span wicket:id="baEndIndex" /> (<span wicket:id="baTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="baNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table class="listTable">
+						
+							<thead>
+								<tr>
+									<th class="id"><wicket:message key="agentData.bankAccountsTable.id" /></th>
+									<th class="accountNumber"><wicket:message key="agentData.bankAccountsTable.accountNumber" /></th>
+									<th class="bankCode"><wicket:message key="agentData.bankAccountsTable.bankCode" /></th>
+									<th class="branchCode"><wicket:message key="agentData.bankAccountsTable.branchCode" /></th>
+									<th class="accountHolderName"><wicket:message key="agentData.bankAccountsTable.accountHolderName" /></th>
+								</tr>
+							</thead>
+							
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="5"></td>
+								</tr>
+							</tfoot>
+							
+							<tbody>
+								<tr wicket:id="baPageable">
+									<td><div wicket:id="baId">[Id]</div></td>
+									<td><div wicket:id="baAccountNumber">[Account Number]</div></td>
+									<td><div wicket:id="baBankCode">[Bank Code]</div></td>
+									<td><div wicket:id="baBranchCode">[Branch Code]</div></td>
+									<td><div wicket:id="baAccountHolderName">[Account Holder Name]</div></td>
+								</tr>
+							</tbody>
+							
+						</table>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="module clear" wicket:id="creditCardsTableDiv">
+
+				<h2 class="section payments">
+					<wicket:message key="agentData.creditCardsTable.title" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="ccStartIndex" /> - <span wicket:id="ccEndIndex" /> (<span wicket:id="ccTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="ccNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table class="listTable">
+						
+							<thead>
+								<tr>
+									<th class="id"><wicket:message key="agentData.creditCardsTable.id" /></th>
+									<th class="cardNumber"><wicket:message key="agentData.creditCardsTable.cardNumber" /></th>
+									<th class="cardHolderName"><wicket:message key="agentData.creditCardsTable.cardHolderName" /></th>
+									<th class="cardType"><wicket:message key="agentData.creditCardsTable.cardType" /></th>
+									<th class="cardExpiry"><wicket:message key="agentData.creditCardsTable.cardExpiry" /></th>
+								</tr>
+							</thead>
+							
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="5"></td>
+								</tr>
+							</tfoot>
+							
+							<tbody>
+								<tr wicket:id="ccPageable">
+									<td><div wicket:id="ccId">[Id]</div></td>
+									<td><div wicket:id="ccCardNumber">[Number]</div></td>
+									<td><div wicket:id="ccCardHolderName">[Holder Name]</div></td>
+									<td><div wicket:id="ccCardType">[Type]</div></td>
+									<td><div wicket:id="ccCardExpiry">[Expiry]</div></td>
+								</tr>
+							</tbody>
+							
+						</table>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="module clear" wicket:id="svasTableDiv">
+
+				<h2 class="section coins">
+					<wicket:message key="agentData.svasTable.title" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="svaStartIndex" /> - <span wicket:id="svaEndIndex" /> (<span wicket:id="svaTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="svaNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table class="listTable">
+						
+							<thead>
+								<tr>
+									<th class="id"><wicket:message key="agentData.svasTable.id" /></th>
+									<th class="accountBalance"><wicket:message key="agentData.svasTable.accountBalance" /></th>
+								</tr>
+							</thead>
+							
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="2"></td>
+								</tr>
+							</tfoot>
+							
+							<tbody>
+								<tr wicket:id="svaPageable">
+									<td><div wicket:id="svaId">[Id]</div></td>
+									<td><div wicket:id="svaAccountBalance">[Account Balance]</div></td>
+								</tr>
+							</tbody>
+							
+						</table>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

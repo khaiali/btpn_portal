@@ -1,0 +1,103 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="addAttachmentForm">
+
+		<!-- END column -->
+		<h2 class="section attachment">
+			<wicket:message key="addAttachments.headline" />
+		</h2>
+
+		<div class="column">
+		
+			<div class="input">
+				<label><wicket:message key="addAttachments.name" /></label> 
+				<input type="text" wicket:id="attachmentName" />
+			</div>
+			<div class="input">
+				<label><wicket:message key="addAttachments.type" /></label> 
+				<select wicket:id="attachmentType">
+					<option>dummy</option>
+				</select>
+			</div>
+			<div class="input" style="width: 758px; display: inline; clear: none; float: left; padding: 0 0 0 0px;">
+				<label style="width: 155px;"><wicket:message key="content.upload" /><span class="required">*</span></label>
+				<div class="fileattachement" style="float: left;">
+					<input type="file" tabindex="14" wicket:id="uploadAttachmentFile" style="float: left;" size="65">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="column">
+			<div class="formAction">
+				<input type="submit" class="submitForm" wicket:id="addAttachment" wicket:message="value:addAttachments.button.add" />
+			</div>
+		</div>
+
+		<div class="cmodule clear">
+
+			<!-- list paging -->
+			<ul class="tablePaging">
+				<li class="recordsLabel"><wicket:message key="table.showing" />
+				</li>
+				<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+				<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+			</ul>
+			<!-- end list paging -->
+
+			<div class="collapsable clear">
+
+				<table id="friendsListTable" class="listTable">
+
+					<wicket:enclosure child="pageable">
+
+						<thead>
+							<tr>
+								<th class="nickname" style="width: 20%"><wicket:message key="addAttachments.table.ID" /></th>
+								<th class="nickname" wicket:id="orderByName" style="width: 25%"><wicket:message key="addAttachments.table.name" /></th>
+								<th class="nickname" style="width: 20%"><wicket:message key="addAttachments.table.type" /></th>
+								<th class="nickname" style="width: 20%"><wicket:message key="addAttachments.table.contentType" /></th>
+								<th class="actions last" style="width: 15%"><wicket:message key="addAttachments.table.actions" /></th>
+							</tr>
+						</thead>
+						
+						<tfoot>
+							<tr>
+								<td class="empty" colspan="5"></td>
+							</tr>
+						</tfoot>
+						
+						<tbody>
+							<tr wicket:id="pageable">
+								<td class="nickname"><div wicket:id="id">[ID]</div></td>
+								<td class="attachmentName"><div wicket:id="name">[Name]</div></td>
+								<td class="nickname"><div wicket:id="type">[Type]</div></td>
+								<td class="nickname"><div wicket:id="contentType">[Content Type]</div></td>
+								<td>
+									<ul>
+										<li><a href="#" wicket:id="viewAction" target="blank"><wicket:message key="addAttachments.viewAction">[View]</wicket:message></a></li>
+										<li class="last"><a href="#" wicket:id="removeAction"><wicket:message key="addAttachments.removeAction">[Remove]</wicket:message></a></li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+						
+					</wicket:enclosure>
+					
+				</table>
+
+				<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+			</div>
+
+		</div>
+
+	</form>
+
+</wicket:panel>
+
+</body>
+</html>

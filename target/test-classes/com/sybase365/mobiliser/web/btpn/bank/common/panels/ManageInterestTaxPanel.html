@@ -1,0 +1,61 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="interestTaxForm">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="headLine.interestTax" /></legend>
+							<br>
+							<div wicket:id="errorMessages"></div>
+							<br>
+                            <div class="input">
+                                <label for="interestDesc"><wicket:message key="label.description" /></label>
+                                    <input id="interestDesc" wicket:id="interestTaxBean.description" maxlength="10" tabindex="1" type="text" size="10" />
+                            </div>
+                            
+                            <div class="spacer"></div>
+                            <div class="column">
+                                <input name="add" wicket:id="addBtn" wicket:message="value:Add" class="submit acc_chk" type="submit"> 
+                                <input name="search" wicket:id="searchBtn" wicket:message="value:Search" class="submit acc_chk" type="submit" style="left: 250px" >
+                            </div>
+                            <br><br>
+                            
+                            <!-- Interest FEE Data View Start -->
+                            <div class="column" wicket:id="interestTaxContainer">
+                                <div class="displayTag">
+                                    <label wicket:id="no.items"></label>
+                                    <span class="pagebanner" wicket:id="interestHeader"></span> <span
+                                        class="pagelinks" wicket:id="interestNavigator"></span>
+                                    <wicket:enclosure child="pageable">
+                                        <table id="interestTaxTable">
+                                            <thead>
+                                                <tr>
+                                                    <th wicket:id="orderById"><wicket:message key="label.id" /></th>
+                                                    <th wicket:id="orderByDesc"><wicket:message key="label.description" /></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr wicket:id="pageable">
+                                                    <td><a href="#" wicket:id="idLink"><span wicket:id="id">[ID]</span></a></td>
+                                                    <td><div wicket:id="description">[Description]</div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </wicket:enclosure>
+                                </div>
+                            </div>
+							<!-- Data View End -->
+                            
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

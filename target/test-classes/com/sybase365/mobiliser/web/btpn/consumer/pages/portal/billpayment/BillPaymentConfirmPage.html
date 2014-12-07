@@ -1,0 +1,93 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.ta/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="confirmBillPay">
+						<fieldset>
+			   				<legend class="reg_tab"><h2><wicket:message key="left.menu.billPayment" /></h2></legend> 
+							<div wicket:id="errorMessages"></div> 
+			    			<div class="column twoColumn">
+								<div class="input">
+									<table>
+										<tr>
+											<td><label for="billPayment.billerType"><wicket:message key="label.biller" /></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.billerLabel"></div></td>
+										</tr>
+										<tr>
+											<td><label for="billPayment.subbillerType"><wicket:message key="label.subbiller" /></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.productLabel"></div></td>
+										</tr>
+										<tr>
+											<td><label for="billPayment.feeAmount"><wicket:message key="label.feeamount" /></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.feeAmount"></div></td>
+										</tr>
+										<tr>
+											<td><label for="billPayment.amount"><wicket:message key="label.amount" /></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.billAmount"></div></td>
+										</tr>
+                                        
+                                        <!-- Tambah customer name, bill number, meter number dan reg number untuk pln -->
+										<tr>
+											<td><label for="billPayBean.customerName" wicket:id="label.customer.name"></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.customerName"></div></td>
+										</tr>
+										
+										<!-- Tambah customer name, bill number, meter number dan reg number untuk pln -->
+										<tr>
+											<td><label for="billPayBean.meterNumber" wicket:id="label.meter.number"></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.meterNumber"></div></td>
+										</tr>
+										
+										<!-- Tambah customer name, bill number, meter number dan reg number untuk pln -->
+										<tr>
+											<td><label for="billPayBean.billNumber" wicket:id="label.bill.number"></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.billNumber"></div></td>
+										</tr>
+										
+										<!-- Tambah customer name, bill number, meter number dan reg number untuk pln -->
+										<tr>
+											<td><label for="billPayBean.regNumber" wicket:id="label.reg.number"></label></td>
+											<td>:</td>
+											<td><div class="input_value" wicket:id="billPayBean.regNumber"></div></td>
+										</tr>
+                                        
+										<tr>
+											<td><label for="billPayment.confirmpin"><wicket:message key="label.pin" /></label>
+											<span class="required">*</span>
+											</td>
+											<td>:</td>
+											<td><input id="pin" name="pin" wicket:id="billPayBean.pin" type="password" /></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td><div class="column"><span class="required">*</span><wicket:message key="label.denotes.mandatory" /></div></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td><input name="confirmBillPayment" wicket:id="btnConfirm" wicket:message="value:Konfirmasi" class="submit acc_chk" type="submit" /></td>
+										</tr>
+									</table>
+								</div>
+			    			</div> 
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="addJobForm">
+
+		<div wicket:id="errorMessages"></div>
+
+		<div class="module clear">
+
+			<div class="column">
+
+				<div class="input">
+					<label><wicket:message key="addJob.handlerName" /><span class="required">*</span></label>
+					<input type="text" wicket:id="handlerName" size="20" maxlength="80"/>
+				</div>
+				<div class="input">
+					<label><wicket:message key="addJob.implementationType" /><span class="required">*</span></label>
+					<select wicket:id="implementationTypeId">
+						<option value="2" selected="true">[Class Name]</option>
+						<option value="3">[Bean Name]</option>
+					</select>
+				</div>
+				<div class="input">
+					<label><wicket:message key="addJob.implementationUrl" /><span class="required">*</span></label>
+					<input type="text" wicket:id="implementationUrl" size="100" maxlength="200"/>
+				</div>
+				<div class="input">
+					<label><wicket:message key="addJob.schedule" /><span class="required">*</span></label>
+					<input type="text" wicket:id="schedule" size="50" maxlength="80"/>
+				</div>
+				<div class="input">
+					<label><wicket:message key="addJob.parameters" /></label>
+					<input type="text" wicket:id="parameters" size="100" maxlength="2048"/>
+				</div>
+				<div class="input">
+					<label><wicket:message key="addJob.jobName" /></label>
+					<input type="text" wicket:id="jobName" size="100" maxlength="200"/>
+				</div>
+				<div class="input">
+					<label><wicket:message key="addJob.active" /><span class="required">*</span></label>
+					<select wicket:id="active">
+						<option value="Y" selected="true">[Yes]</option>
+						<option value="N">[No]</option>
+					</select>
+				</div>
+				<div class="input">
+					<label><wicket:message key="addJob.maxDelay" /><span class="required">*</span></label>
+					<input type="text" wicket:id="maxDelay" size="20" maxlength="20"/>
+				</div>
+				<div class="input">
+					<label><wicket:message key="addJob.maxDuration" /><span class="required">*</span></label>
+					<input type="text" wicket:id="maxDuration" size="20" maxlength="20"/>
+				</div>
+
+			</div>
+
+			<div class="column">
+				<div class="formAction">
+					<input class="submitForm" type="submit" wicket:message="value:Save" wicket:id="save" name="save">
+					<input class="submitForm" type="submit" wicket:message="value:Cancel" wicket:id="cancel" name="cancel">
+				</div>
+			</div>
+
+		</div>
+
+	</form>
+
+</wicket:panel>
+
+</body>
+</html>

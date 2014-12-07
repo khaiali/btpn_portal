@@ -1,0 +1,77 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<fieldset>
+						<legend class="reg_tab6">
+							<wicket:message key="headLine.fee" />
+						</legend>
+						<form wicket:id="ucFeeAprForm">
+							<div wicket:id="errorMessages"></div>
+								<br>
+								
+								<!-- FROM DATE -->
+								<div class="input">
+									<label><wicket:message key="label.fromDate" /><span class="required">*</span></label> 
+										<input readonly="readonly" wicket:id="ucFeeBean.dateRangeBegin"  
+											id="fromDate" tabindex="8" type="text" size="10" 
+											style="width: 150px;" />
+								</div>
+								
+								<!-- TO DATE -->
+								<div class="input">
+									<label><wicket:message key="label.toDate" /><span class="required">*</span></label> 
+										<input readonly="readonly" wicket:id="ucFeeBean.dateRangeEnd"  
+											id="toDate" tabindex="8" type="text" size="10" 
+											style="width: 150px;" />
+								</div>
+								
+								<div class="input">
+									<label for="ucFeeDesc"><wicket:message key="label.description" /></label>
+										<input id="ucFeeDesc" wicket:id="ucFeeBean.description" maxlength="10" tabindex="1" type="text" size="10" />
+								</div>
+								
+								<div class="spacer"></div>
+								<div class="column">
+									<input name="search" wicket:id="searchBtn" wicket:message="value:Search" class="submit acc_chk" type="submit" style="left: 250px" >
+								</div>
+								<br><br>
+								
+								<!-- UC FEE Data View Start -->
+								<div class="column" wicket:id="feeContainer">
+									<div class="displayTag">
+										<label wicket:id="no.items"></label>
+										<span class="pagebanner" wicket:id="feeHeader"></span> <span
+											class="pagelinks" wicket:id="feeNavigator"></span>
+										<wicket:enclosure child="pageable">
+											<table id="ucFeeTable">
+												<thead>
+													<tr>
+														<th wicket:id="orderByWorkFlowId"><wicket:message key="label.id" /></th>
+														<th wicket:id="orderByDesc"><wicket:message key="label.description" /></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr wicket:id="pageable">
+														<td><a href="#" wicket:id="idLink"><span wicket:id="workflowId">[ID]</span></a></td>
+														<td><div wicket:id="description">[Description]</div></td>
+													</tr>
+												</tbody>
+											</table>
+										</wicket:enclosure>
+									</div>
+								</div>
+							<!-- GL Data View End -->
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

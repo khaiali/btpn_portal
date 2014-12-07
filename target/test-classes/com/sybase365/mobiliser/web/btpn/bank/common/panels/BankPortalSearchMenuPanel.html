@@ -1,0 +1,54 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:panel>
+		<div id="leftContent" class="content">
+			<form wicket:id="confirmRegistrationForm">
+                <div class="input">
+                    <label>
+                        <wicket:message key="customer.find.criteria" />
+                     </label>
+                     <input style="width: 170px" tabindex="1" type="text" size="40" wicket:id="searchFor" />
+                </div>
+			    <!--
+				<div class="input">
+					<label><wicket:message
+							key="customer.find.criteria.mobileNo" /></label> <input
+						style="width: 170px" tabindex="1" type="text" size="40"
+						wicket:id="customerSearchBean.msisdn" />
+				</div>
+
+				<div class="input">
+					<label><wicket:message
+							key="customer.find.criteria.displayName" /></label> <input
+						style="width: 170px" type="text" size="40"
+						wicket:id="customerSearchBean.displayName" />
+				</div>
+
+				<div class="input" wicket:id="employeeDiv">
+					<label><wicket:message
+							key="customer.find.criteria.employeeID" /></label> <input
+						style="width: 170px" type="text" size="40"
+						wicket:id="customerSearchBean.employeeId" />
+				</div>
+
+
+				<div class="input" wicket:id="emailDiv">
+					<label><wicket:message key="customer.find.criteria.email" /></label>
+					<input style="width: 170px" type="text" size="40"
+						wicket:id="customerSearchBean.email" />
+				</div>
+
+				<div class="input">
+					<label><wicket:message key="customer.find.criteria.status" /></label>
+					<select wicket:id="customerSearchBean.custStatus">
+					</select>
+				</div>
+                -->
+				<input class="submit acc_chk" type="submit" wicket:message="value:Find" wicket:id="findButton" />
+				<input style="left: 10px" class="submit acc_chk" type="submit" wicket:message="value:Back" wicket:id="backButton" />
+			</form>
+		</div>
+	</wicket:panel>
+</body>
+</html>

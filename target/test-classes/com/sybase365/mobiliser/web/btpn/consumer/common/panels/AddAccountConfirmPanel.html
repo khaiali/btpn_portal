@@ -1,0 +1,52 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="addAccountConfirmForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="headLine.addAccount" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column twoColumn">
+								<div id="table_transaksi">
+									<table>
+										<tr>
+											<td><wicket:message key="label.name" />
+											</td>
+											<td>:</td>
+											<td>
+												<label wicket:id="subAccountBean.name"></label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<wicket:message key="label.description" />
+											</td>
+											<td>:</td>
+											<td>
+												<label wicket:id="subAccountBean.description"></label>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<input type="submit" class="submit acc_chk"
+								wicket:id="submitButton" value="Konfirmasi" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

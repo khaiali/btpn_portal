@@ -1,0 +1,192 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+<wicket:panel>
+	<div class="Main_container">
+		<div>
+			<div id="centerContent" class="content">
+				<form wicket:id="feeAddForm" method="post">
+					<fieldset>
+						<legend class="reg_tab"><wicket:message key="headline.biller" /></legend>
+							<br>
+								<div wicket:id="errorMessages"></div>
+                         	<br>
+                        
+						<div class="column">
+                        	
+                            <div class="input" style="width: 720px">
+                                <label for="description">
+                                    <wicket:message key="label.description" /><span class="required">*</span>
+                                </label>
+                                <input wicket:id="feeBean.description" name="description" id="description" />
+                            </div>
+							<div class="input" style="width: 720px">
+								<label for="useCase">
+								    <wicket:message key="label.useCase" /><span class="required">*</span>
+								</label>
+								<select wicket:id="feeBean.useCase" name="useCase" id="useCase"></select>
+							</div>
+              
+                            <div wicket:id="containers.0" class="input" style="width: 720px">
+                                <label for="opt0" wicket:id="labels.0"></label>
+                                <select name="opt0" wicket:id="opts.0"></select>
+                            </div>
+                            <div wicket:id="containers.1" class="input" style="width: 720px">
+                                <label for="opt1" wicket:id="labels.1"></label>
+                                <select name="opt1" wicket:id="opts.1"></select>
+                            </div>
+                            <div wicket:id="containers.2" class="input" style="width: 720px">
+                                <label for="opt2" wicket:id="labels.2"></label>
+                                <select name="opt2" wicket:id="opts.2"></select>
+                            </div>
+                            <div wicket:id="containers.3" class="input" style="width: 720px">
+                                <label for="opt3" wicket:id="labels.3"></label>
+                                <select name="opt3" wicket:id="opts.3"></select>
+                            </div>
+                            <div wicket:id="containers.4" class="input" style="width: 720px">
+                                <label for="opt4" wicket:id="labels.4"></label>
+                                <select name="opt4" wicket:id="opts.4"></select>
+                            </div>
+                            <div wicket:id="containers.5" class="input" style="width: 720px">
+                                <label for="opt5" wicket:id="labels.5"></label>
+                                <select name="opt5" wicket:id="opts.5"></select>
+                            </div>
+                            
+                            <div class="input" style="width: 720px">
+                                <label for="customerType">
+                                    <wicket:message key="label.customerType" />
+                                </label>
+                                <select wicket:id="feeBean.customerType" name="customerType" id="customerType"></select>
+                            </div>
+                            <div class="input" style="width: 720px">
+                                <label for="piType">
+                                    <wicket:message key="label.piType" />
+                                </label>
+                                <select wicket:id="feeBean.piType" name="piType" id="piType"></select>
+                            </div>
+                            <div class="input" style="width: 720px">
+                                <label for="orgUnit">
+                                    <wicket:message key="label.orgUnit" /><span class="required">*</span>
+                                </label>
+                                <select wicket:id="feeBean.orgUnit" name="orgUnit" id="orgUnit"></select>
+                            </div>
+							<div class="input" style="width: 720px">
+								<label for="applyToPayee">
+								    <wicket:message key="label.applyToPayee" /><span class="required">*</span>
+								</label> 
+								<input style="width: 30px" wicket:id="feeBean.applyToPayee" name="applyToPayee" id="applyToPayee" type="checkbox" />
+							</div>
+                            
+							<div class="input" style="width: 720px">
+								<label><wicket:message key="label.validFrom" /><span class="required">*</span></label> 	
+                                    <input readonly="readonly" wicket:id="feeBean.validFrom"  
+											id="fromDate" tabindex="8" type="text" size="10" 
+											style="width: 150px;" />
+							</div>
+                            <div class="input" style="width: 720px">
+                                <label for="glCode">
+                                    <wicket:message key="label.glCode" /><span class="required">*</span>
+                                </label>
+                                <select wicket:id="feeBean.glCode" name="glCode" id="glCode"></select>
+                            </div>
+                            <div class="input" style="width: 720px">
+                                <label for="currency">
+                                    <wicket:message key="label.currency" /><span class="required">*</span>
+                                </label>
+                                <select wicket:id="feeBean.currency" name="currency" id="currency"></select>
+                            </div>
+                           
+						</div>
+					</fieldset>
+                     <div class="spacer"></div>
+                    <div id="slabFees" wicket:id="slabFeeContainer">
+                    	  <fieldset>
+                        	  <legend class="reg_tab"><wicket:message key="headline.billerDetail" /></legend>
+                  				<br>
+                            <div class="input" style="width: 720px">
+                                <label for="fixedFee">
+                                    <wicket:message key="label.fixedFee" /><span class="required">*</span>
+                                </label>
+                                <input wicket:id="feeDetailsBean.fixedFee" name="fixedFee" id="fixedFee" />
+                            </div>
+                            
+                            <div class="input" style="width: 720px">
+                                <label for="percentageFee">
+                                    <wicket:message key="label.percentageFee" /><span class="required">*</span>
+                                </label>
+                                <input wicket:id="percentageFee" name="percentageFee" id="percentageFee" />
+                            </div>
+                            
+                            <div class="input" style="width: 720px">
+                                <label for="maximumFee">
+                                    <wicket:message key="label.maximumFee" />
+                                </label>
+                                <input wicket:id="feeDetailsBean.maximumFee" name="maximumFee" id="maximumFee" />
+                            </div>
+                            
+                            <div class="input" style="width: 720px">
+                                <label for="minimumFee">
+                                    <wicket:message key="label.minimumFee" /><span class="required">*</span>
+                                </label>
+                                <input wicket:id="feeDetailsBean.minimumFee" name="mminimumFee" id="maximumFee" />
+                            </div>
+                            
+                            <div class="input" style="width: 720px">
+                                <label for="thresholdAmount">
+                                    <wicket:message key="label.thresholdAmount" /><span class="required">*</span>
+                                </label>
+                                <input wicket:id="feeDetailsBean.thresholdAmount" name="thresholdAmount" id="thresholdAmount" />
+                            </div>
+                  
+							<div class="spacer"></div>
+							<input name="addSlabFeeComponent" wicket:id="slabFeeButton" wicket:message="value:Add" class="submit acc_chk" type="submit" />					
+                            <div class="spacer"></div>
+    
+							<!-- DATAVIEW ADD -->
+							<div class="displayTag">
+							<label wicket:id="no.items"></label>
+							<span class="pagebanner" wicket:id="feeHeader"></span>
+							<span class="pagelinks" wicket:id="feeNavigator"></span>											
+								<wicket:enclosure child="pageable">
+									<table id="feeListTable">
+										<thead>
+											<tr>
+												<th><wicket:message key="label.minimumFee" /></th>
+												<th><wicket:message key="label.maximumFee" /></th>
+												<th><wicket:message key="label.fixedFee" /></th>
+												<th><wicket:message key="label.percentageFee" /></th>
+												<th><wicket:message key="label.thresholdAmount" /></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr wicket:id="pageable">
+												<td wicket:id="minFee"></td>
+												<td wicket:id="maxFee"></td>
+												<td wicket:id="fixedFee"></td>
+												<td wicket:id="percentageFee"></td>
+												<td wicket:id="thresholdAmount"></td>
+											</tr>
+										</tbody>
+									</table>
+								</wicket:enclosure>
+							 </div>
+                         <!-- END View detail -->
+                         
+						</fieldset> 
+					</div>	 
+                    <div class="spacer"></div>
+				   <div class="column">
+								<input type="submit" class="submit acc_chk" id="submit"
+									wicket:id="btnAdd" wicket:message="value:Create" /> <input type="submit"
+									class="submit acc_chk" id="submit" wicket:id="btnCancel"
+									wicket:message="value:Cancel" style="left: 270px" />
+					</div>					
+					<div class="spacer"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</wicket:panel>
+</body>
+</html>

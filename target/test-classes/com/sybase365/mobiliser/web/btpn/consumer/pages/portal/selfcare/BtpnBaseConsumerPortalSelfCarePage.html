@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<!--<div class="pageContent">
+			<div id="content">-->
+				<!--<div id="leftContent" class="content">-->
+				<div id="menu">
+					<!--<ul id="leftMenuList" class="submenu">-->
+					<ul>
+						<span wicket:id="leftMenu">
+							<span wicket:id="leftMenuItems">
+								<li wicket:id="leftMenuItem" class="selected">
+									<a wicket:id="leftMenuLink">
+										<span wicket:id="leftMenuLabel">Accounts</span>
+									</a>
+								</li>
+							</span>
+						 </span>
+					</ul>
+				</div>
+				<div id="content">
+					<div id="contentbox">
+						<wicket:child />
+					</div>
+					<br />
+					
+				</div>
+				<!--<div id="floatingBreaker"></div>-->
+			<!--</div>
+		</div>-->
+		<script type="text/javascript">
+			getSelectedMenuName();		
+		</script>
+	</wicket:extend>
+</body>
+</html>

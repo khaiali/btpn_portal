@@ -1,0 +1,55 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<title><wicket:message key="checkout.title" /></title>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<div wicket:id="errorMessages"></div>
+
+			<h1 class="lock">
+				<span><wicket:message key="getMsisdn.title" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="checkPin.title" /></span>
+			</h1>
+
+			<h3 class="help">
+				<wicket:message key="checkPin.help.text" />
+			</h3>
+
+			<form wicket:id="checkPinForm">
+				<div class="column">
+					<div class="input" style="margin-left: 20px">
+						<label><wicket:message key="pin.text" /></label> 
+						<input type="password" tabindex="1" wicket:id="pin" size="20" autocomplete="off"/>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="formAction">
+						<input type="submit" class="submitForm" wicket:id="checkPin" wicket:message="value:Continue" style="margin-left: 20px"/>
+                        <input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:cancelButton" style="margin-left: 20px"/>
+					</div>
+				</div>
+
+			</form>
+
+			<h3 class="help">
+				<wicket:message key="checkPin.login.message" />
+			</h3>
+
+		</div>
+		
+	</div>
+	
+</wicket:extend>
+
+</body>
+</html>

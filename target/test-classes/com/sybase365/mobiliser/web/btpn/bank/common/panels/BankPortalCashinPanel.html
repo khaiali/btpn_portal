@@ -1,0 +1,77 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<fieldset>
+						<legend class="reg_tab">
+							<wicket:message key="headLine.checkMobileAccount" />
+						</legend>
+						<form wicket:id="cashInForm">
+							<div wicket:id="errorMessages"></div>
+							<br>
+							<div class="input">
+								<label> <wicket:message key="cashIn.mobileNumber" /></label> <input
+									type="text" id="mobileNumber" wicket:id="cashInBean.msisdn" />
+							</div>
+							<div class="input">
+								<label> <wicket:message key="cashIn.name" /></label> <input
+									type="text" id="displayName" wicket:id="cashInBean.name" />
+							</div>
+							<!-- add by andi -->
+							<div class="input">
+								<label> <wicket:message key="cashIn.amount" /></label> <input
+									type="text" id="amount" wicket:id="cashInBean.cashinAmount" />
+							</div>
+							<!-- end -->
+							<div class="spacer"></div>
+							<div class="column">
+								<input type="submit" class="submit acc_chk"
+									wicket:id="submitButton" wicket:message="value:Search" />
+							</div>
+							<br> <br>
+							
+							<!-- Cash In Data View start -->
+							<div class="column" wicket:id="cashInContainer">
+								<div class="displayTag">
+									<label wicket:id="no.items"> </label>
+									<span class="pagebanner" wicket:id="cashInHeader"></span> <span
+										class="pagelinks" wicket:id="cashInNavigator"></span>
+									<wicket:enclosure child="pageable">
+										<table id="attachmentsTable">
+											<thead>
+												<tr>
+													<th wicket:id="orderByCustomerId"><wicket:message
+															key="cashIn.dataview.customerId" /></th>
+													<th wicket:id="orderByMobileNumber"><wicket:message
+															key="cashIn.dataview.msisdn" /></th>
+													<th wicket:id="orderByDisplayName"><wicket:message
+															key="cashIn.dataview.displayName" /></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr wicket:id="pageable">
+													<td><a href="#" wicket:id="idLink"><span
+															wicket:id="customerIdLink">[Customer ID]</span> </a></td>
+													<td><div wicket:id="msisdnValue">[MSISDN]</div></td>
+													<td><div wicket:id="displayName">[Display Name]</div></td>
+												</tr>
+											</tbody>
+										</table>
+									</wicket:enclosure>
+								</div>
+							</div>
+							<!-- Cash In Data View end -->
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

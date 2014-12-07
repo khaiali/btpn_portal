@@ -1,0 +1,59 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="servers">
+				<span><wicket:message key="dashboard.channels.title" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="dashboard.channels.message.detail.title" /></span>
+			</h1>
+
+			<form wicket:id="messageDetailForm">
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+			
+				<div class="cmodule clear">
+						
+					<div class="column"  >
+				
+						<div class="input" >
+							<label><wicket:message key=message.detail.sequenceNumber" /></label>
+							<div class="text" wicket:id="sequenceNumber"></div>
+						</div>
+						<div class="input" >
+							<label><wicket:message key=message.detail.timestamp" /></label>
+							<div class="text" wicket:id="timestamp"></div>
+						</div>
+						<div class="input" >
+							<label><wicket:message key=message.detail.type" /></label>
+							<div class="text" wicket:id="type"></div>
+						</div>
+						<div class="input" >
+							<label><wicket:message key=message.detail.message" /></label>
+							<div class="text" wicket:id="message"></div>
+						</div>
+					</div>
+					<div class="spacer"></div>
+					
+					<div class="column">
+						
+						<div class="formAction">					
+							<input class="submitForm" type="submit" wicket:message="value:message.detail.back" wicket:id="back" name="back"> 						
+						</div>
+						
+					</div>
+				</div>					
+			</form>
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

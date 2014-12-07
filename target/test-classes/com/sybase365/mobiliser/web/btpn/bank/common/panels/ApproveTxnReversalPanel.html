@@ -1,0 +1,69 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="approveTxnReversalForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<wicket:message key="headLine.transactionReversal" />
+							</legend>
+							<div wicket:id="errorMessages"></div>
+
+							<div class="reg_tab_01">
+								<div class="column">
+									<span wicket:id="emptyRecordsMessage"></span>
+								</div>
+								<div class="column" wicket:id="txnReversalContainer">
+									<div class="displayTag">
+										<span class="pagebanner" wicket:id="approvalHeader"></span> <span
+											class="pagelinks" wicket:id="approvalNavigator"></span>
+										<wicket:enclosure child="pageable">
+											<table id="attachmentsTable">
+												<thead>
+													<tr>
+														<th wicket:id="orderByMaker"><wicket:message
+																key="label.maker" /></th>
+														<th wicket:id="orderByTxnId"><wicket:message
+																key="label.txnId" /></th>
+														<th wicket:id="orderByTxnName"><wicket:message
+																key="label.name" /></th>
+														<th wicket:id="orderByUseCase"><wicket:message
+																key="label.useCase" /></th>
+														<th><wicket:message key="label.status" /></th>
+														<th><wicket:message key="label.action" /></th>
+														<th><wicket:message key="label.action" /></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr wicket:id="pageable">
+														<td><div wicket:id="maker">[Maker]</div></td>
+														<td><div wicket:id="transactionId">[TransactionID]</div></td>
+														<td><div wicket:id="transactionName">[Name]</div></td>
+														<td><div wicket:id="useCase">[Use case]</div></td>
+														<td><div wicket:id="status">[Status]</div></td>
+														<td><a href="#" wicket:id="approveLink"><span
+																wicket:id="approveLinkName">[Approve]</span> </a></td>
+														<td><a href="#" wicket:id="rejectLink"><span
+																wicket:id="rejectLinkName">[Reject]</span> </a></td>
+													</tr>
+												</tbody>
+											</table>
+										</wicket:enclosure>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

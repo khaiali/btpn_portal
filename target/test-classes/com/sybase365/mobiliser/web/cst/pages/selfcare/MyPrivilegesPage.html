@@ -1,0 +1,45 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="friends">
+				<span><wicket:message key="myPrivileges.title" /></span>
+			</h1>
+
+			<div wicket:id="errorMessages"></div>
+
+			<h2 class="section lock">
+				<wicket:message key="myPrivileges.roles" />
+			</h2>
+
+			<div class="spacer"></div>
+
+			<div wicket:id="roleView">
+				<span class="text" wicket:id="role"></span>
+			</div>
+
+			<div class="spacer"></div>
+
+			<h2 class="section lock">
+				<wicket:message key="myPrivileges.privileges" />
+			</h2>
+
+			<div class="spacer"></div>
+
+			<div wicket:id="privilegeView">
+				<span class="text" wicket:id="privilege"></span>
+			</div>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+	
+</body>
+</html>

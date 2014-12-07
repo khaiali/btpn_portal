@@ -1,0 +1,56 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="limitForm">
+						<div wicket:id="limitContainer">
+							<fieldset>
+								<legend class="reg_tab">
+									<wicket:message key="label.header.management" />
+								</legend>
+								<div wicket:id="errorMessages"></div>
+								<div class="displayTag">
+									<label wicket:id="no.items"></label>
+									<span class="pagebanner" wicket:id="limitHeader"></span> <span
+										class="pagelinks" wicket:id="limitNavigator"></span>
+									<wicket:enclosure child="pageable">
+										<table id="limitsTable">
+											<thead>
+												<tr>
+													<th class="sorted order2"><wicket:message
+															key="label.usecaseId" /></th>
+													<th><wicket:message key="label.productId" /></th>
+													<th><wicket:message key="label.action" /></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr wicket:id="pageable">
+													<td wicket:id="useCase"></td>
+													<td wicket:id="productId"></td>
+													<td><a href="#" wicket:id="detailsLink"><wicket:message
+																key="label.details" /></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</wicket:enclosure>
+								</div>
+								<div class="spacer"></div>
+								<input style="left: 300px" name="showAddLimit"
+									wicket:id="btnAdd" value="Add" class="submit acc_chk"
+									type="submit" />
+							</fieldset>
+							<div class="spacer"></div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

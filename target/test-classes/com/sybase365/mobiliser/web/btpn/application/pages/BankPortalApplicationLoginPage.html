@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/btpn/bank-portal/login.css" media="all"
+		rel="stylesheet" type="text/css" />
+	<title><wicket:message key="login.page.title" /></title>
+</wicket:head>
+</head>
+<body>
+	<wicket:extend>
+		<div id="container">
+
+			<!-- Header Start -->
+			<div id="header">
+				<!--Login Logo -->
+				<a href="#" wicket:id="loginLogoLink" tabindex="9">
+					<div id="logo_login"></div>
+				</a>
+			</div>
+			<!-- Header End -->
+			<div class="pageContent">
+				<div id="content">
+					<div id="content"
+						style="width: 998px; border: 0px solid #BDBDBC; border-top: none; border-bottom: none;">
+						<div id="centerContent" style="margin: 0px 0 0 0; width: 700px">
+							<div class="column twoColumn">
+								<div class="login_div">
+									<!-- Bank Portal title -->
+									<div class="title">
+										<wicket:message key="login.fieldset.bank.title" />
+									</div>
+
+									<!--Login Form Start  -->
+									<form wicket:id="loginForm" autocomplete="off">
+										<h1></h1>
+										<div wicket:id="feedbackMessagePanel"></div>
+										<div class="input">
+											<label>
+											    <wicket:message key="login.userName" />
+											</label>
+											<input type="text" wicket:id="userName" name="agentId" tabindex="1" autocomplete="off" />
+										</div>
+										<div class="input">
+											<label>
+											    <wicket:message key="login.password" />
+											</label>
+											<input type="password" wicket:id="password" name="password" tabindex="3" autocomplete="off" />
+										</div>
+										<div>
+											<input type="submit" class="submit_login acc_chk" wicket:id="submitButton" wicket:message="value:Login" tabindex="4"/>
+										</div>
+										<div>
+											<input type="submit" class="submit_login acc_chk" wicket:id="resetButton"  wicket:message="value:Reset" tabindex="5"/>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="floatingBreaker"></div>
+				</div>
+			</div>
+
+			<!--Footer Start  -->
+			<div id="footer">
+				<div class="informasi">
+					<span><wicket:message key="footer.information" /></span>
+					<h1>
+						<wicket:message key="footer.contact" />
+					</h1>
+				</div>
+				<div class="right_footer">
+					<div class="nav_icon_box">
+						<div class="nav_icon_box_in term">
+							<a href="#" tabindex="8"><wicket:message key="footer.termsAndConditions" /></a>
+						</div>
+						<div class="nav_icon_box_in faq">
+							<a href="#" tabindex="7"><wicket:message key="footer.faq" /></a>
+						</div>
+						<div class="nav_icon_box_in about">
+							<a href="#" tabindex="6"><span wicket:id="footer.about.btpn" /> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<center>
+					&copy;
+					<wicket:message key="footer.about.sybase" />
+					[<span wicket:id="mobiliser.version"></span>]
+				</center>
+			</div>
+		</div>
+		<!--  Footer End -->
+		<wicket:child />
+	</wicket:extend>
+</body>
+</html>

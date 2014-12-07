@@ -1,0 +1,29 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+    <div class="tracker">
+
+	<div class="header mini">
+
+	    <div class="title"><span wicket:id="name">[Tracker Name]</span></div>h
+
+	    <div class="actions">
+		<a href="#" wicket:id="edit" class="additionalLink last"><img src="./images/tracker/tracker-edit-16px.png" title="edit"/></a>
+		<a href="#" class="additionalLink"><img src="./images/tracker/tracker-refresh-16px.png" title="refresh"/></a>
+		<a href="#" class="additionalLink"><img src="./images/tracker/tracker-info-16px.png" title="info"/></a>
+	    </div>
+
+	</div>
+
+	<div wicket:id="trackerHolder" class="content mini"></div>
+
+	<div wicket:id="chartPanel"></div>
+
+    </div>
+
+</wicket:panel>
+
+</body>
+</html>

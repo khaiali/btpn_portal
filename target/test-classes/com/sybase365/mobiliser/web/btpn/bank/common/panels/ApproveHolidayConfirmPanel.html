@@ -1,0 +1,61 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="approveHolidayConfirmForm">
+						<fieldset>
+							<legend class="reg_tab6">
+								<wicket:message key="header.holidayApprovalData" />
+							</legend>
+							<div class="column">
+								<div class="displayTag">
+									<table id="list">
+										<thead>
+											<tr>
+												<th><wicket:message key="label.fields" /></th>
+												<th><wicket:message key="label.newValue" /></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="odd">
+												<td><wicket:message key="label.action" /></td>
+												<td wicket:id="approveBean.action"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.description" /></td>
+												<td wicket:id="approveBean.description"></td>
+											</tr>
+											<tr class="odd">
+												<td><wicket:message key="label.fromDate" /></td>
+												<td wicket:id="approveBean.fromDate"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.toDate" /></td>
+												<td wicket:id="approveBean.toDate"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<input wicket:id="approveButton" wicket:message="value:Approve"
+									class="submit acc_chk" type="submit" /> <input
+									wicket:id="rejectButton" wicket:message="value:Reject"
+									class="submit acc_chk" type="submit" style="left: 250px" /> <input
+									wicket:id="backButton" wicket:message="value:Back"
+									class="submit acc_chk" type="submit" style="left: 270px" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

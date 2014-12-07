@@ -1,0 +1,100 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="approvalForm">
+						<div wicket:id="errorMessages"></div>
+						<fieldset id="confirmForm">
+							<legend class="reg_tab">
+							    <wicket:message key="headline.registration.bankStaff.legend.label" />
+							</legend>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.customerType.label" />
+                                </label>
+                                <div class="input_value" wicket:id="bankStaff.customerType.idAndValue"></div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.userId.label" />
+                                </label>
+                                <div class="input_value" wicket:id="bankStaff.userId"></div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.name.label" />
+                                </label>
+                                <div class="input_value" wicket:id="bankStaff.name"></div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.email.label" />
+                                </label>
+                                <div class="input_value" wicket:id="bankStaff.email"></div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.designation.label" />
+                                </label>
+                                <div class="input_value" wicket:id="bankStaff.designation"></div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.language.label" />
+                                 </label>
+                                <div class="input_value" wicket:id="bankStaff.language.idAndValue"></div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.glCode.label" />
+                                 </label>
+                                <div class="input_value" wicket:id="bankStaff.glCode.idAndValue"></div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.territoryCode.label" />
+                                </label>
+                                <div class="input_value" wicket:id="bankStaff.territoryCode"></div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.orgUnit.label" />
+                                </label>
+                                <div class="input_value" wicket:id="bankStaff.orgUnit.idAndValue"></div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.createdBy.label" />
+                                </label>
+                                <div class="input_value" wicket:id="bankStaff.createdBy"></div>
+                            </div>
+                            <div class="Account_info">
+                                <label>
+                                    <wicket:message key="registration.createdDate.label" />
+                                </label>
+                                <div class="input_value" wicket:id="bankStaff.createdDate"></div>
+                            </div>
+                            <div class="column">
+                                <input id="submit" name="approve" wicket:id="btnApprove" wicket:message="value:Approve" onclick="loading()" class="submit acc_chk" type="submit" /> 
+                                <input id="submit" style="left: 250px" name="officerReject" wicket:message="value:Reject" wicket:id="btnReject" onclick="loading()" class="submit acc_chk" type="submit" />
+                                <input id="submit" style="left: 270px" wicket:message="value:Cancel" name="officerApproval" wicket:id="btnCancel" class="submit acc_chk" type="submit" />
+                            </div>
+						</fieldset>
+						<div id="loading" style="position: relative; display: none; width: 100%; text-align: center; top: 100px;">
+							<img src="images/btpn/ajax-loader.gif" border=0>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			function loading() {
+				document.getElementById('confirmForm').style.display = "none";
+				document.getElementById('loading').style.display = "block";
+			}
+		</script>
+	</wicket:extend>
+</body>
+</html>

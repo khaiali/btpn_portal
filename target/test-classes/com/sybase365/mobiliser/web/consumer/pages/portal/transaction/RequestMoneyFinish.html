@@ -1,0 +1,84 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="wallet">
+				<span><wicket:message key="requestMoney.title" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="requestMoneyFinish.title" /></span>
+			</h1>
+
+			<h3 class="help">
+				<wicket:message key="requestMoneyFinish.message" />
+			</h3>
+
+			<ul class="messages">
+				<li wicket:id="sendMoneySuccess"></li>
+				<li wicket:id="pendingApprovalMsg"></li>
+			</ul>
+
+			<form wicket:id="requesstMoneyFinishForm">
+
+				<div wicket:id="errorMessages"></div>
+
+				<div class="module clear">
+
+					<div wicket:id="dataContainer" class="column">
+
+						<div class="input">
+							<label> <wicket:message key="requestMoneyFinish.amount" /> </label>
+							<div class="text" wicket:id="amount"></div>
+							<div class="text" wicket:id="successMsg"></div>
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="requestMoneyFinish.payer" /></label>
+							<div class="text" wicket:id="payer"></div>
+						</div>
+
+						<div wicket:id="txnIdContainer">
+							<div class="input">
+								<label><wicket:message key="requestMoneyFinish.txnId" /></label>
+								<div class="text" wicket:id="txnId"></div>
+							</div>
+						</div>
+
+						<div wicket:id="invoiceIdContainer">
+							<div class="input">
+								<label><wicket:message key="requestMoneyFinish.invoiceId" /></label>
+								<div class="text" wicket:id="invoiceId"></div>
+							</div>
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="requestMoneyFinish.authCode" /></label>
+							<div class="text" wicket:id="authCode"></div>
+						</div>
+
+					</div>
+
+					<div class="column">
+					
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="continue" wicket:message="value:Continue" name="submit" />
+						</div>
+						
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

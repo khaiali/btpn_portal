@@ -1,0 +1,76 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div></div>
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="fundTransferMobilePinForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2 style="color:blue;" wicket:id="fundTransferHeaderMessage"></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+
+							<div class="column">
+								<h2>
+									<wicket:message key="fundTransfer.pinMessage" />
+								</h2>
+								<div class="column twoColumn">
+									<div class="displayname" wicket:id="payeeMsisdnContainer">
+										<label><wicket:message key="fundTransfer.payeeMSISDN" /></label>
+										<div class="input_value">
+											<label wicket:id="fundTransfer.payeeMsisdn"></label>
+										</div>
+									</div>
+
+									<div class="displayname" wicket:id="accNumContainer">
+										<label><wicket:message
+												key="fundTransfer.beneficiaryAccNo" /></label>
+										<div class="input_value">
+											<label wicket:id="fundTransfer.accountNo"></label>
+										</div>
+									</div>
+
+									<div class="displayname">
+										<label><wicket:message key="fundTransfer.amount" /></label>
+										<div class="input_value">
+											<label wicket:id="fundTransfer.amount"></label>
+										</div>
+									</div>
+									<div class="displayname">
+										<label><wicket:message key="fundTransfer.feeAmount" /></label>
+										<div class="input_value">
+											<label wicket:id="fundTransfer.feeAmount"></label>
+										</div>
+									</div>
+									
+									<div class="input">
+										<label for="pin"><wicket:message
+												key="fundTransfer.pin" /><span class="required">*</span></label> <input
+											wicket:id="fundTransfer.pin" type="password" />
+										<div class="column">
+											<span class="required">*</span>
+											<wicket:message key="requiredFields" />
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<input type="submit" class="submit acc_chk"
+								wicket:id="submitButton" value="Masuk" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

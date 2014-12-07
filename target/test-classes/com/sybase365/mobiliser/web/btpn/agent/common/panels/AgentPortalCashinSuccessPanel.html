@@ -1,0 +1,72 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<fieldset>
+						<legend class="reg_tab3">
+							<wicket:message key="headLine.cashin" />
+						</legend>
+						<form wicket:id="cashInSuccessForm">
+							<div wicket:id="errorMessages"></div>
+							<div class="column">
+								<div class="input"
+									style="clear: both:display:block; width: 600px;">
+									<label> <wicket:message
+											key="label.cashIn.success.cashinAmount" />
+									</label>
+
+									<div class="input_value">
+										<label wicket:id="cashInBean.cashinAmount"></label>
+									</div>
+								</div>
+								<div class="input"
+									style="clear: both:display:block; width: 600px;">
+									<label> <wicket:message key="label.cashIn.success.fee" />
+									</label>
+									<div class="input_value">
+										<label wicket:id="cashInBean.feeAmount"></label>
+									</div>
+								</div>
+
+								<div class="input">
+									<label> <wicket:message
+											key="label.cashIn.success.total" />
+									</label>
+									<div class="input_value">
+										<label wicket:id="cashInBean.totalAmount"></label>
+									</div>
+								</div>
+								<br>
+							</div>
+							<br>
+							<div class="spacer"></div>
+							<div class="column">
+								<div class="sucess_message">
+									<span wicket:id="cashInBean.creditAmount"></span>
+									<wicket:message key="cashIn.success.credit" />
+									<span wicket:id="cashInBean.payeeMsisdn"></span> <br> <span
+										wicket:id="cashInBean.debitAmount"></span>
+									<wicket:message key="cashIn.success.debit" />
+									<wicket:message key="cashin.success.balance" />
+									<span wicket:id="cashInBean.accountBalance"></span> <br> <br>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<a wicket:id="printReceiptLink"><span
+									wicket:id="printLinkName">[Print Receipt]</span> </a>
+							</div>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

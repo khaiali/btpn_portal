@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<version> 
+  <name>AIMS Mobiliser :: Custom :: BTPN Web UI</name>
+  <version>1.0.3-SNAPSHOT</version>
+  <date>${maven.build.timestamp}</date>
+  <tag>${BUILD_TAG}</tag>
+  <revision>${SVN_REVISION}</revision>
+</version>

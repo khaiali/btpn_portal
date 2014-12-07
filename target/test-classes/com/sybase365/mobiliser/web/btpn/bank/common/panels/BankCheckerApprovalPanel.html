@@ -1,0 +1,71 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div id="centerContent" class="content">
+			<form wicket:id="approvalConsumerForm">
+				<div wicket:id="errorMessages"></div>
+				<fieldset>
+					<legend id="approvalLegend">
+						<wicket:message key="headLine.approvalList" />
+					</legend>
+					<div class="reg_tab_01">
+						<div class="column" wicket:id="pendingApprovalContainer">
+							<div class="displayTag">
+									<label wicket:id="no.items"></label>							
+								<span class="pagebanner" wicket:id="approvalHeader"></span> <span
+									class="pagelinks" wicket:id="approvalNavigator"></span>
+								<wicket:enclosure child="pageable">
+									<table id="attachmentsTable">
+										<thead>
+											<tr>
+                                                <th><wicket:message key="label.date" /></th>
+                                                <th><wicket:message key="label.requesttype" /></th>
+                                                <th><wicket:message key="label.consumertype" /></th>
+                                                <th><wicket:message key="label.mobilenumber" /></th>
+                                                <th><wicket:message key="label.createdby" /></th>
+											    <!--
+												<th wicket:id="orderByDate"><wicket:message
+														key="label.date" /></th>
+												<th wicket:id="orderByRequestType"><wicket:message
+														key="label.requesttype" /></th>
+												<th wicket:id="orderByConsumerType"><wicket:message
+														key="label.consumertype" /></th>
+												<th wicket:id="orderByMobileNumber"><wicket:message
+														key="label.mobilenumber" /></th>
+												<th wicket:id="orderByStatus"><wicket:message
+														key="label.status" /></th>
+												<th wicket:id="orderByCreatedBy"><wicket:message
+														key="label.createdby" /></th>
+											    -->
+												<th><wicket:message key="action" /></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr wicket:id="pageable">
+												<td><div wicket:id="date">[Date]</div></td>
+												<td><div wicket:id="requestType">[Request Type]</div></td>
+												<td><div wicket:id="consumerType">[Consumer Type]</div></td>
+												<td><div wicket:id="mobileNumber">[Mobile Number]</div></td>
+												<!--
+												<td><div wicket:id="status">[Status]</div></td>
+												-->
+												<td><div wicket:id="createdBy">[Created By]</div></td>
+												<td><a href="#" wicket:id="detailsLink"><span
+														wicket:id="linkName">[Details]</span> </a></td>
+											</tr>
+										</tbody>
+									</table>
+								</wicket:enclosure>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</wicket:panel>
+</body>
+</html>

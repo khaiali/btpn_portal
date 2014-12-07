@@ -1,0 +1,77 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="feeForm" method="post">
+						<fieldset>
+							<legend class="reg_tab"><wicket:message key="label.airtimeTopupFee" />
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column">
+								<div class="input" style="width: 720px">
+									<label for="manageBillPay.add.billerCat.final"> 
+										<wicket:message key="label.operator"/>
+									</label>
+									<div class="text" wicket:id="feeBean.telco.id"></div>
+								</div>
+
+								<div class="input" style="width: 720px">
+									<label for="manageBillPay.add.billerCodes.final">
+											<wicket:message key="label.denomination"/>
+									</label>
+									<div class="text" wicket:id="feeBean.denomination.value"></div>
+								</div>
+
+								<div class="input" style="width: 720px">
+									<label for="productid"><wicket:message key="label.productId"/></label>
+									<div class="text" wicket:id="feeBean.productName.id"></div>
+								</div>
+								<div class="input" style="width: 720px">
+									<label for="feeAmount"><wicket:message key="label.transactionAmount"/><span
+										class="required">*</span>
+									</label>  <div class="text" wicket:id="feeBean.transactionAmount"></div>
+								</div>								
+								<div class="spacer"></div>
+								<div class="displayTag" wicket:id="airtimeFeeContainer">
+									<label wicket:id="no.items"></label>
+									<span class="pagebanner" wicket:id="feeHeader"></span>
+									<span class="pagelinks" wicket:id="feeNavigator"></span>											
+									<wicket:enclosure child="pageable">
+										<table id="feeListTable">
+											<thead>
+												<tr>
+													<th><wicket:message key="label.feeName" /></th>
+													<th><wicket:message key="label.glCode" /></th>
+													<th><wicket:message key="label.fixedFee" /></th>
+													<th><wicket:message key="label.percentageFee" /></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr wicket:id="pageable">
+													<td wicket:id="feeName"></td>
+													<td wicket:id="glCode"></td>
+													<td wicket:id="fixedFee"></td>
+													<td wicket:id="percentageFee"></td>
+												</tr>
+											</tbody>
+										</table>
+									</wicket:enclosure>
+								</div>
+							</div>
+						</fieldset>					
+						<div class="spacer"></div>
+						<input style="width: 70px; left: 100px" name="submitFee" wicket:id="btnCreate" wicket:message="value:Confirm" class="submit acc_chk" type="submit" />
+						 <input	style="left: 200px" name="cancel" wicket:id="btnCancel" wicket:message="value:Cancel" class="submit acc_chk" type="submit" />
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

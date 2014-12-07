@@ -1,0 +1,127 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+<form wicket:id="settingsForm">
+
+	<div class="column spacer"></div>
+
+	<div class="module clear">
+
+		<div class="cmodule clear">
+
+		<div class="collapsable clear">
+
+			<table id="dataSeriesListTable" class="listTable">
+			<thead>
+				<tr>
+				<th class="source">Server</th>
+				<th class="source">Object</th>
+				<th class="attribute">Attribute</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+				<td class="empty" colspan="3">
+				</td>
+				</tr>
+			</tfoot>
+			<tbody wicket:id="pageable">
+				<tr class="even">
+				<td class="server"><div wicket:id="server">[localhost:8080]</div></td>
+				<td class="objectName" ><div wicket:id="objectName">[...impl.ChannelManagerImpl,category=Util]</div></td>
+				<td class="attribute" ><div wicket:id="attribute">[FailedMessages]</div></td>
+				</tr>
+			</tbody>
+			</table>
+
+		</div>
+
+		</div>
+
+	</div>
+
+	<div class="module clear">
+
+		<div class="cmodule clear">
+
+		<div class="column twoColumn">
+
+			<div class="input">
+				<label>Name</label>
+				<div class="text" wicket:id="name"></div>
+			</div>
+
+			<div class="input">
+				<label>Type</label>
+				<div class="text" wicket:id="type"></div>
+			</div>
+
+		</div>
+
+		<div class="column twoColumn">
+
+			<div class="input">
+				<label>Sample Interval</label>
+				<div class="text">
+					<span wicket:id="sampleInterval"></span>
+					<span wicket:id="sampleIntervalTimeUnit"></span>
+				</div>
+			</div>
+
+			<div class="input">
+				<label>Points to Display</label>
+				<div class="text" wicket:id="pointsToDisplay"></div>
+			</div>
+
+		</div>
+
+		</div>
+
+		<div class="cmodule clear">
+
+		<div class="column twoColumn">
+
+			<div class="input">
+				<label>Min:<span class="required">*</span></label>
+				<input class="text" value="0" readonly="readonly"/>
+			</div>
+
+			<div class="input">
+				<label>Max:<span class="required">*</span></label>
+				<input class="text" value="1000" readonly="readonly"/>
+			</div>
+		</div>
+		<div class="column twoColumn">
+
+			<div class="input">
+				<label>Intervals:<span class="required">*</span></label>
+				<input class="text" value="250, 500, 750, 1000" readonly="readonly"/>
+			</div>
+
+			<div class="input">
+				<label>Colours:<span class="required">*</span></label>
+				<input class="text" value="#66cc66,#93b75f,#E7E658,#cc6666" readonly="readonly"/>
+			</div>
+
+		</div>
+
+		</div>
+
+		<!--div class="column">
+		<div class="formAction">
+			<input type="submit" class="submitForm" name="saveButton" id="saveButtonc" value="Save"/>
+			<input type="submit" class="submitForm" name="cancelButton" id="cancelButtone" value="Cancel"/>
+		</div>
+		</div-->
+
+	</div>
+
+</form>
+
+</wicket:panel>
+
+</body>
+</html>
+

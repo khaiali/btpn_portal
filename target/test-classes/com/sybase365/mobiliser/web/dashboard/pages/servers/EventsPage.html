@@ -1,0 +1,193 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="servers">
+				<span><wicket:message key="dashboard.events.title" /></span>
+			</h1>
+
+			<form wicket:id="eventForm">
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+			
+				<div class="cmodule clear">
+				
+					<!-- Generator -->
+					<h2 class="section system">
+					<wicket:message key="dashboard.events.generator.summary"/>
+					</h2>
+				
+					<div class="column twoColumn">
+						<div class="input">
+							<label ><wicket:message key=dashboard.events.generator.noRegular" /></label>
+							<div class="text" wicket:id="noRegular"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.events.generator.noRegenerated" /></label>
+							<div class="text" wicket:id="noRegenerated"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.events.generator.noDelayed" /></label>
+							<div class="text" wicket:id="noDelayed"></div>
+						</div>
+					</div>
+					<div class="column twoColumn">
+						<div class="input">
+							<label><wicket:message key=dashboard.events.generator.noTransient" /></label>
+							<div class="text" wicket:id="noTransient"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.events.generator.noScheduled" /></label>
+							<div class="text" wicket:id="noScheduled"></div>
+						</div>						
+					</div>
+	
+					<div class="spacer"></div>
+					
+					<!-- Physical Queue -->
+					<h2 class="section system">
+					<wicket:message key="dashboard.events.queue.physical.title"/>
+					</h2>
+					
+					<div class="spacer"></div>
+					<div class="collapsable clear">					
+						<table id="physicalQueueListTable" class="listTable">
+							<thead>
+							<tr>
+								<th class="qName"><wicket:message key="dashboard.events.queue.name" /></th>								
+								<th class="qCurrentSize"><wicket:message key="dashboard.events.queue.currentSize" /></th>
+								<th class="qMaxSize last"><wicket:message key="dashboard.events.queue.maxSize" /></th>
+							</tr>
+							</thead>
+							<tfoot>
+							<tr>
+								<td class="empty" colspan="4">
+								</td>
+							</tr>
+							</tfoot>
+							<tbody>
+							<tr wicket:id="physicalQueueListView">
+								<td><div wicket:id="name"></div></td>
+								<td><div wicket:id="size"></div></td>
+								<td><div wicket:id="maxSize"></div></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="spacer"></div>
+					
+					<!-- Virtual Queue -->
+					<h2 class="section system">
+					<wicket:message key="dashboard.events.queue.virtual.title"/>
+					</h2>
+					<div class="spacer"></div>
+					<div class="collapsable clear">
+					
+						<table id="virtualQueueListTable" class="listTable">
+							<thead>
+							<tr>
+								<th class="qName"><wicket:message key="dashboard.events.queue.name" /></th>								
+								<th class="qCurrentSize"><wicket:message key="dashboard.events.queue.currentSize" /></th>
+								<th class="qMaxSize" last"><wicket:message key="dashboard.events.queue.maxSize" /></th>
+							</tr>
+							</thead>
+							<tfoot>
+							<tr>
+								<td class="empty" colspan="4">
+								</td>
+							</tr>
+							</tfoot>
+							<tbody>
+							<tr wicket:id="virtualQueueListView">
+								<td><div wicket:id="name"></div></td>
+								<td><div wicket:id="size"></div></td>
+								<td><div wicket:id="maxSize"></div></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="spacer"></div>
+					
+					<h2 class="section system">
+					<wicket:message key="dashboard.events.scheduled.title"/>
+					</h2>
+					<div class="spacer"></div>
+					<div class="collapsable clear">
+					
+						<table id="eventListTable" class="listTable">
+							<wicket:enclosure child="eventListView">
+							<thead>
+							<tr>
+								<th class="scheduledHandlerName"><wicket:message key="dashboard.events.name" /></th>								
+								<th class="scheduledHandlerTrigger last"><wicket:message key="dashboard.events.trigger" /></th>
+							</tr>
+							</thead>
+							<tfoot>
+							<tr>
+								<td class="empty" colspan="2">
+								</td>
+							</tr>
+							</tfoot>
+							<tbody>
+							<tr wicket:id="eventListView">
+								<td><a href="#" wicket:id="eventLink"></a></td>
+								<td><span wicket:id="trigger"></span></td>								
+							</tr>
+							</tbody>
+							</wicket:enclosure>
+						</table>
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noEventItemsMsg">[No Items Available]</div>
+					</div>
+					
+					<div class="spacer"></div>
+					
+					<h2 class="section system">
+					<wicket:message key="dashboard.events.handler.title"/>
+					</h2>
+					<div class="spacer"></div>
+					<div class="collapsable clear">
+					
+						<table id="eventHandlerListTable" class="listTable">
+							<thead>
+							<tr>
+								<th class="eventHandlerName"><wicket:message key="dashboard.events.handler.name" /></th>								
+								<th class="eventHandlerStatus"><wicket:message key="dashboard.events.handler.status" /></th>
+								<th class="eventHandlerEvent last"><wicket:message key="dashboard.events.handler.event" /></th>
+							</tr>
+							</thead>
+							<tfoot>
+							<tr>
+								<td class="empty" colspan="3">
+								</td>
+							</tr>
+							</tfoot>
+							<tbody>
+							<tr wicket:id="eventHandlerListView">
+								<td><div><a href="#" wicket:id="handlerLink"></a></div></td>
+								<td><div wicket:id="statusDescription"></div></td>
+								<td><div wicket:id="eventName"></div></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div>
+								
+			</form>
+			
+			
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

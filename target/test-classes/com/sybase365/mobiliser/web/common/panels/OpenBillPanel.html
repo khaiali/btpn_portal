@@ -1,0 +1,97 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="openBillForm">
+
+		<div wicket:id="errorMessages"></div>
+
+		<div class="module clear">
+
+			<div class="column">
+
+				<wicket:enclosure child="status">
+
+					<div class="input">
+						<label><wicket:message key="openBill.status" /></label> 
+						<div class="text" wicket:id="status" ></div>
+					</div>
+					<div class="input">
+						<label><wicket:message key="openBill.transactionId" /></label> 
+						<div class="text" wicket:id="transactionId" ></div>
+					</div>
+				</wicket:enclosure>
+
+				<div class="input">
+					<label><wicket:message key="openBill.name" /></label> 
+					<div class="text" wicket:id="name" ></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="openBill.type" /></label> 
+					<div class="text"  wicket:id="type" ></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="openBill.reference" /></label> 
+					<div class="text" wicket:id="reference" ></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="openBill.billReference" /></label>
+					<input type="text" wicket:id="billReference" size="20"  maxlength="80"/> 					
+					<div class="text" wicket:id="billReferenceLabel" ></div>					
+				</div>
+
+				<wicket:enclosure child="date">
+					<div class="input">
+						<label><wicket:message key="openBill.date" /></label> 
+						<div class="text" wicket:id="date" ></div>
+					</div>
+				</wicket:enclosure>
+
+				<div class="input">
+					<label><wicket:message key="openBill.amount" /></label> 
+					<wicket:enclosure child="amountString">
+					<input type="text" wicket:id="amountString" size="20"  maxlength="18"/> 
+					<span style="vertical-align:middle;" wicket:id="currency" />
+					</wicket:enclosure>
+					
+					<div class="text" style="padding:5px 5px 6px 5px;vertical-align:middle;" wicket:id="amountLabel" />						
+				</div>
+
+				<wicket:enclosure child="piId">
+					<div class="input">
+						<label><wicket:message key="openBill.pi" /></label> 
+						<select wicket:id="piId" />
+					</div>
+				</wicket:enclosure>
+				<wicket:enclosure child="fee">
+					<div class="input">
+						<label><wicket:message key="openBill.fee" /></label> 
+						<div class="text"  wicket:id="fee" ></div>
+					</div>
+				</wicket:enclosure>
+				
+			</div>
+
+			<div class="column">
+			
+				<div class="formAction">
+					<input class="submitForm" type="submit" wicket:message="value:openBill.pay" wicket:id="pay" name="pay"> 
+					<input class="submitForm" type="submit" wicket:message="value:openBill.confirm" wicket:id="confirm" name="confirm">
+					<input class="submitForm" type="submit" wicket:message="value:openBill.continue" wicket:id="cancel" name="cancel"> 
+					<input class="submitForm" type="submit" wicket:message="value:openBill.back" wicket:id="back" name="back"> 		
+					<input class="submitForm" type="submit" wicket:message="value:openBill.cancel" wicket:id="cancelAction" name="cancelAction">
+					<input class="submitForm" type="submit" wicket:message="value:openBill.continue" wicket:id="continue" name="continue">
+				</div>
+				
+			</div>
+
+
+		</div>
+
+	</form>
+
+</wicket:panel>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="interestConfAprForm">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="headLine.interest" /></legend>
+							<br>
+							<div class="Account_info">
+								<label><wicket:message key="label.description"/></label>
+								<div class="input_value" >
+									<label wicket:id="interestBean.description"></label>
+								</div>
+							</div>
+                            
+                            <div class="Account_info">
+								<label><wicket:message key="label.customerIdentifierType"/></label>
+								<div class="input_value">
+									<label wicket:id="interestBean.customerIdentifierType"></label>
+								</div>
+							</div>
+                            
+                            <div class="Account_info">
+								<label><wicket:message key="label.customerIdentifier"/></label>
+								<div class="input_value" >
+									<label wicket:id="interestBean.customerIdentifier"></label>
+								</div>
+							</div>
+							
+							<div class="Account_info">
+								<label><wicket:message key="label.customerTypeId"/></label>
+								<div class="input_value">
+									<label wicket:id="customerTypeId"></label>
+								</div>
+							</div>
+                            
+							<div class="Account_info">
+								<label><wicket:message key="label.paymentInstrumentId"/></label>
+								<div class="input_value">
+									<label wicket:id="interestBean.paymentInstrumentId"></label>
+								</div>
+							</div>
+                            
+                            <div class="Account_info">
+								<label><wicket:message key="label.paymentInstrumentTypeId"/></label>
+								<div class="input_value">
+									<label wicket:id="paymentInstrumentTypeId"></label>
+								</div>
+							</div>
+                            
+							<div class="Account_info">
+								<label><wicket:message key="label.accrueGLCode"/></label>
+								<div class="input_value">
+									<label wicket:id="accrueGLCode"></label>
+								</div>
+							</div>
+                            
+                            <div class="Account_info">
+								<label><wicket:message key="label.expenseGLCode"/></label>
+								<div class="input_value">
+									<label wicket:id="expenseGLCode"></label>
+								</div>
+							</div>
+							
+							<div class="Account_info">
+								<label><wicket:message key="label.validFrom"/></label>
+								<div class="input_value">
+									<label wicket:id="interestBean.validFrom"></label>
+								</div>
+							</div>
+                            
+                            
+							<div class="Account_info">
+								<label><wicket:message key="label.thresholdAmount"/></label>
+								<div class="input_value">
+									<label wicket:id="interestBean.thresholdAmount"></label>
+								</div>
+							</div>
+							
+							
+							<div class="Account_info">
+								<label><wicket:message key="label.fixedFee"/></label>
+								<div class="input_value">
+									<label wicket:id="interestBean.fixedFee"></label>
+								</div>
+							</div>
+							
+							<div class="Account_info">
+								<label><wicket:message key="label.percentageFee"/></label>
+								<div class="input_value">
+									<label wicket:id="interestBean.percentageFee"></label>
+								</div>
+							</div>
+							
+							<div class="Account_info">
+								<label><wicket:message key="label.maximumFee"/></label>
+								<div class="input_value">
+									<label wicket:id="interestBean.maximumFee"></label>
+								</div>
+							</div>
+							
+							<div class="Account_info">
+								<label><wicket:message key="label.minimumFee"/></label>
+								<div class="input_value">
+									<label wicket:id="interestBean.minimumFee"></label>
+								</div>
+							</div>
+							
+							<div class="Account_info">
+								<label><wicket:message key="label.note"/></label>
+								<div class="input_value" >
+									<label wicket:id="interestBean.note"></label>
+								</div>
+							</div>
+                            
+							<div class="spacer"></div>
+							<div class="column">
+								<input type="submit" class="submit acc_chk" id="submit"
+									wicket:id="confirmBtn" wicket:message="value:Confirm" /> <input
+									type="submit" class="submit acc_chk" id="submit"
+									wicket:id="backBtn" wicket:message="value:Back"
+									style="left: 250px" /> <input type="submit"
+									class="submit acc_chk" id="submit" wicket:id="cancelBtn"
+									wicket:message="value:Cancel" style="left: 270px" />
+							</div>
+                            
+                             <div id="loading" style="position: relative; display: none; width: 100%; text-align: center; top: 100px;">
+								<img src="images/btpn/ajax-loader.gif" border="0" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+          <script>
+			function loading(id) {
+				document.getElementById('ConfAprInterest').style.display = "none";
+				document.getElementById('loading').style.display = "block";
+			}
+		</script>
+	</wicket:panel>
+</body>
+</html>

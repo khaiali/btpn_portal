@@ -1,0 +1,167 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<form wicket:id="feeConfigurationForm">
+
+				<h1 class="wallet">
+					<span><wicket:message key="feeTypesConfiguration.title" /></span>
+					<span><wicket:message key="application.breadcrumb.separator" /></span>
+					<span><wicket:message key="menu.cst.configuration.fee.feeTypes" /></span>
+					<input class="additionalLink last" type="submit" wicket:message="value:feeType.useCase.add.button" wicket:id="addUseCaseConf" name="addUseCaseConf"> 
+					<input class="additionalLink" type="submit" wicket:message="value:feeType.add.button" wicket:id="addFeeType" name="addFeeType">
+				</h1>
+
+				<div wicket:id="errorMessages"></div>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="feeTypesListTable" class="listTable">
+						
+							<wicket:enclosure child="pageable">
+							
+								<thead>
+									<tr>
+										<th class="id"><wicket:message key="feeTypes.id" /></th>
+										<th class="useCase" wicket:id="orderByUseCase"><wicket:message key="feeTypes.useCase" /></th>
+										<th class="feeType"><wicket:message key="feeTypes.name" /></th>
+										<th class="actions last"><wicket:message key="actions" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="4"></td>
+									</tr>
+								</tfoot>
+
+								<tbody>
+									<tr wicket:id="pageable">
+										<td class="id"><div wicket:id="id">[ID]</div></td>
+										<td class="useCase"><div wicket:id="useCase">[Use Case]</div></td>
+										<td class="feeType"><div wicket:id="feeType">[Name]</div></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="editAction"><wicket:message key="edit">[Edit]</wicket:message></a></li>
+												<li><a href="#" wicket:id="removeAction"><wicket:message key="remove">[Remove]</wicket:message></a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+				
+				<div id="use_case_conf" wicket:id="useCaseConfigContainer">
+
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label><wicket:message key="feeTypes.useCase" /><span class="required">*</span></label> 
+							<select wicket:id="useCaseFeeType.useCaseId" id="useCaseFeeType.useCaseId">
+								<option>dummy</option>
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message key="feeTypes.payee.orgUnit" /><span class="required">*</span></label> 
+							<select wicket:id="useCaseFeeType.orgUnitPayee" id="useCaseFeeType.orgUnitPayee">
+								<option>dummy</option>
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message key="feeTypes.payer.orgUnit" /><span class="required">*</span></label> 
+							<select wicket:id="useCaseFeeType.orgUnitPayer" id="useCaseFeeType.orgUnitPayer">
+								<option>dummy</option>
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message key="feeTypes.payee.piType" /></label> 
+							<select wicket:id="useCaseFeeType.payeePiType" id="useCaseFeeType.payeePiType">
+								<option>dummy</option>
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message key="feeTypes.payer.piType" /></label> 
+							<select wicket:id="useCaseFeeType.payerPiType" id="useCaseFeeType.payerPiType">
+								<option>dummy</option>
+							</select>
+						</div>
+
+					</div>
+
+					<div class="column twoColumn">
+
+						<div class="input">
+							<label><wicket:message key="feeTypes.name" /><span class="required">*</span></label> 
+							<select wicket:id="useCaseFeeType.feeTypeId" id="useCaseFeeType.feeTypeId">
+								<option>dummy</option>
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message key="feeTypes.payee.fee" /><span class="required">*</span></label> 
+							<select wicket:id="useCaseFeeType.payeeFee" id="useCaseFeeType.payeeFee">
+								<option>dummy</option>
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message key="feeTypes.subTxn.type" /></label> 
+							<select wicket:id="useCaseFeeType.subTxnType" id="useCaseFeeType.subTxnType">
+								<option>dummy</option>
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message key="feeTypes.copyFromAuth" /><span class="required">*</span></label> 
+							<select wicket:id="useCaseFeeType.copyFromAuth" id="useCaseFeeType.copyFromAuth">
+								<option>dummy</option>
+							</select>
+						</div>
+						<div class="input">
+							<label><wicket:message key="feeTypes.payee.includeInLimit" /><span class="required">*</span></label> 
+							<select wicket:id="useCaseFeeType.includeInLimit" id="useCaseFeeType.includeInLimit">
+								<option>dummy</option>
+							</select>
+						</div>
+
+					</div>
+					
+					<div class="column">
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="save" wicket:message="value:Save" /> 
+							<input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" />
+						</div>
+					</div>
+					
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

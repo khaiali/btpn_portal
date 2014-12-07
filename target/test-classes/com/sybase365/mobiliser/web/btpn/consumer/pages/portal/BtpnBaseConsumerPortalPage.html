@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title><wicket:message key="login.page.title" /></title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<style>
+	.gd{
+		font-size: 16px;
+		font-weight: bold;
+		color: white;
+		margin-top:10px;
+	}	
+	.bt{
+		height:20px;
+		width:50px;
+		color:white;background-color:rgb(0,173,293);
+		padding:5px;
+		margin-top:5px;
+	}
+	</style>
+	<script type="text/javascript"
+		src="scripts/btpn/consumer-portal/portal.js"></script>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+</wicket:head>
+</head>
+<body>
+	<wicket:extend>
+		<div id="background-header">
+			<div id="header">
+				<div id="logo"></div>
+				<div id="logo_right"></div>
+				<div id="waktu">
+					<p><span style="color: #ffffff;" id="timestamp"></span></p>
+					<div wicket:id="svaBalanceLabel" class="gd"></div>
+				</div>
+				<div id="profilebox">
+					<p>
+						<span id="agent_fullname" style="" wicket:id="header.login.info"></span>
+						<label wicket:id="header.login.customerid"></label>
+						<a type="submit" class="submit acc_chk" href="#" wicket:id="header.logout"
+						tabindex="3"><font class="bt"><wicket:message key="header.logout.label" /></font>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="container">
+			<!-- Start Bank Portal Application Page Header  -->
+
+			<!--<div id="header">-->
+				<!-- Start Agent Info -->
+				
+				<!-- END Agent info -->
+
+				<!-- Logo -->
+				
+
+				<!-- Application and Selected Menu Name -->
+				<!--<div style="display: none"></div>
+				<div id="applicationName" style="color: #fff" wicket:id="appNameBar">
+					<wicket:message key="application.name" />
+					| <label id="selectedMenuName"></label>
+				</div>-->
+
+				<!-- Start Navigation Menu  -->
+				<!--<div id="navigation">
+					<div id="nav">
+						<ul class="dropdown dropdown-horizontal" style="float: left;">
+							<li class="right" style="color: red">
+								<div wicket:id="svaBalanceLabel"></div>
+							</li>
+						</ul>
+					</div>-->
+					<!-- END of Nav -->
+					<!--<div id="nav_content_color_bar" wicket:id="navBar">
+						<div class="blueid" style="display: none"></div>
+						<div class="whiteid"></div>
+						<div class="redid" style="display: none"></div>
+						<div class="whiteid"></div>
+						<div class="greenid" style="display: none"></div>
+					</div>
+				</div>-->
+			<!--</div>-->
+			<!-- END HEADER -->
+
+			<wicket:child />
+
+
+			<!-- Start of Bank Portal Application Footer -->
+			<div id="footer">
+			<img src="images/247.png"><br>
+				<div class="info">
+					<wicket:message key="foooter.copyright" />
+					&copy;
+					<wicket:message key="foooter.bank.name" />
+					<span style="color: inherit;" id="session.timeout.counter"></span>
+				</div>
+			</div>
+		</div>
+		<div class="print"></div>
+
+		<!-- Session time out Messages -->
+		<div style="display: none" id="session.timeout.counter.label">
+			<wicket:message key="session.timeout.counter.label" />
+		</div>
+		<div style="display: none" id="session.timeout.counter.minutes.label">
+			<wicket:message key="session.timeout.counter.minutes.label" />
+		</div>
+		<div style="display: none" id="session.timeout.label">
+			<wicket:message key=session.timeout.label " />
+		</div>
+		<div style="display: none;" id="session.timeout.seconds"
+			wicket:id="application.session.timeout.seconds"></div>
+
+		<script type="text/javascript">
+		
+			//Display Timer
+			setupTimerDisplay();
+			//TODO : Get Session Timeout from preferences
+			var sessionTimoutSeconds = document
+					.getElementById("session.timeout.seconds").innerHTML;
+			sessionTimoutPrint();
+			sessionTimoutDisplay();
+			
+		</script>
+
+	</wicket:extend>
+</body>
+</html>

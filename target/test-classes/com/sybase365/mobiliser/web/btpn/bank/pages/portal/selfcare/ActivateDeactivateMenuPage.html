@@ -1,0 +1,59 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="activateForm" method="post">
+						<fieldset>
+							<legend class="reg_tab"><wicket:message key="label.activate.menu" /></legend>
+							<br>
+							<div wicket:id="errorMessages"></div>
+							<div class="column twoColumn" style="width: 750px;">
+								<div class="input">
+									<label for="customer.activateDeactivate.users"><wicket:message key="label.user.roles" /><span class="required">*</span>
+									</label> <select wicket:id="roleSelected" name="role">
+
+									</select>
+								</div>
+								<div class="input">
+									<label for="customer.activateDeactivate.avilableTasks">
+										<wicket:message key="label.available.tasks" /><span class="required">*</span>
+									</label> <select wicket:id="taskSelected">										
+									</select>
+								</div>
+
+								<div class="input">
+									<input id="searchCustomer" style="margin-left: 160px;"
+										name="getPrivileges" wicket:message="value:Find" class="submit acc_chk"
+										wicket:id="findTask" type="submit" />
+								</div>
+								<div class="input">
+									<input id="searchCustomer" style="margin-left: 160px;"
+										name="addPrivileges" wicket:id="addTask" wicket:message="value:Assign" class="submit acc_chk"
+										type="submit" />
+								</div>
+
+								<div class="input">
+									<label for="customer.activateDeactivate.assignedTasks">
+										<wicket:message key="label.assign.tasks" /> <span class="required">*</span>
+									</label> <select wicket:id="privSelected" name="rplePrivi">
+										<option value=""></option>
+									</select>
+								</div>
+							</div>
+							<div class="input">
+								<input id="searchCustomer" style="margin-left: 240px;"	wicket:id="removeTask" name="removePrivileges" wicket:message="value:Remove" class="submit acc_chk" type="submit" />
+							</div>
+							<br> <br>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="approveMsisdnConfirmForm">
+						<fieldset>
+							<legend class="reg_tab6">
+								<span wicket:id="headerMessage"></span>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="reg_tab_01">
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.oldMobileNumber" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="approveBean.oldMobile"></label>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label> <wicket:message key="label.newMobileNumber" />
+										</label>
+										<div class="input_value">
+											<label wicket:id="approveBean.newMobile"></label>
+										</div>
+									</div>
+									<div class="spacer"></div>
+									<input type="submit" wicket:id="confirmButton"
+										class="submit acc_chk" value="Confirm" /> <input
+										type="submit" wicket:id="cancleButton" class="submit acc_chk"
+										style="left: 250px" value="Cancel" />
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

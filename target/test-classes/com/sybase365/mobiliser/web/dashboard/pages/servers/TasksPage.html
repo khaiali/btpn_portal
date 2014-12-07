@@ -1,0 +1,90 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="servers">
+				<span><wicket:message key="dashboard.tasks.title" /></span>
+			</h1>
+
+			<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+			<div class="cmodule clear">
+				
+					<h2 class="section system">
+					<wicket:message key="dashboard.tasks.scheduled.title"/>
+					</h2>
+					<div class="spacer"></div>
+					
+					<div class="collapsable clear">
+					
+						<table id="taskListTable" class="listTable">
+							<wicket:enclosure child="taskListView">
+							<thead>
+							<tr>
+								<th class="taskName"><wicket:message key="dashboard.tasks.name" /></th>								
+								<th class="taskCronExpr last"><wicket:message key="dashboard.tasks.cronExpression" /></th>
+							</tr>
+							</thead>
+							<tfoot>
+							<tr>
+								<td class="empty" colspan="2">
+								</td>
+							</tr>
+							</tfoot>
+							<tbody>
+							<tr wicket:id="taskListView">
+								<td><a href="#" wicket:id="taskLink"></a></td>
+								<td><div wicket:id="cronExpresion"></div></td>								
+							</tr>
+							</tbody>
+							</wicket:enclosure>
+						</table>
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noTaskItemsMsg">[No Items Available]</div>
+					</div>
+					
+					<div class="spacer"></div>
+					
+					<h2 class="section system">
+					<wicket:message key="dashboard.tasks.handler.title"/>
+					</h2>
+					<div class="spacer"></div>
+					<div class="collapsable clear">
+					
+						<table id="taskHandlerListTable" class="listTable">
+							<thead>
+							<tr>
+								<th class="taskHandlerName"><wicket:message key="dashboard.tasks.handler.name" /></th>								
+								<th class="taskHandlerStatus"><wicket:message key="dashboard.tasks.handler.status" /></th>
+								<th class="taskHandlerEventName last"><wicket:message key="dashboard.tasks.handler.event" /></th>
+							</tr>
+							</thead>
+							<tfoot>
+							<tr>
+								<td class="empty" colspan="3">
+								</td>
+							</tr>
+							</tfoot>
+							<tbody>
+							<tr wicket:id="taskHandlerListView">
+								<td><a href="#" wicket:id="handlerLink"></a></td>
+								<td><div wicket:id="statusDescription"></div></td>
+								<td><div wicket:id="eventName"></div></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div>
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

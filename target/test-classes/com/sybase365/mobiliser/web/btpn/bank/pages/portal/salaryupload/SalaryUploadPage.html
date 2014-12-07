@@ -1,0 +1,40 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="fileuploadForm">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="label.upload.bulk" /></legend>
+							<br>
+								<div wicket:id="errorMessages"></div>
+                         	<br>
+                            <div class="input">
+                                <label for="fileBean"><wicket:message key="label.file.name" /><span class="required">*</span>
+                                </label> <input id="fileBean" wicket:id="fileUpload" name="fileBean" type="file" />
+                            </div>
+                            <div class="input">
+                                <label for="fileType"><wicket:message key="label.file.type" /><span class="required">*</span></label> 
+                                <select	id="type" wicket:id="searchBean.type" name="type">	</select>
+                            </div>
+                            
+							<div class="spacer"></div>
+							<div class="column">
+								<div class="browsefile">
+									<input name="addAttachment" wicket:id="btnUpload" wicket:message="value:Upload" class="submit acc_chk1" type="submit" />
+								</div>
+							</div>
+							<br> <br>
+                            
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

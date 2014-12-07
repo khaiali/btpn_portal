@@ -1,0 +1,63 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" >
+<head>
+	<wicket:head>
+	<title><wicket:message key="application.login.page.title" /></title>
+	</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<form wicket:id="loginForm">
+
+		<div>
+			<h1><wicket:message key="application.login.heading" /></h1>
+		</div>
+
+		<ul id="consumerForm" class="loginForm">
+			<li>
+				<div class="input">
+					<label for="user"><wicket:message key="username" /></label>
+					<input class="text" type="text" wicket:id="username" size="20" autocomplete="off" />
+				</div>
+			</li>
+			<li>
+				<div class="input">
+					<label for="password"><wicket:message key="password" /></label>
+					<input class="text" type="password" wicket:id="password" size="20" autocomplete="off"/>
+				</div>
+			</li>
+			<li style="margin-bottom: 0px;">
+				<table>
+					<tr>
+					<td class="loginActions">
+						<input type="submit" class="submitForm loginButton" wicket:message="value:login" />
+					</td>
+					<td class="loginOptions">
+						<div class="loginOption">
+							<a href="#" wicket:id="consumerSignup"><wicket:message key="application.login.signup" /></a>
+						</div>
+						<div class="loginOption">
+							<a href="#" wicket:id="forgotPassword"><wicket:message key="application.login.forgot.password" /></a>
+						</div>
+					</td>
+					</tr>
+				</table>
+			</li>
+			<li>
+				<div class="loginFeedbackDIV">
+					<span class="errorLabel">
+						<div wicket:id="errorMessages"></div>
+					</span>
+				</div>
+			</li>
+		</ul>
+
+	</form>
+
+	<span wicket:id="sessionRefresh"/>
+
+</wicket:extend>
+
+</body>
+</html>

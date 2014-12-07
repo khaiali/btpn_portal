@@ -1,0 +1,256 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="wallet">
+				<span><wicket:message key="top.menu.cst.configuration" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="menu.cst.restrictions" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="restriction.new" /></span>
+			</h1>
+
+			<form wicket:id="restrictionForm">
+
+				<div wicket:id="errorMessages"></div>
+
+				<h2 class="section wallet">
+					<wicket:message key="restriction.name" />
+				</h2>
+
+				<div class="module clear">
+
+					<div class="column twoColumn">
+
+						<div class="input">
+							<label><wicket:message key="restriction.name" /><span class="required">*</span> </label> 
+							<input type="text" wicket:id="restriction.name" />
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="restGrps.name" /><span class="required">*</span> </label> 
+							<select wicket:id="restriction.restrictionGroupId" id="restriction.restrictionGroupId">
+								<option>dummy</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="column twoColumn">
+						<div class="input">
+							<label><wicket:message key="restriction.priority" /><span class="required">*</span> </label> 
+							<input type="text" wicket:id="restriction.priority" />
+						</div>
+
+						<span wicket:id="radioGroup">
+							<div class="input">
+								<label><wicket:message key="restriction.for" /><span class="required">*</span> </label>
+								<div class="group">
+									<input type="radio" class="radio" id="Payer" wicket:id="Payer" name="Payer"/> 
+									<label for="Payer"><wicket:message key=restriction.for.payer /> </label> 
+									<input type="radio"	class="radio" id="Payee" wicket:id="Payee" name="Payee"/>
+									<label for="Payee"><wicket:message key="restriction.for.payee" /> </label>
+								</div>
+							</div> 
+						</span>
+
+					</div>
+
+
+				</div>
+
+				<div class="module clear">
+
+					<h2 class="section wallet">
+						<wicket:message key="restriction.appliedFor" />
+					</h2>
+
+					<div class="column twoColumn">
+						<div class="input">
+							<label><wicket:message key="restriction.appliedFor.orgunits" /></label> 
+							<select wicket:id="restriction.appliedFor.orgUnits.orgUnit" id="restriction.appliedFor.orgUnits.orgUnit">
+								<option>dummy</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="column twoColumn">
+
+						<div class="input">
+							<label><wicket:message key="restriction.appliedFor.riskCategory" /></label> 
+							<select wicket:id="restriction.appliedFor.riskCategories.riskCategory" id="restriction.appliedFor.riskCategories.riskCategory">
+								<option>dummy</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="module clear">
+
+					<h2 class="section wallet">
+						<wicket:message key="restriction.aplliedOn" />
+					</h2>
+
+					<div class="column twoColumn">
+
+						<div class="input">
+							<label><wicket:message key="restriction.appliedFor.orgunits" /></label> <select wicket:id="restriction.appliedOn.orgUnits.orgUnit" id="restriction.appliedOn.orgUnits.orgUnit">
+								<option>dummy</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="column twoColumn">
+
+						<div class="input">
+							<label><wicket:message key="restriction.appliedFor.riskCategory" /></label> 
+							<select wicket:id="restriction.appliedOn.riskCategories.riskCategory" id="restriction.appliedOn.riskCategories.riskCategory">
+								<option>dummy</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="column twoColumn">
+
+						<div class="input">
+							<label><wicket:message key="restriction.aplliedOn.useCase" /></label> 
+							<select wicket:id="restriction.appliedOn.useCases.useCase" id="restriction.appliedOn.useCases.useCase">
+								<option>dummy</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cmodule clear">
+
+					<h2 class="section wallet">
+						<wicket:message key="restrictionRules.title" />
+						<input class="additionalLink last" type="submit" wicket:message="value:restrictionRules.add.button" wicket:id="addRestrictionRule" name="addRestrictionRule">
+					</h2>
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="restrictionsListTable" class="listTable">
+
+							<wicket:enclosure child="pageable">
+
+								<thead>
+									<tr>
+										<th class="currency" wicket:id="orderByCurrency"><wicket:message key="restrictionRules.table.currency" /></th>
+										<th class="minTxnAmt"><wicket:message key="restrictionRules.table.minTxnAmt" /></th>
+										<th class="maxTxnAmt"><wicket:message key="restrictionRules.table.maxTxnAmt" /></th>
+										<th class="timeframe"><wicket:message key="restrictionRules.table.timeframe"/></th>
+										<th class="maxTxns"><wicket:message key="restrictionRules.table.maxTxn"/></th>
+										<th class="maxTxnSum"><wicket:message key="restrictionRules.table.maxTxnSum"/></th>
+										<th class="actions last"><wicket:message key="actions" /></th>
+									</tr>
+								</thead>
+
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="7"></td>
+									</tr>
+								</tfoot>
+
+								<tbody>
+									<tr wicket:id="pageable">
+										<td class="currency"><div wicket:id="restriction.rules.currency">[Currency]</div></td>
+										<td class="accountNumber"><div wicket:id="restriction.rules.minTransactionAmount">[Min Txn Amount]]</div></td>
+										<td class="friendsName"><div wicket:id="restriction.rules.maxTransactionAmount">[Max Txn Amount]]</div></td>
+										<td class="friendsName"><div wicket:id="restriction.rules.timeframe">[TimeFrame]]</div></td>
+										<td class="currency"><div wicket:id="restriction.rules.maxTransactions">[Max Txns]]</div></td>
+										<td class="friendsName"><div wicket:id="restriction.rules.maxTransactionAmountSum">[Max Txn Amount Sum]]</div></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="editAction"><wicket:message key="edit">[Edit]</wicket:message> </a></li>
+												<li><a href="#" wicket:id="removeAction"><wicket:message key="remove">[Remove]</wicket:message> </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+
+							</wicket:enclosure>
+
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+				<div id="addRestRuleContainer" wicket:id="addRestRuleContainer">
+
+					<div class="column twoColumn">
+
+						<div class="input">
+							<label><wicket:message key="restrictionRules.table.currency" /><span class="required">*</span></label> 
+							<select wicket:id="rule.currency">
+								<option>dummy</option>
+							</select>
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="restrictionRule.minTxnAmt" /></label> 
+							<input type="text" wicket:id="rule.minTransactionAmount" />
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="restrictionRule.maxTxnAmt" /></label> 
+							<input type="text" wicket:id="rule.maxTransactionAmount" />
+						</div>
+					</div>
+
+					<div class="column twoColumn">
+
+						<div class="input">
+							<label><wicket:message key="restrictionRules.table.timeframe" /></label> 
+							<input type="text" wicket:id="timeFrame" />
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="restrictionRule.maxTxn" /></label> 
+							<input type="text" wicket:id="rule.maxTransactions" />
+						</div>
+
+						<div class="input">
+							<label><wicket:message key="restrictionRule.maxTxnSum" /></label> 
+							<input type="text" wicket:id="rule.maxTransactionAmountSum" />
+						</div>
+
+					</div>
+
+
+				</div>
+
+				<div class="column">
+					<div class="formAction">
+						<input type="submit" class="submitForm" wicket:id="save" wicket:message="value:Save" name="submit" /> 
+						<input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" name="submit" />
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

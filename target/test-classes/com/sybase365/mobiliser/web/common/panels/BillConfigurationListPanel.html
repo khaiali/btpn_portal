@@ -1,0 +1,83 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="billConfigurationListForm">
+
+		<div wicket:id="errorMessages"></div>
+
+		<div class="cmodule clear">
+			<input class="additionalLink last" type="submit" wicket:message="value:billConfigurationList.add.button" wicket:id="addBillConfiguration" name="addBillConfiguration">
+			
+			<!-- list paging -->
+			<ul class="tablePaging">
+				<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+				<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+				<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+			</ul>
+			<!-- end list paging -->
+
+			<div class="collapsable clear">
+
+				<table id="billConfigurationListTable" class="listTable">
+				
+					<wicket:enclosure child="removeBillConfiguration">
+					
+						<thead>
+							<tr>
+								<th class="select"><wicket:message key="billConfigurationList.select" /></th>
+								<th wicket:id="orderByName"><wicket:message key="billConfigurationList.name" /></th>
+								<th><wicket:message key="billConfigurationList.type" /></th>
+								<th><wicket:message key="billConfigurationList.reference" /></th>
+								<th class="actions last"><wicket:message key="billConfigurationList.actions" /></th>
+							</tr>
+						</thead>
+						
+						<tfoot>
+							<tr>
+								<td class="formButtons" colspan="5">
+									<div class="buttonWrap">
+										<input class="submitForm" type="submit" wicket:message="value:billConfigurationList.remove.button" wicket:id="removeBillConfiguration" name="removeBillConfiguration">
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+						
+					</wicket:enclosure>
+					
+					<tbody>
+						<tr wicket:id="pageable">
+							<td class="select"><input type="checkbox" wicket:id="selected" /></td>
+							<td class="friendsName"><div wicket:id="name">[Name]</div></td>
+							<td class="friendsNickname"><div wicket:id="type">[Type]</div></td>
+							<td class="friendsMsisdn"><div wicket:id="reference">[Reference]</div></td>
+							<td>
+								<ul>
+									<li><a href="#" wicket:id="editAction"><wicket:message key="billConfigurationList.editAction">[Edit]</wicket:message></a></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+					
+				</table>
+
+				<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+			</div>
+
+		</div>
+
+		<div class="column">
+
+			<div class="buttonWrap"></div>
+
+		</div>
+
+	</form>
+
+
+</wicket:panel>
+
+</body>
+</html>

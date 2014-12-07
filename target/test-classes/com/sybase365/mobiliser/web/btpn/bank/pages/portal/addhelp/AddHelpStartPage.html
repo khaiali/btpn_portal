@@ -1,0 +1,44 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head></head>
+<body>
+	<wicket:extend>
+
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="addHelpForm" method="post">	
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="label.add.help" /></legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="reg_tab_01">
+								<div class="column">
+									<div class="input">
+										<label for="help.portal"><wicket:message key="label.portal" /><span class="required">*</span>
+										</label> <select id="portalName" wicket:id="portalType" name="portalName">
+										</select>
+									</div>
+								</div>
+								<div class="column">
+									<div class="input">
+										<label for="help.description"><wicket:message key="label.help.content" /><span
+											class="required">*</span>
+										</label>
+										<textarea id="helpDescription" wicket:id="helpText" cols="20" style="height: 200px"
+											name="helpDescription" rows="5"></textarea>
+									</div>
+									<div class="spacer"></div>
+									<p>
+										<span class="required">*</span> <wicket:message key="label.denotes.mandatory" />
+									</p>
+									<input name="confirmAddHelp" wicket:id="btnAdd" wicket:message="value:Add" tabindex="27" class="submit acc_chk" type="submit" />
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

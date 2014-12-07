@@ -1,0 +1,159 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="limitCreateConfirmForm">
+						<fieldset>
+							<legend class="reg_tab6">
+								<wicket:message key="headLine.limitCreateConfirm" />
+							</legend>
+                            
+							<br>
+							<div wicket:id="errorMessages"></div>
+                            <br>
+                            
+                             <div class="column">
+								<div class="input">
+									<label> <wicket:message key="label.limit.description" /></label>
+									<div class="input_value" wicket:id="limitBean.description"></div>
+								</div>	
+								
+								<div class="input">
+										<label> <wicket:message key="label.limit.piType" /></label>
+										<div class="input_value" wicket:id="limitBean.selectedPiType"></div>
+								</div>
+									
+								<div class="input">
+									<label> <wicket:message key="label.limit.pi" /></label>
+									<div class="input_value" wicket:id="limitBean.pi"></div>
+								</div>
+									
+								<div class="input">
+									<label> <wicket:message key="label.limit.customerType" /></label>
+									<div class="input_value" wicket:id="limitBean.selectedCustomerType"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountmobileno"> <wicket:message key="label.limit.customer" /></label>
+									<div class="input_value" wicket:id="limitBean.customer"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountmobileno"> <wicket:message key="label.limit.useCase" /></label>
+									<div class="input_value" wicket:id="limitBean.selectedUseCases"></div>
+								</div>
+							
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.singleDebitMinAmount" /></label>
+									<div class="input_value" wicket:id="limitBean.singleDebitMinAmount"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.singleDebitMaxAmount" /></label>
+									<div class="input_value" wicket:id="limitBean.singleDebitMaxAmount"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.singleCreditMinAmount" /></label>
+									<div class="input_value" wicket:id="limitBean.singleCreditMinAmount"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.singleCreditMaxAmount" /></label>
+									<div class="input_value" wicket:id="limitBean.singleCreditMaxAmount"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.dailyDebitMaxAmount" /></label>
+									<div class="input_value" wicket:id="limitBean.dailyDebitMaxAmount"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.weeklyDebitMaxAmount" /></label>
+									<div class="input_value" wicket:id="limitBean.weeklyDebitMaxAmount"></div>
+								</div>
+
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.monthlyDebitMaxAmount" /></label>
+									<div class="input_value" wicket:id="limitBean.monthlyDebitMaxAmount"></div>
+								</div>
+
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.dailyCreditMaxAmount" /></label>
+									<div class="input_value" wicket:id="limitBean.dailyCreditMaxAmount"></div>
+								</div>
+
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.weeklyCreditMaxAmount" /></label>
+									<div class="input_value" wicket:id="limitBean.weeklyCreditMaxAmount"></div>
+								</div>
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.monthlyCreditMaxAmount" /></label>
+									<div class="input_value" wicket:id="limitBean.monthlyCreditMaxAmount"></div>
+								</div>
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.dailyDebitMaxCount" /></label>
+									<div class="input_value" wicket:id="limitBean.dailyDebitMaxCount"></div>
+								</div>
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.weeklyDebitMaxCount" /></label>
+									<div class="input_value" wicket:id="limitBean.weeklyDebitMaxCount"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.monthlyDebitMaxCount" /></label>
+									<div class="input_value" wicket:id="limitBean.monthlyDebitMaxCount"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.dailyCreditMaxCount" /></label>
+									<div class="input_value" wicket:id="limitBean.dailyCreditMaxCount"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.weeklyCreditMaxCount" /></label>
+									<div class="input_value" wicket:id="limitBean.weeklyCreditMaxCount"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.monthlyCreditMaxCount" /></label>
+									<div class="input_value" wicket:id="limitBean.monthlyCreditMaxCount"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.minimumBalance" /></label>
+									<div class="input_value" wicket:id="limitBean.minimumBalance"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.maximumBalance" /></label>
+									<div class="input_value" wicket:id="limitBean.maximumBalance"></div>
+								</div>
+								
+								<div class="input">
+									<label for="accountbalance"> <wicket:message key="label.limit.status" /></label>
+									<div class="input_value" wicket:id="limitBean.status"></div>
+								</div>
+    						</div>
+							<br>
+						
+							<div class="column">
+								<input id="submit" tabindex="8" wicket:id="submitButton" wicket:message="value:label.button.limit.submit" class="submit acc_chk" type="submit" /> 
+								<input tabindex="9" style="left: 250px" wicket:id="backButton" wicket:message="value:label.button.limit.back" class="submit acc_chk" type="submit" />
+								<input tabindex="9" style="left: 270px" wicket:id="cancelButton" wicket:message="value:label.button.limit.cancel" class="submit acc_chk" type="submit" />
+							</div>
+							
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

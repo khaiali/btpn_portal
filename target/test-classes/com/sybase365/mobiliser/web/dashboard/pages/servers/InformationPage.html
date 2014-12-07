@@ -1,0 +1,132 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="servers">
+				<span><wicket:message key="dashboard.information.title" /></span>
+			</h1>
+
+			<form wicket:id="informationForm">
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+				<div class="column">
+
+					<h2 class="section system">
+						<wicket:message key="dashboard.information.environment"/>
+					</h2>
+
+					<div class="column twoColumn">
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.os" /></label>
+							<div class="text"><span wicket:id="os"></span>&nbsp;<span wicket:id="version"></span></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.architecture" /></label>
+							<div class="text" wicket:id="architecture"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.processors" /></label>
+							<div class="text" wicket:id="processors"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.committedvirtualmemory" /></label>
+							<div class="text" wicket:id="committedVirtualMemorySize"></div>
+						</div>
+					</div>
+
+					<div class="column twoColumn">
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.totalphysicalmemory" /></label>
+							<div class="text" wicket:id="totalPhysicalMemorySize"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.freephysicalmemory" /></label>
+							<div class="text" wicket:id="freePhysicalMemorySize"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.totalswapspacesize" /></label>
+							<div class="text" wicket:id="totalSwapSpaceSize"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.freeswapspacesize" /></label>
+							<div class="text" wicket:id="freeSwapSpaceSize"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="spacer"></div>
+
+				<div class="column">
+					<h2 class="section system">
+						<wicket:message key="dashboard.information.vmenvironment"/>
+					</h2>
+
+					<div class="column twoColumn">
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.process" /></label>
+							<div class="text" wicket:id="name"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.vm" /></label>
+							<div class="text" style="overflow: hidden;"><span wicket:id="vmName"></span>&nbsp;<span wicket:id="vmVersion"></span></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.vendor" /></label>
+							<div class="text" wicket:id="vmVendor"></div>
+						</div>
+					</div>
+
+					<div class="column twoColumn">
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.uptime" /></label>
+							<div class="text" wicket:id="upTime"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.starttime" /></label>
+							<div class="text" wicket:id="startTime"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key=dashboard.information.environment.compiler" /></label>
+							<div class="text" wicket:id="compiler"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="spacer"></div>
+
+				<div class="column">
+
+					<h2 class="section system">
+						<wicket:message key="dashboard.information.paths"/>
+					</h2>
+
+					<div class="input">
+						<label><wicket:message key=dashboard.information.environment.classpath" /></label>
+						<div class="text" wicket:id="classPath"></div>
+					</div>
+					<div class="input">
+						<label><wicket:message key=dashboard.information.environment.bootclasspath" /></label>
+						<div class="text" wicket:id="bootClassPath"></div>
+					</div>
+					<div class="input">
+						<label><wicket:message key=dashboard.information.environment.librarypath" /></label>
+						<div class="text" wicket:id="libraryPath"></div>
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

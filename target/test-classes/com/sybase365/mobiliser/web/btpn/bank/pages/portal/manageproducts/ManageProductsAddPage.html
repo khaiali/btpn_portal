@@ -1,0 +1,24 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div wicket:id="manageProductsDetailsPanel"></div>
+		<script type="text/javascript">
+			function display() {
+				//Appending a row
+				var headRow1 = document.createElement("th");
+				var newContent1 = document.createTextNode("  ");
+				headRow1.appendChild(newContent1);
+				var headRow2 = document.createElement("th");
+				var newContent2 = document.createTextNode("  ");
+				headRow2.appendChild(newContent2);
+				document.getElementById("headRow").appendChild(headRow1);
+				document.getElementById("headRow").appendChild(headRow2);
+			}
+			display();
+		</script>
+	</wicket:extend>
+</body>
+</html>

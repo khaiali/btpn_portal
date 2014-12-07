@@ -1,0 +1,52 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<div wicket:id="errorMessages"></div>
+
+	<form wicket:id="confirmOtpForm">
+
+		<div class="column twoColumn">
+
+			<div class="spacer"></div>
+
+			<div class="column">
+
+				<p>
+					<wicket:message key="authenticate.text1" />
+				</p>
+
+				<div class="input" id="inputTan">
+					<label for="tan"> <wicket:message key="otp" /> <span class="required">*</span> </label> 
+					<input type="text" wicket:id="otp" id="tan" />
+				</div>
+
+				<p>
+					<span wicket:id="text2" />
+				</p>
+
+				<p>
+					<span wicket:id="text3" />
+				</p>
+
+			</div>
+
+			<div class="column">
+
+				<div class="formAction">
+					<input type="submit" class="submitForm" wicket:id="continue" wicket:message="value:Continue" /> 
+					<input type="submit" wicket:id="resend" class="submitForm" wicket:message="value:otp.resend" /> 
+					<input type="submit" wicket:id="cancel" class="submitForm" wicket:message="value:Cancel" />
+				</div>
+
+			</div>
+
+		</div>
+
+	</form>
+	
+</wicket:panel>
+
+</body>
+</html>

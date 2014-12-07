@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">	
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<!--html xmlns="http://www.w3.org/1999/xhtml" dir="rtl"-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+
+	<link href="css/sybase.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/common.css" media="all" rel="stylesheet" type="text/css" />
+
+	<!-- Node: Order of JavaScript import is important! -->
+	<script type="text/javascript" src="scripts/jquery/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript">
+		var $j = jQuery.noConflict();
+	</script>
+	<!--[if lt IE 7]>
+	<script type="text/javascript" src="scripts/jquery/jquery.dropdown.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="scripts/prototype/ajaxHelper.js"></script>
+	<script type="text/javascript" src="scripts/prototype/prototype.js"></script>
+	<script type="text/javascript" src="scripts/BrowserDetector.js"></script>
+	<script type="text/javascript" src="scripts/CssLoader.js"></script>
+
+	<script type="text/javascript">
+		// Load Browser css
+		var cssLoader = new CssLoader();
+		cssLoader.load();
+	</script>
+
+	<script type="text/javascript">
+		function setDisabledAfterClickButton(){
+		for(i=0;i<document.forms.length;i++){
+			var newOnSubmit = '';
+			if(document.forms[i].onsubmit){
+			newOnSubmit = String(document.forms[i].onsubmit);
+			newOnSubmit = newOnSubmit.slice(newOnClick.indexOf('{')+1,newOnSubmit.length-1);
+			}
+			newOnSubmit = newOnSubmit + "; setTimeout('disableButtons()', 100); return true;";
+			document.forms[i].onsubmit = new Function(newOnSubmit);
+		}
+		}
+
+		function disableButtons(){
+		var buttons = getElementsByClassName('submit');
+		for(i=0;i<buttons.length;i++){
+			buttons[i].disabled=true;
+		}
+		}
+
+		function getElementsByClassName(class_name){
+		var all_obj,ret_obj=new Array(),j=0,teststr;
+		if(document.all)all_obj=document.all;
+		else if(document.getElementsByTagName && !document.all)all_obj=document.getElementsByTagName("*");
+		for(i=0;i<all_obj.length;i++){
+			if(all_obj[i].className.indexOf(class_name)!=-1){
+			teststr=","+all_obj[i].className.split(" ").join(",")+",";
+			if(teststr.indexOf(","+class_name+",")!=-1){
+				ret_obj[j]=all_obj[i];
+				j++;
+			}
+			}
+		}
+		return ret_obj;
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<wicket:child/>
+
+	<script type="text/javascript">
+		setDisabledAfterClickButton();
+	</script>
+
+</body>
+
+</html>
+

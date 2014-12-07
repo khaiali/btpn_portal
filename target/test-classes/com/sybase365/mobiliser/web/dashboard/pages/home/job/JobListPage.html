@@ -1,0 +1,80 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<form wicket:id="jobListForm">
+
+				<h1 class="friends">
+					<span><wicket:message key="jobList.title" /></span>
+					<input class="additionalLink last" type="submit" wicket:message="value:jobList.add.button" wicket:id="addJob" name="addJob">
+				</h1>
+
+				<div wicket:id="errorMessages"></div>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />: </li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="jobListTable" class="listTable">
+							<thead>
+							<tr>
+								<th class="jobHandlerName"><wicket:message key="jobList.handlerName" /></th>
+								<th class="jobSchedule"><wicket:message key="jobList.schedule" /></th>
+								<th class="jobImplementationUrl"><wicket:message key="jobList.implementationUrl" /></th>
+								<th class="actions last"><wicket:message key="jobList.actions" /></th>
+							</tr>
+							</thead>
+							<tfoot>
+							<tr>
+								<td class="empty" colspan="4">
+								</td>
+							</tr>
+							</tfoot>
+							<tbody>
+							<tr wicket:id="pageable">
+								<td class="jobHandlerName"><div wicket:id="handlerName">[Handler]</div></td>
+								<td class="jobSchedule" ><div wicket:id="schedule">[Schedule]</div></td>
+								<td class="jobImplementationUrl"><div wicket:id="implementationUrl">[Implementation]</div></td>
+								<td>
+									<ul>
+										<li>
+											<a href="#" wicket:id="editAction"><wicket:message key="jobList.editAction">[Edit]</wicket:message></a>
+										</li>
+										<li>
+											<a href="#" wicket:id="removeAction"><wicket:message key="jobList.removeAction">[Remote]</wicket:message></a>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

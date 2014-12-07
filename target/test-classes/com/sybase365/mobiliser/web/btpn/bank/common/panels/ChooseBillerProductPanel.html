@@ -1,0 +1,47 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="chooseBillerProductForm" method="post">
+						<fieldset>
+                            <legend class="reg_tab">
+                                <wicket:message key="chooseBillerProduct.title" />
+                            </legend>
+                            <div class="spacer"></div>
+                            <div wicket:id="errorMessages"></div>
+							<div class="column">
+							    <div wicket:id="containers.0" class="input" style="width: 720px">
+								    <label for="opt0" wicket:id="labels.0"></label>
+								    <select name="opt0" wicket:id="opts.0"></select>
+							    </div>
+                                <div wicket:id="containers.1" class="input" style="width: 720px">
+                                    <label for="opt1" wicket:id="labels.1"></label>
+                                    <select name="opt1" wicket:id="opts.1"></select>
+                                </div>
+                                <div wicket:id="containers.2" class="input" style="width: 720px">
+                                    <label for="opt2" wicket:id="labels.2"></label>
+                                    <select name="opt2" wicket:id="opts.2"></select>
+                                </div>
+                                <div wicket:id="containers.3" class="input" style="width: 720px">
+                                    <label for="opt3" wicket:id="labels.3"></label>
+                                    <select name="opt3" wicket:id="opts.3"></select>
+                                </div>
+                                <div wicket:id="containers.4" class="input" style="width: 720px">
+                                    <label for="opt4" wicket:id="labels.4"></label>
+                                    <select name="opt4" wicket:id="opts.4"></select>
+                                </div>
+							</div>
+						</fieldset>
+						<div class="spacer"></div>
+						<input name="next" wicket:id="btnNext" wicket:message="value:Next" class="submit acc_chk" type="submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

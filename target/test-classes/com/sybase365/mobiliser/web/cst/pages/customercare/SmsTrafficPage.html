@@ -1,0 +1,153 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="friends">
+				<span><wicket:message key="customerCare.title" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="smsTraffic.title" /></span>
+			</h1>
+			
+			<div wicket:id="errorMessages"></div>
+			
+			<form wicket:id="smsTrafficForm">
+
+				<div class="module clear">
+					
+					<div class="searchContainer">
+						
+						<div class="column twoColumn">
+			
+							<span wicket:id="filterType">
+							
+								<div class="input">
+								
+									<label><wicket:message key="transactionHistory.filterType" /></label>
+			
+									<div class="group">
+										<input type="radio" class="radio" id="Month" wicket:id="Month" name="Month" checked="checked">
+										<label for="Month"><wicket:message key="transactionHistory.filterType.month" /> </label> 
+										<input type="radio" class="radio" id="Date" wicket:id="Date" name="Date"> 
+										<label for="Date"><wicket:message key="transactionHistory.filterType.date" /> </label>
+									</div>
+									
+								</div> 
+								
+							</span>
+				
+						</div>
+						
+						<div class="column twoColumn">
+							
+							<div class="input" wicket:id="fromDateDiv">
+								<label><wicket:message key="smsTraffic.fromDate" /></label> 
+								<input readonly="readonly" tabindex="1" type="text" wicket:id=fromDate id="fromDate" style="width: 150px;" /> 
+							</div>
+							
+							<div class="input" wicket:id="toDateDiv">
+								<label><wicket:message key="smsTraffic.toDate" /></label> 
+								<input readonly="readonly" tabindex="2" type="text" wicket:id=toDate id="toDate" style="width: 150px;" /> 
+							</div>
+							
+							<div class="input" wicket:id="monthDiv">
+								<label><wicket:message key="smsTraffic.month" /></label> 
+								<select wicket:id="fromMonth" tabindex="3">
+									<option>dummy</option>
+								</select>
+							</div>
+							
+						</div>
+						
+						<div class="column">
+							
+							<div class="input">
+								<label><wicket:message key="smsTraffic.templateName" /></label> 
+								<input tabindex="4" wicket:id="templateName" size="20" />
+							</div>
+							
+						</div>
+
+					</div>
+
+					<div class="column">
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="search" wicket:message="value:Search" name="submit" />
+						</div>
+					</div>
+
+				</div>
+
+			</form>
+			
+			<div class="cmodule clear" wicket:id="messageLogDataViewContainer">
+
+				<!-- list paging -->
+				<ul class="tablePaging">
+					<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+					<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span><wicket:message key="table.totalItems" />)</li>
+					<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+				</ul>
+				<!-- end list paging -->
+
+				<div class="collapsable clear">
+
+					<table id="messageLogTable" class="listTable">
+
+						<wicket:enclosure child="pageable">
+
+							<thead>
+								<tr>
+									<th class="id" wicket:id="orderById"><wicket:message key="messageLog.id" /></th>
+									<th class="template"><wicket:message key="messageLog.templateName" /></th>
+									<th class="nickname"><wicket:message key="messageLog.messageText" /></th>
+									<th class="nickname"><wicket:message key="messageLog.sentDate" /></th>
+									<th class="nickname"><wicket:message key="actions" /></th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="5"></td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr wicket:id="pageable">
+									<td><div wicket:id="messageLogId">[Id]</div></td>
+									<td><div wicket:id="templateName">[Template Name]</div></td>
+									<td><div wicket:id="messageText">[Message Text]</div></td>
+									<td><div wicket:id="sentDate">[Sent Date]</div></td>
+									<td wicket:id="detailsAction">
+										<ul>
+											<li><a href="#"><wicket:message key="detailsAction">[Details]</wicket:message></a></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+
+						</wicket:enclosure>
+
+					</table>
+
+					<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

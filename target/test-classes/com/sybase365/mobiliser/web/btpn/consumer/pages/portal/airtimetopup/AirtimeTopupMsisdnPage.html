@@ -1,0 +1,48 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.ta/wicket-xhtml1.4-strict.dtd">
+<body>
+<wicket:extend>
+<div class="Main_container">
+			<div></div>
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="airtimeMsisdnForm">						
+					<fieldset>
+						<legend class="reg_tab">
+							<h2><wicket:message key="left.menu.airTimetopup" /></h2>
+						</legend>
+						<div wicket:id="errorMessages"></div>						
+						<div class="column twoColumn">
+							<div class="input">
+								<label for="airtimetopup.msisdn"><wicket:message key="label.topupmobile" /><span class="required">*</span></label>
+								<div class="group" wicket:id="airtimeBean.manualOrFavourite">
+									<input id="manual.msisdn" name="filterType" wicket:id="radio.manually"  class="radio" type="radio">
+									<label for="airtimetopup.manual.msisdn"><wicket:message key="label.manual" /></label>
+									<input id="favorite.msisdn" name="filterType" wicket:id="radio.favourite" class="radio" type="radio">
+									<label for="airtimetopup.favorite.msisdn"><wicket:message key="label.favourite" /></label>
+								</div>
+								<div class="column"><span class="required">*<wicket:message key="label.mandatory" /></span></div>
+							</div>
+						</div>						
+						<div class="column twoColumn">							
+							<div class="input" wicket:id="manualContainer">
+								<label for="airtimetopup.phone"><wicket:message key="label.msisdn" /><span class="required">*</span></label>
+								<input id="msisdn" name="msisdn" type="text" wicket:id="airtimeBean.selectedMsisdn.id">
+							</div>						
+							<div class="input" wicket:id="favouriteContainer">
+								<label for="airtimeTopup.favList"><wicket:message key="label.favlist" /><span class="required">*</span></label>	
+								<select name="selectedFavMsisdn" wicket:id="airtimeBean.selectedMsisdn">
+									<option value="">Select</option>													
+								</select>
+							</div>						
+							<div class="spacer"></div>
+							<input name="showTelcoDenomination" wicket:message="value:Submit" class="submit acc_chk" type="submit" wicket:id="btnSubmit">
+						</div>			
+					</fieldset>
+					</form>
+				</div>
+			</div>
+			<div></div>		
+		</div>
+</wicket:extend>
+</body>
+</html>		

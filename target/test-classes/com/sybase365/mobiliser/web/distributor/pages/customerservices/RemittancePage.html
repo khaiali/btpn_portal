@@ -1,0 +1,155 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="wallet">
+				<span><wicket:message key="menu.search.customer" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="remittance.title" /></span>
+			</h1>
+
+			<form wicket:id="remittanceForm">
+
+				<div wicket:id="errorMessages"></div>
+
+				<div class="module clear">
+
+					<h2 class="section bank">
+						<wicket:message key="remittance.bankAccountsTable.title" />
+						<input type="submit" class="additionalLink last" wicket:id="addBankAccount" wicket:message="value:remittance.button.addBankAccount" />
+					</h2>
+
+					<div class="cmodule clear">
+
+						<!-- list paging -->
+						<ul class="tablePaging">
+							<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+							<li class="recordsNumber"><span wicket:id="baStartIndex" /> - <span wicket:id="baEndIndex" /> (<span wicket:id="baTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+							<li class="pageSelectorsContainer" wicket:id="baNavigator"></li>
+						</ul>
+						<!-- end list paging -->
+
+						<div class="collapsable clear">
+
+							<table class="listTable">
+							
+								<wicket:enclosure child="baPageable">
+								
+									<thead>
+										<tr>
+											<th class="accountHolder"><wicket:message key="remittance.bankAccountsTable.accountHolder" /></th>
+											<th class="accountNumber"><wicket:message key="remittance.bankAccountsTable.accountNumber" /></th>
+											<th class="bankName"><wicket:message key="remittance.bankAccountsTable.bankName" /></th>
+											<th class="accountHolderAddress"><wicket:message key="remittance.bankAccountsTable.accountHolderAddress" /></th>
+											<th class="country"><wicket:message key="remittance.bankAccountsTable.country" /></th>
+											<th class="actions last"><wicket:message key="remittance.actions" /></th>
+										</tr>
+									</thead>
+									
+									<tfoot>
+										<tr>
+											<td class="empty" colspan="6"></td>
+										</tr>
+									</tfoot>
+									
+									<tbody>
+										<tr wicket:id="baPageable">
+											<td><div wicket:id="baAccountHolder">[Account Holder]</div></td>
+											<td><div wicket:id="baAccountNumber">[Account Number]</div></td>
+											<td><div wicket:id="baBankName">[Bank Name]</div></td>
+											<td><div wicket:id="baAccountHolderAddress">[Account Holder Address]</div></td>
+											<td><div wicket:id="baCountry">[Country]</div></td>
+											<td>
+												<ul>
+													<li><a href="#" wicket:id="baRemitAction"><wicket:message key="remittance.remitAction">[Remit]</wicket:message></a></li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+									
+								</wicket:enclosure>
+								
+							</table>
+
+							<div id="noItemsMsg" class="centerMsg" wicket:id="baNoItemsMsg">[No Items Available]</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="module clear">
+
+					<h2 class="section coins">
+						<wicket:message key="remittance.walletsTable.title" />
+						<input type="submit" class="additionalLink last" wicket:id="addWallet" wicket:message="value:remittance.button.addWallet" />
+					</h2>
+
+					<div class="cmodule clear">
+
+						<!-- list paging -->
+						<ul class="tablePaging">
+							<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+							<li class="recordsNumber"><span wicket:id="wStartIndex" /> - <span wicket:id="wEndIndex" /> (<span wicket:id="wTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+							<li class="pageSelectorsContainer" wicket:id="wNavigator"></li>
+						</ul>
+						<!-- end list paging -->
+
+						<div class="collapsable clear">
+
+							<table class="listTable">
+							
+								<wicket:enclosure child="wPageable">
+								
+									<thead>
+										<tr>
+											<th class="accountBalance"><wicket:message key="remittance.walletsTable.msisdn" /></th>
+											<th class="actions last"><wicket:message key="remittance.actions" /></th>
+										</tr>
+									</thead>
+									
+									<tfoot>
+										<tr>
+											<td class="empty" colspan="2"></td>
+										</tr>
+									</tfoot>
+									
+									<tbody>
+										<tr wicket:id="wPageable">
+											<td><div wicket:id="wMsisdn">[MSISDN]</div></td>
+											<td>
+												<ul>
+													<li><a href="#" wicket:id="wRemitAction"><wicket:message key="remittance.remitAction">[Remit]</wicket:message></a></li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+									
+								</wicket:enclosure>
+								
+							</table>
+
+							<div id="noItemsMsg" class="centerMsg" wicket:id="wNoItemsMsg">[No Items Available]</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

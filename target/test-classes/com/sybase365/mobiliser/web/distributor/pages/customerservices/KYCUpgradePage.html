@@ -1,0 +1,151 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript">
+		$j(document).ready(function() {
+			var updateButton = $j('#save');
+
+			// init update button based on verified checkbox
+			if ($j('#verified').is(':checked')) {
+				updateButton.removeClass('disabled');
+				updateButton.attr("disabled", false);
+			} else {
+				updateButton.addClass('disabled');
+				updateButton.attr("disabled", true);
+			}
+
+			// set onchange fn to toggle update button on checkbox state
+			$j('#verified').click(function() {
+				if (this.checked) {
+					updateButton.removeClass('disabled');
+					updateButton.attr("disabled", false);
+				} else {
+					updateButton.addClass('disabled');
+					updateButton.attr("disabled", true);
+				}
+			});
+		});
+	</script>
+	
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="search">
+				<span><wicket:message key="menu.search.customer" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="kycUpgrade.title" /></span>
+			</h1>
+
+			<form wicket:id="kyUpgradeForm">
+
+				<div wicket:id="errorMessages"></div>
+
+				<h2 class="section friends">
+					<wicket:message key="kycUpgrade.headline.personal" />
+				</h2>
+
+				<div class="column">
+				
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.msisdn" /></label>
+						<div class="text" wicket:id="customer.msisdn"></div>
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.address.firstName" /></label> 
+						<input type="text" wicket:id="customer.address.firstName" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.address.lastName" /></label> 
+						<input type="text" wicket:id="customer.address.lastName" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.address.street1" /></label> 
+						<input type="text" wicket:id="customer.address.street1" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.address.street2" /></label> 
+						<input type="text" wicket:id="customer.address.street2" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.address.zip" /></label> 
+						<input type="text" wicket:id="customer.address.zip" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.address.city" /></label> 
+						<input type="text" wicket:id="customer.address.city" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.address.state" /></label> 
+						<input type="text" wicket:id="customer.address.state" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.address.kvCountry" /></label> 
+						<select wicket:id="customer.address.kvCountry">
+							<option>select</option>
+						</select>
+					</div>
+					<div class="input">
+						<label> <wicket:message key="kycUpgrade.customer.kvIdentityType" /> </label> 
+						<select wicket:id="customer.kvIdentityType">
+							<option>select</option>
+						</select>
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.identityValue" /> </label> 
+						<input type="text" wicket:id="customer.identityValue" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.issuer" /></label> 
+						<input type="text" wicket:id="customer.issuer" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.expirationDate" /></label> 
+						<input readonly="readonly" type="text" wicket:id="expirationDate" id="expirationDate" style="width: 150px;" /> 
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.kvKycLevel" /></label> 
+						<select wicket:id="customer.kvKycLevel">
+							<option>unknown</option>
+						</select>
+					</div>
+					<div class="input">
+						<label><wicket:message key="kycUpgrade.customer.verified" /></label>
+						<div class="group">
+							<input type="checkbox" style="width: 25px; border: 0px" id="verified" wicket:id="customer.verified" />
+						</div>
+					</div>
+
+					<div class="column">
+					
+						<div class="formAction">
+							<input type="submit" class="submitForm disabled" disabled="disabled" id="bt_continue" wicket:id="save" wicket:message="value:Update" /> 
+							<input type="submit" class="submitForm" wicket:id="cancel" wicket:message="value:Cancel" />
+						</div>
+						
+					</div>
+
+				</div>
+				<!-- END column -->
+				
+				<div class="column buffer"></div>
+
+			</form>
+
+			<div wicket:id="attachments.panel"></div>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

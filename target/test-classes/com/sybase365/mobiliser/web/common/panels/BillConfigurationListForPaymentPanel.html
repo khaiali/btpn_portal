@@ -1,0 +1,73 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="billConfigListForPaymentForm">
+
+		<div wicket:id="errorMessages"></div>
+
+		<div class="cmodule clear">
+
+			<!-- list paging -->
+			<ul class="tablePaging">
+				<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+				<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+				<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+			</ul>
+			<!-- end list paging -->
+
+			<div class="collapsable clear">
+
+				<table id="billConfigListForPaymentTable" class="listTable">
+					<wicket:enclosure child="pageable">
+					<thead>
+						<tr>
+							<th wicket:id="orderByName"><wicket:message key="billConfigListForPayment.name" /></th>
+							<th><wicket:message key="billConfigListForPayment.type" /></th>
+							<th><wicket:message key="billConfigListForPayment.reference" /></th>
+							<th class="actions last"><wicket:message key="billConfigListForPayment.actions" /></th>
+						</tr>
+					</thead>
+				
+					<tfoot>
+						<tr>
+							<td class="empty" colspan="4"></td>
+						</tr>
+					</tfoot>
+
+					<tbody>
+						<tr wicket:id="pageable">
+							<td class="friendsName"><div wicket:id="name">[Name]</div></td>
+							<td class="friendsNickname"><div wicket:id="type">[Type]</div></td>
+							<td class="friendsMsisdn"><div wicket:id="reference">[Reference]</div></td>
+							<td>
+								<ul>
+									<li><a href="#" wicket:id="payAction"><wicket:message key="billConfigListForPayment.payAction">[Make Payment]</wicket:message></a></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+					
+					</wicket:enclosure>
+				</table>
+
+				<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+			</div>
+
+		</div>
+
+		<div class="column">
+
+			<div class="buttonWrap"></div>
+
+		</div>
+
+	</form>
+
+
+</wicket:panel>
+
+</body>
+</html>

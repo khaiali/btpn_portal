@@ -1,0 +1,118 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="approveForm">
+						<fieldset>
+							<legend class="reg_tab"><wicket:message key="header.manageProducts" /></legend>
+							<div class="column">
+								<div class="displayTag">
+									<table id="list">
+										<thead>
+											<tr>
+												<th><wicket:message key="label.fieldname" /></th>
+												<th><wicket:message key="label.currentValue" /></th>
+												<th><wicket:message key="label.newValue" /></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="odd">
+												<td><wicket:message key="label.action" /></td>
+												<td wicket:id="approveBean.action"></td>
+												<td wicket:id="approveBean.newAction"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.productId" /></td>
+												<td wicket:id="approveBean.productId"></td>
+												<td wicket:id="approveBean.newProductId"></td>
+											</tr>
+											<tr class="odd">
+												<td><wicket:message key="label.productName" /></td>
+												<td wicket:id="approveBean.productName"></td>
+												<td wicket:id="approveBean.newProductName"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.productType" /></td>
+												<td wicket:id="approveBean.productType.value"></td>
+												<td wicket:id="approveBean.newProductType.value"></td>
+											</tr>
+											<tr class="odd">
+												<td><wicket:message key="label.initialDeposit" /></td>
+												<td wicket:id="approveBean.initialDeposit"></td>
+												<td wicket:id="approveBean.newInitialDeposit"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.productglcode" /></td>
+												<td wicket:id="approveBean.productGLCode.value"></td>
+												<td wicket:id="approveBean.newProductGLCode.value"></td>
+											</tr>
+											<tr class="odd">
+												<td><wicket:message key="label.feeGLCode" /></td>
+												<td wicket:id="approveBean.feeGLCode.value"></td>
+												<td wicket:id="approveBean.newFeeGLCode.value"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.roleName" /></td>
+												<td wicket:id="approveBean.roleName"></td>
+												<td wicket:id="approveBean.newRoleName"></td>
+											</tr>
+											<tr class="odd">
+												<td><wicket:message key="label.roleDescription" /></td>
+												<td wicket:id="approveBean.roleDescription"></td>
+												<td wicket:id="approveBean.newRoleDescription"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.adminFee" /></td>
+												<td wicket:id="approveBean.adminFee"></td>
+												<td wicket:id="approveBean.newAdminFee"></td>
+											</tr>
+											<tr class="odd">
+												<td><wicket:message key="label.minBalance" /></td>
+												<td wicket:id="approveBean.minBalance"></td>
+												<td wicket:id="approveBean.newMinBalance"></td>
+											</tr>
+											<div wicket:id="productListView">
+												<tr class="even">
+													<td><wicket:message key="label.minRange" /></td>
+													<td wicket:id="minRange"></td>
+													<td wicket:id="newMinRange"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.maxRange" /></td>
+													<td wicket:id="maxRange"></td>
+													<td wicket:id="newMaxRange"></td>
+												</tr>
+												<tr class="even">
+													<td><wicket:message key="label.fixedInterest" /></td>
+													<td wicket:id="fixedAmount"></td>
+													<td wicket:id="newFixedAmount"></td>
+												</tr>
+												<tr class="odd">
+													<td><wicket:message key="label.percentInterest" /></td>
+													<td wicket:id="percentageAmount"></td>
+													<td wicket:id="newPercentageAmount"></td>
+												</tr>
+											</div>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<input name="approveProduct" wicket:id="btnApprove" wicket:message="value:Approve" tabindex="1" class="submit acc_chk" type="submit" /> 
+								<input	style="left: 250px" wicket:id="btnReject"  name="rejectProduct" wicket:message="value:Reject" tabindex="1"	class="submit acc_chk" type="submit" /> 
+								<input	style="left: 270px" wicket:id="btnCancel"  name="cancelApproveReject"	wicket:message="value:Cancel" tabindex="1"	class="submit acc_chk" type="submit" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

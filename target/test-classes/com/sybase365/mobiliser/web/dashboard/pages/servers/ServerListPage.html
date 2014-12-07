@@ -1,0 +1,106 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content home">
+
+		<div class="module clear">
+
+			<form wicket:id="serverListForm">
+
+				<h1 class="servers">
+					<span><wicket:message key="serverList.title" /></span>
+					<input type="submit" class="additionalLink last" wicket:id="addServer" wicket:message="value:serverList.button.addServer" />
+				</h1>
+
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />: </li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table class="listTable">
+							<thead>
+								<tr>
+									<th class="serverIcon"><wicket:message key="serverList.selected" /></th>
+									<th class="serverDetail"><wicket:message key="serverList.address" /></th>
+									<th class="serverStatus"><wicket:message key="serverList.status" /></th>
+									<th class="action"><wicket:message key="serverList.actions" /></th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="4"></td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr wicket:id="pageable">
+
+									<td class="serverIcon">
+										<img wicket:id="serverIcon" style="padding-top: 10px;" height="48px" width="58px" border="0" />
+									</td>
+
+									<td class="serverDetail">
+										<ul style="width: 300px;">
+											<li>
+												<div class="input">
+													<label><wicket:message key="serverList.hostname">IP Address:</wicket:message></label>
+													<div class="text" wicket:id="hostname"/>
+												</div>
+											</li>
+											<li>
+												<div class="input">
+													<label><wicket:message key="serverList.port">Port:</wicket:message></label>
+													<div class="text" wicket:id="port"/>
+												</div>
+											</li>
+										</ul>
+									</td>
+
+									<td class="serverStatus">
+										<img wicket:id="statusIcon" />
+									</td>
+
+									<td class="action">
+										<ul>
+											<li>
+												<a href="#" wicket:id="pingAction"><wicket:message key="serverList.pingAction">[Ping]</wicket:message></a>
+											</li>
+											<li>
+												<a href="#" wicket:id="selectAction"><wicket:message key="serverList.selectAction">[Select]</wicket:message></a>
+											</li>
+											<li>
+												<a href="#" wicket:id="removeAction"><wicket:message key="serverList.removeAction">[Remove]</wicket:message></a>
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

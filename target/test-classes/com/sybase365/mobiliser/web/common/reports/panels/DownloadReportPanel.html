@@ -1,0 +1,51 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />: </li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="report.batchTable" class="listTable">
+							<thead>
+							<tr>
+								<th class="reportName"><wicket:message key="report.download.reportName" /></th>
+								<th class="actions last"><wicket:message key="report.download.actions" /></th>
+							</tr>
+							</thead>
+							<tfoot>
+							<tr>
+								<td class="empty" colspan="2">
+								</td>
+							</tr>
+							</tfoot>
+							<tbody>
+							<tr wicket:id="pageable">
+								<td class="reportName" ><div wicket:id="reportName">[reportName]</div></td>
+								<td>
+									<ul>
+										<li>
+											<a href="#" wicket:id="download"><wicket:message key="report.download.download">[download]</wicket:message></a>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+
+						<div id="noReports" class="centerMsg" wicket:id="noReports">[No Items Available]</div>
+
+					</div>
+
+
+</wicket:panel>
+
+</body>
+</html>

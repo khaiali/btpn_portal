@@ -1,0 +1,45 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<script>
+	function keyEnter(btn) {
+		// process only the Enter key
+		if (event.keyCode == 13) {
+			// cancel the default submit
+			event.returnValue = false;
+			event.cancel = true;
+			// submit the form by programmatically clicking the specified button
+			btn.click();
+		}
+	}
+</script>
+</head>
+<body>
+	<wicket:panel>
+		<div id="centerContent" class="content">
+			<form wicket:id="registrationMobileNumberForm"
+				onkeydown="keyEnter(checkForMobileNo)" autocomplete="off">
+				<fieldset>
+					<legend class="reg_tab3" wicket:id="label.registration"></legend>
+					<div wicket:id="errorMessages"></div>
+					<div class="input" style="margin: 16px 0 0 0; top: 0px">
+						<label for="mobileNumber" wicket:id="label.mobilenumber">
+						</label><input id="mobileNumber" maxlength="14"
+							wicket:id="customer.mobileNumber" type="text" /> <br> <br>
+					</div>
+					<div class="column">
+						<p>
+							<span class="required">*</span> <wicket:message key="childagent.label.required" />
+						</p>
+						<input id="checkForMobileNo" wicket:id="submitButton"
+							wicket:message="value:label.submit" class="submit btnstyle"
+							type="submit" />
+					</div>
+					<div class="spacer"></div>					
+					<br>
+				</fieldset>
+			</form>
+		</div>
+	</wicket:panel>
+</body>
+</html>

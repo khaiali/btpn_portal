@@ -1,0 +1,126 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="productDetailsForm" method="post">
+						<fieldset>
+							<legend class="reg_tab" wicket:id="product.label">
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column">
+								<div class="input" wicket:id="productIdRequired">
+									<label for="productId"><wicket:message
+											key="label.productId" /></label> <input
+										wicket:id="productsBean.productId" name="productId"
+										type="text" />
+								</div>
+								<div class="input">
+									<label for="productname"><wicket:message
+											key="label.productName" /><span class="required">*</span> </label> <input
+										wicket:id="productsBean.productName" name="productName"
+										type="text" />
+								</div>
+								<div class="input">
+									<label for="producttype"><wicket:message
+											key="label.productType" /><span class="required">*</span></label> <input
+													wicket:id="productsBean.productType.id" name="productType"
+										type="text" />
+										 <select name="productType" wicket:id="productsBean.productType">
+											<option value="">Please Select</option>
+											<option value="121212121">Test</option>
+										</select>
+								</div>
+								<div class="input">
+									<label for="productglcode"><wicket:message
+											key="label.productGLCode" /><span class="required">*</span>
+									</label> <select name="productGLcode"
+										wicket:id="productsBean.productGLCode">
+										<option value="">Please Select</option>
+										<option value="121212121">Test</option>
+									</select>
+								</div>									
+								<div class="input">
+									<label for="feegl"><wicket:message
+											key="label.feeGLCode" /><span class="required">*</span> </label> <select
+										name="feeGLCode" wicket:id="productsBean.feeGLCode">
+									</select>
+								</div>
+								<div class="input">
+									<label for="feegl"><wicket:message
+											key="label.roleId" /><span class="required">*</span> </label> <input
+										name="roleId" wicket:id="productsBean.roleName" type="text">									
+								</div>								
+								<div class="input">
+									<label for="feegl"><wicket:message
+											key="label.roleDescription" /><span class="required">*</span> </label> <input
+										name="roleId" wicket:id="productsBean.roleDescription" type="text">
+								</div>								
+								<div class="input">
+									<label for="minbalance"><wicket:message
+											key="label.minBal" /><span class="required">*</span> </label> <input
+										id="minBalance" name="minBalance"
+										wicket:id="productsBean.minBalance" type="text" />
+								</div>
+								<div class="input">
+									<label for="initialdeposit"><wicket:message
+											key="label.initialDep" /><span class="required">*</span> </label> <input
+										id="initialBalance" name="initialBalance"
+										wicket:id="productsBean.initialDeposit" type="text" />
+								</div>
+								<div class="input">
+									<label for="adminfee"><wicket:message
+											key="label.adminFee" /> <span class="required">*</span> </label> <input
+										id="adminFee" name="adminFee"
+										wicket:id="productsBean.adminFee" type="text" />
+								</div>
+							</div>
+							<div class="displayTag" style="float: left" wicket:id="productsRangeContainer">
+								<table id="tierlist" class="tierlist">
+									<thead>
+										<tr id="headRow">
+											<th><wicket:message key="label.minRange" /></th>
+											<th><wicket:message key="label.maxRange" /></th>
+											<th><wicket:message key="label.interests" /></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="odd" wicket:id="pageable">	
+											<td><input type="text" wicket:id="minRange" /></td>
+											<td><input type="text" wicket:id="maxRange" /></td>											
+											<td>
+												<wicket:container wicket:id="interest">
+													<label><wicket:message key="label.fixedInterest" /></label> 
+													<input type="radio"	wicket:id="radio1" /> <br />
+													<label><wicket:message key="label.percentInterest" /></label>
+													<input type="radio" wicket:id="radio2"	/> <br /> 
+													<label><wicket:message key="label.value" /></label>
+												</wicket:container>
+												<input type="text" wicket:id="value" />
+											</td>
+											
+											<td wicket:id="addContainer"><a href="#" wicket:id="addLink"><img src="images/btpn/add.png" /></a></td>
+											<td wicket:id="removeContainer"><a href="#" wicket:id="deleteLink"><img src="images/btpn/remove.png" /></a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<input name="addProduct" wicket:id="addBtn" wicket:message="value:Add" tabindex="1"	class="submit acc_chk" type="submit" />
+								<input name="editProduct" wicket:id="editBtn" wicket:message="value:Edit" tabindex="1"	class="submit acc_chk" type="submit" />
+								<input	style="left: 250px" wicket:id="removeBtn" wicket:message="value:Remove" name="removeProduct" value="Remove"	tabindex="1" class="submit acc_chk" type="submit" /> 
+								<input	style="left: 270px" wicket:id="cancelBtn" wicket:message="value:Cancel" name="cancelEditProduct" value="Cancel" tabindex="1" class="submit acc_chk" type="submit" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

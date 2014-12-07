@@ -1,0 +1,94 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<title><wicket:message key="checkout.title" /></title>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<div wicket:id="errorMessages"></div>
+
+			<h1 class="lock">
+				<span><wicket:message key="getMsisdn.title" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="checkPin.title" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="smsAuthentication.title" /></span>
+			</h1>
+
+			<h3 class="help">
+				<wicket:message key="smsAuthentication.message" />
+			</h3>
+
+			<div id="ajaxIndicator" class="centered">
+				<img src="images/checkout/ajax-loader.gif" /> <br />
+				<wicket:message key="smsAuthentication.wait" />
+			</div>
+
+			<p>
+				<wicket:message key="smsAuthentication.warning" />
+			</p>
+
+			<!-- Back Button -->
+			<div class="column" wicket:id="backDiv">
+				<div class="formAction">
+					<form wicket:id="backForm" id="backForm">
+						<input type="submit" class="submit large" wicket:id="back" wicket:message="Value:Zurück zum Online Shop" />
+					</form>
+				</div>
+			</div>
+
+			<!-- Retry form [Invisible]-->
+			<div class="column" wicket:id="retryDiv">
+				<div class="formAction">
+					<form wicket:id="retryForm" id="retryForm">
+						<wicket:message key="smsAuthentication.timeout" />
+						<input wicket:id="retry" type="submit" class="submit medium" wicket:message="value:Erneut versuchen" />
+					</form>
+				</div>
+			</div>
+
+			<!-- Error Text [Invisible] -->
+			<div id="error">
+				<span wicket:id="smsAuthenticationError"></span>
+			</div>
+
+			<!-- Cancel Form [Invisible] -->
+			<div class="column" wicket:id="cancelDiv">
+				<div class="formAction">
+					<form id="cancelForm" wicket:id="cancelForm">
+						<wicket:message key="smsAuthentication.cancel" />
+						<input type="submit" class="submit medium" wicket:message="Value:Abbrechen" wicket:id="cancel" />
+					</form>
+				</div>
+			</div>
+
+			<!-- Ajax Form [Invisible] -->
+			<form id="ajaxForm" name="ajaxForm" wicket:id="ajaxForm" class="invisible">
+				<input type="hidden" />
+			</form>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+
+	callWicket();
+	
+	function callWicket() { 
+		var wcall = wicketAjaxPost(document.getElementsByName("ajaxForm")[0].action);
+		setTimeout(callWicket, 1000);
+	} 
+
+	</script>
+</wicket:extend>
+
+</body>
+</html>

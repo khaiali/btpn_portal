@@ -1,0 +1,130 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="billPaymentConfirmForm">
+						<div wicket:id="errorMessages"></div>
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="header.billPayment" /></h2>
+							</legend>
+							<div class="column twoColumn">
+								<div class="input">
+									<label><wicket:message key="label.biller" /></label>
+									<div class="input_value">
+										<span wicket:id="billPaymentBean.productName"></span>
+									</div>
+								</div>
+								<div class="input">
+									<label><wicket:message key="label.subBiller" /></label>
+									<div class="input_value">
+										<span wicket:id="billPaymentBean.label"></span>
+									</div>
+								</div>
+
+								<div wicket:id="amountRadioGroup">
+									<div class="input">
+										<label><wicket:message key="label.amountType" /><span class="required">*</span></label>
+										<div class="group" style="width: 100px;">
+											<input type="radio" class="radio" wicket:id="amountCharged" />
+												<label><wicket:message key="label.charged" /></label> 
+											<input type="radio" class="radio" wicket:id="amountFixed" /> 
+												<label><wicket:message key="label.fixed" /></label>
+										</div>
+										<div class="column">
+											<span class="required">*</span>
+											<wicket:message key="requiredFields" />
+										</div>
+									</div>
+								</div>
+
+
+								<div class="input" wicket:id="baseAmountContainer">
+									<label> <wicket:message key="label.baseAmount" />
+									</label> <span class="required">*</span> <input type="text"
+										wicket:id="billPaymentBean.baseAmount" />
+								</div>
+							</div>
+							<div class="column">
+								<div class="input" style="width: 400px">
+									<b> <wicket:message key="baseamount.note" />
+									</b>
+								</div>
+							</div>
+							<div class="column" style="width: 300px">
+								<div class="input">
+									<label for="siName"><wicket:message
+											key="addStandingInst.siName" /><span class="required">*</span></label>
+									<input type="text" id="siName"
+										wicket:id="billPaymentBean.siName" />
+								</div>
+								<div wicket:id="frequencyRadioGroup">
+									<div class="input">
+										<label><wicket:message
+												key="silisttable.view.frequency" /><span class="required">*</span></label>
+										<div class="group" style="width: 700px">
+											<input type="radio" class="radio" wicket:id="frequencyMonth" />
+											<label><wicket:message key="filterType.month" /></label> <input
+												type="radio" class="radio" wicket:id="frequencyQuarter" />
+											<label><wicket:message key="filterType.quarter" /></label> <input
+												type="radio" class="radio" wicket:id="frequencyWeek" /> <label><wicket:message
+													key="filterType.week" /></label> <input type="radio" class="radio"
+												wicket:id="frequencyDate" /> <label><wicket:message
+													key="filterType.date" /></label>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="input" id="dateOfBirthBlock"
+									style="width: 355px; float: left;">
+									<div class="date_Div">
+										<label><wicket:message key="addStandingInst.date" /><span
+											class="required">*</span></label> <input readonly="readonly"
+											tabindex="25" type="text" size="10"
+											wicket:id="billPaymentBean.startDate" id="fromDate"
+											style="width: 150px;" />
+									</div>
+								</div>
+								<div class="input" id="dateOfBirthBlock"
+									style="width: 355px; float: left;">
+									<div class="date_Div">
+										<label><wicket:message key="addStandingInst.endDate" /><span
+											class="required">*</span></label> <input readonly="readonly"
+											tabindex="25" type="text" size="10"
+											wicket:id="billPaymentBean.expiryDate" id="expirationDate"
+											style="width: 150px;" />
+									</div>
+								</div>
+								<div class="input" wicket:id="selectedDayContainer">
+									<label><wicket:message key="addStandingInst.days" /></label> <select
+										wicket:id="billPaymentBean.selectedDay">
+										<option>dummy</option>
+									</select>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<span class="required">*</span>
+								<wicket:message key="requiredFields" />
+							</div>
+							<div class="spacer"></div>
+							<input type="submit" class="submit acc_chk"
+								wicket:id="confirmButton" value="Konfirmasi" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

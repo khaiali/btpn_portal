@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/btpn/agent-portal/portal.css" media="all"
+		rel="stylesheet" type="text/css" />
+	<script type="text/javascript"
+		src="scripts/btpn/agent-portal/portal.js"></script>
+</wicket:head>
+</head>
+<body>
+	<wicket:extend>
+		<div id="container">
+			<!-- Header Start -->
+
+			<div id="header">
+				<div id="agentInfo">
+					<span id="agent_username" wicket:id="header.login.info"></span>
+				</div>
+				<!-- END agent info -->
+				<!-- Logo -->
+				<a href="#" wicket:id="header.logo"><div id="logo_login"></div></a>
+				<!-- Seperator for Logo -->
+				<!-- Navigation -->
+				<div id="navigation">
+					<div id="nav">
+						<ul class="dropdown dropdown-horizontal">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- END HEADER -->
+
+			<div class="pageContent">
+				<div id="content_login">
+					<div id="content"
+						style="width: 998px; border: 1px solid #BDBDBC; border-top: none; border-bottom: none;">
+						<div id="centerContent">
+							<form wicket:id="otpForm" method="post">
+								<div wicket:id="errorMessages" />
+								<div class="column">
+									<h2>
+										<wicket:message key="enter.otp" />
+									</h2>
+									<div class="input">
+										<label for="otp"><wicket:message key="label.otp" /><span class="required">*</span>
+										</label> <input id="loginOTP" maxlength="6" name="loginOTP"
+											wicket:id="otp" type="password" />
+									</div>
+									<div class="column">
+										<input name="verifyLoginPasswordOTP" wicket:message="value:Submit"
+											class="submit acc_chk" type="submit" wicket:id="otpSubmit"/>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div id="home_bottom_bg"></div>
+					<div id="floatingBreaker"></div>
+				</div>
+				<noscript>
+					<div id="floatingBreaker"></div>
+				</noscript>
+			</div>
+			<div id="footer_login">
+				<div class="informasi">
+					<span><wicket:message key="footer.information" /></span>
+					<h1>
+						<wicket:message key="footer.contact" />
+					</h1>
+				</div>
+				<div class="right_footer">
+					<div class="nav_icon_box">
+						<div class="nav_icon_box_in term">
+							<a href="#" tabindex="7"><wicket:message key="footer.termsAndConditions"/></a>
+						</div>
+						<div class="nav_icon_box_in faq">
+							<a href="#" tabindex="6"><wicket:message key="footer.faq" /></a>
+						</div>
+						<div class="nav_icon_box_in about">
+							<a href="#" tabindex="5"><span wicket:id="footer.about.btpn" />  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Start of Bank Portal Application Footer -->
+			<div id="footer">
+				<div class="info">
+					<center>
+						<wicket:message key="foooter.copyright" />
+						&copy;
+						<wicket:message key="foooter.bank.name" />
+						<span style="color: inherit;" id="session.timeout.counter"></span>
+					</center>
+				</div>
+			</div>
+			<!-- End of Agent Portal Application Footer -->
+		</div>
+		<div class="print"></div>
+		<!-- Session time out Messages -->
+		<div style="display: none" id="session.timeout.counter.label">
+			<wicket:message key="session.timeout.counter.label" />
+		</div>
+		<div style="display: none" id="session.timeout.counter.minutes.label">
+			<wicket:message key="session.timeout.counter.minutes.label" />
+		</div>
+		<div style="display: none" id="session.timeout.label">
+			<wicket:message key=session.timeout.label" />
+		</div>
+		<div style="display: none;" id="session.timeout.seconds"
+			wicket:id="application.session.timeout.seconds"></div>
+
+		<script type="text/javascript">			//Display Timer
+			setupTimerDisplay();
+			//TODO : Get Session Timeout from preferences
+			var sessionTimoutSeconds = document.getElementById("session.timeout.seconds").innerHTML;			
+			sessionTimoutPrint();			
+			sessionTimoutDisplay() ;
+			-->
+		</script>
+	</wicket:extend>
+</body>
+</html>

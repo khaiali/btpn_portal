@@ -1,0 +1,96 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<form wicket:id="bankListForm">
+
+				<h1 class="wallet">
+					<span><wicket:message key="bankList.title" /></span>
+					<input type="submit" class="additionalLink last" wicket:id="add" wicket:message="value:bankList.add.button" name="submit" />
+				</h1>
+
+				<div wicket:id="errorMessages"></div>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="bankListTable" class="listTable">
+
+							<wicket:enclosure child="remove">
+
+								<thead>
+									<tr>
+										<th class="select"><wicket:message key="bankList.select" /></th>
+										<th class="extBanknickname" wicket:id="orderByAlias"><wicket:message key="bankList.alias" /></th>
+										<th class="extBankAccountNumber"><wicket:message key="bankList.accountNumber" /></th>
+										<th class="extBankCode"><wicket:message key="bankList.bankCode" /></th>
+										<th class="extBankAccountHolder"><wicket:message key="bankList.accountHolderName" /></th>
+										<th class="actions last"><wicket:message key="bankList.actions" /></th>
+									</tr>
+								</thead>
+
+								<tfoot>
+									<tr>
+										<td class="formButtons" colspan="6">
+											<div class="buttonWrap">
+												<input type="submit" class="submitForm" wicket:id="remove" wicket:message="value:bankList.remove.button" />
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+								
+							</wicket:enclosure>
+							
+							<tbody>
+								<tr wicket:id="pageable">
+									<td class="select"><input type="checkbox" wicket:id="selected" /></td>
+									<td class="extBankNickname"><a href="#" wicket:id="aliasLink" class="applicationName"><div wicket:id="alias">[Nickname]</div></a></td>
+									<td class="extBankAccountNumber"><div wicket:id="accountNumber">[Account Number]</div></td>
+									<td class="extBankCode"><div wicket:id="bankCode">[Bank Code]</div></td>
+									<td class="extBankAccountHolder"><div wicket:id="accountHolderName">[Account Holder Name]</div></td>
+									<td>
+										<ul>
+											<li><a href="#" wicket:id="editAction"><wicket:message key="bankList.editAction">[Edit]</wicket:message></a></li>
+											<li class="last"><a href="#" wicket:id="sendMoneyAction"><wicket:message key="bankList.sendMoneyAction">[Send Money]</wicket:message></a></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+				<div class="column">
+
+					<div class="buttonWrap"></div>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

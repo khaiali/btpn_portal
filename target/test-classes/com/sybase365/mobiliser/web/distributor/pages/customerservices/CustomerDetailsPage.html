@@ -1,0 +1,137 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="search">
+				<span><wicket:message key="menu.search.customer" /></span>
+				<span><wicket:message key="application.breadcrumb.separator" /></span>
+				<span><wicket:message key="customerDetails.title" /></span>
+			</h1>
+
+			<form wicket:id="customerDetailsForm">
+
+				<div wicket:id="errorMessages"></div>
+
+				<h2 class="section friends">
+					<wicket:message key="customerDetails.headline.personal" />
+				</h2>
+
+				<div class="column">
+
+					<!-- START left column -->
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label><wicket:message key="customerDetails.personal.firstName" /></label>
+							<div class="text" wicket:id="customer.address.firstName"></div>
+						</div>
+						<div class="input">
+							<label for="msisdn"><wicket:message key="customerDetails.personal.msisdn" /></label>
+							<div class="text" wicket:id="customer.msisdn"></div>
+						</div>
+						<div class="input">
+							<label for="identityType"><wicket:message key="customerDetails.personal.identityType" /></label>
+							<div class="text" wicket:id="customer.kvIdentityType"></div>
+						</div>
+						<div class="input">
+							<label><wicket:message key="customerDetails.personal.timeZone" /></label>
+							<div class="text" wicket:id="customer.timeZone"></div>
+						</div>
+						
+					</div>
+					<!-- END left column -->
+
+					<!-- START right column -->
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label for="lastName"><wicket:message key="customerDetails.personal.lastName" /></label>
+							<div class="text" wicket:id="customer.address.lastName"></div>
+						</div>
+						<div class="input">
+							<label for="customerCountry"><wicket:message key="customerDetails.personal.country" /></label>
+							<div class="text" wicket:id="customer.kvCountry"></div>
+						</div>
+						<div class="input">
+							<label for="identityValue"><wicket:message key="customerDetails.personal.identityValue" /></label>
+							<div class="text" wicket:id="customer.identityValue"></div>
+						</div>
+						
+					</div>
+					<!-- END right column -->
+
+				</div>
+
+				<div class="column buffer"></div>
+
+				<h2 class="section house">
+					<wicket:message key="customerDetails.headline.address" />
+				</h2>
+
+				<!-- START column -->
+				<div class="column">
+
+					<!-- START left column -->
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label for="street1"><wicket:message key="customerDetails.address.street1" /></label>
+							<div class="text" wicket:id="customer.address.street1"></div>
+						</div>
+						<div class="input">
+							<label for="street2"><wicket:message key="customerDetails.address.street2" /></label>
+							<div class="text" wicket:id="customer.address.street2"></div>
+						</div>
+						<div class="input">
+							<label for="houseNumber"><wicket:message key="customerDetails.address.houseNo" /></label>
+							<div class="text" wicket:id="customer.address.houseNo"></div>
+						</div>
+						<div class="input">
+							<label for="city"><wicket:message key="customerDetails.address.city" /></label>
+							<div class="text" wicket:id="customer.address.city"></div>
+						</div>
+						
+					</div>
+					<!-- END left column -->
+
+					<!-- START right column -->
+					<div class="column twoColumn">
+					
+						<div class="input">
+							<label for="state"><wicket:message key="customerDetails.address.state" /></label>
+							<div class="text" wicket:id="customer.address.state"></div>
+						</div>
+						<div class="input">
+							<label for="zip"><wicket:message key="customerDetails.address.zip" /></label>
+							<div class="text" wicket:id="customer.address.zip"></div>
+						</div>
+						<div class="input">
+							<label for="country"><wicket:message key="customerDetails.address.country" /></label>
+							<div class="text" wicket:id="customer.address.kvCountry"></div>
+						</div>
+						
+					</div>
+					<!-- END right column -->
+
+				</div>
+
+				<!-- END column -->
+				<div class="column buffer"></div>
+
+			</form>
+
+			<div wicket:id="attachments.panel"></div>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

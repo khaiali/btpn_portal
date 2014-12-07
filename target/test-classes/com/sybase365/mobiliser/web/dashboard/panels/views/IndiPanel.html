@@ -1,0 +1,34 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+    <div class="cmodule trackerIndiPanel">
+
+	<div class="top">
+	    <span wicket:id="name">[Tracker Name]</span>
+	</div>
+
+	<div class="tracker">
+
+	    <div class="header indi" >
+		<div class="title"></div>
+		<div class="actions">
+		    <a href="#" wicket:id="refresh" class="additionalLink last"><img src="./images/tracker/tracker-refresh-16px.png" title="refresh"/></a>
+		</div>
+	    </div>
+
+	    <div wicket:id="trackerHolder" class="content indi"></div>
+
+	    <div wicket:id="chartPanel" />
+
+	</div>
+
+    </div>
+
+    <div wicket:id="settingsPanel" />
+
+</wicket:panel>
+
+</body>
+</html>

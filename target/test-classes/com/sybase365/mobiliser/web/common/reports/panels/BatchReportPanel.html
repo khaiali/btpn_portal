@@ -1,0 +1,63 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+	<wicket:panel>
+		<form wicket:id=dynamicReportForm>
+
+
+
+			<!-- orig -->
+
+			<div class="module clear">
+				<h1 class="report">
+					<span wicket:id="report.title">[Report Title]</span>
+				</h1>
+			</div>
+
+
+			<div wicket:id="errorMessages"></div>
+
+			<div class="module clear">
+				<div class="column">
+					<wicket:container wicket:id="components">
+						<wicket:container wicket:id="component" />
+					</wicket:container>
+				</div>
+
+				<div class="column">
+					<div class="column twoColumn">
+						<div class="input">
+							<label> <span wicket:id="formatLabel"></span> <span class="required">*</span></label>
+							<select class="text" wicket:id="format"></select>
+						</div>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="formAction">
+						<input class="submitForm" type="submit"
+							wicket:message="value:Save" wicket:id="save" name="save">
+						<input class="submitForm" type="submit"
+							wicket:message="value:Cancel" wicket:id="cancel" name="cancel">
+					</div>
+				</div>
+			</div>
+
+			<!-- orig -->
+
+
+
+
+
+		</form>
+
+
+
+		<span wicket:id="cronpanel"></span>
+
+
+	</wicket:panel>
+
+</body>
+</html>

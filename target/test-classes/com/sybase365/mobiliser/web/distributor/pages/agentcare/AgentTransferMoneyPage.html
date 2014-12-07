@@ -1,0 +1,56 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<div wicket:id="globalerrorMessages"></div>
+
+			<form wicket:id="agentTransMoneyForm">
+
+				<h1 class="wallet">
+					<span><wicket:message key="transferMoney.title" /></span>
+				</h1>
+
+				<div wicket:id="errorMessages"></div>
+
+				<h3 class="help">
+					<wicket:message key="transfer.title" />
+				</h3>
+
+				<div class="column twoColumn">
+
+					<div class="input">
+						<label><wicket:message key="payeeBalance" /></label>
+						<div class="text" wicket:id="payeeBalance"></div>
+					</div>
+					<div class="input">
+						<label><wicket:message key="amountString" /><span class="required">*</span></label> 
+						<input type="text" wicket:id="amountString" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="orderId" /></label> 
+						<input type="text" wicket:id="orderId" />
+					</div>
+
+					<div class="column">
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="transferNext" wicket:message="value:Next" />
+						</div>
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

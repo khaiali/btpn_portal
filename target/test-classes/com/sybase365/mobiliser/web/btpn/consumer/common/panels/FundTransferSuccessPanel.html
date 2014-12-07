@@ -1,0 +1,40 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div></div>
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="fundTransferMobileSuccessForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2 wicket:id="fundTransferHeaderMessage"></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="spacer"></div>
+							<div class="column">
+								<h2>
+									<wicket:message key="fundTransfer.amount" />
+									<span wicket:id="fundTransfer.amount"></span>
+									<wicket:message key="success" />
+									<span wicket:id="fundTransfer.payeeMsisdn"></span>
+								</h2>
+								<div class="spacer"></div>
+							</div>
+							<input type="submit" class="submit acc_chk"
+								wicket:id="submitButton" value="OK" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+
+	</wicket:panel>
+</body>
+</html>

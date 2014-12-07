@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="pageContent">
+            <div id="content">
+                <div id="leftContent" class="content">
+                    <form wicket:id="form">
+                        <div class="column1">
+                            <label><wicket:message key="txnSearchBean.timeframe"/></label>
+                            <br>
+                            <wicket:message key="txnSearchBean.MobileNumber "/>:
+                            <br/>
+                            <span wicket:id="msisdnLbl"></span>
+	                        <br/>
+	                        <wicket:message key="txnSearchBean.CustomerID "/>:
+	                        <br/>
+	                        <span  wicket:id="customerIdLbl"></span>
+	                        <br/>
+	                        <wicket:message key="txnSearchBean.Name"/>:
+	                        <br/>
+	                        <span wicket:id="nameLbl"></span>
+	                        <!--
+	                        <br/>
+	                        <wicket:message key="txnSearchBean.MobileAccNo"/>
+		                    <span style="position: relative; margin-left: 6px;">:<span  wicket:id="mobileAccLbl"></span></span>
+		                    -->
+                            <div class="spacer"></div>
+                        </div>
+		            </form>
+		            <ul id="leftMenuList" class="submenu">
+						<span wicket:id="leftMenu">
+							<span wicket:id="leftMenuItems">
+								<li wicket:id="leftMenuItem">
+									<a wicket:id="leftMenuLink"><span wicket:id="leftMenuLabel">Accounts</span></a>
+								</li>
+							</span>
+						 </span>
+					</ul>
+		        </div>
+		        <wicket:child />
+		        <div class="Main_container" wicket:id="customerDetailsDiv">
+		            <div class="middle_bg">
+			            <div id="centerContent" class="content center">
+			                <div wicket:id="customerDetailsPanel"></div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+        </div>
+	</wicket:extend>
+</body>
+</html>

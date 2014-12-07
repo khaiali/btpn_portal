@@ -1,0 +1,295 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<script type="text/javascript" src="scripts/balanceAlert.js"></script>
+	<script type="text/javascript">
+	
+		function handleView_agentCreate() {
+			
+			//var role = document.getElementsByName("agentRoles")[0].getValue();
+			var role = document.getElementById('agentRole').value;
+			if (role == 3) { // Distributor
+				document.getElementById('limitArea_1').style.display = '';
+				document.getElementById('limitArea_2').style.display = '';
+				document.getElementById('balanceAlertArea').style.display = '';
+			} else if (role == 8) { // Distributor Agent
+				document.getElementById('limitArea_1').style.display = 'none';
+				document.getElementById('limitArea_2').style.display = 'none';
+				document.getElementById('balanceAlertArea').style.display = 'none';
+			} else if (role == 11) { // Money Dealer
+				document.getElementById('balanceAlertArea').style.display = 'none';
+				document.getElementById('limitArea_1').style.display = '';
+				document.getElementById('limitArea_2').style.display = '';
+			}
+			
+		}
+	</script>
+</wicket:head>
+
+</head>
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content center">
+
+		<div class="module clear">
+
+			<h1 class="friends">
+				<span><wicket:message key="agentCreate.title" /></span>
+			</h1>
+
+			<div wicket:id="globalerrorMessages"></div>
+
+			<form wicket:id="AgentCreateForm">
+
+				<div wicket:id="errorMessages"></div>
+
+				<h2 class="section friends">
+					<wicket:message key="agentCreate.personaldata.title" />
+				</h2>
+
+				<div class="input">
+					<label><wicket:message key="agentCreate.firstName" /><span class="required">*</span></label> 
+					<input type="text" wicket:id="customer.address.firstName" />
+				</div>
+				<div class="input">
+					<label><wicket:message key="agentCreate.lastName" /><span class="required">*</span></label> 
+					<input type="text" wicket:id="customer.address.lastName" />
+				</div>
+				<div class="input">
+					<label><wicket:message key=agentCreate.company /></label> 
+					<input type="text" wicket:id="customer.address.company" />
+				</div>
+				<div class="input">
+					<label><wicket:message key="agentCreate.position" /></label> 
+					<input type="text" wicket:id="customer.address.position" />
+				</div>
+				<div class="input">
+					<label><wicket:message key="agentCreate.email" /><span class="required">*</span></label> 
+					<input type="text" wicket:id="customer.address.email" />
+				</div>
+				<div class="input">
+					<label><wicket:message key="agentCreate.timeZone" /></label>
+					<select wicket:id="customer.timeZone" >
+						<option>dummy</option>
+					</select>
+				</div>	
+
+				<div class="column buffer"></div>
+
+				<h2 class="section bank">
+					<wicket:message key="agentCreate.agentSettings.title" />
+				</h2>
+				
+				<div class="column twoColumn">
+				
+					<div class="input">
+						<label><wicket:message key="agentCreate.role" /><span class="required">*</span></label> 
+						<select wicket:id="customer.customerTypeId" onchange="handleView_agentCreate();" id="agentRole">
+							<option>dummy</option>
+						</select>
+					</div>
+
+					<div id="limitArea_1" style="display: block;">
+					
+						<div class="input">
+							<label><wicket:message key="agentCreate.limitClass.dailyCreditLimitAmount" /></label> 
+							<input type="text" wicket:id="customer.limitClass.dailyCreditLimitAmount" />
+						</div>
+						<div class="input">
+							<label><wicket:message key="agentCreate.limitClass.weeklyCreditLimitAmount" /></label> 
+							<input type="text" wicket:id="customer.limitClass.weeklyCreditLimitAmount" />
+						</div>
+						<div class="input">
+							<label><wicket:message key="agentCreate.limitClass.monthlyCreditLimitAmount" /></label> 
+							<input type="text" wicket:id="customer.limitClass.monthlyCreditLimitAmount" />
+						</div>
+						<div class="input">
+							<label><wicket:message key="agentCreate.limitClass.absoluteCreditLimitAmount" /></label> 
+							<input type="text" wicket:id="customer.limitClass.absoluteCreditLimitAmount" />
+						</div>
+						
+					</div>
+
+				</div>
+				
+				<div class="column twoColumn">
+				
+					<div id="limitArea_2" style="display: block;">
+					
+						<div class="input">
+							<label><wicket:message key="agentCreate.limitClass.dailyDebitLimitAmount" /></label> 
+							<input type="text" wicket:id="customer.limitClass.dailyDebitLimitAmount" />
+						</div>
+						<div class="input">
+							<label><wicket:message key="agentCreate.limitClass.weeklyDebitLimitAmount" /></label> 
+							<input type="text" wicket:id="customer.limitClass.weeklyDebitLimitAmount" />
+						</div>
+						<div class="input">
+							<label><wicket:message key="agentCreate.limitClass.monthlyDebitLimitAmount" /></label> 
+							<input type="text" wicket:id="customer.limitClass.monthlyDebitLimitAmount" />
+						</div>
+						<div class="input">
+							<label><wicket:message key="agentCreate.limitClass.absoluteDebitLimitAmount" /></label> 
+							<input type="text" wicket:id="customer.limitClass.absoluteDebitLimitAmount" />
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="column buffer"></div>
+				
+				<div id="balanceAlertArea">
+				
+					<h2 class="section coins">
+						<wicket:message key="agentCreate.balanceAlertData" />
+						<a href="#" wicket:id="balanceAlertAddLink" class="additionalLink last"><wicket:message key="agentCreate.balanceAlertTable.link.add" />
+						</a>
+					</h2>
+					
+					<div class="cmodule clear" wicket:id="balanceAlertListGrid">
+
+						<!-- list paging -->
+						<ul class="tablePaging">
+							<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+							<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+							<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+						</ul>
+						<!-- end list paging -->
+
+						<div class="collapsable clear">
+						
+							<table id="balanceAlertsListTable" class="listTable">
+							
+								<wicket:enclosure child="pageable">
+								
+									<thead>
+										<tr>
+											<th class="nickname" wicket:id="orderByTemplateName"><wicket:message key="agentCreate.balanceAlertTable.th.threshold" /></th>
+											<th class="nickname"><wicket:message key="agentCreate.balanceAlertTable.th.onlyTransition" /></th>
+											<th class="nickname"><wicket:message key="agentCreate.balanceAlertTable.th.templateName" /></th>
+											<th class="actions last"><wicket:message key="agentCreate.balance.alert.actions" /></th>
+										</tr>
+									</thead>
+									
+									<tfoot>
+										<tr>
+											<td class="empty" colspan="5"></td>
+										</tr>
+									</tfoot>
+									
+									<tbody>
+										<tr wicket:id="pageable">
+											<td><div wicket:id="threshold">[Threshold]</div></td>
+											<td><div wicket:id="onlyTransition">[Only Transition]</div></td>
+											<td><div wicket:id="templateName">[Template Name]</div></td>
+											<td>
+												<ul>
+													<li><a href="#" wicket:id="editLink"><wicket:message key="agentCreate.balance.alert.editAction">[Edit]</wicket:message></a></li>
+													<li><a href="#" wicket:id="removeLink"><wicket:message key="agentCreate.balance.alert.removeAction">[Remove]</wicket:message></a></li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+									
+								</wicket:enclosure>
+								
+							</table>
+							
+							<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+							
+						</div>
+						
+					</div>
+
+					<div id="balanceAlert_input" wicket:id="balanceAlertGrid">
+
+						<div class="column twoColumn">
+							<div class="input">
+								<label><wicket:message key="agentCreate.balanceAlert.threshold" /><span class="required">*</span></label> 
+								<input type="text" wicket:id="balanceAlert.threshold" />
+							</div>
+							<div class="input">
+								<label><wicket:message key="agentCreate.balanceAlert.emails" /></label> 
+								<input type="text" wicket:id="balanceAlert.emails" />
+							</div>
+							<div class="input">
+								<label><wicket:message key="agentCreate.balanceAlert.msisdns" /></label> 
+								<input type="text" wicket:id="balanceAlert.msisdns" />
+							</div>
+							<div class="input">
+								<label><wicket:message key="agentCreate.balanceAlert.templateName" /><span class="required">*</span></label> 
+								<input type="text" wicket:id="balanceAlert.templateName" />
+							</div>
+						</div>
+
+						<div class="column twoColumn">
+							<div class="input">
+								<label><wicket:message key="agentCreate.balanceAlert.onlyTransition" /></label> 
+								<input type="checkbox" wicket:id="balanceAlert.onlyTransition" />
+							</div>
+							<div class="input">
+								<label><wicket:message key="agentCreate.balanceAlert.language" /></label> 
+								<select wicket:id="balanceAlert.language" id="balanceAlertLanguage">
+									<option>dummy</option>
+								</select>
+							</div>
+							<div class="input">
+								<label><wicket:message key="agentCreate.balanceAlert.country" /></label> 
+								<select wicket:id="balanceAlert.country" id="balanceAlertCountry">
+									<option>dummy</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="column">
+							<div class="formAction">
+								<input type="submit" class="submitForm" wicket:id="addBalanceAlert" wicket:message="value:Save" /> 
+								<input type="submit" class="submitForm" wicket:id="updateBalanceAlert" wicket:message="value:Update" /> 
+								<input type="submit" class="submitForm" wicket:id="cancelBalanceAlert" wicket:message="value:Cancel" />
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+
+				<div class="module clear">
+
+					<h2 class="section lock">
+						<wicket:message key="agentCreate.logindata" />
+					</h2>
+
+					<div class="input">
+						<label><wicket:message key="agentCreate..userName" /><span class="required">*</span></label> 
+						<input type="text" wicket:id="customer.userName" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="agentCreate.password" /><span class="required">*</span></label> 
+						<input type="password" wicket:id="customer.password" />
+					</div>
+					<div class="input">
+						<label><wicket:message key="agentCreate.confirmPassword" /><span class="required">*</span></label> 
+						<input type="password" wicket:id="confirmPassword" />
+					</div>
+					
+					<div class="column">
+						<div class="formAction">
+							<input type="submit" class="submitForm" wicket:id="createAgent" wicket:message="value:createAgent.create" />
+						</div>
+					</div>
+					
+				</div>
+
+			</form>
+			
+		</div>
+		
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

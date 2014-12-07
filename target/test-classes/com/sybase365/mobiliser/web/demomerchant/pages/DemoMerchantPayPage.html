@@ -1,0 +1,89 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<title><wicket:message key="demoMerchant.title" /></title>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div wicket:id="errorMessages"></div>
+	
+	<form id="myForm" wicket:id="payform">
+	
+		<div class="left">
+
+			<div class="full">
+
+				<div class="largeboxtop"></div>
+
+				<div class="largebox">
+
+					Amount: <span wicket:id="sum">[Sum]</span> <br /> Please choose your payment instrument: <br></br>
+					<br></br>
+					
+					<div wicket:id="paymentmethod">
+					
+						<table cellpadding="5" cellspacing="5">
+						
+							<tr>
+								<td>&nbsp;&nbsp;&nbsp;<input type="radio" wicket:id="payment_method_cc" disabled="disabled" />Credit Card</td>
+								<td><img src="images/visa.jpg" style="padding-left: 5px;" width="50" /> <img src="images/mastercard.jpg" style="padding-left: 5px;" width="50" /></td>
+							</tr>
+							<tr>
+								<td>&nbsp;&nbsp;&nbsp;<input type="radio" wicket:id="payment_method_mpay" checked="checked" />Sybase365</td>
+								<td></td>
+							</tr>
+						</table>
+						
+					</div>
+
+					<div id="merchantOptions">
+					
+						<h3>Internal merchant options</h3>
+
+						<input type="checkbox" wicket:id="autoCapture" class="checkbox" checked="checked"></input> Do Auto Capture<br></br> 
+						<input type="checkbox" wicket:id="test" class="checkbox"></input> 
+						Is Test Transaction<br></br> <br /> 
+						<label for="amount">Amount: </label> 
+						<input type="text" class="textbox" wicket:id="amount"></input>
+						<br></br> 
+						<label for="orderid">OrderId:</label> 
+						<input type="text" class="textbox" wicket:id="orderId"></input>
+						<br></br> 
+						<label for="text">Text: </label> 
+						<input type="text" class="textbox" wicket:id="text"></input>
+						<br></br> <label for="text">Delivery Address: </label> 
+						<input type="checkbox" class="textbox" checked="checked" wicket:id="deliveryAddress"></input>
+						<br></br>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="right">
+		
+			<div class="boxtop"></div>
+			
+			<div class="box">
+				<p>
+					<img src="images/image_info.gif" alt="Image" title="Image" class="image" /> <b>Help</b> <br /> Please choose prefered payment instrument and click 'continue'. <br />
+				</p>
+				<div class="buttons">
+					<input type="submit" wicket:id="continue" class="greenbtnLrg" value="Continue" />
+				</div>
+			</div>
+			
+		</div>
+
+	</form>
+	
+</wicket:extend>
+
+</body>
+</html>

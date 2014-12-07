@@ -1,0 +1,67 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<title><wicket:message key="consumer.signup.page.title" /></title>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content home">
+
+		<div class="module clear">
+
+			<h1 class="home">
+				<span class="home"><wicket:message key="signup.welcome.message" /></span>
+			</h1>
+
+			<p>
+				<wicket:message key="signup.help.text1" />
+			</p>
+
+			<p>
+				<wicket:message key="signup.help.text2" />
+			</p>
+
+			<ul class="disc">
+				<li><strong><wicket:message key="signup.help.text2.mobile" /></strong></li>
+				<li><strong><wicket:message key="signup.help.text2.personal" /></strong></li>
+				<li><strong><wicket:message key="signup.help.text2.address" /></strong></li>
+				<li><strong><wicket:message key="signup.help.text2.account" /></strong></li>
+			</ul>
+
+			<p>
+				<wicket:message key="signup.help.text3" />
+			</p>
+
+			<form wicket:id="msisdnForm">
+
+				<div wicket:id="errorMessages"></div>
+
+				<p>
+					<a href="#" wicket:id="continueMoney"><wicket:message key="signup.continue.money" /></a>
+				</p>
+
+				<p>
+					<a href="#" wicket:id="continueMBanking"><wicket:message key="signup.continue.mbanking" /></a>
+				</p>
+				
+				<div class=column>
+
+					<div class="buttonWrap">
+						<input type="submit" class="submitForm" wicket:message="value:Cancel" wicket:id="cancel" />
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

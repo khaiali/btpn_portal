@@ -1,0 +1,56 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<form wicket:id="searchCustomerPanel">
+			<div wicket:id="errorMessages"></div>
+			<div class="spacer"></div>
+			<div class="column">
+				<input value="First" class="submit acc_chk" type="submit" wicket:id="firstButton" />
+				<input style="left: 250px" value="Previous" class="submit acc_chk" type="submit" wicket:id="previousButton" />
+				<input style="left: 270px" value="Next" class="submit acc_chk" type="submit" wicket:id="nextButton" />
+				<input style="left: 300px" value="Last" class="submit acc_chk" type="submit" wicket:id="lastButton" />
+			</div>
+			<div class="reg_tab_01">
+				<div class="column">
+					<span wicket:id="totalRecordsMessage"></span>
+				</div>
+				<div class="column" wicket:id="listContainer">
+					<div class="displayTag">
+						<wicket:enclosure child="pageable">
+							<table id="attachmentsTable">
+								<thead>
+									<tr>
+                                        <th><wicket:message key="label.msisdn" /></th>
+                                        <th><wicket:message key="label.displayName" /></th>
+                                        <th><wicket:message key="label.customerType" /></th>
+									    <!--
+										<th wicket:id="orderByMsisdn"><wicket:message
+												key="label.msisdn" /></th>
+										<th wicket:id="orderByName"><wicket:message
+												key="label.displayName" /></th>
+										<th wicket:id="orderByType"><wicket:message
+												key="label.customerType" /></th>
+									    -->
+									</tr>
+								</thead>
+								<tbody>
+									<tr wicket:id="pageable">
+										<td><a href="#" wicket:id="msisdnLink"><span wicket:id="msisdnLinkName">[mobileNumber]</span></a></td>
+										<td><div wicket:id="displayName">[name]</div></td>
+										<td><div wicket:id="customerType">[customerType]</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</wicket:enclosure>
+					</div>
+				</div>
+			</div>
+			<div class="spacer"></div>
+		</form>
+	</wicket:panel>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="changeLanguageForm" method="post">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="label.Language" /></legend>
+							<br>
+							<div wicket:id="errorMessages"></div>
+							<div class="column">
+								<div class="spacer"></div>
+								<div class="Account_info">
+									<label for="language"><wicket:message key="label.current.Language" /></label>
+									<div class="input_value" wicket:id="language.value"></div>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="Account_info">
+								<label for="changelanguage.langauge"><wicket:message key="label.select.Language" /></label> <select
+									id="languageSelect" wicket:id="language" name="languageSelect">
+								</select>
+							</div>
+							<input name="changeLanguage" wicket:id="btnUpdate" wicket:message="value:Submit" class="submit acc_chk" type="submit" /> <br> <br>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

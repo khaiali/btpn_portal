@@ -1,0 +1,80 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="cashInDetaislForm">
+						<div wicket:id="errorMessages"></div>
+						<fieldset>
+							<legend class="reg_tab">
+								<wicket:message key="headLine.mobileAccountDetails" />
+							</legend>
+							<br>
+							<div class="Account_info" style="width: 735px">
+								<label> <wicket:message key="label.cashIn.accountNumber" /></label>
+								<div class="input_value">
+									<input type="text" readonly="readonly"
+										wicket:id="cashInBean.accountNumber" />
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message key="label.cashIn.accountName" />
+								</label>
+								<div class="input_value">
+									<input type="text" readonly="readonly"
+										style="word-wrap: break-word; width: 190px"
+										wicket:id="cashInBean.displayName" />
+								</div>
+							</div>
+							<div class="Account_info">
+								<label> <wicket:message key="label.cashIn.accountType" />
+								</label>
+								<div class="input_value">
+									<input type="text" readonly="readonly"
+										wicket:id="cashInBean.accountType" />
+								</div>
+							</div>
+							<div class="Account_info">
+								<label for="accountmobileno"> <wicket:message
+										key="label.cashIn.mobileNumber" /></label>
+								<div class="input_value">
+									<input type="text" readonly="readonly"
+										wicket:id="cashInBean.msisdn" />
+								</div>
+							</div>
+							<div class="Account_info">
+								<label for="accountbalance"> <wicket:message
+										key="label.cashIn.accountBanlace" /></label>
+								<div class="input_value" wicket:id="cashInBean.accountBalance"></div>
+							</div>
+							<br>
+						</fieldset>
+						<fieldset>
+							<legend class="reg_tab1">
+								<wicket:message key="headLine.creditIntoMobileAccount" />
+							</legend>
+							<br>
+							<div class="input">
+								<label style="width: 160px;"> <wicket:message
+										key="label.cashIn.cashinAmount" /><span class="required">*</span></label>
+								<div class="input_value">
+									<input type="text" wicket:id="cashInBean.cashinAmount" />
+								</div>
+							</div>
+							<div class="column">
+								<input type="submit" class="submit acc_chk" id="submit"
+									wicket:id="submitButton" wicket:message="value:Cash-in" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

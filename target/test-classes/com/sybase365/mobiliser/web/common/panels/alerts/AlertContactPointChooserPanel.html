@@ -1,0 +1,31 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<div class="module clear">
+	
+		<label> 
+			<wicket:message key="manageAlerts.ContactPoint" />
+			<span class="required">*</span>
+		</label>
+		<div class="chooseAccountSpacer"></div>
+		<div wicket:id="checkgroup">
+			<table class="listTable">
+				<tr wicket:id="contactNumbers" >
+					<td width="23px">
+						<input type="checkbox" wicket:id="check" style="width: 20px"/>
+					</td>
+					<td>
+						<div wicket:id="contactNumber">[this is where contact number
+						will be]</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</wicket:panel>
+
+</body>
+</html>

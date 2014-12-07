@@ -1,0 +1,43 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="standingInstructionsForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="header.addStandingInstructions" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column twoColumn">
+								<div class="input">
+									<label> <wicket:message key="label.instructionType" />
+										<span class="required">*</span>
+									</label> <select wicket:id="instructionsBean.instructionType">
+										<option>dummy</option>
+									</select>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<span class="required">*</span>
+								<wicket:message key="requiredFields" />
+							</div>
+							<div class="spacer"></div>
+							<input type="submit" class="submit acc_chk" wicket:id="addButton"
+								value="Tambah" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

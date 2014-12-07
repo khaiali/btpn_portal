@@ -1,0 +1,74 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="approvetxnReversalConfirmForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<span wicket:id="headerMessage"></span>
+							</legend>
+							<div class="column">
+								<div class="displayTag">
+									<table id="list">
+										<thead>
+											<tr>
+												<th><wicket:message key="label.fields" /></th>
+												<th><wicket:message key="label.currentValue" /></th>
+												<th><wicket:message key="label.newValue" /></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="odd">
+												<td><wicket:message key="label.msisdn" /></td>
+												<td wicket:id="txnBean.currentValue.mobileNumber"></td>
+												<td wicket:id="txnBean.newValue.mobileNumber"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.transactionAmount" /></td>
+												<td wicket:id="txnBean.currentValue.transactionAmount"></td>
+												<td wicket:id="txnBean.newValue.transactionAmount"></td>
+											</tr>
+											<tr class="odd">
+												<td><wicket:message key="label.transactionDate" /></td>
+												<td wicket:id="txnBean.currentValue.transactionDate"></td>
+												<td wicket:id="txnBean.newValue.transactionDate"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.transactionId" /></td>
+												<td wicket:id="txnBean.currentValue.transactionID"></td>
+												<td wicket:id="txnBean.newValue.transactionID"></td>
+											</tr>
+											<tr class="odd">
+												<td><wicket:message key="label.transactionName" /></td>
+												<td wicket:id="txnBean.currentValue.transactionName"></td>
+												<td wicket:id="txnBean.newValue.transactionName"></td>
+											</tr>
+											<tr class="even">
+												<td><wicket:message key="label.usecaseId" /></td>
+												<td wicket:id="txnBean.currentValue.useCase"></td>
+												<td wicket:id="txnBean.newValue.useCase"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<input wicket:id="confirmButton" wicket:message="value:Confirm"
+									class="submit acc_chk" type="submit" /> <input
+									wicket:id="cancelButton" wicket:message="value:Cancel"
+									class="submit acc_chk" type="submit" style="left: 270px" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

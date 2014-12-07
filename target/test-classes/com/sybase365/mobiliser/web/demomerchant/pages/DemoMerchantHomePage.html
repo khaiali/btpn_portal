@@ -1,0 +1,124 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+<wicket:head>
+	<title><wicket:message key="demoMerchant.title" /></title>
+</wicket:head>
+</head>
+<body>
+
+<wicket:extend>
+
+	<div class="left">
+
+		<div class="left_articles">
+		
+			<div class="buttons">
+				<p>
+					<a class="bluebtnlrg" wicket:id="buy1" href="##">Buy</a>
+				</p>
+			</div>
+			
+			<div class="calendar">
+				<p>
+					No<br />99
+				</p>
+			</div>
+			
+			<h2>
+				<a href="##">Gone With The Wind</a>
+			</h2>
+			
+			<p class="description">Artists: Everett Brown, Fred Crane</p>
+			
+			<p>
+				<img src="images/products/99.jpg" class="thumbnail" alt="thumbnail" width="140" />David O. Selznick wanted Gone with the Wind to be somehow more than a movie, a film that would broaden the very idea of what a film could be and do and look like.
+			</p>
+			
+		</div>
+		
+	</div>
+
+    <div id="right">
+    
+        <div class="boxtop"></div>
+        
+        <div class="box">
+        
+            <p>
+                <img src="images/image.gif" alt="Image" title="Image" class="image" /> <b>Cart</b> <br />
+            </p>
+            
+            <table>
+            
+                <thead>
+                    <tr>
+                        <th style="width: 110px">Product</th>
+                        <th style="width: 20px">#</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr wicket:id="cartItems">
+                        <td><div wicket:id="name">[Name]</div></td>
+                        <td><div wicket:id="count">[Count]</div></td>
+                        <td align="right"><span wicket:id="cost">[Cost]</span></td>
+                    </tr>
+                </tbody>
+
+                <thead>
+                    <tr>
+                        <th style="width: 110px"></th>
+                        <th style="width: 20px"></th>
+                        <th><span wicket:id="sum">[Sum]</span></th>
+                    </tr>
+                </thead>
+
+            </table>
+
+            <br />
+            
+            <div class="buttons">
+                <p>
+                    <a wicket:id="forward" class="greenbtn" style="padding-left: 5px;">Pay</a>
+                </p>
+            </div>
+            
+        </div>
+
+    </div>
+    		
+	<div class="left">
+		
+		<div class="left_articles">
+		
+			<div class="buttons">
+				<p>
+					<a class="bluebtnlrg" wicket:id="buy2" href="##">Buy</a>
+				</p>
+			</div>
+			
+			<div class="calendar">
+				<p>
+					No<br />100
+				</p>
+			</div>
+			
+			<h2>
+				<a href="##">Casablanca (1943)</a>
+			</h2>
+			
+			<p class="description">Artists: Humphrey Bogart, Ingrid Bergman</p>
+			
+			<p>
+				<img src="images/products/100.jpg" class="thumbnail" alt="thumbnail" width="140" />A truly perfect movie, the 1942 Casablanca still wows viewers today, and for good reason.
+			</p>
+			
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

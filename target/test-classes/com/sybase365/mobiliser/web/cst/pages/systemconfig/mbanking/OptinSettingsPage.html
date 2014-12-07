@@ -1,0 +1,170 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="friends">
+				<span><wicket:message key="optinSettings.title"/></span>
+			</h1>
+
+		<form wicket:id="optinSettingsForm">
+		
+		<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+
+			<div class="module clear" wicket:id="bankTermAndConditionsListContainer">
+			
+				<h2 class="section phone">
+					<wicket:message key="bankTerms.conditions.title" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="btcStartIndex"></span> - <span wicket:id="btcEndIndex"></span> (<span wicket:id="btcTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="btcNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="bankTermAndConditionsTable" class="listTable">
+						
+							<wicket:enclosure child="btcPageable">
+							
+								<thead>
+									<tr>
+										<th style="width:15%;" class="btcBank" wicket:id="btcOrderByBank"><wicket:message key="bankTerms.conditions.bank" /></th>
+										<th style="width:20%;" class="btcResetDate"><wicket:message key="bankTerms.conditions.resetDate" /></th>
+										<th style="width:15%;" class="btcResetNotify"><wicket:message key="bankTerms.conditions.resetNotify"/></th>
+										<th style="width:25%;" class="btcDisableAlert"><wicket:message key="bankTerms.conditions.disableAlert" /></th>
+										<th style="width:15%;" class="btcDisableNotify"><wicket:message key="bankTerms.conditions.disableNotify" /></th>
+										<th style="width:10%;" class="actions" ><wicket:message key="bankTerms.conditions.actions"/></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="9"></td>
+									</tr>
+								</tfoot>
+								
+								<tbody>
+									<tr wicket:id="btcPageable">
+										<td><span wicket:id="btcBank">[Bank]</span></td>
+										<td>
+											<span wicket:id="btcResetDate">[Date]</span>&nbsp;&nbsp;
+											<input type="submit" class="submitForm" wicket:id="reset" wicket:message="value:Reset" /> 
+										</td>
+										<td><span wicket:id="btcResetNotify">[ResetNotify]</span></td>
+										<td><span wicket:id="btcDisableAlert">[DisableAlert]</span></td>
+										<td><span wicket:id="btcDisableNotify">[DisableNotify]</span></td>
+											
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="btcEditBankTermAndConditions"><wicket:message key="bankTerms.conditions.actions.edit">[Edit]</wicket:message></a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="btcNoItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="module clear" wicket:id="carrierOptinRequirmentListContainer">
+
+				<h2 class="section phone">
+					<wicket:message key="carrier.optin.requirments" />
+				</h2>
+
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="corStartIndex"></span> - <span wicket:id="corEndIndex"></span> (<span wicket:id="corTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="corNavigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="friendsListTable" class="listTable">
+						
+							<wicket:enclosure child="corPageable">
+							
+								<thead>
+									<tr>
+										<th style="width:10%;"><wicket:message key="carrier.optin.requirments.carrier" /></th>
+										<th style="width:15%;" wicket:id="corOrderByCarrier"><wicket:message key="carrier.optin.requirments.resetDate" /></th>
+										<th style="width:15%;"><wicket:message key="carrier.optin.requirments.tokenRequired" /></th>
+										<th style="width:13%;"><wicket:message key="carrier.optin.requirments.resetNotify" /></th>
+										<th style="width:24%;"><wicket:message key="carrier.optin.requirments.disableAlert" /></th>
+										<th style="width:15%;"><wicket:message key="carrier.optin.requirments.disableNotify" /></th>
+										<th style="width:8%;"><wicket:message key="carrier.optin.requirments.action" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="9"></td>
+									</tr>
+								</tfoot>
+								
+								<tbody>
+									<tr wicket:id="corPageable">
+										<td><span wicket:id="corCarrier">[Carrier]</span></td>
+										<td>
+											<span wicket:id="corResetDate">[Nickname]</span>
+											&nbsp;&nbsp;
+											<input  type="submit" class="submitForm" wicket:id="reset" wicket:message="value:Reset" /> 
+										</td>
+										<td><span wicket:id="corTokenRequired">[Nickname]</span></td>
+										<td><span wicket:id="corResetNotify">[Type]</span></td>
+										<td><span wicket:id="corDisableAlert">[Type]</span></td>
+										<td><span wicket:id="corDisableNotify">[Type]</span></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="corEditAction"><wicket:message key="carrier.optin.requirments.action.edit">[Edit]</wicket:message> </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="corNoItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+	</form>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+
+	<form wicket:id="servicePackageForm">
+		
+		<div class="module clear" wicket:id="servicePackageListContainer">
+			
+				<h1 class="friends">
+					<span><wicket:message key="servicePackage.title"/></span>
+				</h1>
+				
+				<h2 class="section bank">
+					<wicket:message key="servicePackage.bankServicePackage.title" />
+				</h2>
+				
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+				<h2>
+					<ul>
+						<li>
+							<a href="#" wicket:id="addServicePackage" class="additionalLink last"><wicket:message key="servicePackage.addActions" /></a>
+						</li>
+						
+					</ul>
+			 </h2>
+				<div class="cmodule clear">
+				<!-- list paging -->
+				<ul class="tablePaging">
+					<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+					<li class="recordsNumber"><span wicket:id="spStartIndex"></span> - <span wicket:id="spEndIndex"></span> (<span wicket:id="spTotalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+					<li class="pageSelectorsContainer" wicket:id="spNavigator"></li>
+				</ul>
+					<!-- end list paging -->
+					
+				<div class="collapsable clear">
+
+					<table id="ServicePakageTable" class="listTable">
+						
+						<wicket:enclosure child="spPageable">
+							
+							<thead>
+								<tr>
+									<th style="width:40%;" class="contact" wicket:id="spOrderByNickname"><wicket:message key="servicePackage.name" /></th>
+									<th style="width:25%;" class="type"><wicket:message key="servicePackage.serviceCode" /></th>
+									<th class="actions"><wicket:message key="servicePackage.actions" /></th>
+								</tr>
+							</thead>
+								
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="3"></td>
+								</tr>
+							</tfoot>
+								
+							<tbody>
+								<tr wicket:id="spPageable">
+									<td><span wicket:id="spName">[Nickname]</span></td>
+									<td><span wicket:id="spServiceCode">[Carrier]</span></td>
+									<td>
+										<ul>
+											<li><a href="#" wicket:id="spEditAction"><wicket:message key="servicePackage.editActions">[Edit]</wicket:message> </a></li>
+										    <li><a href="#" wicket:id="spRemoveAction"><wicket:message key="servicePackage.removeActions">[Remove]</wicket:message> </a></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+								
+						</wicket:enclosure>
+							
+					</table>
+
+					<div id="noItemsMsg" class="centerMsg" wicket:id="spNoItemsMsg">[No Items Available]</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</form>
+
+</wicket:panel>
+
+</body>
+</html>

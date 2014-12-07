@@ -1,0 +1,29 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:panel>
+	
+	<label> 
+		<wicket:message key="manageAlerts.MessageTypeSelection" />
+		<span class="required">*</span>
+	</label>
+	
+	<div class="chooseAccountSpacer"></div>
+	
+	<div class="group" wicket:id="messageTypeGroup">
+		<table class="chooseAccount" bordercolor="white">
+			<tr wicket:id="messageTypeResult">
+				<td>
+					<input type="radio" wicket:id="messageTypeRadio" />
+				</td>
+				<td>
+					<div wicket:id="messageTypeName">[this is where name will be]</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</wicket:panel>
+
+</body>
+</html>

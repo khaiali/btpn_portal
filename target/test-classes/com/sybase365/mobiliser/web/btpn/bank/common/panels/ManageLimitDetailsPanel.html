@@ -1,0 +1,77 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:panel>
+		<div class="Main_container">
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="limitDetailsForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<wicket:message key="header.limit" />
+							</legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column">
+								<div class="input" style="width: 720px">
+									<label for="usecaseid"><wicket:message
+											key="label.usecaseId" /><span class="required">*</span></label>
+									<div class="input_value" wicket:id="limitBean.useCaseId.value"></div>
+									<select wicket:id="limitBean.useCaseId">	
+				    				</select>
+								</div>
+								<div class="input" style="width: 720px">
+									<label for="productid"><wicket:message
+											key="label.productId" /></label>
+									<div class="input_value" wicket:id="limitBean.productId.value"></div>
+									<select name="productIdChoice" wicket:id="limitBean.productId">
+											<option value="">
+					   							 Please Select
+											</option>
+				    				</select>
+								</div>
+								<div class="input" style="width: 720px">
+									<label for="empty"> </label> <input style="width: 30px"
+										name="isPerCustomer" type="checkbox" wicket:id="limitBean.isPerCustomer" />
+									<wicket:message key="label.isPerCustomer" />
+									<input style="width: 30px" name="applytoPayee" type="checkbox" wicket:id="limitBean.isApplyToPayee"/>
+									<wicket:message key="label.applyToPayee" />
+								</div>
+
+								<div class="input" style="width: 720px">
+									<label for="dailylimit"><wicket:message
+											key="label.dailyLimit" /><span class="required">*</span> </label> <input
+										name="dailyLimit" wicket:id="limitBean.dailyLimit" type="text" />
+								</div>
+
+								<div class="input" style="width: 720px">
+									<label for="dailylimit"><wicket:message
+											key="label.weeklyLimit" /><span class="required">*</span> </label> <input
+										name="weeklyLimit" wicket:id="limitBean.weeklyLimit" type="text" />
+								</div>
+
+								<div class="input" style="width: 720px">
+									<label for="monthlylimit"><wicket:message
+											key="label.monthlyLimit" /> <span
+										class="required">*</span>
+									</label> <input name="monthlyLimit" wicket:id="limitBean.monthlyLimit" type="text" />
+								</div>
+							</div>
+
+							<div class="spacer"></div>
+							<input style="left:100px" name="confirmAddLimit" wicket:id="addBtn" wicket:message="value:Add" class="submit acc_chk" type="submit">
+							<input name="updateLimit" wicket:id="updateBtn" wicket:message="value:Update" class="submit acc_chk"
+								type="submit" /> <input style="left: 250px" wicket:id="removeBtn" wicket:message="value:Delete" name="deleteLimit"
+								value="Delete" class="submit acc_chk" type="submit" /> <input
+								style="left: 270px" name="cancelAddLimit" wicket:id="cancelBtn" wicket:message="value:Cancel"
+								class="submit acc_chk" type="submit" />
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

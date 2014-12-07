@@ -1,0 +1,86 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.ta/wicket-xhtml1.4-strict.dtd">
+<body>
+
+	<wicket:extend>
+		<div class="Main_container">
+			<div></div>
+			<div>
+				<div id="centerContent" class="content">
+					<form wicket:id="billPaymentForm">
+						<fieldset>
+							<legend class="reg_tab">
+								<h2><wicket:message key="left.menu.billPayment" /></h2>
+							</legend>
+							<div wicket:id="errorMessages"></div>
+                            <div class="column">
+							    <div wicket:id="containers.0" class="input" style="width: 720px">
+								    <label for="opt0" wicket:id="labels.0"></label>
+								    <select name="opt0" wicket:id="opts.0"></select>
+							    </div>
+                                <div wicket:id="containers.1" class="input" style="width: 720px">
+                                    <label for="opt1" wicket:id="labels.1"></label>
+                                    <select name="opt1" wicket:id="opts.1"></select>
+                                </div>
+                                <div wicket:id="containers.2" class="input" style="width: 720px">
+                                    <label for="opt2" wicket:id="labels.2"></label>
+                                    <select name="opt2" wicket:id="opts.2"></select>
+                                </div>
+                                <div wicket:id="containers.3" class="input" style="width: 720px">
+                                    <label for="opt3" wicket:id="labels.3"></label>
+                                    <select name="opt3" wicket:id="opts.3"></select>
+                                </div>
+                                <div wicket:id="containers.4" class="input" style="width: 720px">
+                                    <label for="opt4" wicket:id="labels.4"></label>
+                                    <select name="opt4" wicket:id="opts.4"></select>
+                                </div>
+                                <div wicket:id="containers.5" class="input" style="width: 720px">
+                                    <label for="opt5" wicket:id="labels.5"></label>
+                                    <select name="opt5" wicket:id="opts.5"></select>
+                                </div>
+                                <div wicket:id="containers.6" class="input" style="width: 720px">
+                                    <label for="opt6" wicket:id="labels.6"></label>
+                                    <select name="opt6" wicket:id="opts.6"></select>
+                                </div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column twoColumn">
+								<div class="input">
+									<label>
+										<wicket:message key="billPayment.additional.data" /> <span class="required">*</span>
+									</label>
+									<div class="group"
+										wicket:id="billPayBean.manualOrFavourite">
+										<input wicket:id="radio.manually" name="filterType"	class="radio" type="radio" checked="checked">
+										 <label><wicket:message key="billPayment.label.manual" /></label>
+										<input wicket:id="radio.favourite" name="filterType" class="radio" type="radio"> 
+										<label><wicket:message	key="billPayment.label.fav" /></label>
+									</div>
+									<div class="column">
+										<span class="required">*</span><wicket:message	key="billPayment.label.mandatory" />
+									</div>
+								</div>
+							</div>
+
+							<div class="column twoColumn">
+								<div class="input" wicket:id="manualContainer">
+									<label><span wicket:id="label.billNumber"></span><span class="required">*</span></label> 
+									<input wicket:id="billPayBean.selectedBillerId.id" name="billNumber" type="text">
+									<div class="column"><span><wicket:message key="label.prepaid.note" /></span></div>
+								</div>								
+								<div class="input" wicket:id="favouriteContainer">
+									<label><wicket:message key="label.favourite" /><span class="required">*</span></label>
+									 <select wicket:id="billPayBean.selectedBillerId">
+									</select>
+								</div>
+								<input name="checkandCallPreAuth" wicket:message="value:Masuk" class="submit acc_chk" type="submit" wicket:id="btnSubmit">
+							</div>
+						</fieldset>
+						<div class="spacer"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

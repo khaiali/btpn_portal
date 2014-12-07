@@ -1,0 +1,40 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content home">
+
+		<div class="module clear">
+
+			<h1 class="friends">
+				<span><wicket:message key="myDetails.title" /></span>
+			</h1>
+
+			<div wicket:id="errorMessages"></div>
+			
+			<div class="column">
+			
+				<div class="input">
+					<label><wicket:message key="myDetail.id" /></label>
+					<div class="text" wicket:id="id"></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="myDetail.displayName" /></label>
+					<div class="text" wicket:id="displayName"></div>
+				</div>
+				<div class="input">
+					<label><wicket:message key="myDetail.loginName" /></label>
+					<div class="text" wicket:id="loginName"></div>
+				</div>
+
+			</div>
+
+		</div>
+		
+	</div>
+
+</wicket:extend>
+	
+</body>
+</html>

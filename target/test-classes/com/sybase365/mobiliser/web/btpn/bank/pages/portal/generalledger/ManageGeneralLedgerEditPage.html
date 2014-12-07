@@ -1,0 +1,53 @@
+<html
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="Main_container">
+			<div class="middle_bg">
+				<div id="centerContent" class="content">
+					<form wicket:id="glEditForm" method="post">
+						<fieldset>
+							<legend class="reg_tab6"><wicket:message key="label.gl.management"/></legend>
+							<div wicket:id="errorMessages"></div>
+							<div class="column ">
+								<div class="input" id="glCodeBlock">
+									<label for="glCode"><wicket:message key="label.glCode"/></label>
+									 <input id="glCode" wicket:id="ledgerBean.glCode" name="glCode" tabindex="1" type="text" readonly="readonly" size="10" />
+								</div>
+								<div class="input" id="glCodeDescBlock">
+									<label for="glCodeDesc"><wicket:message key="label.glDesc"/>
+									<span class="required">*</span></label> 
+										<input id="glCodeDesc" wicket:id="ledgerBean.glDescription" name="glCodeDesc" tabindex="2" type="text"	size="40" />
+								</div>
+								<div class="input" id="glCodeRootBlock" wicket:id="isRootContainer">
+									<label for="glCodeRoot"><wicket:message key="label.isRoot"/></label> 
+									<input id="glCodeRoot" wicket:id="ledgerBean.isRoot"  name="glCodeRoot" tabindex="4" type="text" readonly="readonly" />
+								</div>
+								<div class="input" id="glCodeLeafBlock" wicket:id="isLeafContainer">
+									<label for="glCodeLeaf" ><wicket:message key="label.isLeaf"/></label>
+									<input id="glCodeLeaf" name="glCodeLeaf" wicket:id="ledgerBean.isLeaf" tabindex="3" type="text" readonly="readonly" />
+								</div>					
+								<div class="input" id="glParentCodeBlock" style="width:500px" wicket:id="parentGLCodeContainer">
+									<label for="glParentCode"><wicket:message key="label.parentGLCode"/></label>
+									<input id="glParentCode" name="glParentCode" wicket:id="ledgerBean.parentGlCode.id" tabindex="5" type="text" readonly="readonly" />
+								</div>								
+								<div class="input" id="glCodeTypeBlock" style="width: 500px">
+									<label for="glCodeType"><wicket:message key="label.type"/></label>
+									 <input id="glCodeType"	wicket:id="ledgerBean.type.value" name="glCodeType" tabindex="6" type="text" readonly="readonly" />
+								</div>
+							</div>
+							<div class="spacer"></div>
+							<div class="column">
+								<input name="submitGLCode" wicket:id="btnSubmit" value="Submit" class="submit acc_chk" type="submit" /> 
+								<input style="left: 250px" wicket:id="btnCancel" name="cancel" value="Cancel" class="submit acc_chk" type="submit" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

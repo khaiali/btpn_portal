@@ -1,0 +1,85 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content">
+
+		<div class="module clear">
+
+			<h1 class="wallet">
+				<span><wicket:message key="todaystransaction.title" /></span>
+			</h1>
+
+			<div wicket:id="txnhistoryview">
+			
+				<div class="cmodule clear">
+
+					<!-- list paging -->
+					<ul class="tablePaging">
+						<li class="recordsLabel"><wicket:message key="table.showing" />:</li>
+						<li class="recordsNumber"><span wicket:id="startIndex" /> - <span wicket:id="endIndex" /> (<span wicket:id="totalItems">[Total]</span> <wicket:message key="table.totalItems" />)</li>
+						<li class="pageSelectorsContainer" wicket:id="navigator"></li>
+					</ul>
+					<!-- end list paging -->
+
+					<div class="collapsable clear">
+
+						<table id="transactionsListTable" class="listTable">
+						
+							<wicket:enclosure child="pageable">
+							
+								<thead>
+									<tr>
+										<th class="date"><wicket:message key="transactionHistory.table.date" /></th>
+										<th class="useCase"><wicket:message key="transactionHistory.table.useCase" /></th>
+										<th class="displayName"><wicket:message key="transactionHistory.table.errorCode" /></th>
+										<th class="displayName"><wicket:message key="transactionHistory.table.displayName" /></th>
+										<th class="text"><wicket:message key="transactionHistory.table.text" /></th>
+										<th class="amount"><wicket:message key="transactionHistory.table.amount" /></th>
+										<th class="actions last"><wicket:message key="transactionHistory.table.actions" /></th>
+									</tr>
+								</thead>
+								
+								<tfoot>
+									<tr>
+										<td class="empty" colspan="7"></td>
+									</tr>
+								</tfoot>
+								
+								<tbody>
+									<tr wicket:id="pageable">
+										<td><div wicket:id="creationDate">[Date]</div></td>
+										<td><div wicket:id="useCase">[Type]</div></td>
+										<td><div wicket:id="errorCode">[Error Code]</div></td>
+										<td><div wicket:id="participantName">[Participant]</div></td>
+										<td><div wicket:id="text">[Details]</div></td>
+										<td><div wicket:id="amount">[amount]</div></td>
+										<td>
+											<ul>
+												<li><a href="#" wicket:id="detailsAction"><wicket:message key="transactionHistory.table.detailsAction">[Details]</wicket:message></a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+								
+							</wicket:enclosure>
+							
+						</table>
+
+						<div id="noItemsMsg" class="centerMsg" wicket:id="noItemsMsg">[No Items Available]</div>
+
+					</div>
+
+				</div>
+				
+			</div>
+
+		</div>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<wicket:head>
+	<script src="scripts/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+</wicket:head>
+<body>
+<wicket:panel>
+
+		<form wicket:id="blackoutScheduleForm">
+		
+			<div class="column">
+
+				<div class="input">
+					<label><wicket:message key="alertBlackOut.schedule.description" /><span class="required">*</span></label>
+					<input wicket:id="description" type="text" maxlength="80"></input>
+				</div>
+
+				<div class="input">
+					<label><wicket:message key="alertBlackOut.schedule.validFromDate" /><span class="required">*</span></label>
+					<input id="validFromDate" wicket:id="validFromDate" readonly="readonly" type="text" size="10" style="width: 150px;" />
+				</div>
+
+				<div class="input">
+					<label><wicket:message key="alertBlackOut.schedule.validToDate" /><span class="required">*</span></label>
+					<input id="validToDate" wicket:id="validToDate" readonly="readonly" type="text" size="10" style="width: 150px;" />
+				</div>
+
+				<div class="input">
+					<label><wicket:message key="alertBlackOut.schedule.altTimezone" /></label>
+					<div class="text">
+					<select wicket:id="timeZone" style="width:175px;padding:0px;margin:0px;">
+						<option>[GMT+1]</option>
+					</select>
+					</div>
+				</div>
+
+				<div class="input">
+					<label><wicket:message key="alertBlackOut.schedule.times" /></label>
+					<div class="text">
+						<table border="0" style="width: 500px; padding-left: 10px; background: #ffffff;">
+							<thead>
+								<tr>
+									<th style="width: 20%; padding-left: 4px; padding-right: 2px;">
+										<wicket:message key="alertBlackOut.schedule.times.timeFrom" />
+									</th>
+									<th style="width: 20%; padding-left: 4px; padding-right: 2px;">
+										<wicket:message key="alertBlackOut.schedule.times.timeTo" />
+									</th>
+									<th style="width: 40%; padding-left: 4px; padding-right: 2px;">
+										<wicket:message key="alertBlackOut.schedule.selectedDaysOfWeek" />
+									</th>
+									<th style="width: 20%; padding-left: 4px; padding-right: 2px;">
+									</th>
+								</tr>
+							</thead>
+							<tr wicket:id="botTimePeriodList">
+								<td>
+									<span wicket:id="botTimeFrom">[00:00]</span>
+								</td>
+								<td>
+									<span wicket:id="botTimeTo">[07:30]</span>
+								</td>
+								<td>
+									<span wicket:id="botDaysOfWeek">[07:30]</span>
+								</td>
+								<td>
+									<a wicket:id="removeTime" href="#"><wicket:message key="alertBlackOut.schedule.times.remove" /></a>
+								</td>
+							</tr>
+							<tr>
+							<td>
+								<select wicket:id="startHr" style="width:40px;padding:0px;margin:0px;">
+									<option selected="selected">00</option> <option>01</option> <option>02</option> <option>03</option>
+									<option>04</option> <option>05</option> <option>06</option> <option>07</option>
+									<option>08</option> <option>09</option> <option>10</option> <option>11</option>
+									<option>12</option> <option>13</option> <option>14</option> <option>15</option>
+									<option>16</option> <option>17</option> <option>18</option> <option>19</option>
+									<option>20</option> <option>21</option> <option>22</option> <option>23</option>
+									<option>24</option>
+								</select>
+								<select wicket:id="startMin" style="width:40px;padding:0px;margin:0px;">
+									<option selected="selected">00</option> <option>05</option> <option>10</option> <option>15</option>
+									<option>20</option> <option>25</option> <option>30</option> <option>35</option>
+									<option>40</option> <option>45</option> <option>50</option> <option>55</option>
+								</select> 
+							</td>
+							<td>
+								<select wicket:id="endHr" style="width:40px;padding:0px;margin:0px;">
+									<option>00</option> <option>01</option> <option>02</option> <option>03</option>
+									<option>04</option> <option>05</option> <option>06</option> <option>07</option>
+									<option>08</option> <option>09</option> <option>10</option> <option>11</option>
+									<option>12</option> <option>13</option> <option>14</option> <option>15</option>
+									<option>16</option> <option>17</option> <option>18</option> <option>19</option>
+									<option>20</option> <option>21</option> <option>22</option> <option>23</option>
+									<option selected="selected">24</option>
+								</select>
+								<select wicket:id="endMin" style="width:40px;padding:0px;margin:0px;">
+									<option selected="selected">00</option> <option>05</option> <option>10</option> <option>15</option>
+									<option>20</option> <option>25</option> <option>30</option> <option>35</option>
+									<option>40</option> <option>45</option> <option>50</option> <option>55</option>
+								</select>
+							</td>
+							<td>
+							<table border="0" style="width: 175px; padding-left: 10px; background: #ffffff;">
+								<thead>
+									<tr>
+										<th style="width: 15%; padding-left: 4px; padding-right: 2px;">
+											<wicket:message key="alertBlackOut.schedule.selectedDaysOfWeek.monday" />
+										</th>
+										<th style="width: 15%; padding-left: 4px; padding-right: 2px;">
+											<wicket:message key="alertBlackOut.schedule.selectedDaysOfWeek.tuesday" />
+										</th>
+										<th style="width: 15%; padding-left: 4px; padding-right: 2px;">
+											<wicket:message key="alertBlackOut.schedule.selectedDaysOfWeek.wednesday" />
+										</th>
+										<th style="width: 15%; padding-left: 4px; padding-right: 2px;">
+											<wicket:message key="alertBlackOut.schedule.selectedDaysOfWeek.thursday" />
+										</th>
+										<th style="width: 15%; padding-left: 4px; padding-right: 2px;">
+											<wicket:message key="alertBlackOut.schedule.selectedDaysOfWeek.friday" />
+										</th>
+										<th style="width: 15%; padding-left: 4px; padding-right: 2px;">
+											<wicket:message key="alertBlackOut.schedule.selectedDaysOfWeek.saturday" />
+										</th>
+										<th style="width: 15%; padding-left: 4px; padding-right: 2px;">
+											<wicket:message key="alertBlackOut.schedule.selectedDaysOfWeek.sunday" />
+										</th>
+									</tr>
+								</thead>
+								<tr>
+									<td style="padding-left: 2px; padding-right: 2px;">
+										<input wicket:id="checkMo" type="checkbox" class="checkbox" style="width: 15px" />
+									</td>
+									<td style="padding-left: 2px; padding-right: 2px;">
+										<input wicket:id="checkTu" type="checkbox" class="checkbox" style="width: 15px" />
+									</td>
+									<td style="padding-left: 2px; padding-right: 2px;">
+										<input wicket:id="checkWe" type="checkbox" class="checkbox" style="width: 15px" />
+									</td>
+									<td style="padding-left: 2px; padding-right: 2px;">
+										<input wicket:id="checkTh" type="checkbox" class="checkbox" style="width: 15px" />
+									</td>
+									<td style="padding-left: 2px; padding-right: 2px;">
+										<input wicket:id="checkFr" type="checkbox" class="checkbox" style="width: 15px" />
+									</td>
+									<td style="padding-left: 2px; padding-right: 2px;">
+										<input wicket:id="checkSa" type="checkbox" class="checkbox" style="width: 15px" />
+									</td>
+									<td style="padding-left: 2px; padding-right: 2px;">
+										<input wicket:id="checkSu" type="checkbox" class="checkbox" style="width: 15px" />
+									</td>
+								</tr>
+								</table>
+							</td>
+							<td>
+								<a wicket:id="addTime" href="#"><wicket:message key="alertBlackOut.schedule.times.add" /></a>
+							</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="column">
+				<div class="formAction">
+					<input type="submit" class="submitForm" wicket:id="saveButton" wicket:message="value:Save" /> 
+					<input type="submit" class="submitForm" wicket:id="cancelButton" wicket:message="value:Cancel" />
+				</div>
+			</div>
+
+		</form>
+				
+</wicket:panel>
+</body>
+</html>

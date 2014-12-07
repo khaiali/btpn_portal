@@ -1,0 +1,54 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+	<div id="centerContent" class="content home">
+
+		<form wicket:id="preferencesForm">
+
+			<div class="module clear">
+
+				<h1 class="servers">
+					<span><wicket:message key="preferences.title" /></span>
+					<input type="submit" class="additionalLink last" wicket:id="importNode" wicket:message="value:preferences.button.import.node" />
+					<input type="submit" class="additionalLink" wicket:id="addNode" wicket:message="value:preferences.button.add.node" />
+					<input type="submit" class="additionalLink" wicket:id="addApplication" wicket:message="value:preferences.button.add.application" />
+				</h1>
+
+				<h3 class="help">
+					<wicket:message key="preferences.help" />
+				</h3>
+
+				<div wicket:id="errorMessages" style="color: #ff0000"></div>
+
+				<div class="cmodule clear">
+
+					<div class="collapsable clear">
+
+						<div wicket:id="preferencesTreeDiv">
+							<div wicket:id="preferencesTree" class="mobiliserTree"></div>
+						</div>
+
+						<table id="treetable" class="listTable">
+							<tfoot>
+								<tr>
+									<td class="empty" colspan="2"></td>
+								</tr>
+							</tfoot>
+						</table>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</form>
+
+	</div>
+
+</wicket:extend>
+
+</body>
+</html>
