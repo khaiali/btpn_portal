@@ -24,16 +24,12 @@ public class BillPaymentPerformBean implements Serializable {
 	private CodeValue selectedBillerId;
 
 	private String manualOrFavourite;
-<<<<<<< HEAD
+
 	private String amountOption;
 
 	private String amountOrUnsold;
 	private String unsold1;
 	private String unsold2;
-=======
-	
-	private String amountOrUnsold;
->>>>>>> origin/master
 
 	private Long billAmount;
 	private Long feeAmount;
@@ -69,14 +65,20 @@ public class BillPaymentPerformBean implements Serializable {
 	private String regNumber;
 	private String billNumber;
 	
-<<<<<<< HEAD
+	// tambahan khaidir
+	private String rptagpln;
+	private String adminbank;
+	private String totalbayar;
+	private String amount;
+	private String blntunggak;
+
 	/**
-	 * Subtring 2 digit in front of billPayBean.selectedBillerId.id for PAN number
+	 * Substring 2 digit in front of billPayBean.selectedBillerId.id for PAN number
 	 */
 	private String partPan;
 	
-=======
->>>>>>> origin/master
+
+
 	public String getBillerLabel() {
 		return billerLabel;
 	}
@@ -128,7 +130,7 @@ public class BillPaymentPerformBean implements Serializable {
 		this.manualOrFavourite = manualOrFavourite;
 	}
 	
-<<<<<<< HEAD
+
 	public String getAmountOption() {
 		return amountOption;
 	}
@@ -137,8 +139,8 @@ public class BillPaymentPerformBean implements Serializable {
 		this.amountOption = amountOption;
 	}
 	
-=======
->>>>>>> origin/master
+
+
 	public String getAmountOrUnsold() {
 		return amountOrUnsold;
 	}
@@ -146,7 +148,7 @@ public class BillPaymentPerformBean implements Serializable {
 	public void setAmountOrUnsold(String amountOrUnsold) {
 		this.amountOrUnsold = amountOrUnsold;
 	}
-<<<<<<< HEAD
+
 	
 	public String getUnsold1() {
 		return unsold1;
@@ -163,8 +165,6 @@ public class BillPaymentPerformBean implements Serializable {
 	public void setUnsold2(String unsold2) {
 		this.unsold2 = unsold2;
 	}
-=======
->>>>>>> origin/master
 
 	public Long getBillAmount() {
 		return billAmount;
@@ -246,7 +246,7 @@ public class BillPaymentPerformBean implements Serializable {
 		this.additionalData = additionalData;
 	//	parseAdditionalData(additionalData);
 		
-<<<<<<< HEAD
+
 	}
 	
 	public JAXBElement<String> getAdditionalData2() {
@@ -255,8 +255,6 @@ public class BillPaymentPerformBean implements Serializable {
 
 	public void setAdditionalData2(JAXBElement<String> jaxbElement) {
 		this.additionalData2 = jaxbElement;
-=======
->>>>>>> origin/master
 	}
 
 	public String getCustomerName() {
@@ -387,18 +385,49 @@ public class BillPaymentPerformBean implements Serializable {
 		this.billNumber = billNumber;
 	}
 	
-<<<<<<< HEAD
 	public void parseBillerId(String add) {
 		this.partPan = add.substring(0,2);
 		
 	}
-=======
-	/*public void parseAdditionalData(String add) {
-		this.customerName = add.substring(95,120);
-		this.billNumber = add.substring(0,11);
-		this.regNumber = add.substring(0,13);
-		
-	}*/
->>>>>>> origin/master
+
+	public String getRptagpln() {
+		return rptagpln;
+	}
+
+	public void setRptagpln(String rptagpln) {
+		this.rptagpln = rptagpln;
+	}
+
+	public String getAdminbank() {
+		return adminbank;
+	}
+
+	public void setAdminbank(String adminbank) {
+		this.adminbank = adminbank;
+	}
+
+	public String getTotalbayar() {
+		return totalbayar;
+	}
+
+	public void setTotalbayar(String totalbayar) {
+		this.totalbayar = totalbayar;
+	}
+
+	public String getAmount() {
+		return amount;
+	}
+
+	public void setAmount(String amount) {
+		this.amount = amount;
+	}
+
+	public String getBlntunggak() {
+		return blntunggak;
+	}
+
+	public void setBlntunggak(String blntunggak) {
+		this.blntunggak = blntunggak;
+	}
 	
 }

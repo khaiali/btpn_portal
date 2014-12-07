@@ -9,6 +9,7 @@ import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.model.CompoundPropertyModel;
 
+import com.btpnwow.portal.common.util.Utils;
 import com.sybase365.mobiliser.web.btpn.consumer.beans.BillPaymentPerformBean;
 import com.sybase365.mobiliser.web.btpn.consumer.pages.portal.selfcare.BtpnBaseConsumerPortalSelfCarePage;
 import com.sybase365.mobiliser.web.btpn.consumer.pages.portal.selfcare.ConsumerPortalHomePage;
@@ -21,6 +22,8 @@ import com.sybase365.mobiliser.web.btpn.consumer.pages.portal.selfcare.ConsumerP
 public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 
 	private static final long serialVersionUID = 1L;
+	
+	
 
 	private BillPaymentPerformBean billPayBean;
 
@@ -90,20 +93,20 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 			new CompoundPropertyModel<BillPaymentStatusPage>(this));
 		form.add(new Label("billPayBean.statusMessage").setRenderBodyOnly(true));
 		
-<<<<<<< HEAD
-=======
+
+
 		parsingAdditionalData();
->>>>>>> origin/master
+
 
 		
 		form.add(new Label("label.reg.number", getLocalizer().getString("label.reg.number", this))).setVisible(showRegNumber);
 		form.add(new Label("billPayBean.regNumber").setVisible(showRegNumber));
 		
-<<<<<<< HEAD
+
 		form.add(new Label("label.date.reg", getLocalizer().getString("label.date.reg", this))).setVisible(showDateReg);
-=======
+
 		form.add(new Label("label.date.number", getLocalizer().getString("label.date.number", this))).setVisible(showDateReg);
->>>>>>> origin/master
+
 		form.add(new Label("billPayBean.dateReg").setVisible(showDateReg));
 		
 		form.add(new Label("label.meter.number", getLocalizer().getString("label.meter.number", this))).setVisible(showMeterNumber);
@@ -116,11 +119,11 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 		form.add(new Label("billPayBean.customerName").setVisible(showCustNameandBillAmount));
 		
 		form.add(new Label("label.tarifDaya", getLocalizer().getString("label.tarifDaya", this))).setVisible(showTarifDaya);
-<<<<<<< HEAD
+
 		form.add(new Label("billPayBean.tarif").setVisible(showTarifDaya));
-=======
+
 		form.add(new Label("billPayBean.tarif".concat("/").concat("billPayBean.daya")).setVisible(showTarifDaya));
->>>>>>> origin/master
+
 		
 		form.add(new Label("label.monthYear", getLocalizer().getString("label.monthYear", this))).setVisible(showMonth);
 		form.add(new Label("billPayBean.monthYear").setVisible(showMonth));
@@ -129,7 +132,7 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 		form.add(new Label("billPayBean.stdMeter").setVisible(showStdMeter));
 		
 		form.add(new Label("label.bill.amount", getLocalizer().getString("label.bill.amount", this))).setVisible(showCustNameandBillAmount);
-<<<<<<< HEAD
+
 		form.add(new Label("billPayBean.billAmount").setVisible(showCustNameandBillAmount));
 
 		form.add(new Label("label.fee.amount", getLocalizer().getString("label.fee.amount", this))).setVisible(showFee);
@@ -152,7 +155,7 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 		
 		form.add(new Label("label.token.amount", getLocalizer().getString("label.token.amount", this))).setVisible(showTokenAmount);
 		form.add(new Label("billPayBean.tokenAmount").setVisible(showTokenAmount));
-=======
+
 		form.add(new Label("RP ".concat("billPayBean.billAmount").concat(",00")).setVisible(showCustNameandBillAmount));
 
 		form.add(new Label("label.fee.amount", getLocalizer().getString("label.fee.amount", this))).setVisible(showFee);
@@ -175,7 +178,7 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 		
 		form.add(new Label("label.token.amount", getLocalizer().getString("label.token.amount", this))).setVisible(showTokenAmount);
 		form.add(new Label("RP ".concat("billPayBean.tokenAmount").concat(",00")).setVisible(showTokenAmount));
->>>>>>> origin/master
+
 		
 		form.add(new Label("label.kwh", getLocalizer().getString("label.kwh", this))).setVisible(showKwh);
 		form.add(new Label("billPayBean.kwh").setVisible(showKwh));
@@ -209,108 +212,45 @@ public class BillPaymentStatusPage extends BtpnBaseConsumerPortalSelfCarePage {
 	
 	public void parsingAdditionalData() {
 		String additionalData = billPayBean.getAdditionalData();
+		Utils utils = new Utils();
+		
 		Long totalAmount = billPayBean.getBillAmount() + billPayBean.getFeeAmount();
 		switch (Integer.parseInt(billPayBean.getBillerId())) {
 		case 91901: //PLN PrePaid
-<<<<<<< HEAD
-			billPayBean.setMeterNumber(removePadding(additionalData.substring(7,18), "right", "0"));
-			billPayBean.setBillNumber(removePadding(additionalData.substring(18,30), "right", "0"));
+
+			billPayBean.setMeterNumber(utils.removePadding(additionalData.substring(7,18), "right", "0"));
+			billPayBean.setBillNumber(utils.removePadding(additionalData.substring(18,30), "right", "0"));
 			billPayBean.setCustomerName(additionalData.substring(95,120).trim());
 			billPayBean.setTarif(additionalData.substring(128,132));
-			billPayBean.setDaya(removePadding(additionalData.substring(132,141), "right", "0"));
-			billPayBean.setMaterai(removePadding(additionalData.substring(154,164), "right", "0"));
-			billPayBean.setPpn(removePadding(additionalData.substring(165,175), "right", "0"));
-			billPayBean.setPpj(removePadding(additionalData.substring(176,186), "right", "0"));
-			billPayBean.setAngsuran(removePadding(additionalData.substring(187,197), "right", "0"));
-			billPayBean.setTokenAmount(removePadding(additionalData.substring(198,210), "right", "0"));
-			billPayBean.setKwh(removePadding(additionalData.substring(211,221), "right", "0"));
+			billPayBean.setDaya(utils.removePadding(additionalData.substring(132,141), "right", "0"));
+			billPayBean.setMaterai(utils.removePadding(additionalData.substring(154,164), "right", "0"));
+			billPayBean.setPpn(utils.removePadding(additionalData.substring(165,175), "right", "0"));
+			billPayBean.setPpj(utils.removePadding(additionalData.substring(176,186), "right", "0"));
+			billPayBean.setAngsuran(utils.removePadding(additionalData.substring(187,197), "right", "0"));
+			billPayBean.setTokenAmount(utils.removePadding(additionalData.substring(198,210), "right", "0"));
+			billPayBean.setKwh(utils.removePadding(additionalData.substring(211,221), "right", "0"));
 			billPayBean.setToken(additionalData.substring(221,241));
 			break;
 		case 91951: //PLN PostPaid
-			billPayBean.setBillNumber(removePadding(additionalData.substring(0,12), "right", "0"));
+			billPayBean.setBillNumber(utils.removePadding(additionalData.substring(0,12), "right", "0"));
 			billPayBean.setCustomerName(additionalData.substring(47,72).trim());
 			billPayBean.setTarif(additionalData.substring(125,129));
-			billPayBean.setDaya(removePadding(additionalData.substring(129,138), "right", "0"));
+			billPayBean.setDaya(utils.removePadding(additionalData.substring(129,138), "right", "0"));
 			billPayBean.setMonthYear(additionalData.substring(147,153));
-			billPayBean.setStdMeter(removePadding(additionalData.substring(210,218), "right", "0").concat("-").concat(removePadding(additionalData.substring(218,226), "right", "0")));
+			billPayBean.setStdMeter(utils.removePadding(additionalData.substring(210,218), "right", "0").concat("-").concat(utils.removePadding(additionalData.substring(218,226), "right", "0")));
 			//billPayBean.setTotalAmount(totalAmount);
 			break;
 		case 91999://PLN NonTagLis
 			billPayBean.setRegNumber(additionalData.substring(0,13).trim());
-			billPayBean.setDateReg(dateFormat(additionalData.substring(38,46)));
+			billPayBean.setDateReg(new Utils().dateFormat(additionalData.substring(38,46)));
 			billPayBean.setCustomerName(additionalData.substring(66,91).trim());
-=======
-			billPayBean.setMeterNumber(additionalData.substring(7,18));
-			billPayBean.setBillNumber(additionalData.substring(18,30));
-			billPayBean.setCustomerName(additionalData.substring(95,120));
-			billPayBean.setTarif(additionalData.substring(128,132));
-			billPayBean.setDaya(additionalData.substring(132,141));
-			billPayBean.setMaterai(additionalData.substring(154,164));
-			billPayBean.setPpn(additionalData.substring(165,175));
-			billPayBean.setPpj(additionalData.substring(176,186));
-			billPayBean.setAngsuran(additionalData.substring(187,197));
-			billPayBean.setTokenAmount(additionalData.substring(198,210));
-			billPayBean.setKwh(additionalData.substring(211,221));
-			billPayBean.setToken(additionalData.substring(221,241));
-			break;
-		case 91951: //PLN PostPaid
-			billPayBean.setBillNumber(additionalData.substring(0,12));
-			billPayBean.setCustomerName(additionalData.substring(47,72));
-			billPayBean.setTarif(additionalData.substring(125,129));
-			billPayBean.setDaya(additionalData.substring(129,138));
-			billPayBean.setMonthYear(additionalData.substring(147,153));
-			billPayBean.setStdMeter(additionalData.substring(210,218).concat("-").concat(additionalData.substring(218,226)));
-			billPayBean.setTotalAmount(totalAmount);
-			break;
-		case 91999://PLN NonTagLis
-			billPayBean.setRegNumber(additionalData.substring(0,13));
-			billPayBean.setDateReg(dateFormat(additionalData.substring(38,46)));
-			billPayBean.setCustomerName(additionalData.substring(66,91));
->>>>>>> origin/master
 			billPayBean.setBillNumber(additionalData.substring(7,18));
+
 			break;
 		default: 
 			break;
 		}
 		return ;
 	}
-	
-	public String dateFormat(String date){
-		String newDate = null;
-		try {
-			SimpleDateFormat inputFormat  = new SimpleDateFormat("YYYYMMDD");
-	        SimpleDateFormat outputFormat = new SimpleDateFormat("ddMMMYY");
 
-	        Date parsedDate = inputFormat.parse(date);
-	        System.out.println(outputFormat.format(parsedDate));
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		return newDate;
-	}
-<<<<<<< HEAD
-	
-	public static String removePadding(String text, String allign, String type) {
-		String result = "";
-		char[] textChar = text.toCharArray();
-		if(allign.equalsIgnoreCase("right")) {
-			for(int i=0; i<textChar.length; i++) {
-				if(!String.valueOf(textChar[i]).equals(type)) {
-					result = text.substring(i);
-					break;
-				}
-			}
-		}
-		else if(allign.equalsIgnoreCase("left")) {
-			for(int i=textChar.length-1; i>0; i--) {
-				if(!String.valueOf(textChar[i]).equals(type)) {
-					result = text.substring(0,i+1);
-					break;
-				}
-			}
-		}
-		return result;
-	}
-=======
->>>>>>> origin/master
 }

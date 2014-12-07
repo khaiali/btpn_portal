@@ -8,6 +8,7 @@ import id.co.btpn.corp.dev.appmdwdev02.com_btpn_biller_ws_provider.btpnbillerwst
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.xml.transform.TransformerException;
@@ -505,4 +506,14 @@ public class BillPaymentPage extends BtpnBaseConsumerPortalSelfCarePage {
 		}
 		return result;
 	}
+	
+	public HashMap putHashMap() {
+
+		HashMap hash = new HashMap();
+		
+		
+		
+		return hash;
+	}	
+	
 }

@@ -10,7 +10,6 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 
 import javax.xml.transform.TransformerException;
@@ -29,10 +28,7 @@ import org.springframework.ws.client.core.WebServiceMessageCallback;
 import org.springframework.ws.client.core.WebServiceOperations;
 import org.springframework.ws.soap.SoapMessage;
 
-
 import com.btpnwow.portal.common.util.MobiliserUtils;
-import com.btpnwow.portal.common.util.PrintStruk;
-import com.btpnwow.portal.common.util.Utils;
 import com.sybase365.mobiliser.money.services.api.ISystemEndpoint;
 import com.sybase365.mobiliser.util.tools.wicketutils.ErrorIndicator;
 import com.sybase365.mobiliser.web.btpn.common.components.AmountLabel;
@@ -51,8 +47,6 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 	private static final Logger LOG = LoggerFactory.getLogger(BillPaymentConfirmPage.class);
 
 	private static final long serialVersionUID = 1L;
-	
-	Utils utils = new Utils();
 
 	@SpringBean(name = "wsBillerTemplate")
 	private WebServiceOperations webServiceTemplate;
@@ -231,7 +225,6 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 				if (response.getResponseCode().equals("00")) {
 					billPayBean.setStatusMessage(getLocalizer().getString("success.perform.billpayment", this));
 					setResponsePage(new BillPaymentStatusPage(billPayBean));
-					printReport(commonParam.getPan());
 				}
 				else
 				{
@@ -267,85 +260,4 @@ public class BillPaymentConfirmPage extends BtpnBaseConsumerPortalSelfCarePage {
 		}
 		return result;
 	}
-	
-	// Print Report dengan kondisi prepaid, postpaid, non taglist
-	
-	public void printReport(String pan) {
-		
-		PrintStruk print = new PrintStruk();
-		
-		if (pan.equals("91901")){			
-			new Utils().setParameterMap(putHashMapPrepaid());
-			print.getClass();
-
-		}else if (billPayBean.getBillerId().contains("501")){ 
-			new Utils().setParameterMap(putHashMapPostpaid());
-			print.getClass();
-			
-		}else if (billPayBean.getBillerId().equals("91999")){
-			new Utils().setParameterMap(putHashMapNontaglist());
-			print.getClass();
-		}
-		
-	}
-	
-	
-	
-	public HashMap putHashMapPrepaid() {
-		
-		String additionalData = billPayBean.getAdditionalData();		
-		HashMap hash = new HashMap();	
-		
-		hash.put("pan", "1");
-		hash.put("nometer",billPayBean.getMeterNumber());
-		hash.put("id_pel", billPayBean.getBillerId());
-		hash.put("nama", billPayBean.getCustomerName());
-		hash.put("tarifdaya", billPayBean.getTarif().concat("/").concat(billPayBean.getDaya()));
-		hash.put("rpbayar", billPayBean.getAccountNumber());
-		hash.put("materai", billPayBean.getMaterai());
-		hash.put("ppn", billPayBean.getPpn());
-		hash.put("ppj", billPayBean.getPpj());
-		hash.put("angsuran", billPayBean.getAngsuran());
-		hash.put("stroom", billPayBean.getToken());		
-		return hash;
-	}	
-	
-	@SuppressWarnings("unchecked")
-	public HashMap putHashMapPostpaid() {
-		
-		String additionalData = billPayBean.getAdditionalData();
-		HashMap hash = new HashMap();
-		
-		hash.put("pan", "2");
-		hash.put("id_pel", billPayBean.getBillerId());
-		hash.put("nama", billPayBean.getCustomerName());
-		hash.put("tarifdaya", billPayBean.getTarif().concat("/").concat(billPayBean.getDaya()));
-		hash.put("blth",billPayBean.getKwh());
-		hash.put("standarmeter", billPayBean.getStdMeter());
-		hash.put("rptagpln", billPayBean.getRptagpln());
-		hash.put("adminbank", billPayBean.getAdminbank());
-		hash.put("totalbayar", billPayBean.getTotalbayar());
-		
-		return hash;
-	}
-	
-	public HashMap putHashMapNontaglist() {
-		
-		String additionalData = billPayBean.getAdditionalData();		
-		HashMap hash = new HashMap();
-		
-		hash.put("pan", "3");
-		hash.put("no_reg", billPayBean.getRegNumber());
-		hash.put("tgl_reg", billPayBean.getDateReg());
-		hash.put("nama", billPayBean.getCustomerName());
-		hash.put("id_pel", billPayBean.getBillerId());
-		hash.put("biaya", billPayBean.getAmount());
-		hash.put("adminbank", billPayBean.getAdminbank());
-		hash.put("totalbayar", billPayBean.getTotalbayar());
-		hash.put("blntunggak", billPayBean.getBlntunggak());
-		
-		return hash;
-	}	
-
-	
 }
